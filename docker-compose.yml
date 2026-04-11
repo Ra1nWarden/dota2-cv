@@ -1,0 +1,18 @@
+services:
+  dota2-cv:
+    build: .
+    image: dota2-cv
+    volumes:
+      - /mnt/pool/dota2-cv:/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ports:
+      - "18080:8080"   # Inference API
+      - "16006:6006"   # TensorBoard
+    stdin_open: true
+    tty: true
