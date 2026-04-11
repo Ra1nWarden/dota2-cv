@@ -1,7 +1,6 @@
 services:
   dota2-cv:
-    build: .
-    image: dota2-cv
+    image: ghcr.io/ra1nwarden/dota2-cv:latest
     volumes:
       - /mnt/pool/dota2-cv:/workspace
     deploy:
