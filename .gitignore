@@ -1,3 +1,4 @@
 data/synthetic/
 __pycache__/
+runs/
 .DS_Store
