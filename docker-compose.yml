@@ -13,5 +13,6 @@ services:
     ports:
       - "18080:8080"   # Inference API
       - "16006:6006"   # TensorBoard
+    shm_size: 2g
     stdin_open: true
     tty: true
