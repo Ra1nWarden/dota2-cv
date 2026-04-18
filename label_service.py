@@ -15,14 +15,21 @@ from io import BytesIO
 from pathlib import Path
 from threading import Lock
 
+import cv2
 import numpy as np
 import onnxruntime as ort
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from PIL import Image
 from pydantic import BaseModel
 
-from inference_service import preprocess_crop
+from inference_service import (
+    compute_canny_edges,
+    compute_item_offsets,
+    load_anchor_assets,
+    preprocess_crop,
+    save_anchor_assets,
+)
 
 
 WORKSPACE = Path(os.environ.get("WORKSPACE", "/workspace"))
@@ -32,6 +39,8 @@ LABELS_PATH = Path(os.environ.get(
     "LABELS_PATH", WORKSPACE / "data" / "test_screenshots" / "labels.json"))
 TOPK = int(os.environ.get("TOPK", "3"))
 
+REFERENCE_SCREENSHOT_PATH = Path(os.environ.get(
+    "REFERENCE_SCREENSHOT", WORKSPACE / "data" / "reference_screenshot.png"))
 CROP_CONFIG_PATH = WORKSPACE / "configs" / "crop_config.json"
 HERO_MODEL_PATH = WORKSPACE / "models" / "hero_classifier.onnx"
 ITEM_MODEL_PATH = WORKSPACE / "models" / "item_classifier.onnx"
@@ -222,6 +231,116 @@ def save_labels(payload: LabelsPayload):
     # mid-session still shows the latest values.
     state["data_payload"]["initial_labels"] = payload.labels
     return {"status": "ok", "path": str(LABELS_PATH)}
+
+
+def _read_reference_rgb() -> np.ndarray:
+    if not REFERENCE_SCREENSHOT_PATH.exists():
+        raise HTTPException(404, f"reference screenshot not found at {REFERENCE_SCREENSHOT_PATH}")
+    img = cv2.imread(str(REFERENCE_SCREENSHOT_PATH), cv2.IMREAD_COLOR)
+    if img is None:
+        raise HTTPException(500, f"failed to read {REFERENCE_SCREENSHOT_PATH}")
+    return cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+
+def _png_response(arr: np.ndarray) -> Response:
+    ok, buf = cv2.imencode(".png", arr)
+    if not ok:
+        raise HTTPException(500, "failed to encode PNG")
+    return Response(content=buf.tobytes(), media_type="image/png")
+
+
+@app.get("/calibrate", response_class=HTMLResponse)
+def calibrate_page():
+    return CALIBRATE_HTML
+
+
+@app.get("/calibrate/reference.png")
+def calibrate_reference():
+    if not REFERENCE_SCREENSHOT_PATH.exists():
+        raise HTTPException(404, f"reference screenshot not found at {REFERENCE_SCREENSHOT_PATH}")
+    return FileResponse(REFERENCE_SCREENSHOT_PATH, media_type="image/png")
+
+
+@app.get("/api/calibrate/state")
+def calibrate_state():
+    cfg, _ = load_anchor_assets(WORKSPACE)
+    img_h, img_w = (None, None)
+    if REFERENCE_SCREENSHOT_PATH.exists():
+        img = cv2.imread(str(REFERENCE_SCREENSHOT_PATH))
+        if img is not None:
+            img_h, img_w = img.shape[:2]
+    return {
+        "current": cfg,
+        "reference_size": [img_w, img_h] if img_w else None,
+        "reference_path": str(REFERENCE_SCREENSHOT_PATH),
+    }
+
+
+@app.get("/api/calibrate/preview")
+def calibrate_preview(x: int, y: int, w: int, h: int,
+                      canny_low: int = 80, canny_high: int = 160,
+                      kind: str = "edges"):
+    """kind=edges → Canny PNG; kind=crop → raw RGB crop PNG."""
+    if w <= 0 or h <= 0:
+        raise HTTPException(400, "w and h must be positive")
+    img_rgb = _read_reference_rgb()
+    img_h, img_w = img_rgb.shape[:2]
+    if x < 0 or y < 0 or x + w > img_w or y + h > img_h:
+        raise HTTPException(400, f"bbox ({x},{y},{w},{h}) out of bounds for {img_w}x{img_h}")
+    if kind == "crop":
+        bgr = cv2.cvtColor(img_rgb[y : y + h, x : x + w], cv2.COLOR_RGB2BGR)
+        return _png_response(bgr)
+    edges = compute_canny_edges(img_rgb, (x, y, w, h), canny_low, canny_high)
+    return _png_response(edges)
+
+
+class CalibratePayload(BaseModel):
+    x: int
+    y: int
+    w: int
+    h: int
+    canny_low: int = 80
+    canny_high: int = 160
+    match_threshold: float = 0.5
+    anchor_name: str = "scepter"
+
+
+@app.post("/api/calibrate")
+def calibrate_save(payload: CalibratePayload):
+    if payload.w <= 0 or payload.h <= 0:
+        raise HTTPException(400, "w and h must be positive")
+    img_rgb = _read_reference_rgb()
+    img_h, img_w = img_rgb.shape[:2]
+    if (payload.x < 0 or payload.y < 0
+            or payload.x + payload.w > img_w
+            or payload.y + payload.h > img_h):
+        raise HTTPException(
+            400, f"bbox out of bounds for {img_w}x{img_h}")
+    edges = compute_canny_edges(
+        img_rgb, (payload.x, payload.y, payload.w, payload.h),
+        payload.canny_low, payload.canny_high,
+    )
+    edge_density = float((edges > 0).sum()) / edges.size
+    item_offsets = compute_item_offsets(state["crop_config"], payload.x, payload.y)
+    if not item_offsets:
+        raise HTTPException(500, "crop_config has no item_slot_* regions")
+    template_path, offsets_path = save_anchor_assets(
+        WORKSPACE, edges,
+        (payload.x, payload.y, payload.w, payload.h),
+        item_offsets,
+        anchor_name=payload.anchor_name,
+        match_threshold=payload.match_threshold,
+        canny_low=payload.canny_low, canny_high=payload.canny_high,
+        reference_resolution=(img_w, img_h),
+    )
+    return {
+        "status": "ok",
+        "template_path": str(template_path),
+        "offsets_path": str(offsets_path),
+        "n_item_offsets": len(item_offsets),
+        "edge_density": round(edge_density, 4),
+        "note": "restart the inference service to pick up the new anchor",
+    }
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -446,6 +565,277 @@ document.getElementById("reloadBtn").addEventListener("click", async () => {
 loadData().catch(err => {
   document.getElementById("loading").textContent = "Failed to load: " + err.message;
 });
+</script>
+</body>
+</html>"""
+
+
+CALIBRATE_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Anchor Calibration</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a1a; color: #eee; margin: 0; padding: 12px; }
+  header { padding-bottom: 8px; border-bottom: 1px solid #333; margin-bottom: 12px; }
+  header h1 { margin: 0 0 4px; font-size: 16px; }
+  header p { margin: 0; font-size: 12px; color: #aaa; }
+  header a { color: #6cf; }
+  .layout { display: flex; gap: 16px; align-items: flex-start; }
+  .canvas-wrap { position: relative; flex: 1; min-width: 0; border: 1px solid #333; background: #000; }
+  .canvas-wrap img { display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; cursor: crosshair; }
+  #bbox { position: absolute; border: 2px solid #4f4; box-shadow: 0 0 0 9999px rgba(0,0,0,0.35); pointer-events: none; display: none; }
+  .panel { width: 320px; flex-shrink: 0; background: #222; padding: 12px; border-radius: 6px; font-size: 13px; }
+  .panel h2 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; color: #aaa; letter-spacing: 0.05em; }
+  .panel section { margin-bottom: 14px; }
+  .row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+  .row label { width: 90px; font-family: monospace; color: #ccc; }
+  .row input[type=number] { flex: 1; min-width: 0; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font-family: monospace; font-size: 12px; }
+  .row input[type=range] { flex: 1; min-width: 0; }
+  .row .val { font-family: monospace; width: 40px; text-align: right; color: #aef; }
+  button { background: #355; border: 0; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; margin-right: 6px; }
+  button.primary { background: #485; }
+  button:hover { filter: brightness(1.15); }
+  button:disabled { background: #333; color: #666; cursor: not-allowed; }
+  .preview { display: flex; gap: 8px; align-items: flex-start; }
+  .preview > div { flex: 1; text-align: center; }
+  .preview img { display: block; max-width: 100%; image-rendering: pixelated; background: #111; border: 1px solid #333; }
+  .preview .lbl { font-size: 11px; color: #888; margin-bottom: 4px; }
+  #status { font-size: 12px; color: #aaa; min-height: 16px; }
+  #status.ok { color: #6f6; }
+  #status.err { color: #f66; }
+  #current { font-family: monospace; font-size: 11px; color: #aaa; white-space: pre-wrap; }
+  .hint { font-size: 11px; color: #888; margin-top: 4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Anchor Calibration</h1>
+  <p>Click and drag a box around the scepter+shard region between the skill bar and items. Arrow keys nudge the box by 1 px (Shift = 10). <a href="/">← back to labeler</a></p>
+</header>
+<div class="layout">
+  <div class="canvas-wrap" id="canvasWrap">
+    <img id="ref" src="/calibrate/reference.png" draggable="false">
+    <div id="bbox"></div>
+  </div>
+  <div class="panel">
+    <section>
+      <h2>Bbox (image px)</h2>
+      <div class="row"><label>x</label><input type="number" id="x" value="0" min="0"></div>
+      <div class="row"><label>y</label><input type="number" id="y" value="0" min="0"></div>
+      <div class="row"><label>w</label><input type="number" id="w" value="0" min="1"></div>
+      <div class="row"><label>h</label><input type="number" id="h" value="0" min="1"></div>
+      <div class="hint">Reference: <span id="refSize">…</span></div>
+    </section>
+    <section>
+      <h2>Canny thresholds</h2>
+      <div class="row"><label>low</label><input type="range" id="cannyLow" min="10" max="250" value="80"><span class="val" id="cannyLowVal">80</span></div>
+      <div class="row"><label>high</label><input type="range" id="cannyHigh" min="20" max="400" value="160"><span class="val" id="cannyHighVal">160</span></div>
+      <div class="row"><label>match thr</label><input type="range" id="matchThr" min="0.1" max="0.95" step="0.05" value="0.5"><span class="val" id="matchThrVal">0.50</span></div>
+      <div class="row"><label>name</label><input type="text" id="anchorName" value="scepter" style="flex:1; min-width:0; background:#1a1a1a; border:1px solid #444; color:#eee; padding:4px 6px; border-radius:3px; font-family:monospace; font-size:12px;"></div>
+    </section>
+    <section>
+      <h2>Preview</h2>
+      <div class="preview">
+        <div><div class="lbl">crop</div><img id="cropPrev" alt="crop"></div>
+        <div><div class="lbl">canny edges</div><img id="edgesPrev" alt="edges"></div>
+      </div>
+      <div class="hint" id="previewHint"></div>
+    </section>
+    <section>
+      <button id="previewBtn">Preview</button>
+      <button id="saveBtn" class="primary" disabled>Save</button>
+      <div id="status"></div>
+    </section>
+    <section>
+      <h2>Currently saved</h2>
+      <div id="current">(loading…)</div>
+    </section>
+  </div>
+</div>
+<script>
+const img = document.getElementById("ref");
+const wrap = document.getElementById("canvasWrap");
+const bboxEl = document.getElementById("bbox");
+const xIn = document.getElementById("x"), yIn = document.getElementById("y");
+const wIn = document.getElementById("w"), hIn = document.getElementById("h");
+const cannyLow = document.getElementById("cannyLow");
+const cannyHigh = document.getElementById("cannyHigh");
+const cannyLowVal = document.getElementById("cannyLowVal");
+const cannyHighVal = document.getElementById("cannyHighVal");
+const matchThr = document.getElementById("matchThr");
+const matchThrVal = document.getElementById("matchThrVal");
+const anchorName = document.getElementById("anchorName");
+const cropPrev = document.getElementById("cropPrev");
+const edgesPrev = document.getElementById("edgesPrev");
+const previewHint = document.getElementById("previewHint");
+const status = document.getElementById("status");
+const saveBtn = document.getElementById("saveBtn");
+const refSize = document.getElementById("refSize");
+const currentBox = document.getElementById("current");
+
+let bbox = null;  // {x, y, w, h} in image-natural pixels
+let dragStart = null;
+let displayScale = 1;
+
+function imgToDisplay(v) { return v * displayScale; }
+function displayToImg(v) { return Math.round(v / displayScale); }
+
+function recomputeScale() {
+  if (!img.naturalWidth) return;
+  displayScale = img.clientWidth / img.naturalWidth;
+}
+
+function clampBbox(b) {
+  const W = img.naturalWidth, H = img.naturalHeight;
+  let x = Math.max(0, Math.min(b.x, W - 1));
+  let y = Math.max(0, Math.min(b.y, H - 1));
+  let w = Math.max(1, Math.min(b.w, W - x));
+  let h = Math.max(1, Math.min(b.h, H - y));
+  return {x, y, w, h};
+}
+
+function setBbox(b, fromInput) {
+  bbox = clampBbox(b);
+  if (!fromInput) {
+    xIn.value = bbox.x; yIn.value = bbox.y;
+    wIn.value = bbox.w; hIn.value = bbox.h;
+  }
+  recomputeScale();
+  bboxEl.style.display = "block";
+  bboxEl.style.left = imgToDisplay(bbox.x) + "px";
+  bboxEl.style.top = imgToDisplay(bbox.y) + "px";
+  bboxEl.style.width = imgToDisplay(bbox.w) + "px";
+  bboxEl.style.height = imgToDisplay(bbox.h) + "px";
+  saveBtn.disabled = false;
+}
+
+function eventToImageCoords(ev) {
+  const rect = img.getBoundingClientRect();
+  const dx = ev.clientX - rect.left;
+  const dy = ev.clientY - rect.top;
+  return {x: displayToImg(dx), y: displayToImg(dy)};
+}
+
+img.addEventListener("mousedown", (ev) => {
+  ev.preventDefault();
+  recomputeScale();
+  dragStart = eventToImageCoords(ev);
+});
+
+window.addEventListener("mousemove", (ev) => {
+  if (!dragStart) return;
+  const cur = eventToImageCoords(ev);
+  const x = Math.min(dragStart.x, cur.x);
+  const y = Math.min(dragStart.y, cur.y);
+  const w = Math.abs(cur.x - dragStart.x);
+  const h = Math.abs(cur.y - dragStart.y);
+  if (w > 0 && h > 0) setBbox({x, y, w, h});
+});
+
+window.addEventListener("mouseup", () => { dragStart = null; });
+
+window.addEventListener("keydown", (ev) => {
+  if (!bbox) return;
+  if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+  const step = ev.shiftKey ? 10 : 1;
+  let {x, y, w, h} = bbox;
+  if (ev.key === "ArrowLeft")  x -= step;
+  else if (ev.key === "ArrowRight") x += step;
+  else if (ev.key === "ArrowUp")    y -= step;
+  else if (ev.key === "ArrowDown")  y += step;
+  else return;
+  ev.preventDefault();
+  setBbox({x, y, w, h});
+});
+
+[xIn, yIn, wIn, hIn].forEach(el => el.addEventListener("input", () => {
+  setBbox({
+    x: parseInt(xIn.value) || 0,
+    y: parseInt(yIn.value) || 0,
+    w: parseInt(wIn.value) || 1,
+    h: parseInt(hIn.value) || 1,
+  }, true);
+}));
+
+cannyLow.addEventListener("input", () => cannyLowVal.textContent = cannyLow.value);
+cannyHigh.addEventListener("input", () => cannyHighVal.textContent = cannyHigh.value);
+matchThr.addEventListener("input", () => matchThrVal.textContent = parseFloat(matchThr.value).toFixed(2));
+
+document.getElementById("previewBtn").addEventListener("click", async () => {
+  if (!bbox) { status.textContent = "draw a box first"; status.className = "err"; return; }
+  status.textContent = "rendering preview…"; status.className = "";
+  const qs = new URLSearchParams({
+    x: bbox.x, y: bbox.y, w: bbox.w, h: bbox.h,
+    canny_low: cannyLow.value, canny_high: cannyHigh.value,
+  });
+  const cropUrl = "/api/calibrate/preview?" + qs + "&kind=crop&t=" + Date.now();
+  const edgesUrl = "/api/calibrate/preview?" + qs + "&kind=edges&t=" + Date.now();
+  cropPrev.src = cropUrl;
+  edgesPrev.src = edgesUrl;
+  edgesPrev.onload = () => {
+    status.textContent = "preview ready"; status.className = "ok";
+    previewHint.textContent = "Edges should trace the scepter/shard silhouette clearly. If too sparse, lower thresholds. If noisy, raise them.";
+  };
+  edgesPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
+});
+
+saveBtn.addEventListener("click", async () => {
+  if (!bbox) return;
+  status.textContent = "saving…"; status.className = "";
+  try {
+    const res = await fetch("/api/calibrate", {
+      method: "POST",
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify({
+        x: bbox.x, y: bbox.y, w: bbox.w, h: bbox.h,
+        canny_low: parseInt(cannyLow.value),
+        canny_high: parseInt(cannyHigh.value),
+        match_threshold: parseFloat(matchThr.value),
+        anchor_name: anchorName.value || "scepter",
+      }),
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    status.textContent = `saved ${data.n_item_offsets} item offsets · edge density ${(data.edge_density*100).toFixed(1)}%. Restart inference to pick up.`;
+    status.className = "ok";
+    loadState();
+  } catch (err) {
+    status.textContent = "save failed: " + err.message;
+    status.className = "err";
+  }
+});
+
+async function loadState() {
+  const res = await fetch("/api/calibrate/state");
+  const data = await res.json();
+  if (data.reference_size && data.reference_size[0]) {
+    refSize.textContent = data.reference_size[0] + " × " + data.reference_size[1];
+  }
+  if (data.current) {
+    const c = data.current;
+    const b = c.anchor_bbox;
+    currentBox.textContent =
+      `anchor: ${c.anchor}\nbbox:   x=${b.x} y=${b.y} w=${b.w} h=${b.h}\n` +
+      `canny:  low=${c.canny_low} high=${c.canny_high}\n` +
+      `thresh: ${c.match_threshold}\n` +
+      `items:  ${Object.keys(c.item_offsets).length}`;
+    if (!bbox) {
+      cannyLow.value = c.canny_low; cannyLowVal.textContent = c.canny_low;
+      cannyHigh.value = c.canny_high; cannyHighVal.textContent = c.canny_high;
+      matchThr.value = c.match_threshold; matchThrVal.textContent = c.match_threshold.toFixed(2);
+      anchorName.value = c.anchor;
+      img.addEventListener("load", () => { recomputeScale(); setBbox(b); }, {once: true});
+      if (img.complete && img.naturalWidth) { recomputeScale(); setBbox(b); }
+    }
+  } else {
+    currentBox.textContent = "(none — no anchor configured yet)";
+  }
+}
+
+img.addEventListener("load", recomputeScale);
+window.addEventListener("resize", () => { recomputeScale(); if (bbox) setBbox(bbox); });
+loadState();
 </script>
 </body>
 </html>"""

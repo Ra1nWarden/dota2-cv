@@ -18,12 +18,15 @@ Usage:
     python scripts/calibrate_anchor.py \
         --ref data/reference_screenshot.png \
         --crop-config configs/crop_config.json \
-        --anchor-bbox 2150,1900,80,80 \
-        --template-out configs/anchors/scepter_edges.png \
-        --offsets-out configs/anchor_offsets.json
+        --anchor-bbox 2150,1900,80,80
+
+Output paths (relative to the workspace root, derived from --crop-config):
+  configs/anchors/<anchor-name>_edges.png    # template PNG
+  configs/anchor_offsets.json                # offsets metadata
 
 The --anchor-bbox is x,y,w,h in the reference screenshot's pixel coordinates.
-Use Preview (or any image viewer) to read pixel coords by drawing a marquee.
+For a click-and-drag UI alternative, point your browser at /calibrate on the
+labeling service.
 """
 
 import argparse
@@ -33,6 +36,14 @@ from pathlib import Path
 
 import cv2
 import numpy as np
+
+# Reuse the runtime helpers so the CLI and inference share one code path.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from inference_service import (  # noqa: E402
+    compute_canny_edges,
+    compute_item_offsets,
+    save_anchor_assets,
+)
 
 
 def parse_bbox(s: str) -> tuple[int, int, int, int]:
@@ -60,18 +71,6 @@ def main() -> int:
         required=True,
         help="Anchor bounding box: x,y,w,h in reference screenshot pixels",
     )
-    p.add_argument(
-        "--template-out",
-        type=Path,
-        default=Path("configs/anchors/scepter_edges.png"),
-        help="Output path for the Canny edge template PNG",
-    )
-    p.add_argument(
-        "--offsets-out",
-        type=Path,
-        default=Path("configs/anchor_offsets.json"),
-        help="Output path for the offsets JSON",
-    )
     p.add_argument("--canny-low", type=int, default=80, help="Canny low threshold")
     p.add_argument("--canny-high", type=int, default=160, help="Canny high threshold")
     p.add_argument(
@@ -94,16 +93,15 @@ def main() -> int:
         print(f"error: crop config not found: {args.crop_config}", file=sys.stderr)
         return 2
 
-    img = cv2.imread(str(args.ref), cv2.IMREAD_COLOR)
-    if img is None:
+    img_bgr = cv2.imread(str(args.ref), cv2.IMREAD_COLOR)
+    if img_bgr is None:
         print(f"error: failed to read image: {args.ref}", file=sys.stderr)
         return 2
-    img_h, img_w = img.shape[:2]
+    img_h, img_w = img_bgr.shape[:2]
     print(f"reference: {args.ref} ({img_w}x{img_h})")
 
     with open(args.crop_config) as f:
         crop_config = json.load(f)
-
     ref_w, ref_h = crop_config["reference_resolution"]
     if (ref_w, ref_h) != (img_w, img_h):
         print(
@@ -120,12 +118,10 @@ def main() -> int:
         return 2
     print(f"anchor bbox (x,y,w,h): ({ax}, {ay}, {aw}, {ah})")
 
-    # Crop and Canny
-    crop = img[ay : ay + ah, ax : ax + aw]
-    gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-    edges = cv2.Canny(gray, args.canny_low, args.canny_high)
+    img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
+    edges = compute_canny_edges(img_rgb, (ax, ay, aw, ah), args.canny_low, args.canny_high)
     edge_density = float((edges > 0).sum()) / edges.size
-    print(f"canny edges: {edge_density:.1%} of pixels are edges (low={args.canny_low}, high={args.canny_high})")
+    print(f"canny edges: {edge_density:.1%} edge density (low={args.canny_low}, high={args.canny_high})")
     if edge_density < 0.01:
         print(
             "warning: very few edges detected. Template may be too smooth to match reliably. "
@@ -133,41 +129,21 @@ def main() -> int:
             file=sys.stderr,
         )
 
-    # Compute item offsets from existing crop_config (reference-resolution coords)
-    # Note: anchor bbox is also in reference-resolution coords (assumed equal to screenshot dims).
-    item_offsets: dict[str, dict[str, int]] = {}
-    for name, region in crop_config["regions"].items():
-        if not name.startswith("item_slot"):
-            continue
-        item_offsets[name] = {
-            "dx": region["x"] - ax,
-            "dy": region["y"] - ay,
-            "w": region["w"],
-            "h": region["h"],
-        }
+    item_offsets = compute_item_offsets(crop_config, ax, ay)
     if not item_offsets:
         print("error: no item_slot_* regions in crop_config", file=sys.stderr)
         return 2
 
-    # Write template + offsets
-    args.template_out.parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(args.template_out), edges)
-    print(f"wrote template: {args.template_out} ({aw}x{ah})")
-
-    offsets = {
-        "anchor": args.anchor_name,
-        "template_path": str(args.template_out),
-        "reference_resolution": [ref_w, ref_h],
-        "anchor_bbox": {"x": ax, "y": ay, "w": aw, "h": ah},
-        "match_threshold": args.match_threshold,
-        "canny_low": args.canny_low,
-        "canny_high": args.canny_high,
-        "item_offsets": item_offsets,
-    }
-    args.offsets_out.parent.mkdir(parents=True, exist_ok=True)
-    with open(args.offsets_out, "w") as f:
-        json.dump(offsets, f, indent=2)
-    print(f"wrote offsets: {args.offsets_out}")
+    workspace = args.crop_config.resolve().parent.parent
+    template_path, offsets_path = save_anchor_assets(
+        workspace, edges, (ax, ay, aw, ah), item_offsets,
+        anchor_name=args.anchor_name,
+        match_threshold=args.match_threshold,
+        canny_low=args.canny_low, canny_high=args.canny_high,
+        reference_resolution=(ref_w, ref_h),
+    )
+    print(f"wrote template: {template_path} ({aw}x{ah})")
+    print(f"wrote offsets: {offsets_path}")
     print()
     print("item offsets (relative to anchor top-left):")
     for name, off in item_offsets.items():

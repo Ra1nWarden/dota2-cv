@@ -117,6 +117,67 @@ def preprocess_crop(crop: Image.Image) -> np.ndarray:
     return arr
 
 
+def compute_canny_edges(
+    image_rgb: np.ndarray,
+    bbox: tuple[int, int, int, int],
+    canny_low: int = 80,
+    canny_high: int = 160,
+) -> np.ndarray:
+    """Crop image to bbox (x,y,w,h) and return Canny edges as uint8 array."""
+    x, y, w, h = bbox
+    crop = image_rgb[y : y + h, x : x + w]
+    gray = cv2.cvtColor(crop, cv2.COLOR_RGB2GRAY)
+    return cv2.Canny(gray, canny_low, canny_high)
+
+
+def compute_item_offsets(
+    crop_config: dict, anchor_x: int, anchor_y: int
+) -> dict[str, dict]:
+    """Derive (dx,dy,w,h) for each item slot relative to (anchor_x, anchor_y)."""
+    out: dict[str, dict] = {}
+    for name, region in crop_config["regions"].items():
+        if not name.startswith("item_slot"):
+            continue
+        out[name] = {
+            "dx": region["x"] - anchor_x,
+            "dy": region["y"] - anchor_y,
+            "w": region["w"],
+            "h": region["h"],
+        }
+    return out
+
+
+def save_anchor_assets(
+    workspace: Path,
+    edges: np.ndarray,
+    anchor_bbox: tuple[int, int, int, int],
+    item_offsets: dict,
+    anchor_name: str = "scepter",
+    match_threshold: float = 0.5,
+    canny_low: int = 80,
+    canny_high: int = 160,
+    reference_resolution: tuple[int, int] | None = None,
+) -> tuple[Path, Path]:
+    """Write template PNG + offsets JSON. Returns (template_path, offsets_path)."""
+    template_path = workspace / "configs" / "anchors" / f"{anchor_name}_edges.png"
+    offsets_path = workspace / "configs" / "anchor_offsets.json"
+    template_path.parent.mkdir(parents=True, exist_ok=True)
+    cv2.imwrite(str(template_path), edges)
+    x, y, w, h = anchor_bbox
+    payload = {
+        "anchor": anchor_name,
+        "template_path": str(template_path.relative_to(workspace).as_posix()),
+        "reference_resolution": list(reference_resolution) if reference_resolution else None,
+        "anchor_bbox": {"x": x, "y": y, "w": w, "h": h},
+        "match_threshold": match_threshold,
+        "canny_low": canny_low,
+        "canny_high": canny_high,
+        "item_offsets": item_offsets,
+    }
+    offsets_path.write_text(json.dumps(payload, indent=2))
+    return template_path, offsets_path
+
+
 def load_anchor_assets(workspace: Path) -> tuple[dict | None, np.ndarray | None]:
     """Load anchor config + template PNG from workspace, or (None, None)."""
     cfg_path = workspace / "configs" / "anchor_offsets.json"
