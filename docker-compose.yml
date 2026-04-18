@@ -12,6 +12,7 @@ services:
               capabilities: [gpu]
     ports:
       - "18080:8080"   # Inference API
+      - "18081:8081"   # Labeling UI
       - "16006:6006"   # TensorBoard
     shm_size: 2g
     stdin_open: true
