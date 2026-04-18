@@ -1,19 +1,42 @@
+x-image: &image ghcr.io/ra1nwarden/dota2-cv:latest
+x-workspace: &workspace
+  - /mnt/primary/appdata/dota2-cv:/workspace
+x-gpu: &gpu
+  resources:
+    reservations:
+      devices:
+        - driver: nvidia
+          count: 1
+          capabilities: [gpu]
+
 services:
-  dota2-cv:
-    image: ghcr.io/ra1nwarden/dota2-cv:latest
-    volumes:
-      - /mnt/primary/appdata/dota2-cv:/workspace
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+  inference:
+    image: *image
+    working_dir: /workspace
+    command: uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
+    volumes: *workspace
+    deploy: *gpu
     ports:
-      - "18080:8080"   # Inference API
-      - "18081:8081"   # Labeling UI
-      - "16006:6006"   # TensorBoard
+      - "18080:8080"
     shm_size: 2g
-    stdin_open: true
-    tty: true
+    restart: unless-stopped
+
+  labeling:
+    image: *image
+    working_dir: /workspace
+    command: uvicorn label_service:app --host 0.0.0.0 --port 8081 --workers 1
+    volumes: *workspace
+    deploy: *gpu
+    ports:
+      - "18081:8081"
+    shm_size: 2g
+    restart: unless-stopped
+
+  tensorboard:
+    image: *image
+    working_dir: /workspace
+    command: tensorboard --logdir=/workspace/runs --host=0.0.0.0 --port=6006
+    volumes: *workspace
+    ports:
+      - "16006:6006"
+    restart: unless-stopped
