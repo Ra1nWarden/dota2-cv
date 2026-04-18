@@ -1,0 +1,55 @@
+{
+  "anchor": "scepter",
+  "template_path": "configs/anchors/scepter_edges.png",
+  "reference_resolution": [
+    3840,
+    2160
+  ],
+  "anchor_bbox": {
+    "x": 2172,
+    "y": 1895,
+    "w": 60,
+    "h": 106
+  },
+  "match_threshold": 0.5,
+  "canny_low": 80,
+  "canny_high": 160,
+  "item_offsets": {
+    "item_slot_1": {
+      "dx": 112,
+      "dy": -4,
+      "w": 122,
+      "h": 80
+    },
+    "item_slot_2": {
+      "dx": 244,
+      "dy": -2,
+      "w": 121,
+      "h": 77
+    },
+    "item_slot_3": {
+      "dx": 373,
+      "dy": -1,
+      "w": 121,
+      "h": 81
+    },
+    "item_slot_4": {
+      "dx": 108,
+      "dy": 83,
+      "w": 123,
+      "h": 90
+    },
+    "item_slot_5": {
+      "dx": 240,
+      "dy": 85,
+      "w": 125,
+      "h": 90
+    },
+    "item_slot_6": {
+      "dx": 366,
+      "dy": 86,
+      "w": 131,
+      "h": 87
+    }
+  }
+}
