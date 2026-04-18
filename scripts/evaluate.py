@@ -24,7 +24,11 @@ from PIL import Image
 # Make the project root importable so we can pull preprocessing from the
 # same source the inference service uses.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from inference_service import preprocess_crop  # noqa: E402
+from inference_service import (  # noqa: E402
+    compute_item_boxes,
+    load_anchor_assets,
+    preprocess_crop,
+)
 
 
 HERO_PREFIXES = ("radiant_hero", "dire_hero")
@@ -69,18 +73,32 @@ def load_class_list(path: str) -> list[str]:
     return [raw[str(i)] for i in range(len(raw))]
 
 
-def crop_screenshot(image: Image.Image, crop_config: dict):
-    """Yield (slot_name, crop) for each region in crop_config."""
+def crop_screenshot(image: Image.Image, crop_config: dict,
+                    anchor_cfg: dict | None = None,
+                    anchor_template=None):
+    """Yield (slot_name, crop, anchor_meta) for each region.
+
+    anchor_meta is the same dict for every yielded tuple (one match per
+    image). When anchor_cfg/template are None or the match falls below
+    threshold, item crops use the fixed coords from crop_config.
+    """
     img_w, img_h = image.size
     ref_w, ref_h = crop_config["reference_resolution"]
     sx = img_w / ref_w
     sy = img_h / ref_h
+    img_np = np.array(image)
+    item_boxes, anchor_meta = compute_item_boxes(
+        img_np, anchor_cfg, anchor_template, sx, sy
+    )
     for name, c in crop_config["regions"].items():
-        x = int(c["x"] * sx)
-        y = int(c["y"] * sy)
-        w = int(c["w"] * sx)
-        h = int(c["h"] * sy)
-        yield name, image.crop((x, y, x + w, y + h))
+        if name in item_boxes:
+            x, y, w, h = item_boxes[name]
+        else:
+            x = int(c["x"] * sx)
+            y = int(c["y"] * sy)
+            w = int(c["w"] * sx)
+            h = int(c["h"] * sy)
+        yield name, image.crop((x, y, x + w, y + h)), anchor_meta
 
 
 def classify_batch(session, crops, class_names):
@@ -143,6 +161,15 @@ def cmd_run(args):
     hero_session = ort.InferenceSession(args.hero_model, providers=providers)
     item_session = ort.InferenceSession(args.item_model, providers=providers)
 
+    # Optional anchor: workspace = directory containing configs/
+    workspace = Path(args.crop_config).resolve().parent.parent
+    anchor_cfg, anchor_template = load_anchor_assets(workspace)
+    if anchor_template is not None:
+        print(f"Anchor enabled: {anchor_cfg['anchor']!r}, "
+              f"threshold={anchor_cfg['match_threshold']}")
+    else:
+        print("Anchor not configured; using fixed item crops")
+
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     failures_dir = output_dir / "failures"
@@ -151,6 +178,7 @@ def cmd_run(args):
 
     screenshot_dir = Path(args.screenshots)
     records = []  # one per (file, slot)
+    anchor_scores = []  # per-screenshot match scores (or None)
 
     for fname, slot_labels in labels.items():
         path = screenshot_dir / fname
@@ -162,8 +190,11 @@ def cmd_run(args):
         hero_crops, hero_slots = [], []
         item_crops, item_slots = [], []
         crops_by_slot = {}
+        per_image_anchor: dict | None = None
 
-        for slot, crop_img in crop_screenshot(image, crop_config):
+        for slot, crop_img, anchor_meta in crop_screenshot(
+                image, crop_config, anchor_cfg, anchor_template):
+            per_image_anchor = anchor_meta
             crops_by_slot[slot] = crop_img
             processed = preprocess_crop(crop_img)
             if is_hero_slot(slot):
@@ -176,6 +207,12 @@ def cmd_run(args):
         results = []
         results.extend(zip(hero_slots, classify_batch(hero_session, hero_crops, hero_class_names)))
         results.extend(zip(item_slots, classify_batch(item_session, item_crops, item_class_names)))
+
+        anchor_scores.append({
+            "file": fname,
+            "score": per_image_anchor["score"] if per_image_anchor else None,
+            "used": per_image_anchor["used"] if per_image_anchor else False,
+        })
 
         for slot, (pred, conf) in results:
             true = slot_labels.get(slot, "")
@@ -196,6 +233,7 @@ def cmd_run(args):
                 crops_by_slot[slot].save(out_path)
 
     metrics = compute_metrics(records, args.confidence_threshold)
+    metrics["anchor_scores"] = anchor_scores
     render_report(metrics)
 
     report_path = output_dir / "report.json"
@@ -439,6 +477,26 @@ def render_report(m):
         for pair in m["confusion_pairs"]:
             arrow = f"{pair['true']} -> {pair['pred']}"
             print(f"{arrow:<50}{pair['count']}")
+
+    if m.get("anchor_scores"):
+        print()
+        print(sep)
+        print("ANCHOR MATCH SCORES  (per screenshot)")
+        print(sep)
+        scores = [a["score"] for a in m["anchor_scores"] if a["score"] is not None]
+        if not scores:
+            print("(anchor not configured)")
+        else:
+            n_used = sum(1 for a in m["anchor_scores"] if a["used"])
+            n_total = len(m["anchor_scores"])
+            print(f"Used: {n_used}/{n_total}   "
+                  f"min={min(scores):.3f}  median={float(np.median(scores)):.3f}  "
+                  f"max={max(scores):.3f}")
+            for a in sorted(m["anchor_scores"],
+                            key=lambda x: (x["score"] is None, x["score"] or 0)):
+                tag = "OK " if a["used"] else "FB "  # FB = fell back to fixed
+                s = f"{a['score']:.3f}" if a["score"] is not None else "  -  "
+                print(f"  {tag} {s}  {a['file']}")
 
     print()
     print(sep)

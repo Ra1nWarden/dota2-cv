@@ -4,6 +4,13 @@ Loads two ONNX models (hero + item classifiers) and exposes a /predict
 endpoint that accepts a screenshot, crops HUD regions, and returns
 per-slot predictions.
 
+Item crops use anchor-relative cropping when an anchor template + offsets
+are configured (configs/anchor_offsets.json + the referenced template PNG).
+This compensates for skill-bar width drift that pushes the item grid off
+its fixed position. If the anchor isn't found in a frame (low match score),
+we fall back to fixed crops from crop_config.json. Hero crops always use
+fixed crops.
+
 Usage:
     uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
 """
@@ -13,6 +20,7 @@ import os
 from io import BytesIO
 from pathlib import Path
 
+import cv2
 import numpy as np
 import onnxruntime as ort
 from fastapi import FastAPI, UploadFile
@@ -32,6 +40,8 @@ item_session: ort.InferenceSession | None = None
 hero_classes: list[str] = []
 item_classes: list[str] = []
 crop_config: dict = {}
+anchor_config: dict | None = None
+anchor_template: np.ndarray | None = None  # uint8 grayscale Canny edges
 
 app = FastAPI(title="Dota 2 Icon Classifier")
 
@@ -39,6 +49,7 @@ app = FastAPI(title="Dota 2 Icon Classifier")
 @app.on_event("startup")
 def load_models():
     global hero_session, item_session, hero_classes, item_classes, crop_config
+    global anchor_config, anchor_template
 
     # Load crop config
     with open(WORKSPACE / "configs" / "crop_config.json") as f:
@@ -61,6 +72,17 @@ def load_models():
     item_session = ort.InferenceSession(
         str(WORKSPACE / "models" / "item_classifier.onnx"), providers=providers
     )
+
+    # Optional anchor configuration for item crops
+    anchor_config, anchor_template = load_anchor_assets(WORKSPACE)
+    if anchor_template is not None:
+        th, tw = anchor_template.shape
+        print(
+            f"Anchor enabled: {anchor_config['anchor']!r} template {tw}x{th}, "
+            f"threshold={anchor_config['match_threshold']}"
+        )
+    else:
+        print("Anchor not configured; using fixed item crops")
 
     print(f"Loaded hero model: {len(hero_classes)} classes")
     print(f"Loaded item model: {len(item_classes)} classes")
@@ -93,6 +115,68 @@ def preprocess_crop(crop: Image.Image) -> np.ndarray:
     arr = (arr - IMAGENET_MEAN) / IMAGENET_STD
 
     return arr
+
+
+def load_anchor_assets(workspace: Path) -> tuple[dict | None, np.ndarray | None]:
+    """Load anchor config + template PNG from workspace, or (None, None)."""
+    cfg_path = workspace / "configs" / "anchor_offsets.json"
+    if not cfg_path.exists():
+        return None, None
+    with open(cfg_path) as f:
+        cfg = json.load(f)
+    tmpl = cv2.imread(str(workspace / cfg["template_path"]), cv2.IMREAD_GRAYSCALE)
+    if tmpl is None:
+        return None, None
+    return cfg, tmpl
+
+
+def find_anchor(
+    image_rgb: np.ndarray,
+    anchor_cfg: dict,
+    template: np.ndarray,
+) -> tuple[float, int, int]:
+    """Locate the anchor via Canny + matchTemplate. Returns (score, x, y)."""
+    gray = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2GRAY)
+    edges = cv2.Canny(gray, anchor_cfg["canny_low"], anchor_cfg["canny_high"])
+    res = cv2.matchTemplate(edges, template, cv2.TM_CCOEFF_NORMED)
+    _, score, _, loc = cv2.minMaxLoc(res)
+    return float(score), int(loc[0]), int(loc[1])
+
+
+def compute_item_boxes(
+    image_rgb: np.ndarray,
+    anchor_cfg: dict | None,
+    template: np.ndarray | None,
+    scale_x: float,
+    scale_y: float,
+) -> tuple[dict[str, tuple[int, int, int, int]], dict]:
+    """Try anchor matching; return (item_boxes, meta).
+
+    item_boxes is empty dict on fallback (caller should use fixed coords).
+    meta = {"used": bool, "score": float|None, "anchor_xy": (x,y)|None}.
+    """
+    meta: dict = {"used": False, "score": None, "anchor_xy": None}
+    if anchor_cfg is None or template is None:
+        return {}, meta
+    score, ax, ay = find_anchor(image_rgb, anchor_cfg, template)
+    meta["score"] = round(score, 4)
+    meta["anchor_xy"] = (ax, ay)
+    if score < anchor_cfg["match_threshold"]:
+        return {}, meta
+    img_h, img_w = image_rgb.shape[:2]
+    boxes: dict[str, tuple[int, int, int, int]] = {}
+    for name, off in anchor_cfg["item_offsets"].items():
+        x = ax + int(off["dx"] * scale_x)
+        y = ay + int(off["dy"] * scale_y)
+        w = int(off["w"] * scale_x)
+        h = int(off["h"] * scale_y)
+        x = max(0, min(x, img_w - 1))
+        y = max(0, min(y, img_h - 1))
+        w = max(1, min(w, img_w - x))
+        h = max(1, min(h, img_h - y))
+        boxes[name] = (x, y, w, h)
+    meta["used"] = True
+    return boxes, meta
 
 
 def run_inference(
@@ -137,6 +221,17 @@ async def predict(file: UploadFile):
 
     regions = crop_config["regions"]
 
+    # Anchor-relative item boxes (if anchor configured + matched)
+    img_np = np.array(image)
+    item_boxes, anchor_meta = compute_item_boxes(
+        img_np, anchor_config, anchor_template, scale_x, scale_y
+    )
+    if anchor_meta["score"] is not None and not anchor_meta["used"]:
+        print(
+            f"anchor match below threshold ({anchor_meta['score']:.3f} < "
+            f"{anchor_config['match_threshold']}); falling back to fixed item crops"
+        )
+
     # Crop and preprocess
     hero_crops = []
     hero_names = []
@@ -144,10 +239,13 @@ async def predict(file: UploadFile):
     item_names = []
 
     for name, coords in regions.items():
-        x = int(coords["x"] * scale_x)
-        y = int(coords["y"] * scale_y)
-        w = int(coords["w"] * scale_x)
-        h = int(coords["h"] * scale_y)
+        if name in item_boxes:
+            x, y, w, h = item_boxes[name]
+        else:
+            x = int(coords["x"] * scale_x)
+            y = int(coords["y"] * scale_y)
+            w = int(coords["w"] * scale_x)
+            h = int(coords["h"] * scale_y)
 
         crop = image.crop((x, y, x + w, y + h))
         processed = preprocess_crop(crop)
@@ -160,7 +258,7 @@ async def predict(file: UploadFile):
             item_names.append(name)
 
     # Batch inference
-    response = {"heroes": {}, "items": {}}
+    response: dict = {"heroes": {}, "items": {}, "anchor": anchor_meta}
 
     if hero_crops:
         hero_batch = np.stack(hero_crops).astype(np.float32)

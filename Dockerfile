@@ -36,6 +36,7 @@ RUN pip install --no-cache-dir \
     tqdm==4.67.1 \
     requests==2.32.3 \
     imagehash==4.3.2 \
-    onnx==1.17.0
+    onnx==1.17.0 \
+    opencv-python-headless==4.10.0.84
 
 WORKDIR /workspace
