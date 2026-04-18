@@ -25,6 +25,7 @@ from pydantic import BaseModel
 
 from inference_service import (
     compute_canny_edges,
+    compute_item_boxes,
     compute_item_offsets,
     load_anchor_assets,
     preprocess_crop,
@@ -60,17 +61,26 @@ def load_class_list(path: Path) -> list[str]:
     return [raw[str(i)] for i in range(len(raw))]
 
 
-def crop_screenshot(image: Image.Image, crop_config: dict):
+def crop_screenshot(image: Image.Image, crop_config: dict,
+                    anchor_cfg=None, anchor_template=None):
+    """Yield (slot_name, crop, anchor_meta) per region. Uses anchor for items
+    when configured + matched; falls back to fixed coords otherwise."""
     img_w, img_h = image.size
     ref_w, ref_h = crop_config["reference_resolution"]
     sx = img_w / ref_w
     sy = img_h / ref_h
+    img_np = np.array(image)
+    item_boxes, anchor_meta = compute_item_boxes(
+        img_np, anchor_cfg, anchor_template, sx, sy)
     for name, c in crop_config["regions"].items():
-        x = int(c["x"] * sx)
-        y = int(c["y"] * sy)
-        w = int(c["w"] * sx)
-        h = int(c["h"] * sy)
-        yield name, image.crop((x, y, x + w, y + h))
+        if name in item_boxes:
+            x, y, w, h = item_boxes[name]
+        else:
+            x = int(c["x"] * sx)
+            y = int(c["y"] * sy)
+            w = int(c["w"] * sx)
+            h = int(c["h"] * sy)
+        yield name, image.crop((x, y, x + w, y + h)), anchor_meta
 
 
 def topk_predict(session, crops, class_names, k=3):
@@ -103,6 +113,14 @@ app = FastAPI(title="Dota 2 Labeler")
 
 def _build_data_payload() -> dict:
     """Crop every screenshot, run inference, build the JSON payload."""
+    # Re-read anchor each rebuild so re-calibrations take effect on /api/reload
+    state["anchor_cfg"], state["anchor_template"] = load_anchor_assets(WORKSPACE)
+    if state["anchor_template"] is not None:
+        print(f"Anchor enabled: {state['anchor_cfg']['anchor']!r} "
+              f"(threshold {state['anchor_cfg']['match_threshold']})")
+    else:
+        print("Anchor not configured; labeler will show fixed-coord crops")
+
     crop_config = state["crop_config"]
     region_names = state["region_names"]
     hero_classes = state["hero_classes"]
@@ -130,6 +148,7 @@ def _build_data_payload() -> dict:
 
     crops_b64 = {}
     preds = {}
+    anchor_per_screenshot: dict[str, dict] = {}
 
     print(f"Processing {len(screenshots)} screenshots...")
     for fname in screenshots:
@@ -138,9 +157,15 @@ def _build_data_payload() -> dict:
 
         slot_to_crop = {}
         slot_to_processed = {}
-        for slot, crop_img in crop_screenshot(image, crop_config):
+        anchor_meta_for_file: dict | None = None
+        for slot, crop_img, anchor_meta in crop_screenshot(
+                image, crop_config,
+                state.get("anchor_cfg"), state.get("anchor_template")):
             slot_to_crop[slot] = crop_img
             slot_to_processed[slot] = preprocess_crop(crop_img)
+            anchor_meta_for_file = anchor_meta
+        anchor_per_screenshot[fname] = anchor_meta_for_file or {
+            "used": False, "score": None, "anchor_xy": None}
 
         ht = topk_predict(state["hero_session"],
                           [slot_to_processed[s] for s in hero_slots],
@@ -167,6 +192,9 @@ def _build_data_payload() -> dict:
         "crops": crops_b64,
         "preds": preds,
         "initial_labels": labels,
+        "anchor_meta": anchor_per_screenshot,
+        "anchor_name": (state["anchor_cfg"]["anchor"]
+                        if state.get("anchor_cfg") else None),
     }
 
 
@@ -333,13 +361,16 @@ def calibrate_save(payload: CalibratePayload):
         canny_low=payload.canny_low, canny_high=payload.canny_high,
         reference_resolution=(img_w, img_h),
     )
+    # Rebuild the labeling payload so the labeler shows crops via the
+    # new anchor on its next page load (no manual reload needed).
+    state["data_payload"] = _build_data_payload()
     return {
         "status": "ok",
         "template_path": str(template_path),
         "offsets_path": str(offsets_path),
         "n_item_offsets": len(item_offsets),
         "edge_density": round(edge_density, 4),
-        "note": "restart the inference service to pick up the new anchor",
+        "note": "labeler refreshed; restart inference service to apply to /predict",
     }
 
 
@@ -392,8 +423,10 @@ HTML_PAGE = r"""<!doctype html>
   <h1>Dota 2 Labeler</h1>
   <div class="controls">
     <span id="progress">loading…</span>
+    <span id="anchorStatus" style="font-size:12px; color:#aaa;"></span>
     <span id="status">idle</span>
     <button class="secondary" id="reloadBtn" title="Re-scan screenshots dir">Reload screenshots</button>
+    <a href="/calibrate" class="secondary" style="text-decoration:none; padding:6px 12px; background:#555; color:white; border-radius:4px; font-size:12px;">Calibrate anchor</a>
   </div>
 </header>
 
@@ -431,7 +464,21 @@ function updateProgress() {
 
 function updateSummary(fname, sumEl) {
   const filled = DATA.slot_order.filter(s => state[fname][s] !== "").length;
-  sumEl.textContent = `${fname}  —  ${filled}/16 labeled`;
+  const a = (DATA.anchor_meta || {})[fname];
+  let tag = "";
+  if (a) {
+    if (a.used) tag = ` · anchor ${a.score.toFixed(2)}`;
+    else if (a.score !== null) tag = ` · anchor FB ${a.score.toFixed(2)}`;
+  }
+  sumEl.textContent = `${fname}  —  ${filled}/16 labeled${tag}`;
+}
+
+function updateAnchorStatus() {
+  const el = document.getElementById("anchorStatus");
+  if (!DATA.anchor_name) { el.textContent = "anchor: off"; return; }
+  const all = Object.values(DATA.anchor_meta || {});
+  const used = all.filter(a => a && a.used).length;
+  el.textContent = `anchor: ${DATA.anchor_name} (${used}/${all.length} matched)`;
 }
 
 function scheduleSave() {
@@ -545,6 +592,7 @@ async function loadData() {
     }
   }
   populateDatalists();
+  updateAnchorStatus();
   document.getElementById("loading").style.display = "none";
   render();
 }
