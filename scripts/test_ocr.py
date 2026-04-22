@@ -14,7 +14,7 @@ import requests
 
 def predict(host: str, image_path: Path) -> dict:
     with open(image_path, "rb") as f:
-        r = requests.post(f"{host}/predict", files={"file": f}, timeout=30)
+        r = requests.post(f"{host}/predict", files={"file": f}, timeout=120)
     r.raise_for_status()
     return r.json()
 
