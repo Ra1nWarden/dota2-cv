@@ -374,6 +374,431 @@ def calibrate_save(payload: CalibratePayload):
     }
 
 
+def save_talent_anchor_assets(
+    workspace: Path,
+    edges: np.ndarray,
+    anchor_bbox: tuple[int, int, int, int],
+    name_bbox: tuple[int, int, int, int],
+    match_threshold: float = 0.5,
+    canny_low: int = 80,
+    canny_high: int = 160,
+    reference_resolution: tuple[int, int] | None = None,
+) -> tuple[Path, Path]:
+    """Write talent anchor template PNG + talent_anchor_offsets.json."""
+    template_path = workspace / "configs" / "anchors" / "talent_edges.png"
+    offsets_path = workspace / "configs" / "talent_anchor_offsets.json"
+    template_path.parent.mkdir(parents=True, exist_ok=True)
+    cv2.imwrite(str(template_path), edges)
+    ax, ay, aw, ah = anchor_bbox
+    nx, ny, nw, nh = name_bbox
+    payload = {
+        "anchor": "talent",
+        "template_path": str(template_path.relative_to(workspace).as_posix()),
+        "reference_resolution": list(reference_resolution) if reference_resolution else None,
+        "anchor_bbox": {"x": ax, "y": ay, "w": aw, "h": ah},
+        "match_threshold": match_threshold,
+        "canny_low": canny_low,
+        "canny_high": canny_high,
+        "hero_name_region": {
+            "dx": nx - ax,
+            "dy": ny - ay,
+            "w": nw,
+            "h": nh,
+        },
+    }
+    offsets_path.write_text(json.dumps(payload, indent=2))
+    return template_path, offsets_path
+
+
+class TalentCalibratePayload(BaseModel):
+    anchor_x: int
+    anchor_y: int
+    anchor_w: int
+    anchor_h: int
+    name_x: int
+    name_y: int
+    name_w: int
+    name_h: int
+    canny_low: int = 80
+    canny_high: int = 160
+    match_threshold: float = 0.5
+
+
+@app.get("/calibrate/talent", response_class=HTMLResponse)
+def calibrate_talent_page():
+    return TALENT_CALIBRATE_HTML
+
+
+@app.get("/api/calibrate/talent/state")
+def calibrate_talent_state():
+    cfg_path = WORKSPACE / "configs" / "talent_anchor_offsets.json"
+    cfg = json.loads(cfg_path.read_text()) if cfg_path.exists() else None
+    img_h, img_w = (None, None)
+    if REFERENCE_SCREENSHOT_PATH.exists():
+        img = cv2.imread(str(REFERENCE_SCREENSHOT_PATH))
+        if img is not None:
+            img_h, img_w = img.shape[:2]
+    return {
+        "current": cfg,
+        "reference_size": [img_w, img_h] if img_w else None,
+    }
+
+
+@app.post("/api/calibrate/talent")
+def calibrate_talent_save(payload: TalentCalibratePayload):
+    for name, x, y, w, h in [
+        ("anchor", payload.anchor_x, payload.anchor_y, payload.anchor_w, payload.anchor_h),
+        ("name",   payload.name_x,   payload.name_y,   payload.name_w,   payload.name_h),
+    ]:
+        if w <= 0 or h <= 0:
+            raise HTTPException(400, f"{name} bbox: w and h must be positive")
+    img_rgb = _read_reference_rgb()
+    img_h, img_w = img_rgb.shape[:2]
+    for name, x, y, w, h in [
+        ("anchor", payload.anchor_x, payload.anchor_y, payload.anchor_w, payload.anchor_h),
+        ("name",   payload.name_x,   payload.name_y,   payload.name_w,   payload.name_h),
+    ]:
+        if x < 0 or y < 0 or x + w > img_w or y + h > img_h:
+            raise HTTPException(400, f"{name} bbox out of bounds for {img_w}x{img_h}")
+    edges = compute_canny_edges(
+        img_rgb,
+        (payload.anchor_x, payload.anchor_y, payload.anchor_w, payload.anchor_h),
+        payload.canny_low, payload.canny_high,
+    )
+    edge_density = float((edges > 0).sum()) / edges.size
+    template_path, offsets_path = save_talent_anchor_assets(
+        WORKSPACE, edges,
+        (payload.anchor_x, payload.anchor_y, payload.anchor_w, payload.anchor_h),
+        (payload.name_x,   payload.name_y,   payload.name_w,   payload.name_h),
+        match_threshold=payload.match_threshold,
+        canny_low=payload.canny_low,
+        canny_high=payload.canny_high,
+        reference_resolution=(img_w, img_h),
+    )
+    return {
+        "status": "ok",
+        "template_path": str(template_path),
+        "offsets_path": str(offsets_path),
+        "edge_density": round(edge_density, 4),
+        "hero_name_offset": {
+            "dx": payload.name_x - payload.anchor_x,
+            "dy": payload.name_y - payload.anchor_y,
+            "w": payload.name_w,
+            "h": payload.name_h,
+        },
+        "note": "restart inference service to apply to /predict",
+    }
+
+
+TALENT_CALIBRATE_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Talent Anchor Calibration</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font: 14px/1.5 monospace; background: #1a1a1a; color: #ccc; padding: 16px; }
+h1 { font-size: 16px; color: #fff; margin-bottom: 12px; }
+.layout { display: flex; gap: 16px; }
+.sidebar { width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; }
+.card { background: #242424; border: 1px solid #333; border-radius: 4px; padding: 12px; }
+.card h2 { font-size: 13px; color: #aaa; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em; }
+label { display: block; font-size: 12px; color: #888; margin-bottom: 2px; }
+input[type=number] { width: 100%; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font: inherit; }
+input[type=range] { width: 100%; }
+button { width: 100%; padding: 6px; border: none; border-radius: 3px; cursor: pointer; font: inherit; font-size: 13px; }
+.btn-preview { background: #2a4a6a; color: #9cf; }
+.btn-preview:hover { background: #35608a; }
+.btn-save { background: #2a5a2a; color: #9f9; margin-top: 4px; }
+.btn-save:hover:not(:disabled) { background: #357a35; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+.step-label { display: inline-block; background: #3a5a8a; color: #adf; border-radius: 3px; padding: 1px 6px; font-size: 11px; margin-right: 4px; }
+#status { font-size: 12px; min-height: 16px; }
+#status.ok { color: #9f9; }
+#status.err { color: #f99; }
+.preview-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.preview-row img { max-width: 180px; border: 1px solid #444; background: #111; }
+.image-wrap { position: relative; display: inline-block; flex: 1; min-width: 0; overflow: auto; max-height: 80vh; }
+.image-wrap img#ref { display: block; max-width: 100%; cursor: crosshair; user-select: none; }
+.bbox { position: absolute; border: 2px solid; pointer-events: none; display: none; }
+#anchorBox { border-color: #f80; }
+#nameBox   { border-color: #0cf; }
+.legend { font-size: 11px; color: #888; display: flex; gap: 12px; margin-top: 4px; }
+.legend span { display: flex; align-items: center; gap: 4px; }
+.dot { width: 10px; height: 10px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<h1>Talent Anchor Calibration</h1>
+<div class="layout">
+  <div class="sidebar">
+    <div class="card">
+      <h2><span class="step-label">1</span> Talent Indicator</h2>
+      <p style="font-size:12px;color:#888;margin-bottom:8px;">
+        Draw a box around the talent indicator (the diamond/tree upgrade widget
+        between the hero's ability icons and the Aghanim's area).
+      </p>
+      <label>X <input type="number" id="ax" value="0" min="0"></label>
+      <label>Y <input type="number" id="ay" value="0" min="0"></label>
+      <label>W <input type="number" id="aw" value="1" min="1"></label>
+      <label>H <input type="number" id="ah" value="1" min="1"></label>
+    </div>
+    <div class="card">
+      <h2><span class="step-label">2</span> Hero Name Label</h2>
+      <p style="font-size:12px;color:#888;margin-bottom:8px;">
+        Draw a box around the hero name text label
+        (the text above or on the hero portrait, to the left of the talent indicator).
+      </p>
+      <label>X <input type="number" id="nx" value="0" min="0"></label>
+      <label>Y <input type="number" id="ny" value="0" min="0"></label>
+      <label>W <input type="number" id="nw" value="1" min="1"></label>
+      <label>H <input type="number" id="nh" value="1" min="1"></label>
+    </div>
+    <div class="card">
+      <h2>Canny Thresholds</h2>
+      <label>Low: <span id="cannyLowVal">80</span>
+        <input type="range" id="cannyLow" min="1" max="500" value="80">
+      </label>
+      <label>High: <span id="cannyHighVal">160</span>
+        <input type="range" id="cannyHigh" min="1" max="500" value="160">
+      </label>
+      <label>Match threshold: <span id="matchThrVal">0.50</span>
+        <input type="range" id="matchThr" min="0.1" max="0.99" step="0.01" value="0.5">
+      </label>
+      <button class="btn-preview" id="previewBtn">Preview Edges</button>
+      <button class="btn-preview" id="cropPreviewBtn" style="margin-top:4px;">Preview Name Crop</button>
+      <div class="preview-row">
+        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Talent edges</div><img id="edgesPrev" alt=""></div>
+        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Name crop</div><img id="cropPrev" alt=""></div>
+      </div>
+    </div>
+    <div class="card">
+      <div id="status"></div>
+      <button class="btn-save" id="saveBtn" disabled>Save Talent Anchor</button>
+      <div style="margin-top:10px;">
+        <h2>Current config</h2>
+        <pre id="current" style="font-size:11px;color:#888;white-space:pre-wrap;">(loading…)</pre>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="legend">
+      <span><span class="dot" style="background:#f80;"></span> Talent indicator</span>
+      <span><span class="dot" style="background:#0cf;"></span> Hero name label</span>
+    </div>
+    <div class="image-wrap" id="imgWrap">
+      <img id="ref" src="/calibrate/reference.png" alt="reference screenshot">
+      <div class="bbox" id="anchorBox"></div>
+      <div class="bbox" id="nameBox"></div>
+    </div>
+  </div>
+</div>
+<script>
+const img = document.getElementById("ref");
+const ax = document.getElementById("ax"), ay = document.getElementById("ay");
+const aw = document.getElementById("aw"), ah = document.getElementById("ah");
+const nx = document.getElementById("nx"), ny = document.getElementById("ny");
+const nw = document.getElementById("nw"), nh = document.getElementById("nh");
+const cannyLow = document.getElementById("cannyLow");
+const cannyHigh = document.getElementById("cannyHigh");
+const matchThr = document.getElementById("matchThr");
+const cannyLowVal = document.getElementById("cannyLowVal");
+const cannyHighVal = document.getElementById("cannyHighVal");
+const matchThrVal = document.getElementById("matchThrVal");
+const edgesPrev = document.getElementById("edgesPrev");
+const cropPrev = document.getElementById("cropPrev");
+const status = document.getElementById("status");
+const saveBtn = document.getElementById("saveBtn");
+const anchorBox = document.getElementById("anchorBox");
+const nameBox = document.getElementById("nameBox");
+const currentEl = document.getElementById("current");
+
+let activeStep = 1;  // 1 = drawing anchor, 2 = drawing name label
+let dragStart = null;
+let displayScale = 1;
+let anchorBbox = null, nameBbox = null;
+
+function recomputeScale() {
+  if (!img.naturalWidth) return;
+  displayScale = img.clientWidth / img.naturalWidth;
+}
+function imgToDisplay(v) { return v * displayScale; }
+function displayToImg(v) { return Math.round(v / displayScale); }
+
+function clamp(b) {
+  const W = img.naturalWidth, H = img.naturalHeight;
+  let x = Math.max(0, Math.min(b.x, W - 1));
+  let y = Math.max(0, Math.min(b.y, H - 1));
+  let w = Math.max(1, Math.min(b.w, W - x));
+  let h = Math.max(1, Math.min(b.h, H - y));
+  return {x, y, w, h};
+}
+
+function renderBox(el, b) {
+  if (!b) { el.style.display = "none"; return; }
+  el.style.display = "block";
+  el.style.left = imgToDisplay(b.x) + "px";
+  el.style.top  = imgToDisplay(b.y) + "px";
+  el.style.width  = imgToDisplay(b.w) + "px";
+  el.style.height = imgToDisplay(b.h) + "px";
+}
+
+function setAnchor(b, fromInput) {
+  anchorBbox = clamp(b);
+  if (!fromInput) { ax.value = anchorBbox.x; ay.value = anchorBbox.y; aw.value = anchorBbox.w; ah.value = anchorBbox.h; }
+  renderBox(anchorBox, anchorBbox);
+  checkSaveReady();
+}
+
+function setName(b, fromInput) {
+  nameBbox = clamp(b);
+  if (!fromInput) { nx.value = nameBbox.x; ny.value = nameBbox.y; nw.value = nameBbox.w; nh.value = nameBbox.h; }
+  renderBox(nameBox, nameBbox);
+  checkSaveReady();
+}
+
+function checkSaveReady() {
+  saveBtn.disabled = !(anchorBbox && nameBbox);
+}
+
+function eventToImg(ev) {
+  const rect = img.getBoundingClientRect();
+  return { x: displayToImg(ev.clientX - rect.left), y: displayToImg(ev.clientY - rect.top) };
+}
+
+img.addEventListener("mousedown", ev => {
+  ev.preventDefault();
+  recomputeScale();
+  dragStart = eventToImg(ev);
+  // Determine active step from which area we're drawing in:
+  // if click is near existing anchorBbox area or step toggle — use heuristic: alt key = name step
+  activeStep = ev.altKey ? 2 : 1;
+});
+window.addEventListener("mousemove", ev => {
+  if (!dragStart) return;
+  const cur = eventToImg(ev);
+  const x = Math.min(dragStart.x, cur.x), y = Math.min(dragStart.y, cur.y);
+  const w = Math.abs(cur.x - dragStart.x), h = Math.abs(cur.y - dragStart.y);
+  if (w < 2 || h < 2) return;
+  if (activeStep === 1) setAnchor({x, y, w, h});
+  else setName({x, y, w, h});
+});
+window.addEventListener("mouseup", () => { dragStart = null; });
+
+// Keyboard: 1/2 to switch step, arrows to nudge
+window.addEventListener("keydown", ev => {
+  if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+  if (ev.key === "1") { activeStep = 1; status.textContent = "drawing: talent indicator"; status.className = ""; return; }
+  if (ev.key === "2") { activeStep = 2; status.textContent = "drawing: hero name label"; status.className = ""; return; }
+  const step = ev.shiftKey ? 10 : 1;
+  const b = activeStep === 1 ? anchorBbox : nameBbox;
+  if (!b) return;
+  let {x, y, w, h} = b;
+  if (ev.key === "ArrowLeft")  x -= step;
+  else if (ev.key === "ArrowRight") x += step;
+  else if (ev.key === "ArrowUp")    y -= step;
+  else if (ev.key === "ArrowDown")  y += step;
+  else return;
+  ev.preventDefault();
+  if (activeStep === 1) setAnchor({x, y, w, h});
+  else setName({x, y, w, h});
+});
+
+[ax, ay, aw, ah].forEach(el => el.addEventListener("input", () => {
+  setAnchor({x: +ax.value||0, y: +ay.value||0, w: +aw.value||1, h: +ah.value||1}, true);
+}));
+[nx, ny, nw, nh].forEach(el => el.addEventListener("input", () => {
+  setName({x: +nx.value||0, y: +ny.value||0, w: +nw.value||1, h: +nh.value||1}, true);
+}));
+
+cannyLow.addEventListener("input", () => cannyLowVal.textContent = cannyLow.value);
+cannyHigh.addEventListener("input", () => cannyHighVal.textContent = cannyHigh.value);
+matchThr.addEventListener("input", () => matchThrVal.textContent = parseFloat(matchThr.value).toFixed(2));
+
+document.getElementById("previewBtn").addEventListener("click", async () => {
+  if (!anchorBbox) { status.textContent = "draw talent indicator box first (Step 1)"; status.className = "err"; return; }
+  status.textContent = "rendering…"; status.className = "";
+  const qs = new URLSearchParams({x: anchorBbox.x, y: anchorBbox.y, w: anchorBbox.w, h: anchorBbox.h,
+    canny_low: cannyLow.value, canny_high: cannyHigh.value, kind: "edges", t: Date.now()});
+  edgesPrev.src = "/api/calibrate/preview?" + qs;
+  edgesPrev.onload = () => { status.textContent = "edges ready"; status.className = "ok"; };
+  edgesPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
+});
+
+document.getElementById("cropPreviewBtn").addEventListener("click", async () => {
+  if (!nameBbox) { status.textContent = "draw hero name label box first (Step 2)"; status.className = "err"; return; }
+  status.textContent = "rendering…"; status.className = "";
+  const qs = new URLSearchParams({x: nameBbox.x, y: nameBbox.y, w: nameBbox.w, h: nameBbox.h,
+    kind: "crop", t: Date.now()});
+  cropPrev.src = "/api/calibrate/preview?" + qs;
+  cropPrev.onload = () => { status.textContent = "name crop ready"; status.className = "ok"; };
+  cropPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
+});
+
+saveBtn.addEventListener("click", async () => {
+  if (!anchorBbox || !nameBbox) return;
+  status.textContent = "saving…"; status.className = "";
+  try {
+    const res = await fetch("/api/calibrate/talent", {
+      method: "POST",
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify({
+        anchor_x: anchorBbox.x, anchor_y: anchorBbox.y,
+        anchor_w: anchorBbox.w, anchor_h: anchorBbox.h,
+        name_x: nameBbox.x,   name_y: nameBbox.y,
+        name_w: nameBbox.w,   name_h: nameBbox.h,
+        canny_low: parseInt(cannyLow.value),
+        canny_high: parseInt(cannyHigh.value),
+        match_threshold: parseFloat(matchThr.value),
+      }),
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    const off = data.hero_name_offset;
+    status.textContent = `saved · edge density ${(data.edge_density*100).toFixed(1)}% · name offset dx=${off.dx} dy=${off.dy}. Restart inference to apply.`;
+    status.className = "ok";
+    loadState();
+  } catch(err) {
+    status.textContent = "save failed: " + err.message;
+    status.className = "err";
+  }
+});
+
+async function loadState() {
+  const res = await fetch("/api/calibrate/talent/state");
+  const data = await res.json();
+  if (data.current) {
+    const c = data.current, b = c.anchor_bbox, r = c.hero_name_region;
+    currentEl.textContent =
+      `anchor:  x=${b.x} y=${b.y} w=${b.w} h=${b.h}\n` +
+      `name:    dx=${r.dx} dy=${r.dy} w=${r.w} h=${r.h}\n` +
+      `canny:   low=${c.canny_low} high=${c.canny_high}\n` +
+      `thresh:  ${c.match_threshold}`;
+    if (!anchorBbox) {
+      cannyLow.value = c.canny_low; cannyLowVal.textContent = c.canny_low;
+      cannyHigh.value = c.canny_high; cannyHighVal.textContent = c.canny_high;
+      matchThr.value = c.match_threshold; matchThrVal.textContent = c.match_threshold.toFixed(2);
+      const restore = () => {
+        recomputeScale();
+        setAnchor(b);
+        setName({x: b.x + r.dx, y: b.y + r.dy, w: r.w, h: r.h});
+      };
+      img.complete && img.naturalWidth ? restore() : img.addEventListener("load", restore, {once: true});
+    }
+  } else {
+    currentEl.textContent = "(none — not calibrated yet)\n\nInstructions:\n  Draw talent box → press 2 → draw name box → Save";
+  }
+}
+
+img.addEventListener("load", recomputeScale);
+window.addEventListener("resize", () => { recomputeScale(); renderBox(anchorBox, anchorBbox); renderBox(nameBox, nameBbox); });
+status.textContent = "Press 1 to draw talent indicator, 2 to draw name label (or hold Alt while dragging for name)";
+loadState();
+</script>
+</body>
+</html>"""
+
+
 @app.get("/", response_class=HTMLResponse)
 def index():
     return HTML_PAGE

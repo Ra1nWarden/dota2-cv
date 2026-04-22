@@ -43,6 +43,12 @@ crop_config: dict = {}
 anchor_config: dict | None = None
 anchor_template: np.ndarray | None = None  # uint8 grayscale Canny edges
 
+talent_anchor_config: dict | None = None
+talent_anchor_template: np.ndarray | None = None
+ocr_reader = None                     # easyocr.Reader, initialized at startup
+hero_display_names: dict[str, str] = {}  # display_name → GSI internal name
+last_known_hero: str | None = None    # cached across frames (single worker)
+
 app = FastAPI(title="Dota 2 Icon Classifier")
 
 
@@ -83,6 +89,32 @@ def load_models():
         )
     else:
         print("Anchor not configured; using fixed item crops")
+
+    # Talent indicator anchor for hero name OCR
+    global talent_anchor_config, talent_anchor_template, ocr_reader, hero_display_names
+    talent_anchor_config, talent_anchor_template = load_anchor_assets(
+        WORKSPACE, config_filename="talent_anchor_offsets.json"
+    )
+    if talent_anchor_template is not None:
+        th, tw = talent_anchor_template.shape
+        print(
+            f"Talent anchor enabled: template {tw}x{th}, "
+            f"threshold={talent_anchor_config['match_threshold']}"
+        )
+    else:
+        print("Talent anchor not configured; hero_name will not be returned")
+
+    # Hero display name lookup table (EN + ZH → GSI internal name)
+    dn_path = WORKSPACE / "configs" / "hero_display_names.json"
+    if dn_path.exists():
+        with open(dn_path) as f:
+            hero_display_names = json.load(f)
+        print(f"Loaded {len(hero_display_names)} hero display name entries")
+
+    # EasyOCR reader (weights pre-baked in Docker image)
+    import easyocr
+    ocr_reader = easyocr.Reader(["en", "ch_sim"], gpu=True)
+    print("EasyOCR reader initialized")
 
     print(f"Loaded hero model: {len(hero_classes)} classes")
     print(f"Loaded item model: {len(item_classes)} classes")
@@ -178,9 +210,12 @@ def save_anchor_assets(
     return template_path, offsets_path
 
 
-def load_anchor_assets(workspace: Path) -> tuple[dict | None, np.ndarray | None]:
+def load_anchor_assets(
+    workspace: Path,
+    config_filename: str = "anchor_offsets.json",
+) -> tuple[dict | None, np.ndarray | None]:
     """Load anchor config + template PNG from workspace, or (None, None)."""
-    cfg_path = workspace / "configs" / "anchor_offsets.json"
+    cfg_path = workspace / "configs" / config_filename
     if not cfg_path.exists():
         return None, None
     with open(cfg_path) as f:
@@ -268,6 +303,55 @@ def health():
     return {"status": "ok"}
 
 
+def preprocess_for_ocr(crop_rgb: np.ndarray) -> np.ndarray:
+    """Upscale 3× and apply CLAHE to sharpen hero name text before OCR."""
+    h, w = crop_rgb.shape[:2]
+    crop = cv2.resize(crop_rgb, (w * 3, h * 3), interpolation=cv2.INTER_CUBIC)
+    lab = cv2.cvtColor(crop, cv2.COLOR_RGB2LAB)
+    l, a, b = cv2.split(lab)
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    lab = cv2.merge([clahe.apply(l), a, b])
+    return cv2.cvtColor(lab, cv2.COLOR_LAB2RGB)
+
+
+def resolve_hero_name(ocr_text: str) -> str | None:
+    """Map OCR output (EN or ZH display name) to GSI internal hero name."""
+    from difflib import get_close_matches
+    if not ocr_text or not hero_display_names:
+        return None
+    if ocr_text in hero_display_names:
+        return hero_display_names[ocr_text]
+    candidates = get_close_matches(ocr_text, hero_display_names.keys(), n=1, cutoff=0.75)
+    if candidates:
+        return hero_display_names[candidates[0]]
+    return None
+
+
+def read_focused_hero(image_rgb: np.ndarray, scale_x: float, scale_y: float) -> str | None:
+    """Identify the focused hero via talent-anchor OCR; return last known on failure."""
+    global last_known_hero
+    if talent_anchor_config is None or talent_anchor_template is None or ocr_reader is None:
+        return last_known_hero
+    score, ax, ay = find_anchor(image_rgb, talent_anchor_config, talent_anchor_template)
+    if score < talent_anchor_config["match_threshold"]:
+        return last_known_hero
+    r = talent_anchor_config["hero_name_region"]
+    x = max(0, ax + int(r["dx"] * scale_x))
+    y = max(0, ay + int(r["dy"] * scale_y))
+    w = max(1, int(r["w"] * scale_x))
+    h = max(1, int(r["h"] * scale_y))
+    img_h, img_w = image_rgb.shape[:2]
+    x = min(x, img_w - 1); y = min(y, img_h - 1)
+    w = min(w, img_w - x); h = min(h, img_h - y)
+    crop = preprocess_for_ocr(image_rgb[y:y + h, x:x + w])
+    results = ocr_reader.readtext(crop, detail=0, paragraph=False)
+    if results:
+        resolved = resolve_hero_name(results[0].strip())
+        if resolved:
+            last_known_hero = resolved
+    return last_known_hero
+
+
 @app.post("/predict")
 async def predict(file: UploadFile):
     # Decode image
@@ -319,7 +403,7 @@ async def predict(file: UploadFile):
             item_names.append(name)
 
     # Batch inference
-    response: dict = {"heroes": {}, "items": {}, "anchor": anchor_meta}
+    response: dict = {"heroes": {}, "items": {}, "hero_name": None, "anchor": anchor_meta}
 
     if hero_crops:
         hero_batch = np.stack(hero_crops).astype(np.float32)
@@ -332,5 +416,7 @@ async def predict(file: UploadFile):
         item_results = run_inference(item_session, item_batch, item_classes)
         for name, result in zip(item_names, item_results):
             response["items"][name] = result
+
+    response["hero_name"] = read_focused_hero(img_np, scale_x, scale_y)
 
     return response

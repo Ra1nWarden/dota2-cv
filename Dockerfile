@@ -39,4 +39,10 @@ RUN pip install --no-cache-dir \
     onnx==1.17.0 \
     opencv-python-headless==4.10.0.84
 
+# EasyOCR for hero name identification
+RUN pip install --no-cache-dir easyocr==1.7.2
+
+# Pre-bake EasyOCR model weights so first container start is fast
+RUN python3 -c "import easyocr; easyocr.Reader(['en', 'ch_sim'], gpu=False)"
+
 WORKDIR /workspace
