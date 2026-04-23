@@ -3,3 +3,4 @@ data/test_screenshots/
 __pycache__/
 runs/
 .DS_Store
+*.db

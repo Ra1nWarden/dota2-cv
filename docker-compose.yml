@@ -44,6 +44,21 @@ services:
       - GSI_AUTH_TOKEN=dota2_coaching_secret
     restart: unless-stopped
 
+  state_fuser:
+    image: *image
+    working_dir: /workspace
+    command: uvicorn state_fuser_service:app --host 0.0.0.0 --port 8083 --workers 1
+    volumes: *workspace
+    ports:
+      - "18083:8083"
+    environment:
+      - WORKSPACE=/workspace
+      - GSI_AUTH_TOKEN=dota2_coaching_secret
+      - INFERENCE_SERVICE_URL=http://inference:8080
+    depends_on:
+      - inference
+    restart: unless-stopped
+
   tensorboard:
     image: *image
     working_dir: /workspace
