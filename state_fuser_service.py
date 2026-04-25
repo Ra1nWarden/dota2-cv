@@ -198,12 +198,12 @@ def _strip_item_prefix(name: str) -> str:
     return name or ""
 
 
-def _heroes_from_minimap() -> tuple[list[str], list[str]]:
+def _heroes_from_minimap(gs: dict) -> tuple[list[str], list[str]]:
     """Return (radiant_heroes, dire_heroes) deduplicated from the minimap block."""
     radiant: list[str] = []
     dire: list[str] = []
     seen: set[str] = set()
-    for entry in game_state.get("minimap", {}).values():
+    for entry in gs.get("minimap", {}).values():
         if not isinstance(entry, dict):
             continue
         unitname = entry.get("unitname", "")
@@ -218,12 +218,12 @@ def _heroes_from_minimap() -> tuple[list[str], list[str]]:
     return radiant, dire
 
 
-def _build_slot_hero_map() -> dict[int, str]:
+def _build_slot_hero_map(gs: dict, cvs: dict) -> dict[int, str]:
     slot_hero: dict[int, str] = {}
 
     # Pass 1: spectator team blocks (team2/team3) — populated in spectator mode
     for team_key, slot_base in (("team2", 0), ("team3", 5)):
-        team_block = game_state.get(team_key, {})
+        team_block = gs.get(team_key, {})
         for i, player_obj in enumerate(team_block.values()):
             if not isinstance(player_obj, dict):
                 continue
@@ -242,7 +242,7 @@ def _build_slot_hero_map() -> dict[int, str]:
         if slot in slot_hero:
             continue
         cv_key = cv_slot_names[slot]
-        for hero_name, inference in cv_state.items():
+        for hero_name, inference in cvs.items():
             heroes_block = inference.get("heroes", {})
             entry = heroes_block.get(cv_key, {})
             confidence = entry.get("confidence", 0.0)
@@ -253,7 +253,7 @@ def _build_slot_hero_map() -> dict[int, str]:
 
     # Pass 3: minimap hero entries — fills any remaining unknown slots
     assigned = set(slot_hero.values())
-    radiant_mm, dire_mm = _heroes_from_minimap()
+    radiant_mm, dire_mm = _heroes_from_minimap(gs)
     unassigned_radiant = [h for h in radiant_mm if h not in assigned]
     unassigned_dire = [h for h in dire_mm if h not in assigned]
     ri = di = 0
@@ -270,8 +270,8 @@ def _build_slot_hero_map() -> dict[int, str]:
     return slot_hero
 
 
-def _cv_items_for_hero(hero: str) -> list[str]:
-    inference = cv_state.get(hero, {})
+def _cv_items_for_hero(hero: str, cvs: dict) -> list[str]:
+    inference = cvs.get(hero, {})
     items: list[str] = []
     for val in inference.get("items", {}).values():
         if not isinstance(val, dict):
@@ -282,8 +282,8 @@ def _cv_items_for_hero(hero: str) -> list[str]:
     return items
 
 
-def _gsi_own_items() -> list[str]:
-    items_block = game_state.get("items", {})
+def _gsi_own_items(gs: dict) -> list[str]:
+    items_block = gs.get("items", {})
     result: list[str] = []
     for i in range(6):
         raw = items_block.get(f"slot{i}", {})
@@ -294,12 +294,9 @@ def _gsi_own_items() -> list[str]:
     return result
 
 
-@app.get("/fused")
-def fused() -> dict:
-    map_block = game_state.get("map", {})
-    clock_time = map_block.get("clock_time")
-
-    player_block = game_state.get("player", {})
+def _build_fused_response(gs: dict, cvs: dict) -> dict:
+    map_block = gs.get("map", {})
+    player_block = gs.get("player", {})
     player_team = player_block.get("team_name", "")
     player_team_slot = player_block.get("team_slot")
 
@@ -309,16 +306,43 @@ def fused() -> dict:
     elif player_team == "dire" and player_team_slot is not None:
         player_slot = 5 + int(player_team_slot)
 
-    slot_hero = _build_slot_hero_map()
+    slot_hero = _build_slot_hero_map(gs, cvs)
 
     def build_entry(slot: int) -> dict:
         hero = slot_hero.get(slot, "")
         is_player = slot == player_slot
-        items = _gsi_own_items() if is_player else _cv_items_for_hero(hero)
+        items = _gsi_own_items(gs) if is_player else _cv_items_for_hero(hero, cvs)
         return {"hero": hero, "is_player": is_player, "items": items}
 
     return {
-        "game_time_s": clock_time,
+        "game_time_s": map_block.get("clock_time"),
         "radiant": [build_entry(s) for s in range(5)],
         "dire": [build_entry(s) for s in range(5, 10)],
     }
+
+
+@app.get("/fused")
+def fused() -> dict:
+    return _build_fused_response(game_state, cv_state)
+
+
+@app.get("/fused/{game_id}")
+def fused_game(game_id: str) -> dict:
+    row = db.execute(
+        "SELECT payload FROM snapshots WHERE matchid = ? ORDER BY clock_time DESC LIMIT 1",
+        (game_id,),
+    ).fetchone()
+    if row is None:
+        raise HTTPException(status_code=404, detail=f"no snapshots for game_id={game_id}")
+    gs = json.loads(row["payload"])
+
+    cv_rows = db.execute(
+        "SELECT hero, inference FROM cv_snapshots WHERE matchid = ? ORDER BY clock_time DESC",
+        (game_id,),
+    ).fetchall()
+    cvs: dict[str, dict] = {}
+    for cv_row in cv_rows:
+        if cv_row["hero"] not in cvs:
+            cvs[cv_row["hero"]] = json.loads(cv_row["inference"])
+
+    return _build_fused_response(gs, cvs)
