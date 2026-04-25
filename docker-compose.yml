@@ -10,39 +10,39 @@ x-gpu: &gpu
           capabilities: [gpu]
 
 services:
-  inference:
-    image: *image
-    working_dir: /workspace
-    command: uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
-    volumes: *workspace
-    deploy: *gpu
-    ports:
-      - "18080:8080"
-    shm_size: 2g
-    restart: unless-stopped
+#  inference:
+#    image: *image
+#    working_dir: /workspace
+#    command: uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
+#    volumes: *workspace
+#    deploy: *gpu
+#    ports:
+#      - "18080:8080"
+#    shm_size: 2g
+#    restart: unless-stopped
 
-  labeling:
-    image: *image
-    working_dir: /workspace
-    command: uvicorn label_service:app --host 0.0.0.0 --port 8081 --workers 1
-    volumes: *workspace
-    deploy: *gpu
-    ports:
-      - "18081:8081"
-    shm_size: 2g
-    restart: unless-stopped
+#  labeling:
+#    image: *image
+#    working_dir: /workspace
+#    command: uvicorn label_service:app --host 0.0.0.0 --port 8081 --workers 1
+#    volumes: *workspace
+#    deploy: *gpu
+#    ports:
+#      - "18081:8081"
+#    shm_size: 2g
+#    restart: unless-stopped
 
-  gsi:
-    image: *image
-    working_dir: /workspace
-    command: uvicorn gsi_service:app --host 0.0.0.0 --port 8082 --workers 1
-    volumes: *workspace
-    ports:
-      - "18082:8082"
-    environment:
-      - WORKSPACE=/workspace
-      - GSI_AUTH_TOKEN=dota2_coaching_secret
-    restart: unless-stopped
+#  gsi:
+#    image: *image
+#    working_dir: /workspace
+#    command: uvicorn gsi_service:app --host 0.0.0.0 --port 8082 --workers 1
+#    volumes: *workspace
+#    ports:
+#      - "18082:8082"
+#    environment:
+#      - WORKSPACE=/workspace
+#      - GSI_AUTH_TOKEN=dota2_coaching_secret
+#    restart: unless-stopped
 
   state_fuser:
     image: *image
@@ -55,15 +55,15 @@ services:
       - WORKSPACE=/workspace
       - GSI_AUTH_TOKEN=dota2_coaching_secret
       - INFERENCE_SERVICE_URL=http://inference:8080
-    depends_on:
-      - inference
+#    depends_on:
+#      - inference
     restart: unless-stopped
 
-  tensorboard:
-    image: *image
-    working_dir: /workspace
-    command: tensorboard --logdir=/workspace/runs --host=0.0.0.0 --port=6006
-    volumes: *workspace
-    ports:
-      - "16006:6006"
-    restart: unless-stopped
+#  tensorboard:
+#    image: *image
+#    working_dir: /workspace
+#    command: tensorboard --logdir=/workspace/runs --host=0.0.0.0 --port=6006
+#    volumes: *workspace
+#    ports:
+#      - "16006:6006"
+#    restart: unless-stopped
