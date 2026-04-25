@@ -198,9 +198,30 @@ def _strip_item_prefix(name: str) -> str:
     return name or ""
 
 
+def _heroes_from_minimap() -> tuple[list[str], list[str]]:
+    """Return (radiant_heroes, dire_heroes) deduplicated from the minimap block."""
+    radiant: list[str] = []
+    dire: list[str] = []
+    seen: set[str] = set()
+    for entry in game_state.get("minimap", {}).values():
+        if not isinstance(entry, dict):
+            continue
+        unitname = entry.get("unitname", "")
+        if not unitname.startswith("npc_dota_hero_") or unitname in seen:
+            continue
+        seen.add(unitname)
+        hero = _strip_hero_prefix(unitname)
+        if entry.get("team") == 2:
+            radiant.append(hero)
+        elif entry.get("team") == 3:
+            dire.append(hero)
+    return radiant, dire
+
+
 def _build_slot_hero_map() -> dict[int, str]:
     slot_hero: dict[int, str] = {}
 
+    # Pass 1: spectator team blocks (team2/team3) — populated in spectator mode
     for team_key, slot_base in (("team2", 0), ("team3", 5)):
         team_block = game_state.get(team_key, {})
         for i, player_obj in enumerate(team_block.values()):
@@ -210,6 +231,7 @@ def _build_slot_hero_map() -> dict[int, str]:
             if hero_raw:
                 slot_hero[slot_base + i] = _strip_hero_prefix(hero_raw)
 
+    # Pass 2: CV scoreboard detections
     cv_slot_names = {
         0: "radiant_hero_1", 1: "radiant_hero_2", 2: "radiant_hero_3",
         3: "radiant_hero_4", 4: "radiant_hero_5",
@@ -229,7 +251,47 @@ def _build_slot_hero_map() -> dict[int, str]:
                 slot_hero[slot] = _strip_hero_prefix(class_name)
                 break
 
+    # Pass 3: minimap hero entries — fills any remaining unknown slots
+    assigned = set(slot_hero.values())
+    radiant_mm, dire_mm = _heroes_from_minimap()
+    unassigned_radiant = [h for h in radiant_mm if h not in assigned]
+    unassigned_dire = [h for h in dire_mm if h not in assigned]
+    ri = di = 0
+    for slot in range(10):
+        if slot in slot_hero:
+            continue
+        if slot < 5 and ri < len(unassigned_radiant):
+            slot_hero[slot] = unassigned_radiant[ri]
+            ri += 1
+        elif slot >= 5 and di < len(unassigned_dire):
+            slot_hero[slot] = unassigned_dire[di]
+            di += 1
+
     return slot_hero
+
+
+def _cv_items_for_hero(hero: str) -> list[str]:
+    inference = cv_state.get(hero, {})
+    items: list[str] = []
+    for val in inference.get("items", {}).values():
+        if not isinstance(val, dict):
+            continue
+        cls = _strip_item_prefix(val.get("class", ""))
+        if cls and cls != "empty" and val.get("confidence", 0.0) >= CV_ITEM_CONF_THRESHOLD:
+            items.append(cls)
+    return items
+
+
+def _gsi_own_items() -> list[str]:
+    items_block = game_state.get("items", {})
+    result: list[str] = []
+    for i in range(6):
+        raw = items_block.get(f"slot{i}", {})
+        name = raw.get("name", "") if isinstance(raw, dict) else str(raw)
+        stripped = _strip_item_prefix(name)
+        if stripped and stripped != "empty":
+            result.append(stripped)
+    return result
 
 
 @app.get("/fused")
@@ -249,73 +311,14 @@ def fused() -> dict:
 
     slot_hero = _build_slot_hero_map()
 
-    items_block = game_state.get("items", {})
-    own_items: list[str] = []
-    for i in range(6):
-        raw = items_block.get(f"slot{i}", {})
-        if isinstance(raw, dict):
-            name = raw.get("name", "")
-        else:
-            name = str(raw)
-        stripped = _strip_item_prefix(name)
-        if stripped and stripped != "empty":
-            own_items.append(stripped)
-
-    abilities_block = game_state.get("abilities", {})
-    own_abilities: dict[str, dict] = {}
-    for key, val in abilities_block.items():
-        if not isinstance(val, dict):
-            continue
-        ability_name = val.get("name", key)
-        own_abilities[ability_name] = {
-            "level": val.get("level", 0),
-            "cooldown": val.get("cooldown", 0),
-        }
-
     def build_entry(slot: int) -> dict:
-        is_player = slot == player_slot
         hero = slot_hero.get(slot, "")
-        entry: dict = {
-            "slot": slot,
-            "hero": hero,
-            "is_player": is_player,
-        }
-        if is_player:
-            hero_block = game_state.get("hero", {})
-            entry["hp"] = hero_block.get("health", 0)
-            entry["hp_max"] = hero_block.get("max_health", 0)
-            entry["mana"] = hero_block.get("mana", 0)
-            entry["mana_max"] = hero_block.get("max_mana", 0)
-            entry["alive"] = hero_block.get("alive", True)
-            entry["gold"] = player_block.get("gold", 0)
-            entry["abilities"] = own_abilities
-            entry["items"] = own_items
-            entry["items_game_time_s"] = None
-        else:
-            entry["items"] = []
-            entry["items_game_time_s"] = None
-        return entry
-
-    radiant = [build_entry(s) for s in range(5)]
-    dire = [build_entry(s) for s in range(5, 10)]
-
-    heroes_raw: dict[str, dict] = {}
-    items_raw: dict[str, dict] = {}
-    for hero_name, inference in cv_state.items():
-        heroes_raw[hero_name] = inference.get("heroes", {})
-        items_raw[hero_name] = inference.get("items", {})
+        is_player = slot == player_slot
+        items = _gsi_own_items() if is_player else _cv_items_for_hero(hero)
+        return {"hero": hero, "is_player": is_player, "items": items}
 
     return {
         "game_time_s": clock_time,
-        "radiant": radiant,
-        "dire": dire,
-        "map": {
-            "roshan_state": map_block.get("roshan_state"),
-            "clock_time": clock_time,
-            "daytime": map_block.get("daytime"),
-        },
-        "cv": {
-            "heroes_raw": heroes_raw,
-            "items_raw": items_raw,
-        },
+        "radiant": [build_entry(s) for s in range(5)],
+        "dire": [build_entry(s) for s in range(5, 10)],
     }
