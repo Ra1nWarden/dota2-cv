@@ -10,16 +10,16 @@ x-gpu: &gpu
           capabilities: [gpu]
 
 services:
-#  inference:
-#    image: *image
-#    working_dir: /workspace
-#    command: uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
-#    volumes: *workspace
-#    deploy: *gpu
-#    ports:
-#      - "18080:8080"
-#    shm_size: 2g
-#    restart: unless-stopped
+  inference:
+    image: *image
+    working_dir: /workspace
+    command: uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
+    volumes: *workspace
+    deploy: *gpu
+    ports:
+      - "18080:8080"
+    shm_size: 2g
+    restart: unless-stopped
 
 #  labeling:
 #    image: *image
@@ -55,8 +55,8 @@ services:
       - WORKSPACE=/workspace
       - GSI_AUTH_TOKEN=dota2_coaching_secret
       - INFERENCE_SERVICE_URL=http://inference:8080
-#    depends_on:
-#      - inference
+    depends_on:
+      - inference
     restart: unless-stopped
 
 #  tensorboard:
