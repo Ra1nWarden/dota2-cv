@@ -35,6 +35,7 @@ RUN pip install --no-cache-dir \
     tensorboard==2.19.0 \
     tqdm==4.67.1 \
     requests==2.32.3 \
+    httpx==0.28.1 \
     imagehash==4.3.2 \
     onnx==1.17.0 \
     opencv-python-headless==4.10.0.84
