@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Talent Anchor Calibration</title>
+<link rel="stylesheet" href="static/talent.css">
+</head>
+<body>
+<h1>Talent Anchor Calibration</h1>
+<div class="layout">
+  <div class="sidebar">
+    <div class="card">
+      <h2><span class="step-label">1</span> Talent Indicator</h2>
+      <p style="font-size:12px;color:#888;margin-bottom:8px;">
+        Draw a box around the talent indicator (the diamond/tree upgrade widget
+        between the hero's ability icons and the Aghanim's area).
+      </p>
+      <label>X <input type="number" id="ax" value="0" min="0"></label>
+      <label>Y <input type="number" id="ay" value="0" min="0"></label>
+      <label>W <input type="number" id="aw" value="1" min="1"></label>
+      <label>H <input type="number" id="ah" value="1" min="1"></label>
+    </div>
+    <div class="card">
+      <h2><span class="step-label">2</span> Hero Name Label</h2>
+      <p style="font-size:12px;color:#888;margin-bottom:8px;">
+        Draw a box around the hero name text label
+        (the text above or on the hero portrait, to the left of the talent indicator).
+      </p>
+      <label>X <input type="number" id="nx" value="0" min="0"></label>
+      <label>Y <input type="number" id="ny" value="0" min="0"></label>
+      <label>W <input type="number" id="nw" value="1" min="1"></label>
+      <label>H <input type="number" id="nh" value="1" min="1"></label>
+    </div>
+    <div class="card">
+      <h2>Canny Thresholds</h2>
+      <label>Low: <span id="cannyLowVal">80</span>
+        <input type="range" id="cannyLow" min="1" max="500" value="80">
+      </label>
+      <label>High: <span id="cannyHighVal">160</span>
+        <input type="range" id="cannyHigh" min="1" max="500" value="160">
+      </label>
+      <label>Match threshold: <span id="matchThrVal">0.50</span>
+        <input type="range" id="matchThr" min="0.1" max="0.99" step="0.01" value="0.5">
+      </label>
+      <button class="btn-preview" id="previewBtn">Preview Edges</button>
+      <button class="btn-preview" id="cropPreviewBtn" style="margin-top:4px;">Preview Name Crop</button>
+      <div class="preview-row">
+        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Talent edges</div><img id="edgesPrev" alt=""></div>
+        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Name crop</div><img id="cropPrev" alt=""></div>
+      </div>
+    </div>
+    <div class="card">
+      <div id="status"></div>
+      <button class="btn-save" id="saveBtn" disabled>Save Talent Anchor</button>
+      <div style="margin-top:10px;">
+        <h2>Current config</h2>
+        <pre id="current" style="font-size:11px;color:#888;white-space:pre-wrap;">(loading…)</pre>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="legend">
+      <span><span class="dot" style="background:#f80;"></span> Talent indicator</span>
+      <span><span class="dot" style="background:#0cf;"></span> Hero name label</span>
+    </div>
+    <div class="image-wrap" id="imgWrap">
+      <img id="ref" src="calibrate/reference.png" alt="reference screenshot">
+      <div class="bbox" id="anchorBox"></div>
+      <div class="bbox" id="nameBox"></div>
+    </div>
+  </div>
+</div>
+<script src="static/talent.js" defer></script>
+</body>
+</html>

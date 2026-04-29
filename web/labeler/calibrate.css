@@ -1,0 +1,30 @@
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a1a; color: #eee; margin: 0; padding: 12px; }
+header { padding-bottom: 8px; border-bottom: 1px solid #333; margin-bottom: 12px; }
+header h1 { margin: 0 0 4px; font-size: 16px; }
+header p { margin: 0; font-size: 12px; color: #aaa; }
+header a { color: #6cf; }
+.layout { display: flex; gap: 16px; align-items: flex-start; }
+.canvas-wrap { position: relative; flex: 1; min-width: 0; border: 1px solid #333; background: #000; }
+.canvas-wrap img { display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; cursor: crosshair; }
+#bbox { position: absolute; border: 2px solid #4f4; box-shadow: 0 0 0 9999px rgba(0,0,0,0.35); pointer-events: none; display: none; }
+.panel { width: 320px; flex-shrink: 0; background: #222; padding: 12px; border-radius: 6px; font-size: 13px; }
+.panel h2 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; color: #aaa; letter-spacing: 0.05em; }
+.panel section { margin-bottom: 14px; }
+.row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.row label { width: 90px; font-family: monospace; color: #ccc; }
+.row input[type=number] { flex: 1; min-width: 0; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font-family: monospace; font-size: 12px; }
+.row input[type=range] { flex: 1; min-width: 0; }
+.row .val { font-family: monospace; width: 40px; text-align: right; color: #aef; }
+button { background: #355; border: 0; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; margin-right: 6px; }
+button.primary { background: #485; }
+button:hover { filter: brightness(1.15); }
+button:disabled { background: #333; color: #666; cursor: not-allowed; }
+.preview { display: flex; gap: 8px; align-items: flex-start; }
+.preview > div { flex: 1; text-align: center; }
+.preview img { display: block; max-width: 100%; image-rendering: pixelated; background: #111; border: 1px solid #333; }
+.preview .lbl { font-size: 11px; color: #888; margin-bottom: 4px; }
+#status { font-size: 12px; color: #aaa; min-height: 16px; }
+#status.ok { color: #6f6; }
+#status.err { color: #f66; }
+#current { font-family: monospace; font-size: 11px; color: #aaa; white-space: pre-wrap; }
+.hint { font-size: 11px; color: #888; margin-top: 4px; }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dota 2 Labeler</title>
+<link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+<header>
+  <h1>Dota 2 Labeler</h1>
+  <div class="controls">
+    <span id="progress">loading…</span>
+    <span id="anchorStatus" style="font-size:12px; color:#aaa;"></span>
+    <span id="status">idle</span>
+    <button class="secondary" id="reloadBtn" title="Re-scan screenshots dir">Reload screenshots</button>
+    <a href="calibrate" class="secondary" style="text-decoration:none; padding:6px 12px; background:#555; color:white; border-radius:4px; font-size:12px;">Calibrate anchor</a>
+  </div>
+</header>
+
+<div id="loading">Loading data and running inference…</div>
+<div id="screenshots"></div>
+
+<datalist id="hero_classes"></datalist>
+<datalist id="item_classes"></datalist>
+
+<script src="static/index.js" defer></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-"""Quick smoke-test for /predict: prints hero_name + items for each test screenshot.
+"""Quick smoke-test for /inference/predict: prints hero_name + items for each test screenshot.
 
 Usage:
     python scripts/test_ocr.py --host http://<truenas-ip>:18080
@@ -14,7 +14,7 @@ import requests
 
 def predict(host: str, image_path: Path) -> dict:
     with open(image_path, "rb") as f:
-        r = requests.post(f"{host}/predict", files={"file": f}, timeout=120)
+        r = requests.post(f"{host}/inference/predict", files={"file": f}, timeout=120)
     r.raise_for_status()
     return r.json()
 

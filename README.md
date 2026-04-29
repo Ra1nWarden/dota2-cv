@@ -13,32 +13,36 @@ coaching service.
 ```
 Dota 2 client
   │
-  ├─ GSI HTTP push (~10 Hz) ──────────────► state_fuser_service (port 8083)
-  │                                         POST /gsi
+  ├─ GSI HTTP push (~10 Hz) ──────────────► combined service (host 18080 / container 8080)
+  │                                         POST /fuser/gsi
   │                                         snapshots stored in fuser.db,
   │                                         fused with CV inference output
   │
-  └─ Screenshots ─────────────────────────► inference_service   (port 8080)
+  └─ Screenshots ─────────────────────────► combined service (host 18080 / container 8080)
+                                            POST /inference/predict
                                             item classifier + hero OCR
                                             returns {items, hero_name}
 
-label_service (port 8081)
-  ├─ Ground-truth labeling UI
-  ├─ Scepter anchor calibration  → configs/anchor_offsets.json
-  └─ Talent anchor calibration   → configs/talent_anchor_offsets.json
+combined service mounts
+  ├─ /inference/*  — ONNX item classifier + hero name OCR
+  ├─ /labeler/*    — labeling UI + anchor calibration
+  │                  → configs/anchor_offsets.json
+  │                  → configs/talent_anchor_offsets.json
+  └─ /fuser/*      — GSI ingest + CV/GSI state fusion
 ```
 
-All services share a `/workspace` Docker volume and run as containers
-defined in `docker-compose.yml`.
+All three services run in one FastAPI process; the fuser invokes
+inference in-process. The container mounts the repo as `/workspace`
+and is defined in `docker-compose.yml`.
 
 ---
 
 ## Services
 
-### `inference_service.py` — port 8080
+### Inference (`/inference`)
 ONNX-based icon classifier + hero name OCR.
 
-- `POST /predict` — accepts a screenshot, returns:
+- `POST /inference/predict` — accepts a screenshot, returns:
   - `hero_name` — GSI internal name of the currently focused hero,
     identified by OCR-ing the hero name label in the HUD (anchored to
     the talent indicator)
@@ -46,38 +50,46 @@ ONNX-based icon classifier + hero name OCR.
     (`{slot: {class, confidence}}`)
   - `heroes` — hero portrait classifier results for all 10 top-bar slots
   - `anchor` — scepter anchor match metadata
+- `GET /inference/health` — liveness check
 
 Item crops use anchor-relative positioning (robust to HUD drift).
 Hero name OCR uses EasyOCR with English + Simplified Chinese models;
 the display name is resolved to a GSI internal name via
 `configs/hero_display_names.json`.
 
-### `label_service.py` — port 8081
+### Labeler (`/labeler`)
 Browser-based labeling and calibration UI.
 
-- `GET /` — screenshot labeling interface; shows model top-3 suggestions
-  per crop, lets you confirm or correct ground-truth labels
-- `GET /calibrate` — scepter/shard anchor calibration; draw a bounding
-  box around the Aghanim's indicator to set item slot offsets
-- `GET /calibrate/talent` — talent indicator anchor calibration; draw
-  two boxes (talent indicator + hero name label) to configure hero OCR
+- `GET /labeler/` — screenshot labeling interface; shows model top-3
+  suggestions per crop, lets you confirm or correct ground-truth labels
+- `GET /labeler/calibrate` — scepter/shard anchor calibration; draw a
+  bounding box around the Aghanim's indicator to set item slot offsets
+- `GET /labeler/talent` — talent indicator anchor calibration;
+  draw two boxes (talent indicator + hero name label) to configure hero OCR
+- `/labeler/api/...` — backing JSON endpoints used by the UI
 
-### `state_fuser_service.py` — port 8083
+The labeler's HTML/CSS/JS are served as static files from `web/labeler/`.
+
+### Fuser (`/fuser`)
 Valve GSI event ingestor + CV/GSI state fuser.
 
-- `POST /gsi` — receives live game state payloads from the Dota 2 client,
-  validates the auth token, and persists snapshots to `fuser.db` (SQLite)
-- `POST /screenshot` — accepts a screenshot, forwards it to the inference
-  service, and stores the inference output in `fuser.db` keyed by hero
-- `GET /health` — current matchid, snapshot count, and clock offset
-- `GET /state` / `GET /state/latest` — current/latest GSI game state
-- `GET /sessions`, `GET /sessions/{matchid}` — recorded matches
-- `GET /fused`, `GET /fused/{game_id}` — fused GSI + CV state for the
-  current or a historical match
+- `POST /fuser/gsi` — receives live game state payloads from the Dota 2
+  client, validates the auth token, and persists snapshots to `fuser.db`
+  (SQLite)
+- `POST /fuser/screenshot` — accepts a screenshot, runs inference
+  in-process, and stores the result in `fuser.db` keyed by hero
+- `GET /fuser/health` — current matchid, snapshot count, and clock offset
+- `GET /fuser/state` / `GET /fuser/state/latest` — current/latest GSI
+  game state
+- `GET /fuser/sessions`, `GET /fuser/sessions/{matchid}` — recorded matches
+- `GET /fuser/fused`, `GET /fuser/fused/{game_id}` — fused GSI + CV state
+  for the current or a historical match
 
 Configure the Dota 2 client to push to this service by placing
 `configs/gamestate_integration_coaching.cfg` in the game's
 `cfg/` directory.
+
+Auto-generated OpenAPI docs at `/docs` (Swagger UI) and `/redoc` (ReDoc).
 
 ---
 
@@ -115,9 +127,9 @@ Both models are exported from PyTorch checkpoints (`.pt`) via `scripts/export_on
 | `scripts/evaluate.py` | Run accuracy evaluation against ground-truth labels; emits a per-class report |
 | `scripts/generate_synthetic_data.py` | Augment raw icon PNGs into a train/val split for classifier training |
 | `scripts/calibrate_crops.py` | Interactive CLI tool to mark HUD crop regions on a reference screenshot and write `crop_config.json` |
-| `scripts/calibrate_anchor.py` | CLI alternative to the label_service scepter anchor calibration UI |
+| `scripts/calibrate_anchor.py` | CLI alternative to the labeler scepter anchor calibration UI |
 | `scripts/build_hero_display_names.py` | Parse Dota 2 localization files to regenerate `hero_display_names.json` after patches |
-| `scripts/test_ocr.py` | Smoke-test script; runs `/predict` over all test screenshots and prints `hero_name` + item results |
+| `scripts/test_ocr.py` | Smoke-test script; runs `/inference/predict` over all test screenshots and prints `hero_name` + item results |
 
 ---
 
@@ -128,22 +140,27 @@ Copy the GSI config to your Dota 2 installation and update the server URL:
 ```
 configs/gamestate_integration_coaching.cfg → <dota2>/game/dota/cfg/
 ```
+The GSI URL now points to `/fuser/gsi` on port `18080`. The config file
+in this repo has been updated, but any previously deployed copy in your
+Dota 2 `cfg/` directory must also be updated to match.
 
-### 2. Build and start services
+### 2. Build and start the service
 ```bash
 docker compose build
 docker compose up -d
 ```
+This brings up a single combined FastAPI service on host port `18080`
+with `/inference`, `/labeler`, and `/fuser` mounted under one process.
 
 ### 3. Calibrate (first run only)
-- **Item anchor**: open `http://<host>:8081/calibrate`, draw a box around
-  the Aghanim's Scepter/Shard indicator, save.
-- **Talent anchor**: open `http://<host>:8081/calibrate/talent`, draw a box
-  around the talent indicator (Step 1) then the hero name label (Step 2), save.
-- Restart the inference service to pick up both configs:
-  ```bash
-  docker compose restart inference
-  ```
+- **Item anchor**: open `http://<host>:18080/labeler/calibrate`, draw a
+  box around the Aghanim's Scepter/Shard indicator, save.
+- **Talent anchor**: open `http://<host>:18080/labeler/talent`,
+  draw a box around the talent indicator (Step 1) then the hero name
+  label (Step 2), save.
+
+Calibration takes effect immediately — saving refreshes the inference
+globals in-process, so no service restart is required.
 
 ### 4. Regenerate hero display names (after patches)
 ```bash
@@ -153,6 +170,8 @@ python scripts/build_hero_display_names.py \
 ```
 
 ### 5. Test inference
+The inference endpoint is now `/inference/predict`. The `test_ocr.py`
+script defaults to that path, so the `--host` flag stays the same:
 ```bash
 python scripts/test_ocr.py --host http://<host>:18080
 ```

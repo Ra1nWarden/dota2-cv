@@ -4,18 +4,18 @@ import sqlite3
 import time
 from pathlib import Path
 
-import httpx
-from fastapi import FastAPI, HTTPException, Request, UploadFile
+from fastapi import APIRouter, HTTPException, Request, UploadFile
 from fastapi.responses import StreamingResponse
+
+import inference_service
 
 WORKSPACE = os.getenv("WORKSPACE", "/workspace")
 GSI_AUTH_TOKEN = os.getenv("GSI_AUTH_TOKEN", "dota2_coaching_secret")
-INFERENCE_SERVICE_URL = os.getenv("INFERENCE_SERVICE_URL", "http://inference:8080")
 CV_ITEM_CONF_THRESHOLD = float(os.getenv("CV_ITEM_CONF_THRESHOLD", "0.70"))
 CV_HERO_CONF_THRESHOLD = float(os.getenv("CV_HERO_CONF_THRESHOLD", "0.50"))
 DB_PATH = str(Path(WORKSPACE) / "fuser.db")
 
-app = FastAPI(title="Dota 2 State Fuser")
+router = APIRouter()
 
 db: sqlite3.Connection
 game_state: dict = {}
@@ -24,8 +24,8 @@ session: dict = {"matchid": None, "clock_offset": None, "count": 0}
 cv_state: dict[str, dict] = {}
 
 
-@app.on_event("startup")
 def startup() -> None:
+    """Open the SQLite DB and ensure schema is in place. Called once by main.py's lifespan."""
     global db, cv_state
     db = sqlite3.connect(DB_PATH, check_same_thread=False)
     db.row_factory = sqlite3.Row
@@ -60,7 +60,7 @@ def startup() -> None:
 
 
 
-@app.post("/gsi")
+@router.post("/gsi")
 async def receive_gsi(request: Request) -> dict:
     global game_state, snapshots, session
     body = await request.json()
@@ -95,17 +95,17 @@ async def receive_gsi(request: Request) -> dict:
     return {"status": "ok"}
 
 
-@app.get("/health")
+@router.get("/health")
 def health() -> dict:
     return {"status": "ok", "matchid": session["matchid"], "snapshot_count": session["count"], "clock_offset": session["clock_offset"]}
 
 
-@app.get("/state/latest")
+@router.get("/state/latest")
 def state_latest() -> dict:
     return game_state
 
 
-@app.get("/state")
+@router.get("/state")
 def state_at(t: int) -> dict:
     row = snapshots.get(t)
     if row is not None:
@@ -120,7 +120,7 @@ def state_at(t: int) -> dict:
     return {"clock_time": result["clock_time"], "received_at": result["received_at"], "payload": json.loads(result["payload"])}
 
 
-@app.get("/sessions")
+@router.get("/sessions")
 def sessions() -> list:
     cur = db.execute("""
         SELECT matchid, COUNT(*) AS snapshot_count, MIN(received_at) AS started_at,
@@ -130,7 +130,7 @@ def sessions() -> list:
     return [dict(row) for row in cur.fetchall()]
 
 
-@app.get("/sessions/{matchid}")
+@router.get("/sessions/{matchid}")
 def session_payloads(matchid: str) -> StreamingResponse:
     def generate():
         cur = db.execute(
@@ -147,23 +147,12 @@ def session_payloads(matchid: str) -> StreamingResponse:
     return StreamingResponse(generate(), media_type="application/json")
 
 
-@app.post("/screenshot")
+@router.post("/screenshot")
 async def receive_screenshot(file: UploadFile) -> dict:
+    """Run inference; cache by hero in-memory and persist to cv_snapshots when match context is available."""
     global cv_state
     image_bytes = await file.read()
-    try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                f"{INFERENCE_SERVICE_URL}/predict",
-                files={"file": (file.filename or "screenshot.png", image_bytes, file.content_type or "image/png")},
-                timeout=30.0,
-            )
-            response.raise_for_status()
-            result = response.json()
-    except httpx.HTTPStatusError as exc:
-        raise HTTPException(status_code=502, detail=f"inference_service error: {exc.response.status_code}") from exc
-    except httpx.RequestError as exc:
-        raise HTTPException(status_code=502, detail=f"inference_service unreachable: {exc}") from exc
+    result = await inference_service.predict_bytes(image_bytes)
 
     hero = result.get("hero_name")
     if not hero:
@@ -321,12 +310,12 @@ def _build_fused_response(gs: dict, cvs: dict) -> dict:
     }
 
 
-@app.get("/fused")
+@router.get("/fused")
 def fused() -> dict:
     return _build_fused_response(game_state, cv_state)
 
 
-@app.get("/fused/{game_id}")
+@router.get("/fused/{game_id}")
 def fused_game(game_id: str) -> dict:
     row = db.execute(
         "SELECT payload FROM snapshots WHERE matchid = ? ORDER BY clock_time DESC LIMIT 1",

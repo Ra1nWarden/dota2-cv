@@ -12,7 +12,7 @@ we fall back to fixed crops from crop_config.json. Hero crops always use
 fixed crops.
 
 Usage:
-    uvicorn inference_service:app --host 0.0.0.0 --port 8080 --workers 1
+    Mounted as a router by main.py; not run as a standalone service.
 """
 
 import json
@@ -23,7 +23,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 import onnxruntime as ort
-from fastapi import FastAPI, UploadFile
+from fastapi import APIRouter, UploadFile
 from PIL import Image
 
 # Config
@@ -49,13 +49,17 @@ ocr_reader = None                     # easyocr.Reader, initialized at startup
 hero_display_names: dict[str, str] = {}  # display_name → GSI internal name
 last_known_hero: str | None = None    # cached across frames (single worker)
 
-app = FastAPI(title="Dota 2 Icon Classifier")
+router = APIRouter()
 
 
-@app.on_event("startup")
-def load_models():
+def startup() -> None:
+    """Load ONNX models, anchor templates, OCR reader, and class maps into module globals.
+
+    Called once by ``main.py``'s lifespan before any router handler runs.
+    """
     global hero_session, item_session, hero_classes, item_classes, crop_config
     global anchor_config, anchor_template
+    global talent_anchor_config, talent_anchor_template, ocr_reader, hero_display_names
 
     # Load crop config
     with open(WORKSPACE / "configs" / "crop_config.json") as f:
@@ -91,7 +95,6 @@ def load_models():
         print("Anchor not configured; using fixed item crops")
 
     # Talent indicator anchor for hero name OCR
-    global talent_anchor_config, talent_anchor_template, ocr_reader, hero_display_names
     talent_anchor_config, talent_anchor_template = load_anchor_assets(
         WORKSPACE, config_filename="talent_anchor_offsets.json"
     )
@@ -298,7 +301,7 @@ def run_inference(
     return results
 
 
-@app.get("/health")
+@router.get("/health")
 def health():
     return {"status": "ok"}
 
@@ -352,11 +355,24 @@ def read_focused_hero(image_rgb: np.ndarray, scale_x: float, scale_y: float) -> 
     return last_known_hero
 
 
-@app.post("/predict")
-async def predict(file: UploadFile):
-    # Decode image
+@router.post("/predict")
+async def predict(file: UploadFile) -> dict:
+    """HTTP wrapper around :func:`predict_bytes`; reads the upload and delegates."""
     data = await file.read()
-    image = Image.open(BytesIO(data)).convert("RGB")
+    return await predict_bytes(data)
+
+
+async def predict_bytes(image_bytes: bytes) -> dict:
+    """Run hero/item classification + hero-name OCR on a screenshot.
+
+    Args:
+        image_bytes: Raw bytes of a PNG/JPEG screenshot.
+
+    Returns:
+        ``{"heroes": {slot: {class, confidence}}, "items": {slot: {class, confidence}},
+        "hero_name": str | None, "anchor": {used, score, anchor_xy}}``.
+    """
+    image = Image.open(BytesIO(image_bytes)).convert("RGB")
     img_w, img_h = image.size
 
     # Scale factors from reference resolution

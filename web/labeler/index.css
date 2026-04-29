@@ -1,0 +1,31 @@
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a1a; color: #eee; margin: 0; padding: 16px; }
+header { position: sticky; top: 0; background: #1a1a1a; padding: 10px 0; z-index: 10; border-bottom: 1px solid #333; margin-bottom: 16px; }
+header h1 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
+.controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+#progress { font-size: 13px; color: #aaa; }
+#status { font-size: 12px; color: #888; padding: 3px 8px; border-radius: 3px; min-width: 70px; text-align: center; }
+#status.saving { background: #553; color: #ffd; }
+#status.saved { background: #353; color: #cfc; }
+#status.error { background: #533; color: #fcc; }
+button.secondary { background: #555; border: 0; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+button.secondary:hover { background: #666; }
+details { margin-bottom: 12px; background: #222; border-radius: 6px; padding: 6px 12px; }
+details > summary { font-weight: bold; cursor: pointer; padding: 6px 0; user-select: none; font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 8px 0; }
+@media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+.slot { background: #2a2a2a; padding: 8px; border-radius: 4px; border: 2px solid #2a2a2a; }
+.slot.filled { border-color: #4a8; }
+.slot.empty-set { border-color: #888; }
+.slot-name { font-size: 11px; color: #aaa; margin-bottom: 4px; font-family: monospace; }
+.slot img { display: block; margin: 0 auto 6px; max-width: 100%; max-height: 120px; image-rendering: auto; background: #000; border-radius: 3px; }
+.preds { display: flex; flex-direction: column; gap: 3px; margin-bottom: 6px; }
+.pred { background: #2d4a4a; border: 0; color: white; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 11px; text-align: left; display: flex; justify-content: space-between; align-items: center; font-family: monospace; }
+.pred:hover { background: #3e6868; }
+.pred .conf { color: #aef; font-size: 10px; margin-left: 6px; }
+.input-row { display: flex; gap: 3px; align-items: center; }
+.input-row input { flex: 1; min-width: 0; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font-size: 12px; font-family: monospace; }
+.empty-btn { background: #644; border: 0; color: white; padding: 4px 7px; border-radius: 3px; cursor: pointer; font-size: 11px; }
+.empty-btn:hover { background: #855; }
+.clear-btn { background: #444; border: 0; color: #ccc; padding: 4px 6px; border-radius: 3px; cursor: pointer; font-size: 11px; }
+.clear-btn:hover { background: #555; }
+#loading { color: #aaa; padding: 20px; text-align: center; font-size: 14px; }

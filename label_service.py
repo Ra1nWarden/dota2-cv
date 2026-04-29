@@ -4,8 +4,7 @@ Serves a browser-based labeling UI on a single port. Reuses the
 inference-service preprocessing so model suggestions match production.
 Auto-saves labels.json to disk on every change.
 
-Usage:
-    uvicorn label_service:app --host 0.0.0.0 --port 8081 --workers 1
+Mounted as a router at /labeler by main.py; not run as a standalone service.
 """
 
 import base64
@@ -17,12 +16,12 @@ from threading import Lock
 
 import cv2
 import numpy as np
-import onnxruntime as ort
-from fastapi import FastAPI, HTTPException
+from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse, HTMLResponse, Response
 from PIL import Image
 from pydantic import BaseModel
 
+import inference_service
 from inference_service import (
     compute_canny_edges,
     compute_item_boxes,
@@ -42,11 +41,8 @@ TOPK = int(os.environ.get("TOPK", "3"))
 
 REFERENCE_SCREENSHOT_PATH = Path(os.environ.get(
     "REFERENCE_SCREENSHOT", WORKSPACE / "data" / "reference_screenshot.png"))
-CROP_CONFIG_PATH = WORKSPACE / "configs" / "crop_config.json"
-HERO_MODEL_PATH = WORKSPACE / "models" / "hero_classifier.onnx"
-ITEM_MODEL_PATH = WORKSPACE / "models" / "item_classifier.onnx"
-HERO_CLASSES_PATH = WORKSPACE / "configs" / "heroes_classes.json"
-ITEM_CLASSES_PATH = WORKSPACE / "configs" / "items_classes.json"
+
+WEB_DIR = Path(__file__).parent / "web" / "labeler"
 
 HERO_PREFIXES = ("radiant_hero", "dire_hero")
 IMG_EXTS = (".png", ".jpg", ".jpeg")
@@ -54,11 +50,6 @@ IMG_EXTS = (".png", ".jpg", ".jpeg")
 
 def is_hero(slot: str) -> bool:
     return slot.startswith(HERO_PREFIXES)
-
-
-def load_class_list(path: Path) -> list[str]:
-    raw = json.loads(path.read_text())
-    return [raw[str(i)] for i in range(len(raw))]
 
 
 def crop_screenshot(image: Image.Image, crop_config: dict,
@@ -108,13 +99,14 @@ def crop_to_b64(img: Image.Image) -> str:
 state: dict = {}
 file_lock = Lock()
 
-app = FastAPI(title="Dota 2 Labeler")
+router = APIRouter()
 
 
 def _build_data_payload() -> dict:
     """Crop every screenshot, run inference, build the JSON payload."""
-    # Re-read anchor each rebuild so re-calibrations take effect on /api/reload
-    state["anchor_cfg"], state["anchor_template"] = load_anchor_assets(WORKSPACE)
+    # Refresh anchor refs so calibrations applied via /api/calibrate are picked up on the next page load.
+    state["anchor_cfg"] = inference_service.anchor_config
+    state["anchor_template"] = inference_service.anchor_template
     if state["anchor_template"] is not None:
         print(f"Anchor enabled: {state['anchor_cfg']['anchor']!r} "
               f"(threshold {state['anchor_cfg']['match_threshold']})")
@@ -198,29 +190,22 @@ def _build_data_payload() -> dict:
     }
 
 
-@app.on_event("startup")
-def startup():
+def startup() -> None:
+    """Build the cached labeling payload. Called once by main.py's lifespan after inference_service.startup."""
     print(f"Workspace: {WORKSPACE}")
     print(f"Screenshots: {SCREENSHOTS_DIR}")
     print(f"Labels file: {LABELS_PATH}")
-
-    state["crop_config"] = json.loads(CROP_CONFIG_PATH.read_text())
-    state["region_names"] = list(state["crop_config"]["regions"].keys())
-    state["hero_classes"] = load_class_list(HERO_CLASSES_PATH)
-    state["item_classes"] = load_class_list(ITEM_CLASSES_PATH)
-
-    print("Loading ONNX models...")
-    providers = ["CUDAExecutionProvider", "CPUExecutionProvider"]
-    state["hero_session"] = ort.InferenceSession(
-        str(HERO_MODEL_PATH), providers=providers)
-    state["item_session"] = ort.InferenceSession(
-        str(ITEM_MODEL_PATH), providers=providers)
-
+    state["crop_config"] = inference_service.crop_config
+    state["region_names"] = list(inference_service.crop_config["regions"].keys())
+    state["hero_classes"] = inference_service.hero_classes
+    state["item_classes"] = inference_service.item_classes
+    state["hero_session"] = inference_service.hero_session
+    state["item_session"] = inference_service.item_session
     state["data_payload"] = _build_data_payload()
     print(f"Ready. {len(state['data_payload']['filenames'])} screenshots loaded.")
 
 
-@app.get("/health")
+@router.get("/health")
 def health():
     return {
         "status": "ok",
@@ -230,12 +215,12 @@ def health():
     }
 
 
-@app.get("/api/data")
+@router.get("/api/data")
 def get_data():
     return state["data_payload"]
 
 
-@app.post("/api/reload")
+@router.post("/api/reload")
 def reload_screenshots():
     """Re-scan screenshots dir and rebuild the cached payload."""
     state["data_payload"] = _build_data_payload()
@@ -247,7 +232,7 @@ class LabelsPayload(BaseModel):
     labels: dict
 
 
-@app.post("/api/labels")
+@router.post("/api/labels")
 def save_labels(payload: LabelsPayload):
     """Atomic write labels.json (temp file + rename)."""
     with file_lock:
@@ -277,19 +262,19 @@ def _png_response(arr: np.ndarray) -> Response:
     return Response(content=buf.tobytes(), media_type="image/png")
 
 
-@app.get("/calibrate", response_class=HTMLResponse)
+@router.get("/calibrate", include_in_schema=False, response_class=HTMLResponse)
 def calibrate_page():
-    return CALIBRATE_HTML
+    return FileResponse(WEB_DIR / "calibrate.html")
 
 
-@app.get("/calibrate/reference.png")
+@router.get("/calibrate/reference.png", include_in_schema=False)
 def calibrate_reference():
     if not REFERENCE_SCREENSHOT_PATH.exists():
         raise HTTPException(404, f"reference screenshot not found at {REFERENCE_SCREENSHOT_PATH}")
     return FileResponse(REFERENCE_SCREENSHOT_PATH, media_type="image/png")
 
 
-@app.get("/api/calibrate/state")
+@router.get("/api/calibrate/state")
 def calibrate_state():
     cfg, _ = load_anchor_assets(WORKSPACE)
     img_h, img_w = (None, None)
@@ -304,7 +289,7 @@ def calibrate_state():
     }
 
 
-@app.get("/api/calibrate/preview")
+@router.get("/api/calibrate/preview")
 def calibrate_preview(x: int, y: int, w: int, h: int,
                       canny_low: int = 80, canny_high: int = 160,
                       kind: str = "edges"):
@@ -333,7 +318,7 @@ class CalibratePayload(BaseModel):
     anchor_name: str = "scepter"
 
 
-@app.post("/api/calibrate")
+@router.post("/api/calibrate")
 def calibrate_save(payload: CalibratePayload):
     if payload.w <= 0 or payload.h <= 0:
         raise HTTPException(400, "w and h must be positive")
@@ -361,6 +346,10 @@ def calibrate_save(payload: CalibratePayload):
         canny_low=payload.canny_low, canny_high=payload.canny_high,
         reference_resolution=(img_w, img_h),
     )
+    # Refresh inference_service's anchor globals so /inference/predict
+    # immediately picks up the new calibration.
+    inference_service.anchor_config, inference_service.anchor_template = \
+        inference_service.load_anchor_assets(WORKSPACE)
     # Rebuild the labeling payload so the labeler shows crops via the
     # new anchor on its next page load (no manual reload needed).
     state["data_payload"] = _build_data_payload()
@@ -370,7 +359,7 @@ def calibrate_save(payload: CalibratePayload):
         "offsets_path": str(offsets_path),
         "n_item_offsets": len(item_offsets),
         "edge_density": round(edge_density, 4),
-        "note": "labeler refreshed; restart inference service to apply to /predict",
+        "note": "calibration applied; new anchor live for /inference/predict",
     }
 
 
@@ -424,12 +413,12 @@ class TalentCalibratePayload(BaseModel):
     match_threshold: float = 0.5
 
 
-@app.get("/calibrate/talent", response_class=HTMLResponse)
+@router.get("/talent", include_in_schema=False, response_class=HTMLResponse)
 def calibrate_talent_page():
-    return TALENT_CALIBRATE_HTML
+    return FileResponse(WEB_DIR / "talent.html")
 
 
-@app.get("/api/calibrate/talent/state")
+@router.get("/api/calibrate/talent/state")
 def calibrate_talent_state():
     cfg_path = WORKSPACE / "configs" / "talent_anchor_offsets.json"
     cfg = json.loads(cfg_path.read_text()) if cfg_path.exists() else None
@@ -444,7 +433,7 @@ def calibrate_talent_state():
     }
 
 
-@app.post("/api/calibrate/talent")
+@router.post("/api/calibrate/talent")
 def calibrate_talent_save(payload: TalentCalibratePayload):
     for name, x, y, w, h in [
         ("anchor", payload.anchor_x, payload.anchor_y, payload.anchor_w, payload.anchor_h),
@@ -475,6 +464,10 @@ def calibrate_talent_save(payload: TalentCalibratePayload):
         canny_high=payload.canny_high,
         reference_resolution=(img_w, img_h),
     )
+    # Refresh inference_service's talent anchor globals so /inference/predict
+    # immediately picks up the new calibration.
+    inference_service.talent_anchor_config, inference_service.talent_anchor_template = \
+        inference_service.load_anchor_assets(WORKSPACE, config_filename="talent_anchor_offsets.json")
     return {
         "status": "ok",
         "template_path": str(template_path),
@@ -486,829 +479,10 @@ def calibrate_talent_save(payload: TalentCalibratePayload):
             "w": payload.name_w,
             "h": payload.name_h,
         },
-        "note": "restart inference service to apply to /predict",
+        "note": "calibration applied; new talent anchor live for /inference/predict",
     }
 
 
-TALENT_CALIBRATE_HTML = r"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Talent Anchor Calibration</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font: 14px/1.5 monospace; background: #1a1a1a; color: #ccc; padding: 16px; }
-h1 { font-size: 16px; color: #fff; margin-bottom: 12px; }
-.layout { display: flex; gap: 16px; }
-.sidebar { width: 280px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; }
-.card { background: #242424; border: 1px solid #333; border-radius: 4px; padding: 12px; }
-.card h2 { font-size: 13px; color: #aaa; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em; }
-label { display: block; font-size: 12px; color: #888; margin-bottom: 2px; }
-input[type=number] { width: 100%; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font: inherit; }
-input[type=range] { width: 100%; }
-button { width: 100%; padding: 6px; border: none; border-radius: 3px; cursor: pointer; font: inherit; font-size: 13px; }
-.btn-preview { background: #2a4a6a; color: #9cf; }
-.btn-preview:hover { background: #35608a; }
-.btn-save { background: #2a5a2a; color: #9f9; margin-top: 4px; }
-.btn-save:hover:not(:disabled) { background: #357a35; }
-button:disabled { opacity: .4; cursor: not-allowed; }
-.step-label { display: inline-block; background: #3a5a8a; color: #adf; border-radius: 3px; padding: 1px 6px; font-size: 11px; margin-right: 4px; }
-#status { font-size: 12px; min-height: 16px; }
-#status.ok { color: #9f9; }
-#status.err { color: #f99; }
-.preview-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
-.preview-row img { max-width: 180px; border: 1px solid #444; background: #111; }
-.image-wrap { position: relative; display: inline-block; flex: 1; min-width: 0; overflow: auto; max-height: 80vh; }
-.image-wrap img#ref { display: block; max-width: 100%; cursor: crosshair; user-select: none; }
-.bbox { position: absolute; border: 2px solid; pointer-events: none; display: none; }
-#anchorBox { border-color: #f80; }
-#nameBox   { border-color: #0cf; }
-.legend { font-size: 11px; color: #888; display: flex; gap: 12px; margin-top: 4px; }
-.legend span { display: flex; align-items: center; gap: 4px; }
-.dot { width: 10px; height: 10px; border-radius: 2px; }
-</style>
-</head>
-<body>
-<h1>Talent Anchor Calibration</h1>
-<div class="layout">
-  <div class="sidebar">
-    <div class="card">
-      <h2><span class="step-label">1</span> Talent Indicator</h2>
-      <p style="font-size:12px;color:#888;margin-bottom:8px;">
-        Draw a box around the talent indicator (the diamond/tree upgrade widget
-        between the hero's ability icons and the Aghanim's area).
-      </p>
-      <label>X <input type="number" id="ax" value="0" min="0"></label>
-      <label>Y <input type="number" id="ay" value="0" min="0"></label>
-      <label>W <input type="number" id="aw" value="1" min="1"></label>
-      <label>H <input type="number" id="ah" value="1" min="1"></label>
-    </div>
-    <div class="card">
-      <h2><span class="step-label">2</span> Hero Name Label</h2>
-      <p style="font-size:12px;color:#888;margin-bottom:8px;">
-        Draw a box around the hero name text label
-        (the text above or on the hero portrait, to the left of the talent indicator).
-      </p>
-      <label>X <input type="number" id="nx" value="0" min="0"></label>
-      <label>Y <input type="number" id="ny" value="0" min="0"></label>
-      <label>W <input type="number" id="nw" value="1" min="1"></label>
-      <label>H <input type="number" id="nh" value="1" min="1"></label>
-    </div>
-    <div class="card">
-      <h2>Canny Thresholds</h2>
-      <label>Low: <span id="cannyLowVal">80</span>
-        <input type="range" id="cannyLow" min="1" max="500" value="80">
-      </label>
-      <label>High: <span id="cannyHighVal">160</span>
-        <input type="range" id="cannyHigh" min="1" max="500" value="160">
-      </label>
-      <label>Match threshold: <span id="matchThrVal">0.50</span>
-        <input type="range" id="matchThr" min="0.1" max="0.99" step="0.01" value="0.5">
-      </label>
-      <button class="btn-preview" id="previewBtn">Preview Edges</button>
-      <button class="btn-preview" id="cropPreviewBtn" style="margin-top:4px;">Preview Name Crop</button>
-      <div class="preview-row">
-        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Talent edges</div><img id="edgesPrev" alt=""></div>
-        <div><div style="font-size:11px;color:#666;margin-bottom:2px;">Name crop</div><img id="cropPrev" alt=""></div>
-      </div>
-    </div>
-    <div class="card">
-      <div id="status"></div>
-      <button class="btn-save" id="saveBtn" disabled>Save Talent Anchor</button>
-      <div style="margin-top:10px;">
-        <h2>Current config</h2>
-        <pre id="current" style="font-size:11px;color:#888;white-space:pre-wrap;">(loading…)</pre>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="legend">
-      <span><span class="dot" style="background:#f80;"></span> Talent indicator</span>
-      <span><span class="dot" style="background:#0cf;"></span> Hero name label</span>
-    </div>
-    <div class="image-wrap" id="imgWrap">
-      <img id="ref" src="/calibrate/reference.png" alt="reference screenshot">
-      <div class="bbox" id="anchorBox"></div>
-      <div class="bbox" id="nameBox"></div>
-    </div>
-  </div>
-</div>
-<script>
-const img = document.getElementById("ref");
-const ax = document.getElementById("ax"), ay = document.getElementById("ay");
-const aw = document.getElementById("aw"), ah = document.getElementById("ah");
-const nx = document.getElementById("nx"), ny = document.getElementById("ny");
-const nw = document.getElementById("nw"), nh = document.getElementById("nh");
-const cannyLow = document.getElementById("cannyLow");
-const cannyHigh = document.getElementById("cannyHigh");
-const matchThr = document.getElementById("matchThr");
-const cannyLowVal = document.getElementById("cannyLowVal");
-const cannyHighVal = document.getElementById("cannyHighVal");
-const matchThrVal = document.getElementById("matchThrVal");
-const edgesPrev = document.getElementById("edgesPrev");
-const cropPrev = document.getElementById("cropPrev");
-const status = document.getElementById("status");
-const saveBtn = document.getElementById("saveBtn");
-const anchorBox = document.getElementById("anchorBox");
-const nameBox = document.getElementById("nameBox");
-const currentEl = document.getElementById("current");
-
-let activeStep = 1;  // 1 = drawing anchor, 2 = drawing name label
-let dragStart = null;
-let displayScale = 1;
-let anchorBbox = null, nameBbox = null;
-
-function recomputeScale() {
-  if (!img.naturalWidth) return;
-  displayScale = img.clientWidth / img.naturalWidth;
-}
-function imgToDisplay(v) { return v * displayScale; }
-function displayToImg(v) { return Math.round(v / displayScale); }
-
-function clamp(b) {
-  const W = img.naturalWidth, H = img.naturalHeight;
-  let x = Math.max(0, Math.min(b.x, W - 1));
-  let y = Math.max(0, Math.min(b.y, H - 1));
-  let w = Math.max(1, Math.min(b.w, W - x));
-  let h = Math.max(1, Math.min(b.h, H - y));
-  return {x, y, w, h};
-}
-
-function renderBox(el, b) {
-  if (!b) { el.style.display = "none"; return; }
-  el.style.display = "block";
-  el.style.left = imgToDisplay(b.x) + "px";
-  el.style.top  = imgToDisplay(b.y) + "px";
-  el.style.width  = imgToDisplay(b.w) + "px";
-  el.style.height = imgToDisplay(b.h) + "px";
-}
-
-function setAnchor(b, fromInput) {
-  anchorBbox = clamp(b);
-  if (!fromInput) { ax.value = anchorBbox.x; ay.value = anchorBbox.y; aw.value = anchorBbox.w; ah.value = anchorBbox.h; }
-  renderBox(anchorBox, anchorBbox);
-  checkSaveReady();
-}
-
-function setName(b, fromInput) {
-  nameBbox = clamp(b);
-  if (!fromInput) { nx.value = nameBbox.x; ny.value = nameBbox.y; nw.value = nameBbox.w; nh.value = nameBbox.h; }
-  renderBox(nameBox, nameBbox);
-  checkSaveReady();
-}
-
-function checkSaveReady() {
-  saveBtn.disabled = !(anchorBbox && nameBbox);
-}
-
-function eventToImg(ev) {
-  const rect = img.getBoundingClientRect();
-  return { x: displayToImg(ev.clientX - rect.left), y: displayToImg(ev.clientY - rect.top) };
-}
-
-img.addEventListener("mousedown", ev => {
-  ev.preventDefault();
-  recomputeScale();
-  dragStart = eventToImg(ev);
-  // Determine active step from which area we're drawing in:
-  // if click is near existing anchorBbox area or step toggle — use heuristic: alt key = name step
-  activeStep = ev.altKey ? 2 : 1;
-});
-window.addEventListener("mousemove", ev => {
-  if (!dragStart) return;
-  const cur = eventToImg(ev);
-  const x = Math.min(dragStart.x, cur.x), y = Math.min(dragStart.y, cur.y);
-  const w = Math.abs(cur.x - dragStart.x), h = Math.abs(cur.y - dragStart.y);
-  if (w < 2 || h < 2) return;
-  if (activeStep === 1) setAnchor({x, y, w, h});
-  else setName({x, y, w, h});
-});
-window.addEventListener("mouseup", () => { dragStart = null; });
-
-// Keyboard: 1/2 to switch step, arrows to nudge
-window.addEventListener("keydown", ev => {
-  if (document.activeElement && document.activeElement.tagName === "INPUT") return;
-  if (ev.key === "1") { activeStep = 1; status.textContent = "drawing: talent indicator"; status.className = ""; return; }
-  if (ev.key === "2") { activeStep = 2; status.textContent = "drawing: hero name label"; status.className = ""; return; }
-  const step = ev.shiftKey ? 10 : 1;
-  const b = activeStep === 1 ? anchorBbox : nameBbox;
-  if (!b) return;
-  let {x, y, w, h} = b;
-  if (ev.key === "ArrowLeft")  x -= step;
-  else if (ev.key === "ArrowRight") x += step;
-  else if (ev.key === "ArrowUp")    y -= step;
-  else if (ev.key === "ArrowDown")  y += step;
-  else return;
-  ev.preventDefault();
-  if (activeStep === 1) setAnchor({x, y, w, h});
-  else setName({x, y, w, h});
-});
-
-[ax, ay, aw, ah].forEach(el => el.addEventListener("input", () => {
-  setAnchor({x: +ax.value||0, y: +ay.value||0, w: +aw.value||1, h: +ah.value||1}, true);
-}));
-[nx, ny, nw, nh].forEach(el => el.addEventListener("input", () => {
-  setName({x: +nx.value||0, y: +ny.value||0, w: +nw.value||1, h: +nh.value||1}, true);
-}));
-
-cannyLow.addEventListener("input", () => cannyLowVal.textContent = cannyLow.value);
-cannyHigh.addEventListener("input", () => cannyHighVal.textContent = cannyHigh.value);
-matchThr.addEventListener("input", () => matchThrVal.textContent = parseFloat(matchThr.value).toFixed(2));
-
-document.getElementById("previewBtn").addEventListener("click", async () => {
-  if (!anchorBbox) { status.textContent = "draw talent indicator box first (Step 1)"; status.className = "err"; return; }
-  status.textContent = "rendering…"; status.className = "";
-  const qs = new URLSearchParams({x: anchorBbox.x, y: anchorBbox.y, w: anchorBbox.w, h: anchorBbox.h,
-    canny_low: cannyLow.value, canny_high: cannyHigh.value, kind: "edges", t: Date.now()});
-  edgesPrev.src = "/api/calibrate/preview?" + qs;
-  edgesPrev.onload = () => { status.textContent = "edges ready"; status.className = "ok"; };
-  edgesPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
-});
-
-document.getElementById("cropPreviewBtn").addEventListener("click", async () => {
-  if (!nameBbox) { status.textContent = "draw hero name label box first (Step 2)"; status.className = "err"; return; }
-  status.textContent = "rendering…"; status.className = "";
-  const qs = new URLSearchParams({x: nameBbox.x, y: nameBbox.y, w: nameBbox.w, h: nameBbox.h,
-    kind: "crop", t: Date.now()});
-  cropPrev.src = "/api/calibrate/preview?" + qs;
-  cropPrev.onload = () => { status.textContent = "name crop ready"; status.className = "ok"; };
-  cropPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
-});
-
-saveBtn.addEventListener("click", async () => {
-  if (!anchorBbox || !nameBbox) return;
-  status.textContent = "saving…"; status.className = "";
-  try {
-    const res = await fetch("/api/calibrate/talent", {
-      method: "POST",
-      headers: {"content-type": "application/json"},
-      body: JSON.stringify({
-        anchor_x: anchorBbox.x, anchor_y: anchorBbox.y,
-        anchor_w: anchorBbox.w, anchor_h: anchorBbox.h,
-        name_x: nameBbox.x,   name_y: nameBbox.y,
-        name_w: nameBbox.w,   name_h: nameBbox.h,
-        canny_low: parseInt(cannyLow.value),
-        canny_high: parseInt(cannyHigh.value),
-        match_threshold: parseFloat(matchThr.value),
-      }),
-    });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
-    const off = data.hero_name_offset;
-    status.textContent = `saved · edge density ${(data.edge_density*100).toFixed(1)}% · name offset dx=${off.dx} dy=${off.dy}. Restart inference to apply.`;
-    status.className = "ok";
-    loadState();
-  } catch(err) {
-    status.textContent = "save failed: " + err.message;
-    status.className = "err";
-  }
-});
-
-async function loadState() {
-  const res = await fetch("/api/calibrate/talent/state");
-  const data = await res.json();
-  if (data.current) {
-    const c = data.current, b = c.anchor_bbox, r = c.hero_name_region;
-    currentEl.textContent =
-      `anchor:  x=${b.x} y=${b.y} w=${b.w} h=${b.h}\n` +
-      `name:    dx=${r.dx} dy=${r.dy} w=${r.w} h=${r.h}\n` +
-      `canny:   low=${c.canny_low} high=${c.canny_high}\n` +
-      `thresh:  ${c.match_threshold}`;
-    if (!anchorBbox) {
-      cannyLow.value = c.canny_low; cannyLowVal.textContent = c.canny_low;
-      cannyHigh.value = c.canny_high; cannyHighVal.textContent = c.canny_high;
-      matchThr.value = c.match_threshold; matchThrVal.textContent = c.match_threshold.toFixed(2);
-      const restore = () => {
-        recomputeScale();
-        setAnchor(b);
-        setName({x: b.x + r.dx, y: b.y + r.dy, w: r.w, h: r.h});
-      };
-      img.complete && img.naturalWidth ? restore() : img.addEventListener("load", restore, {once: true});
-    }
-  } else {
-    currentEl.textContent = "(none — not calibrated yet)\n\nInstructions:\n  Draw talent box → press 2 → draw name box → Save";
-  }
-}
-
-img.addEventListener("load", recomputeScale);
-window.addEventListener("resize", () => { recomputeScale(); renderBox(anchorBox, anchorBbox); renderBox(nameBox, nameBbox); });
-status.textContent = "Press 1 to draw talent indicator, 2 to draw name label (or hold Alt while dragging for name)";
-loadState();
-</script>
-</body>
-</html>"""
-
-
-@app.get("/", response_class=HTMLResponse)
+@router.get("/", include_in_schema=False, response_class=HTMLResponse)
 def index():
-    return HTML_PAGE
-
-
-HTML_PAGE = r"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Dota 2 Labeler</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a1a; color: #eee; margin: 0; padding: 16px; }
-  header { position: sticky; top: 0; background: #1a1a1a; padding: 10px 0; z-index: 10; border-bottom: 1px solid #333; margin-bottom: 16px; }
-  header h1 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
-  .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-  #progress { font-size: 13px; color: #aaa; }
-  #status { font-size: 12px; color: #888; padding: 3px 8px; border-radius: 3px; min-width: 70px; text-align: center; }
-  #status.saving { background: #553; color: #ffd; }
-  #status.saved { background: #353; color: #cfc; }
-  #status.error { background: #533; color: #fcc; }
-  button.secondary { background: #555; border: 0; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
-  button.secondary:hover { background: #666; }
-  details { margin-bottom: 12px; background: #222; border-radius: 6px; padding: 6px 12px; }
-  details > summary { font-weight: bold; cursor: pointer; padding: 6px 0; user-select: none; font-size: 14px; }
-  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 8px 0; }
-  @media (max-width: 1100px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-  .slot { background: #2a2a2a; padding: 8px; border-radius: 4px; border: 2px solid #2a2a2a; }
-  .slot.filled { border-color: #4a8; }
-  .slot.empty-set { border-color: #888; }
-  .slot-name { font-size: 11px; color: #aaa; margin-bottom: 4px; font-family: monospace; }
-  .slot img { display: block; margin: 0 auto 6px; max-width: 100%; max-height: 120px; image-rendering: auto; background: #000; border-radius: 3px; }
-  .preds { display: flex; flex-direction: column; gap: 3px; margin-bottom: 6px; }
-  .pred { background: #2d4a4a; border: 0; color: white; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 11px; text-align: left; display: flex; justify-content: space-between; align-items: center; font-family: monospace; }
-  .pred:hover { background: #3e6868; }
-  .pred .conf { color: #aef; font-size: 10px; margin-left: 6px; }
-  .input-row { display: flex; gap: 3px; align-items: center; }
-  .input-row input { flex: 1; min-width: 0; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font-size: 12px; font-family: monospace; }
-  .empty-btn { background: #644; border: 0; color: white; padding: 4px 7px; border-radius: 3px; cursor: pointer; font-size: 11px; }
-  .empty-btn:hover { background: #855; }
-  .clear-btn { background: #444; border: 0; color: #ccc; padding: 4px 6px; border-radius: 3px; cursor: pointer; font-size: 11px; }
-  .clear-btn:hover { background: #555; }
-  #loading { color: #aaa; padding: 20px; text-align: center; font-size: 14px; }
-</style>
-</head>
-<body>
-<header>
-  <h1>Dota 2 Labeler</h1>
-  <div class="controls">
-    <span id="progress">loading…</span>
-    <span id="anchorStatus" style="font-size:12px; color:#aaa;"></span>
-    <span id="status">idle</span>
-    <button class="secondary" id="reloadBtn" title="Re-scan screenshots dir">Reload screenshots</button>
-    <a href="/calibrate" class="secondary" style="text-decoration:none; padding:6px 12px; background:#555; color:white; border-radius:4px; font-size:12px;">Calibrate anchor</a>
-  </div>
-</header>
-
-<div id="loading">Loading data and running inference…</div>
-<div id="screenshots"></div>
-
-<datalist id="hero_classes"></datalist>
-<datalist id="item_classes"></datalist>
-
-<script>
-let DATA = null;
-let state = {};
-let saveTimer = null;
-
-const HERO_PREFIXES = ["radiant_hero", "dire_hero"];
-function isHero(slot) { return HERO_PREFIXES.some(p => slot.startsWith(p)); }
-
-function setStatus(text, cls) {
-  const el = document.getElementById("status");
-  el.textContent = text;
-  el.className = cls || "";
-}
-
-function updateProgress() {
-  let total = 0, filled = 0;
-  for (const fname of DATA.filenames) {
-    for (const slot of DATA.slot_order) {
-      total++;
-      if (state[fname][slot] !== "") filled++;
-    }
-  }
-  document.getElementById("progress").textContent =
-    `${filled}/${total} slots labeled (${(100*filled/total).toFixed(0)}%)`;
-}
-
-function updateSummary(fname, sumEl) {
-  const filled = DATA.slot_order.filter(s => state[fname][s] !== "").length;
-  const a = (DATA.anchor_meta || {})[fname];
-  let tag = "";
-  if (a) {
-    if (a.used) tag = ` · anchor ${a.score.toFixed(2)}`;
-    else if (a.score !== null) tag = ` · anchor FB ${a.score.toFixed(2)}`;
-  }
-  sumEl.textContent = `${fname}  —  ${filled}/16 labeled${tag}`;
-}
-
-function updateAnchorStatus() {
-  const el = document.getElementById("anchorStatus");
-  if (!DATA.anchor_name) { el.textContent = "anchor: off"; return; }
-  const all = Object.values(DATA.anchor_meta || {});
-  const used = all.filter(a => a && a.used).length;
-  el.textContent = `anchor: ${DATA.anchor_name} (${used}/${all.length} matched)`;
-}
-
-function scheduleSave() {
-  setStatus("saving…", "saving");
-  if (saveTimer) clearTimeout(saveTimer);
-  saveTimer = setTimeout(doSave, 400);
-}
-
-async function doSave() {
-  try {
-    const res = await fetch("/api/labels", {
-      method: "POST",
-      headers: {"content-type": "application/json"},
-      body: JSON.stringify({labels: state}),
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    setStatus("saved", "saved");
-  } catch (err) {
-    setStatus("save error: " + err.message, "error");
-  }
-}
-
-function populateDatalists() {
-  const hero = document.getElementById("hero_classes");
-  const item = document.getElementById("item_classes");
-  hero.innerHTML = DATA.hero_classes.map(c => `<option value="${c}">`).join("");
-  item.innerHTML = DATA.item_classes.map(c => `<option value="${c}">`).join("");
-}
-
-function render() {
-  const root = document.getElementById("screenshots");
-  root.innerHTML = "";
-  for (const fname of DATA.filenames) {
-    const det = document.createElement("details");
-    const filled = DATA.slot_order.filter(s => state[fname][s] !== "").length;
-    det.open = filled < 16;
-
-    const sum = document.createElement("summary");
-    det.appendChild(sum);
-    updateSummary(fname, sum);
-
-    const grid = document.createElement("div");
-    grid.className = "grid";
-
-    for (const slot of DATA.slot_order) {
-      const card = document.createElement("div");
-      card.className = "slot";
-      const cur = state[fname][slot];
-      if (cur === "empty") card.classList.add("empty-set");
-      else if (cur !== "") card.classList.add("filled");
-
-      const datalistId = isHero(slot) ? "hero_classes" : "item_classes";
-      const predHtml = (DATA.preds[fname][slot] || []).map(([c, p]) =>
-        `<button class="pred" data-cls="${c}">` +
-          `<span>${c}</span><span class="conf">${(p*100).toFixed(0)}%</span>` +
-        `</button>`
-      ).join("");
-
-      card.innerHTML =
-        `<div class="slot-name">${slot}</div>` +
-        `<img src="data:image/png;base64,${DATA.crops[fname][slot]}" alt="${slot}">` +
-        `<div class="preds">${predHtml}</div>` +
-        `<div class="input-row">` +
-          `<input type="text" list="${datalistId}" value="${cur.replace(/"/g, "&quot;")}" placeholder="class name" spellcheck="false" autocomplete="off">` +
-          `<button class="empty-btn" title="Set to 'empty'">empty</button>` +
-          `<button class="clear-btn" title="Clear">×</button>` +
-        `</div>`;
-
-      const inp = card.querySelector("input");
-      const setVal = (val) => {
-        state[fname][slot] = val;
-        inp.value = val;
-        card.classList.remove("filled", "empty-set");
-        if (val === "empty") card.classList.add("empty-set");
-        else if (val !== "") card.classList.add("filled");
-        updateSummary(fname, sum);
-        updateProgress();
-        scheduleSave();
-      };
-
-      inp.addEventListener("change", () => setVal(inp.value.trim()));
-      inp.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") { setVal(inp.value.trim()); inp.blur(); }
-      });
-      card.querySelector(".empty-btn").addEventListener("click", () => setVal("empty"));
-      card.querySelector(".clear-btn").addEventListener("click", () => setVal(""));
-      card.querySelectorAll(".pred").forEach(btn => {
-        btn.addEventListener("click", () => setVal(btn.dataset.cls));
-      });
-
-      grid.appendChild(card);
-    }
-
-    det.appendChild(grid);
-    root.appendChild(det);
-  }
-  updateProgress();
-  setStatus("idle");
-}
-
-async function loadData() {
-  setStatus("loading", "saving");
-  const res = await fetch("/api/data");
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  DATA = await res.json();
-  state = JSON.parse(JSON.stringify(DATA.initial_labels));
-  for (const fname of DATA.filenames) {
-    if (!state[fname]) state[fname] = {};
-    for (const slot of DATA.slot_order) {
-      if (!(slot in state[fname])) state[fname][slot] = "";
-    }
-  }
-  populateDatalists();
-  updateAnchorStatus();
-  document.getElementById("loading").style.display = "none";
-  render();
-}
-
-document.getElementById("reloadBtn").addEventListener("click", async () => {
-  if (!confirm("Re-scan screenshots dir? Current unsaved changes will be flushed first.")) return;
-  if (saveTimer) { clearTimeout(saveTimer); await doSave(); }
-  setStatus("reloading", "saving");
-  try {
-    const r = await fetch("/api/reload", {method: "POST"});
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    await loadData();
-  } catch (err) {
-    setStatus("reload error: " + err.message, "error");
-  }
-});
-
-loadData().catch(err => {
-  document.getElementById("loading").textContent = "Failed to load: " + err.message;
-});
-</script>
-</body>
-</html>"""
-
-
-CALIBRATE_HTML = r"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Anchor Calibration</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a1a; color: #eee; margin: 0; padding: 12px; }
-  header { padding-bottom: 8px; border-bottom: 1px solid #333; margin-bottom: 12px; }
-  header h1 { margin: 0 0 4px; font-size: 16px; }
-  header p { margin: 0; font-size: 12px; color: #aaa; }
-  header a { color: #6cf; }
-  .layout { display: flex; gap: 16px; align-items: flex-start; }
-  .canvas-wrap { position: relative; flex: 1; min-width: 0; border: 1px solid #333; background: #000; }
-  .canvas-wrap img { display: block; width: 100%; height: auto; user-select: none; -webkit-user-drag: none; cursor: crosshair; }
-  #bbox { position: absolute; border: 2px solid #4f4; box-shadow: 0 0 0 9999px rgba(0,0,0,0.35); pointer-events: none; display: none; }
-  .panel { width: 320px; flex-shrink: 0; background: #222; padding: 12px; border-radius: 6px; font-size: 13px; }
-  .panel h2 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; color: #aaa; letter-spacing: 0.05em; }
-  .panel section { margin-bottom: 14px; }
-  .row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
-  .row label { width: 90px; font-family: monospace; color: #ccc; }
-  .row input[type=number] { flex: 1; min-width: 0; background: #1a1a1a; border: 1px solid #444; color: #eee; padding: 4px 6px; border-radius: 3px; font-family: monospace; font-size: 12px; }
-  .row input[type=range] { flex: 1; min-width: 0; }
-  .row .val { font-family: monospace; width: 40px; text-align: right; color: #aef; }
-  button { background: #355; border: 0; color: white; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; margin-right: 6px; }
-  button.primary { background: #485; }
-  button:hover { filter: brightness(1.15); }
-  button:disabled { background: #333; color: #666; cursor: not-allowed; }
-  .preview { display: flex; gap: 8px; align-items: flex-start; }
-  .preview > div { flex: 1; text-align: center; }
-  .preview img { display: block; max-width: 100%; image-rendering: pixelated; background: #111; border: 1px solid #333; }
-  .preview .lbl { font-size: 11px; color: #888; margin-bottom: 4px; }
-  #status { font-size: 12px; color: #aaa; min-height: 16px; }
-  #status.ok { color: #6f6; }
-  #status.err { color: #f66; }
-  #current { font-family: monospace; font-size: 11px; color: #aaa; white-space: pre-wrap; }
-  .hint { font-size: 11px; color: #888; margin-top: 4px; }
-</style>
-</head>
-<body>
-<header>
-  <h1>Anchor Calibration</h1>
-  <p>Click and drag a box around the scepter+shard region between the skill bar and items. Arrow keys nudge the box by 1 px (Shift = 10). <a href="/">← back to labeler</a></p>
-</header>
-<div class="layout">
-  <div class="canvas-wrap" id="canvasWrap">
-    <img id="ref" src="/calibrate/reference.png" draggable="false">
-    <div id="bbox"></div>
-  </div>
-  <div class="panel">
-    <section>
-      <h2>Bbox (image px)</h2>
-      <div class="row"><label>x</label><input type="number" id="x" value="0" min="0"></div>
-      <div class="row"><label>y</label><input type="number" id="y" value="0" min="0"></div>
-      <div class="row"><label>w</label><input type="number" id="w" value="0" min="1"></div>
-      <div class="row"><label>h</label><input type="number" id="h" value="0" min="1"></div>
-      <div class="hint">Reference: <span id="refSize">…</span></div>
-    </section>
-    <section>
-      <h2>Canny thresholds</h2>
-      <div class="row"><label>low</label><input type="range" id="cannyLow" min="10" max="250" value="80"><span class="val" id="cannyLowVal">80</span></div>
-      <div class="row"><label>high</label><input type="range" id="cannyHigh" min="20" max="400" value="160"><span class="val" id="cannyHighVal">160</span></div>
-      <div class="row"><label>match thr</label><input type="range" id="matchThr" min="0.1" max="0.95" step="0.05" value="0.5"><span class="val" id="matchThrVal">0.50</span></div>
-      <div class="row"><label>name</label><input type="text" id="anchorName" value="scepter" style="flex:1; min-width:0; background:#1a1a1a; border:1px solid #444; color:#eee; padding:4px 6px; border-radius:3px; font-family:monospace; font-size:12px;"></div>
-    </section>
-    <section>
-      <h2>Preview</h2>
-      <div class="preview">
-        <div><div class="lbl">crop</div><img id="cropPrev" alt="crop"></div>
-        <div><div class="lbl">canny edges</div><img id="edgesPrev" alt="edges"></div>
-      </div>
-      <div class="hint" id="previewHint"></div>
-    </section>
-    <section>
-      <button id="previewBtn">Preview</button>
-      <button id="saveBtn" class="primary" disabled>Save</button>
-      <div id="status"></div>
-    </section>
-    <section>
-      <h2>Currently saved</h2>
-      <div id="current">(loading…)</div>
-    </section>
-  </div>
-</div>
-<script>
-const img = document.getElementById("ref");
-const wrap = document.getElementById("canvasWrap");
-const bboxEl = document.getElementById("bbox");
-const xIn = document.getElementById("x"), yIn = document.getElementById("y");
-const wIn = document.getElementById("w"), hIn = document.getElementById("h");
-const cannyLow = document.getElementById("cannyLow");
-const cannyHigh = document.getElementById("cannyHigh");
-const cannyLowVal = document.getElementById("cannyLowVal");
-const cannyHighVal = document.getElementById("cannyHighVal");
-const matchThr = document.getElementById("matchThr");
-const matchThrVal = document.getElementById("matchThrVal");
-const anchorName = document.getElementById("anchorName");
-const cropPrev = document.getElementById("cropPrev");
-const edgesPrev = document.getElementById("edgesPrev");
-const previewHint = document.getElementById("previewHint");
-const status = document.getElementById("status");
-const saveBtn = document.getElementById("saveBtn");
-const refSize = document.getElementById("refSize");
-const currentBox = document.getElementById("current");
-
-let bbox = null;  // {x, y, w, h} in image-natural pixels
-let dragStart = null;
-let displayScale = 1;
-
-function imgToDisplay(v) { return v * displayScale; }
-function displayToImg(v) { return Math.round(v / displayScale); }
-
-function recomputeScale() {
-  if (!img.naturalWidth) return;
-  displayScale = img.clientWidth / img.naturalWidth;
-}
-
-function clampBbox(b) {
-  const W = img.naturalWidth, H = img.naturalHeight;
-  let x = Math.max(0, Math.min(b.x, W - 1));
-  let y = Math.max(0, Math.min(b.y, H - 1));
-  let w = Math.max(1, Math.min(b.w, W - x));
-  let h = Math.max(1, Math.min(b.h, H - y));
-  return {x, y, w, h};
-}
-
-function setBbox(b, fromInput) {
-  bbox = clampBbox(b);
-  if (!fromInput) {
-    xIn.value = bbox.x; yIn.value = bbox.y;
-    wIn.value = bbox.w; hIn.value = bbox.h;
-  }
-  recomputeScale();
-  bboxEl.style.display = "block";
-  bboxEl.style.left = imgToDisplay(bbox.x) + "px";
-  bboxEl.style.top = imgToDisplay(bbox.y) + "px";
-  bboxEl.style.width = imgToDisplay(bbox.w) + "px";
-  bboxEl.style.height = imgToDisplay(bbox.h) + "px";
-  saveBtn.disabled = false;
-}
-
-function eventToImageCoords(ev) {
-  const rect = img.getBoundingClientRect();
-  const dx = ev.clientX - rect.left;
-  const dy = ev.clientY - rect.top;
-  return {x: displayToImg(dx), y: displayToImg(dy)};
-}
-
-img.addEventListener("mousedown", (ev) => {
-  ev.preventDefault();
-  recomputeScale();
-  dragStart = eventToImageCoords(ev);
-});
-
-window.addEventListener("mousemove", (ev) => {
-  if (!dragStart) return;
-  const cur = eventToImageCoords(ev);
-  const x = Math.min(dragStart.x, cur.x);
-  const y = Math.min(dragStart.y, cur.y);
-  const w = Math.abs(cur.x - dragStart.x);
-  const h = Math.abs(cur.y - dragStart.y);
-  if (w > 0 && h > 0) setBbox({x, y, w, h});
-});
-
-window.addEventListener("mouseup", () => { dragStart = null; });
-
-window.addEventListener("keydown", (ev) => {
-  if (!bbox) return;
-  if (document.activeElement && document.activeElement.tagName === "INPUT") return;
-  const step = ev.shiftKey ? 10 : 1;
-  let {x, y, w, h} = bbox;
-  if (ev.key === "ArrowLeft")  x -= step;
-  else if (ev.key === "ArrowRight") x += step;
-  else if (ev.key === "ArrowUp")    y -= step;
-  else if (ev.key === "ArrowDown")  y += step;
-  else return;
-  ev.preventDefault();
-  setBbox({x, y, w, h});
-});
-
-[xIn, yIn, wIn, hIn].forEach(el => el.addEventListener("input", () => {
-  setBbox({
-    x: parseInt(xIn.value) || 0,
-    y: parseInt(yIn.value) || 0,
-    w: parseInt(wIn.value) || 1,
-    h: parseInt(hIn.value) || 1,
-  }, true);
-}));
-
-cannyLow.addEventListener("input", () => cannyLowVal.textContent = cannyLow.value);
-cannyHigh.addEventListener("input", () => cannyHighVal.textContent = cannyHigh.value);
-matchThr.addEventListener("input", () => matchThrVal.textContent = parseFloat(matchThr.value).toFixed(2));
-
-document.getElementById("previewBtn").addEventListener("click", async () => {
-  if (!bbox) { status.textContent = "draw a box first"; status.className = "err"; return; }
-  status.textContent = "rendering preview…"; status.className = "";
-  const qs = new URLSearchParams({
-    x: bbox.x, y: bbox.y, w: bbox.w, h: bbox.h,
-    canny_low: cannyLow.value, canny_high: cannyHigh.value,
-  });
-  const cropUrl = "/api/calibrate/preview?" + qs + "&kind=crop&t=" + Date.now();
-  const edgesUrl = "/api/calibrate/preview?" + qs + "&kind=edges&t=" + Date.now();
-  cropPrev.src = cropUrl;
-  edgesPrev.src = edgesUrl;
-  edgesPrev.onload = () => {
-    status.textContent = "preview ready"; status.className = "ok";
-    previewHint.textContent = "Edges should trace the scepter/shard silhouette clearly. If too sparse, lower thresholds. If noisy, raise them.";
-  };
-  edgesPrev.onerror = () => { status.textContent = "preview failed"; status.className = "err"; };
-});
-
-saveBtn.addEventListener("click", async () => {
-  if (!bbox) return;
-  status.textContent = "saving…"; status.className = "";
-  try {
-    const res = await fetch("/api/calibrate", {
-      method: "POST",
-      headers: {"content-type": "application/json"},
-      body: JSON.stringify({
-        x: bbox.x, y: bbox.y, w: bbox.w, h: bbox.h,
-        canny_low: parseInt(cannyLow.value),
-        canny_high: parseInt(cannyHigh.value),
-        match_threshold: parseFloat(matchThr.value),
-        anchor_name: anchorName.value || "scepter",
-      }),
-    });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const data = await res.json();
-    status.textContent = `saved ${data.n_item_offsets} item offsets · edge density ${(data.edge_density*100).toFixed(1)}%. Restart inference to pick up.`;
-    status.className = "ok";
-    loadState();
-  } catch (err) {
-    status.textContent = "save failed: " + err.message;
-    status.className = "err";
-  }
-});
-
-async function loadState() {
-  const res = await fetch("/api/calibrate/state");
-  const data = await res.json();
-  if (data.reference_size && data.reference_size[0]) {
-    refSize.textContent = data.reference_size[0] + " × " + data.reference_size[1];
-  }
-  if (data.current) {
-    const c = data.current;
-    const b = c.anchor_bbox;
-    currentBox.textContent =
-      `anchor: ${c.anchor}\nbbox:   x=${b.x} y=${b.y} w=${b.w} h=${b.h}\n` +
-      `canny:  low=${c.canny_low} high=${c.canny_high}\n` +
-      `thresh: ${c.match_threshold}\n` +
-      `items:  ${Object.keys(c.item_offsets).length}`;
-    if (!bbox) {
-      cannyLow.value = c.canny_low; cannyLowVal.textContent = c.canny_low;
-      cannyHigh.value = c.canny_high; cannyHighVal.textContent = c.canny_high;
-      matchThr.value = c.match_threshold; matchThrVal.textContent = c.match_threshold.toFixed(2);
-      anchorName.value = c.anchor;
-      img.addEventListener("load", () => { recomputeScale(); setBbox(b); }, {once: true});
-      if (img.complete && img.naturalWidth) { recomputeScale(); setBbox(b); }
-    }
-  } else {
-    currentBox.textContent = "(none — no anchor configured yet)";
-  }
-}
-
-img.addEventListener("load", recomputeScale);
-window.addEventListener("resize", () => { recomputeScale(); if (bbox) setBbox(bbox); });
-loadState();
-</script>
-</body>
-</html>"""
+    return FileResponse(WEB_DIR / "index.html")
