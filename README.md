@@ -13,10 +13,12 @@ coaching service.
 ```
 Dota 2 client
   │
-  ├─ GSI HTTP push (~10 Hz) ──────────────► gsi_service      (port 8082)
-  │                                         stores events in gsi.db
+  ├─ GSI HTTP push (~10 Hz) ──────────────► state_fuser_service (port 8083)
+  │                                         POST /gsi
+  │                                         snapshots stored in fuser.db,
+  │                                         fused with CV inference output
   │
-  └─ Screenshots ─────────────────────────► inference_service (port 8080)
+  └─ Screenshots ─────────────────────────► inference_service   (port 8080)
                                             item classifier + hero OCR
                                             returns {items, hero_name}
 
@@ -60,13 +62,18 @@ Browser-based labeling and calibration UI.
 - `GET /calibrate/talent` — talent indicator anchor calibration; draw
   two boxes (talent indicator + hero name label) to configure hero OCR
 
-### `gsi_service.py` — port 8082
-Valve GSI event ingestor.
+### `state_fuser_service.py` — port 8083
+Valve GSI event ingestor + CV/GSI state fuser.
 
-- `POST /` — receives live game state payloads from the Dota 2 client,
-  validates the auth token, and persists events to `gsi.db` (SQLite)
-- `GET /state` — returns the latest full game state snapshot
-- `GET /events` — streams recent events as newline-delimited JSON
+- `POST /gsi` — receives live game state payloads from the Dota 2 client,
+  validates the auth token, and persists snapshots to `fuser.db` (SQLite)
+- `POST /screenshot` — accepts a screenshot, forwards it to the inference
+  service, and stores the inference output in `fuser.db` keyed by hero
+- `GET /health` — current matchid, snapshot count, and clock offset
+- `GET /state` / `GET /state/latest` — current/latest GSI game state
+- `GET /sessions`, `GET /sessions/{matchid}` — recorded matches
+- `GET /fused`, `GET /fused/{game_id}` — fused GSI + CV state for the
+  current or a historical match
 
 Configure the Dota 2 client to push to this service by placing
 `configs/gamestate_integration_coaching.cfg` in the game's
