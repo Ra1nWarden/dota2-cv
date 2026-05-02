@@ -1,0 +1,3 @@
+[submodule "vendor/dotaconstants"]
+	path = vendor/dotaconstants
+	url = https://github.com/odota/dotaconstants
