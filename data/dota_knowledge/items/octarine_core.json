@@ -1,0 +1,45 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Cooldown Reduction",
+      "key": "bonus_cooldown",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "450"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "450"
+    },
+    {
+      "key": "bonus_health_regen",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "soul_booster",
+    "tiara_of_selemene",
+    ""
+  ],
+  "cost": 4900,
+  "created": true,
+  "id": 235,
+  "mc": false,
+  "name": "Octarine Core",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "octarine_core"
+}

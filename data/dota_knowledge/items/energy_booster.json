@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "250"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 800,
+  "created": false,
+  "id": 59,
+  "mc": false,
+  "name": "Energy Booster",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "energy_booster"
+}

@@ -1,0 +1,414 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "175",
+            "250",
+            "325"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "110"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "300"
+        },
+        {
+          "header": "CAST RANGE:",
+          "key": "range",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1100"
+        },
+        {
+          "generated": true,
+          "header": "SLOW PERCENT:",
+          "key": "slow_percent",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "desc": "Sends a swarm of winged beasts to savage enemy units in front of Death Prophet.",
+      "dmg_type": "Magical",
+      "key": "death_prophet_carrion_swarm",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Crypt Swarm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1750"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Fires a projectile that prevents enemy units in a target area from casting spells.",
+      "dmg_type": "",
+      "key": "death_prophet_silence",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Silence"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PCT:",
+          "key": "damage_pct",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "haunt_duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "SIPHON BUFFER:",
+          "key": "siphon_buffer",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Creates a spirit link between Death Prophet and an enemy unit, draining health from the enemy.",
+      "dmg_type": "Magical",
+      "key": "death_prophet_spirit_siphon",
+      "mc": "80",
+      "name": "Spirit Siphon"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MOVEMENT SPEED PCT:",
+          "key": "movement_speed_pct",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "death_prophet_witchcraft",
+      "mc": null,
+      "name": "Witchcraft"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "header": "SPIRITS:",
+          "key": "spirits",
+          "value": [
+            "10",
+            "18",
+            "26"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT SPEED:",
+          "key": "spirit_speed",
+          "value": "525"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "GIVE UP DISTANCE:",
+          "key": "give_up_distance",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "MIN DAMAGE:",
+          "key": "min_damage",
+          "value": "62"
+        },
+        {
+          "generated": true,
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": "67"
+        },
+        {
+          "header": "LIFE DRAIN:",
+          "key": "heal_percent",
+          "value": "25%"
+        },
+        {
+          "header": "SPIRIT DAMAGE:",
+          "key": "average_damage",
+          "value": "64"
+        },
+        {
+          "generated": true,
+          "header": "GHOST SPAWN RATE:",
+          "key": "ghost_spawn_rate",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "DURATION INCREASE PER KILL:",
+          "key": "duration_increase_per_kill",
+          "value": "0"
+        },
+        {
+          "header": "ACTIVE MOVEMENT BONUS:",
+          "key": "movement_bonus",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "150",
+      "desc": "Unleashes evil spirits to drain the life of nearby enemy units and structures. Spirits need to return back to Death Prophet in order to attack again. At the end of the spell's duration, Death Prophet is healed in proportion to the damage dealt. Deals 50% damage to buildings. Lasts 40 seconds.",
+      "dmg_type": "Physical",
+      "key": "death_prophet_exorcism",
+      "mc": [
+        "200",
+        "300",
+        "400"
+      ],
+      "name": "Exorcism"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Exorcism",
+    "desc": "Whenever an enemy is affected by Death Prophet's spells or when she attacks an enemy, a ghost will fly out and hit the enemy for an increased bonus of its usual damage then return to her with life.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Spirit Siphon",
+    "desc": "Increases Spirit Siphon charges by 1 and causes enemies to be feared for 1.0 seconds if they are siphoned for 3 seconds consecutively.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 2,
+    "armor": 1,
+    "attack_max": 32,
+    "attack_min": 22,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 24,
+    "int_gain": 3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.9
+  },
+  "name": "Death Prophet",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "death_prophet",
+  "talents": [
+    {
+      "left": "-?s Spirit Siphon Replenish Time",
+      "level": 25,
+      "right": "Deaths During Exorcism Extend Duration By +?s"
+    },
+    {
+      "left": "+? Exorcism Spirits",
+      "level": 20,
+      "right": "+? Spirit Siphon Damage/Heal"
+    },
+    {
+      "left": "+50 Attack Speed",
+      "level": 15,
+      "right": "-?s Crypt Swarm Cooldown"
+    },
+    {
+      "left": "+? Silence AoE",
+      "level": 10,
+      "right": "+200 Health"
+    }
+  ]
+}

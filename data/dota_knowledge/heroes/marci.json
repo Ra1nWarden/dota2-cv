@@ -1,0 +1,610 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "LANDING RADIUS:",
+          "key": "landing_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "AIR DURATION:",
+          "key": "air_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "AIR HEIGHT:",
+          "key": "air_height",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "PULL OFFSET:",
+          "key": "pull_offset",
+          "value": "75"
+        },
+        {
+          "header": "THROW DISTANCE:",
+          "key": "throw_distance_behind",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "PULL ANGLE:",
+          "key": "pull_angle",
+          "value": "230"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": "3"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "impact_damage",
+          "value": [
+            "60",
+            "150",
+            "240",
+            "330"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow_pct",
+          "value": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Marci grabs an allied or enemy target and throws it effortlessly behind her, damaging and slowing the unit if it's an enemy. Any enemy units in the landing area will also be damaged and slowed.",
+      "dmg_type": "Magical",
+      "key": "marci_grapple",
+      "mc": "80",
+      "name": "Dispose"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MOVE SPEED:",
+          "key": "move_speed",
+          "value": "1700"
+        },
+        {
+          "generated": true,
+          "header": "MIN JUMP DISTANCE:",
+          "key": "min_jump_distance",
+          "value": "0"
+        },
+        {
+          "header": "CAST / JUMP RANGE:",
+          "key": "max_jump_distance",
+          "value": [
+            "450",
+            "550",
+            "650",
+            "750"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "450",
+            "550",
+            "650",
+            "750"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LANDING RADIUS:",
+          "key": "landing_radius",
+          "value": "300"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "impact_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "debuff_duration",
+          "value": [
+            "0.8",
+            "1.1",
+            "1.4",
+            "1.7"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MIN LOB TRAVEL TIME:",
+          "key": "min_lob_travel_time",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "MAX LOB TRAVEL TIME:",
+          "key": "max_lob_travel_time",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MIN HEIGHT ABOVE LOWEST:",
+          "key": "min_height_above_lowest",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "MIN HEIGHT ABOVE HIGHEST:",
+          "key": "min_height_above_highest",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "MIN ACCELERATION:",
+          "key": "min_acceleration",
+          "value": "6000"
+        },
+        {
+          "generated": true,
+          "header": "MAX ACCELERATION:",
+          "key": "max_acceleration",
+          "value": "6000"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR PREVIEW RADIUS:",
+          "key": "vector_preview_radius",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "ALLY BUFF DURATION:",
+          "key": "ally_buff_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "ALLY MOVESPEED PCT:",
+          "key": "ally_movespeed_pct",
+          "value": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IMPACT POSITION OFFSET:",
+          "key": "impact_position_offset",
+          "value": "64"
+        },
+        {
+          "generated": true,
+          "header": "TARGET ABORT DISTANCE:",
+          "key": "target_abort_distance",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "ALLY ARC OFFSET:",
+          "key": "ally_arc_offset",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "ALLY IMPACT DAMAGE PCT:",
+          "key": "ally_impact_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "POSTJUMP UNLEASH DURATION:",
+          "key": "postjump_unleash_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "POSTJUMP FLURRY CHARGES:",
+          "key": "postjump_flurry_charges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAN JUMP OFF ALLIES:",
+          "key": "can_jump_off_allies",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "20",
+        "16",
+        "12"
+      ],
+      "desc": "Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies where she lands.\n\nWhen Rebound is set to alt-cast, Marci brings the target ally with her to her final destination.\n\n The ally receives 15% bonus movement speed for 4s.",
+      "dmg_type": "Magical",
+      "key": "marci_companion_run",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Rebound"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "bodyguard_duration",
+          "value": "7"
+        },
+        {
+          "header": "LIFESTEAL:",
+          "key": "lifesteal_pct",
+          "value": [
+            "12%",
+            "18%",
+            "24%",
+            "30%"
+          ]
+        },
+        {
+          "header": "BONUS BASE ATTACK DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "12%",
+            "18%",
+            "24%",
+            "30%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP LIFESTEAL REDUCTION PCT:",
+          "key": "creep_lifesteal_reduction_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "BODYGUARD ATTACK RANGE BUFFER:",
+          "key": "bodyguard_attack_range_buffer",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "MAX PARTNER PENALTY:",
+          "key": "max_partner_penalty",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "COUNTER COOLDOWN:",
+          "key": "counter_cooldown",
+          "value": "0.45"
+        },
+        {
+          "generated": true,
+          "header": "SHARED HEALING PERCENT:",
+          "key": "shared_healing_percent",
+          "value": "0"
+        },
+        {
+          "header": "SHARED BARRIER AMOUNT:",
+          "key": "shared_barrier",
+          "value": [
+            "90",
+            "160",
+            "230",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STRONG DISPEL:",
+          "key": "strong_dispel",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SHARED BARRIER REPLENISH AMOUNT:",
+          "key": "shared_barrier_replenish_amount",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "20",
+      "desc": "Passively grants Marci lifesteal and bonus attack damage.\n\nWhen cast on an ally, she provides them with 75% of her passive lifesteal and attack damage bonus. Additionally Marci creates a shared all damage barrier for herself and her partner. As Marci attacks heroes, 30% of the damage dealt restores the barrier.",
+      "dmg_type": "Physical",
+      "key": "marci_bodyguard",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Bodyguard"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BONUS LEVELS:",
+          "key": "bonus_levels",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "COURIER MAX LEVEL:",
+          "key": "courier_max_level",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "BONUS HP:",
+          "key": "bonus_hp",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "BONUS HP TOOLTIP:",
+          "key": "bonus_hp_tooltip",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "245",
+      "desc": "Marci whistles to instantly summon her courier to her. If the courier started in the fountain, it will take items from Marci's stash. After teleporting it will transfer these items to Marci and head back to the fountain.\n\nPassively grants all allied couriers 3 bonus levels and 1 bonus health.",
+      "dmg_type": "",
+      "key": "marci_special_delivery",
+      "mc": null,
+      "name": "Special Delivery"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "16"
+        },
+        {
+          "header": "STRIKES PER FURY:",
+          "key": "charges_per_flurry",
+          "value": "5"
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "flurry_bonus_attack_speed",
+          "value": [
+            "700",
+            "925",
+            "1150"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TIME BETWEEN FLURRIES:",
+          "key": "time_between_flurries",
+          "value": "1.5"
+        },
+        {
+          "header": "PULSE RADIUS:",
+          "key": "pulse_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "PULSE DEBUFF DURATION:",
+          "key": "pulse_debuff_duration",
+          "value": "2"
+        },
+        {
+          "header": "PULSE DAMAGE:",
+          "key": "pulse_damage",
+          "value": [
+            "50",
+            "100",
+            "150"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "pulse_move_slow_pct",
+          "value": "30%"
+        },
+        {
+          "header": "BASE ATTACK SPEED SLOW:",
+          "key": "pulse_attack_slow_pct",
+          "value": [
+            "60",
+            "80",
+            "100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX TIME WINDOW PER HIT:",
+          "key": "max_time_window_per_hit",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVESPEED:",
+          "key": "bonus_movespeed",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "RECOVERY FIXED ATTACK RATE:",
+          "key": "recovery_fixed_attack_rate",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "SHARD PUSH LENGTH:",
+          "key": "shard_push_length",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "80",
+        "70",
+        "60"
+      ],
+      "desc": "Marci taps a hidden power, gaining Fury charges that allow her to deliver a rapid sequence of strikes that slow movement and attack speed of the target for 2s. The last strike in every Fury combo creates a damaging pulse around the target. In between Fury combos, Marci is unable to attack for 1.5s.\n\nMarci gains 15% movement speed when Unleash is cast.",
+      "dmg_type": "Magical",
+      "key": "marci_unleash",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Unleash"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Unleash",
+    "desc": "Reduces Unleash cooldown by 10.0 seconds and causes Unleash to apply a basic dispel on Marci. While Unleash is Active, all of Marci's abilities unleash pulses when cast. All of Marci's unleash pulses will silence units for 1 seconds.\n\nDISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Rebound",
+    "desc": "Increases damage. Rebound can be cast on enemies, and causes Marci to also get the speed boost when she casts it.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 20,
+    "agi_gain": 2.2,
+    "armor": 0,
+    "attack_max": 33,
+    "attack_min": 29,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 19,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 3.2
+  },
+  "name": "Marci",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Carry",
+    "Initiator",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "marci",
+  "talents": [
+    {
+      "left": "Unleash Duration Extended By 6s On Kill",
+      "level": 25,
+      "right": "Bodyguard Strong Dispels"
+    },
+    {
+      "left": "+0.75s Rebound Stun Duration",
+      "level": 20,
+      "right": "+15% Unleash Movement Speed"
+    },
+    {
+      "left": "+100 Dispose Damage",
+      "level": 15,
+      "right": "+12% Bodyguard Damage"
+    },
+    {
+      "left": "+1.5s Dispose Slow Duration",
+      "level": 10,
+      "right": "+50 Rebound Landing Radius"
+    }
+  ]
+}

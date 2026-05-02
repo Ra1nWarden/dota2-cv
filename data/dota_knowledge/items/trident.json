@@ -1,0 +1,72 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Status Resistance",
+      "key": "status_resistance",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movement_speed_percent_bonus",
+      "value": "10"
+    },
+    {
+      "display": "+ {value}% Health Regen and Lifesteal Amp",
+      "key": "hp_regen_amp",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Mana Regen Amplification",
+      "key": "mana_regen_multiplier",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Magic Damage Attack",
+      "key": "magic_damage_attack",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "kaya",
+    "sange",
+    "yasha",
+    ""
+  ],
+  "cost": 6301,
+  "created": true,
+  "id": 369,
+  "mc": false,
+  "name": "Trident",
+  "notes": "",
+  "qual": null,
+  "short_name": "trident"
+}

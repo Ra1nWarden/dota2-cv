@@ -1,0 +1,24 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "summon_duration",
+      "value": "60"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 1032,
+  "mc": false,
+  "name": "Pocket Roshan",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "pocket_roshan"
+}

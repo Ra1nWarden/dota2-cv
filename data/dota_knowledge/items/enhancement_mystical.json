@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "0.8 / 1.6 / 2.4 / 3.2"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "magic_res",
+      "value": "0 / 10 / 13 / 16"
+    },
+    {
+      "display": "+ {value}% Mana Cost/Mana Loss Reduction",
+      "key": "manacost_reduction",
+      "value": "0 / 0 / 0 / 15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1583,
+  "mc": false,
+  "name": "Mystical",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_mystical"
+}

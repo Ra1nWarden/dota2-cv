@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Your next attack deals an additional 120 magic damage and splashes to units within 250 units for 50% of the original attack's damage plus the additional magic damage.",
+      "title": "Beat the Crowd",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_damage",
+      "value": "120"
+    },
+    {
+      "key": "splash_radius",
+      "value": "250"
+    },
+    {
+      "key": "splash_pct",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": 10,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1603,
+  "mc": false,
+  "name": "Gunpowder Gauntlet",
+  "notes": "",
+  "qual": null,
+  "short_name": "gunpowder_gauntlets"
+}

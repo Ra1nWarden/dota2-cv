@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Survive for an extra 6 seconds after receiving a killing blow. If any enemy heroes dies within 1200 units, the death delay effect is extended by 5 seconds. The hero cannot attack buildings during Death Delay.",
+      "title": "Death Delay",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "6"
+    },
+    {
+      "key": "bonus_kill_duration",
+      "value": "5"
+    },
+    {
+      "key": "kill_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": 100,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 327,
+  "mc": false,
+  "name": "Helm of the Undying",
+  "notes": "",
+  "qual": null,
+  "short_name": "helm_of_the_undying"
+}

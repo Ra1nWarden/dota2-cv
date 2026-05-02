@@ -1,0 +1,480 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "STACKS PER CAST:",
+          "key": "stacks_per_cast",
+          "value": "2"
+        },
+        {
+          "header": "DAMAGE PER STACK:",
+          "key": "damage",
+          "value": [
+            "2.5",
+            "5",
+            "7.5",
+            "10"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "375"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_speed_pct",
+          "value": [
+            "-.75%",
+            "-1.5%",
+            "-2.25%",
+            "-3%"
+          ]
+        },
+        {
+          "header": "TURN RATE SLOW:",
+          "key": "turn_rate_pct",
+          "value": [
+            "-10%",
+            "-30%",
+            "-50%",
+            "-70%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX STACKS:",
+          "key": "max_stacks",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "UNLIMITED STACKS:",
+          "key": "unlimited_stacks",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE PCT:",
+          "key": "creep_damage_pct",
+          "value": "20"
+        },
+        {
+          "header": "APPLICATION DAMAGE:",
+          "key": "application_damage",
+          "value": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "BUILDING DAMAGE:",
+          "key": "building_damage_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "NAPALM STACKS ON ATTACK:",
+          "key": "napalm_stacks_on_attack",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "3",
+      "desc": "Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies. Additional casts of Sticky Napalm continue to increase damage, up to 20 stacks. Applies a small amount of damage with each cast.",
+      "dmg_type": "Magical",
+      "key": "batrider_sticky_napalm",
+      "mc": "22",
+      "name": "Sticky Napalm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "damage_impact",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "25",
+            "30",
+            "35",
+            "40"
+          ]
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "damage_duration",
+          "value": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "explosion_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "COLLISION RADIUS:",
+          "key": "collision_radius",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1700"
+        },
+        {
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.35"
+        },
+        {
+          "generated": true,
+          "header": "NAPALM STACKS:",
+          "key": "napalm_stacks",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow",
+          "value": [
+            "6%",
+            "12%",
+            "18%",
+            "24%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "19",
+        "16",
+        "13"
+      ],
+      "desc": "Hurls an explosive cocktail that explodes when it reaches the target location, knocking back, slowing and dealing damage over time to enemies in the area.",
+      "dmg_type": "Magical",
+      "key": "batrider_flamebreak",
+      "mc": "110",
+      "name": "Flamebreak"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "250"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TREE RADIUS:",
+          "key": "tree_radius",
+          "value": "100"
+        },
+        {
+          "header": "MAX MOVEMENT SPEED BONUS:",
+          "key": "movement_speed_pct_total",
+          "value": [
+            "12%",
+            "18%",
+            "24%",
+            "30%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "45",
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "Batrider takes to the skies, moving increasingly fast and laying down a trail of flames from the air. The fire damages any enemies it touches and destroys trees below Batrider. Maximum movement speed bonus is reached at the end of Firefly's duration.",
+      "dmg_type": "Magical",
+      "key": "batrider_firefly",
+      "mc": "100",
+      "name": "Firefly"
+    },
+    {
+      "attrib": [],
+      "behavior": "Hidden",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "batrider_sticky_napalm_application_damage",
+      "mc": null,
+      "name": "APPLICATION DAMAGE:"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TOTAL TICKS:",
+          "key": "total_ticks",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "TICK ATTACK DAMAGE PCT:",
+          "key": "tick_attack_damage_pct",
+          "value": "20"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Batrider's attacks apply a debuff that deals 20% of the attack damage every 1s for 2s.",
+      "dmg_type": "",
+      "key": "batrider_smoldering_resin",
+      "mc": null,
+      "name": "Smoldering Resin"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2.25",
+            "2.75",
+            "3.25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DRAG DISTANCE:",
+          "key": "drag_distance",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "BREAK DISTANCE:",
+          "key": "break_distance",
+          "value": "425"
+        },
+        {
+          "header": "TOTAL DAMAGE:",
+          "key": "damage",
+          "value": [
+            "200",
+            "350",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "90",
+        "75",
+        "60"
+      ],
+      "desc": "Lassoes an enemy and drags them in Batrider's wake. Dragged units cannot move, attack, or use abilities. Teleporting or blinking will break the lasso.",
+      "dmg_type": "Magical",
+      "key": "batrider_flaming_lasso",
+      "mc": [
+        "125",
+        "150",
+        "175"
+      ],
+      "name": "Flaming Lasso"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Flaming Lasso",
+    "desc": "Flaming Lasso grabs both its target, as well as the target's nearest allied hero within 650 units. The secondary target is tethered to the first.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Sticky Napalm",
+    "desc": "Sticky Napalm no longer has a stack limit.\n\nSticky Napalm deals damage to structures.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 13,
+    "agi_gain": 2,
+    "armor": 2,
+    "attack_max": 16,
+    "attack_min": 12,
+    "attack_range": 400,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1.25,
+    "int": 22,
+    "int_gain": 2.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 320,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 2.9
+  },
+  "name": "Batrider",
+  "primary_attr": "all",
+  "roles": [
+    "Initiator",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "batrider",
+  "talents": [
+    {
+      "left": "+0.75s Flaming Lasso Duration",
+      "level": 25,
+      "right": "Flamebreak applies 4 Sticky Napalm Stacks"
+    },
+    {
+      "left": "Attacks apply 1 Stack of Sticky Napalm",
+      "level": 20,
+      "right": "-6s Flamebreak Cooldown"
+    },
+    {
+      "left": "+30 Firefly Damage Per Second",
+      "level": 15,
+      "right": "+0.5% Sticky Napalm Movement Slow"
+    },
+    {
+      "left": "+5% Firefly Max Movement Speed Bonus",
+      "level": 10,
+      "right": "+1s Smoldering Resin Duration"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Increases your current and max health by 240 for 10 seconds.",
+      "title": "Life Essence",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_int",
+      "value": "0"
+    },
+    {
+      "key": "mp_regen",
+      "value": "0"
+    },
+    {
+      "key": "health_gain",
+      "value": "240"
+    },
+    {
+      "key": "health_gain_duration",
+      "value": "10"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 359,
+  "mc": 160,
+  "name": "Essence Ring",
+  "notes": "",
+  "qual": null,
+  "short_name": "essence_ring"
+}

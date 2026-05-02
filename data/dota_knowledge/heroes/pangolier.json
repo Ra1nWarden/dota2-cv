@@ -1,0 +1,650 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DASH RANGE:",
+          "key": "dash_range",
+          "value": [
+            "575",
+            "650",
+            "725",
+            "800"
+          ]
+        },
+        {
+          "header": "SLASH RANGE:",
+          "key": "range",
+          "value": "850"
+        },
+        {
+          "header": "DAMAGE PER STRIKE:",
+          "key": "damage",
+          "value": [
+            "35",
+            "65",
+            "95",
+            "125"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK DAMAGE:",
+          "key": "attack_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DASH SPEED:",
+          "key": "dash_speed",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK INTERVAL:",
+          "key": "attack_interval",
+          "value": "0.1"
+        },
+        {
+          "header": "SLASH WIDTH:",
+          "key": "start_radius",
+          "value": "155"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "155"
+        },
+        {
+          "header": "STRIKES:",
+          "key": "strikes",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "PROCS ONHIT EFFECTS:",
+          "key": "procs_onhit_effects",
+          "value": "1"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.6"
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow_percent",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PENALTY:",
+          "key": "damage_penalty",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "575",
+            "650",
+            "725",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "19",
+        "16",
+        "13",
+        "10"
+      ],
+      "desc": "Pangolier dashes along the target line, then slashes and briefly slows all enemies in the drawn direction with several quick swipes.\n\nLucky Shot has a chance to activate from this damage.",
+      "dmg_type": "Physical",
+      "key": "pangolier_swashbuckle",
+      "mc": [
+        "75",
+        "80",
+        "85",
+        "90"
+      ],
+      "name": "Swashbuckle"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "120",
+            "180",
+            "240"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BASE SHIELD:",
+          "key": "base_shield",
+          "value": "0"
+        },
+        {
+          "header": "BARRIER:",
+          "key": "hero_shield",
+          "value": [
+            "60",
+            "120",
+            "180",
+            "240"
+          ]
+        },
+        {
+          "header": "BARRIER DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAN DOUBLE JUMP:",
+          "key": "can_double_jump",
+          "value": "0"
+        },
+        {
+          "header": "MIN DAMAGE INCREASE:",
+          "key": "min_damage_increase_pct",
+          "value": "0%"
+        },
+        {
+          "header": "MAX DAMAGE INCREASE:",
+          "key": "max_damage_increase_pct",
+          "value": "0%"
+        },
+        {
+          "header": "MAX BARRIER INCREASE:",
+          "key": "max_barrier_increase_pct_tooltip",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DURATION:",
+          "key": "jump_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DURATION GYROSHELL:",
+          "key": "jump_duration_gyroshell",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "JUMP HEIGHT:",
+          "key": "jump_height",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "JUMP HEIGHT GYROSHELL:",
+          "key": "jump_height_gyroshell",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "JUMP HORIZONTAL DISTANCE:",
+          "key": "jump_horizontal_distance",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER DAMAGE OUTGOING TOOLTIP:",
+          "key": "scepter_damage_outgoing_tooltip",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Pangolier jumps in the air and slams back to the ground in front of his current position damaging all enemies in a radius. Pangolier gains an all damage barrier for a short time if Shield Crash hits an enemy hero.\n\nForward movement is maintained if Shield Crash is used while Rolling Thunder is active, and allows Rolling Thunder to clear walls or cliffs.",
+      "dmg_type": "Physical",
+      "key": "pangolier_shield_crash",
+      "mc": "75",
+      "name": "Shield Crash"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE:",
+          "key": "chance_pct",
+          "value": "17%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED REDUCTION:",
+          "key": "attack_slow",
+          "value": [
+            "40",
+            "80",
+            "120",
+            "160"
+          ]
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor",
+          "value": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Pangolier rolls the dice and lets fate decide the outcome for his enemies. Grants a chance to drastically slow their attack speed and reduce armor on any damage dealt by Pangolier's attacks or abilities.",
+      "dmg_type": "",
+      "key": "pangolier_lucky_shot",
+      "mc": null,
+      "name": "Lucky Shot"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST TIME TOOLTIP:",
+          "key": "cast_time_tooltip",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.05"
+        },
+        {
+          "generated": true,
+          "header": "FORWARD MOVE SPEED:",
+          "key": "forward_move_speed",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE BOOSTED:",
+          "key": "turn_rate_boosted",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "HIT RADIUS:",
+          "key": "hit_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE DURATION:",
+          "key": "bounce_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1",
+            "1.25",
+            "1.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK RADIUS:",
+          "key": "knockback_radius",
+          "value": "150"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2.25"
+        },
+        {
+          "generated": true,
+          "header": "JUMP RECOVER TIME:",
+          "key": "jump_recover_time",
+          "value": "0.25"
+        },
+        {
+          "header": "ROLL AWAY DURATION:",
+          "key": "rollup_bounce_duration",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": "80"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "40",
+      "desc": "Pangolier curls into an immobile protective ball, gaining debuff immunity, 80% magic resistance, and allowing him to turn. Can be cast during Rolling Thunder to temporarily hit the brakes. Can cast Rolling Thunder and Shield Crash during Roll Up. If enemies attack Pangolier during this, he will roll away from the attacker, applying Rolling Thunder damage/stun if there are enemies in the way.",
+      "dmg_type": "Magical",
+      "key": "pangolier_rollup",
+      "mc": "50",
+      "name": "Roll Up"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TOTAL ATTACK DAMAGE AS DAMAGE:",
+          "key": "damage_pct",
+          "value": "100%"
+        },
+        {
+          "header": "TRANSFORM TIME:",
+          "key": "cast_time_tooltip",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.05"
+        },
+        {
+          "header": "ROLL SPEED:",
+          "key": "forward_move_speed",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "MOVE SPEED RAMP UP TIME:",
+          "key": "move_speed_ramp_up_time",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE BOOSTED:",
+          "key": "turn_rate_boosted",
+          "value": "165"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "120"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "hit_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE DURATION:",
+          "key": "bounce_duration",
+          "value": "0.4"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.2"
+        },
+        {
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_radius",
+          "value": "150"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "JUMP RECOVER TIME:",
+          "key": "jump_recover_time",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": "80"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "90",
+        "85",
+        "80"
+      ],
+      "desc": "Pangolier curls into a debuff immune ball with 80% magic resistance and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage proportional to his attack damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Physical",
+      "key": "pangolier_gyroshell",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Rolling Thunder"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Halt!",
+      "dmg_type": "",
+      "key": "pangolier_gyroshell_stop",
+      "mc": null,
+      "name": "Stop Rolling"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Ends Pangolier's Roll Up early.",
+      "dmg_type": "",
+      "key": "pangolier_rollup_stop",
+      "mc": null,
+      "name": "End Roll Up"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "aura_radius",
+          "value": "1200"
+        },
+        {
+          "header": "CHANCE REDUCTION:",
+          "key": "chance_reduce",
+          "value": "-50%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Random item and ability effects of enemies near Pangolier have a reduced chance to affect him.",
+      "dmg_type": "",
+      "key": "pangolier_fortune_favors_the_bold",
+      "mc": null,
+      "name": "Fortune Favors the Bold"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shield Crash",
+    "desc": "Causes Shield Crash to cast a 2-attack Swashbuckle every 90 degrees around your hero that deals 75% damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Roll Up",
+    "desc": "Pangolier curls into an immobile protective ball, gaining debuff immunity, 80% magic resistance, and allowing him to turn. Can be cast during Rolling Thunder to temporarily hit the brakes. Can cast Rolling Thunder and Shield Crash during Roll Up. If enemies attack Pangolier during this, he will roll away from the attacker, applying Rolling Thunder damage/stun if there are enemies in the way.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 3.2,
+    "armor": 2,
+    "attack_max": 32,
+    "attack_min": 26,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1.25,
+    "int": 16,
+    "int_gain": 2.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.7
+  },
+  "name": "Pangolier",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Escape",
+    "Initiator"
+  ],
+  "short_name": "pangolier",
+  "talents": [
+    {
+      "left": "+20% Attack Damage as Swashbuckle Damage",
+      "level": 25,
+      "right": "-15s Rolling Thunder Cooldown"
+    },
+    {
+      "left": "+2s Rolling Thunder Duration",
+      "level": 20,
+      "right": "-1.5s Shield Crash Cooldown"
+    },
+    {
+      "left": "-2s Swashbuckle Cooldown",
+      "level": 15,
+      "right": "+125 Shield Crash Barrier"
+    },
+    {
+      "left": "+3 Lucky Shot Armor Reduction",
+      "level": 10,
+      "right": "+200 Swashbuckle Slash Range"
+    }
+  ]
+}

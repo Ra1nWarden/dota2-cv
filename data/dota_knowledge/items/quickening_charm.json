@@ -1,0 +1,33 @@
+{
+  "abilities": [
+    {
+      "description": "Reduces the cooldown time of all spells and items.",
+      "title": "Cooldown Reduction",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Cooldown Reduction",
+      "key": "bonus_cooldown",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 289,
+  "mc": false,
+  "name": "Quickening Charm",
+  "notes": "",
+  "qual": null,
+  "short_name": "quickening_charm"
+}

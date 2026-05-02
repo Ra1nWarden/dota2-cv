@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 30 health regeneration to the target for 13 seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.\n\nHeals for half the amount per second when cast on an ally.",
+      "title": "Salve",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "buff_duration",
+      "value": "13"
+    },
+    {
+      "key": "health_regen",
+      "value": "30"
+    },
+    {
+      "key": "break_on_hero_damage",
+      "value": "1"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 100,
+  "created": false,
+  "id": 39,
+  "mc": false,
+  "name": "Healing Salve",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "flask"
+}

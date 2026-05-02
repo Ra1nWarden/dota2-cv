@@ -1,0 +1,82 @@
+{
+  "abilities": [
+    {
+      "description": "Fires a ghostly bullet at an enemy unit or tree. When the bullet strikes it will deal 300 damage and slow the target by -100% for 0.5 seconds, then ricochet in the vector-targeted direction. The ricochet will damage all units that it passes through, stopping when it hits a hero. Heroes hit by the ricochet will be feared for 2 seconds in the direction of the shot.",
+      "title": "Dead Shot",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "AbilityCastRange",
+      "value": "1000"
+    },
+    {
+      "key": "damage",
+      "value": "300"
+    },
+    {
+      "key": "speed",
+      "value": "2000"
+    },
+    {
+      "key": "radius",
+      "value": "100"
+    },
+    {
+      "key": "ricochet_radius_start",
+      "value": "115"
+    },
+    {
+      "key": "ricochet_radius_end",
+      "value": "115"
+    },
+    {
+      "key": "ricochet_stun_duration",
+      "value": "2.0"
+    },
+    {
+      "key": "ricochet_distance_multiplier",
+      "value": "1"
+    },
+    {
+      "key": "ricochet_fear_duration",
+      "value": "2.0"
+    },
+    {
+      "key": "impact_slow_percent",
+      "value": "-100"
+    },
+    {
+      "key": "impact_slow_duration",
+      "value": "0.5"
+    },
+    {
+      "display": "BONUS CAST RANGE {value}%",
+      "key": "bonus_cast_pct",
+      "value": "100"
+    },
+    {
+      "display": "SPELL AMPLIFICATION {value}%",
+      "key": "bonus_spell_amp",
+      "value": "100"
+    },
+    {
+      "display": " {value}% HEALTH PENALTY",
+      "key": "health_pct_penalty",
+      "value": "70"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 10,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1090,
+  "mc": 160,
+  "name": "Mercy & Grace",
+  "notes": "Feared enemies are phased and unslowable.\nThe ricochet will travel 1x Dead Shot's cast range.",
+  "qual": null,
+  "short_name": "muertas_gun"
+}

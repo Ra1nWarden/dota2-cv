@@ -1,0 +1,93 @@
+{
+  "abilities": [
+    {
+      "description": "Takes control of one neutral target unit and sets its movement speed to 380 and max health to a minimum of 1800. Also provides the unit with +70 base attack damage, +12 health regen, +4 mana regen, +7 armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than 1800 retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to 250 gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for 3 seconds after the dominated creep takes damage from an enemy hero or Roshan.",
+      "title": "Dominate",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_stats",
+      "value": "21"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_regen",
+      "value": "7"
+    },
+    {
+      "key": "health_min",
+      "value": "1800"
+    },
+    {
+      "key": "speed_base",
+      "value": "380"
+    },
+    {
+      "key": "bounty_gold",
+      "value": "250"
+    },
+    {
+      "key": "creep_bonus_damage",
+      "value": "70"
+    },
+    {
+      "key": "creep_bonus_hp_regen",
+      "value": "12"
+    },
+    {
+      "key": "creep_bonus_mp_regen",
+      "value": "4"
+    },
+    {
+      "key": "creep_bonus_armor",
+      "value": "7"
+    },
+    {
+      "key": "model_scale",
+      "value": "20"
+    },
+    {
+      "key": "count_limit",
+      "value": "1"
+    },
+    {
+      "key": "creep_ability_level_increase",
+      "value": "1"
+    },
+    {
+      "key": "is_overlord",
+      "value": "1"
+    },
+    {
+      "key": "creep_damage_taken_cooldown",
+      "value": "3"
+    },
+    {
+      "key": "bounty_pct",
+      "value": "100"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 45,
+  "charges": false,
+  "components": [
+    "helm_of_the_dominator",
+    "ultimate_orb"
+  ],
+  "cost": 5650,
+  "created": true,
+  "id": 635,
+  "mc": 50,
+  "name": "Helm of the Overlord",
+  "notes": "Can also Dominate enemy lane creeps and summoned units.\nSelling will cause dominated units to die.",
+  "qual": "artifact",
+  "short_name": "helm_of_the_overlord"
+}

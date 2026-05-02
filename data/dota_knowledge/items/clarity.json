@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 6 mana regeneration to the target for 25 seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+      "title": "Replenish",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "mana_regen",
+      "value": "6"
+    },
+    {
+      "key": "buff_duration",
+      "value": "25"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 60,
+  "created": false,
+  "id": 38,
+  "mc": false,
+  "name": "Clarity",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "clarity"
+}

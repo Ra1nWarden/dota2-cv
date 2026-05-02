@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 350,
+  "created": false,
+  "id": 189,
+  "mc": false,
+  "name": "Veil of Discord Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_veil_of_discord"
+}

@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks reduce the target's armor by -13 for 7 seconds.",
+      "title": "Greater Corruption",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_damage",
+      "value": "0"
+    },
+    {
+      "key": "corruption_armor",
+      "value": "-13"
+    },
+    {
+      "key": "corruption_duration",
+      "value": "7.0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 292,
+  "mc": false,
+  "name": "Stygian Desolator",
+  "notes": "Armor reduction works on buildings.",
+  "qual": null,
+  "short_name": "desolator_2"
+}

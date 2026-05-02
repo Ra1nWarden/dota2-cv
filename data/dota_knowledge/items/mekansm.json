@@ -1,0 +1,55 @@
+{
+  "abilities": [
+    {
+      "description": "Restores 250 health to allied units in a 1200 radius.",
+      "title": "Restore",
+      "type": "active"
+    },
+    {
+      "description": "Grants 2.5 health regeneration to allied units in a 1200 radius.",
+      "title": "Mekansm Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "5"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "2.5"
+    },
+    {
+      "key": "heal_amount",
+      "value": "250"
+    },
+    {
+      "key": "heal_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 50,
+  "charges": false,
+  "components": [
+    "headdress",
+    "chainmail"
+  ],
+  "cost": 1775,
+  "created": true,
+  "id": 79,
+  "mc": 100,
+  "name": "Mekansm",
+  "notes": "Restore does not affect units that have been affected by Restore or Guardian Greaves Mend within Mekansm's cooldown.\nMultiple instances of Mekansm Aura do not stack.",
+  "qual": "rare",
+  "short_name": "mekansm"
+}

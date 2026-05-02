@@ -1,0 +1,593 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SHOCK SPEED:",
+          "key": "shock_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "SHOCK WIDTH:",
+          "key": "shock_width",
+          "value": "200"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "shock_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "75%"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "PULL DURATION:",
+          "key": "pull_duration",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "PULL DISTANCE:",
+          "key": "pull_distance",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "basic_slow_duration",
+          "value": [
+            "0.4",
+            "0.6",
+            "0.8",
+            "1"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RETURN DAMAGE PCT:",
+          "key": "return_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "RETURN SHOCKWAVE BONUS DISTANCE:",
+          "key": "return_shockwave_bonus_distance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "0.6875"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "12",
+        "11",
+        "10"
+      ],
+      "desc": "Magnus sends out a wave of force, damaging enemy units in a line, pulling them towards him, and slowing them for a brief period.",
+      "dmg_type": "Magical",
+      "key": "magnataur_shockwave",
+      "mc": [
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "name": "Shockwave"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "SHOULD SELF CAST:",
+          "key": "should_self_cast",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "empower_duration",
+          "value": [
+            "30",
+            "33",
+            "36",
+            "39"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage_pct",
+          "value": [
+            "16%",
+            "24%",
+            "32%",
+            "40%"
+          ]
+        },
+        {
+          "header": "CLEAVE DAMAGE:",
+          "key": "cleave_damage_pct",
+          "value": [
+            "16%",
+            "24%",
+            "32%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE STARTING WIDTH:",
+          "key": "cleave_starting_width",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE ENDING WIDTH:",
+          "key": "cleave_ending_width",
+          "value": "360"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE DISTANCE:",
+          "key": "cleave_distance",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "SECONDARY CLEAVE DISTANCE:",
+          "key": "secondary_cleave_distance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SELF MULTIPLIER:",
+          "key": "self_multiplier",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "ALWAYS ON:",
+          "key": "always_on",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SELF MULTIPLIER BONUS STACK DURATION:",
+          "key": "self_multiplier_bonus_stack_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SELF MULTIPLIER BONUS MAX STACKS:",
+          "key": "self_multiplier_bonus_max_stacks",
+          "value": [
+            "25",
+            "30",
+            "35",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SELF MULTIPLIER BONUS PER STACK:",
+          "key": "self_multiplier_bonus_per_stack",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "8",
+      "desc": "When cast on an ally, grants them bonus damage and cleave on attack. \n\n Empower is always on Magnus with 30% larger bonus.",
+      "dmg_type": "",
+      "key": "magnataur_empower",
+      "mc": [
+        "45",
+        "55",
+        "65",
+        "75"
+      ],
+      "name": "Empower"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SPEED:",
+          "key": "skewer_speed",
+          "value": "900"
+        },
+        {
+          "header": "DISTANCE:",
+          "key": "range",
+          "value": [
+            "800",
+            "900",
+            "1000",
+            "1100"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow_pct",
+          "value": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SKEWER RADIUS:",
+          "key": "skewer_radius",
+          "value": "145"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "3.25"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "skewer_damage",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "header": "DISTANCE AS DAMAGE:",
+          "key": "damage_distance_pct",
+          "value": [
+            "6%",
+            "9%",
+            "12%",
+            "15%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TREE RADIUS:",
+          "key": "tree_radius",
+          "value": "200"
+        },
+        {
+          "header": "TREE HIT DAMAGE:",
+          "key": "tree_hit_damage",
+          "value": "0"
+        },
+        {
+          "header": "CLIFF HIT DAMAGE:",
+          "key": "cliff_hit_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TERRAIN HIT COOLDOWN:",
+          "key": "terrain_hit_cooldown",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "20",
+        "18",
+        "16"
+      ],
+      "desc": "Magnus rushes forward, goring enemy units on his massive tusk. Heroes hit on the way will be dragged to the destination, then damaged and affected by slowed movement speed. The damage is increased based on distance traveled.",
+      "dmg_type": "Magical",
+      "key": "magnataur_skewer",
+      "mc": "80",
+      "name": "Skewer"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "325"
+        },
+        {
+          "header": "AIR DURATION:",
+          "key": "air_duration",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "AIR HEIGHT:",
+          "key": "air_height",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "PULL OFFSET:",
+          "key": "pull_offset",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "DESTINATION OFFSET:",
+          "key": "destination_offset",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "PULL ANGLE:",
+          "key": "pull_angle",
+          "value": "230"
+        },
+        {
+          "generated": true,
+          "header": "HORN TOSS SLOW PCT:",
+          "key": "horn_toss_slow_pct",
+          "value": "100"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "Magnus tosses any enemies in front of him, launching them to his rear. Enemies take damage, spend 0.6 seconds in the air, and are stunned while in the air and an additional amount of time after landing.",
+      "dmg_type": "Magical",
+      "key": "magnataur_horn_toss",
+      "mc": "100",
+      "name": "Horn Toss"
+    },
+    {
+      "attrib": [
+        {
+          "header": "KNOCKBACK RESISTANCE:",
+          "key": "knockback_reduction",
+          "value": "50%"
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "slow_resistance",
+          "value": "24%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Magnus has increased slow resistance and suffers less knockback from enemy's abilities and items.",
+      "dmg_type": [],
+      "key": "magnataur_solid_core",
+      "mc": null,
+      "name": "Solid Core"
+    },
+    {
+      "attrib": [
+        {
+          "header": "PULL RADIUS:",
+          "key": "pull_radius",
+          "value": "430"
+        },
+        {
+          "generated": true,
+          "header": "PUSH RADIUS:",
+          "key": "push_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX KNOCKBACK DISTANCE:",
+          "key": "max_knockback_distance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "polarity_damage",
+          "value": [
+            "100",
+            "200",
+            "300"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "hero_stun_duration",
+          "value": [
+            "2.5",
+            "3",
+            "3.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PULL DURATION:",
+          "key": "pull_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STAT BUFF DURATION:",
+          "key": "stat_buff_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STATS PER STACK:",
+          "key": "stats_per_stack",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "115",
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "magnataur_reverse_polarity",
+      "mc": [
+        "150",
+        "225",
+        "300"
+      ],
+      "name": "Reverse Polarity"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Horn Toss",
+    "desc": "Magnus tosses any enemies in front of him, launching them to his rear. Enemies take damage, spend 0.6 seconds in the air, and are stunned while in the air and an additional amount of time after landing.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Skewer",
+    "desc": "Increases range and deals additional damage when skewering enemies into trees or cliffs.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 2,
+    "armor": 1,
+    "attack_max": 39,
+    "attack_min": 31,
+    "attack_range": 200,
+    "attack_rate": 1.8,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 20,
+    "int_gain": 2.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 3.1
+  },
+  "name": "Magnus",
+  "primary_attr": "all",
+  "roles": [
+    "Initiator",
+    "Disabler",
+    "Nuker",
+    "Escape"
+  ],
+  "short_name": "magnataur",
+  "talents": [
+    {
+      "left": "Shockwave Returns to Magnus",
+      "level": 25,
+      "right": "+?s Reverse Polarity Stun Duration"
+    },
+    {
+      "left": "+? Shockwave Damage",
+      "level": 20,
+      "right": "+?% Skewer Damage Per Distance Travelled"
+    },
+    {
+      "left": "+? All Attributes per hero hit with Reverse Polarity",
+      "level": 15,
+      "right": "-?s Skewer Cooldown"
+    },
+    {
+      "left": "+1.5 Mana Regen",
+      "level": 10,
+      "right": "+?s Skewer Slow Duration"
+    }
+  ]
+}

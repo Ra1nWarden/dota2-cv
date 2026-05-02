@@ -1,0 +1,85 @@
+{
+  "abilities": [
+    {
+      "description": "For 7 seconds, grant nearby allied heroes and buildings a 100% chance to block damage equal to 70 plus 2% of the caster's max health value from each incoming attack.\n\nRadius: 1200",
+      "title": "Guard",
+      "type": "active"
+    },
+    {
+      "description": "Grants a 60% chance to block 75 damage from incoming attacks on melee heroes, and 50 damage on ranged.",
+      "title": "Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "6"
+    },
+    {
+      "key": "block_damage_melee",
+      "value": "75"
+    },
+    {
+      "key": "block_damage_ranged",
+      "value": "50"
+    },
+    {
+      "key": "block_chance",
+      "value": "60"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    },
+    {
+      "key": "bonus_aoe_radius",
+      "value": "1200"
+    },
+    {
+      "key": "block_damage_active",
+      "value": "70"
+    },
+    {
+      "key": "block_chance_active",
+      "value": "100"
+    },
+    {
+      "key": "block_penalty_ranged",
+      "value": "25"
+    },
+    {
+      "key": "max_hp_pct",
+      "value": "2.0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": false,
+  "components": [
+    "vanguard",
+    "helm_of_iron_will"
+  ],
+  "cost": 3725,
+  "created": true,
+  "id": 242,
+  "mc": 75,
+  "name": "Crimson Guard",
+  "notes": "Multiple sources of damage block do not stack.\nWhen the Guard buff is applied to ranged heroes, Guard blocks 25 less damage.\nGuard does not affect units that have been affected by Guard within Crimson Guard's cooldown.",
+  "qual": "epic",
+  "short_name": "crimson_guard"
+}

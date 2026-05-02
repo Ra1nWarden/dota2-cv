@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 234,
+  "mc": false,
+  "name": "Dragon Lance Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_dragon_lance"
+}

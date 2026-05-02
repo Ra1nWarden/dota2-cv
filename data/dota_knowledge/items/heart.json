@@ -1,0 +1,40 @@
+{
+  "abilities": [
+    {
+      "description": "Your health regeneration is increased by 1.5% of your missing health.",
+      "title": "Behemoth's Blood",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "40"
+    },
+    {
+      "display": "+ {value}% Max Health Regen",
+      "key": "hp_regen",
+      "value": "1"
+    },
+    {
+      "key": "missing_health_regen",
+      "value": "1.5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "reaver",
+    "ring_of_tarrasque"
+  ],
+  "cost": 5100,
+  "created": true,
+  "id": 114,
+  "mc": false,
+  "name": "Heart of Tarrasque",
+  "notes": "Multiple instances of Behemoth's Blood do not stack.",
+  "qual": "epic",
+  "short_name": "heart"
+}

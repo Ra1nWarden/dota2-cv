@@ -1,0 +1,47 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 15 health and mana per charge stored. \n\nMax 20 charges. Gains a charge whenever a visible enemy within 1200 range uses an ability.",
+      "title": "Energy Charge",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "max_charges",
+      "value": "20"
+    },
+    {
+      "key": "charge_radius",
+      "value": "1200"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "3"
+    },
+    {
+      "key": "restore_per_charge",
+      "value": "15"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "magic_stick",
+    "branches",
+    "branches"
+  ],
+  "cost": 460,
+  "created": true,
+  "id": 36,
+  "mc": false,
+  "name": "Magic Wand",
+  "notes": "Gains charges for spells cast by visible enemies in 1200 range.\nCertain abilities and item abilities will not add charges.",
+  "qual": "common",
+  "short_name": "magic_wand"
+}

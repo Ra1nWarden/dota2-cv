@@ -1,0 +1,31 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "425"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "425"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "point_booster",
+    "vitality_booster",
+    "energy_booster"
+  ],
+  "cost": 3000,
+  "created": true,
+  "id": 129,
+  "mc": false,
+  "name": "Soul Booster",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "soul_booster"
+}

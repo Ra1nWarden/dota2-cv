@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 400,
+  "created": false,
+  "id": 907,
+  "mc": false,
+  "name": "recipe_wraith_pact",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_wraith_pact"
+}

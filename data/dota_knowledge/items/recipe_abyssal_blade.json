@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1275,
+  "created": false,
+  "id": 207,
+  "mc": false,
+  "name": "Abyssal Blade Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_abyssal_blade"
+}

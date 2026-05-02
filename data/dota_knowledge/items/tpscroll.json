@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "After channeling for 3 seconds, teleports you to a target friendly building. \n\nDouble-click to teleport to your team's base fountain.",
+      "title": "Teleport",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "minimum_distance",
+      "value": "70"
+    },
+    {
+      "key": "maximum_distance",
+      "value": "800"
+    },
+    {
+      "key": "vision_radius",
+      "value": "200"
+    },
+    {
+      "key": "tooltip_channel_time",
+      "value": "3.0"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "Channeled"
+  ],
+  "cd": 80,
+  "charges": 1,
+  "components": null,
+  "cost": 100,
+  "created": false,
+  "id": 46,
+  "mc": 75,
+  "name": "Town Portal Scroll",
+  "notes": "If multiple heroes teleport to the same location in succession, the channeling time will be increased for each successive hero.\nTeleport can be prevented or canceled by Root abilities.",
+  "qual": "consumable",
+  "short_name": "tpscroll"
+}

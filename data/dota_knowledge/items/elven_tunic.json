@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "attack_speed",
+      "value": "26"
+    },
+    {
+      "display": "+ {value}% Evasion",
+      "key": "evasion",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movment",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 573,
+  "mc": false,
+  "name": "Elven Tunic",
+  "notes": "",
+  "qual": null,
+  "short_name": "elven_tunic"
+}

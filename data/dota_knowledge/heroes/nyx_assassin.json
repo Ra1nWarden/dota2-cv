@@ -1,0 +1,439 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "WIDTH:",
+          "key": "width",
+          "value": "140"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "duration",
+          "value": [
+            "1.1",
+            "1.4",
+            "1.7",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LENGTH:",
+          "key": "length",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1600"
+        },
+        {
+          "header": "IMPALE DAMAGE:",
+          "key": "impale_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "Rock spikes burst from the earth along a straight path. Enemy units take damage, then are hurled into the air and stunned.",
+      "dmg_type": "Magical",
+      "key": "nyx_assassin_impale",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Impale"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX MANA AS DAMAGE:",
+          "key": "max_mana_as_damage_pct",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "MANA BURNT:",
+          "key": "mana_burn_pct",
+          "value": [
+            "9%",
+            "12%",
+            "15%",
+            "18%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AOE:",
+          "key": "aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE ECHO DURATION:",
+          "key": "damage_echo_duration",
+          "value": "15"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "damage_echo_pct",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "9.5",
+        "8",
+        "6.5"
+      ],
+      "desc": "Deals damage equal to a percentage of the target's Max Mana and burns part of it away. Deals additional damage equal to a percentage of the damage the target has taken from Nyx Assassin in the last 15s. Resets accumulated damage before applying damage.",
+      "dmg_type": "Magical",
+      "key": "nyx_assassin_jolt",
+      "mc": [
+        "100",
+        "105",
+        "110",
+        "115"
+      ],
+      "name": "Mind Flare"
+    },
+    {
+      "attrib": [
+        {
+          "header": "REFLECT DURATION:",
+          "key": "reflect_duration",
+          "value": "2"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.7",
+            "1",
+            "1.3",
+            "1.6"
+          ]
+        },
+        {
+          "header": "DAMAGE REFLECTED:",
+          "key": "damage_reflect_pct",
+          "value": "140%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "16",
+        "12",
+        "8"
+      ],
+      "desc": "When activated while above ground, Spiked Carapace reflects and negates damage dealt to Nyx Assassin (max once from each source), as well as stunning the source of the damage. Activating Spiked Carapace will not break Vendetta invisibility.\n\nWhile Burrowed, Spiked Carapace instantly stuns nearby enemies when cast.",
+      "dmg_type": "",
+      "key": "nyx_assassin_spiked_carapace",
+      "mc": "40",
+      "name": "Spiked Carapace"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX HP REGEN:",
+          "key": "health_regen_rate",
+          "value": "1%"
+        },
+        {
+          "header": "MAX MANA REGEN:",
+          "key": "mana_regen_rate",
+          "value": "1%"
+        },
+        {
+          "header": "BURROW DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "40%"
+        },
+        {
+          "header": "BURROW BONUS CAST RANGE:",
+          "key": "cast_range",
+          "value": "500"
+        },
+        {
+          "header": "BURROW BONUS COOLDOWN REDUCTION:",
+          "key": "cooldown_reduction",
+          "value": "25%"
+        },
+        {
+          "header": "BURROW SPIKED CARAPACE RANGE:",
+          "key": "carapace_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1.5"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Nyx Assassin buries himself beneath the battlefield over a short duration. Once burrowed, Spiked Carapace instantly stuns nearby enemies when cast, the range of Mind Flare and Impale is increased, and Impale's cooldown is decreased. While burrowed, Nyx Assassin is stationary, unable to attack, and invisible. Nyx Assassin gains damage reduction from all damage sources.",
+      "dmg_type": "",
+      "key": "nyx_assassin_burrow",
+      "mc": null,
+      "name": "Burrow"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA BURN:",
+          "key": "mana_burn_pct",
+          "value": "12%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Nyx Assassin's damage on enemies also burns mana as a percentage of the damage dealt.",
+      "dmg_type": "",
+      "key": "nyx_assassin_neuro_sting",
+      "mc": null,
+      "name": "Mana Burn"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT SPEED:",
+          "key": "movement_speed",
+          "value": [
+            "16%",
+            "18%",
+            "20%"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "300",
+            "400",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEALTH REGEN RATE SCEPTER:",
+          "key": "health_regen_rate_scepter",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "MANA REGEN RATE SCEPTER:",
+          "key": "mana_regen_rate_scepter",
+          "value": "3"
+        },
+        {
+          "header": "BREAK DURATION:",
+          "key": "break_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "FREE PATHING DURATION:",
+          "key": "free_pathing_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FREE PATHING MOVEMENT SPEED BONUS:",
+          "key": "free_pathing_movement_speed_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK ANIMATION BONUS:",
+          "key": "attack_animation_bonus",
+          "value": "70"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "75"
+        }
+      ],
+      "behavior": [
+        "Instant Cast",
+        "No Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "80",
+        "70",
+        "60"
+      ],
+      "desc": "Nyx Assassin becomes invisible and gains a speed bonus. If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack that applies a break to the target. Nyx Assassin has 75 additional attack range and a 70% faster attack animation for this attack.",
+      "dmg_type": "Pure",
+      "key": "nyx_assassin_vendetta",
+      "mc": [
+        "180",
+        "240",
+        "300"
+      ],
+      "name": "Vendetta"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Emerge from the burrow.",
+      "dmg_type": "",
+      "key": "nyx_assassin_unburrow",
+      "mc": "0",
+      "name": "Unburrow"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Burrow",
+    "desc": "Nyx Assassin buries himself beneath the battlefield over a short duration. Once burrowed, Spiked Carapace instantly stuns nearby enemies when cast, the range of Mind Flare and Impale is increased, and Impale's cooldown is decreased. While burrowed, Nyx Assassin is stationary, unable to attack, and invisible. Nyx Assassin gains damage reduction from all damage sources.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Vendetta",
+    "desc": "Decreases cooldown by 10s. For the first 15s of Vendetta, Nyx is hasted and has unobstructed pathing.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 2.9,
+    "armor": 1,
+    "attack_max": 30,
+    "attack_min": 26,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2,
+    "int": 21,
+    "int_gain": 2.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 17,
+    "str_gain": 2.7
+  },
+  "name": "Nyx Assassin",
+  "primary_attr": "all",
+  "roles": [
+    "Disabler",
+    "Nuker",
+    "Initiator",
+    "Escape"
+  ],
+  "short_name": "nyx_assassin",
+  "talents": [
+    {
+      "left": "? Mind Flare Radius",
+      "level": 25,
+      "right": "+80 Agility"
+    },
+    {
+      "left": "+?s Spiked Carapace Stun Duration",
+      "level": 20,
+      "right": "+? Impale Damage"
+    },
+    {
+      "left": "+? Vendetta Damage",
+      "level": 15,
+      "right": "-?s Mind Flare Cooldown"
+    },
+    {
+      "left": "+?% Spiked Carapace Damage Reflect",
+      "level": 10,
+      "right": "+?s Impale Stun Duration"
+    }
+  ]
+}

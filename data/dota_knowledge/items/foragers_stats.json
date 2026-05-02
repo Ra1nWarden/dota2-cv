@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 1 permanent primary attribute.",
+      "title": "Munch",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_stat",
+      "value": "1"
+    },
+    {
+      "key": "bonus_stat_uni",
+      "value": ".4"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_move_speed",
+      "value": "3"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1870,
+  "mc": false,
+  "name": "Ironwood Nut",
+  "notes": "Universal heroes get 0.4 bonus to all attributes.",
+  "qual": null,
+  "short_name": "foragers_stats"
+}

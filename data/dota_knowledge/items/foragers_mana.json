@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 50 mana + 5% of the target's max mana when consumed",
+      "title": "Munch",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_int",
+      "value": "2"
+    },
+    {
+      "key": "replenish_amount",
+      "value": "50"
+    },
+    {
+      "key": "mana_pct",
+      "value": "5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1871,
+  "mc": false,
+  "name": "Tomo'kan Ringcap",
+  "notes": "Hold Control to use on a nearby allied hero.",
+  "qual": null,
+  "short_name": "foragers_mana"
+}

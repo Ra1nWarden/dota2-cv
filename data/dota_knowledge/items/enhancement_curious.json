@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Artifact Potency",
+      "key": "item_potency",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1651,
+  "mc": false,
+  "name": "Unleashed",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_curious"
+}

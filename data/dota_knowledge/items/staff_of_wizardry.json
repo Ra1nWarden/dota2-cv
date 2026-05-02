@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 23,
+  "mc": false,
+  "name": "Staff of Wizardry",
+  "notes": "",
+  "qual": "component",
+  "short_name": "staff_of_wizardry"
+}

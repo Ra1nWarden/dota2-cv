@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1050,
+  "created": false,
+  "id": 243,
+  "mc": false,
+  "name": "Crimson Guard Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_crimson_guard"
+}

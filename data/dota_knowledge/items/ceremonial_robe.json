@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Lowers enemy Status Resistance by 10% and Magic Resistance by 10%.\n\nRadius: 1200",
+      "title": "Ceremonial Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_mana",
+      "value": "0"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "status_resistance",
+      "value": "10"
+    },
+    {
+      "key": "magic_resistance",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 676,
+  "mc": false,
+  "name": "Ceremonial Robe",
+  "notes": "",
+  "qual": null,
+  "short_name": "ceremonial_robe"
+}

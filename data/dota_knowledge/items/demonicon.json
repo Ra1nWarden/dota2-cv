@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Summon 2 demonic warriors and 2 demonic archers that last 65 seconds. The Warrior burns mana every hit, reveals invisible units, and deals magical damage to whoever kills it. The Archer has a basic dispel ability with a slow and a passive movement speed aura.",
+      "title": "Greater Demonic Summoning",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_strength",
+      "value": "0"
+    },
+    {
+      "key": "bonus_intellect",
+      "value": "0"
+    },
+    {
+      "key": "summon_duration",
+      "value": "65"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 80,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 370,
+  "mc": false,
+  "name": "Book of the Dead",
+  "notes": "The Demonic Warrior has 1600 Health, 4 Armor, 40% Magic Resistance, 380 Movement Speed, 134 Attack Damage, 50 Mana Burn on Hit, 800 Damage on Death, and 1000 True Sight Radius.\nThe Demonic Archer has 1300 Health, 4 Armor, 40% Magic Resistance, 425 Movement Speed, 131 Attack Damage, a basic dispel ability with a slow on a 15s Cooldown, and a 9% Bonus Movement Speed Aura.",
+  "qual": null,
+  "short_name": "demonicon"
+}

@@ -1,0 +1,521 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "900"
+        },
+        {
+          "header": "WATCH RANGE:",
+          "key": "remnant_watch_distance",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "REMNANT WATCH RADIUS:",
+          "key": "remnant_watch_radius",
+          "value": "130"
+        },
+        {
+          "generated": true,
+          "header": "WATCH PATH VISION RADIUS:",
+          "key": "watch_path_vision_radius",
+          "value": "200"
+        },
+        {
+          "header": "ACTIVATION TIME:",
+          "key": "activation_delay",
+          "value": "0.4"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "impact_damage",
+          "value": [
+            "90",
+            "140",
+            "190",
+            "240"
+          ]
+        },
+        {
+          "header": "PULL DURATION:",
+          "key": "pull_duration",
+          "value": [
+            "1",
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PULL DESTINATION:",
+          "key": "pull_destination",
+          "value": [
+            "44",
+            "50",
+            "56",
+            "62"
+          ]
+        },
+        {
+          "header": "REMNANT LIFETIME:",
+          "key": "duration",
+          "value": "17"
+        },
+        {
+          "generated": true,
+          "header": "THINK INTERVAL:",
+          "key": "think_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES CREEPS:",
+          "key": "pierces_creeps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TICK RATE:",
+          "key": "damage_tick_rate",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE PCT:",
+          "key": "creep_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARTIFICE DURATION OVERRIDE:",
+          "key": "artifice_duration_override",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARTIFICE PCT EFFECTIVENESS:",
+          "key": "artifice_pct_effectiveness",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TRUESIGHT RANGE:",
+          "key": "truesight_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ROTATION SPEED:",
+          "key": "rotation_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "Void Spirit dispatches a remnant to the target location. The remnant stands watch over the region, facing the direction of his vector. When a unit crosses its gaze, the remnant pulls it in and damages it.",
+      "dmg_type": "Magical",
+      "key": "void_spirit_aether_remnant",
+      "mc": [
+        "75",
+        "80",
+        "85",
+        "90"
+      ],
+      "name": "Aether Remnant"
+    },
+    {
+      "attrib": [
+        {
+          "header": "PHASE DURATION:",
+          "key": "phase_duration",
+          "value": "1.1"
+        },
+        {
+          "generated": true,
+          "header": "DESTINATION FX RADIUS:",
+          "key": "destination_fx_radius",
+          "value": "183"
+        },
+        {
+          "generated": true,
+          "header": "PORTALS PER RING:",
+          "key": "portals_per_ring",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "ANGLE PER RING PORTAL:",
+          "key": "angle_per_ring_portal",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "FIRST RING DISTANCE OFFSET:",
+          "key": "first_ring_distance_offset",
+          "value": "520"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE RADIUS:",
+          "key": "damage_radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "HAS OUTER RING:",
+          "key": "has_outer_ring",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AETHER REMNANT COUNT:",
+          "key": "aether_remnant_count",
+          "value": "0"
+        },
+        {
+          "header": "REMNANT DURATION:",
+          "key": "artifice_duration_override_tooltip",
+          "value": "0"
+        },
+        {
+          "header": "REMNANT EFFECTIVENESS:",
+          "key": "artifice_pct_effectiveness_tooltip",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "ARTIFICE EXTRA OFFSET:",
+          "key": "artifice_extra_offset",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "17",
+        "14",
+        "11"
+      ],
+      "desc": "Void Spirit temporarily fades into the aether, creating a number of portals through which he can reassemble himself. Upon exiting a portal, he damages all enemies in the area.",
+      "dmg_type": "Magical",
+      "key": "void_spirit_dissimilate",
+      "mc": "120",
+      "name": "Dissimilate"
+    },
+    {
+      "attrib": [
+        {
+          "header": "PULSE RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1200"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "110",
+            "160",
+            "210"
+          ]
+        },
+        {
+          "header": "BARRIER DURATION:",
+          "key": "buff_duration",
+          "value": "10"
+        },
+        {
+          "header": "BASE DAMAGE BARRIER:",
+          "key": "base_absorb_amount",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "header": "BARRIER AMOUNT PER HERO HIT:",
+          "key": "absorb_per_hero_hit",
+          "value": [
+            "50",
+            "70",
+            "90",
+            "110"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IS ALL BARRIER:",
+          "key": "is_all_barrier",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "RETURN PROJECTILE SPEED:",
+          "key": "return_projectile_speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "18",
+      "desc": "Void Spirit wraps himself in a protective shield that absorbs physical damage and emits a single damaging pulse around him. The shield gains increased damage absorption for each enemy hero the pulse hits.",
+      "dmg_type": "Magical",
+      "key": "void_spirit_resonant_pulse",
+      "mc": [
+        "115",
+        "120",
+        "125",
+        "130"
+      ],
+      "name": "Resonant Pulse"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SECONDARY STAT BONUS PCT:",
+          "key": "secondary_stat_bonus_pct",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE STAT BONUS PCT:",
+          "key": "damage_stat_bonus_pct",
+          "value": "15"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Void Spirit gains 15% more attack damage per point of each attribute, and 30% more HP regen from Strength, attack speed from Agility, and mana regen from Intelligence.",
+      "dmg_type": [],
+      "key": "void_spirit_intrinsic_edge",
+      "mc": null,
+      "name": "Intrinsic Edge"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "170"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "25",
+            "20",
+            "15"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MIN TRAVEL DISTANCE:",
+          "key": "min_travel_distance",
+          "value": "200"
+        },
+        {
+          "header": "RANGE:",
+          "key": "max_travel_distance",
+          "value": [
+            "800",
+            "900",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "POP DAMAGE DELAY:",
+          "key": "pop_damage_delay",
+          "value": "1.25"
+        },
+        {
+          "header": "VOID MARK DAMAGE:",
+          "key": "pop_damage",
+          "value": [
+            "130",
+            "230",
+            "330"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow_pct",
+          "value": [
+            "40%",
+            "60%",
+            "80%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ABILITY CHANCE PCT:",
+          "key": "ability_chance_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK CHANCE PCT:",
+          "key": "attack_chance_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": "0",
+      "desc": "Void Spirit tears a rift through the astral plane to appear at the target location, attacking all enemies along the path. This attack inflicts a void mark that slows for 1.25 seconds and then detonates.",
+      "dmg_type": "Magical",
+      "key": "void_spirit_astral_step",
+      "mc": "90",
+      "name": "Astral Step"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Resonant Pulse",
+    "desc": "Causes Resonant Pulse to silence and gain 2 charges.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Aether Remnant",
+    "desc": "Creates an additional watcher path that rotates around the remnant.  The remnant now provides True Sight, and no longer triggers on creeps, instead dealing 50% damage to them every second in both paths. Does not reveal wards.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 2.2,
+    "armor": -1,
+    "attack_max": 22,
+    "attack_min": 18,
+    "attack_range": 200,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 24,
+    "int_gain": 3.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.6,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.6
+  },
+  "name": "Void Spirit",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "void_spirit",
+  "talents": [
+    {
+      "left": "?% Astral Step Crit",
+      "level": 25,
+      "right": "Dissimilate Roots for ?s"
+    },
+    {
+      "left": "Outer Dissimilate Ring",
+      "level": 20,
+      "right": "-?s Astral Step Charge Restore Time"
+    },
+    {
+      "left": "+?% Resonant Pulse Barrier",
+      "level": 15,
+      "right": "+? Aether Remnant Damage"
+    },
+    {
+      "left": "+1.5 Mana Regen",
+      "level": 10,
+      "right": "+? Resonant Pulse Damage"
+    }
+  ]
+}

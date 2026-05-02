@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1750,
+  "created": false,
+  "id": 64,
+  "mc": false,
+  "name": "Hand of Midas Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_hand_of_midas"
+}

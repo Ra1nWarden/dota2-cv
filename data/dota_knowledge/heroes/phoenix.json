@@ -1,0 +1,595 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "HP COST:",
+          "key": "hp_cost_perc",
+          "value": "15%"
+        },
+        {
+          "header": "DIVE LENGTH:",
+          "key": "dash_length",
+          "value": [
+            "1100",
+            "1200",
+            "1300",
+            "1400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DASH WIDTH:",
+          "key": "dash_width",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "HIT RADIUS:",
+          "key": "hit_radius",
+          "value": "200"
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "burn_duration",
+          "value": "4"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BURN TICK INTERVAL:",
+          "key": "burn_tick_interval",
+          "value": "0.2"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "slow_movement_speed_pct",
+          "value": [
+            "10%",
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DIVE DURATION:",
+          "key": "dive_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "desc": "Phoenix dives forward in an arc with a fixed distance in the targeted direction, dealing damage over time and slowing the movement speed of any units it comes into contact with, and then orbiting back to its original position. If Phoenix casts Supernova, the dive ends.",
+      "dmg_type": "Magical",
+      "key": "phoenix_icarus_dive",
+      "mc": "0",
+      "name": "Icarus Dive"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HP COST:",
+          "key": "hp_cost_perc",
+          "value": "20%"
+        },
+        {
+          "header": "SPIRIT DURATION:",
+          "key": "spirit_duration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT SPEED:",
+          "key": "spirit_speed",
+          "value": "1000"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attackspeed_slow",
+          "value": [
+            "-50",
+            "-80",
+            "-110",
+            "-140"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT COUNT:",
+          "key": "spirit_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "50",
+        "40",
+        "30",
+        "20"
+      ],
+      "desc": "Summons 4 fire spirits that circle around Phoenix. Each spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.",
+      "dmg_type": "Magical",
+      "key": "phoenix_fire_spirits",
+      "mc": "100",
+      "name": "Fire Spirits"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEALTH COST PER SECOND:",
+          "key": "hp_cost_perc_per_second",
+          "value": "5%"
+        },
+        {
+          "header": "BASE DAMAGE PER SECOND:",
+          "key": "base_damage",
+          "value": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "hp_perc_damage",
+          "value": [
+            "1.5%",
+            "3%",
+            "4.5%",
+            "6%"
+          ]
+        },
+        {
+          "header": "BASE HEAL PER SECOND:",
+          "key": "base_heal",
+          "value": [
+            "7",
+            "10",
+            "13",
+            "16"
+          ]
+        },
+        {
+          "header": "MAX HEAL:",
+          "key": "hp_perc_heal",
+          "value": [
+            "0.5%",
+            "1%",
+            "1.5%",
+            "2%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "130"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "FORWARD MOVE SPEED:",
+          "key": "forward_move_speed",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE INITIAL:",
+          "key": "turn_rate_initial",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "25"
+        },
+        {
+          "header": "MAX FOCAL POINT MULTIPLIER:",
+          "key": "focal_point_max_multiplier",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "FOCAL POINT START LENGTH PCT:",
+          "key": "focal_point_start_length_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FOCAL POINT FULL LENGTH TOOLTIP ONLY:",
+          "key": "focal_point_full_length_tooltip_only",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "header": "MAX DURATION:",
+          "key": "abilityduration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "Phoenix expels a beam of light at the cost of its own health. The beam damages enemies and heals allies for a base amount plus a percentage of their health. The percentage increases as the beam continues to fire.",
+      "dmg_type": "Magical",
+      "key": "phoenix_sun_ray",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Sun Ray"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Toggles slow forward movement during Sun Ray firing.",
+      "dmg_type": "",
+      "key": "phoenix_sun_ray_toggle_move",
+      "mc": null,
+      "name": "Toggle Movement"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PCT:",
+          "key": "damage_pct",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Phoenix deals 4% of its missing health as magic damage to all enemies in a 400 radius every second.",
+      "dmg_type": "",
+      "key": "phoenix_dying_light",
+      "mc": null,
+      "name": "Dying Light"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "aura_radius",
+          "value": "1200"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_sec",
+          "value": [
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.6",
+            "2",
+            "2.4"
+          ]
+        },
+        {
+          "header": "ATTACKS TO DESTROY:",
+          "key": "max_hero_attacks",
+          "value": [
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "120",
+      "desc": "The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After 6 seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "Magical",
+      "key": "phoenix_supernova",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Supernova"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HP COST:",
+          "key": "hp_cost_perc",
+          "value": "20%"
+        },
+        {
+          "header": "SPIRIT DURATION:",
+          "key": "spirit_duration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT SPEED:",
+          "key": "spirit_speed",
+          "value": "1000"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attackspeed_slow",
+          "value": [
+            "-50",
+            "-80",
+            "-110",
+            "-140"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT COUNT:",
+          "key": "spirit_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Each fire spirit can be launched independently at a targeted area of effect. Affected enemy units take damage over time and have their attack speed greatly reduced.",
+      "dmg_type": "Magical",
+      "key": "phoenix_launch_fire_spirit",
+      "mc": "0",
+      "name": "Launch Fire Spirit"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Instant Cast",
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Immediately cancels the dive.",
+      "dmg_type": "",
+      "key": "phoenix_icarus_dive_stop",
+      "mc": null,
+      "name": "Stop Icarus Dive"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Immediately stops the Sun Ray.",
+      "dmg_type": "",
+      "key": "phoenix_sun_ray_stop",
+      "mc": null,
+      "name": "Stop Sun Ray"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Supernova",
+    "desc": "Increases number of attacks to destroy Supernova and allows Phoenix to cast Supernova on an allied hero, bringing both into the sun to be reborn together.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Sun Ray",
+    "desc": "Allows Sun Ray to be cast during Supernova, and slows affected enemies by 10%.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 12,
+    "agi_gain": 1.5,
+    "armor": -1,
+    "attack_max": 31,
+    "attack_min": 21,
+    "attack_range": 525,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2,
+    "int": 16,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 3.3
+  },
+  "name": "Phoenix",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Initiator",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "phoenix",
+  "talents": [
+    {
+      "left": "+2 Supernova Hit Count",
+      "level": 25,
+      "right": "+1000 Icarus Dive Cast Range"
+    },
+    {
+      "left": "+1.5% Max Health Sun Ray Damage",
+      "level": 20,
+      "right": "+0.6s Supernova Stun Duration"
+    },
+    {
+      "left": "+20 Fire Spirits Damage Per Second",
+      "level": 15,
+      "right": "+25 Health Regen"
+    },
+    {
+      "left": "+25% Icarus Dive Slow",
+      "level": 10,
+      "right": "+1% Dying Light Missing Health as Damage"
+    }
+  ]
+}

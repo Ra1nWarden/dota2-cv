@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 175,
+  "created": false,
+  "id": 12,
+  "mc": false,
+  "name": "Ring of Protection",
+  "notes": "",
+  "qual": "component",
+  "short_name": "ring_of_protection"
+}

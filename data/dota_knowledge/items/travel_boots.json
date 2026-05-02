@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Upgrades your Town Portal Scroll, allowing it to target units, reduces cooldown and does not consume a charge on usage.",
+      "title": "Town Portal Scroll",
+      "type": "upgrade"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "90"
+    },
+    {
+      "key": "maximum_distance",
+      "value": "800"
+    },
+    {
+      "key": "vision_radius",
+      "value": "200"
+    },
+    {
+      "display": "TOWN PORTAL SCROLL COOLDOWN: {value}",
+      "key": "tp_cooldown",
+      "value": "40"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "boots"
+  ],
+  "cost": 2500,
+  "created": true,
+  "id": 48,
+  "mc": false,
+  "name": "Boots of Travel",
+  "notes": "",
+  "qual": "common",
+  "short_name": "travel_boots"
+}

@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 485,
+  "mc": false,
+  "name": "Blitz Knuckles",
+  "notes": "",
+  "qual": "component",
+  "short_name": "blitz_knuckles"
+}

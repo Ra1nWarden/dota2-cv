@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Equipped Hero has a 100 HP Barrier against enemy damage. Barrier fully regenerates after not receiving damage for 8 seconds. Self-inflicted damage bypasses the barrier.",
+      "title": "Bubbled Up",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "shield",
+      "value": "100"
+    },
+    {
+      "key": "restore_time",
+      "value": "8"
+    },
+    {
+      "key": "bonus_hp_regen",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1157,
+  "mc": false,
+  "name": "Safety Bubble",
+  "notes": "",
+  "qual": null,
+  "short_name": "safety_bubble"
+}

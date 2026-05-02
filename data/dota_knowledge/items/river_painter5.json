@@ -1,0 +1,21 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "paint_duration",
+      "value": "900.0"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1025,
+  "mc": false,
+  "name": "River Vial: Electrified",
+  "notes": "",
+  "qual": "component",
+  "short_name": "river_painter5"
+}

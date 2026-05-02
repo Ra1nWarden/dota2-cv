@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 950,
+  "created": false,
+  "id": 101,
+  "mc": false,
+  "name": "Force Staff Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_force_staff"
+}

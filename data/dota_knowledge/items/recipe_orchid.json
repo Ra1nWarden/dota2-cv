@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 97,
+  "mc": false,
+  "name": "Orchid Malevolence Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_orchid"
+}

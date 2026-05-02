@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Dispel all enemies and allies in a 300 unit radius.\n\nDispel Type: Basic Dispel",
+      "title": "Cleanse",
+      "type": "active"
+    },
+    {
+      "description": "Your attacks deal bonus magical damage equal to 4% of your target's Max Mana.",
+      "title": "Subjugate",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "radius",
+      "value": "300"
+    },
+    {
+      "key": "damage",
+      "value": "4"
+    },
+    {
+      "key": "attack_speed",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 837,
+  "mc": 150,
+  "name": "Witchbane",
+  "notes": "",
+  "qual": null,
+  "short_name": "heavy_blade"
+}

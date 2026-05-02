@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 400,
+  "created": false,
+  "id": 1565,
+  "mc": false,
+  "name": "Gleipnir Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_gungir"
+}

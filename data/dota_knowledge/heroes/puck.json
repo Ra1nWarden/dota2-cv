@@ -1,0 +1,462 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "225"
+        },
+        {
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "1950"
+        },
+        {
+          "header": "SPEED:",
+          "key": "orb_speed",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "ORB VISION:",
+          "key": "orb_vision",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "2.5"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WARNING SOUND TIME:",
+          "key": "warning_sound_time",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CURVE ORB:",
+          "key": "curve_orb",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CURVE ORB DURATION MULTIPLIER:",
+          "key": "curve_orb_duration_multiplier",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CURVE ORB MAX ACCELERATION:",
+          "key": "curve_orb_max_acceleration",
+          "value": "0.0015"
+        },
+        {
+          "generated": true,
+          "header": "CURVE ORB PULLBACK BONUS LAUNCH SPEED:",
+          "key": "curve_orb_pullback_bonus_launch_speed",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CURVE STRENGTH:",
+          "key": "curve_strength",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR RETICLE DISTANCE:",
+          "key": "vector_reticle_distance",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR RETICLE RADIUS:",
+          "key": "vector_reticle_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "INCREASE PER SEC:",
+          "key": "increase_per_sec",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE OVER TIME PCT:",
+          "key": "damage_over_time_pct",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE INTERVAL:",
+          "key": "damage_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "MAX ORB DURATION:",
+          "key": "max_orb_duration_tooltip",
+          "value": "5.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1950"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "10",
+        "9",
+        "8"
+      ],
+      "desc": "Vector Targeted. Puck launches a magic orb that travels along the path, damaging enemy units along the way. The orb deals an additional 3% of its impact damage every 0.5s in its area of effect, but if it exceeds the max cast range it will be destroyed.\n\n At any point, Puck may teleport to the orb's location using Ethereal Jaunt.\n\n Can be put on alt-cast to launch the Orb straight ahead.",
+      "dmg_type": "Magical",
+      "key": "puck_illusory_orb",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Illusory Orb"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "DURATION:",
+          "key": "silence_duration",
+          "value": [
+            "2",
+            "2.5",
+            "3",
+            "3.5"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "120",
+            "180",
+            "240"
+          ]
+        },
+        {
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "PUSH PULL ENABLED:",
+          "key": "push_pull_enabled",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "15",
+        "14",
+        "13"
+      ],
+      "desc": "Puck teleports to the target location and releases a burst of faerie dust that deals damage and silences enemy units nearby.",
+      "dmg_type": "Magical",
+      "key": "puck_waning_rift",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Waning Rift"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "1",
+            "1.75",
+            "2.5",
+            "3.25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": [
+            "1",
+            "1.75",
+            "2.5",
+            "3.25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Channeled"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "8",
+        "7.5",
+        "7",
+        "6.5"
+      ],
+      "desc": "CHANNELED - Puck briefly shifts into another dimension where it is immune from harm.",
+      "dmg_type": "",
+      "key": "puck_phase_shift",
+      "mc": "0",
+      "name": "Phase Shift"
+    },
+    {
+      "attrib": [],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Teleports Puck to a flying Illusory Orb.",
+      "dmg_type": "",
+      "key": "puck_ethereal_jaunt",
+      "mc": null,
+      "name": "Ethereal Jaunt"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MANA AND HEALTH RESTORE PCT:",
+          "key": "mana_and_health_restore_pct",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "DODGED SPELL MULTIPLIER:",
+          "key": "dodged_spell_multiplier",
+          "value": "3"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Whenever Puck disjoints an attack, it restores 3% of its max health and mana. Dodging a targeted spell projectile restores 3x that amount. Does not apply to attacks by Towers.",
+      "dmg_type": "",
+      "key": "puck_puckish",
+      "mc": null,
+      "name": "Puckish"
+    },
+    {
+      "attrib": [
+        {
+          "header": "COIL DURATION:",
+          "key": "coil_duration",
+          "value": [
+            "5",
+            "5.5",
+            "6"
+          ]
+        },
+        {
+          "header": "BREAK RADIUS:",
+          "key": "coil_break_radius",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.5"
+        },
+        {
+          "header": "INITIAL DAMAGE:",
+          "key": "coil_initial_damage",
+          "value": [
+            "175",
+            "250",
+            "325"
+          ]
+        },
+        {
+          "header": "BREAK STUN DURATION:",
+          "key": "coil_stun_duration",
+          "value": [
+            "1.5",
+            "2",
+            "2.5"
+          ]
+        },
+        {
+          "header": "BREAK DAMAGE:",
+          "key": "coil_break_damage",
+          "value": [
+            "200",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "COIL RADIUS:",
+          "key": "coil_radius",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "COIL RAPID FIRE RATE:",
+          "key": "coil_rapid_fire_rate",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "COIL RAPID FIRE Z OFFSET:",
+          "key": "coil_rapid_fire_z_offset",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RATE PCT:",
+          "key": "attack_rate_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "75",
+      "desc": "Creates a coil of volatile magic that latches onto enemy Heroes, damaging and leashing them. If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.",
+      "dmg_type": "Magical",
+      "key": "puck_dream_coil",
+      "mc": [
+        "125",
+        "175",
+        "225"
+      ],
+      "name": "Dream Coil"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Dream Coil",
+    "desc": "All enemies affected by Dream Coil are attacked at a rate equal to 90% of Puck's attack rate. The attacks continue while the target is stunned if they break the Dream Coil.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Phase Shift",
+    "desc": "Puck's attacks deal bonus magic damage. Puck attacks all enemies within its attack range every time it phase shifts.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 2.3,
+    "armor": 0,
+    "attack_max": 30,
+    "attack_min": 22,
+    "attack_range": 550,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 23,
+    "int_gain": 3.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 17,
+    "str_gain": 2.4
+  },
+  "name": "Puck",
+  "primary_attr": "int",
+  "roles": [
+    "Initiator",
+    "Disabler",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "puck",
+  "talents": [
+    {
+      "left": "Dream Coil Pierces Debuff Immunity",
+      "level": 25,
+      "right": "+? Waning Rift Radius/Max Distance"
+    },
+    {
+      "left": "-?s Waning Rift Cooldown",
+      "level": 20,
+      "right": "+? Initial/Break Dream Coil Damage"
+    },
+    {
+      "left": "-?s Dream Coil Cooldown",
+      "level": 15,
+      "right": "+? Waning Rift Damage"
+    },
+    {
+      "left": "+? Illusory Orb Damage",
+      "level": 10,
+      "right": "+?s Waning Rift Silence Duration"
+    }
+  ]
+}

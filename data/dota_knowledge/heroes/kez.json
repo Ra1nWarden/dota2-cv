@@ -1,0 +1,862 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "ATTACK DAMAGE:",
+          "key": "katana_echo_damage",
+          "value": [
+            "70%",
+            "80%",
+            "90%",
+            "100%"
+          ]
+        },
+        {
+          "header": "BONUS HERO DAMAGE:",
+          "key": "echo_hero_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "ATTACKS:",
+          "key": "katana_strikes",
+          "value": "2"
+        },
+        {
+          "header": "ECHO DELAY:",
+          "key": "strike_interval",
+          "value": "1.2"
+        },
+        {
+          "header": "SLASH RADIUS:",
+          "key": "katana_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "KATANA DISTANCE:",
+          "key": "katana_distance",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "TRAVEL DISTANCE:",
+          "key": "travel_distance",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "TAG SLOW:",
+          "key": "tag_slow",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "TAG SLOW DURATION:",
+          "key": "tag_slow_duration",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "21",
+        "18",
+        "15",
+        "12"
+      ],
+      "desc": "Kez slashes forward in a 800 distance line with his Katana, attacking enemies in an area and applying a brief 100s impact slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
+      "dmg_type": "Physical",
+      "key": "kez_echo_slash",
+      "mc": [
+        "75",
+        "90",
+        "105",
+        "120"
+      ],
+      "name": "Echo Slash"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "LAND DISTANCE:",
+          "key": "land_distance",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "GRAPPLE SPEED:",
+          "key": "grapple_speed",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE BREAK:",
+          "key": "max_distance_break",
+          "value": "2000"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": [
+            "0.7",
+            "0.8",
+            "0.9",
+            "1"
+          ]
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "katana_ms_slow_pct",
+          "value": [
+            "70%",
+            "80%",
+            "90%",
+            "100%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL PCT:",
+          "key": "lifesteal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "650",
+            "750",
+            "850",
+            "950"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "11",
+        "9",
+        "7"
+      ],
+      "desc": "Kez swings on a grappling hook towards the target unit or tree. When the grappling hook collides with the target, that unit has slowed movement speed. Upon reaching the enemy target, Kez lands an attack on them.",
+      "dmg_type": "",
+      "key": "kez_grappling_claw",
+      "mc": "40",
+      "name": "Grappling Claw"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "katana_bleed_duration",
+          "value": "7"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "katana_bleed_attack_damage_pct",
+          "value": [
+            "3%",
+            "6%",
+            "9%",
+            "12%"
+          ]
+        },
+        {
+          "header": "IMPALE DURATION:",
+          "key": "impale_duration",
+          "value": "0.5"
+        },
+        {
+          "header": "STACKS AS BURST DAMAGE:",
+          "key": "bleed_as_rupture_pct",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL PCT:",
+          "key": "lifesteal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CREEP LIFESTEAL REDUCTION PCT:",
+          "key": "creep_lifesteal_reduction_pct",
+          "value": "0"
+        },
+        {
+          "header": "MAX BURST STACKS:",
+          "key": "max_stacks",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "BACKSTAB ANGLE:",
+          "key": "backstab_angle",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Attack Modifier",
+        "Unit Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "15",
+        "10",
+        "5"
+      ],
+      "desc": "Katana attacks and abilities apply a stacking damage over time to enemies that deals a percentage of the original attack's damage as additional damage over time. \n\nKez may activate the ability to impale the target with his attack, preventing them from moving or turning. The target's Katana debuff bursts, causing some of the stacks to deal damage instantly.",
+      "dmg_type": "Physical",
+      "key": "kez_kazurai_katana",
+      "mc": "40",
+      "name": "Kazurai Katana"
+    },
+    {
+      "attrib": [
+        {
+          "header": "KATANA MOVEMENT SPEED:",
+          "key": "katana_base_ms",
+          "value": "0"
+        },
+        {
+          "header": "KATANA ATTACK RANGE:",
+          "key": "katana_attack_range",
+          "value": "225"
+        },
+        {
+          "header": "KATANA BASE ATTACK TIME:",
+          "key": "katana_base_attack_time",
+          "value": "1.9"
+        },
+        {
+          "header": "KATANA BONUS AGILITY BASE DAMAGE:",
+          "key": "katana_agility_bonus_base_damage",
+          "value": "16%"
+        },
+        {
+          "header": "KATANA SWAP BONUS DAMAGE:",
+          "key": "katana_swap_bonus_damage",
+          "value": "12%"
+        },
+        {
+          "header": "SAI MOVEMENT SPEED:",
+          "key": "sai_base_ms",
+          "value": "0"
+        },
+        {
+          "header": "SAI ATTACK RANGE:",
+          "key": "sai_attack_range",
+          "value": "150"
+        },
+        {
+          "header": "SAI BASE ATTACK TIME:",
+          "key": "sai_base_attack_time",
+          "value": "1.5"
+        },
+        {
+          "header": "SAI SWAP MOVEMENT SPEED:",
+          "key": "sai_swap_bonus_movement_speed",
+          "value": "12%"
+        },
+        {
+          "header": "SAI SWAP SPEED DURATION:",
+          "key": "sai_swap_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER COOLDOWN TIMER:",
+          "key": "scepter_cooldown_timer",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "8",
+      "desc": "Kez switches between his Kazurai Katana and Shodo Sai.\n\nHe gains different attack capabilities and abilities based on the weapon equipped. The abilities level up together, and when an ability is used, the associated alternate weapon ability also goes on cooldown.\n\nKez deals extra damage on the first Katana hit or ability after switching to Katana, and gains bonus speed after switching to Sai.",
+      "dmg_type": "",
+      "key": "kez_switch_weapons",
+      "mc": null,
+      "name": "Switch Discipline"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "STRIKE INTERVAL:",
+          "key": "strike_interval",
+          "value": "0.25"
+        },
+        {
+          "header": "STRIKES:",
+          "key": "strikes",
+          "value": "4"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "30",
+            "60",
+            "90"
+          ]
+        },
+        {
+          "header": "MAX HEALTH AS DAMAGE:",
+          "key": "max_health_damage_pct",
+          "value": "2.5%"
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL PCT:",
+          "key": "lifesteal_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION LIFESTEAL PCT:",
+          "key": "illusion_lifesteal_pct",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "INVULN PERIOD:",
+          "key": "invuln_period",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESIST:",
+          "key": "magic_resist",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HARD DISPEL:",
+          "key": "hard_dispel",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BASIC DISPEL:",
+          "key": "basic_dispel",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "Kez enters into an uncontrollable state for 1 second, becoming invulnerable for 0.2s and receiving a basic dispel.\n\nIf the cast completes successfully, Kez performs a series of deadly radial slashes around him that deal damage based on the max health of the target and heal Kez for a percentage of all damage dealt.",
+      "dmg_type": "Pure",
+      "key": "kez_raptor_dance",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Raptor Dance"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RUSH RANGE:",
+          "key": "rush_range",
+          "value": "525"
+        },
+        {
+          "header": "RUSH SPEED:",
+          "key": "rush_speed",
+          "value": "850"
+        },
+        {
+          "header": "ECHO ATTACK DAMAGE:",
+          "key": "base_echo_damage",
+          "value": [
+            "30%",
+            "35%",
+            "40%",
+            "45%"
+          ]
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "slow_resist",
+          "value": [
+            "15%",
+            "30%",
+            "45%",
+            "60%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.75",
+            "4.5",
+            "5.25",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BREAK RANGE:",
+          "key": "break_range",
+          "value": "825"
+        },
+        {
+          "header": "ECHO PROC CHANCE REDUCTION:",
+          "key": "echo_proc_chance_reduction",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "21",
+        "18",
+        "15",
+        "12"
+      ],
+      "desc": "Kez gains the ability to rush towards enemy targets to deliver echoing secondary attacks. While in this state, Kez has phased collision and slow resistance.",
+      "dmg_type": "",
+      "key": "kez_falcon_rush",
+      "mc": [
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "name": "Falcon Rush"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "120",
+            "180",
+            "240"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "2000"
+        },
+        {
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": [
+            "2",
+            "2.25",
+            "2.5",
+            "2.75"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK FACTOR:",
+          "key": "attack_factor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "650",
+            "750",
+            "850",
+            "950"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "11",
+        "9",
+        "7"
+      ],
+      "desc": "Kez throws a Sai at the target unit, applying a fixed damage attack and silence.",
+      "dmg_type": "Physical",
+      "key": "kez_talon_toss",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Talon Toss"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CRITICAL CHANCE:",
+          "key": "sai_proc_vuln_chance",
+          "value": "20%"
+        },
+        {
+          "header": "CRITICAL DAMAGE:",
+          "key": "base_crit_pct",
+          "value": [
+            "125%",
+            "150%",
+            "175%",
+            "200%"
+          ]
+        },
+        {
+          "header": "MARK STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.5",
+            "0.6",
+            "0.7",
+            "0.8"
+          ]
+        },
+        {
+          "header": "MARK DURATION:",
+          "key": "vuln_duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "FORWARD ANGLE:",
+          "key": "forward_angle",
+          "value": "180"
+        },
+        {
+          "generated": true,
+          "header": "SPEED PENALTY:",
+          "key": "speed_penalty",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "PARRY DURATION:",
+          "key": "parry_duration",
+          "value": "2"
+        },
+        {
+          "header": "PARRY BONUS CRITICAL STRIKE:",
+          "key": "parry_bonus_crit",
+          "value": "0%"
+        },
+        {
+          "header": "PARRY BONUS MARK STUN:",
+          "key": "parry_bonus_stun_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PARRY STUN DURATION:",
+          "key": "parry_stun_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "Point Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "15",
+        "10",
+        "5"
+      ],
+      "desc": "Kez has a chance to critically strike the target when attacking with Sais.\n\nKez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for 2 seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned for 0.4s and gains a Mark. When a Marked target is attacked by Kez, it will guarantee a critical strike and stun the target.\n\nThe sub-ability may be used to cancel the blocking early.",
+      "dmg_type": "",
+      "key": "kez_shodo_sai",
+      "mc": [
+        "30",
+        "20",
+        "10",
+        "0"
+      ],
+      "name": "Shodo Sai"
+    },
+    {
+      "attrib": [
+        {
+          "header": "WAVE RADIUS:",
+          "key": "blast_radius",
+          "value": "1500"
+        },
+        {
+          "header": "WAVE SPEED:",
+          "key": "blast_speed",
+          "value": "1500"
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": [
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "header": "VISION DEBUFF DURATION:",
+          "key": "blind_duration",
+          "value": "4"
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "bonus_ms",
+          "value": [
+            "15%",
+            "25%",
+            "35%"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "BASIC DISPEL:",
+          "key": "basic_dispel",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "FADE DELAY:",
+          "key": "fade_delay",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "APPLY PARRY BONUS:",
+          "key": "apply_parry_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "Kez releases a wave of smoke that applies his Mark to nearby enemies, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
+      "dmg_type": "",
+      "key": "kez_ravens_veil",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Raven's Veil"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Stop blocking physical attacks.",
+      "dmg_type": "",
+      "key": "kez_shodo_sai_parry_cancel",
+      "mc": null,
+      "name": "Cancel"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Switch Discipline",
+    "desc": "Casting a weapon ability that would set its alternate weapon ability on cooldown does not do so if it's the first one used within 3 seconds after casting Switch Discipline or if it was already on cooldown.\n\nCasting any weapon ability refreshes the cooldown of Switch Discipline.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Shodo Sai",
+    "desc": "Parrying creates a stronger Mark that deals additional stun and critical damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 27,
+    "agi_gain": 3.5,
+    "armor": 1,
+    "attack_max": 29,
+    "attack_min": 23,
+    "attack_range": 225,
+    "attack_rate": 1.9,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1.5,
+    "int": 20,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.8
+  },
+  "name": "Kez",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "kez",
+  "talents": [
+    {
+      "left": "+?% Shodo Sai Critical Strike",
+      "level": 25,
+      "right": "+? Echo Slash Attack"
+    },
+    {
+      "left": "+?% Kazurai Katana Damage Per Second",
+      "level": 20,
+      "right": "? Bonus Attack Speed During Falcon Rush"
+    },
+    {
+      "left": "+?s Falcon Rush Duration",
+      "level": 15,
+      "right": "+? Raptor Dance Strike"
+    },
+    {
+      "left": "+12% Magic Resistance",
+      "level": 10,
+      "right": "+? Raptor Dance Radius"
+    }
+  ]
+}

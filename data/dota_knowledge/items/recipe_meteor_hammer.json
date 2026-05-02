@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 222,
+  "mc": false,
+  "name": "Meteor Hammer Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_meteor_hammer"
+}

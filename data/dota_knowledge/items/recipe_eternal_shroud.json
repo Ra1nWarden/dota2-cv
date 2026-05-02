@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 691,
+  "mc": false,
+  "name": "Eternal Shroud Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_eternal_shroud"
+}

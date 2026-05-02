@@ -1,0 +1,495 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MAX TETHER DISTANCE:",
+          "key": "radius",
+          "value": "1000"
+        },
+        {
+          "header": "MOVEMENT SPEED BONUS:",
+          "key": "movespeed",
+          "value": [
+            "6%",
+            "8%",
+            "10%",
+            "12%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LATCH DISTANCE:",
+          "key": "latch_distance",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "LATCH SPEED:",
+          "key": "latch_speed",
+          "value": "1000"
+        },
+        {
+          "header": "HP/MANA TRANSFER:",
+          "key": "tether_heal_amp",
+          "value": [
+            "60%",
+            "80%",
+            "100%",
+            "120%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TETHER MANA AMP:",
+          "key": "tether_mana_amp",
+          "value": [
+            "60",
+            "80",
+            "100",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SELF BONUS:",
+          "key": "self_bonus",
+          "value": "0"
+        },
+        {
+          "header": "ENEMY MOVE/ATTACK SLOW:",
+          "key": "slow",
+          "value": [
+            "15%",
+            "30%",
+            "45%",
+            "60%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.2"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TO HEAL:",
+          "key": "damage_to_heal",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TETHERED UNIT DAMAGE:",
+          "key": "tethered_unit_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "12",
+      "desc": "Tethers Io to an allied unit, granting bonus movement speed to both. When Io restores health or mana, the tethered unit gains a portion of that amount. The tether breaks when the allied unit moves too far away, or Io cancels the tether. Tether slows enemies touching it.",
+      "dmg_type": "",
+      "key": "wisp_tether",
+      "mc": "40",
+      "name": "Tether"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CREEP DAMAGE:",
+          "key": "creep_damage",
+          "value": [
+            "12",
+            "18",
+            "24",
+            "30"
+          ]
+        },
+        {
+          "header": "HERO DAMAGE:",
+          "key": "hero_damage",
+          "value": [
+            "30",
+            "50",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "REVOLUTION TIME:",
+          "key": "revolution_time",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "MIN RANGE:",
+          "key": "min_range",
+          "value": "200"
+        },
+        {
+          "header": "OSCILLATION RADIUS:",
+          "key": "max_range",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "HERO HIT RADIUS:",
+          "key": "hero_hit_radius",
+          "value": "110"
+        },
+        {
+          "header": "EXPLOSION RADIUS:",
+          "key": "explode_radius",
+          "value": "360"
+        },
+        {
+          "generated": true,
+          "header": "HIT RADIUS:",
+          "key": "hit_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT MOVEMENT RATE:",
+          "key": "spirit_movement_rate",
+          "value": "250"
+        },
+        {
+          "header": "DURATION:",
+          "key": "spirit_duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT AMOUNT:",
+          "key": "spirit_amount",
+          "value": "5"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "scepter_slow_pct",
+          "value": "0%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "scepter_slow_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPIRIT SPAWN TIME:",
+          "key": "spirit_spawn_time",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "15",
+      "desc": "Summon five particle spirits that dance in a circle around Io. If a particle collides with an enemy hero, it explodes, damaging all enemy units in an area around it. Creeps take minor damage from touching a particle spirit, but do not cause them to explode. When its duration ends, any remaining Spirits explode.",
+      "dmg_type": "Magical",
+      "key": "wisp_spirits",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Spirits"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "35",
+            "60",
+            "85",
+            "110"
+          ]
+        },
+        {
+          "header": "BONUS SPELL AMP:",
+          "key": "bonus_spell_amp",
+          "value": [
+            "8%",
+            "10%",
+            "12%",
+            "14%"
+          ]
+        },
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "header": "BONUS MAGIC RESISTANCE:",
+          "key": "bonus_mres",
+          "value": "0%"
+        },
+        {
+          "header": "MAX HEALTH REGEN:",
+          "key": "hp_regen",
+          "value": [
+            "0.5%",
+            "0.6%",
+            "0.7%",
+            "0.8%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "SPELL LIFESTEAL:",
+          "key": "spell_lifesteal",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UNSLOWABLE:",
+          "key": "unslowable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "25",
+        "22",
+        "19",
+        "16"
+      ],
+      "desc": "Io gains attack speed, spell amplification, and health regeneration based on max health. If Io is Tethered to an ally, that unit also gains any bonuses granted by Overcharge.",
+      "dmg_type": "",
+      "key": "wisp_overcharge",
+      "mc": [
+        "40",
+        "60",
+        "80",
+        "100"
+      ],
+      "name": "Overcharge"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Sends the spirits closer to you. Can be toggled on and off.",
+      "dmg_type": "",
+      "key": "wisp_spirits_in",
+      "mc": null,
+      "name": "Spirits In"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Sends the spirits farther away from you. Can be toggled on and off.",
+      "dmg_type": "",
+      "key": "wisp_spirits_out",
+      "mc": null,
+      "name": "Spirits Out"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CAST TIME:",
+          "key": "cast_delay",
+          "value": [
+            "3.5",
+            "3.25",
+            "3"
+          ]
+        },
+        {
+          "header": "RETURN TIME:",
+          "key": "return_time",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "90",
+        "80",
+        "70"
+      ],
+      "desc": "Teleports Io and a tethered ally to any location. After the spell expires, Io and the tethered ally will return to their original location. Double-click to teleport to your team's base fountain.",
+      "dmg_type": "",
+      "key": "wisp_relocate",
+      "mc": "175",
+      "name": "Relocate"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "1",
+      "desc": "Break the link to the tethered unit.",
+      "dmg_type": "",
+      "key": "wisp_tether_break",
+      "mc": null,
+      "name": "Break Tether"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX DAMAGE AMP:",
+          "key": "damage_amplification",
+          "value": "5%"
+        },
+        {
+          "header": "MAX HEAL AMP:",
+          "key": "heal_amplification",
+          "value": "5%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Io gains outgoing damage amplification the closer it is to full health, and Health Restoration and Healing Amplification the closer it is to zero health.",
+      "dmg_type": "",
+      "key": "wisp_equilibrium",
+      "mc": null,
+      "name": "Equilibrium"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Spirits",
+    "desc": "Spirits now passively spawn around Io constantly every second up to the max. Spirits colliding with enemy Heroes slows them briefly. Can be activated to explode spirits.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Tether",
+    "desc": "Tether damages enemies touching it. Io is healed for 50% of the damage done.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 1.6,
+    "armor": 1,
+    "attack_max": 27,
+    "attack_min": 21,
+    "attack_range": 500,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 21,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 320,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 3
+  },
+  "name": "Io",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "wisp",
+  "talents": [
+    {
+      "left": "-?s Relocate Cast Delay",
+      "level": 25,
+      "right": "Attack Tethered Ally's Target (?% damage)"
+    },
+    {
+      "left": "+?% Overcharge Max HP Regen Bonus",
+      "level": 20,
+      "right": "-?s Relocate Cooldown"
+    },
+    {
+      "left": "+?% Tether Movement Speed",
+      "level": 15,
+      "right": "+? Spirits Hero Damage"
+    },
+    {
+      "left": "+?s Overcharge Duration",
+      "level": 10,
+      "right": "+8 Strength"
+    }
+  ]
+}

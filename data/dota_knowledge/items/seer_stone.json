@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Reveal a target 800 area of the map for 6 seconds.",
+      "title": "Reveal",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "350"
+    },
+    {
+      "display": "+ {value} Bonus Vision",
+      "key": "vision_bonus",
+      "value": "350"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "10"
+    },
+    {
+      "key": "radius",
+      "value": "800"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE",
+    "Instant Cast"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 294,
+  "mc": false,
+  "name": "Seer Stone",
+  "notes": "",
+  "qual": null,
+  "short_name": "seer_stone"
+}

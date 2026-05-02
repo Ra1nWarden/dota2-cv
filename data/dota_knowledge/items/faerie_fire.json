@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 85 health.",
+      "title": "Imbue",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "2"
+    },
+    {
+      "key": "hp_restore",
+      "value": "85"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 5,
+  "charges": 1,
+  "components": null,
+  "cost": 65,
+  "created": false,
+  "id": 237,
+  "mc": false,
+  "name": "Faerie Fire",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "faerie_fire"
+}

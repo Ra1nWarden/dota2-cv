@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "125 / 135"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1 / 1.5"
+    },
+    {
+      "display": "- {value}% Max Mana",
+      "key": "mana_reduction_pct",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 990,
+  "mc": false,
+  "name": "Eye of the Vizier",
+  "notes": "",
+  "qual": null,
+  "short_name": "eye_of_the_vizier"
+}

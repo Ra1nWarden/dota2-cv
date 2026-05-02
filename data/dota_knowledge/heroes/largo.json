@@ -1,0 +1,684 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "85",
+            "170",
+            "255",
+            "340"
+          ]
+        },
+        {
+          "header": "ENEMY PULL DISTANCE:",
+          "key": "pull_distance",
+          "value": [
+            "235",
+            "265",
+            "295",
+            "325"
+          ]
+        },
+        {
+          "header": "ALLY PULL DISTANCE:",
+          "key": "pull_distance_ally",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "PULL DURATION:",
+          "key": "pull_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "STRONG DISPEL:",
+          "key": "strong_dispel",
+          "value": "0"
+        },
+        {
+          "header": "BONUS HEALTH REGEN:",
+          "key": "dispel_hp_regen",
+          "value": [
+            "4",
+            "7",
+            "10",
+            "13"
+          ]
+        },
+        {
+          "header": "HEALTH REGEN DURATION:",
+          "key": "buff_duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "11",
+        "9",
+        "7"
+      ],
+      "desc": "Largo licks the targeted unit with his tongue, pulling it back a short distance, applying a basic dispel, and dealing damage if it's an enemy.\n\nKilling or dispelling an effect from a target grants Largo temporary health regeneration.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Magical",
+      "key": "largo_catchy_lick",
+      "mc": [
+        "80",
+        "85",
+        "90",
+        "95"
+      ],
+      "name": "Catchy Lick"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER STOMP:",
+          "key": "damage_per_stomp",
+          "value": [
+            "36",
+            "48",
+            "60",
+            "72"
+          ]
+        },
+        {
+          "header": "NUMBER OF STOMPS:",
+          "key": "total_ticks",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": [
+            "12%",
+            "18%",
+            "24%",
+            "30%"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "STOMP INTERVAL:",
+          "key": "stomp_interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Largo tosses froglings to an area. They stomp the ground every 1 second, dealing damage and ministuns, and enemies in the area have reduced movement speed.",
+      "dmg_type": "Magical",
+      "key": "largo_frogstomp",
+      "mc": [
+        "85",
+        "95",
+        "105",
+        "115"
+      ],
+      "name": "Frogstomp"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE REVERB:",
+          "key": "damage_portion_pct",
+          "value": [
+            "30%",
+            "35%",
+            "40%",
+            "45%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DURATION:",
+          "key": "damage_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE HP PCT:",
+          "key": "damage_hp_pct",
+          "value": "0"
+        },
+        {
+          "header": "MANA COST REDUCTION:",
+          "key": "mana_cost_reduction",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE THRESHOLD:",
+          "key": "damage_threshold",
+          "value": "0"
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "duration",
+          "value": [
+            "12",
+            "18",
+            "24",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION REDUCTION:",
+          "key": "duration_reduction",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE AOE:",
+          "key": "damage_aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "",
+      "cd": "25",
+      "desc": "Largo strums a tune to a friendly hero. The hero's items and abilities have reduced mana cost and a percentage of their damage reverberates over the following 5 seconds.\n\nWhen an affected hero spends mana, the remaining buff duration is reduced by 0.5s. Duration is not reduced for Largo himself.",
+      "dmg_type": "Magical",
+      "key": "largo_croak_of_genius",
+      "mc": [
+        "25",
+        "35",
+        "45",
+        "55"
+      ],
+      "name": "Croak of Genius"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DURATION:",
+          "key": "buff_amplification",
+          "value": "9%"
+        },
+        {
+          "generated": true,
+          "header": "REPEAT BUFF:",
+          "key": "repeat_buff",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Buffs that Largo applies to himself or his team have extended duration.",
+      "dmg_type": "",
+      "key": "largo_encore",
+      "mc": null,
+      "name": "Encore"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "800"
+        },
+        {
+          "header": "BEAT INTERVAL:",
+          "key": "rhythm_interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "RHYTHM GRACE PERIOD:",
+          "key": "rhythm_grace_period",
+          "value": "0.4"
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "max_stacks",
+          "value": "5"
+        },
+        {
+          "header": "ARMOR PER STACK:",
+          "key": "armor_per_stack",
+          "value": [
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "header": "SONG MANA COST REDUCTION PER STACK:",
+          "key": "song_cost_reduction_per_stack_tooltip",
+          "value": [
+            "1",
+            "1.5",
+            "2"
+          ]
+        },
+        {
+          "header": "STACK LINGER DURATION:",
+          "key": "stack_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "DOUBLE SONG:",
+          "key": "double_song",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR ALLY PCT:",
+          "key": "armor_ally_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STACK DECREMENT ON EXIT:",
+          "key": "stack_decrement_on_exit",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "2",
+      "desc": "Largo gets ready to groove. He is disarmed and his ability bar switches to 3 song abilities, each with different effects. Songs are only effective if strummed on the beat.\n\nEvery time he strums successfully, he gains a stack of Groovin'. Each stack gives him bonus armor and reduces the mana cost of every song, but he loses a stack if he misses a beat. Stacks linger for a short duration when Largo's song ends.",
+      "dmg_type": "Magical",
+      "key": "largo_amphibian_rhapsody",
+      "mc": "0",
+      "name": "Amphibian Rhapsody"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DOUBLE SONG:",
+          "key": "double_song",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SONG COST REDUCTION PER STACK:",
+          "key": "song_cost_reduction_per_stack",
+          "value": [
+            "1",
+            "1.5",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "800"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "burst_damage",
+          "value": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "DAMAGE PER STACK:",
+          "key": "damage_per_stack",
+          "value": "0"
+        },
+        {
+          "header": "ADDITIONAL MAGIC DAMAGE:",
+          "key": "magic_damage_bonus",
+          "value": [
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "SPELL AMP:",
+          "key": "spell_amp_bonus",
+          "value": [
+            "8%",
+            "12%",
+            "16%"
+          ]
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "battle_burst_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0.2",
+      "desc": "Largo plays a song that deals 20 magical damage to nearby enemies. The song also increases nearby allied heroes' spell amplification and grants their attacks additional magic damage.",
+      "dmg_type": "Magical",
+      "key": "largo_song_fight_song",
+      "mc": [
+        "20",
+        "32",
+        "44"
+      ],
+      "name": "Bullbelly Blitz"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DOUBLE SONG:",
+          "key": "double_song",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SONG COST REDUCTION PER STACK:",
+          "key": "song_cost_reduction_per_stack",
+          "value": [
+            "1",
+            "1.5",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "800"
+        },
+        {
+          "header": "MOVE SPEED:",
+          "key": "movespeed_bonus_burst",
+          "value": [
+            "16%",
+            "20%",
+            "24%"
+          ]
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "slow_resistance",
+          "value": [
+            "70%",
+            "75%",
+            "80%"
+          ]
+        },
+        {
+          "header": "MOVEMENT DURATION:",
+          "key": "movement_burst_duration",
+          "value": "1"
+        },
+        {
+          "header": "SLOW RESISTANCE DURATION:",
+          "key": "slow_resistance_burst_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0.2",
+      "desc": "Largo plays a song that increases nearby friendly units' movement speed and grants a brief slow resistance.",
+      "dmg_type": "",
+      "key": "largo_song_double_time",
+      "mc": [
+        "20",
+        "32",
+        "44"
+      ],
+      "name": "Hotfeet Hustle"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DOUBLE SONG:",
+          "key": "double_song",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SONG COST REDUCTION PER STACK:",
+          "key": "song_cost_reduction_per_stack",
+          "value": [
+            "1",
+            "1.5",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "800"
+        },
+        {
+          "header": "HEAL:",
+          "key": "heal_burst",
+          "value": [
+            "34",
+            "56",
+            "78"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0.2",
+      "desc": "Largo plays a song that heals nearby friendly heroes.",
+      "dmg_type": "",
+      "key": "largo_song_good_vibrations",
+      "mc": [
+        "20",
+        "32",
+        "44"
+      ],
+      "name": "Island Elixir"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Bullbelly Blitz",
+    "desc": "Deals additional 6 +12 +18 magic damage per Groovin' stack when this song is used in double-strumming.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Encore",
+    "desc": "Whenever Largo applies a Unit Target buff to a friendly hero, he also gets the buff.\n\nIf Largo targets himself, the buff is also applied to the nearest allied hero within the cast range of the targeted ability.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 1.3,
+    "armor": 2,
+    "attack_max": 45,
+    "attack_min": 39,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 21,
+    "int_gain": 2.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.6
+  },
+  "name": "Largo",
+  "primary_attr": "str",
+  "roles": [
+    "Durable",
+    "Disabler",
+    "Support"
+  ],
+  "short_name": "largo",
+  "talents": [
+    {
+      "left": "special_bonus_unique_largo_7",
+      "level": 25,
+      "right": "special_bonus_unique_largo_8"
+    },
+    {
+      "left": "special_bonus_unique_largo_5",
+      "level": 20,
+      "right": "special_bonus_unique_largo_6"
+    },
+    {
+      "left": "special_bonus_unique_largo_3",
+      "level": 15,
+      "right": "special_bonus_unique_largo_4"
+    },
+    {
+      "left": "special_bonus_unique_largo_1",
+      "level": 10,
+      "right": "special_bonus_unique_largo_2"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "abilities": [
+    {
+      "description": "Applies a shield to the target unit for 5 seconds which re-casts most targeted spells back to their caster.\n\nThe shielded unit will still take damage from the spell.\nDispel Type: Basic Dispel",
+      "title": "Echo Shell",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "6.5"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "4.0"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "250"
+    },
+    {
+      "key": "active_duration",
+      "value": "5"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "pers",
+    "platemail",
+    "energy_booster"
+  ],
+  "cost": 3850,
+  "created": true,
+  "id": 226,
+  "mc": 175,
+  "name": "Lotus Orb",
+  "notes": "Targeted abilities from neutral items do not trigger Echo Shell.",
+  "qual": "epic",
+  "short_name": "lotus_orb"
+}

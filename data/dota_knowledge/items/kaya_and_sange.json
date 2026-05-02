@@ -1,0 +1,55 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "slow_resistance",
+      "value": "25"
+    },
+    {
+      "display": "+ {value}% Mana Regen Amplification",
+      "key": "mana_regen_multiplier",
+      "value": "40"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Health Restoration",
+      "key": "hp_regen_amp",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Mana Cost/Mana Loss Reduction",
+      "key": "manacost_reduction",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "kaya",
+    "sange"
+  ],
+  "cost": 4200,
+  "created": true,
+  "id": 273,
+  "mc": false,
+  "name": "Kaya and Sange",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "kaya_and_sange"
+}

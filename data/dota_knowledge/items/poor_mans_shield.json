@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Gives a 100% chance to block 30 damage from incoming attacks on melee heroes, and 20 damage on ranged.\n\nHas a 50% chance to block damage from creeps.",
+      "title": "Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_agility",
+      "value": "0"
+    },
+    {
+      "key": "damage_block_melee",
+      "value": "30"
+    },
+    {
+      "key": "damage_block_ranged",
+      "value": "20"
+    },
+    {
+      "key": "block_chance",
+      "value": "50"
+    },
+    {
+      "key": "block_chance_hero",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 71,
+  "mc": false,
+  "name": "Poor Man's Shield",
+  "notes": "Multiple sources of damage block do not stack.",
+  "qual": "common",
+  "short_name": "poor_mans_shield"
+}

@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Consumes a target tree to gain 3.5 health regeneration for 16 seconds. Consuming an Ironwood Tree doubles the heal duration.\n\nTree Range: 165",
+      "title": "Devour",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_regen",
+      "value": "3.5"
+    },
+    {
+      "key": "buff_duration",
+      "value": "16.0"
+    },
+    {
+      "key": "duration_to_use",
+      "value": "40"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 30,
+  "created": false,
+  "id": 241,
+  "mc": false,
+  "name": "Tango (Shared)",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "tango_single"
+}

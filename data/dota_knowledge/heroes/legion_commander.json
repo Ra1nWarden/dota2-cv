@@ -1,0 +1,404 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage",
+          "value": [
+            "40",
+            "70",
+            "100",
+            "130"
+          ]
+        },
+        {
+          "header": "DAMAGE PER HERO:",
+          "key": "damage_per_hero",
+          "value": [
+            "40",
+            "70",
+            "100",
+            "130"
+          ]
+        },
+        {
+          "header": "DAMAGE PER CREEP:",
+          "key": "damage_per_unit",
+          "value": [
+            "14",
+            "16",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "header": "ARMOR PER HERO:",
+          "key": "bonus_armor_heroes",
+          "value": "0"
+        },
+        {
+          "header": "ARMOR PER CREEP:",
+          "key": "bonus_armor_creeps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACK SPEED CREEPS:",
+          "key": "bonus_attack_speed_creeps",
+          "value": "0"
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "50",
+            "75",
+            "100",
+            "125"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "No Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "18",
+      "desc": "Turns the foes' numbers against them, dealing a 100% impact slow for 0.3s and damage to all enemies in the area. Damage increases with each enemy unit or hero in the area, and grants Legion Commander bonus attack speed.",
+      "dmg_type": "Magical",
+      "key": "legion_commander_overwhelming_odds",
+      "mc": [
+        "90",
+        "105",
+        "120",
+        "135"
+      ],
+      "name": "Overwhelming Odds"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "move_speed",
+          "value": [
+            "13%",
+            "16%",
+            "19%",
+            "22%"
+          ]
+        },
+        {
+          "header": "HP REGEN:",
+          "key": "hp_regen",
+          "value": [
+            "24",
+            "36",
+            "48",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "15",
+        "14",
+        "13"
+      ],
+      "desc": "Removes debuffs and disables from the target friendly unit, and grants bonus movement speed and health regen for a short time.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "legion_commander_press_the_attack",
+      "mc": "90",
+      "name": "Press The Attack"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACKS TO TRIGGER:",
+          "key": "trigger_attacks",
+          "value": [
+            "7",
+            "6",
+            "5",
+            "4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SECONDARY ATTACK DAMAGE:",
+          "key": "secondary_attack_damage",
+          "value": "100"
+        },
+        {
+          "header": "LIFESTEAL:",
+          "key": "hp_leech_percent",
+          "value": [
+            "55%",
+            "65%",
+            "75%",
+            "85%"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "0.3",
+      "desc": "When attacked a number of times, Legion Commander will counter-attack her target with bonus lifesteal.",
+      "dmg_type": "",
+      "key": "legion_commander_moment_of_courage",
+      "mc": null,
+      "name": "Moment of Courage"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "ARMOR:",
+          "key": "armor",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ALLY FACTOR:",
+          "key": "ally_factor",
+          "value": "50"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Passively grants Legion Commander armor.\n\nIf Legion or an allied Hero within 1200 range casts an ability, they gain bonus armor for 6s; allies gain 50% of the value. This bonus stacks independently.",
+      "dmg_type": "",
+      "key": "legion_commander_outfight_them",
+      "mc": null,
+      "name": "Outfight Them!"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "reward_damage",
+          "value": [
+            "10",
+            "20",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TRIGGER PTA ON VICTORY:",
+          "key": "trigger_pta_on_victory",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DUEL REFRESH ON VICTORY:",
+          "key": "duel_refresh_on_victory",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION PCT:",
+          "key": "damage_reduction_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TEAM DUEL:",
+          "key": "team_duel",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TEAM DUEL DAMAGE PCT:",
+          "key": "team_duel_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TEAM DUEL RADIUS:",
+          "key": "team_duel_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "60",
+        "55",
+        "50"
+      ],
+      "desc": "Legion Commander and the target enemy hero are forced to attack each other for a short duration. Neither hero can use items, and the target enemy hero cannot use abilities. If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage.",
+      "dmg_type": "",
+      "key": "legion_commander_duel",
+      "mc": "75",
+      "name": "Duel"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Duel",
+    "desc": "When Legion Commander wins a duel, Press the Attack is automatically triggered around her.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Overwhelming Odds",
+    "desc": "Overwhelming Odds has larger radius and grants an all damage barrier based on the damage it deals to enemy heroes.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 1.7,
+    "armor": -1,
+    "attack_max": 37,
+    "attack_min": 33,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 20,
+    "int_gain": 2.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.1
+  },
+  "name": "Legion Commander",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Initiator",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "legion_commander",
+  "talents": [
+    {
+      "left": "+?% Moment of Courage Lifesteal",
+      "level": 25,
+      "right": "Duel Refreshes Cooldown On Victory"
+    },
+    {
+      "left": "+?s Duel Duration",
+      "level": 20,
+      "right": "-? Moment of Courage Attacks To Trigger"
+    },
+    {
+      "left": "+? Press The Attack HP Regen",
+      "level": 15,
+      "right": "+? Overwhelming Odds Damage per Hero"
+    },
+    {
+      "left": "-?s Overwhelming Odds Cooldown",
+      "level": 10,
+      "right": "+? Outfight Them! Armor"
+    }
+  ]
+}

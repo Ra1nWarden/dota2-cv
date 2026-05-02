@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Increases spell damage dealt to player controlled units by 9%.",
+      "title": "Brand",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_damage_pct",
+      "value": "9"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1873,
+  "mc": false,
+  "name": "Partisan's Brand",
+  "notes": "Player controlled units includes heroes and any creep summoned or converted by them.",
+  "qual": null,
+  "short_name": "partisans_brand"
+}

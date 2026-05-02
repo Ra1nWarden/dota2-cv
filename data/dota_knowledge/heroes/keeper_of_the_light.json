@@ -1,0 +1,575 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MAX DAMAGE:",
+          "key": "total_damage",
+          "value": [
+            "185",
+            "290",
+            "395",
+            "500"
+          ]
+        },
+        {
+          "header": "MAX CHANNEL TIME:",
+          "key": "max_channel_time",
+          "value": "3"
+        },
+        {
+          "header": "WIDTH:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "RANGE:",
+          "key": "range",
+          "value": "1550"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL VISION RADIUS:",
+          "key": "channel_vision_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL VISION INTERVAL:",
+          "key": "channel_vision_interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL VISION DURATION:",
+          "key": "channel_vision_duration",
+          "value": "10.34"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL VISION STEP:",
+          "key": "channel_vision_step",
+          "value": [
+            "150",
+            "180",
+            "210",
+            "240"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": "13",
+      "desc": "CHANNELED - Channels light energy, building power the longer it's channeled. Once released, a wave is sent forth that deals damage and gives vision in its path. The longer it is channeled, the more damage is dealt.",
+      "dmg_type": "Magical",
+      "key": "keeper_of_the_light_illuminate",
+      "mc": [
+        "100",
+        "125",
+        "150",
+        "175"
+      ],
+      "name": "Illuminate"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MISS CHANCE:",
+          "key": "miss_rate",
+          "value": "45%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "425",
+            "450",
+            "475",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "175"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "140",
+            "190",
+            "240"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "500",
+            "575",
+            "650",
+            "725"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "A blinding light flashes over the targeted area, knocking back units to the edge of the area and blinding them, causing them to miss some attacks. Minimum knockback distance is 175 range over 0.6 seconds.",
+      "dmg_type": "Magical",
+      "key": "keeper_of_the_light_blinding_light",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Blinding Light"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA RESTORE:",
+          "key": "mana_restore",
+          "value": [
+            "105",
+            "170",
+            "235",
+            "300"
+          ]
+        },
+        {
+          "header": "COOLDOWN REDUCTION:",
+          "key": "cooldown_reduction",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MANA LEAK PCT:",
+          "key": "mana_leak_pct",
+          "value": [
+            "4.5",
+            "5",
+            "5.5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "SELF BONUS:",
+          "key": "self_bonus",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "19",
+        "16",
+        "13",
+        "10"
+      ],
+      "desc": "Restores mana to the target unit and reduces cooldowns of all basic abilities currently on cooldown by a fixed amount. Is 30% more effective when used on himself.",
+      "dmg_type": "",
+      "key": "keeper_of_the_light_chakra_magic",
+      "mc": "0",
+      "name": "Chakra Magic"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "SLOW PER 100 UNITS:",
+          "key": "slow",
+          "value": "10%"
+        },
+        {
+          "header": "MAGIC RESISTANCE REDUCTION:",
+          "key": "magic_resistance",
+          "value": [
+            "20%",
+            "30%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "14",
+      "desc": "Weakens an enemy's magical resistance, and applies a slow that increases in strength the more the target moves.",
+      "dmg_type": "",
+      "key": "keeper_of_the_light_radiant_bind",
+      "mc": "120",
+      "name": "Solar Bind"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ON COUNT:",
+          "key": "on_count",
+          "value": "5"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "725"
+        },
+        {
+          "header": "HIT COUNT:",
+          "key": "hit_count",
+          "value": "7"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "wisp_damage",
+          "value": "85"
+        },
+        {
+          "generated": true,
+          "header": "OFF DURATION:",
+          "key": "off_duration",
+          "value": "1.85"
+        },
+        {
+          "generated": true,
+          "header": "ON DURATION:",
+          "key": "on_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "OFF DURATION INITIAL:",
+          "key": "off_duration_initial",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "FIXED MOVEMENT SPEED:",
+          "key": "fixed_movement_speed",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "BOUNTY:",
+          "key": "bounty",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "60",
+      "desc": "Summons Ignis Fatuus at the targeted area. Alternates on and off, drawing enemies closer with its mesmerising flicker.",
+      "dmg_type": "Magical",
+      "key": "keeper_of_the_light_will_o_wisp",
+      "mc": "150",
+      "name": "Will-O-Wisp"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "40",
+            "45",
+            "50"
+          ]
+        },
+        {
+          "header": "BRIGHT SPEED BONUS MOVEMENT:",
+          "key": "movement_speed",
+          "value": "50%"
+        },
+        {
+          "header": "CAST RANGE BONUS:",
+          "key": "cast_range",
+          "value": [
+            "100",
+            "200",
+            "300"
+          ]
+        },
+        {
+          "header": "ILLUMINATE HEAL:",
+          "key": "illuminate_heal",
+          "value": "70%"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "85",
+        "80",
+        "75"
+      ],
+      "desc": "Ezalor temporarily turns his body luminescent, gaining cast range, increasing the speed bonus from Bright Speed, and allows Illuminate to be channeled by a separate spirit and heal allies.",
+      "dmg_type": "",
+      "key": "keeper_of_the_light_spirit_form",
+      "mc": [
+        "75",
+        "125",
+        "175"
+      ],
+      "name": "Spirit Form"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Release the channel early.",
+      "dmg_type": "",
+      "key": "keeper_of_the_light_illuminate_end",
+      "mc": null,
+      "name": "Release Illuminate"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "INTELLIGENCE PER SPEED:",
+          "key": "intelligence_per_speed",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "MOVEMENT PER VISION:",
+          "key": "movement_per_vision",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Keeper of the Light gains 1 movement speed for every 2.5 Intelligence.\n\nWhenever Keeper of the Light moves 300 distance, he leaves behind light that allows him to see 400 range for 3 seconds.",
+      "dmg_type": "",
+      "key": "keeper_of_the_light_bright_speed",
+      "mc": null,
+      "name": "Bright Speed"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Will-O-Wisp",
+    "desc": "Summons Ignis Fatuus at the targeted area. Alternates on and off, drawing enemies closer with its mesmerising flicker.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Spirit Form",
+    "desc": "Increases illuminate heal.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.6,
+    "armor": 0,
+    "attack_max": 27,
+    "attack_min": 20,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 24,
+    "int_gain": 3.3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.3
+  },
+  "name": "Keeper of the Light",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "keeper_of_the_light",
+  "talents": [
+    {
+      "left": "Chakra Magic Strong Dispels",
+      "level": 25,
+      "right": "+? Illuminate Damage"
+    },
+    {
+      "left": "+?s Spirit Form Duration",
+      "level": 20,
+      "right": "+?% Solar Bind Magic Resistance Reduction"
+    },
+    {
+      "left": "+?% Spirit Form Bright Speed Bonus",
+      "level": 15,
+      "right": "+? Blinding Light Damage"
+    },
+    {
+      "left": "+?% Blinding Light Miss",
+      "level": 10,
+      "right": "-?s Illuminate Cooldown"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "IMAGE DURATION:",
+          "key": "illusion_duration",
+          "value": "26"
+        },
+        {
+          "generated": true,
+          "header": "OUTGOING DAMAGE:",
+          "key": "outgoing_damage",
+          "value": [
+            "-75",
+            "-70",
+            "-65",
+            "-60"
+          ]
+        },
+        {
+          "header": "IMAGE DAMAGE:",
+          "key": "outgoing_damage_tooltip",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "INCOMING DAMAGE:",
+          "key": "incoming_damage",
+          "value": "250"
+        },
+        {
+          "header": "IMAGE DAMAGE TAKEN:",
+          "key": "tooltip_incoming_damage_total_pct",
+          "value": "350%"
+        },
+        {
+          "header": "IMAGE COUNT:",
+          "key": "images_count",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "INVULN DURATION:",
+          "key": "invuln_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "desc": "Creates multiple images of Naga Siren under her control.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "naga_siren_mirror_image",
+      "mc": [
+        "75",
+        "90",
+        "105",
+        "120"
+      ],
+      "name": "Mirror Image"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2.75",
+            "3.5",
+            "4.25",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "NET SPEED:",
+          "key": "net_speed",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "FAKE ENSNARE DISTANCE:",
+          "key": "fake_ensnare_distance",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "500",
+            "525",
+            "550",
+            "575"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAN TARGET MAGIC IMMUNE:",
+          "key": "can_target_magic_immune",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DOES BREAK:",
+          "key": "does_break",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "21",
+        "18",
+        "15",
+        "12"
+      ],
+      "desc": "Interrupts the target and traps them in place, preventing movement or blinking. Can target units affected by Song of the Siren.",
+      "dmg_type": "",
+      "key": "naga_siren_ensnare",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Ensnare"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "HITS:",
+          "key": "hits",
+          "value": "6"
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor_reduction",
+          "value": [
+            "-2",
+            "-4",
+            "-6",
+            "-8"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "30",
+            "40",
+            "50",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Naga Siren and her illusions deal bonus damage to enemies and reduce their armor for 4 seconds every 6 attacks.",
+      "dmg_type": "Magical",
+      "key": "naga_siren_rip_tide",
+      "mc": null,
+      "name": "Rip Tide"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1600"
+        },
+        {
+          "generated": true,
+          "header": "PULL STRENGTH:",
+          "key": "pull_strength",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "MIN PULL DISTANCE:",
+          "key": "min_pull_distance",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAN TARGET MAGIC IMMUNE:",
+          "key": "can_target_magic_immune",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "8",
+      "desc": "CHANNELED - Naga Siren channels for up to 5 seconds, pulling all units affected by Naga's Ensnare in a 1600 range towards her at a speed of 200. Channeling ends when the Ensnared unit is 100 distance away.",
+      "dmg_type": "",
+      "key": "naga_siren_reel_in",
+      "mc": "0",
+      "name": "Reel In"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EVASION PER NAGA:",
+          "key": "evasion_per_naga",
+          "value": "4.9%"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Naga Siren has bonus evasion, increased per every other Naga Siren within 900 radius.",
+      "dmg_type": [],
+      "key": "naga_siren_eelskin",
+      "mc": null,
+      "name": "Eelskin"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "900",
+            "1150",
+            "1400"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "0.55"
+        },
+        {
+          "header": "MAX HP REGEN PER SECOND:",
+          "key": "heal_pct",
+          "value": [
+            "1%",
+            "2%",
+            "3%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "900",
+            "1150",
+            "1400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "160",
+        "130",
+        "100"
+      ],
+      "desc": "All enemies in range of the Naga Siren are put into a magical stasis where they cannot act or be attacked. Using Song of the Siren again will end the duration early.",
+      "dmg_type": "",
+      "key": "naga_siren_song_of_the_siren",
+      "mc": [
+        "150",
+        "250",
+        "350"
+      ],
+      "name": "Song of the Siren"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "1",
+      "desc": "Release enemy units from your song so they can be targeted again.",
+      "dmg_type": "",
+      "key": "naga_siren_song_of_the_siren_cancel",
+      "mc": null,
+      "name": "Song of the Siren End"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Ensnare",
+    "desc": "Increases cast range and projectile speed.  Allows Ensnare to target and affect Debuff Immune units. Ensnare applies Break.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Song of the Siren",
+    "desc": "Allies in range of Song of the Siren recover a percentage of their health and mana per second.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 3.4,
+    "armor": 1,
+    "attack_max": 25,
+    "attack_min": 23,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 19,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 330,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Naga Siren",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Support",
+    "Pusher",
+    "Disabler",
+    "Initiator",
+    "Escape"
+  ],
+  "short_name": "naga_siren",
+  "talents": [
+    {
+      "left": "-?s Mirror Image Cooldown",
+      "level": 25,
+      "right": "+25 Agility"
+    },
+    {
+      "left": "-?s Song of the Siren Cooldown",
+      "level": 20,
+      "right": "+? Mirror Image Illusion"
+    },
+    {
+      "left": "+?% Mirror Image Damage",
+      "level": 15,
+      "right": "-?% Mirror Image Illusion Damage Taken"
+    },
+    {
+      "left": "+? Reel In Pull Speed",
+      "level": 10,
+      "right": "+?% Rip Tide Damage"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 650,
+  "created": false,
+  "id": 258,
+  "mc": false,
+  "name": "Kaya Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_kaya"
+}

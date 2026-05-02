@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "The next time you get attacked by a hero within 400 range, explode dealing 250 damage to all enemies within a 400 radius and causing them to miss 100% of their attacks for 2 seconds.",
+      "title": "Hair Trigger",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    },
+    {
+      "key": "radius",
+      "value": "400"
+    },
+    {
+      "key": "damage",
+      "value": "250"
+    },
+    {
+      "key": "blind_duration",
+      "value": "2"
+    },
+    {
+      "key": "blind_pct",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": 20,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 834,
+  "mc": false,
+  "name": "Blast Rig",
+  "notes": "",
+  "qual": null,
+  "short_name": "black_powder_bag"
+}

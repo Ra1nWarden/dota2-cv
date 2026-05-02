@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Empowers the next attack to be a critical hit dealing 150% damage. Hitting an enemy with an empowered attack temporarily decreases their movement speed by 10%, attack speed by 15%, and cast speed by 20% for 3 seconds.",
+      "title": "Crushing Blow",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "crit_multiplier",
+      "value": "150"
+    },
+    {
+      "key": "movespeed_slow",
+      "value": "10"
+    },
+    {
+      "key": "attack_slow",
+      "value": "15"
+    },
+    {
+      "key": "cast_slow",
+      "value": "20"
+    },
+    {
+      "key": "debuff_duration",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": 15,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1643,
+  "mc": false,
+  "name": "Giant's Maul",
+  "notes": "",
+  "qual": null,
+  "short_name": "giant_maul"
+}

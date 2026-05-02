@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 700,
+  "created": false,
+  "id": 95,
+  "mc": false,
+  "name": "Scythe of Vyse Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_sheepstick"
+}

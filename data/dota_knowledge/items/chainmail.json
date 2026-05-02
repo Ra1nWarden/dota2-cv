@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "4"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 500,
+  "created": false,
+  "id": 4,
+  "mc": false,
+  "name": "Chainmail",
+  "notes": "",
+  "qual": "component",
+  "short_name": "chainmail"
+}

@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Increases movement speed of all allied units by 10% in a 1000 unit radius around the caster for 6 seconds.",
+      "title": "One for the Road",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "movespeed_pct",
+      "value": "10"
+    },
+    {
+      "key": "buff_radius",
+      "value": "1000"
+    },
+    {
+      "key": "buff_duration",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1637,
+  "mc": 40,
+  "name": "Kobold Cup",
+  "notes": "",
+  "qual": null,
+  "short_name": "kobold_cup"
+}

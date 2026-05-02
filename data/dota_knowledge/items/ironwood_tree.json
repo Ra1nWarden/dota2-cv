@@ -1,0 +1,32 @@
+{
+  "abilities": [
+    {
+      "description": "Targets the ground to plant a happy little tree that lasts for 20 seconds.",
+      "title": "Plant Tree",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "5"
+    },
+    {
+      "key": "tree_duration",
+      "value": "20"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": 15,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 304,
+  "mc": false,
+  "name": "Ironwood Tree",
+  "notes": "",
+  "qual": null,
+  "short_name": "ironwood_tree"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 675,
+  "created": false,
+  "id": 99,
+  "mc": false,
+  "name": "Eul's Scepter Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_cyclone"
+}

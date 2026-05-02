@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Increases armor by 7 or decreases armor by -4 for 8s depending on if cast on an ally or enemy. Cannot be cast on self.",
+      "title": "Valor",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "ally_armor",
+      "value": "7"
+    },
+    {
+      "key": "enemy_armor",
+      "value": "-4"
+    },
+    {
+      "key": "duration",
+      "value": "8"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 18,
+  "charges": false,
+  "components": [
+    "chainmail",
+    "sobi_mask",
+    "blight_stone"
+  ],
+  "cost": 0,
+  "created": true,
+  "id": 187,
+  "mc": 30,
+  "name": "Medallion of Courage",
+  "notes": "",
+  "qual": null,
+  "short_name": "medallion_of_courage"
+}

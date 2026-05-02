@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Each time the wearer is attacked, they gain a stack of 0.4 mana regen, up to 5 stacks. Stacks last for 5 seconds.",
+      "title": "Rites of Eloshar",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_all_stats",
+      "value": "0"
+    },
+    {
+      "key": "mana_regen",
+      "value": "0.4"
+    },
+    {
+      "key": "stack_limit",
+      "value": "5"
+    },
+    {
+      "key": "stack_duration",
+      "value": "5"
+    },
+    {
+      "key": "magic_resistance",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 947,
+  "mc": false,
+  "name": "Occult Bracelet",
+  "notes": "",
+  "qual": null,
+  "short_name": "occult_bracelet"
+}

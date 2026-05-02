@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Grants each attack a 30% chance to deal an additional 80% of the attack's damage as bonus magic damage.",
+      "title": "Phantom Critical",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "35"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "15"
+    },
+    {
+      "key": "crit_chance",
+      "value": "30"
+    },
+    {
+      "key": "crit_multiplier",
+      "value": "80"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "lesser_crit",
+    "voodoo_mask"
+  ],
+  "cost": 3300,
+  "created": true,
+  "id": 911,
+  "mc": false,
+  "name": "Revenant's Brooch",
+  "notes": "Counts as a Critical Strike for purposes of stacking with other sources of Critical Strike.\nPhantom Critical does not work against buildings.",
+  "qual": "rare",
+  "short_name": "revenants_brooch"
+}

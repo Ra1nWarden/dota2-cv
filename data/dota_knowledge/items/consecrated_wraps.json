@@ -1,0 +1,74 @@
+{
+  "abilities": [
+    {
+      "description": "Gain a stack every 3s, up to a maximum of 3 stacks. Upon gaining a stack, your movement speed is increased by 20% for 7s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all stacks to gain an all damage barrier for 7s that absorbs 120 damage per stack (360 max).",
+      "title": "Hallowed",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "bonus_spell_resist",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "key": "stack_gain_time",
+      "value": "3"
+    },
+    {
+      "key": "max_stacks",
+      "value": "3"
+    },
+    {
+      "key": "movement_speed_pct_on_stack_gain",
+      "value": "20"
+    },
+    {
+      "key": "stack_threshold_damage",
+      "value": "0"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    },
+    {
+      "key": "barrier_per_stack",
+      "value": "120"
+    },
+    {
+      "key": "max_barrier_tooltip",
+      "value": "360"
+    },
+    {
+      "key": "barrier_cd",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "vitality_booster",
+    "shawl",
+    "crown"
+  ],
+  "cost": 2600,
+  "created": true,
+  "id": 1854,
+  "mc": false,
+  "name": "Consecrated Wraps",
+  "notes": "Stacks cannot be gained for 3s after you take damage from a player-controlled unit or Roshan.\nSelf-damage and HP Loss damage cannot remove stacks.\nMovement speed buff does not stack.\nMovement speed buff is only provided if you have reached maximum stacks at least once while the item is equipped.",
+  "qual": "epic",
+  "short_name": "consecrated_wraps"
+}

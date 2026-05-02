@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1350,
+  "created": false,
+  "id": 5,
+  "mc": false,
+  "name": "Claymore",
+  "notes": "",
+  "qual": "component",
+  "short_name": "claymore"
+}

@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Restores mana equal to 30 + 3% of the caster's maximum mana pool to all nearby allies. \n\n Radius: 1200",
+      "title": "Replenish Mana",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_intelligence",
+      "value": "0"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    },
+    {
+      "key": "mana_restore",
+      "value": "30"
+    },
+    {
+      "key": "mana_restore_pct",
+      "value": "3"
+    },
+    {
+      "key": "radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 349,
+  "mc": false,
+  "name": "Arcane Ring",
+  "notes": "",
+  "qual": null,
+  "short_name": "arcane_ring"
+}

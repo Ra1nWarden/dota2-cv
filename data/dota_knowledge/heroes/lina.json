@@ -1,0 +1,426 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "dragon_slave_damage",
+          "value": [
+            "65",
+            "125",
+            "185",
+            "245"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DRAGON SLAVE SPEED:",
+          "key": "dragon_slave_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "DRAGON SLAVE WIDTH INITIAL:",
+          "key": "dragon_slave_width_initial",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "DRAGON SLAVE WIDTH END:",
+          "key": "dragon_slave_width_end",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "DRAGON SLAVE DISTANCE:",
+          "key": "dragon_slave_distance",
+          "value": "1075"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1075"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "0.6875"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "10",
+        "9",
+        "8"
+      ],
+      "desc": "Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path.",
+      "dmg_type": "Magical",
+      "key": "lina_dragon_slave",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Dragon Slave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "light_strike_array_aoe",
+          "value": "250"
+        },
+        {
+          "header": "CAST DELAY:",
+          "key": "light_strike_array_delay_time",
+          "value": "0.5"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "light_strike_array_stun_duration",
+          "value": [
+            "1.2",
+            "1.6",
+            "2",
+            "2.4"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "light_strike_array_damage",
+          "value": [
+            "80",
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.45"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "11",
+        "9",
+        "7"
+      ],
+      "desc": "Summons a column of flames that damages and stuns enemies.",
+      "dmg_type": "Magical",
+      "key": "lina_light_strike_array",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Light Strike Array"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK SPEED BONUS:",
+          "key": "fiery_soul_attack_speed_bonus",
+          "value": [
+            "8",
+            "16",
+            "24",
+            "32"
+          ]
+        },
+        {
+          "header": "MOVE SPEED BONUS:",
+          "key": "fiery_soul_move_speed_bonus",
+          "value": [
+            "1%",
+            "1.5%",
+            "2%",
+            "2.5%"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "fiery_soul_max_stacks",
+          "value": "7"
+        },
+        {
+          "header": "DURATION:",
+          "key": "fiery_soul_stack_duration",
+          "value": "18"
+        },
+        {
+          "generated": true,
+          "header": "BONUS SPELL DAMAGE:",
+          "key": "bonus_spell_damage",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts 18 seconds.",
+      "dmg_type": "",
+      "key": "lina_fiery_soul",
+      "mc": null,
+      "name": "Fiery Soul"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "flame_cloak_duration",
+          "value": "7"
+        },
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": "35%"
+        },
+        {
+          "header": "SPELL AMP:",
+          "key": "spell_amp",
+          "value": "35%"
+        },
+        {
+          "generated": true,
+          "header": "VISUALZDELTA:",
+          "key": "visualzdelta",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "ZCHANGESPEED:",
+          "key": "zchangespeed",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Instant Cast",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "25",
+      "desc": "Grants Lina unobstructed movement and increases her spell damage and magic resistance. Grants max fiery soul stacks on activation.",
+      "dmg_type": "",
+      "key": "lina_flame_cloak",
+      "mc": "50",
+      "name": "Flame Cloak"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "IMPACT DAMAGE PCT:",
+          "key": "impact_damage_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "BURN DAMAGE PCT:",
+          "key": "burn_damage_pct",
+          "value": "64"
+        },
+        {
+          "generated": true,
+          "header": "BURN DURATION:",
+          "key": "burn_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL TICK TOTAL DAMAGE TOOLTIP:",
+          "key": "additional_tick_total_damage_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TARGET CRIT MULTIPLIER:",
+          "key": "target_crit_multiplier",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Lina's abilities deal an additional 64% damage as burn damage over 4s.",
+      "dmg_type": "Magical",
+      "key": "lina_slow_burn",
+      "mc": null,
+      "name": "Slow Burn"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "380",
+            "565",
+            "750"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DELAY:",
+          "key": "damage_delay",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "PIERCE IMMUNITY:",
+          "key": "pierce_immunity",
+          "value": "0"
+        },
+        {
+          "header": "SUPERCHARGE DURATION:",
+          "key": "supercharge_duration",
+          "value": "0"
+        },
+        {
+          "header": "SUPERCHARGE STACKS:",
+          "key": "supercharge_stacks",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BARRIER PCT:",
+          "key": "barrier_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BARRIER DURATION:",
+          "key": "barrier_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "70",
+        "60",
+        "50"
+      ],
+      "desc": "Fires off a bolt of lightning at a single enemy unit, dealing massive damage.",
+      "dmg_type": "Magical",
+      "key": "lina_laguna_blade",
+      "mc": [
+        "150",
+        "300",
+        "450"
+      ],
+      "name": "Laguna Blade"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Flame Cloak",
+    "desc": "Grants Lina unobstructed movement and increases her spell damage and magic resistance. Grants max fiery soul stacks on activation.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Laguna Blade",
+    "desc": "Casting Laguna Blade temporarily supercharges Lina, granting her stacks of Fiery Soul.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 2.4,
+    "armor": 0,
+    "attack_max": 29,
+    "attack_min": 21,
+    "attack_range": 670,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 30,
+    "int_gain": 4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.4
+  },
+  "name": "Lina",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Carry",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "lina",
+  "talents": [
+    {
+      "left": "+1s Slow Burn Duration",
+      "level": 25,
+      "right": "150% Attack Crit On Targets Affected By Slow Burn"
+    },
+    {
+      "left": "-20s Laguna Blade Cooldown",
+      "level": 20,
+      "right": "+10/1% Fiery Soul Per Stack"
+    },
+    {
+      "left": "5% Fiery Soul Magic Resist Per Stack",
+      "level": 15,
+      "right": "+110 Light Strike Array Damage"
+    },
+    {
+      "left": "+25 Damage",
+      "level": 10,
+      "right": "-3s Dragon Slave Cooldown"
+    }
+  ]
+}

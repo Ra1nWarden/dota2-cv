@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Activate to switch the active attribute between Strength, Agility, and Intelligence. Vambrace provides +10 of the selected attribute and +4 of the other two attributes.",
+      "title": "Switch Attributes",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_primary_stat",
+      "value": "10"
+    },
+    {
+      "key": "bonus_secondary_stat",
+      "value": "4"
+    },
+    {
+      "key": "bonus_spell_amp",
+      "value": "8"
+    },
+    {
+      "key": "bonus_magic_resistance",
+      "value": "10"
+    },
+    {
+      "key": "bonus_attack_speed",
+      "value": "15"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 331,
+  "mc": false,
+  "name": "Vambrace",
+  "notes": "",
+  "qual": "common",
+  "short_name": "vambrace"
+}

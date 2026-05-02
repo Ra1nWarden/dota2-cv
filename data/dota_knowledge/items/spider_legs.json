@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Grants you 20% bonus movement speed, 50% improved turn rate, and free pathing for 14 seconds. Walking over trees causes them to be destroyed.",
+      "title": "Skitter",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "turn_rate",
+      "value": "50"
+    },
+    {
+      "key": "bonus_movement_speed_active",
+      "value": "20"
+    },
+    {
+      "key": "duration",
+      "value": "14"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 20,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 326,
+  "mc": false,
+  "name": "Spider Legs",
+  "notes": "",
+  "qual": null,
+  "short_name": "spider_legs"
+}

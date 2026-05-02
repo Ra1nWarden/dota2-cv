@@ -1,0 +1,36 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.8"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "14"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "blades_of_attack",
+    "fluffy_hat",
+    "sobi_mask"
+  ],
+  "cost": 1125,
+  "created": true,
+  "id": 596,
+  "mc": false,
+  "name": "Falcon Blade",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "falcon_blade"
+}

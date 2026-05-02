@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Causes attacks to burn the enemy, dealing 22 damage per second for 3 seconds. Affects buildings.",
+      "title": "Afterburn",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage_per_sec",
+      "value": "22"
+    },
+    {
+      "key": "duration",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 358,
+  "mc": false,
+  "name": "Dragon Scale",
+  "notes": "",
+  "qual": null,
+  "short_name": "dragon_scale"
+}

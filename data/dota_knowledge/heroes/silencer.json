@@ -1,0 +1,416 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "16",
+            "24",
+            "32",
+            "40"
+          ]
+        },
+        {
+          "header": "INITIAL DAMAGE:",
+          "key": "application_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "header": "BASE DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed",
+          "value": [
+            "-16%",
+            "-19%",
+            "-22%",
+            "-25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "UNDISPELLABLE:",
+          "key": "undispellable",
+          "value": "0"
+        },
+        {
+          "header": "PENALTY DURATION:",
+          "key": "penalty_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "PENALTY MULTIPLIER:",
+          "key": "penalty_multiplier",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "20",
+        "18",
+        "16"
+      ],
+      "desc": "Curses the target area, dealing damage and causing enemies to take damage over time and slowing their movement speed.\n\nAnytime affected enemies cast a spell, the duration is increased. The duration is paused as long as the target is silenced.",
+      "dmg_type": "Magical",
+      "key": "silencer_curse_of_the_silent",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Arcane Curse"
+    },
+    {
+      "attrib": [
+        {
+          "header": "INT TO DAMAGE:",
+          "key": "intellect_damage_pct",
+          "value": [
+            "35%",
+            "50%",
+            "65%",
+            "80%"
+          ]
+        },
+        {
+          "header": "INT STEAL:",
+          "key": "int_steal",
+          "value": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "INT STEAL DURATION:",
+          "key": "int_steal_duration",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STACKS FOR SILENCE:",
+          "key": "stacks_for_silence",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": "+2.5"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF LINGER DURATION:",
+          "key": "debuff_linger_duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PURE PIERCE DEBUFF:",
+          "key": "pure_pierce_debuff",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Silencer enchants his glaives with his wisdom, stealing his target's Intelligence with each hit and dealing additional damage based on his Intelligence.",
+      "dmg_type": "Magical",
+      "key": "silencer_glaives_of_wisdom",
+      "mc": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "name": "Glaives of Wisdom"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage",
+          "value": [
+            "120",
+            "160",
+            "200",
+            "240"
+          ]
+        },
+        {
+          "header": "INT DIFF MULTIPLIER:",
+          "key": "int_multiplier",
+          "value": [
+            "1",
+            "1.5",
+            "2",
+            "2.5"
+          ]
+        },
+        {
+          "header": "ENEMY CAST TIMER:",
+          "key": "debuff_duration",
+          "value": "4"
+        },
+        {
+          "header": "SILENCE DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "AOE:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "18",
+        "14",
+        "10"
+      ],
+      "desc": "Enchants a target, providing vision of them and causing them to be damaged and silenced if they cast a spell or if the enchantment timer expires. Deals extra damage based on the difference in intelligence between Silencer and the target.",
+      "dmg_type": "Magical",
+      "key": "silencer_last_word",
+      "mc": [
+        "100",
+        "105",
+        "110",
+        "115"
+      ],
+      "name": "Last Word"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PERMANENT INT STEAL RANGE:",
+          "key": "permanent_int_steal_range",
+          "value": "925"
+        },
+        {
+          "generated": true,
+          "header": "PERMANENT INT STEAL AMOUNT:",
+          "key": "permanent_int_steal_amount",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SILENCED BONUS INT STEAL AMOUNT:",
+          "key": "silenced_bonus_int_steal_amount",
+          "value": "1"
+        },
+        {
+          "header": "SILENCED TARGET DAMAGE:",
+          "key": "damage_pct",
+          "value": "5%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Silencer takes less damage from and deals more damage to silenced targets.\n\nIf an enemy Hero dies within 925 range of Silencer or was debuffed by Silencer at the time of death, Silencer permanently steals 1 Intelligence from them. If the victim was silenced, steal an extra 1 Intelligence.",
+      "dmg_type": "",
+      "key": "silencer_brain_drain",
+      "mc": null,
+      "name": "Suffer In Silence"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "4.5",
+            "5.25",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "120",
+      "desc": "Silencer stops all sound, preventing enemy heroes and units on the map from casting spells.",
+      "dmg_type": "",
+      "key": "silencer_global_silence",
+      "mc": [
+        "300",
+        "450",
+        "600"
+      ],
+      "name": "Global Silence"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Silencer takes less damage from and deals more damage to silenced targets.",
+      "dmg_type": "",
+      "key": "silencer_oppressive_silence",
+      "mc": null,
+      "name": "Suffer In Silence"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Global Silence",
+    "desc": "Global Silence applies Arcane Curse to heroes for the duration of Global Silence.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Glaives of Wisdom",
+    "desc": "Causes Glaives of Wisdom to bounce 1 time to a random enemy within 450 range and increases intelligence steal.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 2.2,
+    "armor": 0,
+    "attack_max": 32,
+    "attack_min": 18,
+    "attack_range": 600,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 2.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.2
+  },
+  "name": "Silencer",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Support",
+    "Disabler",
+    "Initiator",
+    "Nuker"
+  ],
+  "short_name": "silencer",
+  "talents": [
+    {
+      "left": "+?% Glaives of Wisdom Damage",
+      "level": 25,
+      "right": "+?s Global Silence Duration"
+    },
+    {
+      "left": "+?s Glaives of Wisdom Int Steal Duration",
+      "level": 20,
+      "right": "? AoE Last Word"
+    },
+    {
+      "left": "-?s Global Silence Cooldown",
+      "level": 15,
+      "right": "special_bonus_unique_silencer_arcane_curse_duration"
+    },
+    {
+      "left": "+25 Attack Speed",
+      "level": 10,
+      "right": "+?% Suffer In Silence Silenced Target Damage"
+    }
+  ]
+}

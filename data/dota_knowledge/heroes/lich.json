@@ -1,0 +1,569 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_movement_speed",
+          "value": "-25%"
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "slow_attack_speed_primary",
+          "value": [
+            "-30",
+            "-40",
+            "-50",
+            "-60"
+          ]
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage",
+          "value": [
+            "40",
+            "80",
+            "120",
+            "160"
+          ]
+        },
+        {
+          "header": "AREA DAMAGE:",
+          "key": "aoe_damage",
+          "value": [
+            "80",
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "575",
+            "600",
+            "625",
+            "650"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "7",
+      "desc": "Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for 4 seconds. The primary target receives both base and area damage.",
+      "dmg_type": "Magical",
+      "key": "lich_frost_nova",
+      "mc": [
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "name": "Frost Blast"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": [
+            "45%",
+            "50%",
+            "55%",
+            "60%"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.5"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "18",
+            "32",
+            "46",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "INTERVAL:",
+          "key": "interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "BONUS DURATION ON HERO KILL:",
+          "key": "bonus_duration_per_hero_killed",
+          "value": "0"
+        },
+        {
+          "header": "BONUS DURATION ON CREEP KILL:",
+          "key": "bonus_duration_per_creep_killed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "30",
+            "25",
+            "20",
+            "15"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": [],
+      "cd": [
+        "30",
+        "25",
+        "20",
+        "15"
+      ],
+      "desc": "Applies a magical frost shield around the target, reducing damage from attacks against it. While the shield is active, ice magic will affect nearby enemy units every 1 seconds, dealing minor damage and slowing them.",
+      "dmg_type": "Magical",
+      "key": "lich_frost_shield",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Frost Shield"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": [
+            "1.10",
+            "1.4",
+            "1.7",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL DURATION:",
+          "key": "channel_duration",
+          "value": [
+            "1.10",
+            "1.4",
+            "1.7",
+            "2"
+          ]
+        },
+        {
+          "header": "DISTANCE MOVED:",
+          "key": "destination",
+          "value": [
+            "32%",
+            "38%",
+            "44%",
+            "50%"
+          ]
+        },
+        {
+          "header": "MANA DRAIN PER SECOND:",
+          "key": "mana_drain",
+          "value": "20%"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "damage",
+          "value": "0"
+        },
+        {
+          "header": "SLOW RESISTANCE REDUCTION:",
+          "key": "slow_resistance",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "POST GAZE DEBUFF DURATION MULTIPLIER:",
+          "key": "post_gaze_debuff_duration_multiplier",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "22",
+        "20",
+        "18"
+      ],
+      "desc": "CHANNELED - Hypnotizes an enemy unit, causing it to move towards a point between the two of you and drains a percentage of its current mana.",
+      "dmg_type": "",
+      "key": "lich_sinister_gaze",
+      "mc": "25",
+      "name": "Sinister Gaze"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "bonus_movespeed",
+          "value": "-25%"
+        },
+        {
+          "header": "EFFECT RADIUS:",
+          "key": "aura_radius",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "MAX HERO ATTACKS:",
+          "key": "max_hero_attacks",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "MAX CREEP ATTACKS:",
+          "key": "max_creep_attacks",
+          "value": "8"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "25",
+      "desc": "Creates an Ice Spire at the target spot, slowing enemies around it. Can take 4 hero hits or 8 creep hits and when destroyed it will create a Frost Blast around it.\n\nChain Frost can be cast on the Spire and can bounce to the Spire and damage the spire by 1 hero attack if there are no other enemies in range.\n\nLich can cast Frost Shield on the Spire. Each Frost Shield tick will heal the spire by 1 hero attack.",
+      "dmg_type": "",
+      "key": "lich_ice_spire",
+      "mc": "150",
+      "name": "Ice Spire"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "120"
+        },
+        {
+          "header": "CURRENT HEALTH CONVERTED:",
+          "key": "active_mana_restore_pct_of_health",
+          "value": "42%"
+        },
+        {
+          "header": "EXPERIENCE BOUNTY:",
+          "key": "xp_pct",
+          "value": "69%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Sacrifice an allied creep to convert its current health into mana for Lich and give Lich its experience bounty.\n\nBegins the game on cooldown and with no charges.",
+      "dmg_type": "",
+      "key": "lich_death_charge",
+      "mc": null,
+      "name": "Sacrifice"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE EACH BOUNCE:",
+          "key": "damage",
+          "value": [
+            "250",
+            "400",
+            "550"
+          ]
+        },
+        {
+          "header": "INCREMENTAL DAMAGE:",
+          "key": "bonus_jump_damage",
+          "value": [
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "JUMPS:",
+          "key": "jumps",
+          "value": "10"
+        },
+        {
+          "header": "BOUNCE RANGE:",
+          "key": "jump_range",
+          "value": "550"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_movement_speed",
+          "value": "-65%"
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "slow_attack_speed",
+          "value": "-65"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL PROJECTILE SPEED:",
+          "key": "initial_projectile_speed",
+          "value": "1050"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "HAS UNLIMITED JUMPS:",
+          "key": "has_unlimited_jumps",
+          "value": "0"
+        },
+        {
+          "header": "BONUS JUMPS ON HERO KILL:",
+          "key": "bonus_jumps_per_hero_killed",
+          "value": "0"
+        },
+        {
+          "header": "BONUS JUMPS ON CREEP KILL:",
+          "key": "bonus_jumps_per_creep_killed",
+          "value": "0"
+        },
+        {
+          "header": "LINGER DURATION:",
+          "key": "frostbound_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "100",
+        "80",
+        "60"
+      ],
+      "desc": "Releases an orb of frost that bounces between nearby enemy units up to 10 times, slowing and damaging each time it hits. Each bounce increases the damage for the subsequent bounces. Chain Frost lingers on its last target if it fails to bounce and can bounce again if new targets become available.",
+      "dmg_type": "Magical",
+      "key": "lich_chain_frost",
+      "mc": [
+        "180",
+        "300",
+        "420"
+      ],
+      "name": "Chain Frost"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Sinister Gaze",
+    "desc": "Sinister Gaze becomes an Area of Effect ability, affecting units within a radius of 400 in the target area. Sinister Gaze allows Lich to cast other abilities while channeling it.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Ice Spire",
+    "desc": "Creates an Ice Spire at the target spot, slowing enemies around it. Can take 4 hero hits or 8 creep hits and when destroyed it will create a Frost Blast around it.\n\nChain Frost can be cast on the Spire and can bounce to the Spire and damage the spire by 1 hero attack if there are no other enemies in range.\n\nLich can cast Frost Shield on the Spire. Each Frost Shield tick will heal the spire by 1 hero attack.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 1.7,
+    "armor": -1,
+    "attack_max": 33,
+    "attack_min": 24,
+    "attack_range": 550,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 28,
+    "int_gain": 3.4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": -1,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.1
+  },
+  "name": "Lich",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker"
+  ],
+  "short_name": "lich",
+  "talents": [
+    {
+      "left": "Frost Shield Provides +? HP Regen",
+      "level": 25,
+      "right": "Chain Frost Unlimited Bounces"
+    },
+    {
+      "left": "? Frost Shield Charges",
+      "level": 20,
+      "right": "Chain Frost on Death"
+    },
+    {
+      "left": "+?s Sinister Gaze Duration",
+      "level": 15,
+      "right": "-?s Frost Blast Cooldown"
+    },
+    {
+      "left": "+?% Frost Shield Damage Reduction",
+      "level": 10,
+      "right": "+? Frost Blast Radius and Area Damage"
+    }
+  ]
+}

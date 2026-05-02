@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 1122,
+  "mc": false,
+  "name": "Diadem",
+  "notes": "",
+  "qual": "component",
+  "short_name": "diadem"
+}

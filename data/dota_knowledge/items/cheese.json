@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 2500 health and 1500 mana.",
+      "title": "Fondue",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_restore",
+      "value": "2500"
+    },
+    {
+      "key": "mana_restore",
+      "value": "1500"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": 1,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 33,
+  "mc": false,
+  "name": "Cheese",
+  "notes": "Cheese is shareable.",
+  "qual": "consumable",
+  "short_name": "cheese"
+}

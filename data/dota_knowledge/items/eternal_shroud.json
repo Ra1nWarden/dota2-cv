@@ -1,0 +1,67 @@
+{
+  "abilities": [
+    {
+      "description": "Restores mana equal to 25% of incoming enemy spell damage before reductions.",
+      "title": "Shroud",
+      "type": "passive"
+    },
+    {
+      "description": "For every 300 spell damage that equipped hero receives, it gains a stack of Endurance for 5s up to a maximum of 6 charges. Each charge increases Eternal Shroud's magic resistance by 3.5% .",
+      "title": "Eternal Endurance",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "bonus_spell_resist",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "key": "stack_threshold",
+      "value": "300"
+    },
+    {
+      "key": "stack_duration",
+      "value": "5"
+    },
+    {
+      "key": "stack_resist",
+      "value": "3.5"
+    },
+    {
+      "key": "mana_restore_pct",
+      "value": "25"
+    },
+    {
+      "key": "max_stacks",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "cloak",
+    "ogre_axe",
+    "vitality_booster"
+  ],
+  "cost": 3900,
+  "created": true,
+  "id": 692,
+  "mc": false,
+  "name": "Eternal Shroud",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "eternal_shroud"
+}

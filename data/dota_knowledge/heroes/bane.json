@@ -1,0 +1,396 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "ATTACK DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": [
+            "55%",
+            "60%",
+            "65%",
+            "70%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL REDUCTION:",
+          "key": "heal_reduction",
+          "value": "0"
+        },
+        {
+          "header": "CAST RANGE REDUCTION:",
+          "key": "cast_reduction",
+          "value": "30%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "9"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "enfeeble_tick_damage",
+          "value": [
+            "12",
+            "18",
+            "24",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ENFEEBLE HEAL PCT:",
+          "key": "enfeeble_heal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TICK RATE:",
+          "key": "damage_tick_rate",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "800",
+            "900",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "17",
+        "12",
+        "7"
+      ],
+      "desc": "Deals damage every second and lowers the enemy's total attack damage and cast range.",
+      "dmg_type": "Pure",
+      "key": "bane_enfeeble",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Enfeeble"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEAL/DAMAGE:",
+          "key": "brain_sap_damage",
+          "value": [
+            "90",
+            "160",
+            "230",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "625"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "Feasts on the vital energies of an enemy unit, healing Bane and dealing damage.",
+      "dmg_type": "Pure",
+      "key": "bane_brain_sap",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Brain Sap"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "NIGHTMARE INVULN TIME:",
+          "key": "nightmare_invuln_time",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "0.2"
+        },
+        {
+          "header": "ATTACK SPEED BONUS:",
+          "key": "bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR RENDER RADIUS:",
+          "key": "vector_render_radius",
+          "value": "120"
+        },
+        {
+          "header": "WALK SPEED:",
+          "key": "walk_speed",
+          "value": "110"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "550",
+            "600",
+            "650",
+            "700"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "3.5",
+            "4.5",
+            "5.5",
+            "6.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "25",
+        "22",
+        "19",
+        "16"
+      ],
+      "desc": "Puts the target enemy or friendly Hero to sleep. Sleeping units walk in Bane's chosen direction and are awakened when damaged. If the target was directly attacked, the Nightmare passes to the attacking unit. Bane can attack and damage Nightmared targets freely.\n\n Can be put on alt-cast to have the target stand still.",
+      "dmg_type": "",
+      "key": "bane_nightmare",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Nightmare"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "FIEND GRIP TICK INTERVAL:",
+          "key": "fiend_grip_tick_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "MANA DRAIN PER SECOND:",
+          "key": "fiend_grip_mana_drain",
+          "value": "5%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilitychanneltime",
+          "value": [
+            "4.75",
+            "5.25",
+            "5.75"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "fiend_grip_damage",
+          "value": [
+            "70",
+            "110",
+            "150"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "625"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "120",
+        "110",
+        "100"
+      ],
+      "desc": "CHANNELED - Grips an enemy unit, disabling it and causing heavy damage over time, while stealing mana every 0.5 seconds based on the unit's maximum mana.",
+      "dmg_type": "Pure",
+      "key": "bane_fiends_grip",
+      "mc": [
+        "200",
+        "300",
+        "400"
+      ],
+      "name": "Fiend's Grip"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Ends all ongoing Nightmares.",
+      "dmg_type": "",
+      "key": "bane_nightmare_end",
+      "mc": null,
+      "name": "Nightmare End"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE TICK RATE:",
+          "key": "damage_tick_rate",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER TERROR:",
+          "key": "damage_per_terror",
+          "value": "0"
+        },
+        {
+          "header": "MAX TERRORS PER HERO:",
+          "key": "max_terrors",
+          "value": "5"
+        },
+        {
+          "header": "STATUS RESISTANCE PER TERROR:",
+          "key": "status_resistance",
+          "value": "5%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Every time Bane kills an enemy hero or they die under the effect of Bane's debuff, they receive a Terror for the rest of the game that decreases their status resistance to Bane's subsequent debuffs.",
+      "dmg_type": "Pure",
+      "key": "bane_ichor_of_nyctasha",
+      "mc": null,
+      "name": "Ichor of Nyctasha"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Fiend's Grip",
+    "desc": "Reduces Fiend's Grip cooldown by 45. Fiend's Grip now creates two uncontrollable illusions that are also channeling Fiend's Grip on the target. Illusions take 225% incoming damage and immediately die if they are interrupted. Damage does not stack.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Brain Sap",
+    "desc": "Reduces cooldown by 3. Causes Brain Sap to become a 550 AoE spell. Secondary targets only heal for 30%.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 2.5,
+    "armor": 1,
+    "attack_max": 30,
+    "attack_min": 24,
+    "attack_range": 425,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 2.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 305,
+    "night_vision": 1200,
+    "str": 23,
+    "str_gain": 2.5
+  },
+  "name": "Bane",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker",
+    "Durable"
+  ],
+  "short_name": "bane",
+  "talents": [
+    {
+      "left": "+? Brain Sap Damage/Heal",
+      "level": 25,
+      "right": "+?s Fiend's Grip Duration"
+    },
+    {
+      "left": "-?s Nightmare Cooldown",
+      "level": 20,
+      "right": "+30 Movement Speed"
+    },
+    {
+      "left": "+? Enfeeble Damage Per Second",
+      "level": 15,
+      "right": "+?% Fiend's Grip Max Mana Drain"
+    },
+    {
+      "left": "+? Brain Sap Cast Range",
+      "level": 10,
+      "right": "+?% Enfeeble Cast Range Reduction"
+    }
+  ]
+}

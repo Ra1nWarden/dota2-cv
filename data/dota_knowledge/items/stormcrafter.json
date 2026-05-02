@@ -1,0 +1,51 @@
+{
+  "abilities": [
+    {
+      "description": "Zaps 2 enemy targets within 700 range, dealing 70 damage and a 40% slow for 0.4 seconds.",
+      "title": "Bottled Lightning",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "range",
+      "value": "700"
+    },
+    {
+      "key": "damage",
+      "value": "70"
+    },
+    {
+      "key": "slow",
+      "value": "40"
+    },
+    {
+      "key": "slow_duration",
+      "value": "0.4"
+    },
+    {
+      "key": "bonus_mana_regen",
+      "value": "0"
+    },
+    {
+      "key": "max_targets",
+      "value": "2"
+    },
+    {
+      "key": "passive_movement_bonus",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": 6,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 585,
+  "mc": false,
+  "name": "Stormcrafter",
+  "notes": "",
+  "qual": null,
+  "short_name": "stormcrafter"
+}

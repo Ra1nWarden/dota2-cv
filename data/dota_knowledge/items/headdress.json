@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 2 health regeneration to allies.\n\nRadius: 1200",
+      "title": "Regeneration Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "health_regen",
+      "value": "0.5"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "2.0"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ring_of_regen"
+  ],
+  "cost": 425,
+  "created": true,
+  "id": 94,
+  "mc": false,
+  "name": "Headdress",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "headdress"
+}

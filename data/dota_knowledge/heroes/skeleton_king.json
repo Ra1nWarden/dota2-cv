@@ -1,0 +1,381 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BLAST SPEED:",
+          "key": "blast_speed",
+          "value": "1200"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "blast_stun_duration",
+          "value": [
+            "1",
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "blast_dot_duration",
+          "value": "2"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "blast_slow",
+          "value": "-20%"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "100",
+            "120",
+            "140"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "blast_dot_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "525"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "12",
+        "10",
+        "8"
+      ],
+      "desc": "Wraith King sears an enemy unit with spectral fire, dealing damage and stunning, then dealing damage over time and slowing the target.",
+      "dmg_type": "Magical",
+      "key": "skeleton_king_hellfire_blast",
+      "mc": [
+        "95",
+        "110",
+        "125",
+        "140"
+      ],
+      "name": "Wraithfire Blast"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SKELETON DURATION:",
+          "key": "skeleton_duration",
+          "value": "46"
+        },
+        {
+          "header": "MAX CHARGES:",
+          "key": "max_skeleton_charges",
+          "value": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MIN SKELETON SPAWN:",
+          "key": "min_skeleton_spawn",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPAWN INTERVAL:",
+          "key": "spawn_interval",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "REINCARNATE TIME:",
+          "key": "reincarnate_time",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "GOLD BOUNTY:",
+          "key": "gold_bounty",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "XP BOUNTY:",
+          "key": "xp_bounty",
+          "value": "5"
+        },
+        {
+          "header": "SKELETON DAMAGE:",
+          "key": "skeleton_damage_tooltip",
+          "value": [
+            "34",
+            "39",
+            "43",
+            "49"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TALENT SKELETON DAMAGE:",
+          "key": "talent_skeleton_damage",
+          "value": [
+            "0",
+            "5",
+            "10",
+            "15"
+          ]
+        },
+        {
+          "header": "SKELETON BUILDING DAMAGE REDUCTION:",
+          "key": "skeleton_building_damage_reduction",
+          "value": "35%"
+        },
+        {
+          "header": "SKELETON HERO BONUS DAMAGE:",
+          "key": "skeleton_bonus_hero_damage",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "SKELETON CHARGES PER HERO MULTIPLIER:",
+          "key": "skeleton_charges_per_hero_multiplier",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "42",
+      "desc": "Gains a Charge for every 2 creeps killed and 2 charges per hero killed. Activate to spend all charges, summoning skeletons that respawn once when killed. Skeletons benefit from Vampiric Spirit's lifesteal.",
+      "dmg_type": "Physical",
+      "key": "skeleton_king_bone_guard",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Bone Guard"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CRITICAL DAMAGE:",
+          "key": "crit_mult",
+          "value": [
+            "160%",
+            "200%",
+            "240%",
+            "280%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WRAITH CD MULT:",
+          "key": "wraith_cd_mult",
+          "value": "1"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": [
+        "6",
+        "5.5",
+        "5",
+        "4.5"
+      ],
+      "desc": "Wraith King passively deals bonus damage on an attack with a cooldown.",
+      "dmg_type": "",
+      "key": "skeleton_king_mortal_strike",
+      "mc": null,
+      "name": "Mortal Strike"
+    },
+    {
+      "attrib": [
+        {
+          "header": "LIFESTEAL:",
+          "key": "vampiric_aura",
+          "value": "14%"
+        },
+        {
+          "header": "WRAITH DURATION:",
+          "key": "duration",
+          "value": "4.25"
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "scepter_attack_speed",
+          "value": "55"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "scepter_move_speed_pct",
+          "value": "20%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Grants Wraith King Lifesteal. When slain Wraith King turns into a free pathing Wraith with Bonus Attack and Movement Speed for a short duration, delaying his death. Wraith King cannot reincarnate after being a Wraith.",
+      "dmg_type": "",
+      "key": "skeleton_king_vampiric_spirit",
+      "mc": null,
+      "name": "Vampiric Spirit"
+    },
+    {
+      "attrib": [
+        {
+          "header": "REINCARNATION TIME:",
+          "key": "reincarnate_time",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "SLOW RADIUS:",
+          "key": "slow_radius",
+          "value": "600"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed",
+          "value": "-75%"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attackslow",
+          "value": "-75"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CLEAR CURSE:",
+          "key": "clear_curse",
+          "value": "0"
+        },
+        {
+          "header": "SKELETON COUNT PER HERO:",
+          "key": "shard_skeleton_count",
+          "value": [
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "180",
+        "150",
+        "120"
+      ],
+      "desc": "Wraith King's form regroups after death, allowing him to resurrect when killed in battle. Upon death, enemy units in a 600 radius are slowed. Skeletons spawn and attack each nearby enemy hero. Can be self-cast to kill Wraith King instantly.",
+      "dmg_type": "",
+      "key": "skeleton_king_reincarnation",
+      "mc": [
+        "220",
+        "110",
+        "0"
+      ],
+      "name": "Reincarnation"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Reincarnation",
+    "desc": "Reduces cooldown.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Mortal Strike",
+    "desc": "Mortal Strike hits curse their target, causing them to take 75% of the initial attack damage again as <font color=\"#d8ae53\">Pure</font> damage after a 3 second delay. Vampiric Spirit's lifesteal applies to the curse damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.7,
+    "armor": 0,
+    "attack_max": 40,
+    "attack_min": 38,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 16,
+    "int_gain": 1.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.8
+  },
+  "name": "Wraith King",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Support",
+    "Durable",
+    "Disabler",
+    "Initiator"
+  ],
+  "short_name": "skeleton_king",
+  "talents": [
+    {
+      "left": "-?s Mortal Strike Cooldown",
+      "level": 25,
+      "right": "Reincarnation Casts Wraithfire Blast"
+    },
+    {
+      "left": "+50 Attack Speed",
+      "level": 20,
+      "right": "+? Bone Guard Skeletons Spawned"
+    },
+    {
+      "left": "+?s Wraithfire Blast Stun Duration",
+      "level": 15,
+      "right": "+350 Health"
+    },
+    {
+      "left": "+?% Vampiric Spirit Lifesteal",
+      "level": 10,
+      "right": "+?s Wraithfire Blast Slow Duration"
+    }
+  ]
+}

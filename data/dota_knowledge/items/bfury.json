@@ -1,0 +1,89 @@
+{
+  "abilities": [
+    {
+      "description": "Destroy a target tree.",
+      "title": "Chop Tree",
+      "type": "active"
+    },
+    {
+      "description": "Increases attack damage against non-hero units by 10 for melee heroes, and 5 for ranged.",
+      "title": "Quell",
+      "type": "passive"
+    },
+    {
+      "description": "Deals 60% of attack damage as physical damage in a cone up to 650 around the target. Deals 40% against creeps. (Melee Only)",
+      "title": "Cleave",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "50"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "7.5"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2.75"
+    },
+    {
+      "key": "cleave_damage_percent",
+      "value": "60"
+    },
+    {
+      "key": "cleave_damage_percent_creep",
+      "value": "40"
+    },
+    {
+      "key": "quelling_bonus",
+      "value": "10"
+    },
+    {
+      "key": "quelling_bonus_ranged",
+      "value": "5"
+    },
+    {
+      "key": "cleave_starting_width",
+      "value": "150"
+    },
+    {
+      "key": "cleave_ending_width",
+      "value": "360"
+    },
+    {
+      "key": "cleave_distance",
+      "value": "650"
+    },
+    {
+      "key": "upgraded_cleave_bonus",
+      "value": "25"
+    },
+    {
+      "key": "upgraded_damage_bonus",
+      "value": "15"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 4,
+  "charges": false,
+  "components": [
+    "pers",
+    "broadsword",
+    "broadsword",
+    "quelling_blade"
+  ],
+  "cost": 3900,
+  "created": true,
+  "id": 145,
+  "mc": false,
+  "name": "Battle Fury",
+  "notes": "Cleave damage goes through spell immunity.\nIf multiple sources of Cleave are present, each Cleave's damage is applied separately.",
+  "qual": "epic",
+  "short_name": "bfury"
+}

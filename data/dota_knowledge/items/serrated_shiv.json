@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Attacks have a 20% chance to have True Strike and deal 8% of the target's current health as bonus physical damage. Deals a flat bonus of 200 against Roshan.",
+      "title": "Gut 'Em",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "proc_chance",
+      "value": "20"
+    },
+    {
+      "key": "hp_dmg",
+      "value": "8"
+    },
+    {
+      "key": "hp_dmg_rosh",
+      "value": "200"
+    }
+  ],
+  "behavior": null,
+  "cd": 1,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1605,
+  "mc": false,
+  "name": "Serrated Shiv",
+  "notes": "",
+  "qual": null,
+  "short_name": "serrated_shiv"
+}

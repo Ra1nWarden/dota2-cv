@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 175,
+  "mc": false,
+  "name": "Ethereal Blade Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_ethereal_blade"
+}

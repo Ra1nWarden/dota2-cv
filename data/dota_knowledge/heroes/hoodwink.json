@@ -1,0 +1,674 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BONUS RANGE:",
+          "key": "bonus_range",
+          "value": "100"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "acorn_shot_damage",
+          "value": [
+            "45",
+            "90",
+            "135",
+            "180"
+          ]
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage_pct",
+          "value": "80%"
+        },
+        {
+          "header": "BOUNCE COUNT:",
+          "key": "bounce_count",
+          "value": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE RANGE:",
+          "key": "bounce_range",
+          "value": "525"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": "0.3"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE DELAY:",
+          "key": "bounce_delay",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2200"
+        },
+        {
+          "generated": true,
+          "header": "CAN BOUNCE OFF OF TREES:",
+          "key": "can_bounce_off_of_trees",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCES AFTER TREE BOUNCE:",
+          "key": "bounces_after_tree_bounce",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "675",
+            "700",
+            "725",
+            "750"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Fires Hoodwink's attack with an acorn at the target unit. The acorn bounces to nearby targets, slowing them and dealing a percentage of Hoodwink's attack with bonus damage.\nIf point targeted, a tree is created at the target position and the acorn will bounce to nearby targets. The ability may be placed on alt-cast to force this behavior.",
+      "dmg_type": "Physical",
+      "key": "hoodwink_acorn_shot",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Acorn Shot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "trap_radius",
+          "value": "265"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "debuff_duration",
+          "value": [
+            "1.5",
+            "1.7",
+            "1.9",
+            "2.1"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1300"
+        },
+        {
+          "header": "TOTAL DAMAGE:",
+          "key": "total_damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "VISUAL HEIGHT:",
+          "key": "visual_height",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1100"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Tosses a net trap that stuns enemies if they are near a tree in the area. Affected enemies take damage over time and are pulled towards the tree nearest to them within the target area, and have their vision reduced to 0 for the duration of the stun.",
+      "dmg_type": "Magical",
+      "key": "hoodwink_bushwhack",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Bushwhack"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "REDIRECT CHANCE:",
+          "key": "redirect_chance",
+          "value": "0"
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "movement_speed_pct",
+          "value": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "duration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "EVASION MULTIPLIER:",
+          "key": "evasion_multiplier",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": [
+            "30",
+            "24",
+            "18",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Hoodwink gains bonus movement speed, phased movement, and tree-walking for a brief time. While active, the redirect chance of Mistwoods Wayfarer is multiplied by 2.",
+      "dmg_type": "",
+      "key": "hoodwink_scurry",
+      "mc": "35",
+      "name": "Scurry"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "BUSHWHACK RADIUS:",
+          "key": "decoy_detonate_radius",
+          "value": "250"
+        },
+        {
+          "header": "BUSHWHACK DURATION:",
+          "key": "decoy_stun_duration",
+          "value": "1.6"
+        },
+        {
+          "generated": true,
+          "header": "IMAGES DO DAMAGE PERCENT:",
+          "key": "images_do_damage_percent",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "IMAGES TAKE DAMAGE PERCENT:",
+          "key": "images_take_damage_percent",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "header": "MOVEMENT SPEED:",
+          "key": "movement_speed",
+          "value": "15%"
+        },
+        {
+          "header": "SHARPSHOOTER DAMAGE:",
+          "key": "sharpshooter_damage_pct",
+          "value": "60%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "30",
+      "desc": "Hoodwink turns invisible, increasing her movement speed, and creates a decoy illusion that starts aiming a decreased damage Sharpshooter at the nearest enemy hero. If the illusion is attacked or hit by a targeted ability, it is destroyed and it throws a lesser bushwhack towards the enemy.",
+      "dmg_type": "",
+      "key": "hoodwink_decoy",
+      "mc": "60",
+      "name": "Decoy"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "150"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "200"
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "mark_duration",
+          "value": "7"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_pct",
+          "value": "25%"
+        },
+        {
+          "header": "INCOMING SPELL DAMAGE AMP:",
+          "key": "spell_amp",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "STATUS RESISTANCE:",
+          "key": "status_resistance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPREAD:",
+          "key": "spread",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "MIN THROW DURATION:",
+          "key": "min_throw_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "MAX THROW DURATION:",
+          "key": "max_throw_duration",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1100"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "18",
+      "desc": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink. The boomerang will deal damage as it passes through or hits enemies, and apply a debuff that causes affected enemies to be slowed and be more vulnerable to spell damage.",
+      "dmg_type": "Magical",
+      "key": "hoodwink_hunters_boomerang",
+      "mc": "125",
+      "name": "Hunter's Boomerang"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ARROW SPEED:",
+          "key": "arrow_speed",
+          "value": "2200"
+        },
+        {
+          "generated": true,
+          "header": "ARROW WIDTH:",
+          "key": "arrow_width",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "ARROW RANGE:",
+          "key": "arrow_range",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "ARROW VISION:",
+          "key": "arrow_vision",
+          "value": "350"
+        },
+        {
+          "header": "MAX WIND-UP TIME:",
+          "key": "max_charge_time",
+          "value": "3"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": [
+            "600",
+            "975",
+            "1350"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RECOIL DISTANCE:",
+          "key": "recoil_distance",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "RECOIL HEIGHT:",
+          "key": "recoil_height",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "RECOIL DURATION:",
+          "key": "recoil_duration",
+          "value": "0.4"
+        },
+        {
+          "header": "MAX DEBUFF DURATION:",
+          "key": "max_slow_debuff_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "MISFIRE TIME:",
+          "key": "misfire_time",
+          "value": "5"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "slow_move_pct",
+          "value": [
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "VISION ALONG INDICATOR:",
+          "key": "vision_along_indicator",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS BUFFER:",
+          "key": "vision_radius_buffer",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BASE POWER:",
+          "key": "base_power",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "QUICK DRAW TOOLTIP PCT COOLDOWN REDUCTION:",
+          "key": "quick_draw_tooltip_pct_cooldown_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "QUICK DRAW TOOLTIP EFFICACY PCT:",
+          "key": "quick_draw_tooltip_efficacy_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "45",
+      "desc": "Hoodwink charges up and fires a deadly bolt from her crossbow, dealing heavy damage, break and slow to an enemy Hero. The damage and debuff duration scale up to max after x0.75 seconds, and the bolt is fired automatically after x0.75 seconds.\nHoodwink is knocked backwards for a distance of 350 from the force of the shot. Creeps hit by the bolt are damaged for half the values.",
+      "dmg_type": "Magical",
+      "key": "hoodwink_sharpshooter",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Sharpshooter"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Instant Cast",
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Release the charged up shot, regain ability to move and attack.",
+      "dmg_type": "",
+      "key": "hoodwink_sharpshooter_release",
+      "mc": null,
+      "name": "End Sharpshooter"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TREE SEARCH RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "REDIRECT CHANCE:",
+          "key": "redirect_chance",
+          "value": "14%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "hoodwink_mistwoods_wayfarer",
+      "mc": null,
+      "name": "Mistwoods Wayfarer"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Sharpshooter",
+    "desc": "Increases arrow speed and movement speed slow.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Hunter's Boomerang",
+    "desc": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink.  The boomerang will deal damage as it passes through or hits enemies, and apply a debuff that causes affected enemies to be slowed and be more vulnerable to spell damage.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 25,
+    "agi_gain": 3.6,
+    "armor": 0,
+    "attack_max": 29,
+    "attack_min": 22,
+    "attack_range": 575,
+    "attack_rate": 2,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 21,
+    "int_gain": 2.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 17,
+    "str_gain": 2
+  },
+  "name": "Hoodwink",
+  "primary_attr": "agi",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "hoodwink",
+  "talents": [
+    {
+      "left": "+? Sharpshooter Max Damage",
+      "level": 25,
+      "right": "? Acorn Shot Charges"
+    },
+    {
+      "left": "Sharpshooter Provides Vision While Charging",
+      "level": 20,
+      "right": "+? Acorn Shot Bounces"
+    },
+    {
+      "left": "+? Scurry Ability Charge",
+      "level": 15,
+      "right": "+10 Agility"
+    },
+    {
+      "left": "+? Bushwhack Damage",
+      "level": 10,
+      "right": "+175 Health"
+    }
+  ]
+}

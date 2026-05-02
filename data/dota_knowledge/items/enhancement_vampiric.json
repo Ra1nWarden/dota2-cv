@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "attack_lifesteal",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Night Vision",
+      "key": "bonus_night_vision",
+      "value": "300"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1594,
+  "mc": false,
+  "name": "Vampiric",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_vampiric"
+}

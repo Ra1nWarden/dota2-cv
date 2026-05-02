@@ -1,0 +1,477 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "GOO SPEED:",
+          "key": "goo_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "GOO DURATION:",
+          "key": "goo_duration",
+          "value": "5"
+        },
+        {
+          "header": "BASE ARMOR LOSS:",
+          "key": "base_armor",
+          "value": [
+            "1.5",
+            "2",
+            "2.5",
+            "3"
+          ]
+        },
+        {
+          "header": "ARMOR LOSS PER STACK:",
+          "key": "armor_per_stack",
+          "value": [
+            "2",
+            "2.5",
+            "3",
+            "3.5"
+          ]
+        },
+        {
+          "header": "BASE MOVEMENT SLOW:",
+          "key": "base_move_slow",
+          "value": "12%"
+        },
+        {
+          "header": "MOVE SLOW PER STACK:",
+          "key": "move_slow_per_stack",
+          "value": [
+            "3%",
+            "6%",
+            "9%",
+            "12%"
+          ]
+        },
+        {
+          "header": "STACK LIMIT:",
+          "key": "stack_limit",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "1.75",
+      "desc": "Covers a target in snot, causing it to have reduced armor and movement speed for 5 seconds. Multiple casts stack and refresh the duration.",
+      "dmg_type": "",
+      "key": "bristleback_viscous_nasal_goo",
+      "mc": [
+        "12",
+        "16",
+        "20",
+        "24"
+      ],
+      "name": "Viscous Nasal Goo"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "header": "QUILL BASE DAMAGE:",
+          "key": "quill_base_damage",
+          "value": [
+            "25",
+            "45",
+            "65",
+            "85"
+          ]
+        },
+        {
+          "header": "QUILL STACK DAMAGE:",
+          "key": "quill_stack_damage",
+          "value": "30"
+        },
+        {
+          "header": "STACK DURATION:",
+          "key": "quill_stack_duration",
+          "value": "14"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Autocast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "3",
+      "desc": "Sprays enemy units with quills dealing damage in an area of effect around Bristleback. Deals bonus damage for every time a unit was hit by Quill Spray in the last 14 seconds.",
+      "dmg_type": "Physical",
+      "key": "bristleback_quill_spray",
+      "mc": "35",
+      "name": "Quill Spray"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SIDE DAMAGE REDUCTION:",
+          "key": "side_damage_reduction",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "header": "BACK DAMAGE REDUCTION:",
+          "key": "back_damage_reduction",
+          "value": [
+            "16%",
+            "24%",
+            "32%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SIDE ANGLE:",
+          "key": "side_angle",
+          "value": "110"
+        },
+        {
+          "generated": true,
+          "header": "BACK ANGLE:",
+          "key": "back_angle",
+          "value": "70"
+        },
+        {
+          "header": "DAMAGE THRESHOLD:",
+          "key": "quill_release_threshold",
+          "value": [
+            "275",
+            "250",
+            "225",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "QUILL RELEASE INTERVAL:",
+          "key": "quill_release_interval",
+          "value": ".1"
+        },
+        {
+          "header": "NASAL GOO RADIUS:",
+          "key": "goo_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION COOLDOWN:",
+          "key": "activation_cooldown",
+          "value": "24"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION MANACOST:",
+          "key": "activation_manacost",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION DELAY:",
+          "key": "activation_delay",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION NUM QUILL SPRAYS:",
+          "key": "activation_num_quill_sprays",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION SPRAY INTERVAL:",
+          "key": "activation_spray_interval",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION ANGLE:",
+          "key": "activation_angle",
+          "value": "45"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE BONUS:",
+          "key": "cast_range_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION MOVEMENT SPEED PCT:",
+          "key": "activation_movement_speed_pct",
+          "value": "-40"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION TURN RATE PCT:",
+          "key": "activation_turn_rate_pct",
+          "value": "-100"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION DISABLE TURNING:",
+          "key": "activation_disable_turning",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION IGNORE CAST ANGLE:",
+          "key": "activation_ignore_cast_angle",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION TURN RATE:",
+          "key": "activation_turn_rate",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Bristleback takes less damage if hit on the sides or rear. If Bristleback takes enough damage from the rear, he releases a Quill Spray of the current level.",
+      "dmg_type": "",
+      "key": "bristleback_bristleback",
+      "mc": null,
+      "name": "Bristleback"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "header": "QUILL STACKS:",
+          "key": "quill_stacks",
+          "value": "1"
+        },
+        {
+          "header": "GOO STACKS:",
+          "key": "goo_stacks",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "13",
+      "desc": "Coughs a quill-packed hairball towards the target location. Erupts at the location, hitting enemies with Viscous Nasal Goo stacks and Quill Spray.",
+      "dmg_type": "",
+      "key": "bristleback_hairball",
+      "mc": "60",
+      "name": "Hairball"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER STACK:",
+          "key": "damage_per_stack",
+          "value": [
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ASPD PER STACK:",
+          "key": "aspd_per_stack",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT PER STACK:",
+          "key": "move_speed_per_stack",
+          "value": [
+            "2%",
+            "2.5%",
+            "3%"
+          ]
+        },
+        {
+          "header": "STACK DURATION:",
+          "key": "stack_duration",
+          "value": [
+            "16",
+            "18",
+            "20"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "max_stacks",
+          "value": [
+            "8",
+            "10",
+            "12"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Bristleback works himself up into a fury every time he casts a spell, increasing his movement speed and damage.",
+      "dmg_type": "",
+      "key": "bristleback_warpath",
+      "mc": null,
+      "name": "Warpath"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE AND DEBUFF DURATION AMP:",
+          "key": "amp_pct",
+          "value": "4.5%"
+        },
+        {
+          "generated": true,
+          "header": "ANGLE:",
+          "key": "angle",
+          "value": "110"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Bristleback has bonus damage and debuff duration amp against enemy heroes that are behind him.",
+      "dmg_type": "Physical",
+      "key": "bristleback_prickly",
+      "mc": null,
+      "name": "Prickly"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Bristleback",
+    "desc": "Adds active ability to Bristleback. Bristleback rotates towards the targeted direction and, after 0.5s, forcefully ejects 5 sequential Quill Sprays in a tight conical pattern out of his back every 0.4s. Bristleback's facing is locked during this time, he is disarmed, and his speed is reduced by -40%.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Hairball",
+    "desc": "Coughs a quill-packed hairball towards the target location. Erupts at the location, hitting enemies with Viscous Nasal Goo stacks and Quill Spray.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 1.8,
+    "armor": 1,
+    "attack_max": 37,
+    "attack_min": 31,
+    "attack_range": 150,
+    "attack_rate": 1.8,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 14,
+    "int_gain": 2.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.4,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.8
+  },
+  "name": "Bristleback",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Initiator",
+    "Nuker"
+  ],
+  "short_name": "bristleback",
+  "talents": [
+    {
+      "left": "-? Bristleback Damage Threshold",
+      "level": 25,
+      "right": "+? Warpath Damage Per Stack"
+    },
+    {
+      "left": "+25 Health Regen",
+      "level": 20,
+      "right": "+? Quill Stack Damage"
+    },
+    {
+      "left": "+? Goo Cast Range",
+      "level": 15,
+      "right": "+?%/?% Bristleback Back/Side Damage Reduction"
+    },
+    {
+      "left": "+25 Attack Speed",
+      "level": 10,
+      "right": "+1.5 Mana Regen"
+    }
+  ]
+}

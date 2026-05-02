@@ -1,0 +1,407 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MOVE SLOW:",
+          "key": "move_slow",
+          "value": "-50%"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER SPEED:",
+          "key": "dagger_speed",
+          "value": "1200"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "duration",
+          "value": [
+            "2.1",
+            "2.4",
+            "2.7",
+            "3"
+          ]
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "65",
+            "70",
+            "75",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK FACTOR:",
+          "key": "attack_factor",
+          "value": [
+            "-70",
+            "-55",
+            "-40",
+            "-25"
+          ]
+        },
+        {
+          "header": "ATTACK DAMAGE:",
+          "key": "attack_factor_tooltip",
+          "value": [
+            "30%",
+            "45%",
+            "60%",
+            "75%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "850",
+            "1000",
+            "1150"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "",
+      "cd": "6",
+      "desc": "Throws a dagger slowing the enemy unit's movement speed, dealing 65+30% of Phantom Assassin's attack damage as physical damage and applying attack effects from items and abilities.",
+      "dmg_type": "Physical",
+      "key": "phantom_assassin_stifling_dagger",
+      "mc": "30",
+      "name": "Stifling Dagger"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "100",
+            "130",
+            "160",
+            "190"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "650",
+            "750",
+            "850",
+            "950"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP LIFESTEAL PENALTY:",
+          "key": "creep_lifesteal_penalty",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": [
+            "21",
+            "18",
+            "15",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "0.1",
+      "desc": "Teleports to a unit, friendly or enemy, and grants bonus attack speed while attacking if it's an enemy unit.",
+      "dmg_type": "",
+      "key": "phantom_assassin_phantom_strike",
+      "mc": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "name": "Phantom Strike"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "30"
+        },
+        {
+          "header": "VANISH RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "VANISH BUFFER:",
+          "key": "fade_duration",
+          "value": "0.8"
+        },
+        {
+          "generated": true,
+          "header": "BREAK ON ATTACK:",
+          "key": "break_on_attack",
+          "value": "0"
+        },
+        {
+          "header": "MANA COST REDUCTION DURING BLUR:",
+          "key": "manacost_reduction_during_blur_pct",
+          "value": "0%"
+        },
+        {
+          "header": "BUFF DURATION AFTER BLUR:",
+          "key": "buff_duration_after_break",
+          "value": "0"
+        },
+        {
+          "header": "MANA COST REDUCTION AFTER BLUR:",
+          "key": "manacost_reduction_after_blur_pct",
+          "value": "0%"
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "active_movespeed_bonus",
+          "value": "9.5%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "45",
+      "desc": "Phantom Assassin blurs her body, disjointing incoming projectiles, increasing her movement speed, causing her to be impossible to see until she comes near enemy heroes or towers.",
+      "dmg_type": "",
+      "key": "phantom_assassin_blur",
+      "mc": "50",
+      "name": "Blur"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX HEALTH DAMAGE:",
+          "key": "pct_health_damage_initial",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "PCT HEALTH DAMAGE:",
+          "key": "pct_health_damage",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "DEGEN:",
+          "key": "degen",
+          "value": "-50"
+        },
+        {
+          "header": "BREAK DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "MAX DAMAGE INITIAL:",
+          "key": "max_damage_initial",
+          "value": "-1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "14",
+      "desc": "Phantom Assassin releases sharp blades around her, dealing a percentage of each victim's max health on impact and applying Break.",
+      "dmg_type": "Physical",
+      "key": "phantom_assassin_fan_of_knives",
+      "mc": "80",
+      "name": "Fan of Knives"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS EVASION:",
+          "key": "evasion",
+          "value": [
+            "25%",
+            "35%",
+            "45%",
+            "55%"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Phantom Assassin focuses inward, increasing her ability to evade enemy attacks. Evasion improves with Phantom Assassin's levels. \n\nStacks diminishingly with other sources of Evasion.",
+      "dmg_type": "",
+      "key": "phantom_assassin_immaterial",
+      "mc": null,
+      "name": "Immaterial"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE OF DEADLY FOCUS:",
+          "key": "crit_chance",
+          "value": "17%"
+        },
+        {
+          "header": "DAGGER CHANCE OF DEADLY FOCUS:",
+          "key": "dagger_crit_chance",
+          "value": "34%"
+        },
+        {
+          "header": "CRITICAL DAMAGE:",
+          "key": "crit_bonus",
+          "value": [
+            "200%",
+            "300%",
+            "400%"
+          ]
+        },
+        {
+          "header": "DEADLY FOCUS DURATION:",
+          "key": "duration",
+          "value": [
+            "6",
+            "8",
+            "10"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Phantom Assassin refines her combat abilities, acquiring a chance of gaining Deadly Focus with each attack. When attacking with Deadly Focus, Phantom Assassin will consume the buff and guarantee a critical hit. Stifling Dagger has a bonus chance to cause Deadly Focus.",
+      "dmg_type": "",
+      "key": "phantom_assassin_coup_de_grace",
+      "mc": null,
+      "name": "Coup de Grace"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Fan of Knives",
+    "desc": "Phantom Assassin releases sharp blades around her, dealing a percentage of each victim's max health on impact and applying Break.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Blur",
+    "desc": "Decreases Cooldown. Any time Phantom Assassin gets a hero kill, her ability cooldowns advance 60% of their max cooldown values.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 3.4,
+    "armor": 1,
+    "attack_max": 37,
+    "attack_min": 35,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 15,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2
+  },
+  "name": "Phantom Assassin",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape"
+  ],
+  "short_name": "phantom_assassin",
+  "talents": [
+    {
+      "left": "+?% Coup de Grace chance",
+      "level": 25,
+      "right": "Triple Strike Stifling Dagger"
+    },
+    {
+      "left": "+? Phantom Strike Cast Range",
+      "level": 20,
+      "right": "+? Phantom Strike Attack Speed"
+    },
+    {
+      "left": "+?% Immaterial Evasion",
+      "level": 15,
+      "right": "+?% Stifling Dagger Damage"
+    },
+    {
+      "left": "+?s Phantom Strike Duration",
+      "level": 10,
+      "right": "-?s Stifling Dagger Cooldown"
+    }
+  ]
+}

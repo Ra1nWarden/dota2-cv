@@ -1,0 +1,36 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "blitz_knuckles",
+    "robe",
+    "sobi_mask"
+  ],
+  "cost": 1625,
+  "created": true,
+  "id": 67,
+  "mc": false,
+  "name": "Oblivion Staff",
+  "notes": "",
+  "qual": "common",
+  "short_name": "oblivion_staff"
+}

@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks reduce the target's armor by -2 for 3 seconds.",
+      "title": "Lesser Corruption",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "corruption_armor",
+      "value": "-2"
+    },
+    {
+      "key": "corruption_duration",
+      "value": "3.0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 240,
+  "mc": false,
+  "name": "Orb of Blight",
+  "notes": "Does not stack with its upgrades, Desolator, or Stygian Desolator.",
+  "qual": "component",
+  "short_name": "blight_stone"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 209,
+  "mc": false,
+  "name": "Heaven's Halberd Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_heavens_halberd"
+}

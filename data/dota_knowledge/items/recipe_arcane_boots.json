@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 325,
+  "created": false,
+  "id": 179,
+  "mc": false,
+  "name": "Arcane Boots Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_arcane_boots"
+}

@@ -1,0 +1,450 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1250"
+        },
+        {
+          "generated": true,
+          "header": "WIDTH:",
+          "key": "width",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "775",
+            "850",
+            "925"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROCESS PROCS:",
+          "key": "process_procs",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "21",
+        "18",
+        "15",
+        "12"
+      ],
+      "desc": "Morphling dissolves into liquid and surges forward, damaging enemy units in his path. Morphling is invulnerable during Waveform.",
+      "dmg_type": "Magical",
+      "key": "morphling_waveform",
+      "mc": "115",
+      "name": "Waveform"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage_base",
+          "value": [
+            "50",
+            "70",
+            "90",
+            "110"
+          ]
+        },
+        {
+          "header": "DAMAGE MIN AGI MULTIPLIER:",
+          "key": "damage_min",
+          "value": "0.5"
+        },
+        {
+          "header": "DAMAGE MAX AGI MULTIPLIER:",
+          "key": "damage_max",
+          "value": [
+            "1",
+            "1.5",
+            "2",
+            "2.5"
+          ]
+        },
+        {
+          "header": "STUN MIN:",
+          "key": "stun_min",
+          "value": "0.5"
+        },
+        {
+          "header": "STUN MAX:",
+          "key": "stun_max",
+          "value": [
+            "1.4",
+            "1.8",
+            "2.2",
+            "2.6"
+          ]
+        },
+        {
+          "header": "KNOCKBACK MIN:",
+          "key": "knockback_min",
+          "value": "50"
+        },
+        {
+          "header": "KNOCKBACK MAX:",
+          "key": "knockback_max",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1150"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA TARGETS:",
+          "key": "extra_targets",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "600",
+            "675",
+            "750",
+            "825"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "14",
+        "11",
+        "8"
+      ],
+      "desc": "Launches a surge of water toward an enemy unit, stunning them, knocking them back, and dealing base damage plus additional damage based on Morphling's agility times a multiplier. If Morphling's agility is 50% higher than strength, the maximum agility multiplier is used.\n\nKnockback distance and stun duration are based on Morphling's strength. If his strength is 50% higher than his agility, the maximum knockback distance and stun duration is used.",
+      "dmg_type": "Magical",
+      "key": "morphling_adaptive_strike_agi",
+      "mc": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "name": "Adaptive Strike"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SWELL UP DURATION:",
+          "key": "swell_up_duration",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "SWELL DOWN DURATION:",
+          "key": "swell_down_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SWELL DURATION:",
+          "key": "swell_duration",
+          "value": "5.2"
+        },
+        {
+          "generated": true,
+          "header": "MAX SWELL DURATION:",
+          "key": "max_swell_duration",
+          "value": "2.7"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE:",
+          "key": "model_scale",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "STATS PCT:",
+          "key": "stats_pct",
+          "value": "25"
+        },
+        {
+          "header": "AGILITY TO ATTACK RANGE:",
+          "key": "attack_range_per_agi",
+          "value": "20%"
+        },
+        {
+          "header": "AGILITY TO MOVEMENT SPEED:",
+          "key": "move_speed_per_agi",
+          "value": "15%"
+        },
+        {
+          "header": "STRENGTH TO CAST RANGE:",
+          "key": "cast_range_per_str",
+          "value": "20%"
+        },
+        {
+          "header": "STRENGTH TO SLOW RESISTANCE:",
+          "key": "slow_resist_per_str",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE MIN:",
+          "key": "model_scale_min",
+          "value": "-20"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE MAX:",
+          "key": "model_scale_max",
+          "value": "40"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Morphling receives bonus cast range and slow resistance based on his current Strength, and attack range and movement speed based on his current Agility. These bonuses persist if he is morphed into another hero.",
+      "dmg_type": "",
+      "key": "morphling_ebb_and_flow",
+      "mc": null,
+      "name": "Ebb and Flow"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "POINTS PER TICK:",
+          "key": "points_per_tick",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MORPH RATE:",
+          "key": "morph_rate",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "MANA COST PER SECOND:",
+          "key": "mana_cost",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CASTABLE WHILE STUNNED:",
+          "key": "castable_while_stunned",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Morphling shifts its form, pulling points from Strength and pouring them into Agility at a rate of 4. The process is reversible.",
+      "dmg_type": "",
+      "key": "morphling_morph_agi",
+      "mc": null,
+      "name": "Attribute Shift (Agility Gain)"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "POINTS PER TICK:",
+          "key": "points_per_tick",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MORPH RATE:",
+          "key": "morph_rate",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "MANA COST PER SECOND:",
+          "key": "mana_cost",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CASTABLE WHILE STUNNED:",
+          "key": "castable_while_stunned",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Morphling shifts its form, pulling points from Agility and pouring them into Strength at a rate of 4. The process is reversible.",
+      "dmg_type": "",
+      "key": "morphling_morph_str",
+      "mc": null,
+      "name": "Attribute Shift (Strength Gain)"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "24"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "850",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "140",
+        "100",
+        "60"
+      ],
+      "desc": "Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability.",
+      "dmg_type": "",
+      "key": "morphling_replicate",
+      "mc": "50",
+      "name": "Morph"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "2",
+      "desc": "Toggles Morphling's form between his own and the replicated enemy.",
+      "dmg_type": "",
+      "key": "morphling_morph_replicate",
+      "mc": "0",
+      "name": "Morph Replicate"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Morph",
+    "desc": "Adds an alt-cast to Morph. When enabled, a strong illusion is created of the target hero that can cast all of the hero's basic abilities. If the illusion is alive when Morphling toggles the ability, he will take the place of the illusion, destroying it.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Attribute Shift (Strength Gain)",
+    "desc": "Morphling can shift attributes while stunned. Reduces mana cost.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 3.9,
+    "armor": -1,
+    "attack_max": 21,
+    "attack_min": 12,
+    "attack_range": 350,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 19,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 2.6
+  },
+  "name": "Morphling",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Durable",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "morphling",
+  "talents": [
+    {
+      "left": "-?% Waveform Cooldown",
+      "level": 25,
+      "right": "+35 Strength"
+    },
+    {
+      "left": "-?s Adaptive Strike Cooldown",
+      "level": 20,
+      "right": "+15 Agility"
+    },
+    {
+      "left": "+? Waveform Range",
+      "level": 15,
+      "right": "+75 Attack Range"
+    },
+    {
+      "left": "+15% Magic Resistance",
+      "level": 10,
+      "right": "+?s Morph Duration"
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "chill_duration",
+          "value": "5"
+        },
+        {
+          "header": "MOVE SPEED DRAIN:",
+          "key": "movespeed_bonus",
+          "value": [
+            "12%",
+            "18%",
+            "24%",
+            "30%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED DRAIN:",
+          "key": "attackspeed_bonus",
+          "value": [
+            "25",
+            "40",
+            "55",
+            "70"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "header": "AOE:",
+          "key": "target_radius",
+          "value": "0"
+        },
+        {
+          "header": "SECONDARY TARGET PENALTY:",
+          "key": "penalty",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "625"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "Visage drains the movement and attack speed of the targeted unit, gaining the drained speed for itself and nearby Familiars.",
+      "dmg_type": "",
+      "key": "visage_grave_chill",
+      "mc": "75",
+      "name": "Grave Chill"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BOLT SPEED:",
+          "key": "bolt_speed",
+          "value": "1000"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "soul_base_damage",
+          "value": "20"
+        },
+        {
+          "header": "DAMAGE PER CHARGE:",
+          "key": "soul_charge_damage",
+          "value": "70"
+        },
+        {
+          "header": "BONUS GOLD PER CHARGE PER KILL:",
+          "key": "soul_charge_gold",
+          "value": "0"
+        },
+        {
+          "header": "CREEP GOLD:",
+          "key": "gold_creep_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "GOLD GRACE PERIOD HERO:",
+          "key": "gold_grace_period_hero",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GOLD MAX TOOLTIP:",
+          "key": "gold_max_tooltip",
+          "value": "0"
+        },
+        {
+          "header": "MAX CHARGES:",
+          "key": "stack_limit",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "CHARGE DURATION:",
+          "key": "stack_duration",
+          "value": "6"
+        },
+        {
+          "header": "GATHER DAMAGE THRESHOLD:",
+          "key": "damage_limit",
+          "value": "100"
+        },
+        {
+          "header": "GATHER DAMAGE RADIUS:",
+          "key": "radius",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE MIN:",
+          "key": "damage_min",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE MAX:",
+          "key": "damage_max",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "TARGET COUNT:",
+          "key": "target_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "4",
+      "desc": "Visage gathers charges of soul essence each time nearby heroes take more than 100 damage. When the essence is released, it deals base damage as well as damage for each gathered soul charge.",
+      "dmg_type": "Magical",
+      "key": "visage_soul_assumption",
+      "mc": "110",
+      "name": "Soul Assumption"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX LAYERS:",
+          "key": "max_layers",
+          "value": "4"
+        },
+        {
+          "header": "DAMAGE REDUCTION PER LAYER:",
+          "key": "damage_reduction",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "header": "LAYER RECOVERY TIME:",
+          "key": "recovery_time",
+          "value": [
+            "7",
+            "6",
+            "5",
+            "4"
+          ]
+        },
+        {
+          "header": "MINIMUM DAMAGE:",
+          "key": "minimum_damage",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "header": "MAX DAMAGE REDUCTION:",
+          "key": "max_damage_reduction",
+          "value": [
+            "32%",
+            "48%",
+            "64%",
+            "80%"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Visage generates a layered barrier that protects him from damage. If he receives damage from a player, one layer is removed, and takes time to recover.\n\nVisage's Familiars are protected by his cloak when within 900 range of him, based on the number of layers Visage has.",
+      "dmg_type": "",
+      "key": "visage_gravekeepers_cloak",
+      "mc": null,
+      "name": "Gravekeeper's Cloak"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STUN RADIUS:",
+          "key": "stun_radius",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "STUN DELAY:",
+          "key": "stun_delay",
+          "value": "0.55"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "stun_damage",
+          "value": [
+            "60",
+            "100",
+            "140"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.8",
+            "1",
+            "1.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STONE DURATION:",
+          "key": "stone_duration",
+          "value": "6"
+        },
+        {
+          "header": "BONUS REGEN:",
+          "key": "hp_regen",
+          "value": [
+            "150",
+            "175",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Orders the Familiar closest to Visage to cast Stone Form in its current location, turning into stone and smashing into the ground, stunning and damaging all targets in the area. The Familiar becomes invulnerable, and will regain its health very rapidly. After 6 seconds, the Familiar will automatically leave Stone Form.\n\n Can be alt-cast to order the closest Familiar to the target location to move there and cast Stone Form.",
+      "dmg_type": "",
+      "key": "visage_stone_form_self_cast",
+      "mc": "0",
+      "name": "Stone Form"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FLIGHT DURATION:",
+          "key": "flight_duration",
+          "value": "20"
+        },
+        {
+          "header": "BONUS MOVESPEED:",
+          "key": "movespeed_bonus",
+          "value": "12%"
+        },
+        {
+          "header": "BONUS DAMAGE DURATION:",
+          "key": "bonus_duration",
+          "value": "2"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "10%"
+        },
+        {
+          "generated": true,
+          "header": "INVIS:",
+          "key": "invis",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FLY TIMER:",
+          "key": "fly_timer",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "45.75",
+      "desc": "Visage gains flying movement and bonus movement speed. Upon attacking or casting, the speed and flying movement are lost and Visage and his familiars deal additional attack damage for 2s.",
+      "dmg_type": "",
+      "key": "visage_silent_as_the_grave",
+      "mc": "50",
+      "name": "Silent as the Grave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FAMILIAR HEALTH:",
+          "key": "familiar_hp",
+          "value": [
+            "450",
+            "600",
+            "750"
+          ]
+        },
+        {
+          "header": "FAMILIAR ARMOR:",
+          "key": "familiar_armor",
+          "value": [
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "header": "FAMILIAR ATTACK RANGE:",
+          "key": "familiar_attack_range",
+          "value": "180"
+        },
+        {
+          "header": "FAMILIAR SPEED:",
+          "key": "familiar_base_movespeed",
+          "value": "430"
+        },
+        {
+          "header": "FAMILIAR GOLD BOUNTY:",
+          "key": "familiar_bounty",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": "0"
+        },
+        {
+          "header": "FAMILIAR ATTACK DAMAGE:",
+          "key": "familiar_attack_damage",
+          "value": [
+            "25",
+            "50",
+            "75"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISAGE BASE DAMAGE:",
+          "key": "visage_base_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FAMILIAR COUNT:",
+          "key": "familiar_count",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR REDUCTION PER HIT:",
+          "key": "armor_reduction_per_hit",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR REDUCTION DURATION:",
+          "key": "armor_reduction_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "IN FORMATION:",
+          "key": "in_formation",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BACK DISTANCE:",
+          "key": "back_distance",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "SIDE DISTANCE:",
+          "key": "side_distance",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "RETURN DISTANCE:",
+          "key": "return_distance",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "RECALL DURATION:",
+          "key": "recall_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "3500"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE BUFFER:",
+          "key": "attack_range_buffer",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL TARGET SEARCH RADIUS:",
+          "key": "additional_target_search_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "120",
+        "110",
+        "100"
+      ],
+      "desc": "Conjures 2 blind Familiars to fight for Visage. Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing. While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health. Familiars grant high bounty when killed.\n\nThe ability can be cast in the alt-cast state to recall Visages familiars after 4s, during which they cannot attack or act.",
+      "dmg_type": "Physical",
+      "key": "visage_summon_familiars",
+      "mc": "150",
+      "name": "Summon Familiars"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STUN RADIUS:",
+          "key": "stun_radius",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "STUN DELAY:",
+          "key": "stun_delay",
+          "value": "0.55"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "stun_damage",
+          "value": [
+            "60",
+            "100",
+            "140"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.8",
+            "1",
+            "1.2"
+          ]
+        },
+        {
+          "header": "STONE DURATION:",
+          "key": "stone_duration",
+          "value": "6"
+        },
+        {
+          "header": "BONUS REGEN:",
+          "key": "hp_regen",
+          "value": [
+            "150",
+            "175",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "11",
+      "desc": "After a short delay, the Familiar turns into stone and smashes into the ground, stunning and damaging all targets in the area. The Familiar becomes invulnerable, and will regain its health very rapidly. After 6 seconds, the Familiar will automatically leave Stone Form. \n\n Can be alt-cast to order the Familiar to move to the target location and cast Stone Form.",
+      "dmg_type": "Magical",
+      "key": "visage_summon_familiars_stone_form",
+      "mc": null,
+      "name": "Stone Form"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Silent as the Grave",
+    "desc": "Increases movement speed, damage, and duration. Turns Visage and familiars invisible for the duration until the flying movement is lost.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Gravekeeper's Cloak",
+    "desc": "Gains an active component, allowing Visage to use Stone Form, stunning enemies for <span class=\"GameplayVariable\">0.8 / 1.0 / 1.2</span> seconds in an <span class=\"GameplayVariable\">375</span> area around it, dealing <span class=\"GameplayVariable\">60 / 100 / 140</span> damage and becoming invulnerable for <span class=\"GameplayVariable\">6</span> seconds.  Restores up to 25% of your health.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 11,
+    "agi_gain": 1.3,
+    "armor": 0,
+    "attack_max": 31,
+    "attack_min": 21,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 2.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.8
+  },
+  "name": "Visage",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Durable",
+    "Disabler",
+    "Pusher"
+  ],
+  "short_name": "visage",
+  "talents": [
+    {
+      "left": "-?s Gravekeeper's Cloak Recovery Time",
+      "level": 25,
+      "right": "+? Familiar"
+    },
+    {
+      "left": "+? Soul Assumption Damage Per Charge",
+      "level": 20,
+      "right": "+? Armor Corruption to Visage and Familiars"
+    },
+    {
+      "left": "+?s Grave Chill Duration",
+      "level": 15,
+      "right": "Soul Assumption Hits ? Targets"
+    },
+    {
+      "left": "-?s Soul Assumption Cooldown",
+      "level": 10,
+      "right": "+? Visage and Familiars Base Damage"
+    }
+  ]
+}

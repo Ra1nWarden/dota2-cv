@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 1101,
+  "mc": false,
+  "name": "Harpoon Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_harpoon"
+}

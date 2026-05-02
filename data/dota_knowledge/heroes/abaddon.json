@@ -1,0 +1,372 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "SELF DAMAGE:",
+          "key": "self_damage",
+          "value": "40%"
+        },
+        {
+          "generated": true,
+          "header": "SELF DAMAGE ENEMY TARGET:",
+          "key": "self_damage_enemy_target",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "MISSILE SPEED:",
+          "key": "missile_speed",
+          "value": "1300"
+        },
+        {
+          "header": "DAMAGE/HEAL:",
+          "key": "damage_heal",
+          "value": [
+            "95",
+            "170",
+            "245",
+            "320"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "EFFECT RADIUS:",
+          "key": "effect_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PERFORM ATTACK:",
+          "key": "perform_attack",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PERCENTAGE ON PERFORM ATTACK:",
+          "key": "damage_percentage_on_perform_attack",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "625"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": [],
+      "cd": [
+        "8",
+        "7",
+        "6",
+        "5"
+      ],
+      "desc": "Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health.",
+      "dmg_type": "Magical",
+      "key": "abaddon_death_coil",
+      "mc": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "name": "Mist Coil"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "12"
+        },
+        {
+          "header": "BURST RADIUS:",
+          "key": "radius",
+          "value": "675"
+        },
+        {
+          "header": "DAMAGE BARRIER:",
+          "key": "damage_absorb",
+          "value": [
+            "120",
+            "150",
+            "180",
+            "210"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "REGEN:",
+          "key": "regen",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ABSORB TO DAMAGE:",
+          "key": "absorb_to_damage",
+          "value": "0"
+        },
+        {
+          "header": "RETURN DAMAGE RADIUS:",
+          "key": "absorb_damage_aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "12",
+        "10",
+        "8",
+        "6"
+      ],
+      "desc": "Summons dark energies around an ally unit, dispelling them and creating an all damage barrier that absorbs a set amount of damage before expiring. When the barrier is destroyed it will burst and deal damage equal to the amount it could absorb to an area around it.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "Magical",
+      "key": "abaddon_aphotic_shield",
+      "mc": [
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "name": "Aphotic Shield"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "HIT COUNT:",
+          "key": "hit_count",
+          "value": "1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "curse_duration",
+          "value": "2"
+        },
+        {
+          "header": "SLOW:",
+          "key": "curse_slow",
+          "value": [
+            "10%",
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "curse_attack_speed",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "DPS:",
+          "key": "curse_dps",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TOWER DPS PCT:",
+          "key": "tower_dps_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CURSE INTERVAL:",
+          "key": "curse_interval",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Abaddon strikes an enemy, affecting them by a chilling curse, slowing them, causing them to take damage over time, and all attacks against them gain an attack speed boost. Damage over time component to buildings is reduced by 100%.",
+      "dmg_type": "Magical",
+      "key": "abaddon_frostmourne",
+      "mc": null,
+      "name": "Curse of Avernus"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "HP THRESHOLD PCT:",
+          "key": "hp_threshold_pct",
+          "value": "40"
+        },
+        {
+          "header": "HEALTH RESTORATION REDUCTION:",
+          "key": "heal_reduction_pct",
+          "value": "24.5%"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN REDUCTION CREEPS:",
+          "key": "cooldown_reduction_creeps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN REDUCTION HEROES:",
+          "key": "cooldown_reduction_heroes",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Damaging enemies applies the Withering Mist debuff for 5s. Affected enemies have their Health Restoration reduced by 24.5% if they are below 40% HP.",
+      "dmg_type": "",
+      "key": "abaddon_withering_mist",
+      "mc": null,
+      "name": "Withering Mist"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEALTH THRESHOLD:",
+          "key": "hp_threshold",
+          "value": "400"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IMMOLATE TICK:",
+          "key": "immolate_tick",
+          "value": ".25"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "85",
+        "75",
+        "65"
+      ],
+      "desc": "When activated, dispels you and all damage dealt to you will heal instead of harm. If the ability is not on cooldown, it will automatically activate if your health falls below 400.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "abaddon_borrowed_time",
+      "mc": "0",
+      "name": "Borrowed Time"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Borrowed Time",
+    "desc": "Increases duration. While Borrowed Time is active, anytime an ally takes more than 550 damage while within Mist Coil's cast range of Abaddon, an individual Mist Coil will automatically fire towards that ally.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Aphotic Shield",
+    "desc": "75% of absorbed damage is dealt to nearby enemies.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 1.5,
+    "armor": -1,
+    "attack_max": 32,
+    "attack_min": 22,
+    "attack_range": 150,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 18,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.6
+  },
+  "name": "Abaddon",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Carry",
+    "Durable"
+  ],
+  "short_name": "abaddon",
+  "talents": [
+    {
+      "left": "+65 Curse of Avernus Attack Speed Bonus",
+      "level": 25,
+      "right": "350 AoE Mist Coil"
+    },
+    {
+      "left": "+80 Aphotic Shield Barrier Amount",
+      "level": 20,
+      "right": "100 Borrowed Time Immolation DPS"
+    },
+    {
+      "left": "-?s Borrowed Time Cooldown",
+      "level": 15,
+      "right": "+35 Mist Coil Damage / Heal"
+    },
+    {
+      "left": "+25 Curse of Avernus DPS",
+      "level": 10,
+      "right": "Aphotic Shield provides +8 HP Regen"
+    }
+  ]
+}

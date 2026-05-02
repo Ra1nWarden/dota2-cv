@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Makes the caster completely invulnerable and disabled for 0.7 seconds. When returning to the world, the caster takes 5% of their maximum health as damage.",
+      "title": "Self-Exile",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "invuln_duration",
+      "value": ".7"
+    },
+    {
+      "key": "self_dmg_pct",
+      "value": "5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1641,
+  "mc": 65,
+  "name": "Outworld Staff",
+  "notes": "Damage taken when returning is non-lethal and disables Blink Dagger and other items that are muted upon taking damage.",
+  "qual": null,
+  "short_name": "outworld_staff"
+}

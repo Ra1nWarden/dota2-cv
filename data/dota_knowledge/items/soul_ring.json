@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Consume %abilityhealthcost% health to temporarily gain 170 mana. Lasts 10 seconds.\n\nIf the mana gained cannot fit in your mana pool, it creates a buffer of mana that will be used before your mana pool.",
+      "title": "Sacrifice",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "2"
+    },
+    {
+      "key": "mana_gain",
+      "value": "170"
+    },
+    {
+      "key": "duration",
+      "value": "10"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": [
+    "ring_of_protection",
+    "gauntlets",
+    "gauntlets"
+  ],
+  "cost": 805,
+  "created": true,
+  "id": 178,
+  "mc": false,
+  "name": "Soul Ring",
+  "notes": "If this mana is not used before the duration ends, the extra mana is lost.",
+  "qual": "common",
+  "short_name": "soul_ring"
+}

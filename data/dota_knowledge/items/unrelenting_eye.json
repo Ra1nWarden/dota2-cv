@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Increases slow resistance by 50%. This bonus is reduced by 10% for every enemy hero within the wearer's attack radius.",
+      "title": "Relentless",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "max_slow_res",
+      "value": "50"
+    },
+    {
+      "key": "hero_reduction",
+      "value": "10"
+    },
+    {
+      "key": "status_res_pct_increase_per_hero",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1598,
+  "mc": false,
+  "name": "Unrelenting Eye",
+  "notes": "",
+  "qual": null,
+  "short_name": "unrelenting_eye"
+}

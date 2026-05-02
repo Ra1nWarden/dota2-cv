@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "movement_speed",
+      "value": "15 / 20 / 25 / 30"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "max_mana",
+      "value": "0 / 100 / 160 / 220"
+    },
+    {
+      "display": "+ {value}% Evasion",
+      "key": "evasion",
+      "value": "0 / 0 / 0 / 15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1577,
+  "mc": false,
+  "name": "Quickened",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_quickened"
+}

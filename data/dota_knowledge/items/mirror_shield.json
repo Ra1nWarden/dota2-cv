@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "Block and reflect most targeted spells back to their caster once every 12 seconds.",
+      "title": "Echo Shield",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "reflect_chance",
+      "value": "75"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "all_stats",
+      "value": "0"
+    },
+    {
+      "key": "block_cooldown",
+      "value": "12.0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 301,
+  "mc": false,
+  "name": "Mirror Shield",
+  "notes": "",
+  "qual": null,
+  "short_name": "mirror_shield"
+}

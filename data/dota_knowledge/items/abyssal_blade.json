@@ -1,0 +1,75 @@
+{
+  "abilities": [
+    {
+      "description": "Stuns a target enemy unit for 1.6 seconds. \n\nPierces Debuff Immunity.",
+      "title": "Overwhelm",
+      "type": "active"
+    },
+    {
+      "description": "Grants melee heroes a 25% chance on hit to stun the target for 1.2 seconds and deal 120 bonus physical damage. Bash chance for ranged heroes is 10%.",
+      "title": "Bash",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "35"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "26"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "slow_resistance",
+      "value": "30"
+    },
+    {
+      "display": "+ {value}% Health Restoration",
+      "key": "hp_regen_amp",
+      "value": "20"
+    },
+    {
+      "key": "bash_chance_melee",
+      "value": "25"
+    },
+    {
+      "key": "bash_chance_ranged",
+      "value": "10"
+    },
+    {
+      "key": "bash_duration",
+      "value": "1.2"
+    },
+    {
+      "key": "bash_cooldown",
+      "value": "2.3"
+    },
+    {
+      "key": "bonus_chance_damage",
+      "value": "120"
+    },
+    {
+      "key": "stun_duration",
+      "value": "1.6"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 35,
+  "charges": false,
+  "components": [
+    "basher",
+    "sange"
+  ],
+  "cost": 6250,
+  "created": true,
+  "id": 208,
+  "mc": 75,
+  "name": "Abyssal Blade",
+  "notes": "The stun is melee range.\nDoes not stack with other bashes, and does not grant bash to Clones and Tempest Doubles.\nMultiple sources of damage block do not stack.\nThe following heroes cannot trigger Bash on this item: Spirit Breaker, Faceless Void, Slardar, and Kez while in Sai mode.",
+  "qual": "epic",
+  "short_name": "abyssal_blade"
+}

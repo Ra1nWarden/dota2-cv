@@ -1,0 +1,409 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "header": "SECOND METEOR DAMAGE:",
+          "key": "secondary_starfall_damage_percent",
+          "value": "70%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "starfall_radius",
+          "value": "675"
+        },
+        {
+          "generated": true,
+          "header": "STARFALL SECONDARY RADIUS:",
+          "key": "starfall_secondary_radius",
+          "value": "675"
+        },
+        {
+          "header": "BLIND MISS RATE:",
+          "key": "starstruck_blind_pct",
+          "value": "0%"
+        },
+        {
+          "header": "BLIND DURATION:",
+          "key": "starstruck_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "12",
+      "desc": "Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a 675 radius will be struck a second time.",
+      "dmg_type": "Magical",
+      "key": "mirana_starfall",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Starstorm"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ARROW SPEED:",
+          "key": "arrow_speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "ARROW WIDTH:",
+          "key": "arrow_width",
+          "value": "115"
+        },
+        {
+          "header": "RANGE:",
+          "key": "arrow_range",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "ARROW MAX STUNRANGE:",
+          "key": "arrow_max_stunrange",
+          "value": "1500"
+        },
+        {
+          "header": "MINIMUM STUN:",
+          "key": "arrow_min_stun",
+          "value": "0.01"
+        },
+        {
+          "header": "MAXIMUM STUN:",
+          "key": "arrow_max_stun",
+          "value": [
+            "2.6",
+            "3.4",
+            "4.2",
+            "5"
+          ]
+        },
+        {
+          "header": "MAXIMUM BONUS DAMAGE:",
+          "key": "arrow_bonus_damage",
+          "value": "180"
+        },
+        {
+          "generated": true,
+          "header": "ARROW VISION:",
+          "key": "arrow_vision",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "3.11"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "19",
+        "18",
+        "17",
+        "16"
+      ],
+      "desc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 2.6 seconds, with bonus damage up to 180 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
+      "dmg_type": "Magical",
+      "key": "mirana_arrow",
+      "mc": "90",
+      "name": "Sacred Arrow"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DISTANCE:",
+          "key": "leap_distance",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "LEAP SPEED:",
+          "key": "leap_speed",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "LEAP ACCELERATION:",
+          "key": "leap_acceleration",
+          "value": "6000"
+        },
+        {
+          "header": "MOVEMENT BONUS:",
+          "key": "leap_speedbonus",
+          "value": [
+            "6%",
+            "12%",
+            "18%",
+            "24%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED BONUS:",
+          "key": "leap_speedbonus_as",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LEAP BONUS DURATION:",
+          "key": "leap_bonus_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL CHARGES:",
+          "key": "additional_charges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": [
+            "45",
+            "35",
+            "25",
+            "15"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts 5 seconds.",
+      "dmg_type": "",
+      "key": "mirana_leap",
+      "mc": "50",
+      "name": "Leap"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "LEVELS PER QUIVER TOOLTIP:",
+          "key": "levels_per_quiver_tooltip",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "QUIVER RESTORE:",
+          "key": "quiver_restore",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "630"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": "6"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "When a charge is available, Mirana's next attack will deal bonus magic damage.\n\nGains a charge every 7 hero levels.",
+      "dmg_type": "Magical",
+      "key": "mirana_celestial_quiver",
+      "mc": null,
+      "name": "Celestial Quiver"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FADE DELAY:",
+          "key": "fade_delay",
+          "value": [
+            "2.5",
+            "2",
+            "1.5"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "18"
+        },
+        {
+          "header": "MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "9%",
+            "12%",
+            "15%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "EVASION:",
+          "key": "evasion",
+          "value": "0"
+        },
+        {
+          "header": "SELF OUTGOING DAMAGE BONUS:",
+          "key": "bonus_outgoing_damage_pct",
+          "value": [
+            "9%",
+            "12%",
+            "15%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "120",
+        "110",
+        "100"
+      ],
+      "desc": "Turns Mirana and all allied heroes invisible and grants bonus movement speed. Mirana gains bonus outgoing damage during the duration. If a hero is revealed, invisibility will restore after the fade delay as long as Moonlight Shadow's duration has not expired.",
+      "dmg_type": "",
+      "key": "mirana_invis",
+      "mc": "125",
+      "name": "Moonlight Shadow"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Sacred Arrow",
+    "desc": "Causes Sacred Arrow to release a Starstorm on enemies along the travel path of the primary arrow, releasing a second Starstorm that deals less damage to the impacted unit.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Celestial Quiver",
+    "desc": "Grants 3 temporary Charges while Leap's buff is active.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 26,
+    "agi_gain": 3.1,
+    "armor": -2,
+    "attack_max": 28,
+    "attack_min": 22,
+    "attack_range": 630,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.4,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.2
+  },
+  "name": "Mirana",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Support",
+    "Escape",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "mirana",
+  "talents": [
+    {
+      "left": "+2 Multishot Sacred Arrows",
+      "level": 25,
+      "right": "-30s Moonlight Shadow Cooldown"
+    },
+    {
+      "left": "+200 Starstorm Damage",
+      "level": 20,
+      "right": "+? Celestial Quiver Damage"
+    },
+    {
+      "left": "Moonlight Shadow gives +20% Evasion",
+      "level": 15,
+      "right": "+90 Leap Attack Speed"
+    },
+    {
+      "left": "-2s Starstorm Cooldown",
+      "level": 10,
+      "right": "+150 Leap Distance"
+    }
+  ]
+}

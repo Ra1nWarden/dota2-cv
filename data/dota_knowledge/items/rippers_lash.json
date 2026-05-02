@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Embeds thorns into all enemies in a 200 unit radius. Affected units take additional damage when attacked for 10 seconds.",
+      "title": "Flay",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "thorn_area",
+      "value": "200"
+    },
+    {
+      "display": "BONUS DAMAGE (HEROES): {value}",
+      "key": "bonus_damage_hero",
+      "value": "16"
+    },
+    {
+      "display": "BONUS DAMAGE (CREEPS): {value}",
+      "key": "bonus_damage_creep",
+      "value": "4"
+    },
+    {
+      "key": "duration",
+      "value": "10"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1600,
+  "mc": false,
+  "name": "Ripper's Lash",
+  "notes": "",
+  "qual": null,
+  "short_name": "rippers_lash"
+}

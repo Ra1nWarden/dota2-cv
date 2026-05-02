@@ -1,0 +1,49 @@
+{
+  "abilities": [
+    {
+      "description": "Create a path of trees behind you for 3 seconds. Trees last up to 15 seconds.",
+      "title": "Woodland Stride",
+      "type": "active"
+    },
+    {
+      "description": "Removes movement speed limit and allows free pathing through trees.",
+      "title": "Tree Walking",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "140"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_hp_regen",
+      "value": "60"
+    },
+    {
+      "key": "active_duration",
+      "value": "3"
+    },
+    {
+      "key": "tree_duration",
+      "value": "15"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 20,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 368,
+  "mc": false,
+  "name": "Woodland Striders",
+  "notes": "",
+  "qual": null,
+  "short_name": "woodland_striders"
+}

@@ -1,0 +1,78 @@
+{
+  "abilities": [
+    {
+      "description": "Emits a freezing wave that deals 260 magical damage to enemies and slows their movement by -40% for 4 seconds.\n\nRadius: 825",
+      "title": "Arctic Blast",
+      "type": "active"
+    },
+    {
+      "description": "Reduces the attack speed of all enemies by -45. \n\nRadius: 1200",
+      "title": "Freezing Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_hp_regen",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "17"
+    },
+    {
+      "display": "+ {value} Area of Effect",
+      "key": "bonus_aoe",
+      "value": "75"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "aura_attack_speed",
+      "value": "-45"
+    },
+    {
+      "key": "blast_damage",
+      "value": "260"
+    },
+    {
+      "key": "blast_movement_speed",
+      "value": "-40"
+    },
+    {
+      "key": "blast_debuff_duration",
+      "value": "4.0"
+    },
+    {
+      "key": "blast_radius",
+      "value": "825"
+    },
+    {
+      "key": "blast_speed",
+      "value": "400"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 27,
+  "charges": false,
+  "components": [
+    "platemail",
+    "splintmail",
+    "chasm_stone"
+  ],
+  "cost": 4500,
+  "created": true,
+  "id": 119,
+  "mc": 75,
+  "name": "Shiva's Guard",
+  "notes": "The wave extends at a speed of 400 to a max size of 825.\nThe Arctic Blast follows its caster.\nMultiple instances of Freezing Aura do not stack.\nAoE bonuses from multiple Chasm Stones or its upgrades do not stack.",
+  "qual": "epic",
+  "short_name": "shivas_guard"
+}

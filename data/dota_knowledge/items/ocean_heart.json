@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "Provides you with 10 HP regen and 5 mana regen while in the river.",
+      "title": "Water Regen",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "all_stats",
+      "value": "5"
+    },
+    {
+      "key": "water_hp_regen",
+      "value": "10"
+    },
+    {
+      "key": "water_mp_regen",
+      "value": "5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 354,
+  "mc": false,
+  "name": "Ocean Heart",
+  "notes": "",
+  "qual": null,
+  "short_name": "ocean_heart"
+}

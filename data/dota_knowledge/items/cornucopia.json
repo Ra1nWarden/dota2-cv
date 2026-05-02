@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "5"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1200,
+  "created": false,
+  "id": 1125,
+  "mc": false,
+  "name": "Cornucopia",
+  "notes": "",
+  "qual": "common",
+  "short_name": "cornucopia"
+}

@@ -1,0 +1,600 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "1.2"
+        },
+        {
+          "header": "EXPLOSION DELAY:",
+          "key": "countdown",
+          "value": "2"
+        },
+        {
+          "header": "STICK RADIUS:",
+          "key": "radius",
+          "value": "300"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "95",
+            "170",
+            "245",
+            "320"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow",
+          "value": [
+            "25%",
+            "35%",
+            "45%",
+            "55%"
+          ]
+        },
+        {
+          "header": "SECONDARY MOVEMENT SLOW:",
+          "key": "secondary_slow",
+          "value": [
+            "15%",
+            "25%",
+            "35%",
+            "45%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SECONDARY SLOW DURATION:",
+          "key": "secondary_slow_duration",
+          "value": "3"
+        },
+        {
+          "header": "EXPLOSION RADIUS:",
+          "key": "explosion_radius",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "ACCELERATION:",
+          "key": "acceleration",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "PRE CHASE TIME:",
+          "key": "pre_chase_time",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHASE TIME:",
+          "key": "max_chase_time",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "13",
+        "10",
+        "7"
+      ],
+      "desc": "Lobs a Sticky Bomb towards the target area. If it lands next to an enemy hero, the bomb will stick to it, slowing its movement speed. After a few seconds the bomb will explode, dealing damage in an area around the detonation and applying a secondary slow for 3 seconds.",
+      "dmg_type": "Magical",
+      "key": "techies_sticky_bomb",
+      "mc": [
+        "100",
+        "115",
+        "130",
+        "145"
+      ],
+      "name": "Sticky Bomb"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BUFF DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "DISARM DURATION:",
+          "key": "disarm_duration",
+          "value": [
+            "2.4",
+            "2.7",
+            "3",
+            "3.3"
+          ]
+        },
+        {
+          "header": "MOVEMENT BONUS:",
+          "key": "bonus_ms",
+          "value": [
+            "18%",
+            "22%",
+            "26%",
+            "30%"
+          ]
+        },
+        {
+          "header": "EXPLOSION RADIUS:",
+          "key": "explosion_radius",
+          "value": "450"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "110",
+            "160",
+            "210"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "26",
+        "22",
+        "18",
+        "14"
+      ],
+      "desc": "Techies trigger an electric charge on the target ally, giving them bonus movement speed for a short period of time. Enemies attacking the target take damage and are temporarily disarmed and get a Basic Dispel.\n\nAt the end of the effect or if detonated early with the sub-ability, the charge explodes, disarming all enemies within the radius and dealing damage.",
+      "dmg_type": "Magical",
+      "key": "techies_reactive_tazer",
+      "mc": "60",
+      "name": "Reactive Tazer"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EXPLOSION RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "FULL DAMAGE:",
+          "key": "damage",
+          "value": [
+            "200",
+            "300",
+            "400",
+            "500"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.8",
+            "1",
+            "1.2",
+            "1.4"
+          ]
+        },
+        {
+          "header": "CURRENT HP SELF DAMAGE:",
+          "key": "hp_cost",
+          "value": "20%"
+        },
+        {
+          "header": "MAX HP AS BONUS DAMAGE:",
+          "key": "hp_dmg",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "desc": "Techies hurtle themselves into the enemy's midst, detonating charges upon impact which deal massive area of effect damage and stun enemies. Upon landing, the assault deals Techies non-lethal damage equal to a percentage of their current health.",
+      "dmg_type": "Magical",
+      "key": "techies_suicide",
+      "mc": [
+        "100",
+        "125",
+        "150",
+        "175"
+      ],
+      "name": "Blast Off!"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA POOL AS REGEN:",
+          "key": "bonus_mana_as_mana_regen",
+          "value": "0.08%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": "50"
+        },
+        {
+          "header": "MAX MANA AS DAMAGE:",
+          "key": "max_mana_pct_as_damage",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "EXPLOSION DELAY:",
+          "key": "explosion_delay",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Techies gain a percentage of their mana pool as bonus mana regeneration.\n\nWhen Techies die, they leave behind a barrel that explodes after 1.5s, damaging enemies in an area around it. Damage is based on Techies' max mana.",
+      "dmg_type": "Magical",
+      "key": "techies_mutually_assured_destruction",
+      "mc": null,
+      "name": "M.A.D."
+    },
+    {
+      "attrib": [
+        {
+          "header": "EFFECT RADIUS:",
+          "key": "aura_radius",
+          "value": "1000"
+        },
+        {
+          "header": "SIGN DURATION:",
+          "key": "lifetime",
+          "value": "240"
+        },
+        {
+          "generated": true,
+          "header": "MINEFIELD DURATION:",
+          "key": "minefield_duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "TRIGGER RADIUS:",
+          "key": "trigger_radius",
+          "value": "200"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "scepter_move_damage",
+          "value": "300"
+        },
+        {
+          "header": "MOVEMENT TRIGGER AMOUNT:",
+          "key": "scepter_move_amt",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MINE DAMAGE PCT:",
+          "key": "bonus_mine_damage_pct",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1.25"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "60",
+      "desc": "Plant a warning sign, causing Proximity Mines within its radius to be invulnerable and deal 15% more damage. Only one sign can exist at a time. Lasts 240 seconds.\n\nWhen an enemy Hero walks within 200 units of a minefield sign, the 1000 units area around the sign will become a minefield for 10 seconds, dealing damage to enemy Heroes any time they move within its area. Minefield Sign is destroyed after this effect ends.",
+      "dmg_type": [],
+      "key": "techies_minefield_sign",
+      "mc": "0",
+      "name": "Minefield Sign"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EXPLOSION RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "PROXIMITY THRESHOLD:",
+          "key": "proximity_threshold",
+          "value": "1"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "400",
+            "575",
+            "750"
+          ]
+        },
+        {
+          "header": "BUILDING DAMAGE:",
+          "key": "building_damage_pct",
+          "value": "30%"
+        },
+        {
+          "header": "ACTIVATION DELAY:",
+          "key": "activation_delay",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "OUTER DAMAGE:",
+          "key": "outer_damage",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "MIN DISTANCE:",
+          "key": "min_distance",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "PLACEMENT RADIUS:",
+          "key": "placement_radius",
+          "value": "350"
+        },
+        {
+          "header": "MAGIC RESISTANCE REDUCTION:",
+          "key": "mres_reduction",
+          "value": [
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "burn_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active 500 AoE of the mine. Mines detonate if an enemy is standing within the active AoE for 1 seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within 150 radius and decreases up to 60% on the edge. Deals 30% damage to buildings.",
+      "dmg_type": "Magical",
+      "key": "techies_land_mines",
+      "mc": [
+        "110",
+        "140",
+        "170"
+      ],
+      "name": "Proximity Mines"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "0.5",
+      "desc": "Detonate Reactive Tazer immediately.",
+      "dmg_type": "",
+      "key": "techies_reactive_tazer_stop",
+      "mc": null,
+      "name": "Detonate Tazer"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "AOE",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "1",
+      "desc": "Detonate your planted M.A.D.",
+      "dmg_type": "Magical",
+      "key": "techies_focused_detonate",
+      "mc": null,
+      "name": "Detonate M.A.D."
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Minefield Sign",
+    "desc": "Plant a warning sign, causing Proximity Mines within its radius to be invulnerable and deal 15% more damage. Only one sign can exist at a time. Lasts 240 seconds.\n\nWhen an enemy Hero walks within 200 units of a minefield sign, the 1000 units area around the sign will become a minefield for 10 seconds, dealing damage to enemy Heroes any time they move within its area. Minefield Sign is destroyed after this effect ends.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "M.A.D.",
+    "desc": "M.A.D. becomes an active ability. Increases max mana as damage amount. Techies plant an M.A.D. which can be detonated manually with a sub-ability. Only one M.A.D. from the active ability can be placed at a time.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.8,
+    "armor": 2,
+    "attack_max": 22,
+    "attack_min": 20,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 25,
+    "int_gain": 3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 1,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2.6
+  },
+  "name": "Techies",
+  "primary_attr": "all",
+  "roles": [
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "techies",
+  "talents": [
+    {
+      "left": "+253 Damage",
+      "level": 25,
+      "right": "-?s Proximity Mines Activation Delay"
+    },
+    {
+      "left": "+? Sticky Bomb Damage",
+      "level": 20,
+      "right": "-?s Blast Off! Cooldown"
+    },
+    {
+      "left": "+? Blast Off! Damage",
+      "level": 15,
+      "right": "+?% Reactive Tazer Buff and Disarm Duration"
+    },
+    {
+      "left": "+20% Magic Resistance",
+      "level": 10,
+      "right": "-?s Proximity Mines Cooldown"
+    }
+  ]
+}

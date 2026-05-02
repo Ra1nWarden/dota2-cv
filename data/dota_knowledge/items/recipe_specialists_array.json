@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 550,
+  "created": false,
+  "id": 1715,
+  "mc": false,
+  "name": "recipe_specialists_array",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_specialists_array"
+}

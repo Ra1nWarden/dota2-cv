@@ -1,0 +1,59 @@
+{
+  "abilities": [
+    {
+      "description": "Throw a grenade at the target area. Enemies in the area will take 50 damage on impact, and be slowed by -15% and take 15 damage every 1s for 5 seconds. Radius 300.",
+      "title": "Throw Grenade",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "speed",
+      "value": "1100"
+    },
+    {
+      "key": "radius",
+      "value": "300"
+    },
+    {
+      "key": "movespeed_slow",
+      "value": "-15"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "50"
+    },
+    {
+      "key": "damage_over_time",
+      "value": "15"
+    },
+    {
+      "key": "impact_damage",
+      "value": "50"
+    },
+    {
+      "key": "tick_rate",
+      "value": "1"
+    },
+    {
+      "key": "debuff_duration",
+      "value": "5"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 10,
+  "charges": 1,
+  "components": null,
+  "cost": 50,
+  "created": false,
+  "id": 1123,
+  "mc": false,
+  "name": "Blood Grenade",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "blood_grenade"
+}

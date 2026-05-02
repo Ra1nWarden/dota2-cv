@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Envelops the caster in an all damage barrier that absorbs 75% of incoming damage up to a max of 225. Lasts for up to 10 seconds and while the barrier is active you have 50% Slow Resistance.",
+      "title": "Cyclonic Shield",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "barrier_duration",
+      "value": "10"
+    },
+    {
+      "key": "barrier_amount",
+      "value": "225"
+    },
+    {
+      "key": "barrier_pct",
+      "value": "75"
+    },
+    {
+      "key": "slow_resist",
+      "value": "50"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1602,
+  "mc": false,
+  "name": "Gale Guard",
+  "notes": "",
+  "qual": null,
+  "short_name": "gale_guard"
+}

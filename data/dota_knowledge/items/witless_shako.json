@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Max Health Increase",
+      "key": "max_health",
+      "value": "1350"
+    },
+    {
+      "display": "- {value} Max Mana",
+      "key": "max_mana",
+      "value": "400"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 330,
+  "mc": false,
+  "name": "Witless Shako",
+  "notes": "",
+  "qual": null,
+  "short_name": "witless_shako"
+}

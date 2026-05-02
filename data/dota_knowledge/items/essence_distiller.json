@@ -1,0 +1,91 @@
+{
+  "abilities": [
+    {
+      "description": "Provides 40 health regeneration when cast on allies.\n\nCan be ground targeted to lie dormant for up to 15s and attach to the first enemy that comes within 400 radius. When on enemies, deals 25 damage per second and provides True Sight over them and shares their vision with the wearer's team.\n\nLasts 8 seconds.\n\nGains charges every time an enemy hero dies within 1500 units.",
+      "title": "Soul Release",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "1.75"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "3"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "150"
+    },
+    {
+      "key": "soul_radius",
+      "value": "1500"
+    },
+    {
+      "key": "soul_initial_charge",
+      "value": "2"
+    },
+    {
+      "key": "soul_additional_charges",
+      "value": "1"
+    },
+    {
+      "key": "soul_heal_amount",
+      "value": "40"
+    },
+    {
+      "key": "soul_damage_amount",
+      "value": "25"
+    },
+    {
+      "key": "duration",
+      "value": "8.0"
+    },
+    {
+      "key": "ground_duration",
+      "value": "15.0"
+    },
+    {
+      "key": "latch_range",
+      "value": "400"
+    },
+    {
+      "key": "latch_vision",
+      "value": "400"
+    },
+    {
+      "key": "linger_after_latch_duration",
+      "value": "0.5"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "Unit Target",
+    "AOE"
+  ],
+  "cd": 10,
+  "charges": false,
+  "components": [
+    "urn_of_shadows",
+    "chainmail",
+    "wizard_hat"
+  ],
+  "cost": 1775,
+  "created": true,
+  "id": 1852,
+  "mc": false,
+  "name": "Essence Distiller",
+  "notes": "Empty distillers gain 2 charges.\nOnly the closest Essence Distiller to the dying hero will gain a charge.\nIf the allied unit is attacked by an enemy hero or Roshan, the effect is lost.\nDoes not trigger spell block or spell reflect.\nWhile dormant, provides vision in 400 radius. Vision lingers for 0.5s after latching.",
+  "qual": "rare",
+  "short_name": "essence_distiller"
+}

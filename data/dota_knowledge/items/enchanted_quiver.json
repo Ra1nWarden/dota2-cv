@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Empowers your next attack with 250 bonus magical damage and True Strike. Ranged Attackers have +350 bonus range for the attack.",
+      "title": "Certain Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_attack_range",
+      "value": "0"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "250"
+    },
+    {
+      "key": "active_bonus_attack_range",
+      "value": "350"
+    }
+  ],
+  "behavior": null,
+  "cd": 4,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 361,
+  "mc": false,
+  "name": "Enchanted Quiver",
+  "notes": "",
+  "qual": null,
+  "short_name": "enchanted_quiver"
+}

@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "7 / 15 / 23 / 31"
+    },
+    {
+      "display": "+ {value} Bonus Night Vision",
+      "key": "bonus_night_vision",
+      "value": "0 / 150 / 225 / 300"
+    },
+    {
+      "display": "+ {value} Attack Range (Melee & Ranged)",
+      "key": "bonus_attack_range",
+      "value": "0 / 0 / 0 / 100"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1584,
+  "mc": false,
+  "name": "Alert",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_alert"
+}

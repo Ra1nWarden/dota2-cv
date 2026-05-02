@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 525,
+  "created": false,
+  "id": 184,
+  "mc": false,
+  "name": "Drum of Endurance Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_ancient_janggo"
+}

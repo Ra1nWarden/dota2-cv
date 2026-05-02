@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 50,
+  "created": false,
+  "id": 45,
+  "mc": false,
+  "name": "Animal Courier",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "courier"
+}

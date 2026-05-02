@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Base Attack Damage",
+      "key": "base_attack_damage",
+      "value": "8 / 12 / 16"
+    },
+    {
+      "display": "+ {value}% Status Resistance",
+      "key": "status_resistance",
+      "value": "10 / 12 / 14"
+    },
+    {
+      "display": "- {value}% Attack Speed",
+      "key": "attack_speed",
+      "value": "-10 / -12 / -14"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1597,
+  "mc": false,
+  "name": "Titanic",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_titanic"
+}

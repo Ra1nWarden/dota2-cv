@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Range (Melee & Ranged)",
+      "key": "bonus_attack_range",
+      "value": "150"
+    },
+    {
+      "display": "+ {value} Cast Range",
+      "key": "bonus_cast_range",
+      "value": "275"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1590,
+  "mc": false,
+  "name": "Boundless",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_boundless"
+}

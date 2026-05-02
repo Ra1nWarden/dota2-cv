@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 25,
+  "mc": false,
+  "name": "Gloves of Haste",
+  "notes": "",
+  "qual": "component",
+  "short_name": "gloves"
+}

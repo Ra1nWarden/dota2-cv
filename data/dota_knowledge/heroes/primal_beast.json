@@ -1,0 +1,565 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RUN SPEED:",
+          "key": "charge_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CHARGEUP TIME:",
+          "key": "chargeup_time",
+          "value": "2.2"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK RADIUS:",
+          "key": "knockback_radius",
+          "value": "190"
+        },
+        {
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "200"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "knockback_damage",
+          "value": [
+            "75",
+            "170",
+            "265",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.2"
+        },
+        {
+          "header": "TIME TO MAX CHARGE:",
+          "key": "max_charge_time",
+          "value": "1.7"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "70"
+        },
+        {
+          "generated": true,
+          "header": "BASE POWER:",
+          "key": "base_power",
+          "value": "0.05"
+        },
+        {
+          "generated": true,
+          "header": "MOVEMENT TURN RATE:",
+          "key": "movement_turn_rate",
+          "value": "50"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.7",
+            "1",
+            "1.3",
+            "1.6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "25",
+        "22",
+        "19",
+        "16"
+      ],
+      "desc": "Primal Beast charges up and then runs in the chosen direction, knocking back enemies and allies alike. Enemy units are damaged and stunned on impact. The longer the charge duration, the farther Primal Beast's momentum will carry him. \n\n Can be cancelled at any time with the Stop command.",
+      "dmg_type": "Physical",
+      "key": "primal_beast_onslaught",
+      "mc": "120",
+      "name": "Onslaught"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE AOE:",
+          "key": "effect_radius",
+          "value": "230"
+        },
+        {
+          "generated": true,
+          "header": "STEP DISTANCE:",
+          "key": "step_distance",
+          "value": "140"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "15",
+            "30",
+            "45",
+            "60"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5.5"
+        },
+        {
+          "header": "ATTACK DAMAGE MULTIPLIER:",
+          "key": "attack_damage",
+          "value": "35%"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MAGIC RESISTANCE:",
+          "key": "bonus_magic_resistance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UNSLOWABLE:",
+          "key": "unslowable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PROC ATTACK MODIFIERS:",
+          "key": "proc_attack_modifiers",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "27",
+        "24",
+        "21"
+      ],
+      "desc": "Primal Beast stomps over everything. For every 140 units traveled, all enemies around the Beast receive damage. Deals base damage plus a multiplier of Primal Beast's attack damage. Primal Beast is disarmed for the duration of the ability.",
+      "dmg_type": "Magical",
+      "key": "primal_beast_trample",
+      "mc": "100",
+      "name": "Trample"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE PER STACK:",
+          "key": "bonus_damage_per_stack",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "stack_limit",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "STACK COUNT INCREASE ON DISABLE:",
+          "key": "stack_count_increase_on_disable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE LIMIT:",
+          "key": "damage_limit",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "STACK DURATION:",
+          "key": "stack_duration",
+          "value": "20"
+        },
+        {
+          "header": "SLOW PER STACK:",
+          "key": "move_slow_per_stack",
+          "value": [
+            "4%",
+            "6%",
+            "8%",
+            "10%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE MIN:",
+          "key": "damage_min",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE MAX:",
+          "key": "damage_max",
+          "value": "2000"
+        },
+        {
+          "header": "ROAR RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "ROARED BONUS ATTACK SPEED:",
+          "key": "roared_bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "header": "ROAR ARMOR BONUS PER STACK:",
+          "key": "roared_bonus_armor",
+          "value": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ROAR DURATION:",
+          "key": "roar_duration",
+          "value": "7"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "The Beast's temper causes every instance of 50 hero damage or more to grant a stack of Uproar. \n\n When activated, Primal Beast releases a roar that slows surrounding enemies and grants the Beast additional attack damage and armor for 7 seconds based on his current stacks of Uproar.",
+      "dmg_type": "",
+      "key": "primal_beast_uproar",
+      "mc": null,
+      "name": "Uproar"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "base_damage",
+          "value": "325"
+        },
+        {
+          "header": "IMPACT RADIUS:",
+          "key": "impact_radius",
+          "value": "225"
+        },
+        {
+          "header": "MIN RANGE:",
+          "key": "min_range",
+          "value": "550"
+        },
+        {
+          "header": "MIN TRAVEL TIME:",
+          "key": "min_travel_time",
+          "value": "0.65"
+        },
+        {
+          "header": "MAX TRAVEL TIME:",
+          "key": "max_travel_time",
+          "value": "1.75"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE TRAVEL TIME:",
+          "key": "bounce_travel_time",
+          "value": "0.5"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.4"
+        },
+        {
+          "header": "FRAGMENT FLIGHT DISTANCE:",
+          "key": "fragment_impact_distance",
+          "value": "525"
+        },
+        {
+          "header": "FRAGMENT IMPACT RADIUS:",
+          "key": "fragment_impact_radius",
+          "value": "185"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "20",
+      "desc": "Primal Beast throws a rock at the target location that stuns and damages enemies. The rock cannot be thrown within a minimum range of Primal Beast. After landing, the rock splits into 3 additional fragments that land behind the initial target location.\n\n Rock Throw increases stacks of Uproar for each hero hit.",
+      "dmg_type": "Physical",
+      "key": "primal_beast_rock_throw",
+      "mc": "85",
+      "name": "Rock Throw"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Instant Cast",
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0.3",
+      "desc": "Begins the rush to the specified location.",
+      "dmg_type": "",
+      "key": "primal_beast_onslaught_release",
+      "mc": null,
+      "name": "Begin Onslaught"
+    },
+    {
+      "attrib": [
+        {
+          "header": "AOE RADIUS:",
+          "key": "splash_radius",
+          "value": "575"
+        },
+        {
+          "header": "HIT INTERVAL:",
+          "key": "interval",
+          "value": "0.75"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "ministun",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "cast_range",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "1.5"
+        },
+        {
+          "header": "HIT DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "175",
+            "250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "channel_time",
+          "value": "2.3"
+        },
+        {
+          "generated": true,
+          "header": "PIERCE IMMUNITY:",
+          "key": "pierce_immunity",
+          "value": "0"
+        },
+        {
+          "header": "BONUS DAMAGE PER HIT:",
+          "key": "bonus_damage_per_hit",
+          "value": [
+            "20",
+            "40",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": [
+        "Channeled",
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "CHANNELED - Primal Beast channels his rage, grabbing the target enemy and slamming them into the ground repeatedly, damaging and mini-stunning any enemies caught in the AoE. Each consecutive hit deals bonus damage. Lasts 2.3 seconds.",
+      "dmg_type": "Magical",
+      "key": "primal_beast_pulverize",
+      "mc": "100",
+      "name": "Pulverize"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "HP PER THRESHOLD:",
+          "key": "hp_per_threshold",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "BASE SLOW RESIST:",
+          "key": "base_slow_resist",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "BASE AOE:",
+          "key": "base_aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SLOW RESISTANCE PER THRESHOLD:",
+          "key": "slow_resistance_per_threshold",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "AOE PER THRESHOLD:",
+          "key": "aoe_per_threshold",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TRAMPLE BONUS:",
+          "key": "trample_bonus",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "primal_beast_colossal",
+      "mc": null,
+      "name": "Colossal"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Uproar",
+    "desc": "When Primal Beast activates Uproar, he releases 3 waves of 2 projectiles per stack of uproar each in a circle around him. Projectiles deal damage and Break enemies hit. After a short delay, each projectile splinters in two.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Rock Throw",
+    "desc": "Primal Beast throws a rock at the target location that stuns and damages enemies. The rock cannot be thrown within a minimum range of Primal Beast. After landing, the rock splits into 3 additional fragments that land behind the initial target location.\n\n Rock Throw increases stacks of Uproar for each hero hit.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1,
+    "armor": 2,
+    "attack_max": 38,
+    "attack_min": 36,
+    "attack_range": 150,
+    "attack_rate": 1.8,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 16,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 26,
+    "str_gain": 4.3
+  },
+  "name": "Primal Beast",
+  "primary_attr": "str",
+  "roles": [
+    "Initiator",
+    "Durable",
+    "Disabler"
+  ],
+  "short_name": "primal_beast",
+  "talents": [
+    {
+      "left": "special_bonus_unique_primal_beast_colossal_trample",
+      "level": 25,
+      "right": "+67% Pulverize Duration"
+    },
+    {
+      "left": "+20% Trample Attack Multiplier",
+      "level": 20,
+      "right": "Basic Self-Dispel on Uproar Cast"
+    },
+    {
+      "left": "-5s Trample Cooldown",
+      "level": 15,
+      "right": "+6 Uproar Armor Per Stack"
+    },
+    {
+      "left": "+30 Damage",
+      "level": 10,
+      "right": "+25% Magic Resistance During Trample"
+    }
+  ]
+}

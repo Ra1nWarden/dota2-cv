@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "30% of incoming damage is delayed over 5 seconds.",
+      "title": "Linger",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "delay_pct",
+      "value": "30"
+    },
+    {
+      "key": "delay_time",
+      "value": "5"
+    },
+    {
+      "key": "damage_interval",
+      "value": "1"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1860,
+  "mc": false,
+  "name": "Prophet's Pendulum",
+  "notes": "",
+  "qual": null,
+  "short_name": "prophets_pendulum"
+}

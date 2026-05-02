@@ -1,0 +1,69 @@
+{
+  "abilities": [
+    {
+      "description": "Targets an enemy, slowing it for 4 seconds.",
+      "title": "Inhibit",
+      "type": "active"
+    },
+    {
+      "description": "Each attack burns 40 mana from the target, and deals 1 physical damage per burned mana. \n\nIllusions do not burn mana.",
+      "title": "Manabreak",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "key": "feedback_mana_burn",
+      "value": "40"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_melee",
+      "value": "0"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_ranged",
+      "value": "0"
+    },
+    {
+      "key": "purge_rate",
+      "value": "5"
+    },
+    {
+      "key": "purge_root_duration",
+      "value": "3.0"
+    },
+    {
+      "key": "purge_slow_duration",
+      "value": "4.0"
+    },
+    {
+      "key": "damage_per_burn",
+      "value": "1"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "blade_of_alacrity",
+    "robe"
+  ],
+  "cost": 2500,
+  "created": true,
+  "id": 174,
+  "mc": 25,
+  "name": "Diffusal Blade",
+  "notes": "Does not stack with other diffusal blades.",
+  "qual": "artifact",
+  "short_name": "diffusal_blade"
+}

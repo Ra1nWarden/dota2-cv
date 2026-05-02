@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 650,
+  "created": false,
+  "id": 910,
+  "mc": false,
+  "name": "Revenant's Brooch Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_revenants_brooch"
+}

@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Attacks deal 35% more damage to buildings.",
+      "title": "Level",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_attack_speed",
+      "value": "0"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    },
+    {
+      "key": "demolish",
+      "value": "35"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 379,
+  "mc": false,
+  "name": "The Leveller",
+  "notes": "",
+  "qual": null,
+  "short_name": "the_leveller"
+}

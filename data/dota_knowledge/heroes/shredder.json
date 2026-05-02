@@ -1,0 +1,467 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "whirling_radius",
+          "value": "325"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "whirling_damage",
+          "value": [
+            "75",
+            "120",
+            "165",
+            "210"
+          ]
+        },
+        {
+          "header": "TREE BONUS DAMAGE:",
+          "key": "tree_damage_scale",
+          "value": [
+            "9",
+            "16",
+            "23",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WHIRLING TICK:",
+          "key": "whirling_tick",
+          "value": "0.3"
+        },
+        {
+          "header": "STAT LOSS:",
+          "key": "stat_loss_pct",
+          "value": "13%"
+        },
+        {
+          "header": "STAT LOSS (UNIVERSAL):",
+          "key": "stat_loss_univ",
+          "value": "5%"
+        },
+        {
+          "header": "STAT LOSS DURATION:",
+          "key": "duration",
+          "value": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "7.5",
+        "7",
+        "6.5",
+        "6"
+      ],
+      "desc": "Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area. If an enemy hero is affected, it loses some of its primary attribute for a short duration. Whirling Death will deal bonus damage per tree destroyed.",
+      "dmg_type": "Pure",
+      "key": "shredder_whirling_death",
+      "mc": "100",
+      "name": "Whirling Death"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CHAIN RADIUS:",
+          "key": "chain_radius",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "750",
+            "900",
+            "1050",
+            "1200"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "225"
+        },
+        {
+          "header": "SPEED:",
+          "key": "speed",
+          "value": [
+            "2200",
+            "2400",
+            "2600",
+            "2800"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "45",
+            "100",
+            "155",
+            "210"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "4",
+      "desc": "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it. Any enemy in the path takes damage.",
+      "dmg_type": "Pure",
+      "key": "shredder_timber_chain",
+      "mc": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "name": "Timber Chain"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "0.4",
+            "0.5",
+            "0.6",
+            "0.7"
+          ]
+        },
+        {
+          "header": "BONUS HP REGEN:",
+          "key": "bonus_hp_regen",
+          "value": [
+            "0.4",
+            "0.5",
+            "0.6",
+            "0.7"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "stack_limit",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "STACK DURATION:",
+          "key": "stack_duration",
+          "value": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STACKS PER HERO ATTACK:",
+          "key": "stacks_per_hero_attack",
+          "value": "4"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "undefined",
+      "desc": "Each time Timbersaw is attacked, he gains increased health regen and armor. Hero attacks are counted as 4x the amount.",
+      "dmg_type": "Magical",
+      "key": "shredder_reactive_armor",
+      "mc": "undefined",
+      "name": "Reactive Armor"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "70"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "header": "WIDTH:",
+          "key": "width",
+          "value": "275"
+        },
+        {
+          "header": "RANGE:",
+          "key": "length",
+          "value": "400"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "move_slow_pct",
+          "value": "30%"
+        },
+        {
+          "header": "BUILDING DAMAGE:",
+          "key": "building_dmg_pct",
+          "value": "50%"
+        },
+        {
+          "header": "DEBUFF LINGER TIME:",
+          "key": "debuff_linger_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "20",
+      "desc": "Releases a flame in the direction Timbersaw is facing. Applies a debuff that deals damage per second and slows enemy movement speed. Affects buildings for reduced damage.",
+      "dmg_type": "Magical",
+      "key": "shredder_flamethrower",
+      "mc": "100",
+      "name": "Flamethrower"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "header": "PASS DAMAGE:",
+          "key": "pass_damage",
+          "value": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "5%"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE INTERVAL:",
+          "key": "damage_interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "BREAK DISTANCE:",
+          "key": "break_distance",
+          "value": "2000"
+        },
+        {
+          "header": "MANA COST PER SECOND:",
+          "key": "mana_per_second",
+          "value": [
+            "14",
+            "22",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PASS SLOW DURATION:",
+          "key": "pass_slow_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "SLOW HEALTH PERCENTAGE:",
+          "key": "slow_health_percentage",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "SECOND CHAKRAM:",
+          "key": "second_chakram",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "8",
+      "desc": "Fires Timbersaw's main saw blade at the target location where it will spin in place, dealing damage in an area around it. Enemies caught in the saw blade will move more slowly for every 5% of health missing. The blade deals damage and cuts down trees in its path when fired and retracted. While active the ability costs mana, and Timbersaw loses the ability to attack.",
+      "dmg_type": "Pure",
+      "key": "shredder_chakram",
+      "mc": [
+        "100",
+        "140",
+        "180"
+      ],
+      "name": "Chakram"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Returns the Chakram to Timbersaw.",
+      "dmg_type": "",
+      "key": "shredder_return_chakram",
+      "mc": null,
+      "name": "Return Chakram"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA RESTORE:",
+          "key": "mana_restore",
+          "value": "3.75"
+        },
+        {
+          "generated": true,
+          "header": "HEALTH RESTORE:",
+          "key": "health_restore",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Whenever Timbersaw destroys a tree, he gains mana.",
+      "dmg_type": "",
+      "key": "shredder_exposure_therapy",
+      "mc": null,
+      "name": "Exposure Therapy"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Reactive Armor",
+    "desc": "Reactive Armor can now be activated to get max stacks and 150 damage barrier. Grants Timbersaw 100 + 75 barrier amount per second for each enemy hero within 450 radius of Timbersaw up to a maximum of 800. After 8 seconds, Timbersaw deals damage to every hero within 450 radius equal to 200 + his remaining barrier amount and loses all of his barrier.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Flamethrower",
+    "desc": "Releases a flame in the direction Timbersaw is facing. Applies a debuff that deals damage per second and slows enemy movement speed. Affects buildings for reduced damage.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.6,
+    "armor": 0,
+    "attack_max": 27,
+    "attack_min": 23,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 2.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 3.6
+  },
+  "name": "Timbersaw",
+  "primary_attr": "str",
+  "roles": [
+    "Nuker",
+    "Durable",
+    "Escape"
+  ],
+  "short_name": "shredder",
+  "talents": [
+    {
+      "left": "+? Whirling Death Tree Bonus Damage",
+      "level": 25,
+      "right": "+?% Timber Chain Range/Projectile Speed"
+    },
+    {
+      "left": "Exposure Therapy Heals for ? HP Per Tree Destroyed",
+      "level": 20,
+      "right": "+?% Chakram Slow"
+    },
+    {
+      "left": "+?% Whirling Death Stat Loss",
+      "level": 15,
+      "right": "+? Max / +? Hero Attack Reactive Armor Stacks"
+    },
+    {
+      "left": "+? Reactive Armor Regeneration Per Stack",
+      "level": 10,
+      "right": "+1.5 Mana Regen"
+    }
+  ]
+}

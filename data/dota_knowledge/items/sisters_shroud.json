@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "When falling below 50% HP, gain 150% evasion for 5 seconds. While active, dodging an attack decreases the evasion bonus by 75% of its current value.",
+      "title": "Veiled",
+      "type": "passive"
+    },
+    {
+      "description": "Veiled cooldown is only reset if the wearer dies or kills an enemy hero.",
+      "title": "Last Caress",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "hp_threshold",
+      "value": "50"
+    },
+    {
+      "key": "evasion_max",
+      "value": "150"
+    },
+    {
+      "key": "evasion_loss",
+      "value": "75"
+    },
+    {
+      "key": "max_duration",
+      "value": "5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1639,
+  "mc": false,
+  "name": "Sister's Shroud",
+  "notes": "Does not trigger from damage by non-player controlled creeps",
+  "qual": null,
+  "short_name": "sisters_shroud"
+}

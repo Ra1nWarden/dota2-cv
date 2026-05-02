@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1600,
+  "created": false,
+  "id": 109,
+  "mc": false,
+  "name": "Refresher Orb Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_refresher"
+}

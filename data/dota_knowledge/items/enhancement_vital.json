@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "health_regen",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1865,
+  "mc": false,
+  "name": "Vital",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_vital"
+}

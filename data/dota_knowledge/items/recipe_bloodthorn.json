@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 600,
+  "created": false,
+  "id": 245,
+  "mc": false,
+  "name": "Bloodthorn Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_bloodthorn"
+}

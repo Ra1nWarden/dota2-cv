@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Debuff Duration",
+      "key": "debuff_amp",
+      "value": "10 / 15"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "10 / 20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 300,
+  "mc": false,
+  "name": "Timeless Relic",
+  "notes": "",
+  "qual": null,
+  "short_name": "timeless_relic"
+}

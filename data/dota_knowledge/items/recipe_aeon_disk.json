@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1200,
+  "created": false,
+  "id": 255,
+  "mc": false,
+  "name": "Aeon Disk Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_aeon_disk"
+}

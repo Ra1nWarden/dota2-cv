@@ -1,0 +1,37 @@
+{
+  "abilities": [
+    {
+      "description": "When equipped hero is below 30% HP, they gain flying movement.",
+      "title": "Free Bird",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Evasion",
+      "key": "evasion",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "move_speed",
+      "value": "30"
+    },
+    {
+      "key": "flight_threshold",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1160,
+  "mc": false,
+  "name": "Aviana's Feather",
+  "notes": "",
+  "qual": null,
+  "short_name": "avianas_feather"
+}

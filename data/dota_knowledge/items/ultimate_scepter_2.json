@@ -1,0 +1,24 @@
+{
+  "abilities": [
+    {
+      "description": "Upgrades the ultimate, and some abilities, of all heroes.",
+      "title": "Ability Upgrade",
+      "type": "passive"
+    }
+  ],
+  "attrib": [],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ultimate_scepter"
+  ],
+  "cost": 5800,
+  "created": true,
+  "id": 271,
+  "mc": false,
+  "name": "Aghanim's Blessing",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "ultimate_scepter_2"
+}

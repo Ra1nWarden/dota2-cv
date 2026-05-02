@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Brings you to life with full health and mana 5 seconds after you die, at the location where you died. \n\nReincarnation must be used within 5 minutes or Aegis of the Immortal disappears. If it expires, it will heal you over 5 seconds (dispels on damage).",
+      "title": "Reincarnation",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "reincarnate_time",
+      "value": "5.0"
+    },
+    {
+      "key": "disappear_time",
+      "value": "300.0"
+    },
+    {
+      "key": "disappear_time_minutes_tooltip",
+      "value": "5"
+    },
+    {
+      "key": "disappear_time_turbo",
+      "value": "240.0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 117,
+  "mc": false,
+  "name": "Aegis of the Immortal",
+  "notes": "Pronounced as ayy jis.",
+  "qual": "artifact",
+  "short_name": "aegis"
+}

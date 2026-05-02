@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "12"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1700,
+  "created": false,
+  "id": 279,
+  "mc": false,
+  "name": "Ring of Tarrasque",
+  "notes": "",
+  "qual": "component",
+  "short_name": "ring_of_tarrasque"
+}

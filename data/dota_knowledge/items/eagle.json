@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 2800,
+  "created": false,
+  "id": 52,
+  "mc": false,
+  "name": "Eaglesong",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "eagle"
+}

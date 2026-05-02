@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "45"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 500,
+  "created": false,
+  "id": 29,
+  "mc": false,
+  "name": "Boots of Speed",
+  "notes": "",
+  "qual": "component",
+  "short_name": "boots"
+}

@@ -1,0 +1,40 @@
+{
+  "abilities": [
+    {
+      "description": "Consumes a charge to block 120 magic damage from damage instances over 75 damage. \n\nComes with 6 charges. When the charges are gone, the item disappears.",
+      "title": "Magical Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "0.8"
+    },
+    {
+      "key": "magic_damage_block",
+      "value": "120"
+    },
+    {
+      "key": "min_damage",
+      "value": "75"
+    },
+    {
+      "key": "initial_charges",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": 7,
+  "charges": 6,
+  "components": null,
+  "cost": 225,
+  "created": false,
+  "id": 265,
+  "mc": false,
+  "name": "Infused Raindrops",
+  "notes": "Uses at most one charge per damage instance.",
+  "qual": "component",
+  "short_name": "infused_raindrop"
+}

@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 15 health and mana per charge stored.\n\n Max 10 charges. Gains a charge whenever a visible enemy within 1200 range uses an ability.",
+      "title": "Energy Charge",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "max_charges",
+      "value": "10"
+    },
+    {
+      "key": "charge_radius",
+      "value": "1200"
+    },
+    {
+      "key": "restore_per_charge",
+      "value": "15"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 17,
+  "charges": false,
+  "components": null,
+  "cost": 200,
+  "created": false,
+  "id": 34,
+  "mc": false,
+  "name": "Magic Stick",
+  "notes": "Gains charges for spells cast by visible enemies in 1200 range.\nCertain abilities and item abilities will not add charges.",
+  "qual": "component",
+  "short_name": "magic_stick"
+}

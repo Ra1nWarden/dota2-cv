@@ -1,0 +1,52 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks reduce the target's armor by -2, slows their movement by -16% (-8% against melee targets), and reduces Health Restoration by 16%. Lasts for 3 seconds.",
+      "title": "Corrosion",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "corruption_armor",
+      "value": "-2"
+    },
+    {
+      "key": "slow_melee",
+      "value": "-8"
+    },
+    {
+      "key": "slow_ranged",
+      "value": "-16"
+    },
+    {
+      "key": "heal_reduction",
+      "value": "16"
+    },
+    {
+      "key": "duration",
+      "value": "3.0"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "boots_of_elves",
+    "orb_of_frost",
+    "blight_stone"
+  ],
+  "cost": 1050,
+  "created": true,
+  "id": 569,
+  "mc": false,
+  "name": "Orb of Corrosion",
+  "notes": "Armor reduction does not stack with its components, Desolator, or Stygian Desolator.",
+  "qual": "rare",
+  "short_name": "orb_of_corrosion"
+}

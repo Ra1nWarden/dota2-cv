@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Spells have a 16% larger Area of Effect, but now additionally cost health equal to 35% of their mana cost.",
+      "title": "Blood Invocation",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_pct",
+      "value": "35"
+    },
+    {
+      "key": "aoe_pct",
+      "value": "16"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1642,
+  "mc": false,
+  "name": "Dezun Bloodrite",
+  "notes": "",
+  "qual": null,
+  "short_name": "dezun_bloodrite"
+}

@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Increases cast range by 100 and attack range by 100 (Melee & Ranged). Taking over 25 damage from a player controlled source or Roshan disables this effect for 6 seconds.",
+      "title": "Keen Eye",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_attack_range",
+      "value": "100"
+    },
+    {
+      "key": "bonus_cast_range",
+      "value": "100"
+    },
+    {
+      "key": "damage_disable",
+      "value": "6"
+    },
+    {
+      "key": "damage_threshold",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1607,
+  "mc": false,
+  "name": "Magnifying Monocle",
+  "notes": "",
+  "qual": null,
+  "short_name": "magnifying_monocle"
+}

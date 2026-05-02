@@ -1,0 +1,392 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CHAOS BOLT SPEED:",
+          "key": "chaos_bolt_speed",
+          "value": "700"
+        },
+        {
+          "header": "MINIMUM STUN:",
+          "key": "stun_min",
+          "value": [
+            "1.25",
+            "1.5",
+            "1.75",
+            "2"
+          ]
+        },
+        {
+          "header": "MAXIMUM STUN:",
+          "key": "stun_max",
+          "value": [
+            "1.75",
+            "2.25",
+            "2.75",
+            "3.25"
+          ]
+        },
+        {
+          "header": "MINIMUM DAMAGE:",
+          "key": "damage_min",
+          "value": [
+            "90",
+            "120",
+            "150",
+            "180"
+          ]
+        },
+        {
+          "header": "MAXIMUM DAMAGE:",
+          "key": "damage_max",
+          "value": [
+            "155",
+            "240",
+            "325",
+            "410"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FAKE BOLT DISTANCE:",
+          "key": "fake_bolt_distance",
+          "value": "675"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": "0"
+        },
+        {
+          "header": "ILLUSION DAMAGE REDUCTION:",
+          "key": "illusion_damage_reduction_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE RANGE PCT:",
+          "key": "bounce_range_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "12",
+        "11",
+        "10"
+      ],
+      "desc": "Throws a mysterious bolt of energy at the target unit. It stuns for a random duration and deals random damage.",
+      "dmg_type": "Magical",
+      "key": "chaos_knight_chaos_bolt",
+      "mc": "110",
+      "name": "Chaos Bolt"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "600",
+            "650",
+            "700",
+            "750"
+          ]
+        },
+        {
+          "header": "PULL DISTANCE:",
+          "key": "pull_distance",
+          "value": [
+            "300",
+            "350",
+            "400",
+            "450"
+          ]
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor_reduction",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES IMMUNITY:",
+          "key": "pierces_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL DEBUFF DURATION PERCENT:",
+          "key": "additional_debuff_duration_percent",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL DEBUFF DURATION TOOLTIP:",
+          "key": "additional_debuff_duration_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Teleports Chaos Knight, any illusions he has, and the target unit to a point along the line between him and the target. The enemy unit has their armor reduced for 6s.",
+      "dmg_type": "",
+      "key": "chaos_knight_reality_rift",
+      "mc": "50",
+      "name": "Reality Rift"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE:",
+          "key": "chance",
+          "value": "33.33%"
+        },
+        {
+          "header": "CRITICAL MIN:",
+          "key": "crit_min",
+          "value": "120%"
+        },
+        {
+          "header": "CRITICAL MAX:",
+          "key": "crit_max",
+          "value": [
+            "140%",
+            "180%",
+            "220%",
+            "260%"
+          ]
+        },
+        {
+          "header": "CRITICAL LIFESTEAL:",
+          "key": "lifesteal",
+          "value": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP MULTIPLIER:",
+          "key": "creep_multiplier",
+          "value": "1"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Chaos Knight and his illusions' attacks have a chance to deal a critical strike of varying strength with bonus lifesteal. Lifesteal from creeps is reduced.",
+      "dmg_type": "",
+      "key": "chaos_knight_chaos_strike",
+      "mc": null,
+      "name": "Chaos Strike"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "chaos_knight_fundamental_forging",
+      "mc": null,
+      "name": "Fundamental Forging"
+    },
+    {
+      "attrib": [
+        {
+          "header": "NUMBER OF PHANTASMS:",
+          "key": "images_count",
+          "value": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "header": "PHANTASM DURATION:",
+          "key": "illusion_duration",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "OUTGOING DAMAGE:",
+          "key": "outgoing_damage",
+          "value": "0"
+        },
+        {
+          "header": "PHANTASM DAMAGE:",
+          "key": "outgoing_damage_tooltip",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "INCOMING DAMAGE:",
+          "key": "incoming_damage",
+          "value": "250"
+        },
+        {
+          "header": "PHANTASM DAMAGE TAKEN:",
+          "key": "incoming_damage_tooltip",
+          "value": "350%"
+        },
+        {
+          "generated": true,
+          "header": "INVULN DURATION:",
+          "key": "invuln_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ILLUSION CHANCE:",
+          "key": "bonus_illusion_chance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ILLUSION COUNT:",
+          "key": "bonus_illusion_count",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "75",
+      "desc": "Summons several phantasmal copies of the Chaos Knight from alternate dimensions. The phantasms are illusions that deal 100% damage, but take 350% damage.\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "chaos_knight_phantasm",
+      "mc": [
+        "100",
+        "200",
+        "300"
+      ],
+      "name": "Phantasm"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Phantasm",
+    "desc": "Gains a passive component.  When an illusion of Chaos Knight is created, there is a 50% chance to create an additional illusion under Chaos Knight's control.\n\nWhen Phantasm is activated, also creates an illusion of allied heroes globally.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Chaos Bolt",
+    "desc": "Causes Chaos Bolt to create a Phantasm illusion to attack the target. This illusion deals =15% less damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 1.8,
+    "armor": 2,
+    "attack_max": 49,
+    "attack_min": 29,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 1.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.1
+  },
+  "name": "Chaos Knight",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Durable",
+    "Pusher",
+    "Initiator"
+  ],
+  "short_name": "chaos_knight",
+  "talents": [
+    {
+      "left": "+?% Chaos Strike Chance",
+      "level": 25,
+      "right": "-?% Phantasm Illusion Incoming Damage"
+    },
+    {
+      "left": "+? Min/Max Chaos Bolt Duration",
+      "level": 20,
+      "right": "Reality Rift Pierces Spell Immunity"
+    },
+    {
+      "left": "-?s Chaos Bolt Cooldown",
+      "level": 15,
+      "right": "+10 Strength"
+    },
+    {
+      "left": "+?% Chaos Strike Lifesteal",
+      "level": 10,
+      "right": "+? Reality Rift Pull Distance"
+    }
+  ]
+}

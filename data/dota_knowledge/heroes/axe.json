@@ -1,0 +1,357 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "315"
+        },
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2.1",
+            "2.4",
+            "2.7",
+            "3"
+          ]
+        },
+        {
+          "header": "ENEMY ATTACK SPEED BONUS:",
+          "key": "bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "desc": "Axe taunts nearby enemy units, forcing them to attack him while he gains bonus armor during the duration.",
+      "dmg_type": "",
+      "key": "axe_berserkers_call",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Berserker's Call"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "12"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow",
+          "value": [
+            "18",
+            "22",
+            "26",
+            "30"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "12",
+            "18",
+            "24",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED BONUS:",
+          "key": "speed_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "775",
+            "850",
+            "925"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "15",
+        "10",
+        "5"
+      ],
+      "desc": "Enrages an enemy unit, causing it to take damage over time until it kills another unit or the duration ends. The enemy is slowed as long as they are facing away from Axe.",
+      "dmg_type": "Pure",
+      "key": "axe_battle_hunger",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Battle Hunger"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "120",
+            "140",
+            "160"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "ATTACKS TO HELIX:",
+          "key": "trigger_attacks",
+          "value": [
+            "7",
+            "6",
+            "5",
+            "4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HELIX LIFESTEAL:",
+          "key": "helix_lifesteal",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": "0.3",
+      "desc": "After a set number of attacks, Axe will perform a helix counter attack, dealing pure damage to all nearby enemies.",
+      "dmg_type": "Pure",
+      "key": "axe_counter_helix",
+      "mc": null,
+      "name": "Counter Helix"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "275",
+            "375",
+            "475"
+          ]
+        },
+        {
+          "header": "KILL MOVE SPEED BONUS:",
+          "key": "speed_bonus",
+          "value": [
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "header": "KILL ARMOR BONUS:",
+          "key": "armor_bonus",
+          "value": [
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "KILL BUFF DURATION:",
+          "key": "speed_duration",
+          "value": "6"
+        },
+        {
+          "header": "KILL BUFF RADIUS:",
+          "key": "speed_aoe",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE SPEED:",
+          "key": "charge_speed",
+          "value": "1200"
+        },
+        {
+          "header": "ARMOR PER STACK:",
+          "key": "armor_per_stack",
+          "value": [
+            "1",
+            "1.5",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "80",
+        "75",
+        "70"
+      ],
+      "desc": "Axe spots a weakness and strikes, dealing pure damage. When an enemy hero is killed with Culling Blade, its cooldown is reset, and all nearby allied units gain bonus movement speed and armor.\n\nAxe permanently drenches his blade every time he kills an enemy Hero with Culling Blade, gaining bonus armor for each stack.",
+      "dmg_type": "Pure",
+      "key": "axe_culling_blade",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Culling Blade"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ARMOR PCT AS STRENGTH:",
+          "key": "armor_pct_as_strength",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "BONUS LINGER DURATION:",
+          "key": "bonus_linger_duration",
+          "value": "3"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Axe gains Strength based on 50% of his Armor as long as there are no allied heroes within 700 distance from Axe. The effect fades over 3s after approaching an ally.",
+      "dmg_type": "",
+      "key": "axe_one_man_army",
+      "mc": null,
+      "name": "One Man Army"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Counter Helix",
+    "desc": "Counter Helix now applies a stacking debuff to enemies hit by it that causes them to deal less total attack damage to Axe. Counter Helix no longer has a cooldown and its counter advances when Axe attacks.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Battle Hunger",
+    "desc": "Multiple instances of Battle Hunger can stack on a single target.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 20,
+    "agi_gain": 1.7,
+    "armor": 0,
+    "attack_max": 35,
+    "attack_min": 31,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2.5,
+    "int": 18,
+    "int_gain": 1.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 2.7
+  },
+  "name": "Axe",
+  "primary_attr": "str",
+  "roles": [
+    "Initiator",
+    "Durable",
+    "Disabler",
+    "Carry"
+  ],
+  "short_name": "axe",
+  "talents": [
+    {
+      "left": "+? Berserker's Call AoE",
+      "level": 25,
+      "right": "+? Culling Blade Damage"
+    },
+    {
+      "left": "+15 Strength",
+      "level": 20,
+      "right": "+? Counter Helix Damage"
+    },
+    {
+      "left": "+? Battle Hunger Damage Per Second",
+      "level": 15,
+      "right": "+? Berserker's Call Armor"
+    },
+    {
+      "left": "+?s Culling Blade Kill Buff Bonus Duration",
+      "level": 10,
+      "right": "+?% Movement Speed per active Battle Hunger"
+    }
+  ]
+}

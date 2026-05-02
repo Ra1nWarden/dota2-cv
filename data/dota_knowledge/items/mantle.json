@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 140,
+  "created": false,
+  "id": 15,
+  "mc": false,
+  "name": "Mantle of Intelligence",
+  "notes": "",
+  "qual": "component",
+  "short_name": "mantle"
+}

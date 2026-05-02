@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 775,
+  "created": false,
+  "id": 233,
+  "mc": false,
+  "name": "Aether Lens Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_aether_lens"
+}

@@ -1,0 +1,371 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BEAM DAMAGE:",
+          "key": "beam_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "GLAIVES FIRED:",
+          "key": "glaives_fired",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GLAIVES ATTACK RADIUS:",
+          "key": "glaives_attack_radius",
+          "value": "0"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.6"
+        },
+        {
+          "header": "DAMAGE BUFF DURATION:",
+          "key": "damage_buff_duration",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE BUFF PER BEAM:",
+          "key": "damage_buff_per_beam",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "desc": "Calls a beam of lunar energy down upon an enemy, damaging and briefly stunning them.",
+      "dmg_type": "Magical",
+      "key": "luna_lucent_beam",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Lucent Beam"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "rotating_glaives_duration",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ROTATING GLAIVES:",
+          "key": "rotating_glaives",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "ROTATING GLAIVES MOVEMENT RADIUS:",
+          "key": "rotating_glaives_movement_radius",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "ROTATING GLAIVES MOVEMENT RADIUS EXPAND SPEED SCALE:",
+          "key": "rotating_glaives_movement_radius_expand_speed_scale",
+          "value": "4"
+        },
+        {
+          "header": "COLLISION RADIUS:",
+          "key": "rotating_glaives_hit_radius",
+          "value": "200"
+        },
+        {
+          "header": "COLLISION DAMAGE:",
+          "key": "rotating_glaives_collision_damage",
+          "value": [
+            "28%",
+            "32%",
+            "36%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ROTATING GLAIVES SPEED:",
+          "key": "rotating_glaives_speed",
+          "value": "160"
+        },
+        {
+          "generated": true,
+          "header": "ROTATING GLAIVE COLLISION SPEED DAMAGE TOOLTIP:",
+          "key": "rotating_glaive_collision_speed_damage_tooltip",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "rotating_glaives_damage_reduction",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "desc": "Creates 4 glaives that rotate 225 radius around Luna. Any enemy unit that collides with a glaive will take a percentage of Luna's Attack Damage.",
+      "dmg_type": "Physical",
+      "key": "luna_lunar_orbit",
+      "mc": [
+        "65",
+        "70",
+        "75",
+        "80"
+      ],
+      "name": "Lunar Orbit"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BOUNCE RADIUS:",
+          "key": "range",
+          "value": "500"
+        },
+        {
+          "header": "BOUNCES:",
+          "key": "bounces",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "DAMAGE REDUCTION PER BOUNCE:",
+          "key": "damage_reduction_percent",
+          "value": [
+            "50%",
+            "45%",
+            "40%",
+            "35%"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce.",
+      "dmg_type": "",
+      "key": "luna_moon_glaive",
+      "mc": null,
+      "name": "Moon Glaives"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "BONUS NIGHT VISION:",
+          "key": "bonus_night_vision",
+          "value": "225"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Grants attack damage to Luna and nearby allied heroes within 1200 range, with Luna receiving double the attack damage bonuses. At night, Lunar Blessing is global, and Luna is blessed with bonus night vision.",
+      "dmg_type": "",
+      "key": "luna_lunar_blessing",
+      "mc": null,
+      "name": "Lunar Blessing"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TOTAL BEAMS:",
+          "key": "beams",
+          "value": [
+            "6",
+            "9",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BEAM INTERVAL:",
+          "key": "beam_interval",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "BEAM INTERVAL SCEPTER:",
+          "key": "beam_interval_scepter",
+          "value": "0.3"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "675"
+        },
+        {
+          "header": "MAX BEAMS PER UNIT:",
+          "key": "hit_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "header": "ECLIPSE DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "2.4",
+            "4.2",
+            "6"
+          ]
+        },
+        {
+          "header": "NIGHT DURATION:",
+          "key": "night_duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "105",
+      "desc": "Showers random nearby enemies with strikes from Luna's current level of Lucent Beam. These beams do not stun their targets, and there is a maximum number of times that a single target can be struck. Also turns day into night for a short time.",
+      "dmg_type": "Magical",
+      "key": "luna_eclipse",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Eclipse"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Eclipse",
+    "desc": "Allows Luna to cast Eclipse on an allied unit or herself and have its effects follow them, or cast it on an area. Increases total beams, reduces duration, removes the limit on beams per unit, and makes the beams appear twice as fast.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Lunar Orbit",
+    "desc": "Increases damage reduction. While active, Luna gains 20% bonus movement speed.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 3.4,
+    "armor": 2,
+    "attack_max": 32,
+    "attack_min": 26,
+    "attack_range": 330,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 23,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.2
+  },
+  "name": "Luna",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher"
+  ],
+  "short_name": "luna",
+  "talents": [
+    {
+      "left": "+?/? Lunar Blessing Allied/Self Damage",
+      "level": 25,
+      "right": "Lucent Beam Hits An Additional Target"
+    },
+    {
+      "left": "-?s Eclipse Cooldown",
+      "level": 20,
+      "right": "?x Lunar Orbit Damage / Speed"
+    },
+    {
+      "left": "+? Lunar Orbit Glaive",
+      "level": 15,
+      "right": "+? Lucent Beam Damage"
+    },
+    {
+      "left": "-?% Moon Glaives Damage Reduction",
+      "level": 10,
+      "right": "+?s Lucent Beam Ministun"
+    }
+  ]
+}

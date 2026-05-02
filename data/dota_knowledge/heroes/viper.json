@@ -1,0 +1,468 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "movement_speed",
+          "value": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ]
+        },
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "max_stacks",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "BONUS RANGE:",
+          "key": "bonus_range",
+          "value": "25"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "expiration_damage_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACCUMULATED DAMAGE EXPLOSION PCT:",
+          "key": "accumulated_damage_explosion_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Intensifies Viper's venom, adding an effect to his normal attack that applies a stacking movement speed slow and magic resistance deduction while dealing damage over time. Stacks up to 6 times.",
+      "dmg_type": "Magical",
+      "key": "viper_poison_attack",
+      "mc": "20",
+      "name": "Poison Attack"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MIN DPS:",
+          "key": "min_damage",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "header": "MAX DPS:",
+          "key": "max_damage",
+          "value": [
+            "35",
+            "65",
+            "95",
+            "125"
+          ]
+        },
+        {
+          "header": "MAX DPS DURATION:",
+          "key": "max_duration",
+          "value": "4"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attack_slow",
+          "value": [
+            "30",
+            "40",
+            "50",
+            "60"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "6.5",
+            "7",
+            "7.5",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2400"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS INCREASE:",
+          "key": "radius_increase",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EXPAND INTERVAL:",
+          "key": "expand_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "14",
+      "desc": "Viper releases a Nethertoxin at the targeted area. Units in that area take an increasing damage over time based on how long they remain in it. Units in it have their attack speed slowed.",
+      "dmg_type": "Magical",
+      "key": "viper_nethertoxin",
+      "mc": "70",
+      "name": "Nethertoxin"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "9",
+            "18",
+            "27",
+            "36"
+          ]
+        },
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "bonus_magic_resistance",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "header": "MAX RANGE RADIUS:",
+          "key": "max_range",
+          "value": "1200"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Viper exudes an infectious toxin that damages and slows the attack speed of any enemy that damages it in a 1200 radius. The acid exudate also increases Viper's resistance to magic.",
+      "dmg_type": "Magical",
+      "key": "viper_corrosive_skin",
+      "mc": null,
+      "name": "Corrosive Skin"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "corrosive_radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "0.1"
+        },
+        {
+          "header": "EFFECT DURATION:",
+          "key": "effect_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "DIVE SPEED:",
+          "key": "dive_speed",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "START HEIGHT:",
+          "key": "start_height",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED SLOW:",
+          "key": "movespeed_slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "20",
+      "desc": "Viper slams into the ground, releasing a Nethertoxin and splattering each enemy in a 500 AoE for 4 seconds with the effect of Corrosive Skin.",
+      "dmg_type": "Magical",
+      "key": "viper_nose_dive",
+      "mc": "75",
+      "name": "Nosedive"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "Physical",
+      "key": "viper_predator",
+      "mc": null,
+      "name": "Predator"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "70",
+            "110",
+            "150"
+          ]
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "60",
+            "70",
+            "80"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "100",
+            "140",
+            "180"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "DOES BREAK:",
+          "key": "does_break",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "50",
+        "40",
+        "30"
+      ],
+      "desc": "Viper slows the targeted enemy unit's movement and attack speed while also disabling their passives and dealing poison damage over time. The slowing effect reduces over the duration of the poison.",
+      "dmg_type": "Magical",
+      "key": "viper_viper_strike",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Viper Strike"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Nosedive",
+    "desc": "Viper slams into the ground, releasing a Nethertoxin and splattering each enemy in a 500 AoE for 4 seconds with the effect of Corrosive Skin.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Poison Attack",
+    "desc": "Increases max stacks, and causes Poison Attack to lower armor per stack and to affect buildings for reduced damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 2.9,
+    "armor": -2,
+    "attack_max": 29,
+    "attack_min": 27,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 17,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 275,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Viper",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Initiator",
+    "Disabler"
+  ],
+  "short_name": "viper",
+  "talents": [
+    {
+      "left": "Nethertoxin Radius increases by ? every ?s",
+      "level": 25,
+      "right": "-?% Viper Strike Mana Cost / Cooldown"
+    },
+    {
+      "left": "+? Viper Strike DPS",
+      "level": 20,
+      "right": "+? Predator Damage Per Missing Health"
+    },
+    {
+      "left": "+?/? Nethertoxin Min/Max Damage",
+      "level": 15,
+      "right": "+?% Poison Attack Slow / Damage"
+    },
+    {
+      "left": "+?s Viper Strike Duration",
+      "level": 10,
+      "right": "+? Corrosive Skin Damage Per Second"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "The next attack hexes the hit enemy into a frog for 1.5 seconds.",
+      "title": "Hex Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "1.5"
+    },
+    {
+      "key": "movespeed",
+      "value": "140"
+    },
+    {
+      "display": "+ {value}% Attack Projectile Speed",
+      "key": "projectile_bonus",
+      "value": "60"
+    }
+  ],
+  "behavior": null,
+  "cd": 10,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 325,
+  "mc": false,
+  "name": "Prince's Knife",
+  "notes": "",
+  "qual": null,
+  "short_name": "princes_knife"
+}

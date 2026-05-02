@@ -1,0 +1,26 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "bonus_magical_armor",
+      "value": "18"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "tooltip_resist",
+      "value": "18"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 31,
+  "mc": false,
+  "name": "Cloak",
+  "notes": "Stacks multiplicatively with other sources of magic resistance.",
+  "qual": "component",
+  "short_name": "cloak"
+}

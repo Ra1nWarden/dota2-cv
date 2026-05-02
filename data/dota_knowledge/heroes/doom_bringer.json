@@ -1,0 +1,462 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BONUS GOLD:",
+          "key": "bonus_gold",
+          "value": [
+            "35",
+            "70",
+            "105",
+            "140"
+          ]
+        },
+        {
+          "header": "CREEP MAX LEVEL:",
+          "key": "creep_level",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ABILITY BONUS LEVEL:",
+          "key": "ability_bonus_level",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HERO ABILITY STEAL TIME:",
+          "key": "hero_ability_steal_time",
+          "value": "99999"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESIST:",
+          "key": "magic_resist",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS AOE PCT:",
+          "key": "bonus_aoe_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS SPELL AMP PCT:",
+          "key": "bonus_spell_amp_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "",
+      "cd": "66",
+      "desc": "Consumes an enemy or neutral creep, acquiring any special abilities that it possessed. If alt-cast is activated, Doom will not acquire the creep's abilities. Duration is equal to the cooldown.",
+      "dmg_type": "",
+      "key": "doom_bringer_devour",
+      "mc": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "name": "Devour"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "35",
+            "50",
+            "65"
+          ]
+        },
+        {
+          "header": "BONUS HP REGEN:",
+          "key": "bonus_health_regen",
+          "value": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "666"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_movement_speed_pct",
+          "value": [
+            "7%",
+            "8%",
+            "9%",
+            "10%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IS PERMANENT:",
+          "key": "is_permanent",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "666"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "41",
+        "39",
+        "37",
+        "35"
+      ],
+      "desc": "Carpets the nearby earth in flames which damage enemies, while also granting Doom increased movement speed and health regeneration.",
+      "dmg_type": "Magical",
+      "key": "doom_bringer_scorched_earth",
+      "mc": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "name": "Scorched Earth"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE BURN DAMAGE:",
+          "key": "burn_damage",
+          "value": [
+            "15",
+            "30",
+            "45",
+            "60"
+          ]
+        },
+        {
+          "header": "MAX HP AS DAMAGE:",
+          "key": "burn_damage_pct",
+          "value": [
+            "1%",
+            "2%",
+            "3%",
+            "4%"
+          ]
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "burn_duration",
+          "value": "4"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "ministun_duration",
+          "value": "0.66"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Doom swings his burning sword, igniting the enemy. Stuns for 0.66 seconds and applies a 4 second burn that deals a base damage plus a percentage of the target's Max HP as damage per second.",
+      "dmg_type": "Magical",
+      "key": "doom_bringer_infernal_blade",
+      "mc": "35",
+      "name": "Infernal Blade"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "This slot will be replaced with abilities acquired using Devour.",
+      "dmg_type": "",
+      "key": "doom_bringer_empty1",
+      "mc": null,
+      "name": "Devoured Ability"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "This slot will be replaced with abilities acquired using Devour.",
+      "dmg_type": "",
+      "key": "doom_bringer_empty2",
+      "mc": null,
+      "name": "Devoured Ability"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "12",
+            "14",
+            "16"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "25",
+            "45",
+            "66"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DENIABLE PCT:",
+          "key": "deniable_pct",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "DOES BREAK:",
+          "key": "does_break",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DOES MUTE:",
+          "key": "does_mute",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER AURA RADIUS:",
+          "key": "scepter_aura_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UPGRADE INTERVAL:",
+          "key": "upgrade_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UPGRADE AMOUNT:",
+          "key": "upgrade_amount",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "140",
+        "130",
+        "120"
+      ],
+      "desc": "Inflicts a curse that dispels an enemy and prevents them from casting spells or healing in any way, while taking damage over time.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Pure",
+      "key": "doom_bringer_doom",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Doom"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE PCT BASE:",
+          "key": "bonus_damage_pct_base",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DEBUFF DURATION:",
+          "key": "damage_debuff_duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "SPREAD RADIUS:",
+          "key": "spread_radius",
+          "value": "66"
+        },
+        {
+          "generated": true,
+          "header": "LEVEL MULTIPLIER:",
+          "key": "level_multiplier",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "BONUS AT LEVEL PCT:",
+          "key": "bonus_at_level_pct",
+          "value": "66"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Doom's attacks curse enemy heroes. After 2.5s, the cursed hero bursts with a pillar of fire, damaging itself and all units in a 66 AoE for 15% of the damage taken from Doom during the curse. The damage and radius of the curse is 66% stronger if the enemy's level is a multiple of 6.",
+      "dmg_type": [],
+      "key": "doom_bringer_lvl_pain",
+      "mc": null,
+      "name": "Lvl ? Pain"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Doom",
+    "desc": "Doom applies Break to enemies. Allies in a 350 radius around the doomed target also suffer the effects of Doom. Allows Doom to be self-cast to affect enemies around himself with Doom.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Devour",
+    "desc": "Devour has 2 charges and can target Ancients. Stolen creep abilities have 20% increased AoE and 40% increased spell amplification.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.5,
+    "armor": 2,
+    "attack_max": 42,
+    "attack_min": 32,
+    "attack_range": 200,
+    "attack_rate": 1.9,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.66,
+    "int": 15,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.6
+  },
+  "name": "Doom",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Initiator",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "doom_bringer",
+  "talents": [
+    {
+      "left": "Doom applies Mute",
+      "level": 25,
+      "right": "Permanent Scorched Earth"
+    },
+    {
+      "left": "-?s Doom Cooldown",
+      "level": 20,
+      "right": "+?% Infernal Blade Max HP As Damage"
+    },
+    {
+      "left": "+?% Scorched Earth Movement Speed",
+      "level": 15,
+      "right": "+66 Damage"
+    },
+    {
+      "left": "Devour grants ?% Magic Resistance",
+      "level": 10,
+      "right": "+?s Infernal Blade Stun Duration"
+    }
+  ]
+}

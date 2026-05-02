@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 800,
+  "created": false,
+  "id": 253,
+  "mc": false,
+  "name": "Glimmer Cape Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_glimmer_cape"
+}

@@ -1,0 +1,66 @@
+{
+  "abilities": [
+    {
+      "description": "Restores 150 mana to all nearby allies.\n\nRadius: 1200",
+      "title": "Replenish",
+      "type": "active"
+    },
+    {
+      "description": "Grants 1 mana regeneration to allies. \n\nRadius: 1200",
+      "title": "Basilius Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement",
+      "value": "45"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "0.25"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "125"
+    },
+    {
+      "key": "aura_mana_regen",
+      "value": "1"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "replenish_amount",
+      "value": "150"
+    },
+    {
+      "key": "replenish_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 55,
+  "charges": false,
+  "components": [
+    "boots",
+    "ring_of_basilius",
+    "wizard_hat"
+  ],
+  "cost": 1500,
+  "created": true,
+  "id": 180,
+  "mc": false,
+  "name": "Arcane Boots",
+  "notes": "Does not work on Meepo clones.",
+  "qual": "rare",
+  "short_name": "arcane_boots"
+}

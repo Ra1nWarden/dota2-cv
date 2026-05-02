@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Gives True Sight over a 300 radius revealing wards and units even in Fog of War.",
+      "title": "Reveal",
+      "type": "active"
+    },
+    {
+      "description": "Grants the ability to see invisible units and wards to any allied vision within 900 range of its carrier.",
+      "title": "True Sight",
+      "type": "passive"
+    },
+    {
+      "description": "Dropped on death, and cannot be destroyed.",
+      "title": "Everlasting",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "radius",
+      "value": "900"
+    },
+    {
+      "key": "active_radius",
+      "value": "300"
+    },
+    {
+      "key": "duration",
+      "value": "4"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 12,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 30,
+  "mc": false,
+  "name": "Gem of True Sight",
+  "notes": "Disabled while on a courier.",
+  "qual": "component",
+  "short_name": "gem"
+}

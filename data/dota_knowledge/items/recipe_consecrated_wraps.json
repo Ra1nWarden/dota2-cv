@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 700,
+  "created": false,
+  "id": 1853,
+  "mc": false,
+  "name": "Consecrated Wraps Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_consecrated_wraps"
+}

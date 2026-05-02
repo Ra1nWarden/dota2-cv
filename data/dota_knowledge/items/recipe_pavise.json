@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 675,
+  "created": false,
+  "id": 1127,
+  "mc": false,
+  "name": "Pavise Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_pavise"
+}

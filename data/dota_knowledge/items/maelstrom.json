@@ -1,0 +1,65 @@
+{
+  "abilities": [
+    {
+      "description": "Grants a 25% chance on attack to release a bolt of electricity that leaps between 4 targets within a 650 radius, dealing 110 magical damage to each. Lightning proc pierces evasion.",
+      "title": "Chain Lightning",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "25"
+    },
+    {
+      "key": "chain_chance",
+      "value": "25"
+    },
+    {
+      "key": "chain_damage",
+      "value": "110"
+    },
+    {
+      "key": "chain_strikes",
+      "value": "4"
+    },
+    {
+      "key": "chain_radius",
+      "value": "650"
+    },
+    {
+      "key": "chain_delay",
+      "value": "0.25"
+    },
+    {
+      "key": "chain_cooldown",
+      "value": "0.2"
+    },
+    {
+      "key": "illusion_multiplier_pct",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "mithril_hammer",
+    "javelin",
+    "gloves"
+  ],
+  "cost": 2950,
+  "created": true,
+  "id": 166,
+  "mc": false,
+  "name": "Maelstrom",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "maelstrom"
+}

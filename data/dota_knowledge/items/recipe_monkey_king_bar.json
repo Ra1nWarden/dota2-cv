@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 134,
+  "mc": false,
+  "name": "Monkey King Bar Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_monkey_king_bar"
+}

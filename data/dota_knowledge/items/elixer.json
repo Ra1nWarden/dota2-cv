@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Restores 500 health and 250 mana to the target over 6 seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+      "title": "Consume",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health",
+      "value": "500"
+    },
+    {
+      "key": "mana",
+      "value": "250"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 3,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 302,
+  "mc": false,
+  "name": "Elixir",
+  "notes": "",
+  "qual": null,
+  "short_name": "elixer"
+}

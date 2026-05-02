@@ -1,0 +1,88 @@
+{
+  "abilities": [
+    {
+      "description": "Dispels both the wearer and the target. Enemy targets are slowed for 5 seconds. Allied targets gain bonus movespeed and 40% slow resistance for 5 seconds. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.\nDispel Type: Basic Dispel",
+      "title": "Suppress",
+      "type": "active"
+    },
+    {
+      "description": "Each attack burns 40 mana from the target, and deals 1 physical damage per burned mana. \n\nIllusions do not burn mana.",
+      "title": "Manabreak",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "40"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "key": "feedback_mana_burn",
+      "value": "40"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_melee",
+      "value": "0"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_ranged",
+      "value": "0"
+    },
+    {
+      "key": "purge_rate",
+      "value": "5"
+    },
+    {
+      "key": "purge_root_duration",
+      "value": "3.0"
+    },
+    {
+      "key": "damage_per_burn",
+      "value": "1.0"
+    },
+    {
+      "key": "enemy_effect_duration",
+      "value": "5.0"
+    },
+    {
+      "key": "ally_effect_duration",
+      "value": "5.0"
+    },
+    {
+      "key": "movement_speed_buff_rate",
+      "value": "5"
+    },
+    {
+      "key": "phase_movement_speed",
+      "value": "100"
+    },
+    {
+      "key": "slow_resist",
+      "value": "40"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "AOE"
+  ],
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "diffusal_blade",
+    "eagle"
+  ],
+  "cost": 6100,
+  "created": true,
+  "id": 1097,
+  "mc": 75,
+  "name": "Disperser",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "disperser"
+}

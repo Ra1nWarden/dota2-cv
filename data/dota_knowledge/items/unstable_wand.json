@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Turns your hero into a critter for 3 seconds and gives them +20% Movement Speed.",
+      "title": "Pig, Out!",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "3"
+    },
+    {
+      "key": "all_stats",
+      "value": "0"
+    },
+    {
+      "key": "active_movespeed_pct",
+      "value": "20"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 20,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 838,
+  "mc": false,
+  "name": "Pig Pole",
+  "notes": "",
+  "qual": null,
+  "short_name": "unstable_wand"
+}

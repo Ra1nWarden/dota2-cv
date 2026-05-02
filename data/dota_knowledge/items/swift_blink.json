@@ -1,0 +1,55 @@
+{
+  "abilities": [
+    {
+      "description": "Teleport to a target point up to 1200 units away.\n\nAfter teleportation, you gain 40% phased movement speed and +35 Agility for 6 seconds. \n\nSwift Blink cannot be used for 3 seconds after taking damage from an enemy hero or Roshan.",
+      "title": "Swift Blink",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "blink_range",
+      "value": "1200"
+    },
+    {
+      "key": "blink_damage_cooldown",
+      "value": "3.0"
+    },
+    {
+      "key": "blink_range_clamp",
+      "value": "960"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "25"
+    },
+    {
+      "key": "bonus_movement",
+      "value": "40"
+    },
+    {
+      "key": "bonus_agi_active",
+      "value": "35"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "blink",
+    "eagle"
+  ],
+  "cost": 6800,
+  "created": true,
+  "id": 603,
+  "mc": false,
+  "name": "Swift Blink",
+  "notes": "Self-casting will cause you to teleport in the direction of your team's fountain.",
+  "qual": "component",
+  "short_name": "swift_blink"
+}

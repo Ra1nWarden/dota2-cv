@@ -1,0 +1,508 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DISTANCE DAMAGE:",
+          "key": "distance_damage_pct",
+          "value": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE CAP:",
+          "key": "distance_cap",
+          "value": "1750"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE MULTIPLIER:",
+          "key": "illusion_damage_multiplier",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "575"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "6",
+        "4",
+        "2",
+        "0"
+      ],
+      "desc": "Places an enchantment on each attack while activated, causing it to deal additional damage based on how far away the target is. The farther the target, the greater the damage dealt. Deals double damage to illusions.",
+      "dmg_type": "Pure",
+      "key": "enchantress_impetus",
+      "mc": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "name": "Impetus"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HERO MOVE SLOW:",
+          "key": "slow_movement_speed",
+          "value": [
+            "-30%",
+            "-40%",
+            "-50%",
+            "-60%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": [
+            "50",
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DOMINATE DURATION:",
+          "key": "dominate_duration",
+          "value": [
+            "30",
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "header": "CREEP MAX HEALTH BONUS:",
+          "key": "enchant_health",
+          "value": [
+            "150",
+            "250",
+            "350",
+            "450"
+          ]
+        },
+        {
+          "header": "CREEP ATTACK DAMAGE BONUS:",
+          "key": "enchant_damage",
+          "value": [
+            "0",
+            "20",
+            "40",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "XP GAIN PCT:",
+          "key": "xp_gain_pct",
+          "value": "40"
+        },
+        {
+          "header": "CREEP MAX LEVEL:",
+          "key": "level_req",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "6"
+          ]
+        },
+        {
+          "header": "MAX ENCHANTED CREEPS:",
+          "key": "max_creeps",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS HEALTH:",
+          "key": "bonus_health",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACKSPEED:",
+          "key": "bonus_attackspeed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "500",
+            "600",
+            "700",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "24",
+        "18",
+        "12"
+      ],
+      "desc": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for 3.5s, and Enchantress and her units gain bonus attack range against the target.\n\n If the enemy is a creep, she brings it under her control and receives 40% of their experience bounty. Enchantress can control creeps for up to 30s. \n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "enchantress_enchant",
+      "mc": "70",
+      "name": "Enchant"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "heal_duration",
+          "value": [
+            "7",
+            "9",
+            "11",
+            "13"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL INTERVAL:",
+          "key": "heal_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "HEAL PER SECOND:",
+          "key": "heal",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "WISPS:",
+          "key": "wisp_count",
+          "value": "9"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED:",
+          "key": "movespeed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OVERPROTECTIVE DAMAGE THRESHOLD:",
+          "key": "overprotective_damage_threshold",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OVERPROTECTIVE DAMAGE RESET INTERVAL:",
+          "key": "overprotective_damage_reset_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OVERPROTECTIVE WISP DURATION:",
+          "key": "overprotective_wisp_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OVERPROTECTIVE WISP COUNT:",
+          "key": "overprotective_wisp_count",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OVERPROTECTIVE MAX WISPS:",
+          "key": "overprotective_max_wisps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "35",
+      "desc": "A cloud of wisps heals Enchantress and any friendly units nearby.",
+      "dmg_type": "",
+      "key": "enchantress_natures_attendants",
+      "mc": "140",
+      "name": "Nature's Attendants"
+    },
+    {
+      "attrib": [
+        {
+          "header": "LEAP DISTANCE:",
+          "key": "hop_distance",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "HOP DURATION:",
+          "key": "hop_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "HOP HEIGHT:",
+          "key": "hop_height",
+          "value": "150"
+        },
+        {
+          "header": "TARGETS:",
+          "key": "attack_targets",
+          "value": "2"
+        },
+        {
+          "header": "BONUS RANGE:",
+          "key": "bonus_attack_range",
+          "value": "100"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the 2 furthest enemy units within Enchantress' attack range + 100.",
+      "dmg_type": "",
+      "key": "enchantress_bunny_hop",
+      "mc": "60",
+      "name": "Sproink"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": "70"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_move_speed",
+          "value": "100%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "MINIMUM ROOT DURATION:",
+          "key": "root_base_duration",
+          "value": "2"
+        },
+        {
+          "header": "ROOT DURATION PER UNIT:",
+          "key": "root_per_target",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "MAX ROOT:",
+          "key": "max_root",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "20",
+      "desc": "Enchantress roots an enemy unit. All creeps, ally, enemy and neutral within a radius will gain bonus movement and attack speed and attack the chosen target for 6 seconds.",
+      "dmg_type": "",
+      "key": "enchantress_little_friends",
+      "mc": "75",
+      "name": "Little Friends"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK SLOW:",
+          "key": "slow_attack_speed",
+          "value": [
+            "-110",
+            "-160",
+            "-210"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "4"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Enchantress beguiles her enemies, slowing their attacks when she is attacked.",
+      "dmg_type": "",
+      "key": "enchantress_untouchable",
+      "mc": null,
+      "name": "Untouchable"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Enchantress causes neutral creeps or any unit under her control to deal additional damage to enemy Heroes.",
+      "dmg_type": "",
+      "key": "enchantress_rabblerouser",
+      "mc": null,
+      "name": "Rabble-Rouser"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Little Friends",
+    "desc": "Enchantress roots an enemy unit. All creeps, ally, enemy and neutral within a radius will gain bonus movement and attack speed and attack the chosen target for 6 seconds.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Sproink",
+    "desc": "Leaps backward, dodges incoming projectiles, and launches an Impetus attack on the 2 furthest enemy units within Enchantress' attack range + 100.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 19,
+    "agi_gain": 2.1,
+    "armor": 1,
+    "attack_max": 31,
+    "attack_min": 21,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 320,
+    "night_vision": 800,
+    "str": 17,
+    "str_gain": 2
+  },
+  "name": "Enchantress",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Pusher",
+    "Durable",
+    "Disabler"
+  ],
+  "short_name": "enchantress",
+  "talents": [
+    {
+      "left": "+?% Impetus Damage",
+      "level": 25,
+      "right": "+? Untouchable Attack Slow"
+    },
+    {
+      "left": "+? Nature's Attendants Wisps",
+      "level": 20,
+      "right": "+? Health / +? Damage  for Enchantress and her units"
+    },
+    {
+      "left": "+? Attack Speed for Enchantress and her units",
+      "level": 15,
+      "right": "+? Nature's Attendants Heal"
+    },
+    {
+      "left": "+? Armor for Enchantress and her units",
+      "level": 10,
+      "right": "+? Movespeed during Nature's Attendants"
+    }
+  ]
+}

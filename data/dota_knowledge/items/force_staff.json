@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Pushes any target unit 600 units in the direction it is facing.",
+      "title": "Force",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "175"
+    },
+    {
+      "key": "push_length",
+      "value": "600"
+    },
+    {
+      "key": "enemy_cast_range",
+      "value": "850"
+    },
+    {
+      "key": "push_time",
+      "value": "0.5"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 19,
+  "charges": false,
+  "components": [
+    "staff_of_wizardry",
+    "fluffy_hat"
+  ],
+  "cost": 2200,
+  "created": true,
+  "id": 102,
+  "mc": 150,
+  "name": "Force Staff",
+  "notes": "Self-cast will cause you to use Force on yourself.\nForce Staff doesn't interrupt the target's actions.\nWill not work on a unit inside Chronosphere, Duel, or Black Hole.\nForce Staff has 850 cast range when cast on enemies.",
+  "qual": "rare",
+  "short_name": "force_staff"
+}

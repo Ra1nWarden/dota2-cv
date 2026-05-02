@@ -1,0 +1,30 @@
+{
+  "abilities": [
+    {
+      "description": "Reset the cooldown on all items (except Refresher Orb).",
+      "title": "Reset Cooldowns",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 374,
+  "mc": 350,
+  "name": "Ex Machina",
+  "notes": "",
+  "qual": null,
+  "short_name": "ex_machina"
+}

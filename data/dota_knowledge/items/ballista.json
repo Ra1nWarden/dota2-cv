@@ -1,0 +1,40 @@
+{
+  "abilities": [
+    {
+      "description": "Knocks back enemies 50 distance and deals 50 pure damage with every attack.",
+      "title": "Knockback",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Range (Ranged Only)",
+      "key": "attack_range_bonus",
+      "value": "250"
+    },
+    {
+      "key": "knockback_distance",
+      "value": "50"
+    },
+    {
+      "key": "knockback_duration",
+      "value": "0.2"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 367,
+  "mc": false,
+  "name": "Ballista",
+  "notes": "",
+  "qual": null,
+  "short_name": "ballista"
+}

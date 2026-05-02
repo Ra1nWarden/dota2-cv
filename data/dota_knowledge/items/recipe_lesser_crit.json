@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 200,
+  "created": false,
+  "id": 148,
+  "mc": false,
+  "name": "Crystalys Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_lesser_crit"
+}

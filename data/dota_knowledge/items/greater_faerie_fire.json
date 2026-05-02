@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 250 health.",
+      "title": "Imbue",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "20"
+    },
+    {
+      "key": "hp_restore",
+      "value": "250"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 10,
+  "charges": 3,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 299,
+  "mc": false,
+  "name": "Greater Faerie Fire",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "greater_faerie_fire"
+}

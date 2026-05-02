@@ -1,0 +1,472 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "VISION RANGE:",
+          "key": "vision_range",
+          "value": "400"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2.5",
+            "3",
+            "3.5",
+            "4"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "sprout_damage",
+          "value": [
+            "70",
+            "130",
+            "190",
+            "250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPROUT DAMAGE RADIUS:",
+          "key": "sprout_damage_radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "625",
+            "700",
+            "775",
+            "850"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "14",
+        "12",
+        "10",
+        "8"
+      ],
+      "desc": "Sprouts a ring of trees around a unit, damaging and trapping it in place and providing vision in a 400 radius.",
+      "dmg_type": "Magical",
+      "key": "furion_sprout",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Sprout"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BARRIER:",
+          "key": "barrier",
+          "value": [
+            "70",
+            "130",
+            "190",
+            "250"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "buff_duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "65",
+        "50",
+        "35",
+        "20"
+      ],
+      "desc": "Teleports to any point on the map. Gains a barrier after arriving to its destination.",
+      "dmg_type": "Physical",
+      "key": "furion_teleportation",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Teleportation"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "AREA OF EFFECT:",
+          "key": "area_of_effect",
+          "value": [
+            "150",
+            "225",
+            "300",
+            "375"
+          ]
+        },
+        {
+          "header": "TREANTS SUMMONED:",
+          "key": "max_treants",
+          "value": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "TREANT DURATION:",
+          "key": "treant_duration",
+          "value": "50"
+        },
+        {
+          "header": "TREANT HEALTH:",
+          "key": "treant_health",
+          "value": "450"
+        },
+        {
+          "header": "TREANT DAMAGE:",
+          "key": "treant_damage",
+          "value": [
+            "16",
+            "25",
+            "34",
+            "43"
+          ]
+        },
+        {
+          "header": "TREANT BONUS HERO DAMAGE:",
+          "key": "treant_bonus_hero_damage",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "TREANT MOVESPEED:",
+          "key": "treant_movespeed",
+          "value": [
+            "300",
+            "315",
+            "330",
+            "345"
+          ]
+        },
+        {
+          "header": "TREANT VISION (DAY):",
+          "key": "treant_vision_day",
+          "value": "500"
+        },
+        {
+          "header": "TREANT VISION (NIGHT):",
+          "key": "treant_vision_night",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "TREANT GOLD BOUNTY MIN:",
+          "key": "treant_gold_bounty_min",
+          "value": "18"
+        },
+        {
+          "generated": true,
+          "header": "TREANT GOLD BOUNTY MAX:",
+          "key": "treant_gold_bounty_max",
+          "value": "24"
+        },
+        {
+          "generated": true,
+          "header": "TREANT XP BOUNTY:",
+          "key": "treant_xp_bounty",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "TREEWALKING:",
+          "key": "treewalking",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "45",
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "Converts an area of trees into Treants under the command of Nature's Prophet.",
+      "dmg_type": "",
+      "key": "furion_force_of_nature",
+      "mc": "100",
+      "name": "Nature's Call"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "7"
+        },
+        {
+          "header": "DPS PER TREE:",
+          "key": "damage_per_tree",
+          "value": "15"
+        },
+        {
+          "header": "SLOW PER TREE:",
+          "key": "slow_per_tree",
+          "value": "7%"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "RANGE:",
+          "key": "range",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "18",
+      "desc": "Applies a curse on all enemy heroes within 900 range, displaying them in fog, slowing them, and dealing damage over time based on the number of trees within 250 radius. Treants count as trees for this purpose.",
+      "dmg_type": "Magical",
+      "key": "furion_curse_of_the_forest",
+      "mc": "80",
+      "name": "Curse of the Oldgrowth"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE PER TREE PCT:",
+          "key": "damage_per_tree_pct",
+          "value": "2"
+        },
+        {
+          "header": "TREE RADIUS:",
+          "key": "radius_base",
+          "value": "300"
+        },
+        {
+          "header": "TREANT MULTIPLIER:",
+          "key": "multiplier",
+          "value": "2"
+        },
+        {
+          "header": "TREANT RADIUS:",
+          "key": "radius_treant",
+          "value": "1200"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Nature's Prophet gains 2% bonus damage for each nearby tree. Treants also provide this bonus with multiplied values and with larger radius. Treants also possess this ability.",
+      "dmg_type": "",
+      "key": "furion_spirit_of_the_forest",
+      "mc": null,
+      "name": "Spirit of the Forest"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAX TARGETS:",
+          "key": "max_targets",
+          "value": "16"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "130",
+            "170"
+          ]
+        },
+        {
+          "header": "ADDED DAMAGE PER BOUNCE:",
+          "key": "damage_percent_add",
+          "value": "10%"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DELAY:",
+          "key": "jump_delay",
+          "value": "0.15"
+        },
+        {
+          "generated": true,
+          "header": "KILL DAMAGE:",
+          "key": "kill_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KILL DAMAGE DURATION:",
+          "key": "kill_damage_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "85",
+      "desc": "Damaging energy bounces around the map, striking enemies that are in vision starting with those closest to the cast point. Each enemy hit beyond the first adds damage, up to the maximum after 16 are hit.",
+      "dmg_type": "Magical",
+      "key": "furion_wrath_of_nature",
+      "mc": [
+        "130",
+        "160",
+        "190"
+      ],
+      "name": "Wrath of Nature"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Wrath of Nature",
+    "desc": "Entangles all enemies it hits. Duration scales from 1.5s up to 3.0s seconds at max bounce.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Curse of the Oldgrowth",
+    "desc": "Applies a curse on all enemy heroes within 900 range, displaying them in fog, slowing them, and dealing damage over time based on the number of trees within 250 radius. Treants count as trees for this purpose.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 2.6,
+    "armor": 0,
+    "attack_max": 26,
+    "attack_min": 20,
+    "attack_range": 600,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2.6
+  },
+  "name": "Nature's Prophet",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "furion",
+  "talents": [
+    {
+      "left": "Removed Teleportation Cooldown",
+      "level": 25,
+      "right": "3x Treant HP/Damage"
+    },
+    {
+      "left": "-15s Wrath of Nature Cooldown",
+      "level": 20,
+      "right": "+170 Sprout Damage"
+    },
+    {
+      "left": "+50 Treant Movement Speed",
+      "level": 15,
+      "right": "+100 Teleportation Barrier"
+    },
+    {
+      "left": "-10s Nature's Call Cooldown",
+      "level": 10,
+      "right": "+25 Wrath of Nature Base Damage"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Increases your base damage maximum by 6. When calculating your base damage or creep bounty from last hits, the value is computed 2 times and the highest value is taken.",
+      "title": "Loaded",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "roll_count",
+      "value": "2"
+    },
+    {
+      "key": "bonus_max_damage",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1716,
+  "mc": false,
+  "name": "Weighted Dice",
+  "notes": "",
+  "qual": null,
+  "short_name": "weighted_dice"
+}

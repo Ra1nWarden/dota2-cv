@@ -1,0 +1,59 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Status Resistance",
+      "key": "status_resistance",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "20"
+    },
+    {
+      "key": "movement_speed_percent_bonus_melee",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movement_speed_percent_bonus",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Health Restoration",
+      "key": "hp_regen_amp",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "slow_resistance",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "sange",
+    "yasha"
+  ],
+  "cost": 4200,
+  "created": true,
+  "id": 154,
+  "mc": false,
+  "name": "Sange and Yasha",
+  "notes": "Yasha-based movement speed bonuses from multiple items do not stack.",
+  "qual": "artifact",
+  "short_name": "sange_and_yasha"
+}

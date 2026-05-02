@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1750,
+  "created": false,
+  "id": 608,
+  "mc": false,
+  "name": "Overwhelming Blink Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_overwhelming_blink"
+}

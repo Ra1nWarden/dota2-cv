@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Toggle to convert 30% of your Max Health to Max Mana, or 30% of your Max Mana to Max Health.",
+      "title": "Flip",
+      "type": "toggle"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "conversion_pct",
+      "value": "30"
+    },
+    {
+      "key": "bonus_health_regen",
+      "value": "0"
+    },
+    {
+      "key": "bonus_mana_regen",
+      "value": "0"
+    },
+    {
+      "key": "regen_bonus_pct",
+      "value": "0"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 5,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1803,
+  "mc": false,
+  "name": "Doubloon",
+  "notes": "",
+  "qual": null,
+  "short_name": "doubloon"
+}

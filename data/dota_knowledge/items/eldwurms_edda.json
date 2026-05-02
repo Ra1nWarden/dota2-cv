@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "When consumed, increases Winter Wyvern's base intelligence by 25% of its current value at the time of consumption, and increases the current and maximum level of a basic ability by one. All values except for Mana Cost scale by 50% of the difference between their existing levels for the additional level",
+      "title": "Forbidden Knowledge",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "intellect_pct",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": 600,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1850,
+  "mc": false,
+  "name": "Eldwurm's Edda",
+  "notes": "",
+  "qual": null,
+  "short_name": "eldwurms_edda"
+}

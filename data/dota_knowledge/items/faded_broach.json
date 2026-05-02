@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "150"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 375,
+  "mc": false,
+  "name": "Faded Broach",
+  "notes": "",
+  "qual": null,
+  "short_name": "faded_broach"
+}

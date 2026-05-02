@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Lowers Scan cooldown by 50% . Increases attack range (Ranged only) and cast range of allies in a 1200 unit radius.",
+      "title": "Prescient Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "SCAN COOLDOWN REDUCTION: {value}%",
+      "key": "scan_cooldown_reduction",
+      "value": "50"
+    },
+    {
+      "display": "AURA BONUS ATTACK RANGE (RANGED ONLY): {value}",
+      "key": "attack_range",
+      "value": "75"
+    },
+    {
+      "display": "AURA BONUS CAST RANGE: {value}",
+      "key": "cast_range",
+      "value": "100"
+    },
+    {
+      "key": "aura_range",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 336,
+  "mc": false,
+  "name": "Telescope",
+  "notes": "",
+  "qual": null,
+  "short_name": "spy_gadget"
+}

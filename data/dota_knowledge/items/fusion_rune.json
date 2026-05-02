@@ -1,0 +1,30 @@
+{
+  "abilities": [
+    {
+      "description": "Grants the target the bonuses of every Power Rune for 50 seconds. Each use consumes a charge.",
+      "title": "Consume",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "50"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 120,
+  "charges": 3,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 313,
+  "mc": false,
+  "name": "Fusion Rune",
+  "notes": "",
+  "qual": null,
+  "short_name": "fusion_rune"
+}

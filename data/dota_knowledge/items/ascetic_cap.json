@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Whenever a debuff would be applied to the owner, grant %status_resistance% Status resistance and %slow_resistance%% Slow Resistance for %uration% seconds.",
+      "title": "Endurance",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "hp_regen",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": 25,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 825,
+  "mc": false,
+  "name": "Ascetic's Cap",
+  "notes": "",
+  "qual": null,
+  "short_name": "ascetic_cap"
+}

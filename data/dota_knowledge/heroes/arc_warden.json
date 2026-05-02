@@ -1,0 +1,508 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "ALLY SEARCH RADIUS:",
+          "key": "search_radius",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "THINK INTERVAL:",
+          "key": "think_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "15",
+            "30",
+            "45",
+            "60"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED SLOW:",
+          "key": "move_speed_slow_pct",
+          "value": [
+            "14%",
+            "21%",
+            "28%",
+            "35%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "500",
+            "600",
+            "700",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "APPLIES SILENCE:",
+          "key": "applies_silence",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "16",
+      "desc": "Infuses a lone enemy unit with swirling, volatile energy, dealing damage over time and slowing the target. The damage is not applied if another enemy unit is near the target.",
+      "dmg_type": "Magical",
+      "key": "arc_warden_flux",
+      "mc": "75",
+      "name": "Flux"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK ENEMIES:",
+          "key": "knockback_enemies",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED BONUS:",
+          "key": "attack_speed_bonus",
+          "value": [
+            "30",
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "header": "EVASION BONUS:",
+          "key": "evasion_chance",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS BUILDINGS:",
+          "key": "affects_buildings",
+          "value": "0"
+        },
+        {
+          "header": "RUNE PULL FORCE:",
+          "key": "rune_pull_strength",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "RUNE PULL MAX SPEED AS MULTIPLIER OF PULL STRENGTH:",
+          "key": "rune_pull_max_speed_as_multiplier_of_pull_strength",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "RUNE PULL FALLOFF MULTIPLIER:",
+          "key": "rune_pull_falloff_multiplier",
+          "value": "3"
+        },
+        {
+          "header": "RUNE PULL RADIUS:",
+          "key": "rune_pull_radius",
+          "value": [
+            "800",
+            "1200",
+            "1600",
+            "2000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RUNE ACTIVATE RADIUS BUFFER:",
+          "key": "rune_activate_radius_buffer",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "19",
+        "18",
+        "17"
+      ],
+      "desc": "Arc Warden generates a circular distortion field of magnetic energy. The Magnetic Field grants bonus attack speed and protects allied units within it by evading attacks coming from outside the field. The Magnetic Field pulls runes, and runes inside Magnetic Field automatically activate.",
+      "dmg_type": "",
+      "key": "arc_warden_magnetic_field",
+      "mc": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "name": "Magnetic Field"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SEARCH RADIUS:",
+          "key": "radius",
+          "value": "375"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "16"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "move_speed_slow_pct",
+          "value": "100%"
+        },
+        {
+          "header": "ACTIVATION DELAY:",
+          "key": "base_activation_delay",
+          "value": "1.5"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "spark_damage_base",
+          "value": [
+            "100",
+            "170",
+            "240",
+            "310"
+          ]
+        },
+        {
+          "header": "WRAITH SPEED:",
+          "key": "wraith_speed_base",
+          "value": "550"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "ministun_duration",
+          "value": [
+            "0.7",
+            "0.8",
+            "0.9",
+            "1"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "THINK INTERVAL:",
+          "key": "think_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "WRAITH VISION RADIUS:",
+          "key": "wraith_vision_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "WRAITH VISION DURATION:",
+          "key": "wraith_vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "MAXIMUM TARGETS:",
+          "key": "maximum_targets",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SECOND WRAITH DAMAGE PCT:",
+          "key": "second_wraith_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SECOND WRAITH SPEED PCT:",
+          "key": "second_wraith_speed_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE BONUS PCT:",
+          "key": "creep_damage_bonus_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "4",
+      "desc": "Summons a Spark Wraith that slowly materializes and patrols a targeted area until an enemy comes within its range. Once a target has been found the wraith fuses with them, dealing magical damage and slowing the unit.",
+      "dmg_type": "Magical",
+      "key": "arc_warden_spark_wraith",
+      "mc": "80",
+      "name": "Spark Wraith"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "REGENERATION EFFECT:",
+          "key": "regeneration_effect",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "WATER BOUNTY RUNE DURATION PCT:",
+          "key": "water_bounty_rune_duration_pct",
+          "value": "67"
+        },
+        {
+          "generated": true,
+          "header": "BONUS STACKS PER RUNE PICKUP:",
+          "key": "bonus_stacks_per_rune_pickup",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ALL ATTRIBUTE BONUS PER STACK:",
+          "key": "all_attribute_bonus_per_stack",
+          "value": "1.5"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Runes of Power fuse to the Self. Arc Warden gains +1.5 all attributes permanently whenever Arc Warden or the Tempest Double activates a Power Rune.",
+      "dmg_type": "",
+      "key": "arc_warden_runic_infusion",
+      "mc": null,
+      "name": "Runic Infusion"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "BOUNTY:",
+          "key": "bounty",
+          "value": [
+            "180",
+            "240",
+            "300"
+          ]
+        },
+        {
+          "header": "BOUNTY:",
+          "key": "bounty_gold",
+          "value": "70"
+        },
+        {
+          "generated": true,
+          "header": "BOUNTY XP:",
+          "key": "bounty_xp",
+          "value": "70"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "18",
+            "21",
+            "24"
+          ]
+        },
+        {
+          "header": "MAX MISS CHANCE:",
+          "key": "max_blind_chance",
+          "value": "35%"
+        },
+        {
+          "header": "MAX SELF SLOW:",
+          "key": "max_slow",
+          "value": "35%"
+        },
+        {
+          "generated": true,
+          "header": "HAS DEBUFF:",
+          "key": "has_debuff",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "RUNE DURATION:",
+          "key": "rune_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "INVIS RUNE:",
+          "key": "invis_rune",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARCANE RUNE:",
+          "key": "arcane_rune",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HASTE RUNE:",
+          "key": "haste_rune",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "60",
+        "55",
+        "50"
+      ],
+      "desc": "Briefly refocusing its fractured elements into a single form, the Arc Warden is able to create a perfect electrical duplication of itself. The duplicate can use all of Arc Warden's current items and spells, except most consumables and items that drop on death. The duplicate has separate item and ability cooldowns.\n\nThe Tempest Double loses its sense of self and fractures over time, becoming slower and less accurate.",
+      "dmg_type": "",
+      "key": "arc_warden_tempest_double",
+      "mc": null,
+      "name": "Tempest Double"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Flux",
+    "desc": "Flux silences when the target is alone, deals more damage, and lasts longer.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Tempest Double",
+    "desc": "The Tempest Double is infused with the bonuses of Arcane, Invisibility, and Haste Runes for =12s when created.\n\nDoes not trigger Runic Infusion.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 20,
+    "agi_gain": 2.7,
+    "armor": 0,
+    "attack_max": 29,
+    "attack_min": 23,
+    "attack_range": 625,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 24,
+    "int_gain": 2.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.2
+  },
+  "name": "Arc Warden",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "arc_warden",
+  "talents": [
+    {
+      "left": "+1.5 Runic Infusion All Attributes Bonus",
+      "level": 25,
+      "right": "+30s Spark Wraith Duration"
+    },
+    {
+      "left": "+200 Spark Wraith Damage",
+      "level": 20,
+      "right": "-5s Magnetic Field Cooldown"
+    },
+    {
+      "left": "+20% Flux Slow",
+      "level": 15,
+      "right": "+25 Magnetic Field Attack Speed"
+    },
+    {
+      "left": "+200 Flux Cast Range",
+      "level": 10,
+      "right": "+200 Health"
+    }
+  ]
+}

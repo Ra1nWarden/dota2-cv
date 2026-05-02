@@ -1,0 +1,22 @@
+{
+  "abilities": [
+    {
+      "description": "Upgrades an existing ability or adds a new ability to your hero.",
+      "title": "Ability Upgrade",
+      "type": "passive"
+    }
+  ],
+  "attrib": [],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1400,
+  "created": false,
+  "id": 609,
+  "mc": false,
+  "name": "Aghanim's Shard",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "aghanims_shard"
+}

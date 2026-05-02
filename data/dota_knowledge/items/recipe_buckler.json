@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 85,
+  "mc": false,
+  "name": "Buckler Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_buckler"
+}

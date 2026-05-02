@@ -1,0 +1,441 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "attack_speed",
+          "value": [
+            "60",
+            "90",
+            "120",
+            "150"
+          ]
+        },
+        {
+          "header": "SPELL AMPLIFICATION:",
+          "key": "spell_amp",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "MAX HEALTH DAMAGE PER SECOND:",
+          "key": "damage_pct",
+          "value": "1.2%"
+        },
+        {
+          "generated": true,
+          "header": "MAX HEALTH DMG PCT:",
+          "key": "max_health_dmg_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "THIRST THRESHOLD BONUS:",
+          "key": "thirst_threshold_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BASE DAMAGE AMP:",
+          "key": "base_damage_amp",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "14",
+        "12",
+        "10",
+        "8"
+      ],
+      "desc": "Drives Bloodseeker into a bloodthirsty rage which causes him to attack faster and deal more spell damage at the cost of a percentage of his health per second.",
+      "dmg_type": "Pure",
+      "key": "bloodseeker_bloodrage",
+      "mc": "0",
+      "name": "Bloodrage"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RITUAL AREA:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "105",
+            "175",
+            "245",
+            "315"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL:",
+          "key": "heal",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STRONG DISPEL COUNT:",
+          "key": "strong_dispel_count",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "2.6"
+        },
+        {
+          "generated": true,
+          "header": "DELAY PLUS CASTPOINT TOOLTIP:",
+          "key": "delay_plus_castpoint_tooltip",
+          "value": "2.9"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Bloodseeker baptizes an area in sacred blood. After 2.9 seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced.",
+      "dmg_type": "Pure",
+      "key": "bloodseeker_blood_bath",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Blood Rite"
+    },
+    {
+      "attrib": [
+        {
+          "header": "THIRST HEALTH THRESHOLD:",
+          "key": "min_bonus_pct",
+          "value": "100%"
+        },
+        {
+          "header": "MAX THIRST MOVE SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "10%",
+            "20%",
+            "30%",
+            "40%"
+          ]
+        },
+        {
+          "header": "ACTIVE BONUS MOVE SPEED:",
+          "key": "active_movement_speed",
+          "value": "0%"
+        },
+        {
+          "header": "ACTIVE DURATION:",
+          "key": "active_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "INACTIVE PENALTY PCT:",
+          "key": "inactive_penalty_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SANGUIVORE MULTIPLIER:",
+          "key": "sanguivore_multiplier",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX BONUS PCT:",
+          "key": "max_bonus_pct",
+          "value": "25"
+        },
+        {
+          "header": "VISIBILITY HEALTH THRESHOLD:",
+          "key": "visibility_threshold_pct",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "INVIS THRESHOLD PCT:",
+          "key": "invis_threshold_pct",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Bloodseeker is invigorated by the wounds of his enemies, gaining bonus movement speed when an enemy hero's health falls below 100%, with the bonuses increasing as their health falls further. If an enemy hero's health falls below 25%, he will also gain vision and True Sight of that hero. Bonuses stack per hero. Unlocks max movement speed for Bloodseeker.",
+      "dmg_type": "",
+      "key": "bloodseeker_thirst",
+      "mc": "0",
+      "name": "Thirst"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BASE HEAL:",
+          "key": "base_heal",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CREEP LIFESTEAL REDUCTION PCT:",
+          "key": "creep_lifesteal_reduction_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "DENY LIFESTEAL REDUCTION PCT:",
+          "key": "deny_lifesteal_reduction_pct",
+          "value": "0"
+        },
+        {
+          "header": "HALF HEAL RADIUS:",
+          "key": "half_bonus_aoe",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "BARRIER DECAY PCT:",
+          "key": "barrier_decay_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX SHIELD PCT:",
+          "key": "max_shield_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PURE DAMAGE LIFESTEAL PCT:",
+          "key": "pure_damage_lifesteal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Bloodseeker restores some life when he kills a unit, equal to 30 health plus a percentage of the units max health.\n\nRestores for half values if an ally kills a nearby enemy hero.",
+      "dmg_type": "",
+      "key": "bloodseeker_sanguivore",
+      "mc": null,
+      "name": "Sanguivore"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "9",
+            "10",
+            "11"
+          ]
+        },
+        {
+          "header": "MOVE DAMAGE:",
+          "key": "movement_damage_pct",
+          "value": [
+            "35%",
+            "45%",
+            "55%"
+          ]
+        },
+        {
+          "header": "HEALTH DAMAGE:",
+          "key": "hp_pct",
+          "value": "10%"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE CAP AMOUNT:",
+          "key": "damage_cap_amount",
+          "value": "200"
+        },
+        {
+          "header": "PUSH DISTANCE:",
+          "key": "knockback",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "75",
+        "70",
+        "65"
+      ],
+      "desc": "Causes an enemy unit's skin to rupture, dealing initial damage based on its current health. If the unit moves, it takes damage based on the distance moved.",
+      "dmg_type": "Pure",
+      "key": "bloodseeker_rupture",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Rupture"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Rupture",
+    "desc": "Increases initial damage and grants 2 Rupture Charges.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Bloodrage",
+    "desc": "Bloodseeker's Bloodrage attacks now deal 2% of the target's max health as <font color=\"#d8ae53\">Pure</font> damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 3.1,
+    "armor": 2,
+    "attack_max": 41,
+    "attack_min": 35,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 17,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 2.7
+  },
+  "name": "Bloodseeker",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Nuker",
+    "Initiator"
+  ],
+  "short_name": "bloodseeker",
+  "talents": [
+    {
+      "left": "+?s Blood Rite Silence Duration",
+      "level": 25,
+      "right": "+?% Max Thirst MS"
+    },
+    {
+      "left": "+? Rupture Cast Range",
+      "level": 20,
+      "right": "+15 Agility"
+    },
+    {
+      "left": "-?% Bloodrage Max Health DPS",
+      "level": 15,
+      "right": "+? Blood Rite Damage"
+    },
+    {
+      "left": "+200 Health",
+      "level": 10,
+      "right": "+? Bloodrage Attack Speed"
+    }
+  ]
+}

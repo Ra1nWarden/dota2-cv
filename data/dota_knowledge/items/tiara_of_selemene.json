@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1700,
+  "created": false,
+  "id": 1802,
+  "mc": false,
+  "name": "Tiara of Selemene",
+  "notes": "",
+  "qual": "component",
+  "short_name": "tiara_of_selemene"
+}

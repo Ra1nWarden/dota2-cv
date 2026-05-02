@@ -1,0 +1,45 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "5"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "2"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "2"
+    },
+    {
+      "display": "+ {value}% Max Mana",
+      "key": "bonus_max_mana_percentage",
+      "value": "3"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "circlet",
+    "mantle"
+  ],
+  "cost": 505,
+  "created": true,
+  "id": 77,
+  "mc": false,
+  "name": "Null Talisman",
+  "notes": "",
+  "qual": "common",
+  "short_name": "null_talisman"
+}

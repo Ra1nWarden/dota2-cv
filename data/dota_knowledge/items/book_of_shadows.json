@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Target an enemy, ally or self. Causes the target to become untargetable from enemies to the caster, but also silenced, muted and disarmed for 4 seconds. Applies a Basic Dispel.",
+      "title": "Shadows",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_all_stats",
+      "value": "0"
+    },
+    {
+      "key": "night_vision",
+      "value": "400"
+    },
+    {
+      "key": "duration",
+      "value": "4"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 8,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 677,
+  "mc": false,
+  "name": "Book of Shadows",
+  "notes": "Does not trigger spell block or spell reflect.",
+  "qual": null,
+  "short_name": "book_of_shadows"
+}

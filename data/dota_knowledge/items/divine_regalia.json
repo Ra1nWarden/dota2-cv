@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Increases outgoing damage by 20%. Dying permanently disables this Neutral Item and the current Enchantment is lost.",
+      "title": "Exalted",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "outgoing_damage",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1644,
+  "mc": false,
+  "name": "Divine Regalia",
+  "notes": "",
+  "qual": null,
+  "short_name": "divine_regalia"
+}

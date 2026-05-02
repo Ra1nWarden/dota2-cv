@@ -1,0 +1,518 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "260"
+        },
+        {
+          "header": "STRIKES:",
+          "key": "strikes",
+          "value": "4"
+        },
+        {
+          "header": "STRIKE INTERVAL:",
+          "key": "strike_interval",
+          "value": "2"
+        },
+        {
+          "header": "STRIKE DAMAGE:",
+          "key": "strike_damage",
+          "value": [
+            "30",
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STRIKE DAMAGE BONUS:",
+          "key": "strike_damage_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "SLOW AMOUNT:",
+          "key": "slow_amount",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "SHARD GROUND DELAY:",
+          "key": "shard_ground_delay",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "HITS UNITS INSIDE KINETIC:",
+          "key": "hits_units_inside_kinetic",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.05"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "18",
+        "15",
+        "12",
+        "9"
+      ],
+      "desc": "Repeatedly strikes the targeted unit with lightning. Each strike damages nearby enemy units in a small radius and slows enemy movement and attack speed by 100% for x1.75 seconds. Provides vision of its target.",
+      "dmg_type": "Magical",
+      "key": "disruptor_thunder_strike",
+      "mc": [
+        "125",
+        "130",
+        "135",
+        "140"
+      ],
+      "name": "Thunder Strike"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BACKTRACK TIME:",
+          "key": "backtrack_time",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "cast_range",
+          "value": [
+            "600",
+            "1000",
+            "1400",
+            "1800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": "0"
+        },
+        {
+          "header": "MIN DAMAGE:",
+          "key": "min_damage",
+          "value": "25"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "header": "GLIMPSE DISTANCE TO DAMAGE:",
+          "key": "damage_to_distance_pct",
+          "value": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "600",
+            "1000",
+            "1400",
+            "1800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.05"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "22",
+        "20",
+        "18"
+      ],
+      "desc": "Teleports the target hero back to where it was 4 seconds ago. Instantly kills illusions. Deals damage equal to a percentage of the distance glimpsed, that cannot go over a damage maximum.",
+      "dmg_type": "Magical",
+      "key": "disruptor_glimpse",
+      "mc": [
+        "70",
+        "85",
+        "100",
+        "115"
+      ],
+      "name": "Glimpse"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "header": "FORMATION DELAY:",
+          "key": "formation_time",
+          "value": "1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2.6",
+            "3.2",
+            "3.8",
+            "4.4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "WALL THICKNESS:",
+          "key": "wall_thickness",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN SHARE:",
+          "key": "cooldown_share",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STRIKE ON TOUCH:",
+          "key": "strike_on_touch",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.05"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "After a short formation time, creates a circular barrier of kinetic energy that enemies can't pass.",
+      "dmg_type": "",
+      "key": "disruptor_kinetic_field",
+      "mc": "70",
+      "name": "Kinetic Field"
+    },
+    {
+      "attrib": [
+        {
+          "header": "LENGTH:",
+          "key": "wall_width",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "WALL THICKNESS:",
+          "key": "wall_thickness",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "header": "FORMATION DELAY:",
+          "key": "formation_time",
+          "value": "1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4.4"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN SHARE:",
+          "key": "cooldown_share",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STRIKE ON TOUCH:",
+          "key": "strike_on_touch",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.05"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "After a short formation time, creates a wall out of kinetic energy that enemies cannot pass.",
+      "dmg_type": "",
+      "key": "disruptor_kinetic_fence",
+      "mc": "70",
+      "name": "Kinetic Fence"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE THRESHOLD:",
+          "key": "damage_threshold",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "EFFECT RADIUS:",
+          "key": "effect_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": ".2"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE RESET INTERVAL:",
+          "key": "damage_reset_interval",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE PER INT:",
+          "key": "distance_per_int",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER INT:",
+          "key": "damage_per_int",
+          "value": "1.5"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "5",
+      "desc": "Whenever Disruptor takes more than 250 damage from any source within 400 radius, all nearby enemies within take damage equal to 1.5x of Disruptor's Intelligence, and are pushed back up to a 400 distance away.",
+      "dmg_type": "",
+      "key": "disruptor_electromagnetic_repulsion",
+      "mc": null,
+      "name": "Electromagnetic Repulsion"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "550"
+        },
+        {
+          "header": "PULSES:",
+          "key": "pulses",
+          "value": "20"
+        },
+        {
+          "header": "MAX DAMAGE PER SECOND:",
+          "key": "damage_max",
+          "value": [
+            "200",
+            "275",
+            "350"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.05"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "100",
+        "85",
+        "70"
+      ],
+      "desc": "Creates a damaging static storm that also silences all enemy units in the area for the duration. The damage starts off weak, but increases in power over the duration.",
+      "dmg_type": "Magical",
+      "key": "disruptor_static_storm",
+      "mc": [
+        "125",
+        "175",
+        "225"
+      ],
+      "name": "Static Storm"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Static Storm",
+    "desc": "Mutes items.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Kinetic Fence",
+    "desc": "After a short formation time, creates a wall out of kinetic energy that enemies cannot pass.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.4,
+    "armor": 0,
+    "attack_max": 31,
+    "attack_min": 27,
+    "attack_range": 625,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 20,
+    "int_gain": 2.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Disruptor",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker",
+    "Initiator"
+  ],
+  "short_name": "disruptor",
+  "talents": [
+    {
+      "left": "2 Glimpse Charges",
+      "level": 25,
+      "right": "+? Thunder Strike Strikes"
+    },
+    {
+      "left": "+1s Kinetic Field Duration",
+      "level": 20,
+      "right": "+75 Static Storm Radius"
+    },
+    {
+      "left": "+15%/300 Glimpse Distance To Damage/Max",
+      "level": 15,
+      "right": "+60 Static Storm Max DPS"
+    },
+    {
+      "left": "+20 Movement Speed",
+      "level": 10,
+      "right": "+15 Thunder Strike Damage per Strike"
+    }
+  ]
+}

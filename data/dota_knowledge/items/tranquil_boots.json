@@ -1,0 +1,69 @@
+{
+  "abilities": [
+    {
+      "description": "Whenever you attack a hero or are attacked by any unit, the bonus 14 HP regen is lost and the movement speed bonus is reduced to 40 for 13 seconds.",
+      "title": "Break",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "65"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "14"
+    },
+    {
+      "key": "heal_duration",
+      "value": "20.0"
+    },
+    {
+      "key": "heal_amount",
+      "value": "250"
+    },
+    {
+      "key": "heal_interval",
+      "value": "0.334"
+    },
+    {
+      "key": "break_time",
+      "value": "13"
+    },
+    {
+      "key": "break_count",
+      "value": "1"
+    },
+    {
+      "key": "break_threshold",
+      "value": "20"
+    },
+    {
+      "key": "broken_movement_speed",
+      "value": "40"
+    }
+  ],
+  "behavior": null,
+  "cd": 13,
+  "charges": false,
+  "components": [
+    "boots",
+    "wind_lace",
+    "ring_of_regen"
+  ],
+  "cost": 900,
+  "created": true,
+  "id": 214,
+  "mc": false,
+  "name": "Tranquil Boots",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "tranquil_boots"
+}

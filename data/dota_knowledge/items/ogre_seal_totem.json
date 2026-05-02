@@ -1,0 +1,63 @@
+{
+  "abilities": [
+    {
+      "description": "Flop forward like an ogre seal 2 times, dealing 250 damage and slowing enemies in a 275 radius by -100% for 1.5 second on each bounce. 400 bounce distance.",
+      "title": "Ogre Seal Flop",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_strength",
+      "value": "0"
+    },
+    {
+      "key": "movement_turn_rate",
+      "value": "75"
+    },
+    {
+      "key": "leap_distance",
+      "value": "400"
+    },
+    {
+      "key": "leap_speed",
+      "value": "800.0"
+    },
+    {
+      "key": "leap_acceleration",
+      "value": "1250.0"
+    },
+    {
+      "key": "radius",
+      "value": "275"
+    },
+    {
+      "key": "flop_damage",
+      "value": "250"
+    },
+    {
+      "key": "slow_duration",
+      "value": "1.5"
+    },
+    {
+      "key": "slow",
+      "value": "-100"
+    },
+    {
+      "key": "max_bounces",
+      "value": "2"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 949,
+  "mc": 25,
+  "name": "Ogre Seal Totem",
+  "notes": "",
+  "qual": null,
+  "short_name": "ogre_seal_totem"
+}

@@ -1,0 +1,40 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "bonus_lifesteal",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "bonus_spell_lifesteal",
+      "value": "8"
+    },
+    {
+      "key": "bonus_amp",
+      "value": "0"
+    },
+    {
+      "key": "creep_lifesteal_reduction_pct",
+      "value": "40"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 376,
+  "mc": false,
+  "name": "Paladin Sword",
+  "notes": "",
+  "qual": null,
+  "short_name": "paladin_sword"
+}

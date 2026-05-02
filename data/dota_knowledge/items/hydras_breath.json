@@ -1,0 +1,97 @@
+{
+  "abilities": [
+    {
+      "description": "Attacks poison enemies, dealing 2.5% of the target's Max HP as Magical Damage per second for 3 seconds.",
+      "title": "Miasma",
+      "type": "passive"
+    },
+    {
+      "description": "Ranged attacks have a 30% chance to fire additional projectiles at up to 3 nearby enemies with 150 extra range and within a 120 degree angle in front of the attacker. The additional projectiles deal 20 + 75% damage of a normal attack and do not trigger on hit effects except for Miasma. The primary attack deals 20 + 100% damage of a normal attack.",
+      "title": "Polycephaly",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "strength",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "agility",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "damage",
+      "value": "25"
+    },
+    {
+      "key": "base_count",
+      "value": "0"
+    },
+    {
+      "key": "count",
+      "value": "3"
+    },
+    {
+      "key": "secondary_target_range_bonus",
+      "value": "150"
+    },
+    {
+      "key": "secondary_target_angle",
+      "value": "120"
+    },
+    {
+      "key": "proc_chance",
+      "value": "30"
+    },
+    {
+      "key": "proc_dmg_pct",
+      "value": "75"
+    },
+    {
+      "key": "proc_dmg_pct_primary_tooltip",
+      "value": "100"
+    },
+    {
+      "key": "base_proc_dmg",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Attack Range (Ranged Only)",
+      "key": "base_attack_range",
+      "value": "150"
+    },
+    {
+      "key": "poison_duration",
+      "value": "3"
+    },
+    {
+      "key": "poison_base_damage",
+      "value": "0"
+    },
+    {
+      "key": "poison_damage_per_second",
+      "value": "2.5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "specialists_array",
+    "dragon_lance",
+    "orb_of_venom",
+    ""
+  ],
+  "cost": 5900,
+  "created": true,
+  "id": 1858,
+  "mc": false,
+  "name": "Hydra's Breath",
+  "notes": "Attack Range bonuses from Dragon Lance and its upgrades do not stack.",
+  "qual": "rare",
+  "short_name": "hydras_breath"
+}

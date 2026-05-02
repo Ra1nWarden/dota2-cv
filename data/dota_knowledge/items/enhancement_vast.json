@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Range (Melee & Ranged)",
+      "key": "attack_range",
+      "value": "60 / 90 / 120"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "6 / 10 / 14"
+    },
+    {
+      "display": "- {value} Armor",
+      "key": "bonus_armor",
+      "value": "-4 / -6 / -8"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1576,
+  "mc": false,
+  "name": "Vast",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_vast"
+}

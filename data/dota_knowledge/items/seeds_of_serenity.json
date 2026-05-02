@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Target the ground with a 400 radius. Provides health regeneration to all allied units while they are in the area of effect equal to 8 + 25% of the caster's health regeneration at the time of casting. Lasts 8 seconds.",
+      "title": "Verdurous Dale",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "bonus_health_regen",
+      "value": "0"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "8"
+    },
+    {
+      "key": "aura_health_regen_pct",
+      "value": "25"
+    },
+    {
+      "key": "radius",
+      "value": "400"
+    },
+    {
+      "key": "duration",
+      "value": "8"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 35,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 945,
+  "mc": false,
+  "name": "Seeds of Serenity",
+  "notes": "",
+  "qual": null,
+  "short_name": "seeds_of_serenity"
+}

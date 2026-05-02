@@ -1,0 +1,56 @@
+{
+  "abilities": [
+    {
+      "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While Shadow Walk is active, you move 20% faster and can move through units. \n\nIf attacking to end the invisibility, you gain 175 bonus physical damage on that attack.",
+      "title": "Shadow Walk",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "key": "windwalk_duration",
+      "value": "17.0"
+    },
+    {
+      "key": "windwalk_movement_speed",
+      "value": "20"
+    },
+    {
+      "key": "windwalk_fade_time",
+      "value": "0.3"
+    },
+    {
+      "key": "windwalk_bonus_damage",
+      "value": "175"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": [
+    "claymore",
+    "blitz_knuckles",
+    "shadow_amulet"
+  ],
+  "cost": 3250,
+  "created": true,
+  "id": 152,
+  "mc": 75,
+  "name": "Shadow Blade",
+  "notes": "Has a 0.3 second fade time.\nIf the invisibility ends without attacking, the bonus damage is lost.",
+  "qual": "epic",
+  "short_name": "invis_sword"
+}

@@ -1,0 +1,538 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "325",
+            "340",
+            "355",
+            "370"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.3"
+        },
+        {
+          "header": "AVALANCHE DURATION:",
+          "key": "total_duration",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "TICK COUNT:",
+          "key": "tick_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "header": "AVALANCHE DAMAGE:",
+          "key": "avalanche_damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "23",
+        "20",
+        "17",
+        "14"
+      ],
+      "desc": "Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units.",
+      "dmg_type": "Magical",
+      "key": "tiny_avalanche",
+      "mc": [
+        "105",
+        "120",
+        "135",
+        "150"
+      ],
+      "name": "Avalanche"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "1.25"
+        },
+        {
+          "generated": true,
+          "header": "GRAB RADIUS:",
+          "key": "grab_radius",
+          "value": "300"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "toss_damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "header": "BONUS LANDING DAMAGE:",
+          "key": "toss_land_damage_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": ""
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "800",
+            "900",
+            "1000",
+            "1100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "20",
+        "17",
+        "14",
+        "11"
+      ],
+      "desc": "Grabs the nearest unit in a 300 radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.",
+      "dmg_type": "Magical",
+      "key": "tiny_toss",
+      "mc": "125",
+      "name": "Toss"
+    },
+    {
+      "attrib": [
+        {
+          "header": "NUMBER OF ATTACKS:",
+          "key": "attack_count",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "BONUS BASE DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "BONUS BUILDING DAMAGE:",
+          "key": "bonus_damage_buildings",
+          "value": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "header": "ATTACK RANGE:",
+          "key": "attack_range",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "SPLASH WIDTH:",
+          "key": "splash_width",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "SPLASH RANGE:",
+          "key": "splash_range",
+          "value": "400"
+        },
+        {
+          "header": "SPLASH DAMAGE:",
+          "key": "splash_pct",
+          "value": [
+            "70%",
+            "80%",
+            "90%",
+            "100%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BAT INCREASE:",
+          "key": "bat_increase",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPEED REDUCTION:",
+          "key": "speed_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Grabs a tree and causes Tiny to have bonus range, damage, and a splashing attack for a limited number of attacks. The tree can be thrown, to deal your attack to a unit at a distance.",
+      "dmg_type": "Physical",
+      "key": "tiny_tree_grab",
+      "mc": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "name": "Tree Grab"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "RANGE:",
+          "key": "range",
+          "value": "1200"
+        },
+        {
+          "header": "TARGET RADIUS:",
+          "key": "splash_radius",
+          "value": "400"
+        },
+        {
+          "header": "TREE GRAB RADIUS:",
+          "key": "tree_grab_radius",
+          "value": "700"
+        },
+        {
+          "header": "THROW INTERVAL:",
+          "key": "interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "header": "MAX CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Channeled",
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "17",
+      "desc": "CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack with Tree Throw bonuses.",
+      "dmg_type": "Physical",
+      "key": "tiny_tree_channel",
+      "mc": "200",
+      "name": "Tree Volley"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STRENGTH TO SLOW RESIST:",
+          "key": "str_to_slow_resist_pct",
+          "value": "20%"
+        },
+        {
+          "header": "STRENGTH TO STATUS RESIST:",
+          "key": "str_to_status_resist_pct",
+          "value": "10%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Tiny gains Status and Slow Resistance from Strength. Slow Resistance also reduces the impact of Attack Speed slows.",
+      "dmg_type": "",
+      "key": "tiny_insurmountable",
+      "mc": null,
+      "name": "Insurmountable"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "5",
+            "10",
+            "15"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "55",
+            "110",
+            "165"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED REDUCTION:",
+          "key": "attack_speed_reduction",
+          "value": "-35%"
+        },
+        {
+          "header": "TOSS BONUS DAMAGE:",
+          "key": "toss_bonus_damage",
+          "value": [
+            "50",
+            "175",
+            "300"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED BONUS:",
+          "key": "move_speed",
+          "value": [
+            "10",
+            "15",
+            "20"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Tiny gains craggy mass, increasing his attack damage, movement speed and armor, and toss power while slowing his attack speed.",
+      "dmg_type": "Physical",
+      "key": "tiny_grow",
+      "mc": null,
+      "name": "Grow"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "header": "CAST RANGE:",
+          "key": "range",
+          "value": "1200"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "SPLASH RADIUS:",
+          "key": "splash_radius",
+          "value": "275"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "0%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Throws the tree at the target unit, proccing your attack on it and splashing damage around the target.",
+      "dmg_type": "Physical",
+      "key": "tiny_toss_tree",
+      "mc": null,
+      "name": "Tree Throw"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Tree Volley",
+    "desc": "CHANNELED - Tiny channels to throw random trees within range towards the targeted area. Deals Tiny's attack with Tree Throw bonuses.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Grow",
+    "desc": "Units tossed by Toss or trees tossed by Tree Throw or Tree Volley now deal additional damage and slow in a larger area of effect at their landing location.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 0,
+    "agi_gain": 0,
+    "armor": 0,
+    "attack_max": 37,
+    "attack_min": 31,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2,
+    "int": 17,
+    "int_gain": 2.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 275,
+    "night_vision": 800,
+    "str": 30,
+    "str_gain": 4.2
+  },
+  "name": "Tiny",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher",
+    "Initiator",
+    "Durable",
+    "Disabler"
+  ],
+  "short_name": "tiny",
+  "talents": [
+    {
+      "left": "-?s Avalanche Cooldown",
+      "level": 25,
+      "right": "? Toss Charges"
+    },
+    {
+      "left": "+? Tree Grab Base Damage",
+      "level": 20,
+      "right": "Toss Requires No Target"
+    },
+    {
+      "left": "-?% Grow Attack Speed Reduction",
+      "level": 15,
+      "right": "+? Avalanche Damage"
+    },
+    {
+      "left": "+? Avalanche Cast Range",
+      "level": 10,
+      "right": "+8 Strength"
+    }
+  ]
+}

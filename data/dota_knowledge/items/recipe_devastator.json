@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 400,
+  "created": false,
+  "id": 1805,
+  "mc": false,
+  "name": "Parasma Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_devastator"
+}

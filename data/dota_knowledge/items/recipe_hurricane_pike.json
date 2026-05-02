@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 350,
+  "created": false,
+  "id": 262,
+  "mc": false,
+  "name": "Hurricane Pike Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_hurricane_pike"
+}

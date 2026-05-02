@@ -1,0 +1,462 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "HEALTH COST:",
+          "key": "health_cost",
+          "value": [
+            "75",
+            "100",
+            "125",
+            "150"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "110",
+            "180",
+            "250",
+            "320"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "DURATION:",
+          "key": "disarm_duration",
+          "value": [
+            "1.5",
+            "2",
+            "2.5",
+            "3"
+          ]
+        },
+        {
+          "header": "KNOCKBACK TO:",
+          "key": "knockback_distance",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "MIN KNOCKBACK DISTANCE:",
+          "key": "min_knockback_distance",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MIN KNOCKBACK DURATION:",
+          "key": "min_knockback_duration",
+          "value": "0.4"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow_pct",
+          "value": "0%"
+        },
+        {
+          "header": "HERO DAMAGE AS HEAL:",
+          "key": "hero_damage_heal_pct",
+          "value": "0%"
+        },
+        {
+          "header": "NON-HERO DAMAGE AS HEAL:",
+          "key": "creep_damage_heal_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "In a fiery rage, knocks all nearby enemies away from you to a fixed distance, dealing damage and silencing them.",
+      "dmg_type": "Magical",
+      "key": "huskar_inner_fire",
+      "mc": null,
+      "name": "Inner Fire"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX HEALTH COST:",
+          "key": "max_health_cost",
+          "value": "2%"
+        },
+        {
+          "header": "BURN DAMAGE:",
+          "key": "burn_damage",
+          "value": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "MAX HEALTH BURN:",
+          "key": "burn_damage_max_pct",
+          "value": "0.5%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "9"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Huskar sets his spears aflame, dealing damage over time with his regular attack. Multiple attacks will stack additional damage. Each attack drains some of Huskar's health.",
+      "dmg_type": "Magical",
+      "key": "huskar_burning_spear",
+      "mc": "0",
+      "name": "Burning Spear"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX ATTACK SPEED:",
+          "key": "maximum_attack_speed",
+          "value": [
+            "170",
+            "220",
+            "270",
+            "320"
+          ]
+        },
+        {
+          "header": "MAX STR REGEN:",
+          "key": "maximum_health_regen",
+          "value": [
+            "25%",
+            "40%",
+            "55%",
+            "70%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AURA RADIUS:",
+          "key": "aura_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AURA EFFECTIVENESS:",
+          "key": "aura_effectiveness",
+          "value": "0"
+        },
+        {
+          "header": "MAX MAGIC RESIST:",
+          "key": "maximum_magic_resist",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "HP FOR MAX BONUS:",
+          "key": "hp_threshold_max",
+          "value": "10%"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATABLE:",
+          "key": "activatable",
+          "value": "0"
+        },
+        {
+          "header": "CURRENT HP COST:",
+          "key": "activation_healthcost_pct",
+          "value": "0%"
+        },
+        {
+          "header": "COOLDOWN:",
+          "key": "activation_cooldown",
+          "value": "0"
+        },
+        {
+          "header": "CAUTERIZE DELAY:",
+          "key": "activation_delay",
+          "value": "0"
+        },
+        {
+          "header": "MAX HP HEAL PER DEBUFF:",
+          "key": "activation_heal_pct_per_debuff",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Huskar's injuries feed his power, giving increased attack speed, magic resistance and health regen based on missing health. Health regen is a percentage of your strength.",
+      "dmg_type": "",
+      "key": "huskar_berserkers_blood",
+      "mc": null,
+      "name": "Berserker's Blood"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Huskar does not have mana. Mana costs of items are converted into health costs.Huskar's Health Costs are Magical Damage and can be reduced by Magic Resist.",
+      "dmg_type": [],
+      "key": "huskar_blood_magic",
+      "mc": null,
+      "name": "Blood Magic"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "HEALTH COST PERCENT:",
+          "key": "health_cost_percent",
+          "value": [
+            "0.32",
+            "0.38",
+            "0.44"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEALTH DAMAGE:",
+          "key": "health_damage",
+          "value": [
+            "0.32",
+            "0.38",
+            "0.44"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHARGE SPEED:",
+          "key": "charge_speed",
+          "value": "1200"
+        },
+        {
+          "header": "DAMAGE DEALT:",
+          "key": "tooltip_health_damage",
+          "value": [
+            "32%",
+            "38%",
+            "44%"
+          ]
+        },
+        {
+          "header": "DAMAGE TAKEN:",
+          "key": "tooltip_health_cost_percent",
+          "value": [
+            "32%",
+            "38%",
+            "44%"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed",
+          "value": "-60%"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attack_speed",
+          "value": [
+            "60",
+            "100",
+            "140"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration_tooltip",
+          "value": [
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "TAUNT DURATION:",
+          "key": "taunt_duration",
+          "value": "0"
+        },
+        {
+          "header": "CAST RANGE BONUS:",
+          "key": "cast_range_bonus",
+          "value": "0"
+        },
+        {
+          "header": "SPLASH RADIUS:",
+          "key": "splash_radius",
+          "value": "0"
+        },
+        {
+          "header": "HEAL RADIUS:",
+          "key": "life_break_heal_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "LIFE BREAK HEAL PCT:",
+          "key": "life_break_heal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "IMMUNITY RESIST:",
+          "key": "immunity_resist",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "16",
+        "14",
+        "12"
+      ],
+      "desc": "Huskar draws upon his health to break an enemy's life, leaping at a target to shatter a percentage of that hero's current health and slow both their movement and attack speed. While leaping, Huskar is Debuff Immune with 60% magic resistance.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Magical",
+      "key": "huskar_life_break",
+      "mc": "0",
+      "name": "Life Break"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Life Break",
+    "desc": "Forces the enemy target to attack Huskar and increases cast range.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Berserker's Blood",
+    "desc": "Huskar can activate Berserker's Blood for a health cost to cauterize himself. Dispels Huskar, then after a delay, heals for the amount of health consumed plus an additional bonus per debuff dispelled.<br/><br/>DISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 10,
+    "agi_gain": 1.5,
+    "armor": 1,
+    "attack_max": 26,
+    "attack_min": 21,
+    "attack_range": 400,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 0,
+    "magic_resist": 25,
+    "mana": 0,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 3.3
+  },
+  "name": "Huskar",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Initiator"
+  ],
+  "short_name": "huskar",
+  "talents": [
+    {
+      "left": "+?s Burning Spear Duration",
+      "level": 25,
+      "right": "+?% Life Break Damage"
+    },
+    {
+      "left": "+?% Berserker's Blood Regen",
+      "level": 20,
+      "right": "-?s Life Break Cooldown"
+    },
+    {
+      "left": "+? Burning Spear Burn Damage",
+      "level": 15,
+      "right": "+12% Lifesteal"
+    },
+    {
+      "left": "+?s Inner Fire Duration",
+      "level": 10,
+      "right": "+?s Life Break Slow Duration"
+    }
+  ]
+}

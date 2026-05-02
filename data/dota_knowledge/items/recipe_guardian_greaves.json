@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1175,
+  "created": false,
+  "id": 230,
+  "mc": false,
+  "name": "Guardian Greaves Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_guardian_greaves"
+}

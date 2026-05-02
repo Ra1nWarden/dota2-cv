@@ -1,0 +1,52 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "3"
+    },
+    {
+      "key": "stored_rune_duration",
+      "value": "90"
+    },
+    {
+      "key": "health",
+      "value": "200"
+    },
+    {
+      "key": "mana",
+      "value": "70"
+    },
+    {
+      "key": "max_charges_per_kill",
+      "value": "1"
+    },
+    {
+      "key": "recharge_time",
+      "value": "10"
+    },
+    {
+      "key": "movement_speed",
+      "value": "30"
+    },
+    {
+      "key": "bonus_intellect",
+      "value": "40"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 6,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1000,
+  "mc": false,
+  "name": "bottomless_chalice",
+  "notes": "",
+  "qual": null,
+  "short_name": "bottomless_chalice"
+}

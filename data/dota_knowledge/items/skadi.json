@@ -1,0 +1,66 @@
+{
+  "abilities": [
+    {
+      "description": "Attacks lower enemy movement by -25% if they are melee and -50% if they are ranged. Attacks also lower enemy attack speed by -20% and Health Restoration by 50%. Lasts for 3 seconds.",
+      "title": "Cold Attack",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "35"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "0"
+    },
+    {
+      "key": "cold_slow_melee",
+      "value": "-25"
+    },
+    {
+      "key": "cold_attack_slow_melee",
+      "value": "-20"
+    },
+    {
+      "key": "cold_slow_ranged",
+      "value": "-50"
+    },
+    {
+      "key": "cold_attack_slow_ranged",
+      "value": "-20"
+    },
+    {
+      "key": "cold_duration",
+      "value": "3.0"
+    },
+    {
+      "key": "restoration_reduction",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ultimate_orb",
+    "ultimate_orb",
+    "orb_of_frost"
+  ],
+  "cost": 5900,
+  "created": true,
+  "id": 160,
+  "mc": false,
+  "name": "Eye of Skadi",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "skadi"
+}

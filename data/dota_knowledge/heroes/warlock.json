@@ -1,0 +1,478 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "ENEMIES BOUND:",
+          "key": "count",
+          "value": "6"
+        },
+        {
+          "header": "SHARED DAMAGE:",
+          "key": "damage_share_percentage",
+          "value": [
+            "15%",
+            "18%",
+            "21%",
+            "24%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "18"
+        },
+        {
+          "header": "BIND RADIUS:",
+          "key": "search_aoe",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "42",
+        "34",
+        "26",
+        "18"
+      ],
+      "desc": "Binds several visible enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
+      "dmg_type": "",
+      "key": "warlock_fatal_bonds",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Fatal Bonds"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEAL/DAMAGE:",
+          "key": "damage",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "EFFECT RADIUS:",
+          "key": "spell_aoe",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "650",
+            "700",
+            "750",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Warlock whispers an incantation, casting a spell on a unit that makes it deal damage to nearby enemy units and heal nearby ally units. Target Unit will also heal or be damaged depending on whether they are ally or enemy.",
+      "dmg_type": "Magical",
+      "key": "warlock_shadow_word",
+      "mc": [
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "name": "Shadow Word"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "aoe",
+          "value": [
+            "575",
+            "600",
+            "625",
+            "650"
+          ]
+        },
+        {
+          "header": "SLOW PER SECOND:",
+          "key": "slow_per_second",
+          "value": [
+            "11%",
+            "14%",
+            "17%",
+            "20%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "1"
+        },
+        {
+          "header": "MAX SLOW:",
+          "key": "max_slow",
+          "value": [
+            "55%",
+            "70%",
+            "85%",
+            "100%"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "10"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": [
+            "35",
+            "60",
+            "85",
+            "110"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TICK INTERVAL:",
+          "key": "damage_tick_interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "IMPS INTERVAL:",
+          "key": "imps_interval",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "MINOR IMP DURATION:",
+          "key": "minor_imp_duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "header": "MAX CHANNEL DURATION:",
+          "key": "abilitychanneltime",
+          "value": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "60",
+        "50",
+        "40",
+        "30"
+      ],
+      "desc": "CHANNELED - A powerful slowing and damaging current that grows stronger as it's channeled. Lasts up to 10 seconds. Enemies are slowed for 1 second after leaving the area or the spell ends.",
+      "dmg_type": "Magical",
+      "key": "warlock_upheaval",
+      "mc": "100",
+      "name": "Upheaval"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MINOR IMP DURATION:",
+          "key": "minor_imp_duration",
+          "value": "15"
+        },
+        {
+          "header": "IMP HEALTH:",
+          "key": "imp_health",
+          "value": "5"
+        },
+        {
+          "header": "EXPLOSION DAMAGE:",
+          "key": "imp_explode",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "IMP SPEED:",
+          "key": "imp_speed",
+          "value": "297"
+        },
+        {
+          "generated": true,
+          "header": "GOLEM CAN SUMMON:",
+          "key": "golem_can_summon",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TOOLTIP IMP EXPLODE RADIUS:",
+          "key": "tooltip_imp_explode_radius",
+          "value": "400"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Whenever an enemy unit dies while afflicted by one or more of Warlock's abilities, a minor imp is summoned that lasts for 15 seconds and explodes on death. Imps will automatically seek out nearby units, favoring fatally bonded heroes, and will explode when reaching their prey.",
+      "dmg_type": "Magical",
+      "key": "warlock_eldritch_summoning",
+      "mc": null,
+      "name": "Eldritch Summoning"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "GOLEM DURATION:",
+          "key": "golem_duration",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.8"
+        },
+        {
+          "header": "SUMMON BLAST RADIUS:",
+          "key": "aoe",
+          "value": "600"
+        },
+        {
+          "header": "GOLEM HEALTH:",
+          "key": "golem_hp",
+          "value": [
+            "1500",
+            "2250",
+            "3000"
+          ]
+        },
+        {
+          "header": "GOLEM DAMAGE:",
+          "key": "golem_dmg",
+          "value": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "GOLEM ARMOR:",
+          "key": "golem_armor",
+          "value": [
+            "8",
+            "12",
+            "14"
+          ]
+        },
+        {
+          "header": "GOLEM MOVEMENT SPEED:",
+          "key": "golem_movement_speed",
+          "value": [
+            "320",
+            "340",
+            "360"
+          ]
+        },
+        {
+          "header": "GOLEM HEALTH REGEN:",
+          "key": "golem_health_regen",
+          "value": [
+            "25",
+            "50",
+            "75"
+          ]
+        },
+        {
+          "header": "GOLEM GOLD BOUNTY:",
+          "key": "golem_gold_bounty",
+          "value": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STUN DELAY:",
+          "key": "stun_delay",
+          "value": "0.5"
+        },
+        {
+          "header": "GOLEM ARMOR:",
+          "key": "tooltip_golem_armor",
+          "value": [
+            "8",
+            "12",
+            "14"
+          ]
+        },
+        {
+          "header": "GOLEM SLOW RESISTANCE:",
+          "key": "bonus_slow_resistance",
+          "value": "60%"
+        },
+        {
+          "header": "HP/MANA REGEN TO BURN DAMAGE:",
+          "key": "tooltip_manahealthboost",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "165",
+      "desc": "Summons a Golem from the depths, stunning enemies for 0.8 seconds. The Golem lives 60 seconds, takes reduced damage from spells, has increased Slow Resistance, has Permanent Immolation and Flaming Fists on attack.",
+      "dmg_type": "",
+      "key": "warlock_rain_of_chaos",
+      "mc": [
+        "200",
+        "400",
+        "600"
+      ],
+      "name": "Chaotic Offering"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Chaotic Offering",
+    "desc": "Calls 2 Golems.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Eldritch Summoning",
+    "desc": "Increases the health and explosion damage of minor imps.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 10,
+    "agi_gain": 1,
+    "armor": 1,
+    "attack_max": 37,
+    "attack_min": 27,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.4
+  },
+  "name": "Warlock",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Initiator",
+    "Disabler"
+  ],
+  "short_name": "warlock",
+  "talents": [
+    {
+      "left": "Summons a Golem on death",
+      "level": 25,
+      "right": "+? Fatal Bonds Targets"
+    },
+    {
+      "left": "?% Damage Resistance for Chaotic Offering Golems",
+      "level": 20,
+      "right": "+? Upheaval Damage"
+    },
+    {
+      "left": "+? Upheaval Attack Speed per second on Allies",
+      "level": 15,
+      "right": "+? Shadow Word AoE"
+    },
+    {
+      "left": "+?% Fatal Bonds Damage",
+      "level": 10,
+      "right": "+? Upheaval Radius"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "abilities": [
+    {
+      "description": "Gives a magic damage barrier that absorbs 425 damage to all nearby allies. Lasts 8 seconds.\n\nRadius: 1200",
+      "title": "Barrier",
+      "type": "active"
+    },
+    {
+      "description": "Gives allied units 8% magic resistance.\n\nRadius: 1200",
+      "title": "Insight Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "health_regen",
+      "value": "14"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "magic_resistance",
+      "value": "20"
+    },
+    {
+      "key": "add_nostack_debuff",
+      "value": "1"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "0"
+    },
+    {
+      "key": "magic_resistance_aura",
+      "value": "8"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "barrier_block",
+      "value": "425"
+    },
+    {
+      "key": "barrier_duration",
+      "value": "8.0"
+    },
+    {
+      "key": "barrier_radius",
+      "value": "1200"
+    },
+    {
+      "key": "bonus_all_stats",
+      "value": "0"
+    },
+    {
+      "key": "barrier_block_creep",
+      "value": "425"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": [
+    "ring_of_tarrasque",
+    "cloak",
+    "shawl",
+    ""
+  ],
+  "cost": 3725,
+  "created": true,
+  "id": 90,
+  "mc": 150,
+  "name": "Pipe of Insight",
+  "notes": "Barrier does not affect units that have been affected by Barrier within Pipe of Insight's cooldown.\nStacks multiplicatively with other sources of magic resistance.",
+  "qual": "rare",
+  "short_name": "pipe"
+}

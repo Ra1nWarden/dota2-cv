@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Targets the ground to plant a mango tree that provides unlimited mango power. The tree generates Enchanted Mangoes every 60 seconds, and provides unobstructed vision in the area .",
+      "title": "Plant a Mango Tree",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "seconds",
+      "value": "60"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 328,
+  "mc": false,
+  "name": "Mango Tree",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "mango_tree"
+}

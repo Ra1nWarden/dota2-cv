@@ -1,0 +1,83 @@
+{
+  "abilities": [
+    {
+      "description": "Gives +50 attack speed and +15% movement speed to nearby allies for 6 seconds. For the first 1.5 seconds allies are immune to slows.\n\n Radius: 1200",
+      "title": "Endurance",
+      "type": "active"
+    },
+    {
+      "description": "Grants 20 movement speed and 2.5 health regeneration to allies. \n\nRadius: 1200",
+      "title": "Swiftness Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "aura_movement_speed",
+      "value": "20"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "2.5"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_str",
+      "value": "8"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_int",
+      "value": "0"
+    },
+    {
+      "key": "bonus_attack_speed_pct",
+      "value": "50"
+    },
+    {
+      "key": "bonus_movement_speed_pct",
+      "value": "15"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    },
+    {
+      "key": "radius",
+      "value": "1200"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "65"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "18"
+    },
+    {
+      "key": "bonus_ms_duration",
+      "value": "1.5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": [
+    "tranquil_boots",
+    "ancient_janggo",
+    "ring_of_tarrasque"
+  ],
+  "cost": 4225,
+  "created": true,
+  "id": 931,
+  "mc": false,
+  "name": "Boots of Bearing",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "boots_of_bearing"
+}

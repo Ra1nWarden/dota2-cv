@@ -1,0 +1,30 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 125 health and mana.",
+      "title": "Eat Lotus",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "replenish_amount",
+      "value": "125"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 5,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 4204,
+  "mc": false,
+  "name": "Healing Lotus",
+  "notes": "Hold Control to use on a nearby allied hero.",
+  "qual": "consumable",
+  "short_name": "famango"
+}

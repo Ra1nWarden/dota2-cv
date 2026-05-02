@@ -1,0 +1,52 @@
+{
+  "abilities": [
+    {
+      "description": "Consume the Moon Shard to permanently gain 60 attack speed and 200 bonus night vision. Max 1 use.",
+      "title": "Consume",
+      "type": "use"
+    },
+    {
+      "description": "Grants bonus night vision.",
+      "title": "Shade Sight",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "140"
+    },
+    {
+      "display": "+ {value} Bonus Night Vision",
+      "key": "bonus_night_vision",
+      "value": "400"
+    },
+    {
+      "key": "consumed_bonus",
+      "value": "60"
+    },
+    {
+      "key": "consumed_bonus_night_vision",
+      "value": "200"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": [
+    "hyperstone",
+    "hyperstone"
+  ],
+  "cost": 4000,
+  "created": true,
+  "id": 247,
+  "mc": false,
+  "name": "Moon Shard",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "moon_shard"
+}

@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Consumes a target tree to gain 7 health regeneration for 16 seconds. Consuming an Ironwood Tree doubles the heal duration.\n\nComes with 3 charges. Can be used on an allied hero to give them one Tango.\n\nTree Range: 165",
+      "title": "Devour",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_regen",
+      "value": "7.0"
+    },
+    {
+      "key": "buff_duration",
+      "value": "16.0"
+    },
+    {
+      "key": "tooltip_charges",
+      "value": "3"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": false,
+  "charges": 3,
+  "components": null,
+  "cost": 90,
+  "created": false,
+  "id": 44,
+  "mc": false,
+  "name": "Tango",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "tango"
+}

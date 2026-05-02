@@ -1,0 +1,47 @@
+{
+  "abilities": [
+    {
+      "description": "Turns the caster and all allied player-controlled units in a 1200 radius invisible, and grants 15% bonus movement speed for 45 seconds. \n\n While the caster is still disguised, any allies that come within 300 range of them will also get the buff applied to them. Each smoke can only be applied once to allies. \n\nAttacking or moving within 1025 range of an enemy hero or tower, will break the invisibility. \n\nDisguise grants invisibility that is immune to True Sight. \n\nSmoke of Deceit is usable from the backpack and has no cooldown when swapped into the main inventory.",
+      "title": "Disguise",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "application_radius",
+      "value": "1200"
+    },
+    {
+      "key": "visibility_radius",
+      "value": "1025"
+    },
+    {
+      "key": "bonus_movement_speed",
+      "value": "15"
+    },
+    {
+      "key": "duration",
+      "value": "45.0"
+    },
+    {
+      "key": "second_cast_cooldown",
+      "value": "2.0"
+    },
+    {
+      "key": "secondary_application_radius",
+      "value": "300"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 1,
+  "charges": 1,
+  "components": null,
+  "cost": 50,
+  "created": false,
+  "id": 188,
+  "mc": false,
+  "name": "Smoke of Deceit",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "smoke_of_deceit"
+}

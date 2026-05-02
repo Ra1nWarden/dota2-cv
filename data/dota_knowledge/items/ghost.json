@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "You enter ghost form for 4 seconds, becoming immune to physical damage, but are unable to attack and -30% more vulnerable to magic damage.",
+      "title": "Ghost Form",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "5"
+    },
+    {
+      "key": "duration",
+      "value": "4.0"
+    },
+    {
+      "key": "extra_spell_damage_percent",
+      "value": "-30"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 22,
+  "charges": false,
+  "components": null,
+  "cost": 1500,
+  "created": false,
+  "id": 37,
+  "mc": false,
+  "name": "Ghost Scepter",
+  "notes": "Ends if you become Debuff Immune, and will have no effect if you are already Debuff Immune.\nShares cooldown with all Ghost Scepter upgrades.",
+  "qual": "component",
+  "short_name": "ghost"
+}

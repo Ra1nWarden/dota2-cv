@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 2094,
+  "mc": false,
+  "name": "Tier 4 Token",
+  "notes": "",
+  "qual": null,
+  "short_name": "tier4_token"
+}

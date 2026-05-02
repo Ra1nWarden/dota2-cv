@@ -1,0 +1,685 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "OVERCLOCKING RADIUS:",
+          "key": "overclocking_radius",
+          "value": "330"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10.5"
+        },
+        {
+          "header": "INTERVAL:",
+          "key": "interval",
+          "value": "0.7"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "20",
+            "45",
+            "70",
+            "95"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE MULTIPLIER:",
+          "key": "creep_damage_multiplier",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "22",
+        "20",
+        "18"
+      ],
+      "desc": "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.",
+      "dmg_type": "Magical",
+      "key": "rattletrap_battery_assault",
+      "mc": [
+        "75",
+        "80",
+        "85",
+        "90"
+      ],
+      "name": "Battery Assault"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "50",
+            "125",
+            "200",
+            "275"
+          ]
+        },
+        {
+          "header": "MANA BURN:",
+          "key": "mana_burn",
+          "value": [
+            "35",
+            "75",
+            "115",
+            "155"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MANA BURN AS DAMAGE PCT:",
+          "key": "mana_burn_as_damage_pct",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC BARRIER:",
+          "key": "magic_barrier",
+          "value": "0"
+        },
+        {
+          "header": "ATTACKS REQUIRED:",
+          "key": "attacks_to_destroy",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "PUSH LENGTH:",
+          "key": "push_length",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "PUSH DURATION:",
+          "key": "push_duration",
+          "value": "0.8"
+        },
+        {
+          "header": "FORMATION RADIUS:",
+          "key": "cogs_radius",
+          "value": "215"
+        },
+        {
+          "generated": true,
+          "header": "TRIGGER DISTANCE:",
+          "key": "trigger_distance",
+          "value": "185"
+        },
+        {
+          "generated": true,
+          "header": "INSIDE COGS DISTANCE REDUCTION:",
+          "key": "inside_cogs_distance_reduction",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA PULL BUFFER:",
+          "key": "extra_pull_buffer",
+          "value": "-10"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE DISTANCE:",
+          "key": "projectile_distance",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "PUSH DURATION OVERCLOCK:",
+          "key": "push_duration_overclock",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "COGS RADIUS OVERCLOCK:",
+          "key": "cogs_radius_overclock",
+          "value": "330"
+        },
+        {
+          "generated": true,
+          "header": "TRIGGER DISTANCE OVERCLOCK:",
+          "key": "trigger_distance_overclock",
+          "value": "115"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "21",
+        "19",
+        "17",
+        "15"
+      ],
+      "desc": "Forms a ring of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Damage is increased by 50% of the mana burned.\n\n Cogs can be destroyed by enemy attacks, but Clockwerk can push them up to 1000 distance away with one hit. Clockwerk can move through the cogs freely, disabling them as he passes over.",
+      "dmg_type": "Magical",
+      "key": "rattletrap_power_cogs",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Power Cogs"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "2250"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "120",
+            "160",
+            "200"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_pct",
+          "value": "100%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE VISION RADIUS:",
+          "key": "projectile_vision_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE VISION DURATION:",
+          "key": "projectile_vision_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE VISION TICK RATE:",
+          "key": "projectile_vision_tick_rate",
+          "value": "0.15"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "20",
+            "18",
+            "16",
+            "14"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Fires a global range flare that explodes over a given area. Upon impact, enemies in the area take damage and are briefly slowed. Rocket flare provides vision over the impact area for 6 seconds.",
+      "dmg_type": "Magical",
+      "key": "rattletrap_rocket_flare",
+      "mc": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "name": "Rocket Flare"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "buff_duration",
+          "value": "18"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": "0"
+        },
+        {
+          "header": "COGS BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "header": "SELF SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": "3"
+        },
+        {
+          "header": "BONUS ARMOR NEAR COGS:",
+          "key": "bonus_armor_pct",
+          "value": "25%"
+        },
+        {
+          "header": "BATTERY ASSAULT RADIUS:",
+          "key": "battery_assault_radius",
+          "value": "330"
+        },
+        {
+          "header": "COGS RADIUS:",
+          "key": "cogs_radius",
+          "value": "330"
+        },
+        {
+          "generated": true,
+          "header": "HOOKSHOT DAMAGE BONUS PCT:",
+          "key": "hookshot_damage_bonus_pct",
+          "value": "0"
+        },
+        {
+          "header": "HOOKSHOT RADIUS BONUS:",
+          "key": "hookshot_radius_bonus_pct",
+          "value": "50%"
+        },
+        {
+          "header": "HOOKSHOT DURATION BONUS:",
+          "key": "hookshot_duration_bonus_pct",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "ROCKET FLARE INTERVAL:",
+          "key": "rocket_flare_interval",
+          "value": "0.15"
+        },
+        {
+          "generated": true,
+          "header": "ROCKET FLARE OFFSET PCT:",
+          "key": "rocket_flare_offset_pct",
+          "value": "125"
+        },
+        {
+          "header": "BONUS ROCKET FLARES:",
+          "key": "rocket_flare_rockets",
+          "value": "2"
+        },
+        {
+          "header": "ROCKET FLARE DURATION BONUS:",
+          "key": "rocket_flare_duration_pct",
+          "value": "35%"
+        },
+        {
+          "header": "ROCKET FLARE DAMAGE BONUS:",
+          "key": "rocket_flare_damage_pct",
+          "value": "35%"
+        },
+        {
+          "header": "JETPACK SPEED:",
+          "key": "jetpack_bonus_speed",
+          "value": "40%"
+        },
+        {
+          "generated": true,
+          "header": "JETPACK TURN RATE:",
+          "key": "jetpack_turn_rate",
+          "value": "75"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "50",
+      "desc": "Supercharges Clockwerks abilities:\n\nBattery Assault: Increased radius and affects all enemies in its range.\nPower Cogs: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\nRocket Flares: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\nHookshot: Stun radius and duration increased.\nJetpack Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+      "dmg_type": "",
+      "key": "rattletrap_overclocking",
+      "mc": "90",
+      "name": "Overclocking"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS SPEED:",
+          "key": "bonus_speed",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE:",
+          "key": "turn_rate",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "HEIGHT:",
+          "key": "height",
+          "value": "250"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "16",
+      "desc": "Clockwerk activates a jetpack, gaining flying movement, flying vision, and bonus movement speed. Clockwerk has a severely-limited turn rate during this time and cannot attack. Jetpack can be toggled on and off for the duration of the buff.",
+      "dmg_type": "",
+      "key": "rattletrap_jetpack",
+      "mc": "75",
+      "name": "Jetpack"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "LATCH RADIUS:",
+          "key": "latch_radius",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "STUN RADIUS:",
+          "key": "stun_radius",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS ALLY:",
+          "key": "radius_ally",
+          "value": "175"
+        },
+        {
+          "header": "COOLDOWN/MANACOST REFUND:",
+          "key": "cooldown_refund_ally",
+          "value": "0%"
+        },
+        {
+          "header": "ALLY ARMOR DURATION:",
+          "key": "ally_shield_duration",
+          "value": "0"
+        },
+        {
+          "header": "ALLY ARMOR BONUS:",
+          "key": "allied_armor_bonus",
+          "value": "0"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "duration",
+          "value": [
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": [
+            "4000",
+            "5000",
+            "6000"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "75",
+            "175",
+            "275"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "2000",
+            "2500",
+            "3000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "60",
+        "45",
+        "30"
+      ],
+      "desc": "Fires a grappling device rapidly at the target location. If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage to everyone in a 175 radius around the hit target. Any enemies Clockwerk collides with along the way are damaged and stunned.",
+      "dmg_type": "Magical",
+      "key": "rattletrap_hookshot",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Hookshot"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE PER ARMOR:",
+          "key": "damage_per_armor",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CAN CONSUME CHAINMAIL:",
+          "key": "can_consume_chainmail",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR PER CHAINMAIL:",
+          "key": "armor_per_chainmail",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE PER CHAINMAIL:",
+          "key": "model_scale_per_chainmail",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE MAXIMUM:",
+          "key": "model_scale_maximum",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "HEALTH BAR OFFSET PER STACK:",
+          "key": "health_bar_offset_per_stack",
+          "value": "6"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Clockwerk's outgoing damage increases by 0.25% per point of armor.\n\nClockwerk can consume Chainmails to permanently gain +4 armor per Chainmail consumed. Can stack. Self-cast to consume.",
+      "dmg_type": "",
+      "key": "rattletrap_armor_power",
+      "mc": null,
+      "name": "Armor Power"
+    },
+    {
+      "attrib": [],
+      "behavior": "",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Toggles Jetpack on and off.",
+      "dmg_type": "",
+      "key": "rattletrap_jetpack_toggle",
+      "mc": null,
+      "name": "Jetpack Toggle"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Overclocking",
+    "desc": "Supercharges Clockwerks abilities:\n\n<b>Battery Assault</b>: Increased radius and affects all enemies in its range.\n<b>Power Cogs</b>: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\n<b>Rocket Flares</b>: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\n<b>Hookshot</b>: Stun radius and duration increased.\n<b>Jetpack</b> Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Jetpack",
+    "desc": "Clockwerk activates a jetpack, gaining flying movement, flying vision, and bonus movement speed. Clockwerk has a severely-limited turn rate during this time and cannot attack. Jetpack can be toggled on and off for the duration of the buff.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 13,
+    "agi_gain": 2.3,
+    "armor": 1,
+    "attack_max": 26,
+    "attack_min": 24,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 18,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 26,
+    "str_gain": 3.2
+  },
+  "name": "Clockwerk",
+  "primary_attr": "str",
+  "roles": [
+    "Initiator",
+    "Disabler",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "rattletrap",
+  "talents": [
+    {
+      "left": "? Rocket Flare Charges",
+      "level": 25,
+      "right": "-?s Battery Assault Interval"
+    },
+    {
+      "left": "Rocket Flare True Sight",
+      "level": 20,
+      "right": "+? Power Cogs Mana Burn"
+    },
+    {
+      "left": "-?s Hookshot Cooldown",
+      "level": 15,
+      "right": "+? Battery Assault Damage"
+    },
+    {
+      "left": "+1.5 Mana Regen",
+      "level": 10,
+      "right": "+? Hookshot Damage"
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PLACEMENT RANGE:",
+          "key": "placement_range",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "PLACEMENT COUNT:",
+          "key": "placement_count",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "PLACEMENT DURATION:",
+          "key": "placement_duration",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA BRAMBLES PLACEMENT DURATION:",
+          "key": "extra_brambles_placement_duration",
+          "value": "4"
+        },
+        {
+          "header": "LATCH ROOT DURATION:",
+          "key": "latch_duration",
+          "value": [
+            "1",
+            "1.5",
+            "2",
+            "2.5"
+          ]
+        },
+        {
+          "header": "BRAMBLE LATCH RADIUS:",
+          "key": "latch_range",
+          "value": "90"
+        },
+        {
+          "header": "DAMAGE PER TICK:",
+          "key": "damage_per_tick",
+          "value": [
+            "50",
+            "55",
+            "60",
+            "65"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPELL AMP:",
+          "key": "spell_amp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "LATCH CREATION INTERVAL:",
+          "key": "latch_creation_interval",
+          "value": "0.075"
+        },
+        {
+          "generated": true,
+          "header": "LATCH CREATION DELAY:",
+          "key": "latch_creation_delay",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL CREATION DELAY:",
+          "key": "initial_creation_delay",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "1000",
+            "1100",
+            "1200",
+            "1300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "22",
+      "desc": "Dark Willow creates a 500 AoE maze of 8 brambles that grow in the target area after 0.3 seconds. Enemies that walk into a bramble are rooted and take damage over time. Lasts 12 seconds.",
+      "dmg_type": "Magical",
+      "key": "dark_willow_bramble_maze",
+      "mc": [
+        "100",
+        "120",
+        "140",
+        "160"
+      ],
+      "name": "Bramble Maze"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": "0.3"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "damage",
+          "value": [
+            "120",
+            "200",
+            "280",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "MAX DAMAGE DURATION:",
+          "key": "max_damage_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "AURA RADIUS:",
+          "key": "aura_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AURA LINGER:",
+          "key": "aura_linger",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AURA DAMAGE PCT:",
+          "key": "aura_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "21",
+        "19",
+        "17",
+        "15"
+      ],
+      "desc": "Dark Willow recedes into the shadows, becoming untargetable. Her next attack has 600 bonus attack range and deals bonus magic damage, and will end Shadow Realm. Damage scales based on how long she remains under the effects of Shadow Realm, the maximum being reached after 3 seconds.",
+      "dmg_type": "Magical",
+      "key": "dark_willow_shadow_realm",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Shadow Realm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "4"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.5",
+            "1.8",
+            "2.1",
+            "2.4"
+          ]
+        },
+        {
+          "header": "EFFECT RADIUS:",
+          "key": "stun_radius",
+          "value": "360"
+        },
+        {
+          "generated": true,
+          "header": "ACCUMULATED DAMAGE PCT:",
+          "key": "accumulated_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACCUMULATED DAMAGE PCT ALLY:",
+          "key": "accumulated_damage_pct_ally",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "600",
+            "625",
+            "650",
+            "675"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "15",
+        "13",
+        "11"
+      ],
+      "desc": "Dark Willow casts an ancient fae curse on the target. After a delay, the target and nearby enemies are stunned.",
+      "dmg_type": "",
+      "key": "dark_willow_cursed_crown",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Cursed Crown"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK DAMAGE:",
+          "key": "attack_damage",
+          "value": [
+            "70",
+            "120",
+            "170"
+          ]
+        },
+        {
+          "header": "ATTACK INTERVAL:",
+          "key": "attack_interval",
+          "value": "0.25"
+        },
+        {
+          "header": "ATTACK RADIUS:",
+          "key": "attack_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK TARGETS:",
+          "key": "attack_targets",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ROAMING RADIUS:",
+          "key": "roaming_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "ROAMING SECONDS PER ROTATION:",
+          "key": "roaming_seconds_per_rotation",
+          "value": "1.5"
+        },
+        {
+          "header": "ROAMING DURATION:",
+          "key": "roaming_duration",
+          "value": "5.5"
+        },
+        {
+          "generated": true,
+          "header": "TARGET COUNT:",
+          "key": "target_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "TRAVEL SPEED:",
+          "key": "travel_speed",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "UNIT TARGETABLE:",
+          "key": "unit_targetable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION PCT:",
+          "key": "damage_reduction_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "Dark Willow sends her pet wisp to roam around herself for the duration, rapidly attacking nearby enemies. Bedlam cannot be used while Terrorize is active.",
+      "dmg_type": "Magical",
+      "key": "dark_willow_bedlam",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Bedlam"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "HP REGEN AMP:",
+          "key": "hp_regen_amp",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "MANA REGEN AMP:",
+          "key": "mana_regen_amp",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "HP REGEN AMP OUT OF WORLD:",
+          "key": "hp_regen_amp_out_of_world",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "MANA REGEN AMP OUT OF WORLD:",
+          "key": "mana_regen_amp_out_of_world",
+          "value": "100"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Dark Willow gains 20% bonus Health and Mana Regeneration, increased to 100% while she is untargetable or invulnerable.",
+      "dmg_type": [],
+      "key": "dark_willow_pixie_dust",
+      "mc": null,
+      "name": "Pixie Dust"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DESTINATION TRAVEL SPEED:",
+          "key": "destination_travel_speed",
+          "value": "2000"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "destination_radius",
+          "value": [
+            "400",
+            "450",
+            "500"
+          ]
+        },
+        {
+          "header": "FEAR DURATION:",
+          "key": "destination_status_duration",
+          "value": [
+            "2.8",
+            "3",
+            "3.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RETURN TRAVEL SPEED:",
+          "key": "return_travel_speed",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "STARTING HEIGHT:",
+          "key": "starting_height",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "TELEGRAPH TO ENEMIES:",
+          "key": "telegraph_to_enemies",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "100",
+        "90",
+        "80"
+      ],
+      "desc": "Dark Willow releases her pet wisp to terrorize her enemies. After a short delay, all enemies in the target area become fearful and run toward their home fountain. Terrorize cannot be used while Bedlam is active.",
+      "dmg_type": "Magical",
+      "key": "dark_willow_terrorize",
+      "mc": "150",
+      "name": "Terrorize"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shadow Realm",
+    "desc": "Attacking no longer takes Dark Willow out of Shadow Realm. Each attack still has bonus damage based on the duration of the buff.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Cursed Crown",
+    "desc": "Cursed Crown creates 4 brambles in a 175 radius around the target after the counter ends. Triggers even upon dispel. Cursed Crown cooldown reduced by 1.5 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 1.6,
+    "armor": 0,
+    "attack_max": 35,
+    "attack_min": 27,
+    "attack_range": 475,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.75,
+    "int": 21,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2
+  },
+  "name": "Dark Willow",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "dark_willow",
+  "talents": [
+    {
+      "left": "+? Bedlam Attack Targets",
+      "level": 25,
+      "right": "? Terrorize Impact Damage"
+    },
+    {
+      "left": "+?s Shadow Realm Duration",
+      "level": 20,
+      "right": "-?s Bramble Maze CD"
+    },
+    {
+      "left": "+? Bedlam Damage",
+      "level": 15,
+      "right": "-?s Terrorize Cooldown"
+    },
+    {
+      "left": "+?s Bedlam Duration",
+      "level": 10,
+      "right": "+12 Intelligence"
+    }
+  ]
+}

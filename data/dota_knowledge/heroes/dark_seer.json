@@ -1,0 +1,440 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "325",
+            "400",
+            "475",
+            "550"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "0.3",
+            "0.4",
+            "0.5",
+            "0.6"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "70",
+            "130",
+            "190",
+            "250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS TREE:",
+          "key": "radius_tree",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "450",
+            "500",
+            "550",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "60",
+        "50",
+        "40",
+        "30"
+      ],
+      "desc": "Dark Seer creates a vacuum over the target area that sucks in enemy units, disrupting them and dealing damage.",
+      "dmg_type": "Magical",
+      "key": "dark_seer_vacuum",
+      "mc": [
+        "60",
+        "90",
+        "120",
+        "150"
+      ],
+      "name": "Vacuum"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "30",
+            "50",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "20",
+            "22",
+            "24",
+            "26"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS HEALTH:",
+          "key": "bonus_health",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "9",
+      "desc": "Surrounds the target unit with a bristling shield that damages enemy units in an area around it.",
+      "dmg_type": "Magical",
+      "key": "dark_seer_ion_shell",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Ion Shell"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED BOOST:",
+          "key": "speed_boost",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "TRAIL RADIUS:",
+          "key": "trail_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "24",
+        "19",
+        "14",
+        "9"
+      ],
+      "desc": "Charges a target friendly unit with power, giving it a brief burst of phased movement speed. Allows the unit to reach maximum movement speed and cannot be slowed.",
+      "dmg_type": "",
+      "key": "dark_seer_surge",
+      "mc": "50",
+      "name": "Surge"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX STUN DURATION:",
+          "key": "max_stun",
+          "value": "1.25"
+        },
+        {
+          "generated": true,
+          "header": "RECENT DURATION:",
+          "key": "recent_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "1100"
+        },
+        {
+          "header": "MAX KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "350"
+        },
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": "6"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "NORMAL PUNCH ILLUSION DELAY:",
+          "key": "normal_punch_illusion_delay",
+          "value": "0.25"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "Passive ability. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past 3 seconds. Max power is reached after 1100 distance moved.",
+      "dmg_type": "",
+      "key": "dark_seer_normal_punch",
+      "mc": null,
+      "name": "Normal Punch"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "INT TO ATKSPD:",
+          "key": "int_to_atkspd",
+          "value": "1"
+        },
+        {
+          "header": "MAX HP/MANA RESTORE:",
+          "key": "heal_pct",
+          "value": "8.5%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Dark Seer gains 1 Attack Speed from each point of Intelligence.\n\nWhen Dark Seer levels up, he restores a percentage of his max health and mana.",
+      "dmg_type": [],
+      "key": "dark_seer_aggrandize",
+      "mc": null,
+      "name": "Quick Wit"
+    },
+    {
+      "attrib": [
+        {
+          "header": "WALL DURATION:",
+          "key": "duration",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "REPLICA DAMAGE OUTGOING:",
+          "key": "replica_damage_outgoing",
+          "value": [
+            "-30",
+            "-20",
+            "-10"
+          ]
+        },
+        {
+          "header": "REPLICA DAMAGE:",
+          "key": "tooltip_outgoing",
+          "value": [
+            "70%",
+            "80%",
+            "90%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "REPLICA DAMAGE INCOMING:",
+          "key": "replica_damage_incoming",
+          "value": "100"
+        },
+        {
+          "header": "REPLICA DAMAGE TAKEN:",
+          "key": "tooltip_replica_total_damage_incoming",
+          "value": "200%"
+        },
+        {
+          "generated": true,
+          "header": "WIDTH:",
+          "key": "width",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "REPLICA SCALE:",
+          "key": "replica_scale",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "40%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "1"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "wall_damage",
+          "value": [
+            "25",
+            "40",
+            "55"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": "100",
+      "desc": "Raises a wall of warping light that slows, damages, and creates replicas of any enemy hero who crosses it. Enemy replicas serve at the Dark Seer's will. Replicas last until they are destroyed, or until the wall's duration ends.",
+      "dmg_type": "",
+      "key": "dark_seer_wall_of_replica",
+      "mc": [
+        "125",
+        "250",
+        "375"
+      ],
+      "name": "Wall of Replica"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Normal Punch",
+    "desc": "Passive ability. Causes Dark Seer's next attack on a hero to have True Strike, knock a replica out of the victim, damaging and stunning them based on how far Dark Seer has moved in the past 3.0 seconds. Max power is reached after 1100 distance moved.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Surge",
+    "desc": "Surged units leave behind a 150 radius trail that lasts 7s, slows enemies around it by 35% and deals 40 damage per second in 0.5s intervals. Can be put on alt-cast to disable the trail.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 19,
+    "agi_gain": 1.5,
+    "armor": 2,
+    "attack_max": 37,
+    "attack_min": 31,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 22,
+    "int_gain": 2.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.6
+  },
+  "name": "Dark Seer",
+  "primary_attr": "int",
+  "roles": [
+    "Initiator",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "dark_seer",
+  "talents": [
+    {
+      "left": "? Ion Shell Charges ",
+      "level": 25,
+      "right": "? AoE Surge"
+    },
+    {
+      "left": "-?s Wall of Replica Cooldown",
+      "level": 20,
+      "right": "+? Ion Shell Damage"
+    },
+    {
+      "left": "+? Vacuum AoE",
+      "level": 15,
+      "right": "-?s Surge Cooldown"
+    },
+    {
+      "left": "+?% Wall of Replica Illusion Damage",
+      "level": 10,
+      "right": "+? Ion Shell Radius"
+    }
+  ]
+}

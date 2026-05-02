@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "55"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 3400,
+  "created": false,
+  "id": 54,
+  "mc": false,
+  "name": "Sacred Relic",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "relic"
+}

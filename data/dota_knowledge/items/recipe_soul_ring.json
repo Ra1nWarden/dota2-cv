@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 350,
+  "created": false,
+  "id": 177,
+  "mc": false,
+  "name": "Soul Ring Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_soul_ring"
+}

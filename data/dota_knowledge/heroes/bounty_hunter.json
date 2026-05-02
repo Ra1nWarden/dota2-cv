@@ -1,0 +1,408 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "100",
+            "170",
+            "240",
+            "310"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE AOE:",
+          "key": "bounce_aoe",
+          "value": "1200"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.35"
+        },
+        {
+          "generated": true,
+          "header": "PASSTHROUGH DAMAGE:",
+          "key": "passthrough_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PASSTHROUGH WIDTH:",
+          "key": "passthrough_width",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "cast_range",
+          "value": [
+            "375",
+            "425",
+            "475",
+            "525"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "375",
+            "425",
+            "475",
+            "525"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "5",
+      "desc": "Hurls a deadly shuriken at an enemy unit, dealing damage and slowing the target's movement speed. The shuriken will bounce to any Tracked units who are within a 1200 radius of each other.",
+      "dmg_type": "Magical",
+      "key": "bounty_hunter_shuriken_toss",
+      "mc": [
+        "75",
+        "80",
+        "85",
+        "90"
+      ],
+      "name": "Shuriken Toss"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "70",
+            "105",
+            "140",
+            "175"
+          ]
+        },
+        {
+          "header": "GOLD STEAL:",
+          "key": "gold_steal",
+          "value": [
+            "15",
+            "22",
+            "29",
+            "36"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "9",
+        "7",
+        "5",
+        "3"
+      ],
+      "desc": "Bounty Hunter plans his next hit, dealing bonus damage and stealing some unreliable gold.",
+      "dmg_type": "Physical",
+      "key": "bounty_hunter_jinada",
+      "mc": null,
+      "name": "Jinada"
+    },
+    {
+      "attrib": [
+        {
+          "header": "INVISIBILITY DURATION:",
+          "key": "duration",
+          "value": [
+            "20",
+            "25",
+            "30",
+            "35"
+          ]
+        },
+        {
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": [
+            "1",
+            "0.75",
+            "0.5",
+            "0.25"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1",
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION PCT:",
+          "key": "damage_reduction_pct",
+          "value": "0"
+        },
+        {
+          "header": "BONUS SPEED:",
+          "key": "bonus_move_speed_pct",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "18",
+        "17",
+        "16",
+        "15"
+      ],
+      "desc": "Bounty Hunter becomes invisible and gains bonus movement speed and the ability to move through other units until he attacks or casts a spell. If he breaks the invisibility with an attack, that attack will stun the target for a short duration.",
+      "dmg_type": "",
+      "key": "bounty_hunter_wind_walk",
+      "mc": "50",
+      "name": "Shadow Walk"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": [],
+      "cd": "15",
+      "desc": "Applies Shadow Walk and all of its bonuses to the target ally. Allied fade time is 0.5s. Does not break Bounty Hunter's invisibility when cast.",
+      "dmg_type": "",
+      "key": "bounty_hunter_wind_walk_ally",
+      "mc": "50",
+      "name": "Friendly Shadow"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "KILL ASSIST GOLD BONUS PERCENT:",
+          "key": "kill_assist_gold_bonus_percent",
+          "value": "15"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Bounty Hunter receives 15% more kill and assist gold if the dying enemy hero is Big Game. An enemy hero is considered Big Game if they are one of the top 3 net worth heroes on the enemy team.",
+      "dmg_type": "",
+      "key": "bounty_hunter_big_game_hunter",
+      "mc": null,
+      "name": "Big Game Hunter"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE AMPLIFICATION:",
+          "key": "target_damage_amp",
+          "value": [
+            "8%",
+            "12%",
+            "16%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS GOLD RADIUS:",
+          "key": "bonus_gold_radius",
+          "value": "1200"
+        },
+        {
+          "header": "SELF BONUS GOLD:",
+          "key": "bonus_gold_self",
+          "value": [
+            "130",
+            "225",
+            "320"
+          ]
+        },
+        {
+          "header": "ALLIES BONUS GOLD:",
+          "key": "bonus_gold",
+          "value": [
+            "50",
+            "90",
+            "130"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "GOLD STEAL:",
+          "key": "gold_steal",
+          "value": [
+            "0.3",
+            "0.4",
+            "0.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "6",
+        "5",
+        "4"
+      ],
+      "desc": "Tracks an enemy hero, granting True Sight of the target, increasing the damage they take and providing information on how much gold it is carrying. If the target dies, Bounty Hunter and nearby heroes collect a bonus bounty of gold. Casting Track does not take you out of invisibility.",
+      "dmg_type": "",
+      "key": "bounty_hunter_track",
+      "mc": "60",
+      "name": "Track"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shuriken Toss",
+    "desc": "Increases cast range and applies Jinada on hit.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Friendly Shadow",
+    "desc": "Applies Shadow Walk and all of its bonuses to the target ally. Allied fade time is 0.5s. Does not break Bounty Hunter's invisibility when cast.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 2.6,
+    "armor": 5,
+    "attack_max": 41,
+    "attack_min": 33,
+    "attack_range": 150,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.75,
+    "int": 20,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 325,
+    "night_vision": 1000,
+    "str": 19,
+    "str_gain": 2.5
+  },
+  "name": "Bounty Hunter",
+  "primary_attr": "agi",
+  "roles": [
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "bounty_hunter",
+  "talents": [
+    {
+      "left": "+? Shuriken Toss Damage",
+      "level": 25,
+      "right": "No Cooldown on Jinada"
+    },
+    {
+      "left": "Track Grants Shared Vision",
+      "level": 20,
+      "right": "+? Jinada Gold Steal"
+    },
+    {
+      "left": "-?% Damage Taken in Shadow Walk",
+      "level": 15,
+      "right": "+? Track Gold"
+    },
+    {
+      "left": "+?s Shuriken Toss Slow",
+      "level": 10,
+      "right": "+30 Damage"
+    }
+  ]
+}

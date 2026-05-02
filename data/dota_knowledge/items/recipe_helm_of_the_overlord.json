@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 633,
+  "mc": false,
+  "name": "Helm of the Overlord Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_helm_of_the_overlord"
+}

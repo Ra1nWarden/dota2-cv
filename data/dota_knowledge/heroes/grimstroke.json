@@ -1,0 +1,629 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "REFLECTED STROKE:",
+          "key": "reflected_stroke",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "120"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "160"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "header": "BONUS DMG PER HERO:",
+          "key": "bonus_damage_per_hero",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "BONUS DMG PER ILLUSION/CREEP:",
+          "key": "bonus_damage_per_creep",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow_pct",
+          "value": [
+            "50%",
+            "60%",
+            "70%",
+            "80%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "1.75"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR MIN COS FACING ANGLE:",
+          "key": "vector_min_cos_facing_angle",
+          "value": "-0.99"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR STRENGTH:",
+          "key": "vector_strength",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR MAX TRAVEL TIME MULTIPLIER:",
+          "key": "vector_max_travel_time_multiplier",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR ACCEPTABLE RADIAN TO SNAP VELOCITY:",
+          "key": "vector_acceptable_radian_to_snap_velocity",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR DISTANCE TO START FORCE TURNING:",
+          "key": "vector_distance_to_start_force_turning",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR DEG TURN DIVISOR:",
+          "key": "vector_deg_turn_divisor",
+          "value": "1.3"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR DEG TURN MAX:",
+          "key": "vector_deg_turn_max",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR RETICLE DISTANCE:",
+          "key": "vector_reticle_distance",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR RETICLE RADIUS:",
+          "key": "vector_reticle_radius",
+          "value": "140"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.6"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "9",
+        "7",
+        "5"
+      ],
+      "desc": "Grimstroke paints a curved path of ink with his brush, damaging and slowing enemies. The damage is increased with each enemy the ink hits.\n\n Can be put on alt-cast to have the path be straight.",
+      "dmg_type": "Magical",
+      "key": "grimstroke_dark_artistry",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Stroke of Fate"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPAWN TIME:",
+          "key": "spawn_time",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1150"
+        },
+        {
+          "header": "LATCH DURATION:",
+          "key": "latch_duration",
+          "value": "5"
+        },
+        {
+          "header": "ATTACKS TO DESTROY:",
+          "key": "destroy_attacks",
+          "value": [
+            "6",
+            "6",
+            "9",
+            "9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HERO ATTACK MULTIPLIER:",
+          "key": "hero_attack_multiplier",
+          "value": "3"
+        },
+        {
+          "header": "PHANTOM DPS:",
+          "key": "damage_per_second",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ENEMY VISION TIME:",
+          "key": "enemy_vision_time",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "INFECTION SEARCH RADIUS:",
+          "key": "infection_search_radius",
+          "value": "1000"
+        },
+        {
+          "header": "REND DAMAGE:",
+          "key": "pop_damage",
+          "value": [
+            "120",
+            "200",
+            "280",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RETURN PROJECTILE SPEED:",
+          "key": "return_projectile_speed",
+          "value": "1150"
+        },
+        {
+          "generated": true,
+          "header": "LATCHED UNIT OFFSET:",
+          "key": "latched_unit_offset",
+          "value": "130"
+        },
+        {
+          "generated": true,
+          "header": "LATCHED UNIT OFFSET SHORT:",
+          "key": "latched_unit_offset_short",
+          "value": "95"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "26",
+        "22",
+        "18"
+      ],
+      "desc": "Summons a phantom that moves quickly towards the target, latching to it when she arrives. Once latched, the phantom damages and silences. If she survives the full latch duration she rends her victim for heavy damage and refreshes Phantom's Embrace's cooldown.\n\nHero attacks against the phantom count as 3 attacks each.",
+      "dmg_type": "Magical",
+      "key": "grimstroke_ink_creature",
+      "mc": [
+        "80",
+        "100",
+        "120",
+        "140"
+      ],
+      "name": "Phantom's Embrace"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "3"
+        },
+        {
+          "header": "MOVEMENT SPEED BONUS:",
+          "key": "movespeed_bonus_pct",
+          "value": "20%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "375"
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "max_damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "header": "MAX STUN DURATION:",
+          "key": "max_stun",
+          "value": [
+            "1.6",
+            "2",
+            "2.4",
+            "2.8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER TICK:",
+          "key": "damage_per_tick",
+          "value": [
+            "6",
+            "9",
+            "12",
+            "15"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.2"
+        },
+        {
+          "header": "INK TENDRILS DPS:",
+          "key": "tick_dps_tooltip",
+          "value": [
+            "30",
+            "45",
+            "60",
+            "75"
+          ]
+        },
+        {
+          "header": "MAX THRESHOLD DURATION:",
+          "key": "max_threshold_duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "CAN END EARLY:",
+          "key": "can_end_early",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "650",
+            "700",
+            "750",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": [],
+      "cd": [
+        "27",
+        "24",
+        "21",
+        "18"
+      ],
+      "desc": "Grimstroke shrouds an allied unit in ink, increasing its movement speed. Enemies in range of the allied unit are damaged with inky tendrils over time. After 3 seconds it applies damage and stun in an area around the unit in proportion to how long ink tendril was near any hero.",
+      "dmg_type": "Magical",
+      "key": "grimstroke_spirit_walk",
+      "mc": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "name": "Ink Swell"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "IMAGES DO DAMAGE PERCENT:",
+          "key": "images_do_damage_percent",
+          "value": "25"
+        },
+        {
+          "header": "ILLUSION OUTGOING DAMAGE:",
+          "key": "images_do_damage_percent_tooltip",
+          "value": "125%"
+        },
+        {
+          "generated": true,
+          "header": "IMAGES TAKE DAMAGE PERCENT:",
+          "key": "images_take_damage_percent",
+          "value": "175"
+        },
+        {
+          "header": "ILLUSION DAMAGE TAKEN:",
+          "key": "images_take_damage_percent_tooltip",
+          "value": "275%"
+        },
+        {
+          "header": "ILLUSION MOVESPEED BONUS:",
+          "key": "images_movespeed_bonus",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "IMMUNITY RESIST:",
+          "key": "immunity_resist",
+          "value": "95"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "35",
+      "desc": "",
+      "dmg_type": "",
+      "key": "grimstroke_dark_portrait",
+      "mc": "200",
+      "name": "Dark Portrait"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "chain_duration",
+          "value": [
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "header": "BIND RADIUS:",
+          "key": "chain_latch_radius",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CHAIN BREAK DISTANCE:",
+          "key": "chain_break_distance",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "LEASH LIMIT MULTIPLIER:",
+          "key": "leash_limit_multiplier",
+          "value": "1.3"
+        },
+        {
+          "generated": true,
+          "header": "LEASH RADIUS BUFFER:",
+          "key": "leash_radius_buffer",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DURATION PCT:",
+          "key": "creep_duration_pct",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "BONUS REFLECTED SPELL DAMAGE:",
+          "key": "bonus_reflected_spell_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "800",
+            "900"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "70",
+        "65",
+        "60"
+      ],
+      "desc": "Binds a targeted enemy hero to its nearest allied hero within the bind radius, preventing both from moving away from each other. Any unit-targeted ability that either bound hero receives also gets cast on the other hero. If the bind is broken before the duration expires, the initial target will be bound to its nearest allied hero in the radius.",
+      "dmg_type": "",
+      "key": "grimstroke_soul_chain",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Soulbind"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DEBUFF DURATION:",
+          "key": "debuff_duration",
+          "value": "4"
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "5%"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Grimstroke's attacks and spells cause affected enemy heroes to leave a trail of Ink behind them and deal less damage to Grimstroke for 4s.",
+      "dmg_type": "",
+      "key": "grimstroke_ink_trail",
+      "mc": null,
+      "name": "Ink Trail"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Dark Portrait",
+    "desc": "Creates an ink illusion of a target enemy hero. Illusion is debuff immune, has 95% magic resistance, and has bonus movement speed and attack damage.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Ink Swell",
+    "desc": "Ink Swell dispels the allied unit when cast. Causes Ink Swell to deal 40% more damage and heal the target for 40% of the damage Ink Swell deals.\n\nDISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 1.9,
+    "armor": 0,
+    "attack_max": 26,
+    "attack_min": 22,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Grimstroke",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "grimstroke",
+  "talents": [
+    {
+      "left": "+? Ink Swell Radius",
+      "level": 25,
+      "right": "+?% Stroke of Fate Speed and Travel Range"
+    },
+    {
+      "left": "+?% Stroke of Fate Damage",
+      "level": 20,
+      "right": "+? Hits to Kill Phantom"
+    },
+    {
+      "left": "+?% Soulbind Spell Damage",
+      "level": 15,
+      "right": "+?% Ink Swell Movement Speed"
+    },
+    {
+      "left": "+? Phantom's Embrace DPS",
+      "level": 10,
+      "right": "-?s Ink Swell Cooldown"
+    }
+  ]
+}

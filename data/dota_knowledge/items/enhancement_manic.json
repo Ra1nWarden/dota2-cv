@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "- {value}% Base Attack Time",
+      "key": "bat_reduce",
+      "value": "18"
+    },
+    {
+      "display": "+ {value}% Cast Speed Bonus",
+      "key": "cast_speed",
+      "value": "20"
+    },
+    {
+      "display": "- {value}% Vision",
+      "key": "vision_reduce",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1867,
+  "mc": false,
+  "name": "Manic",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_manic"
+}

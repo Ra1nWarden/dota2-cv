@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 2000,
+  "created": false,
+  "id": 47,
+  "mc": false,
+  "name": "Boots of Travel Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_travel_boots"
+}

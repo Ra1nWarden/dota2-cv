@@ -1,0 +1,56 @@
+{
+  "abilities": [
+    {
+      "description": "Consumes all charges and grants a target allied unit a buff that provides +2.5 Health Regen and +1.25 Mana Regen per charge for 8s. \n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+      "title": "Consume",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "50"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "50"
+    },
+    {
+      "key": "max_charges",
+      "value": "10"
+    },
+    {
+      "key": "use_cooldown",
+      "value": "12"
+    },
+    {
+      "key": "health_regen",
+      "value": "2.5"
+    },
+    {
+      "key": "mana_regen",
+      "value": "1.25"
+    },
+    {
+      "key": "regen_duration",
+      "value": "8"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 5,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 305,
+  "mc": false,
+  "name": "Royal Jelly",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "royal_jelly"
+}

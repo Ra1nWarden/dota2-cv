@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 19,
+  "mc": false,
+  "name": "Robe of the Magi",
+  "notes": "",
+  "qual": "component",
+  "short_name": "robe"
+}

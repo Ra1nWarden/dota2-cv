@@ -1,0 +1,85 @@
+{
+  "abilities": [
+    {
+      "description": "You enter ghost form for 4 seconds, becoming immune to physical damage, but are unable to attack and -30% more vulnerable to magic damage.\n\nSteal 5% movement speed from enemy heroes in 900 range every second. Movement speed steal lasts 1.5s.\n\nPutrefaction Aura's effect is increased to 75%. All of the lost Health Restoration is redirected to you every second.",
+      "title": "Rite of Rumusque",
+      "type": "active"
+    },
+    {
+      "description": "Reduces nearby enemy heroes' Health Restoration by 30%.\n\nRadius: 900",
+      "title": "Putrefaction Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "450"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "450"
+    },
+    {
+      "key": "duration",
+      "value": "4.0"
+    },
+    {
+      "key": "extra_spell_damage_percent",
+      "value": "-30"
+    },
+    {
+      "key": "radius",
+      "value": "900"
+    },
+    {
+      "key": "health_steal",
+      "value": "30"
+    },
+    {
+      "key": "interval",
+      "value": "1.0"
+    },
+    {
+      "key": "active_radius",
+      "value": "900"
+    },
+    {
+      "key": "movespeed_steal_pct",
+      "value": "5"
+    },
+    {
+      "key": "active_health_steal",
+      "value": "75"
+    },
+    {
+      "key": "stack_duration",
+      "value": "1.5"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 20,
+  "charges": false,
+  "components": [
+    "ghost",
+    "soul_booster"
+  ],
+  "cost": 4800,
+  "created": true,
+  "id": 1856,
+  "mc": false,
+  "name": "Crella's Crozier",
+  "notes": "Ghost form ends if you become Debuff Immune and will have no effect if you are already Debuff Immune.\nShares cooldown with Ghost Scepter and its upgrades.\nPutrefaction Aura does not redirect Health Restoration from enemy heroes that are at full health.",
+  "qual": "epic",
+  "short_name": "crellas_crozier"
+}

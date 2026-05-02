@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 87,
+  "mc": false,
+  "name": "Ring of Basilius Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_ring_of_basilius"
+}

@@ -1,0 +1,59 @@
+{
+  "abilities": [
+    {
+      "description": "After taking 220 damage from any source, the wearer fires a projectile at up to 2 random enemies in a 600 radius, prioritizing heroes, that deal 110 physical damage and slow the targets movement and attack speed by 100% for 0.2s.",
+      "title": "Reverberate",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "radius",
+      "value": "600"
+    },
+    {
+      "key": "slow_duration",
+      "value": "0.2"
+    },
+    {
+      "key": "damage_reset_interval",
+      "value": "7"
+    },
+    {
+      "key": "damage_threshold",
+      "value": "220"
+    },
+    {
+      "key": "slow",
+      "value": "100"
+    },
+    {
+      "key": "projectile_speed",
+      "value": "1000"
+    },
+    {
+      "key": "projectile_damage",
+      "value": "110"
+    },
+    {
+      "key": "target_count",
+      "value": "2"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1168,
+  "mc": false,
+  "name": "Rattlecage",
+  "notes": "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": null,
+  "short_name": "rattlecage"
+}

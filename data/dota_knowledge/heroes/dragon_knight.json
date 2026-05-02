@@ -1,0 +1,501 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "150"
+        },
+        {
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "RANGE:",
+          "key": "range",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1050"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "reduction",
+          "value": [
+            "20%",
+            "24%",
+            "28%",
+            "32%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DRAGON FORM BONUS PCT:",
+          "key": "dragon_form_bonus_pct",
+          "value": "0"
+        },
+        {
+          "header": "REDUCTION DURATION:",
+          "key": "duration",
+          "value": "11"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Unit Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.",
+      "dmg_type": "Magical",
+      "key": "dragon_knight_breathe_fire",
+      "mc": [
+        "90",
+        "95",
+        "100",
+        "105"
+      ],
+      "name": "Breathe Fire"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.8",
+            "2",
+            "2.2",
+            "2.4"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "90",
+            "120",
+            "150"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PCT:",
+          "key": "damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DRAGON CAST RANGE:",
+          "key": "dragon_cast_range",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1600"
+        },
+        {
+          "header": "AOE:",
+          "key": "aoe",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Dragon Knight smites an enemy unit with his shield, stunning and damaging it and units close to it.",
+      "dmg_type": "Magical",
+      "key": "dragon_knight_dragon_tail",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Dragon Tail"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAGIC DAMAGE:",
+          "key": "magic_damage",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "AOE BONUS:",
+          "key": "bonus_aoe",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "The life blood of the Dragon improves Dragon Knight's abilities and items to have increased AoE and causes his attacks to deal additional magic damage to enemy units.",
+      "dmg_type": "Magical",
+      "key": "dragon_knight_wyrms_wrath",
+      "mc": null,
+      "name": "Wyrm's Wrath"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": "85"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "BURN INTERVAL:",
+          "key": "burn_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "20",
+      "desc": "Ignites an area, dealing damage over time that lingers on enemies in it. Has reduced cast range when melee.",
+      "dmg_type": "Magical",
+      "key": "dragon_knight_fireball",
+      "mc": "80",
+      "name": "Fireball"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS HP REGEN:",
+          "key": "health_regen",
+          "value": "2"
+        },
+        {
+          "header": "BONUS ARMOR:",
+          "key": "armor",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "REGEN AND ARMOR MULTIPLIER DURING DRAGON FORM:",
+          "key": "regen_and_armor_multiplier_during_dragon_form",
+          "value": "50"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "The life blood of the Dragon improves Dragon Knight's health regeneration and armor. \n\nRegen and armor are increased by 50% during Elder Dragon Form.",
+      "dmg_type": "",
+      "key": "dragon_knight_dragon_blood",
+      "mc": null,
+      "name": "Dragon Blood"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "60"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "25",
+            "30",
+            "35",
+            "40"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK RANGE:",
+          "key": "bonus_attack_range",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ABILITY CAST RANGE:",
+          "key": "bonus_ability_cast_range",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACK DAMAGE:",
+          "key": "bonus_attack_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE:",
+          "key": "model_scale",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "30"
+          ]
+        },
+        {
+          "header": "CORROSIVE DURATION:",
+          "key": "corrosive_duration",
+          "value": "3"
+        },
+        {
+          "header": "CORROSIVE DAMAGE:",
+          "key": "corrosive_damage_per_second",
+          "value": [
+            "25",
+            "25",
+            "25",
+            "35"
+          ]
+        },
+        {
+          "header": "SPLASH DAMAGE:",
+          "key": "ranged_splash_damage_pct",
+          "value": [
+            "0%",
+            "75%",
+            "75%",
+            "100%"
+          ]
+        },
+        {
+          "header": "SPLASH RADIUS:",
+          "key": "ranged_splash_radius",
+          "value": [
+            "0",
+            "275",
+            "275",
+            "350"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEALTH BAR OFFSET:",
+          "key": "health_bar_offset",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": [
+            "0",
+            "0",
+            "0",
+            "20"
+          ]
+        },
+        {
+          "header": "FROST DURATION:",
+          "key": "frost_duration",
+          "value": [
+            "0",
+            "0",
+            "3",
+            "3"
+          ]
+        },
+        {
+          "header": "FROST MOVEMENT SLOW:",
+          "key": "frost_bonus_movement_speed",
+          "value": [
+            "0%",
+            "0%",
+            "30%",
+            "45%"
+          ]
+        },
+        {
+          "header": "FROST ATTACK SLOW:",
+          "key": "frost_bonus_attack_speed",
+          "value": [
+            "0",
+            "0",
+            "50",
+            "65"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FROST HEALING REDUCTION:",
+          "key": "frost_healing_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER BONUS LEVELS:",
+          "key": "scepter_bonus_levels",
+          "value": "1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "100",
+      "desc": "Dragon Knight assumes the form of the Elder Dragon, increasing the range of his abilities, gaining bonus movement speed, and a ranged attack with various properties. The Dragon evolves per level. The bonuses are cumulative. \n\nLevel 1 Green: Grants a corrosive damage over time that can also damage buildings.\n\nLevel 2 Red: Grants splash damage to the dragon's attacks.\n\nLevel 3 Blue: Grants a debuff immunity piercing movement and attack frost slow on attack.",
+      "dmg_type": "Magical",
+      "key": "dragon_knight_elder_dragon_form",
+      "mc": "50",
+      "name": "Elder Dragon Form"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Elder Dragon Form",
+    "desc": "Increases the current level of Dragon Form by one. Adds a Level 4 Black Dragon that has free pathing, bonus magic resistance, and increased other bonuses.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Fireball",
+    "desc": "Ignites an area, dealing damage over time that lingers on enemies in it. Has reduced cast range when melee.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 2,
+    "armor": 0,
+    "attack_max": 40,
+    "attack_min": 34,
+    "attack_range": 150,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 3.2
+  },
+  "name": "Dragon Knight",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Durable",
+    "Disabler",
+    "Initiator",
+    "Nuker"
+  ],
+  "short_name": "dragon_knight",
+  "talents": [
+    {
+      "left": "+? Dragon Blood HP Regen/Armor",
+      "level": 25,
+      "right": "+?% Wyrm's Wrath Bonuses"
+    },
+    {
+      "left": "+? Elder Dragon Form Attack Range",
+      "level": 20,
+      "right": "+? Breathe Fire Damage"
+    },
+    {
+      "left": "+?s Dragon Tail Stun",
+      "level": 15,
+      "right": "+300 Health"
+    },
+    {
+      "left": "+15 Damage",
+      "level": 10,
+      "right": "-?s Breathe Fire Cooldown"
+    }
+  ]
+}

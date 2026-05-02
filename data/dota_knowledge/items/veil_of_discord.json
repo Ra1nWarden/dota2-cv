@@ -1,0 +1,58 @@
+{
+  "abilities": [
+    {
+      "description": "Cast a 900 radius blast that causes enemy heroes to take 10% increased damage from spells.\n\nCan be cast while channeling.\n\nDuration: 16 seconds.",
+      "title": "Spell Weakness",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "175"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "18"
+    },
+    {
+      "key": "spell_amp",
+      "value": "10"
+    },
+    {
+      "key": "debuff_radius",
+      "value": "900"
+    },
+    {
+      "key": "resist_debuff_duration",
+      "value": "16.0"
+    }
+  ],
+  "behavior": [
+    "AOE",
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 16,
+  "charges": false,
+  "components": [
+    "voodoo_mask",
+    "robe",
+    "fluffy_hat"
+  ],
+  "cost": 1700,
+  "created": true,
+  "id": 190,
+  "mc": 50,
+  "name": "Veil of Discord",
+  "notes": "Spell Weakness does not stack with Bloodstone's Spell Weakness Aura.",
+  "qual": "rare",
+  "short_name": "veil_of_discord"
+}

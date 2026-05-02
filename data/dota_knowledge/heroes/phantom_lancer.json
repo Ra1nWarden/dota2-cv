@@ -1,0 +1,421 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "LANCE DAMAGE:",
+          "key": "lance_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LANCE SPEED:",
+          "key": "lance_speed",
+          "value": "1000"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "duration",
+          "value": "3.75"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_speed_pct",
+          "value": [
+            "-14%",
+            "-21%",
+            "-28%",
+            "-35%"
+          ]
+        },
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": [
+            "3.5",
+            "5",
+            "6.5",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE OUT PCT:",
+          "key": "illusion_damage_out_pct",
+          "value": "-85"
+        },
+        {
+          "header": "ILLUSION DAMAGE:",
+          "key": "tooltip_illusion_damage",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE IN PCT:",
+          "key": "illusion_damage_in_pct",
+          "value": "300"
+        },
+        {
+          "header": "ILLUSION DAMAGE TAKEN:",
+          "key": "tooltip_illusion_total_damage_in_pct",
+          "value": "400%"
+        },
+        {
+          "generated": true,
+          "header": "FAKE LANCE DISTANCE:",
+          "key": "fake_lance_distance",
+          "value": "675"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "600",
+            "650",
+            "700",
+            "750"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "10",
+        "9",
+        "8",
+        "7"
+      ],
+      "desc": "Sends a magical spirit lance to a target enemy unit that damages and slows, while summoning an illusory phantom to attack the unit.",
+      "dmg_type": "Magical",
+      "key": "phantom_lancer_spirit_lance",
+      "mc": "120",
+      "name": "Spirit Lance"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ILLUSION 1 DAMAGE OUT PCT:",
+          "key": "illusion_1_damage_out_pct",
+          "value": "-100"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION 1 DAMAGE IN PCT:",
+          "key": "illusion_1_damage_in_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION 2 DAMAGE OUT PCT:",
+          "key": "illusion_2_damage_out_pct",
+          "value": "-80"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION 2 DAMAGE IN PCT:",
+          "key": "illusion_2_damage_in_pct",
+          "value": "500"
+        },
+        {
+          "header": "TARGET AREA SIZE:",
+          "key": "target_aoe",
+          "value": "325"
+        },
+        {
+          "header": "ILLUSION GATHER RANGE:",
+          "key": "search_radius",
+          "value": "900"
+        },
+        {
+          "header": "REAPPEAR DELAY:",
+          "key": "delay",
+          "value": "1"
+        },
+        {
+          "header": "DOPPELGANGER DURATION:",
+          "key": "illusion_duration",
+          "value": "8"
+        },
+        {
+          "header": "ILLUSION DURATION EXTENSION:",
+          "key": "illusion_extended_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION 2 AMOUNT:",
+          "key": "illusion_2_amount",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "HP MISSING PER EXTRA ILLUSION PCT:",
+          "key": "hp_missing_per_extra_illusion_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "575"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "22",
+        "18",
+        "14",
+        "10"
+      ],
+      "desc": "Phantom Lancer briefly vanishes from the battlefield. After 1 second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes 500% bonus damage and deals -80% less damage.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "phantom_lancer_doppelwalk",
+      "mc": "70",
+      "name": "Doppelganger"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MIN RUSH DISTANCE:",
+          "key": "min_distance",
+          "value": "275"
+        },
+        {
+          "header": "MAX RUSH DISTANCE:",
+          "key": "max_distance",
+          "value": [
+            "600",
+            "675",
+            "750",
+            "825"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS SPEED:",
+          "key": "bonus_speed",
+          "value": "800"
+        },
+        {
+          "header": "BONUS AGILITY:",
+          "key": "bonus_agility",
+          "value": "0"
+        },
+        {
+          "header": "BONUS AGILITY DURATION:",
+          "key": "agility_duration",
+          "value": "0"
+        },
+        {
+          "header": "EVASION:",
+          "key": "evasion",
+          "value": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        }
+      ],
+      "behavior": [
+        "Instant Cast",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "15",
+        "11",
+        "7",
+        "3"
+      ],
+      "desc": "When targeting an enemy for an attack, Phantom Lancer quickly charges into range, gaining increased movement speed and evasion.",
+      "dmg_type": "Physical",
+      "key": "phantom_lancer_phantom_edge",
+      "mc": null,
+      "name": "Phantom Rush"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MIN DAMAGE:",
+          "key": "outgoing_floor",
+          "value": "17%"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "Passive"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Whenever an illusion of Phantom Lancer is created, its outgoing damage cannot go below a fixed value for 3 seconds.",
+      "dmg_type": "",
+      "key": "phantom_lancer_illusory_armaments",
+      "mc": null,
+      "name": "Illusory Armaments"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX ILLUSIONS:",
+          "key": "max_illusions",
+          "value": [
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "header": "HERO TRIGGER CHANCE:",
+          "key": "proc_chance_pct",
+          "value": [
+            "40%",
+            "45%",
+            "50%"
+          ]
+        },
+        {
+          "header": "ILLUSION TRIGGER CHANCE:",
+          "key": "illusion_proc_chance_pct",
+          "value": "9%"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION FROM ILLUSION DURATION:",
+          "key": "illusion_from_illusion_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE OUT PCT:",
+          "key": "illusion_damage_out_pct",
+          "value": "-85"
+        },
+        {
+          "header": "ILLUSION DAMAGE:",
+          "key": "tooltip_illusion_damage",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE IN PCT:",
+          "key": "illusion_damage_in_pct",
+          "value": "500"
+        },
+        {
+          "header": "ILLUSION DAMAGE TAKEN:",
+          "key": "tooltip_total_illusion_damage_in_pct",
+          "value": "600%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "undefined",
+      "desc": "Phantom Lancer has a chance to fracture his presence on an attack, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for 8 seconds, while illusions created from other illusions last 4 seconds.",
+      "dmg_type": "",
+      "key": "phantom_lancer_juxtapose",
+      "mc": "undefined",
+      "name": "Juxtapose"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Phantom Rush",
+    "desc": "Increases Range. Whenever Phantom Lancer Rushes through enemies, he creates Juxtapose illusions that attack them. Additionally, every 600 units rushed creates a Juxtapose illusion that rushes to the target alongside Phantom Lancer.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Juxtapose",
+    "desc": "Adds an active ability to Juxtapose. Renders Phantom Lancer invisible for up to 8 seconds while generating a duplicate image to confuse enemies. His movement speed is increased by 15% during this invisibility.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 26,
+    "agi_gain": 3.4,
+    "armor": 0,
+    "attack_max": 36,
+    "attack_min": 26,
+    "attack_range": 225,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2,
+    "int": 21,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.2
+  },
+  "name": "Phantom Lancer",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Pusher",
+    "Nuker"
+  ],
+  "short_name": "phantom_lancer",
+  "talents": [
+    {
+      "left": "-?s Doppelganger Cooldown",
+      "level": 25,
+      "right": "+?s Illusory Armaments Duration"
+    },
+    {
+      "left": "+? Spirit Lance Damage",
+      "level": 20,
+      "right": "-?% Juxtapose Illusion Damage Taken"
+    },
+    {
+      "left": "?% Illusion Spirit Lance Damage",
+      "level": 15,
+      "right": "+? Doppelganger Cast Range"
+    },
+    {
+      "left": "+?s Spirit Lance Slow Duration",
+      "level": 10,
+      "right": "+?% Juxtapose Illusion Trigger Chance"
+    }
+  ]
+}

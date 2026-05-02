@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 675,
+  "created": false,
+  "id": 89,
+  "mc": false,
+  "name": "Pipe of Insight Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_pipe"
+}

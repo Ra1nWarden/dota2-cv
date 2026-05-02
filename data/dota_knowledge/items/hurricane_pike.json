@@ -1,0 +1,87 @@
+{
+  "abilities": [
+    {
+      "description": "Pushes you and target enemy 425 units away from each other, and for 6 seconds, allows you to make 5 attacks against the target without range restrictions and with +100 attack speed.\n\nCan be cast on self or allies to push the target 600 units in the direction it is facing.\nEnemy Range: 425",
+      "title": "Hurricane Thrust",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Attack Range (Ranged Only)",
+      "key": "base_attack_range",
+      "value": "130"
+    },
+    {
+      "key": "push_length",
+      "value": "600"
+    },
+    {
+      "key": "enemy_length",
+      "value": "425"
+    },
+    {
+      "key": "range_duration",
+      "value": "6"
+    },
+    {
+      "key": "cast_range_enemy",
+      "value": "425"
+    },
+    {
+      "key": "max_attacks",
+      "value": "5"
+    },
+    {
+      "key": "bonus_attack_speed",
+      "value": "100"
+    },
+    {
+      "key": "push_time",
+      "value": "0.5"
+    },
+    {
+      "key": "dizzy_duration",
+      "value": "0"
+    },
+    {
+      "key": "dizzy_distance_pct",
+      "value": "0"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 19,
+  "charges": false,
+  "components": [
+    "force_staff",
+    "dragon_lance"
+  ],
+  "cost": 4450,
+  "created": true,
+  "id": 263,
+  "mc": 150,
+  "name": "Hurricane Pike",
+  "notes": "Self-cast will use Hurricane Pike on yourself.\nHurricane Pike doesn't interrupt the target's actions.\nWill not work on a unit inside Chronosphere, Duel, or Black Hole.\nAttack Range bonuses from Dragon Lance and its upgrades do not stack.",
+  "qual": "epic",
+  "short_name": "hurricane_pike"
+}

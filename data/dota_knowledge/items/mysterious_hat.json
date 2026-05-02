@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "50"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "5"
+    },
+    {
+      "display": "+ {value}% Manacost Reduction",
+      "key": "manacost_reduction",
+      "value": "5"
+    }
+  ],
+  "behavior": null,
+  "cd": 8,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 589,
+  "mc": false,
+  "name": "Fairy's Trinket",
+  "notes": "",
+  "qual": null,
+  "short_name": "mysterious_hat"
+}

@@ -1,0 +1,75 @@
+{
+  "abilities": [
+    {
+      "description": "When cast on an ally, grants them 5 armor, 60 attack speed, 15% movement speed and a 350 physical damage barrier. \n\nDoes not grant bonus armor, movement or attack speed if used on self. \n\nDuration: 7",
+      "title": "Shine",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "self_movement_speed",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "200"
+    },
+    {
+      "key": "target_movement_speed",
+      "value": "15"
+    },
+    {
+      "key": "target_attack_speed",
+      "value": "60"
+    },
+    {
+      "key": "target_armor",
+      "value": "5"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    },
+    {
+      "key": "absorb_amount",
+      "value": "350"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 16,
+  "charges": false,
+  "components": [
+    "pavise",
+    "chainmail",
+    "wind_lace"
+  ],
+  "cost": 2575,
+  "created": true,
+  "id": 229,
+  "mc": 100,
+  "name": "Solar Crest",
+  "notes": "Shares cooldown with Pavise.",
+  "qual": "rare",
+  "short_name": "solar_crest"
+}

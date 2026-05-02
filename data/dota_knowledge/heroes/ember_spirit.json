@@ -1,0 +1,493 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "1.25",
+            "1.75",
+            "2.25",
+            "2.75"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "UNIT COUNT:",
+          "key": "unit_count",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "REMNANT CHAINS:",
+          "key": "remnant_chains",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "12",
+        "11",
+        "10"
+      ],
+      "desc": "Ember Spirit unleashes fiery bolas that wrap around nearby enemies, anchoring them in place and dealing damage each second.",
+      "dmg_type": "Magical",
+      "key": "ember_spirit_searing_chains",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Searing Chains"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "250",
+            "350",
+            "450",
+            "550"
+          ]
+        },
+        {
+          "header": "BONUS HERO DAMAGE:",
+          "key": "bonus_hero_damage",
+          "value": [
+            "50",
+            "90",
+            "130",
+            "170"
+          ]
+        },
+        {
+          "header": "ATTACK INTERVAL:",
+          "key": "attack_interval",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE PENALTY:",
+          "key": "creep_damage_penalty",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "13",
+            "11",
+            "9",
+            "7"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MIN ENEMIES FOR DOUBLE SLEIGHT:",
+          "key": "min_enemies_for_double_sleight",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SECOND ATTACK DAMAGE PENALTY:",
+          "key": "second_attack_damage_penalty",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "13",
+        "11",
+        "9",
+        "7"
+      ],
+      "desc": "Ember Spirit dashes around with blazing speed, attacking all enemies in the targeted area of effect, then returning to his start location. Deals bonus damage to heroes.",
+      "dmg_type": "Physical",
+      "key": "ember_spirit_sleight_of_fist",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Sleight of Fist"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "12",
+            "14",
+            "16",
+            "18"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PASSIVE RADIUS:",
+          "key": "passive_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "0.5"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "PERCENTAGE ABSORBED:",
+          "key": "shield_pct_absorb",
+          "value": "70%"
+        },
+        {
+          "header": "MAGIC BARRIER:",
+          "key": "absorb_amount",
+          "value": [
+            "60",
+            "140",
+            "220",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "32",
+      "desc": "Ember Spirit surrounds himself with a ring of fire that consumes incoming magic damage, absorbing a percentage of the damage taken. Flame Guard deals damage per second in an area around Ember Spirit while Flame Guard is active. If the shield is broken, the damage is also lost.",
+      "dmg_type": "Magical",
+      "key": "ember_spirit_flame_guard",
+      "mc": [
+        "65",
+        "80",
+        "95",
+        "110"
+      ],
+      "name": "Flame Guard"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED MULTIPLIER:",
+          "key": "speed_multiplier",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": "35"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "200",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "99999"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Select the Fire Remnant to arrive at.",
+      "dmg_type": "Magical",
+      "key": "ember_spirit_activate_fire_remnant",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Activate Fire Remnant"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.2"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": "10"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Ember Spirit is continuously burning, dealing damage per second to all nearby enemies at all times.",
+      "dmg_type": "Magical",
+      "key": "ember_spirit_immolation",
+      "mc": null,
+      "name": "Immolation"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED MULTIPLIER:",
+          "key": "speed_multiplier",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "35"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "200",
+            "300"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "45"
+        },
+        {
+          "header": "CHARGE RADIUS:",
+          "key": "shard_charge_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "APPLY IMMOLATION TO REMNANT:",
+          "key": "apply_immolation_to_remnant",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "0.5",
+      "desc": "Sends a Fire Remnant that runs to the target location at 250% Ember Spirit's speed. Using Activate Fire Remnant, Ember Spirit will dash out to all active Fire Remnants, destroying them and dealing damage in an area and then moving to the nearest Remnant. Ember Spirit will end at the Remnant closest to the targeted location.",
+      "dmg_type": "Magical",
+      "key": "ember_spirit_fire_remnant",
+      "mc": "0",
+      "name": "Fire Remnant"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Fire Remnant",
+    "desc": "Increases cast range, initial remnant speed, and maximum charges.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Fire Remnant",
+    "desc": "If an enemy hero dies near Ember Spirit, a Fire Remnant charge will be replenished.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 3.2,
+    "armor": 0,
+    "attack_max": 37,
+    "attack_min": 33,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 20,
+    "int_gain": 2.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.5
+  },
+  "name": "Ember Spirit",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Nuker",
+    "Disabler",
+    "Initiator"
+  ],
+  "short_name": "ember_spirit",
+  "talents": [
+    {
+      "left": "=2 Sleight of Fist Charges",
+      "level": 25,
+      "right": "-12s Remnant Charge Restore Time"
+    },
+    {
+      "left": "+50 Sleight of Fist Hero Damage",
+      "level": 20,
+      "right": "+50 Searing Chains Damage"
+    },
+    {
+      "left": "+100% Flame Guard Damage Per Second",
+      "level": 15,
+      "right": "+0.8s Searing Chains Duration"
+    },
+    {
+      "left": "+12 Damage",
+      "level": 10,
+      "right": "+165 Flame Guard Barrier Amount"
+    }
+  ]
+}

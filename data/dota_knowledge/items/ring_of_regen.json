@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "1.25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 175,
+  "created": false,
+  "id": 27,
+  "mc": false,
+  "name": "Ring of Regen",
+  "notes": "",
+  "qual": "component",
+  "short_name": "ring_of_regen"
+}

@@ -1,0 +1,430 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1400"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "-12%",
+            "-18%",
+            "-24%",
+            "-30%"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "50",
+            "75",
+            "100",
+            "125"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SELF ATTACK RANGE BONUS:",
+          "key": "self_attack_range_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "17",
+        "14",
+        "11"
+      ],
+      "desc": "Damages enemy unit, forces it to move slower and lets allies attack it more quickly.",
+      "dmg_type": "Pure",
+      "key": "chen_penitence",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Penitence"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX UNITS:",
+          "key": "max_units",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "header": "CREEP MAX LEVEL:",
+          "key": "level_req",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "HEALTH MINIMUM:",
+          "key": "health_min",
+          "value": "400"
+        },
+        {
+          "header": "PERCENTAGE OF BOUNTY:",
+          "key": "gold_pct",
+          "value": [
+            "25%",
+            "50%",
+            "75%",
+            "100%"
+          ]
+        },
+        {
+          "header": "MOVE SPEED BONUS:",
+          "key": "movement_speed_bonus",
+          "value": [
+            "5",
+            "10",
+            "20",
+            "30"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "damage_bonus",
+          "value": [
+            "0%",
+            "6%",
+            "12%",
+            "18%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IS MARTYR:",
+          "key": "is_martyr",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CURRENT HP PCT TOOLTIP:",
+          "key": "current_hp_pct_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CREEP ABILITY LEVEL:",
+          "key": "creep_ability_level",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UNSUMMON TIME:",
+          "key": "unsummon_time",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "15",
+      "desc": "Chen takes control of an enemy or neutral creep and receives a percentage of its bounty. Its maximum health is set to 400. Converted creeps will have increased movement speed and bonus damage. Chen may globally target his own creep if it has not taken damage in the last 3 seconds to unsummon it.",
+      "dmg_type": "",
+      "key": "chen_holy_persuasion",
+      "mc": [
+        "110",
+        "130",
+        "150",
+        "170"
+      ],
+      "name": "Holy Persuasion"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ARMOR:",
+          "key": "armor",
+          "value": "0"
+        },
+        {
+          "header": "REGEN PER SEC:",
+          "key": "heal_rate",
+          "value": [
+            "1.5",
+            "3",
+            "4.5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AURA RADIUS:",
+          "key": "aura_radius",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "header": "ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "HEAL AMPLIFICATION:",
+          "key": "heal_amp",
+          "value": [
+            "5%",
+            "10%",
+            "15%",
+            "20%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP BONUS:",
+          "key": "creep_bonus",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14",
+        ""
+      ],
+      "desc": "Passively provides an aura that grants increased health regeneration. Can be cast on allies to provide them with bonus armor and increasing the healing and health regeneration they receive.\n\nIf cast on Chen, all units controlled by Chen receive the buff.",
+      "dmg_type": "",
+      "key": "chen_divine_favor",
+      "mc": "75",
+      "name": "Divine Favor"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ZEALOTS:",
+          "key": "zealots",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ZEALOT RESPAWN TIME:",
+          "key": "zealot_respawn_time",
+          "value": "60"
+        },
+        {
+          "generated": true,
+          "header": "BONUS HP:",
+          "key": "bonus_hp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TELEPORT DELAY:",
+          "key": "teleport_delay",
+          "value": "6"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "",
+      "dmg_type": "",
+      "key": "chen_zealot",
+      "mc": "50",
+      "name": "Zealot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "INITIAL HEAL:",
+          "key": "heal_amount",
+          "value": [
+            "200",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HOT DURATION:",
+          "key": "hot_duration",
+          "value": "10"
+        },
+        {
+          "header": "HEAL PER SECOND:",
+          "key": "heal_per_second",
+          "value": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "150",
+        "130",
+        "110"
+      ],
+      "desc": "Heals all allied heroes on the map as well as all units under Chen's control. A large heal is applied at first and a slow heal over time is applied for 10 seconds afterwards.",
+      "dmg_type": "",
+      "key": "chen_hand_of_god",
+      "mc": [
+        "200",
+        "300",
+        "400"
+      ],
+      "name": "Hand of God"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Hand of God",
+    "desc": "Decreases the cooldown of Hand of God to 110s and it becomes a channelled spell that lasts for up to =6 seconds. The initial heal happens at the start of the channel, and while channeling other nearby allied units become debuff immune with 60% magic resistance and the power of the heal over time is increased by 200%.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Holy Persuasion",
+    "desc": "Allows Holy Persuasion to target Ancient creeps. Can control up to 1/2/3 Ancient creeps based on Hand of God's level. Additionally levels up some abilities of creeps by 1 level.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 2.1,
+    "armor": -1,
+    "attack_max": 39,
+    "attack_min": 29,
+    "attack_range": 650,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 19,
+    "int_gain": 3.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 2
+  },
+  "name": "Chen",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Pusher"
+  ],
+  "short_name": "chen",
+  "talents": [
+    {
+      "left": "Hand of God applies a Strong Dispel",
+      "level": 25,
+      "right": "Hand of God Fully Heals Chen and His Creeps"
+    },
+    {
+      "left": "+?% Divine Favor Heal Amplification",
+      "level": 20,
+      "right": "+? Holy Persuasion Minimum Health"
+    },
+    {
+      "left": "+?% Holy Persuasion Damage",
+      "level": 15,
+      "right": "-?% Penitence Slow"
+    },
+    {
+      "left": "+? Penitence Damage",
+      "level": 10,
+      "right": "special_bonus_unique_chen_zealot"
+    }
+  ]
+}

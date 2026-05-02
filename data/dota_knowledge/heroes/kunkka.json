@@ -1,0 +1,556 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "250"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "movespeed_bonus",
+          "value": "-40%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.4"
+        },
+        {
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "1.6"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "torrent_damage",
+          "value": [
+            "110",
+            "180",
+            "250",
+            "320"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PERCENT INSTANT:",
+          "key": "percent_instant",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TICK INTERVAL:",
+          "key": "damage_tick_interval",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.",
+      "dmg_type": "Magical",
+      "key": "kunkka_torrent",
+      "mc": "90",
+      "name": "Torrent"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CLEAVE STARTING WIDTH:",
+          "key": "cleave_starting_width",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE ENDING WIDTH:",
+          "key": "cleave_ending_width",
+          "value": [
+            "500",
+            "550",
+            "600",
+            "650"
+          ]
+        },
+        {
+          "header": "CLEAVE RANGE:",
+          "key": "cleave_distance",
+          "value": [
+            "650",
+            "775",
+            "900",
+            "1025"
+          ]
+        },
+        {
+          "header": "DAMAGE BONUS:",
+          "key": "damage_bonus",
+          "value": [
+            "35",
+            "70",
+            "105",
+            "140"
+          ]
+        },
+        {
+          "header": "CLEAVE DAMAGE:",
+          "key": "cleave_damage",
+          "value": "150%"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED SLOW:",
+          "key": "movespeed_slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED SLOW DURATION:",
+          "key": "movespeed_slow_duration",
+          "value": "0"
+        },
+        {
+          "header": "HERO HIT COOLDOWN REDUCTION:",
+          "key": "cooldown_reduction_per_hero_hit",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES ARMOR:",
+          "key": "pierces_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.",
+      "dmg_type": "Physical",
+      "key": "kunkka_tidebringer",
+      "mc": null,
+      "name": "Tidebringer"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ENEMY DELAY:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "header": "ALLIED DELAY:",
+          "key": "allied_duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "FOW RANGE:",
+          "key": "fow_range",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "FOW DURATION:",
+          "key": "fow_duration",
+          "value": "5.94"
+        },
+        {
+          "generated": true,
+          "header": "ALLY MS:",
+          "key": "ally_ms",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ALLY ARMOR:",
+          "key": "ally_armor",
+          "value": "0"
+        },
+        {
+          "header": "RUM SPLASH RADIUS:",
+          "key": "rum_allies_radius",
+          "value": "0"
+        },
+        {
+          "header": "RUM DURATION:",
+          "key": "buff_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED BONUS:",
+          "key": "movespeed_bonus",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "GHOSTSHIP ABSORB:",
+          "key": "ghostship_absorb",
+          "value": "35"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "550",
+            "700",
+            "850",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "20",
+        "16",
+        "12"
+      ],
+      "desc": "Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds. Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes.",
+      "dmg_type": "",
+      "key": "kunkka_x_marks_the_spot",
+      "mc": "50",
+      "name": "X Marks the Spot"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE THRESHOLD:",
+          "key": "damage_threshold",
+          "value": "65"
+        },
+        {
+          "generated": true,
+          "header": "GHOSTSHIP ABSORB:",
+          "key": "ghostship_absorb",
+          "value": "18"
+        },
+        {
+          "generated": true,
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED BONUS:",
+          "key": "movespeed_bonus",
+          "value": "7.75"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "60.5",
+      "desc": "",
+      "dmg_type": "",
+      "key": "kunkka_admirals_rum",
+      "mc": null,
+      "name": "Admiral's Rum"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "700"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "750"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "180"
+        },
+        {
+          "header": "DRAG DURATION:",
+          "key": "duration",
+          "value": "1"
+        },
+        {
+          "header": "WAVE DISTANCE:",
+          "key": "wave_distance_tooltip",
+          "value": "1800"
+        },
+        {
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1050"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "12",
+      "desc": "Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it. Enemies cannot attack while being dragged.",
+      "dmg_type": "Magical",
+      "key": "kunkka_tidal_wave",
+      "mc": "75",
+      "name": "Tidal Wave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "IMPACT DELAY:",
+          "key": "tooltip_delay",
+          "value": "3.1"
+        },
+        {
+          "header": "RANGE:",
+          "key": "ghostship_distance",
+          "value": "2000"
+        },
+        {
+          "header": "WIDTH:",
+          "key": "ghostship_width",
+          "value": "450"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "GHOSTSHIP SPEED:",
+          "key": "ghostship_speed",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "RUM FACTOR:",
+          "key": "rum_factor",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "NUM CANNON VOLLEYS:",
+          "key": "num_cannon_volleys",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "BASE CANNON ROTATION:",
+          "key": "base_cannon_rotation",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "ROTATION PER CANNON:",
+          "key": "rotation_per_cannon",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL CANNON OFFSET:",
+          "key": "initial_cannon_offset",
+          "value": "-150"
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE BETWEEN CANNONS:",
+          "key": "distance_between_cannons",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "90",
+        "80",
+        "70"
+      ],
+      "desc": "Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage.\n\nAllied heroes touched by the Ghostship are given a 2x strong swig of The Admiral's Rum.",
+      "dmg_type": "Magical",
+      "key": "kunkka_ghostship",
+      "mc": [
+        "125",
+        "175",
+        "225"
+      ],
+      "name": "Ghostship"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "1",
+      "desc": "Returns the marked hero to the X.",
+      "dmg_type": "",
+      "key": "kunkka_return",
+      "mc": "0",
+      "name": "Return"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Ghostship",
+    "desc": "Ghostship creates a fleet of 2 ships at the target point on a 2.5 second interval. Each ship now also fires 3 waves of cannonballs from the port and starboard side that deal 40% of Ghostship's damage as they pass through enemies.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Tidal Wave",
+    "desc": "Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it. Enemies cannot attack while being dragged.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 1.6,
+    "armor": 2,
+    "attack_max": 36,
+    "attack_min": 30,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.75,
+    "int": 18,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.6
+  },
+  "name": "Kunkka",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Support",
+    "Disabler",
+    "Initiator",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "kunkka",
+  "talents": [
+    {
+      "left": "+100 Spell Area of Effect",
+      "level": 25,
+      "right": "Tidebringer Ignores ?% Armor"
+    },
+    {
+      "left": "-?s Torrent Cooldown",
+      "level": 20,
+      "right": "+?% Tidebringer Cleave Damage"
+    },
+    {
+      "left": "+?% Torrent Damage/Knock Up Duration",
+      "level": 15,
+      "right": "+? Tidebringer Damage"
+    },
+    {
+      "left": "+?s Admiral's Rum Buff Duration",
+      "level": 10,
+      "right": "Tidebringer applies ?% slow for ?s"
+    }
+  ]
+}

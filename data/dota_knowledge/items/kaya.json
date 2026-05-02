@@ -1,0 +1,35 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "10"
+    },
+    {
+      "display": "+ {value}% Mana Regen Amplification",
+      "key": "mana_regen_multiplier",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "staff_of_wizardry",
+    "robe"
+  ],
+  "cost": 2100,
+  "created": true,
+  "id": 259,
+  "mc": false,
+  "name": "Kaya",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "kaya"
+}

@@ -1,0 +1,368 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MANA POOL TO DAMAGE:",
+          "key": "mana_pool_damage_pct",
+          "value": [
+            "10%",
+            "11%",
+            "12%",
+            "13%"
+          ]
+        },
+        {
+          "header": "CURRENT MANA COST:",
+          "key": "mana_cost_percentage",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "4.5",
+        "3",
+        "1.5",
+        "0"
+      ],
+      "desc": "Adds extra pure damage to Outworld Destroyer's attacks, based on his remaining mana pool.",
+      "dmg_type": "Pure",
+      "key": "obsidian_destroyer_arcane_orb",
+      "mc": "0",
+      "name": "Arcane Orb"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "prison_duration",
+          "value": [
+            "1.75",
+            "2.5",
+            "3.25",
+            "4"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HAS MANA STEAL:",
+          "key": "has_mana_steal",
+          "value": "1"
+        },
+        {
+          "header": "MANA CAPACITY STEAL:",
+          "key": "mana_capacity_steal",
+          "value": [
+            "16%",
+            "19%",
+            "22%",
+            "25%"
+          ]
+        },
+        {
+          "header": "STEAL DURATION:",
+          "key": "mana_capacity_duration",
+          "value": [
+            "30",
+            "40",
+            "50",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ALLIED MOVEMENT SPEED PCT:",
+          "key": "allied_movement_speed_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "desc": "Steals a percentage of the target's max mana and places them into an astral prison. The hidden unit is invulnerable and disabled. When the astral prison implodes, it deals damage to the target.",
+      "dmg_type": "Magical",
+      "key": "obsidian_destroyer_astral_imprisonment",
+      "mc": "150",
+      "name": "Astral Imprisonment"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BARRIER:",
+          "key": "barrier_flat",
+          "value": [
+            "120",
+            "180",
+            "240",
+            "300"
+          ]
+        },
+        {
+          "header": "MAX MANA BARRIER:",
+          "key": "mana_to_barrier",
+          "value": "12%"
+        },
+        {
+          "header": "BONUS MANA:",
+          "key": "bonus_mana",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "barrier_duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "36",
+        "34",
+        "32",
+        "30"
+      ],
+      "desc": "Increases Outworld Destroyer's maximum mana. When cast, protects Outworld Destroyer with an all damage barrier equal to a flat amount and a percentage of his maximum mana.",
+      "dmg_type": "",
+      "key": "obsidian_destroyer_objurgation",
+      "mc": "250",
+      "name": "Objurgation"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE:",
+          "key": "proc_chance",
+          "value": "30%"
+        },
+        {
+          "header": "MAX MANA RESTORE:",
+          "key": "mana_restore",
+          "value": "40%"
+        },
+        {
+          "header": "MAX MANA RESTORE (ATTACKS):",
+          "key": "mana_restore_attack",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.75"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Passively grants a chance to restore a percentage of your max mana each time you cast an ability. Restores less mana from spells that modify attacks.",
+      "dmg_type": "",
+      "key": "obsidian_destroyer_equilibrium",
+      "mc": null,
+      "name": "Essence Flux"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "200",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "450",
+            "500",
+            "550"
+          ]
+        },
+        {
+          "header": "CAST RANGE:",
+          "key": "cast_range",
+          "value": "700"
+        },
+        {
+          "header": "MANA DIFFERENCE MULTIPLIER:",
+          "key": "damage_multiplier",
+          "value": "0.4"
+        },
+        {
+          "header": "ILLUSION DAMAGE:",
+          "key": "illusion_bonus_damage",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF DURATION:",
+          "key": "debuff_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PERCENTAGE DAMAGE:",
+          "key": "percentage_damage",
+          "value": "0"
+        },
+        {
+          "header": "MANA AS HEAL:",
+          "key": "percentage_heal",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "140",
+        "130",
+        "120"
+      ],
+      "desc": "Unleashes a psychic blast that deals damage to enemies based on the difference between your mana and the target's mana. Sanity's Eclipse can hit units trapped by Astral Imprisonment.",
+      "dmg_type": "Magical",
+      "key": "obsidian_destroyer_sanity_eclipse",
+      "mc": [
+        "200",
+        "300",
+        "400"
+      ],
+      "name": "Sanity's Eclipse"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Objurgation",
+    "desc": "Increases max mana to barrier. Damage that would bring Outworld Destroyer below 20% health is prevented. When that happens, Outworld Destroyer receives a strong dispel and gains an undispellable instance of Objurgation. This effect cannot occur more than once every 80 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Astral Imprisonment",
+    "desc": "Astral Imprisonment now deals damage in an area. Also allows allies to move at 70% movement speed during Astral Imprisonment (they are visible, but untargettable and can't perform any other actions).",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 1.6,
+    "armor": 0,
+    "attack_max": 31,
+    "attack_min": 19,
+    "attack_range": 450,
+    "attack_rate": 1.9,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 30,
+    "int_gain": 4.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.9
+  },
+  "name": "Outworld Devourer",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "obsidian_destroyer",
+  "talents": [
+    {
+      "left": "+?% Arcane Orb Damage",
+      "level": 25,
+      "right": "-?s Sanity's Eclipse Cooldown"
+    },
+    {
+      "left": "-?s Objurgation Cooldown",
+      "level": 20,
+      "right": "+?% Astral Imprisonment Mana Capacity Steal"
+    },
+    {
+      "left": "+?% Essence Flux Mana Restored",
+      "level": 15,
+      "right": "+?% of Current Mana as Movement Speed"
+    },
+    {
+      "left": "+? Astral Imprisonment Cast Range",
+      "level": 10,
+      "right": "+200 Mana"
+    }
+  ]
+}

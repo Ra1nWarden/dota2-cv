@@ -1,0 +1,481 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BONUS RANGE:",
+          "key": "bonus_range",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "BASE ATTACK TIME:",
+          "key": "base_attack_time",
+          "value": "1.4"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR PER INTERVAL:",
+          "key": "armor_per_interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK SPEED INTERVAL:",
+          "key": "attack_speed_interval",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Troll Warlord swaps from using ranged to melee attacks. While melee, Troll Warlord's base attack time is improved to 1.4.\n\nTroll Warlord gains 1 armor per 30 bonus attack speed.",
+      "dmg_type": "",
+      "key": "troll_warlord_switch_stance",
+      "mc": null,
+      "name": "Battle Stance"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "AXE WIDTH:",
+          "key": "axe_width",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "AXE SPEED:",
+          "key": "axe_speed",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "AXE RANGE:",
+          "key": "axe_range",
+          "value": "950"
+        },
+        {
+          "header": "AXE DAMAGE:",
+          "key": "axe_damage",
+          "value": [
+            "60",
+            "80",
+            "100",
+            "120"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "axe_slow_duration",
+          "value": [
+            "2.5",
+            "3",
+            "3.5",
+            "4"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_speed",
+          "value": "40%"
+        },
+        {
+          "generated": true,
+          "header": "AXE SPREAD:",
+          "key": "axe_spread",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "AXE COUNT:",
+          "key": "axe_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "950"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "9",
+      "desc": "Troll hurls a fistful of five axes in a cone shape over 950 range, slowing and damaging enemy units.",
+      "dmg_type": "Magical",
+      "key": "troll_warlord_whirling_axes_ranged",
+      "mc": null,
+      "name": "Whirling Axes (Ranged)"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "50",
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HIT RADIUS:",
+          "key": "hit_radius",
+          "value": "100"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "max_range",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "AXE MOVEMENT SPEED:",
+          "key": "axe_movement_speed",
+          "value": "1250"
+        },
+        {
+          "header": "BLIND DURATION:",
+          "key": "blind_duration",
+          "value": "5"
+        },
+        {
+          "header": "MISS CHANCE:",
+          "key": "blind_pct",
+          "value": "60%"
+        },
+        {
+          "header": "WHIRL DURATION:",
+          "key": "whirl_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES MAGIC IMMUNITY:",
+          "key": "pierces_magic_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "9",
+      "desc": "Troll hurls two axes around him in a close range area of effect, damaging enemy units and causing them to miss some attacks.",
+      "dmg_type": "Magical",
+      "key": "troll_warlord_whirling_axes_melee",
+      "mc": null,
+      "name": "Whirling Axes (Melee)"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK SPEED PER STACK:",
+          "key": "attack_speed",
+          "value": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "header": "MAX STACKS:",
+          "key": "max_stacks",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "STACK LIMIT DURING BATTLE TRANCE:",
+          "key": "stack_limit_during_battle_trance",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "With each continuous blow on the same target, Troll gains increased attack speed. If Troll changes targets, the stacks drop to zero.",
+      "dmg_type": "",
+      "key": "troll_warlord_fervor",
+      "mc": null,
+      "name": "Fervor"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_move_speed",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS RANGE:",
+          "key": "bonus_range",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "BASE ATTACK TIME:",
+          "key": "base_attack_time",
+          "value": "1.4"
+        },
+        {
+          "header": "ENSNARE CHANCE:",
+          "key": "ensnare_chance",
+          "value": "20%"
+        },
+        {
+          "header": "ENSNARE DURATION:",
+          "key": "ensnare_duration",
+          "value": [
+            "0.8",
+            "1.2",
+            "1.6",
+            "2"
+          ]
+        },
+        {
+          "header": "MAIM CHANCE:",
+          "key": "maim_chance",
+          "value": "20%"
+        },
+        {
+          "header": "MAIM DURATION:",
+          "key": "maim_duration",
+          "value": [
+            "0.8",
+            "1.2",
+            "1.6",
+            "2"
+          ]
+        },
+        {
+          "header": "MAIM MOVE SLOW:",
+          "key": "maim_slow",
+          "value": [
+            "8%",
+            "16%",
+            "24%",
+            "32%"
+          ]
+        },
+        {
+          "header": "MAIM ATTACK SLOW:",
+          "key": "maim_attack_slow",
+          "value": [
+            "8",
+            "16",
+            "24",
+            "32"
+          ]
+        },
+        {
+          "header": "MAIM DAMAGE:",
+          "key": "maim_damage",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "While in melee form, Troll Warlord's attacks have a chance to ensnare, preventing the target from moving or using mobility spells and has additional movement speed.\n\nWhen in ranged form, Troll Warlord's attacks have a chance to Maim the target, dealing bonus damage, and slowing the target's movement and attack speed.",
+      "dmg_type": "Physical",
+      "key": "troll_warlord_berserkers_rage",
+      "mc": null,
+      "name": "Berserker's Rage"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TRANCE DURATION:",
+          "key": "trance_duration",
+          "value": "6.5"
+        },
+        {
+          "header": "LIFESTEAL:",
+          "key": "lifesteal",
+          "value": [
+            "40%",
+            "60%",
+            "80%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "attack_speed",
+          "value": [
+            "140",
+            "170",
+            "200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK SPEED SHARE PERCENT:",
+          "key": "attack_speed_share_percent",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT SPEED:",
+          "key": "movement_speed",
+          "value": [
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RANGE:",
+          "key": "range",
+          "value": "900"
+        },
+        {
+          "header": "BATTLE TRANCE MAX FERVOR STACKS:",
+          "key": "stack_limit_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "IGNORE ATTACK SPEED LIMIT:",
+          "key": "ignore_attack_speed_limit",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "525"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "",
+      "bkbpierce": "",
+      "cd": [
+        "90",
+        "80",
+        "70"
+      ],
+      "desc": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within 900 range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "troll_warlord_battle_trance",
+      "mc": "150",
+      "name": "Battle Trance"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Whirling Axes (Melee)",
+    "desc": "Causes Whirling Axes (Melee) to dispel Troll Warlord. Reduces cooldown and mana cost.\n\nDISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Fervor",
+    "desc": "Grants Troll 16% + 3% chance per Fervor stack of firing an additional ranged attack to any unit within its ranged attack range plus =175 when attacking an enemy unit.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 3.3,
+    "armor": -1,
+    "attack_max": 35,
+    "attack_min": 27,
+    "attack_range": 500,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 13,
+    "int_gain": 1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.5
+  },
+  "name": "Troll Warlord",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Disabler",
+    "Durable"
+  ],
+  "short_name": "troll_warlord",
+  "talents": [
+    {
+      "left": "Whirling Axes Pierce Magic Immunity",
+      "level": 25,
+      "right": "Battle Trance Strong Dispels"
+    },
+    {
+      "left": "Allies Receive Battle Trance Attack Speed",
+      "level": 20,
+      "right": "+? Whirling Axes Damage"
+    },
+    {
+      "left": "+? Fervor Attack Speed",
+      "level": 15,
+      "right": "+?s Battle Trance Duration"
+    },
+    {
+      "left": "+?s Whirling Axes Debuff Duration",
+      "level": 10,
+      "right": "+? Berserker's Rage Movement Speed"
+    }
+  ]
+}

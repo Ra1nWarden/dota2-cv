@@ -1,0 +1,408 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1600"
+        },
+        {
+          "header": "FISSURE DURATION:",
+          "key": "fissure_duration",
+          "value": [
+            "6.5",
+            "7",
+            "7.5",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FISSURE RADIUS:",
+          "key": "fissure_radius",
+          "value": "225"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1",
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "fissure_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FREE PATHING APPLICATION RADIUS:",
+          "key": "free_pathing_application_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "FISSURE MAX DISTANCE MOVED:",
+          "key": "fissure_max_distance_moved",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "ECHOES RADIUS:",
+          "key": "echoes_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ECHOES DAMAGE MULTIPLIER:",
+          "key": "echoes_damage_multiplier",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.69"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "18",
+        "17",
+        "16",
+        "15"
+      ],
+      "desc": "Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line.",
+      "dmg_type": "Magical",
+      "key": "earthshaker_fissure",
+      "mc": [
+        "115",
+        "120",
+        "125",
+        "130"
+      ],
+      "name": "Fissure"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS:",
+          "key": "totem_damage_percentage",
+          "value": [
+            "100%",
+            "200%",
+            "300%",
+            "400%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER HEIGHT:",
+          "key": "scepter_height",
+          "value": "950"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER HEIGHT ARCBUFFER:",
+          "key": "scepter_height_arcbuffer",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER ACCELERATION Z:",
+          "key": "scepter_acceleration_z",
+          "value": "4000"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER ACCELERATION HORIZONTAL:",
+          "key": "scepter_acceleration_horizontal",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER LEAP DURATION:",
+          "key": "scepter_leap_duration",
+          "value": "0.8"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACK RANGE:",
+          "key": "bonus_attack_range",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "14"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "5",
+      "desc": "Empowers Earthshaker's totem, causing it to deal extra damage and have 100 bonus attack range on the next attack.",
+      "dmg_type": "",
+      "key": "earthshaker_enchant_totem",
+      "mc": [
+        "45",
+        "55",
+        "65",
+        "75"
+      ],
+      "name": "Enchant Totem"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "aftershock_range",
+          "value": "350"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "aftershock_damage",
+          "value": [
+            "65",
+            "90",
+            "115",
+            "140"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "1",
+            "1.1",
+            "1.2",
+            "1.3"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.",
+      "dmg_type": "Magical",
+      "key": "earthshaker_aftershock",
+      "mc": null,
+      "name": "Aftershock"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "echo_slam_damage_range",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "ECHO SLAM ECHO SEARCH RANGE:",
+          "key": "echo_slam_echo_search_range",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "ECHO SLAM ECHO RANGE:",
+          "key": "echo_slam_echo_range",
+          "value": "700"
+        },
+        {
+          "header": "ECHO DAMAGE:",
+          "key": "echo_slam_echo_damage",
+          "value": [
+            "70",
+            "90",
+            "110"
+          ]
+        },
+        {
+          "header": "INITIAL DAMAGE:",
+          "key": "echo_slam_initial_damage",
+          "value": [
+            "100",
+            "140",
+            "180"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "130",
+        "120",
+        "110"
+      ],
+      "desc": "Shockwaves travel through the ground, damaging enemy units. Each enemy hit causes an echo to damage nearby units. Real heroes cause two echoes.",
+      "dmg_type": "Magical",
+      "key": "earthshaker_echo_slam",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Echo Slam"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE BODY ON KILL:",
+          "key": "projectile_body_on_kill",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE BODY INITIAL IMPACT RADIUS:",
+          "key": "projectile_body_initial_impact_radius",
+          "value": "225"
+        },
+        {
+          "header": "SPEED:",
+          "key": "projectile_body_speed",
+          "value": "1600"
+        },
+        {
+          "header": "DISTANCE:",
+          "key": "projectile_body_distance",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE BODY WIDTH CREEP:",
+          "key": "projectile_body_width_creep",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE BODY WIDTH HERO:",
+          "key": "projectile_body_width_hero",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE BODY VISION:",
+          "key": "projectile_body_vision",
+          "value": "175"
+        },
+        {
+          "header": "DAMAGE (CREEPS):",
+          "key": "projectile_body_damage_creep",
+          "value": "27"
+        },
+        {
+          "header": "DAMAGE (HEROES):",
+          "key": "projectile_body_damage_hero",
+          "value": "135"
+        },
+        {
+          "header": "FLYING ENEMY'S MAX HEALTH AS DAMAGE:",
+          "key": "projectile_body_damage_additional_percent_health",
+          "value": "7%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Enemies killed with Enchant Totem or Earthshaker's other abilities are sent flying, dealing damage to enemies they hit.",
+      "dmg_type": "",
+      "key": "earthshaker_slugger",
+      "mc": null,
+      "name": "Slugger"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Enchant Totem",
+    "desc": "Enchant Totem becomes a ground target ability, causing Earthshaker to jump in the air and land at the target spot, casting Enchant Totem there.  Self-casting the ability will behave in the original form, without jumping. Grants Enchant Totem a cleaving attack.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Fissure",
+    "desc": "Reduces Fissure cooldown and releases an Aftershock along its path that stuns for a shortened duration when Earthshaker casts another ability.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 12,
+    "agi_gain": 1.4,
+    "armor": 2,
+    "attack_max": 37,
+    "attack_min": 27,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 18,
+    "int_gain": 2.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 3.7
+  },
+  "name": "Earthshaker",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Initiator",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "earthshaker",
+  "talents": [
+    {
+      "left": "-50% Echo Slam Cooldown",
+      "level": 25,
+      "right": "-1.5s Enchant Totem Cooldown"
+    },
+    {
+      "left": "+50 Echo Damage",
+      "level": 20,
+      "right": "+65% Enchant Totem Damage"
+    },
+    {
+      "left": "+200 Fissure Range",
+      "level": 15,
+      "right": "+50 Aftershock Damage"
+    },
+    {
+      "left": "+25 Base Damage",
+      "level": 10,
+      "right": "+75 Fissure Damage"
+    }
+  ]
+}

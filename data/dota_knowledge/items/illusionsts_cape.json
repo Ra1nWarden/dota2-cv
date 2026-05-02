@@ -1,0 +1,68 @@
+{
+  "abilities": [
+    {
+      "description": "Creates an image under your control.",
+      "title": "Create Illusion",
+      "type": "active"
+    },
+    {
+      "description": "Increases outgoing damage of all units and illusions controlled by the hero by 6%.",
+      "title": "Illusion Mastery",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "attack_damage_aura",
+      "value": "6"
+    },
+    {
+      "display": "IMAGE DURATION: {value}",
+      "key": "illusion_duration",
+      "value": "30"
+    },
+    {
+      "key": "outgoing_damage",
+      "value": "-50"
+    },
+    {
+      "display": "IMAGE DAMAGE: {value}%",
+      "key": "outgoing_damage_tooltip",
+      "value": "50"
+    },
+    {
+      "key": "incoming_damage",
+      "value": "100"
+    },
+    {
+      "display": "IMAGE DAMAGE TAKEN: {value}%",
+      "key": "tooltip_incoming_damage_total_pct",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agi",
+      "value": "14"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_str",
+      "value": "14"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 363,
+  "mc": false,
+  "name": "Illusionist's Cape",
+  "notes": "",
+  "qual": null,
+  "short_name": "illusionsts_cape"
+}

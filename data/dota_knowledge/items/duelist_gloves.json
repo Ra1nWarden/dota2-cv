@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 20 attack speed as long as there are enemy heroes within 1200 units.",
+      "title": "Boldness",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_attack_speed",
+      "value": "20"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "0"
+    },
+    {
+      "key": "radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 2097,
+  "mc": false,
+  "name": "Duelist Gloves",
+  "notes": "",
+  "qual": null,
+  "short_name": "duelist_gloves"
+}

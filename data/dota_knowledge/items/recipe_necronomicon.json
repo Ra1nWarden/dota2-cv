@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1250,
+  "created": false,
+  "id": 105,
+  "mc": false,
+  "name": "Necronomicon Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_necronomicon"
+}

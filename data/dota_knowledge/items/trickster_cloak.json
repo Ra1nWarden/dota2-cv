@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Causes you to become invisible for 6 seconds.",
+      "title": "Cloak",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "evasion",
+      "value": "0"
+    },
+    {
+      "key": "magic_resistance",
+      "value": "0"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 571,
+  "mc": false,
+  "name": "Trickster Cloak",
+  "notes": "",
+  "qual": null,
+  "short_name": "trickster_cloak"
+}

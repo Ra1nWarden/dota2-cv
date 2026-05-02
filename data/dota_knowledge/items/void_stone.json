@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.75"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 700,
+  "created": false,
+  "id": 57,
+  "mc": false,
+  "name": "Void Stone",
+  "notes": "",
+  "qual": "component",
+  "short_name": "void_stone"
+}

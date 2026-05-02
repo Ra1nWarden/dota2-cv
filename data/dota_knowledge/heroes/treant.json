@@ -1,0 +1,505 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "35",
+            "50",
+            "65",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP PENALTY:",
+          "key": "creep_penalty",
+          "value": "35"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "VINE DURATION:",
+          "key": "vines_duration",
+          "value": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREATION INTERVAL:",
+          "key": "creation_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL LATCH DELAY:",
+          "key": "initial_latch_delay",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "VINE SPAWN INTERVAL:",
+          "key": "vine_spawn_interval",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "LATCH RANGE:",
+          "key": "latch_range",
+          "value": "135"
+        },
+        {
+          "generated": true,
+          "header": "LATCH VISION:",
+          "key": "latch_vision",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "19",
+        "18",
+        "17"
+      ],
+      "desc": "Creates vines towards the target location. Vines slow down and deal damage to enemies that walk through. Does 35% less damage to creeps.",
+      "dmg_type": "Magical",
+      "key": "treant_natures_grasp",
+      "mc": "90",
+      "name": "Nature's Grasp"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "0.9",
+            "1.1",
+            "1.3",
+            "1.5"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "FLAT HEAL:",
+          "key": "flat_heal",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "header": "DAMAGE TO HEALING:",
+          "key": "leech_heal",
+          "value": "20%"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "leech_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX HEAL UNITS:",
+          "key": "max_heal_units",
+          "value": "5"
+        },
+        {
+          "header": "HEAL RADIUS:",
+          "key": "radius",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "HEALING PULSE COUNT:",
+          "key": "healing_pulse_count",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Treant's attack plants a life-sapping seed in an enemy unit. That unit takes additional magic damage, is rooted and disarmed for a short duration, and emits 2 healing pulses to up to 5 nearby allies of Treant Protector based on the damage dealt by the attack.",
+      "dmg_type": "Magical",
+      "key": "treant_leech_seed",
+      "mc": null,
+      "name": "Leech Seed"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEAL PER SECOND:",
+          "key": "heal_per_second",
+          "value": [
+            "4",
+            "7",
+            "10",
+            "13"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "12"
+        },
+        {
+          "header": "MAX DAMAGE BLOCKED:",
+          "key": "damage_block_base",
+          "value": [
+            "60",
+            "80",
+            "100",
+            "120"
+          ]
+        },
+        {
+          "header": "DAMAGE BLOCK DECREASE:",
+          "key": "damage_block_loss",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE BLOCK THRESHOLD:",
+          "key": "damage_block_threshold",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "Infuses the target hero or structure with a protective coating which heals the target and blocks damage from player-controlled sources. Each time this spell blocks damage, the block amount is decreased. If the damage block is decreased to 0, the buff is removed early.",
+      "dmg_type": "",
+      "key": "treant_living_armor",
+      "mc": [
+        "65",
+        "70",
+        "75",
+        "80"
+      ],
+      "name": "Living Armor"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "VISION AOE:",
+          "key": "vision_aoe",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "HITS TO KILL:",
+          "key": "hits_to_kill",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "360"
+        },
+        {
+          "generated": true,
+          "header": "MAX EYES:",
+          "key": "max_eyes",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": "135"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": "2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Treant Protector enchants a tree, which grants him unobstructed vision in that location. The eyes last for 360 seconds and are invisible, but are destroyed if their host tree is destroyed or if they are attacked directly.",
+      "dmg_type": "",
+      "key": "treant_eyes_in_the_forest",
+      "mc": "30",
+      "name": "Eyes In The Forest"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "GRACE TIME:",
+          "key": "grace_time",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN TIME:",
+          "key": "cooldown_time",
+          "value": "2.75"
+        },
+        {
+          "header": "MOVEMENT SPEED BONUS:",
+          "key": "movement_bonus",
+          "value": "10%"
+        },
+        {
+          "header": "ROOT TIME:",
+          "key": "shard_root_time",
+          "value": "0"
+        },
+        {
+          "header": "ROOT TIME BY TREE:",
+          "key": "shard_by_tree_root_time",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SHARD DAMAGE:",
+          "key": "shard_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK DAMAGE PCT:",
+          "key": "attack_damage_pct",
+          "value": "0"
+        },
+        {
+          "header": "ROOT COOLDOWN:",
+          "key": "shard_cooldown",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "36",
+      "desc": "Grants bonus movement speed when near trees. Treant Protector additionally has Tree Walking if he has not taken damage for 2.75 seconds. While Tree Walking, Nature's Guise can be activated to grant Treant invisibility until he attacks or is no longer near a tree.",
+      "dmg_type": "",
+      "key": "treant_natures_guise",
+      "mc": null,
+      "name": "Nature's Guise"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "800"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": "95"
+        },
+        {
+          "generated": true,
+          "header": "UNDISPELLABLE:",
+          "key": "undispellable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "110",
+        "100",
+        "90"
+      ],
+      "desc": "Summons an overgrowth of vines and branches around Treant that deal damage to afflicted enemies and prevent them from moving, blinking, going invisible, or attacking.",
+      "dmg_type": "Magical",
+      "key": "treant_overgrowth",
+      "mc": [
+        "200",
+        "250",
+        "300"
+      ],
+      "name": "Overgrowth"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Overgrowth",
+    "desc": "Decreases Cooldown to 85 seconds. When casting Overgrowth, Treant Protector draws power from the soil, greatly increasing his size for 16 seconds. While enlarged, he gains phased movement with a fixed speed of 345, 100% bonus Strength, and a splashing attack that deals 60% of his attack damage in a 300 unit radius.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Eyes In The Forest",
+    "desc": "Treant Protector enchants a tree, which grants him unobstructed vision in that location. The eyes last for 360 seconds and are invisible, but are destroyed if their host tree is destroyed or if they are attacked directly.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.8,
+    "armor": 1,
+    "attack_max": 68,
+    "attack_min": 60,
+    "attack_range": 150,
+    "attack_rate": 1.9,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 20,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 3.4
+  },
+  "name": "Treant Protector",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Initiator",
+    "Durable",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "treant",
+  "talents": [
+    {
+      "left": "-?s Leech Seed Cooldown",
+      "level": 25,
+      "right": "? AoE Living Armor"
+    },
+    {
+      "left": "+? Living Armor Damage Block",
+      "level": 20,
+      "right": "+? Leech Seed Bonus Damage"
+    },
+    {
+      "left": "+?% Leech Seed Damage to Healing",
+      "level": 15,
+      "right": "+? Nature's Grasp Damage"
+    },
+    {
+      "left": "+? Living Armor Heal Per Second",
+      "level": 10,
+      "right": "+50 Base Damage"
+    }
+  ]
+}

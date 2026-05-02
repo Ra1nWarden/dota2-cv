@@ -1,0 +1,60 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "disappear_time",
+      "value": "120"
+    },
+    {
+      "key": "protector_duration",
+      "value": "240"
+    },
+    {
+      "key": "aura_radius",
+      "value": "900"
+    },
+    {
+      "key": "max_barrier_pct_max_health",
+      "value": "40"
+    },
+    {
+      "key": "owner_max_barrier_pct_max_health",
+      "value": "25"
+    },
+    {
+      "key": "regeneration_to_max_seconds",
+      "value": "2.0"
+    },
+    {
+      "key": "decay_to_zero_seconds",
+      "value": "1"
+    },
+    {
+      "key": "damage_cooldown",
+      "value": "1.5"
+    },
+    {
+      "key": "damage_reflection_pct",
+      "value": "40"
+    },
+    {
+      "key": "duration",
+      "value": "20"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 40,
+  "charges": 4,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 1610,
+  "mc": false,
+  "name": "miniboss_minion_summoner",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "miniboss_minion_summoner"
+}

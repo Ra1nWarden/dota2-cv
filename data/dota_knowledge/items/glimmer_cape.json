@@ -1,0 +1,54 @@
+{
+  "abilities": [
+    {
+      "description": "After a 0.5 second delay, grants invisibility, 20 movement speed and a magic damage barrier that absorbs up to 375 damage to you or a target allied unit for 5 seconds.\n\nCan be cast while channeling.",
+      "title": "Glimmer",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "initial_fade_delay",
+      "value": "0.5"
+    },
+    {
+      "key": "secondary_fade_delay",
+      "value": "0.5"
+    },
+    {
+      "key": "active_movement_speed",
+      "value": "20"
+    },
+    {
+      "key": "duration",
+      "value": "5"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "bonus_magical_armor",
+      "value": "20"
+    },
+    {
+      "key": "barrier_block",
+      "value": "375"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "Unit Target"
+  ],
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "shadow_amulet",
+    "shawl"
+  ],
+  "cost": 2150,
+  "created": true,
+  "id": 254,
+  "mc": 125,
+  "name": "Glimmer Cape",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "glimmer_cape"
+}

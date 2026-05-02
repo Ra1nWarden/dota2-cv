@@ -1,0 +1,63 @@
+{
+  "abilities": [
+    {
+      "description": "Consumes a charge to restore 110 health and 60 mana over 2.7 seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nThe Bottle automatically refills at the fountain.\n\nHold Control to use on an allied hero.",
+      "title": "Regenerate",
+      "type": "active"
+    },
+    {
+      "description": "Runes can be stored in the Bottle for later use by right-clicking them. Unused runes will automatically activate after 90 seconds.\n\nUsing a stored rune fully refills the Bottle.",
+      "title": "Store Rune",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_restore",
+      "value": "110"
+    },
+    {
+      "key": "mana_restore",
+      "value": "60"
+    },
+    {
+      "key": "health_restore_pct",
+      "value": "0"
+    },
+    {
+      "key": "mana_restore_pct",
+      "value": "0"
+    },
+    {
+      "key": "restore_time",
+      "value": "2.7"
+    },
+    {
+      "key": "max_charges",
+      "value": "3"
+    },
+    {
+      "key": "break_on_hero_damage",
+      "value": "1"
+    },
+    {
+      "key": "rune_expire_time",
+      "value": "90.0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 3,
+  "components": null,
+  "cost": 675,
+  "created": false,
+  "id": 41,
+  "mc": false,
+  "name": "Bottle",
+  "notes": "Bottle is shareable. Stored runes cannot be shared.\nUsing a stored Bounty or Water rune fully refills the bottle if the bottle was full when the rune was stored; otherwise, it refills two charges.",
+  "qual": "common",
+  "short_name": "bottle"
+}

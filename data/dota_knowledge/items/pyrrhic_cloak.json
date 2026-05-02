@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "For the next 6 seconds, 75% of damage taken by the caster is reflected to the target unit as physical damage if they are within 1200 units away.",
+      "title": "Retribution",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage_pct",
+      "value": "75"
+    },
+    {
+      "key": "max_distance",
+      "value": "1200"
+    },
+    {
+      "key": "damage_time",
+      "value": "6"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1608,
+  "mc": false,
+  "name": "Pyrrhic Cloak",
+  "notes": "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": null,
+  "short_name": "pyrrhic_cloak"
+}

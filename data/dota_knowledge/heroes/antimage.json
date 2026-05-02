@@ -1,0 +1,401 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MANA BURNED AS DAMAGE:",
+          "key": "percent_damage_per_burn",
+          "value": "50"
+        },
+        {
+          "header": "MANA BURNED PER HIT:",
+          "key": "mana_per_hit",
+          "value": [
+            "25",
+            "30",
+            "35",
+            "40"
+          ]
+        },
+        {
+          "header": "MAX MANA BURNED PER HIT:",
+          "key": "mana_per_hit_pct",
+          "value": [
+            "1.6",
+            "2.4",
+            "3.2",
+            "4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION PERCENTAGE:",
+          "key": "illusion_percentage",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "EMPOWERED MAX BURN PCT:",
+          "key": "empowered_max_burn_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EMPOWERED MANA BREAK DEBUFF DURATION:",
+          "key": "empowered_mana_break_debuff_duration",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Burns an opponent's mana on each attack and deals damage equal to a percentage of the mana burnt.",
+      "dmg_type": "Physical",
+      "key": "antimage_mana_break",
+      "mc": null,
+      "name": "Mana Break"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "875",
+            "950",
+            "1025",
+            "1100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MIN BLINK RANGE:",
+          "key": "min_blink_range",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "EMPOWERED MANA BREAK DURATION:",
+          "key": "empowered_mana_break_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EMPOWERED MAX BURN PCT TOOLTIP:",
+          "key": "empowered_max_burn_pct_tooltip",
+          "value": "0"
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "empowered_mana_break_debuff_duration_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "10.5",
+        "9",
+        "7.5",
+        "6"
+      ],
+      "desc": "Short distance teleportation that allows Anti-Mage to move in and out of combat.",
+      "dmg_type": "",
+      "key": "antimage_blink",
+      "mc": [
+        "65",
+        "60",
+        "55",
+        "50"
+      ],
+      "name": "Blink"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": [
+            "14",
+            "21",
+            "28",
+            "35"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "1.3"
+        },
+        {
+          "generated": true,
+          "header": "DURATION ILLUSION:",
+          "key": "duration_illusion",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "OUTGOING DAMAGE:",
+          "key": "outgoing_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "INCOMING DAMAGE:",
+          "key": "incoming_damage",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "DOES REFLECT:",
+          "key": "does_reflect",
+          "value": "1"
+        },
+        {
+          "header": "REFLECTED SPELL AMP:",
+          "key": "reflected_spell_amp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HEAL PCT:",
+          "key": "heal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "15",
+        "11",
+        "7",
+        "3"
+      ],
+      "desc": "Passively grants magic resistance. Counterspell may be activated to create an anti-magic shell around Anti-Mage that blocks and reflects any targeted spells.",
+      "dmg_type": "",
+      "key": "antimage_counterspell",
+      "mc": "50",
+      "name": "Counterspell"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MIN MOVEMENT SLOW:",
+          "key": "move_slow_min",
+          "value": "12%"
+        },
+        {
+          "header": "MAX MOVEMENT SLOW:",
+          "key": "move_slow_max",
+          "value": "24%"
+        },
+        {
+          "generated": true,
+          "header": "MANA THRESHOLD:",
+          "key": "mana_threshold",
+          "value": "50"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "ZERO TOOLTIP:",
+          "key": "zero_tooltip",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Attacks slow enemies based on how much mana they are missing. Min slow at 50% mana, up to max slow at 0% mana. No effect if enemy is above 50% mana.",
+      "dmg_type": "",
+      "key": "antimage_persectur",
+      "mc": null,
+      "name": "Persecutor"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER 1 MANA MISSING:",
+          "key": "mana_void_damage_per_mana",
+          "value": "1"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "mana_void_ministun",
+          "value": "0.3"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "mana_void_aoe_radius",
+          "value": [
+            "400",
+            "450",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "THIRST ENABLED:",
+          "key": "thirst_enabled",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "THIRST RANGE:",
+          "key": "thirst_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "THRESHOLD PCT:",
+          "key": "threshold_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MIN BONUS PCT:",
+          "key": "min_bonus_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX BONUS PCT:",
+          "key": "max_bonus_pct",
+          "value": "0"
+        },
+        {
+          "header": "MANA THIRST MAX ATTACK DAMAGE:",
+          "key": "bonus_attack_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "100",
+        "85",
+        "70"
+      ],
+      "desc": "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies. The main target is also mini-stunned.",
+      "dmg_type": "Magical",
+      "key": "antimage_mana_void",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Mana Void"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Blink",
+    "desc": "After casting Blink, your next Mana Break within 5s burns an additional 20% max mana and prevents the target from regenerating or gaining mana for a short duration. This debuff is undispellable.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Counterspell",
+    "desc": "Creates a blinked fragment of Anti-Mage next to the enemy caster upon reflecting their unit-targeted spell while active.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 2.8,
+    "armor": 2,
+    "attack_max": 33,
+    "attack_min": 29,
+    "attack_range": 150,
+    "attack_rate": 1.4,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 12,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 1.6
+  },
+  "name": "Anti-Mage",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "antimage",
+  "talents": [
+    {
+      "left": "-?s Blink Cooldown",
+      "level": 25,
+      "right": "-?s Mana Void Cooldown"
+    },
+    {
+      "left": "+? Blink Cast Range",
+      "level": 20,
+      "right": "+?s Mana Void Stun"
+    },
+    {
+      "left": "+?%/?% Persecutor Min/Max Movement Slow",
+      "level": 15,
+      "right": "+? Mana Void Damage Multiplier"
+    },
+    {
+      "left": "+3 Health Regen",
+      "level": 10,
+      "right": "+? Mana Void Radius"
+    }
+  ]
+}

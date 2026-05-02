@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 100 mana.",
+      "title": "Eat Mango",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "hp_regen",
+      "value": "0.4"
+    },
+    {
+      "key": "replenish_amount",
+      "value": "100"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 65,
+  "created": false,
+  "id": 216,
+  "mc": false,
+  "name": "Enchanted Mango",
+  "notes": "Hold Control to use on a nearby allied hero.",
+  "qual": "consumable",
+  "short_name": "enchanted_mango"
+}

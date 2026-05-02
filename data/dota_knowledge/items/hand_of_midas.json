@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Kills a non-hero target for 160 gold. Killing a neutral creep additionally grants a madstone bundle. \n\n Cannot be used on Ancient creeps.",
+      "title": "Transmute",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "key": "bonus_gold",
+      "value": "160"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": false,
+  "charges": 1,
+  "components": [
+    "gloves"
+  ],
+  "cost": 2200,
+  "created": true,
+  "id": 65,
+  "mc": false,
+  "name": "Hand of Midas",
+  "notes": "The gold given is unreliable gold (you do not get the normal creep bounty).\nExperience gained by using Transmute is not shared.",
+  "qual": "common",
+  "short_name": "hand_of_midas"
+}

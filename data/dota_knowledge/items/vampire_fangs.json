@@ -1,0 +1,35 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "attack_lifesteal",
+      "value": "12 / 16 / 20"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "8 / 12 / 16"
+    },
+    {
+      "key": "attack_damage",
+      "value": "0"
+    },
+    {
+      "key": "vision_loss",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 297,
+  "mc": false,
+  "name": "Vampire Fangs",
+  "notes": "",
+  "qual": null,
+  "short_name": "vampire_fangs"
+}

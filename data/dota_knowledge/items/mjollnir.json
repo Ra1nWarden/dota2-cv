@@ -1,0 +1,105 @@
+{
+  "abilities": [
+    {
+      "description": "Places a charged shield on a target unit for 15 seconds which has a 20% chance to release a 225 magical damage shocking bolt at a nearby attacker and 4 additional enemies.",
+      "title": "Static Charge",
+      "type": "active"
+    },
+    {
+      "description": "Grants a 25% chance on attack to release a bolt of electricity that leaps between 12 targets within a 650 radius, dealing 180 magical damage to each. Lightning proc pierces evasion.",
+      "title": "Chain Lightning",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "90"
+    },
+    {
+      "key": "static_duration",
+      "value": "15.0"
+    },
+    {
+      "key": "static_chance",
+      "value": "20"
+    },
+    {
+      "key": "static_strikes",
+      "value": "4"
+    },
+    {
+      "key": "static_damage",
+      "value": "225"
+    },
+    {
+      "key": "static_primary_radius",
+      "value": "600"
+    },
+    {
+      "key": "static_seconary_radius",
+      "value": "900"
+    },
+    {
+      "key": "static_radius",
+      "value": "900"
+    },
+    {
+      "key": "static_cooldown",
+      "value": "1.0"
+    },
+    {
+      "key": "chain_chance",
+      "value": "25"
+    },
+    {
+      "key": "chain_damage",
+      "value": "180"
+    },
+    {
+      "key": "chain_strikes",
+      "value": "12"
+    },
+    {
+      "key": "chain_radius",
+      "value": "650"
+    },
+    {
+      "key": "chain_delay",
+      "value": "0.25"
+    },
+    {
+      "key": "chain_cooldown",
+      "value": "0.2"
+    },
+    {
+      "key": "max_charges",
+      "value": "0"
+    },
+    {
+      "key": "illusion_multiplier_pct",
+      "value": "100"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 35,
+  "charges": false,
+  "components": [
+    "maelstrom",
+    "hyperstone"
+  ],
+  "cost": 5500,
+  "created": true,
+  "id": 158,
+  "mc": 50,
+  "name": "Mjollnir",
+  "notes": "Static Charge cannot trigger more than once per second.\nStatic Charge's shock deals magical damage centered on hero with the Static Charge. Static Charge's targets cannot be more than 900 range away.\nStatic Charge procs will not bounce to heroes that are invisible or hidden by Fog of War.",
+  "qual": "artifact",
+  "short_name": "mjollnir"
+}

@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 155,
+  "created": false,
+  "id": 20,
+  "mc": false,
+  "name": "Circlet",
+  "notes": "",
+  "qual": "component",
+  "short_name": "circlet"
+}

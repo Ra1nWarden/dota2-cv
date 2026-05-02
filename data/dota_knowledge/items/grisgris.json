@@ -1,0 +1,25 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "death_gold_lost_reduction_pct",
+      "value": "100"
+    },
+    {
+      "key": "gold_tick_interval",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1441,
+  "mc": false,
+  "name": "Gris-Gris",
+  "notes": "",
+  "qual": null,
+  "short_name": "grisgris"
+}

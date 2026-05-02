@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 140,
+  "created": false,
+  "id": 14,
+  "mc": false,
+  "name": "Slippers of Agility",
+  "notes": "",
+  "qual": "component",
+  "short_name": "slippers"
+}

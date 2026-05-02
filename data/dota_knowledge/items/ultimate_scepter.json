@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Upgrades the ultimate, and some abilities, of all heroes.",
+      "title": "Ability Upgrade",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "175"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "175"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "point_booster",
+    "staff_of_wizardry",
+    "ogre_axe",
+    "blade_of_alacrity"
+  ],
+  "cost": 4200,
+  "created": true,
+  "id": 108,
+  "mc": false,
+  "name": "Aghanim's Scepter",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "ultimate_scepter"
+}

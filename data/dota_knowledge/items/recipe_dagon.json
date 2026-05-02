@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1150,
+  "created": false,
+  "id": 103,
+  "mc": false,
+  "name": "Dagon Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_dagon"
+}

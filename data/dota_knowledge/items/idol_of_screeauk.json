@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Gain 50% slow resistance, phased movement, and 25% evasion for 5 seconds.",
+      "title": "False Flight",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "5"
+    },
+    {
+      "key": "slow_resist",
+      "value": "50"
+    },
+    {
+      "key": "evasion",
+      "value": "25"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1720,
+  "mc": false,
+  "name": "Idol of Scree'auk",
+  "notes": "",
+  "qual": null,
+  "short_name": "idol_of_screeauk"
+}

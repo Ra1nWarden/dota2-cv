@@ -1,0 +1,457 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resist",
+          "value": "80%"
+        },
+        {
+          "generated": true,
+          "header": "STATUS RESIST:",
+          "key": "status_resist",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF IMMUNITY:",
+          "key": "debuff_immunity",
+          "value": "1"
+        },
+        {
+          "header": "MOVESPEED BONUS:",
+          "key": "movespeed_bonus",
+          "value": [
+            "9%",
+            "12%",
+            "15%",
+            "18%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "20",
+        "19",
+        "18",
+        "17"
+      ],
+      "desc": "Launch into a maddened rage, becoming Debuff Immune, increasing magic resistance and gaining movement speed.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "life_stealer_rage",
+      "mc": [
+        "80",
+        "100",
+        "120",
+        "140"
+      ],
+      "name": "Rage"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "SLOW STEPS:",
+          "key": "slow_steps",
+          "value": [
+            "-50",
+            "-50",
+            "-40",
+            "-30",
+            "-20",
+            "-10",
+            "-10",
+            "-10"
+          ]
+        },
+        {
+          "header": "DAMAGE TO HEALING:",
+          "key": "heal_percent",
+          "value": [
+            "20%",
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX HEALTH AS DAMAGE PCT:",
+          "key": "max_health_as_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPREAD RADIUS:",
+          "key": "spread_radius",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "SLOW STEP PCT OF MAX:",
+          "key": "slow_step_pct_of_max",
+          "value": "100"
+        },
+        {
+          "header": "MAX SLOW:",
+          "key": "slow_tooltip",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "RESET COOLDOWN ON KILL:",
+          "key": "reset_cooldown_on_kill",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK SPEED ON TARGET:",
+          "key": "attack_speed_on_target",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "300",
+            "400",
+            "500",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "25",
+        "20",
+        "15"
+      ],
+      "desc": "Lifestealer rends an enemy unit, slowing the victim's movement speed and allowing all allies to regain health for a percentage of the damage they deal to that unit. The victim recovers movement speed over the duration.",
+      "dmg_type": "",
+      "key": "life_stealer_open_wounds",
+      "mc": "90",
+      "name": "Open Wounds"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEAL FROM TARGET'S MAX HEALTH:",
+          "key": "hp_leech_percent",
+          "value": [
+            "1.45%",
+            "2.05%",
+            "2.65%",
+            "3.25%"
+          ]
+        },
+        {
+          "header": "MAX HEALTH DAMAGE:",
+          "key": "hp_damage_percent",
+          "value": [
+            "1.45%",
+            "2.05%",
+            "2.65%",
+            "3.25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP DENY PERCENT:",
+          "key": "creep_deny_percent",
+          "value": "50"
+        },
+        {
+          "header": "MAX HP PER HERO KILL:",
+          "key": "bonus_hp_per_hero",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "header": "MAX HP PER CREEP KILL:",
+          "key": "bonus_hp_per_creep",
+          "value": "1"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Lifestealer's attacks deal damage and provide heal for a percentage of his target's max health. He gains permanent max HP whenever he kills a unit.",
+      "dmg_type": "Physical",
+      "key": "life_stealer_feast",
+      "mc": null,
+      "name": "Feast"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MOVEMENT SPEED BONUS:",
+          "key": "movement_speed_bonus",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Passively grants Lifestealer Attack Speed.",
+      "dmg_type": "",
+      "key": "life_stealer_ghoul_frenzy",
+      "mc": null,
+      "name": "Ghoul Frenzy"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "150",
+            "275",
+            "400"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "header": "HEALTH BONUS:",
+          "key": "bonus_health",
+          "value": [
+            "400",
+            "800",
+            "1200"
+          ]
+        },
+        {
+          "header": "SELF MAX HP REGEN:",
+          "key": "self_regen",
+          "value": [
+            "3%",
+            "4%",
+            "5%"
+          ]
+        },
+        {
+          "header": "ENEMY DURATION:",
+          "key": "infest_duration_enemy",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "header": "ATTACK RATE:",
+          "key": "attack_rate_enemy",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "OPEN WOUNDS DURATION PCT:",
+          "key": "open_wounds_duration_pct",
+          "value": "0"
+        },
+        {
+          "header": "CREEP MAX HP LOSS / SEC:",
+          "key": "creep_max_hp_drain_pct_per_second",
+          "value": [
+            "1.5%",
+            "0.75%",
+            "0%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAN TARGET ANCIENTS:",
+          "key": "can_target_ancients",
+          "value": "1"
+        },
+        {
+          "header": "REMAINING HEALTH AS TOTAL DAMAGE:",
+          "key": "dot_damage_as_pct_of_damage_dealt",
+          "value": "0%"
+        },
+        {
+          "header": "DAMAGE OVER TIME DURATION:",
+          "key": "dot_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DOT TICK INTERVAL:",
+          "key": "dot_tick_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "80",
+        "65",
+        "50"
+      ],
+      "desc": "Lifestealer infests the body of a target unit, becoming undetectable, and healing for a portion of his max hitpoints every second while inside. He can then explode from the host body, dealing damage to nearby enemies. If the infested unit is an enemy creep or a neutral creep, he can take control of the unit's ability to move and attack, and the creep loses a portion of their max hitpoints over time. Does not work on enemy heroes.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Magical",
+      "key": "life_stealer_infest",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Infest"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Lifestealer eats the host body from the inside out, exploding from within.",
+      "dmg_type": "",
+      "key": "life_stealer_consume",
+      "mc": null,
+      "name": "Consume"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Infest",
+    "desc": "Increases cast range and reduces cooldown to =20s.  Infest may target enemy heroes for a short duration, attacking them from the inside while increasing Lifestealer's regeneration rate.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Infest",
+    "desc": "Consuming a creep with Infest drenches enemies in blood which deals damage over time based on the host's remaining health.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.9,
+    "armor": 1,
+    "attack_max": 32,
+    "attack_min": 26,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 15,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 320,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 2.4
+  },
+  "name": "Lifestealer",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "life_stealer",
+  "talents": [
+    {
+      "left": "+?% Feast Heal and Damage",
+      "level": 25,
+      "right": "+?s Rage Duration"
+    },
+    {
+      "left": "+?% Infest Target Movespeed/Health",
+      "level": 20,
+      "right": "+?% Open Wounds Lifesteal"
+    },
+    {
+      "left": "+? Infest Damage",
+      "level": 15,
+      "right": "? Attack Speed on Open Wounds Target"
+    },
+    {
+      "left": "+4 All Attributes",
+      "level": 10,
+      "right": "+20 Movement Speed"
+    }
+  ]
+}

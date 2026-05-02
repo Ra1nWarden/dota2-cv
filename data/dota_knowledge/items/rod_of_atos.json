@@ -1,0 +1,40 @@
+{
+  "abilities": [
+    {
+      "description": "Roots the target for 2 seconds.",
+      "title": "Cripple",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_hp",
+      "value": "275"
+    },
+    {
+      "key": "duration",
+      "value": "2.0"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 18,
+  "charges": false,
+  "components": [
+    "staff_of_wizardry",
+    "vitality_booster"
+  ],
+  "cost": 2250,
+  "created": true,
+  "id": 206,
+  "mc": 100,
+  "name": "Rod of Atos",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "rod_of_atos"
+}

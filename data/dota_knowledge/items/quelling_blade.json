@@ -1,0 +1,40 @@
+{
+  "abilities": [
+    {
+      "description": "Destroy a target tree.",
+      "title": "Chop Tree",
+      "type": "active"
+    },
+    {
+      "description": "Increases attack damage against non-hero units by 8 for melee heroes, and 4 for ranged.",
+      "title": "Quell",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage_bonus",
+      "value": "8"
+    },
+    {
+      "key": "damage_bonus_ranged",
+      "value": "4"
+    },
+    {
+      "key": "quelling_range_tooltip",
+      "value": "350"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 4,
+  "charges": false,
+  "components": null,
+  "cost": 100,
+  "created": false,
+  "id": 11,
+  "mc": false,
+  "name": "Quelling Blade",
+  "notes": "Effects of multiple quelling blades do not stack.",
+  "qual": "component",
+  "short_name": "quelling_blade"
+}

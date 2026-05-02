@@ -1,0 +1,428 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "INSTANCES:",
+          "key": "instances",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "BARRIER PER INSTANCE:",
+          "key": "shield_per_instance",
+          "value": "30"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "15",
+            "30",
+            "45",
+            "60"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "17"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "14",
+      "desc": "Templar Assassin becomes highly elusive, gaining a small barrier and bonus to her damage. The damage and avoidance effects are separate, and have a limited number of instances. If a barrier is consumed, a new one is created as long as there are charges left. If an instance of damage would deal more damage than the remaining barrier, all of the damage is absorbed.",
+      "dmg_type": "Physical",
+      "key": "templar_assassin_refraction",
+      "mc": "95",
+      "name": "Refraction"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "50",
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "bonus_armor",
+          "value": [
+            "-2",
+            "-4",
+            "-6",
+            "-8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BASH DURATION:",
+          "key": "bash_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "0"
+        },
+        {
+          "header": "ARMOR REDUCTION DURATION:",
+          "key": "debuff_duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "11",
+        "9",
+        "7",
+        "5"
+      ],
+      "desc": "Templar Assassin conceals herself, becoming invisible as long as she remains still. If Meld's invisibility is broken by attacking an enemy, Lanaya's attack will deal bonus damage to the enemy and reduce their armor for 6 seconds. Bonus damage and armor reductions are applied to all enemies in the Psi Blades split range.",
+      "dmg_type": "Physical",
+      "key": "templar_assassin_meld",
+      "mc": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "name": "Meld"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ATTACK RANGE:",
+          "key": "bonus_attack_range",
+          "value": [
+            "50",
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "PSI BLADE RANGE:",
+          "key": "attack_spill_range",
+          "value": [
+            "400",
+            "500",
+            "600",
+            "700"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK SPILL WIDTH:",
+          "key": "attack_spill_width",
+          "value": "90"
+        },
+        {
+          "header": "SPLIT AMOUNT:",
+          "key": "attack_spill_pct",
+          "value": [
+            "70%",
+            "80%",
+            "90%",
+            "100%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MELD STRIKE SPILLS:",
+          "key": "meld_strike_spills",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SPILL SLOW DURATION:",
+          "key": "spill_slow_duration",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Templar Assassin's psi blades slice through the attacked unit, splitting and damaging enemy units directly behind it, while gaining bonus attack range. For each unit it damages, the split damage is reduced by a percentage.",
+      "dmg_type": "Pure",
+      "key": "templar_assassin_psi_blades",
+      "mc": null,
+      "name": "Psi Blades"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "0.5",
+      "desc": "Springs the trap nearest to Templar Assassin, slowing nearby enemies. \n\nIf the ability is in alt-cast state, springs the trap that is closest to the mouse cursor.",
+      "dmg_type": "",
+      "key": "templar_assassin_trap",
+      "mc": "0",
+      "name": "Trap"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "EXTRA DAMAGE:",
+          "key": "extra_damage",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden",
+        "Channeled"
+      ],
+      "bkbpierce": "",
+      "cd": "10",
+      "desc": "CHANNELED - Allows Templar Assassin to teleport to any Psionic Trap after channeling for 2 seconds, detonating it upon arrival as if it was fully charged and instantly dealing 400 bonus damage. Channeling Psionic Projection does not break Meld.",
+      "dmg_type": "",
+      "key": "templar_assassin_trap_teleport",
+      "mc": "50",
+      "name": "Psionic Projection"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TRAP RADIUS:",
+          "key": "trap_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "TRAP DURATION:",
+          "key": "trap_duration",
+          "value": "5"
+        },
+        {
+          "header": "MAX TRAPS:",
+          "key": "max_traps",
+          "value": [
+            "5",
+            "8",
+            "11"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TRAP FADE TIME:",
+          "key": "trap_fade_time",
+          "value": "2"
+        },
+        {
+          "header": "MIN MOVEMENT SLOW:",
+          "key": "movement_speed_min",
+          "value": "20%"
+        },
+        {
+          "header": "MAX MOVEMENT SLOW:",
+          "key": "movement_speed_max",
+          "value": "50%"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "trap_bonus_damage",
+          "value": [
+            "200",
+            "300",
+            "400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "INSTANT TRAP DAMAGE:",
+          "key": "instant_trap_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA DAMAGE:",
+          "key": "extra_damage",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE TICK RATE:",
+          "key": "damage_tick_rate",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TRAP MAX CHARGE DURATION:",
+          "key": "trap_max_charge_duration",
+          "value": "3.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "8",
+        "5"
+      ],
+      "desc": "Templar Assassin places mystical traps that invisibly monitor enemy movement. When sprung at her command, they exert a slowing influence of 20% in a 400 radius. Trap movement slow charges up to 50% after 3.5 seconds. Deals damage after 3.5s.",
+      "dmg_type": "Magical",
+      "key": "templar_assassin_psionic_trap",
+      "mc": "15",
+      "name": "Psionic Trap"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAX ATTACK RANGE:",
+          "key": "max_attack_range",
+          "value": "0"
+        },
+        {
+          "header": "MAX HEALTH REGEN:",
+          "key": "max_hp_regen",
+          "value": "2.7"
+        },
+        {
+          "header": "MAX MANA REGEN:",
+          "key": "max_mana_regen",
+          "value": "2.2"
+        },
+        {
+          "generated": true,
+          "header": "TIME UNTIL MEDITATION:",
+          "key": "time_until_meditation",
+          "value": "0.25"
+        },
+        {
+          "header": "MEDITATION TIME UNTIL MAX BONUS:",
+          "key": "time_until_max_bonus",
+          "value": "2.05"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "When remaining stationary and not taking damage for 0.25s, Templar Assassin begins meditating, gaining health and mana regeneration, reaching the maximum bonus after 2.05s of meditating.",
+      "dmg_type": "",
+      "key": "templar_assassin_inner_peace",
+      "mc": "0",
+      "name": "Inner Peace"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Psionic Trap",
+    "desc": "When activated, traps now silence affected enemies.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Refraction",
+    "desc": "Increases bonus damage. Refraction can be cast while disabled.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 3.4,
+    "armor": 0,
+    "attack_max": 33,
+    "attack_min": 28,
+    "attack_range": 250,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0,
+    "int": 20,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Templar Assassin",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape"
+  ],
+  "short_name": "templar_assassin",
+  "talents": [
+    {
+      "left": "?s Meld Hit Bash",
+      "level": 25,
+      "right": "+? Refraction Instances"
+    },
+    {
+      "left": "Refraction Dispels",
+      "level": 20,
+      "right": "+? Meld Armor Reduction"
+    },
+    {
+      "left": "+? Meld Attack Range",
+      "level": 15,
+      "right": "+? Psionic Traps"
+    },
+    {
+      "left": "+?s Meld Debuff Duration",
+      "level": 10,
+      "right": "+?% Psionic Trap Slow"
+    }
+  ]
+}

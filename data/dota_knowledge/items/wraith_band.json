@@ -1,0 +1,45 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "5"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "2"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "2"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "1.75"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "circlet",
+    "slippers"
+  ],
+  "cost": 505,
+  "created": true,
+  "id": 75,
+  "mc": false,
+  "name": "Wraith Band",
+  "notes": "",
+  "qual": "common",
+  "short_name": "wraith_band"
+}

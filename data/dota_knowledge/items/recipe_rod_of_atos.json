@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 205,
+  "mc": false,
+  "name": "Rod of Atos Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_rod_of_atos"
+}

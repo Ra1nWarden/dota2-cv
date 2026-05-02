@@ -1,0 +1,29 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "bat",
+      "value": "0.1"
+    },
+    {
+      "key": "stun_chance",
+      "value": "10"
+    },
+    {
+      "key": "stun_duration",
+      "value": "0.1"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 849,
+  "mc": false,
+  "name": "mechanical_arm",
+  "notes": "",
+  "qual": null,
+  "short_name": "mechanical_arm"
+}

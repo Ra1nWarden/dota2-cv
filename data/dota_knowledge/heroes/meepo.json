@@ -1,0 +1,451 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "220"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "MEGAMEEPO NET OFFSET:",
+          "key": "megameepo_net_offset",
+          "value": "160"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "750",
+            "900",
+            "1050",
+            "1200"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Tosses a net at the target point, rooting down all enemy units in an area around it.",
+      "dmg_type": "",
+      "key": "meepo_earthbind",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Earthbind"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST DURATION:",
+          "key": "cast_duration",
+          "value": "1.5"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "poof_damage",
+          "value": [
+            "50",
+            "80",
+            "110",
+            "140"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "1.5"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "12",
+        "10",
+        "8",
+        "6"
+      ],
+      "desc": "Drawing mystical energies from the earth, a Meepo can teleport to another Meepo or itself after channeling for 1.5 seconds, damaging the enemy in both the departure and arrival locations. \n\nIf the ability is in alt-cast state, all Meepos will also cast Poof to the target. When cast on the ground, all Meepos except the selected one will Poof to the closest location.",
+      "dmg_type": "Magical",
+      "key": "meepo_poof",
+      "mc": "80",
+      "name": "Poof"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEALTH STEAL (HEROES):",
+          "key": "health_steal_heroes",
+          "value": [
+            "9",
+            "12",
+            "15",
+            "18"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Steals health from the enemy with each strike and heals all other Meepos for that amount.\n\nReduced to 60% against creeps.",
+      "dmg_type": "Pure",
+      "key": "meepo_ransack",
+      "mc": null,
+      "name": "Ransack"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "header": "MAX HP RESTORE:",
+          "key": "hp_restore",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "40",
+      "desc": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for 3s. Restores 25% of his max health over that duration.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "",
+      "key": "meepo_petrify",
+      "mc": "125",
+      "name": "Dig"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE:",
+          "key": "model_scale",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DISTRIBUTION DURATION:",
+          "key": "damage_distribution_duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "END KNOCKBACK DURATION:",
+          "key": "end_knockback_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "END KNOCKBACK DISTANCE:",
+          "key": "end_knockback_distance",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "END KNOCKBACK HEIGHT:",
+          "key": "end_knockback_height",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STATS PCT:",
+          "key": "stats_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "POOF DAMAGE FACTOR:",
+          "key": "poof_damage_factor",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Instant Cast",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "60",
+      "desc": "Primary Meepo mounts all other Meepos in a 600 radius around him on top of his shoulders. While in this form, he gains 40% of the other Meepo stats and can Fling them at enemies, dealing damage and slowing them.\n\n When cast, Earthbind generates additional nets and Poof deals 50% more damage for each Meepo on top.",
+      "dmg_type": "",
+      "key": "meepo_megameepo",
+      "mc": "0",
+      "name": "MegaMeepo"
+    },
+    {
+      "attrib": [
+        {
+          "header": "NUMBER OF DUPLICATES:",
+          "key": "tooltip_clones",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "REQUIRED LEVEL:",
+          "key": "required_level",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "LEVELS BETWEEN UPGRADES:",
+          "key": "levels_between_upgrades",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "DPS PENALTY PCT:",
+          "key": "dps_penalty_pct",
+          "value": [
+            "50",
+            "66",
+            "75",
+            "80"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Meepo summons another Meepo, which levels up and shares items with the main Meepo. Ability cooldowns are independent, but items share cooldowns between Meepos. Damage, attack speed, health / mana regeneration, mana burn, and proc chance bonuses from items are distributed equally among the amount of Meepos.\n\nIf any Meepo dies, they all die.",
+      "dmg_type": "",
+      "key": "meepo_divided_we_stand",
+      "mc": null,
+      "name": "Divided We Stand"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TREE RADIUS:",
+          "key": "tree_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "TREE REGEN:",
+          "key": "tree_regen",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DIRT MOVE SPEED:",
+          "key": "dirt_move_speed",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "WATER MOVE SLOW:",
+          "key": "water_move_slow",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "WATER SLOW DURATION:",
+          "key": "water_slow_duration",
+          "value": "2"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Meepo grants stacking bonuses to himself and his clones based on their terrain. Each Meepo grants his bonus to the other Meepos.\n\nIf there is a tree within 250 range, he receives 1 HP regen.\n\nIf he is standing on dirt, he receives 2% bonus movement speed.\n\nIf he is in the water, his attacks slow the target by 2% for 2 seconds.",
+      "dmg_type": "",
+      "key": "meepo_geomancy",
+      "mc": null,
+      "name": "Geomancy"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "fling_damage",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "FLING RADIUS:",
+          "key": "fling_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "FLING MOVESPEED:",
+          "key": "fling_movespeed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "FLING SLOW DURATION:",
+          "key": "fling_slow_duration",
+          "value": "3"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": "-60%"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "0.5",
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "meepo_megameepo_fling",
+      "mc": "0",
+      "name": "MegaMeepo Fling"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "MegaMeepo Fling",
+    "desc": "In MegaMeepo form, Meepo flings the topmost meepo towards a target within a %AbilityCastRange% range, dealing damage and slowing their movement speed.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Dig",
+    "desc": "Digs into the ground for a short duration, dispelling Meepo and causing him to become invulnerable and untargetable for 3s. Restores 25% of his max health over that duration.\n\nDISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 2.1,
+    "armor": 3,
+    "attack_max": 35,
+    "attack_min": 29,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 2.2
+  },
+  "name": "Meepo",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Nuker",
+    "Disabler",
+    "Initiator",
+    "Pusher"
+  ],
+  "short_name": "meepo",
+  "talents": [
+    {
+      "left": "+400 Health",
+      "level": 25,
+      "right": "-?s Poof Cast Duration"
+    },
+    {
+      "left": "Earthbind grants True Strike on Targets",
+      "level": 20,
+      "right": "+? Ransack Health Steal"
+    },
+    {
+      "left": "+15% Evasion",
+      "level": 15,
+      "right": "-?s Earthbind Cooldown"
+    },
+    {
+      "left": "+7 Strength",
+      "level": 10,
+      "right": "+? Poof Damage"
+    }
+  ]
+}

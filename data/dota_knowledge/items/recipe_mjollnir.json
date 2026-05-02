@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 550,
+  "created": false,
+  "id": 157,
+  "mc": false,
+  "name": "Mjollnir Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_mjollnir"
+}

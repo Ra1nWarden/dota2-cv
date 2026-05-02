@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Grants you an extra 6 bonus armor at the cost of -20 movement speed. Lasts 6 seconds.",
+      "title": "Toughen Up",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "armor_bonus",
+      "value": "0"
+    },
+    {
+      "key": "move_speed",
+      "value": "20"
+    },
+    {
+      "key": "active_armor",
+      "value": "6"
+    },
+    {
+      "key": "active_duration",
+      "value": "6"
+    },
+    {
+      "key": "bonus_health",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 12,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 298,
+  "mc": false,
+  "name": "Craggy Coat",
+  "notes": "",
+  "qual": null,
+  "short_name": "craggy_coat"
+}

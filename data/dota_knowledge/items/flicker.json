@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Dispells debuffs and blinks you in a random forward direction for a random distance between 200 and 600. If cast within 3 seconds of receiving player damage, it will blink in place.\n\nDispel Type: Basic Dispel",
+      "title": "Flicker",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "max_range",
+      "value": "600"
+    },
+    {
+      "key": "min_range",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "35"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 5,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 335,
+  "mc": false,
+  "name": "Flicker",
+  "notes": "",
+  "qual": null,
+  "short_name": "flicker"
+}

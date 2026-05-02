@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 22,
+  "mc": false,
+  "name": "Blade of Alacrity",
+  "notes": "",
+  "qual": "component",
+  "short_name": "blade_of_alacrity"
+}

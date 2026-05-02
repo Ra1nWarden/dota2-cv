@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 266,
+  "mc": false,
+  "name": "Spirit Vessel Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_spirit_vessel"
+}

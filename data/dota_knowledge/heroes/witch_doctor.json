@@ -1,0 +1,434 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "STUN DURATION:",
+          "key": "hero_duration",
+          "value": "0.8"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DURATION:",
+          "key": "creep_duration",
+          "value": "0.8"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "55",
+            "70",
+            "85",
+            "100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE RANGE:",
+          "key": "bounce_range",
+          "value": "575"
+        },
+        {
+          "header": "BOUNCES:",
+          "key": "bounces",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE DELAY:",
+          "key": "bounce_delay",
+          "value": "0.1"
+        },
+        {
+          "header": "BONUS DAMAGE PER BOUNCE:",
+          "key": "bounce_bonus_damage",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE PCT:",
+          "key": "creep_damage_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits. Damage increases each bounce.",
+      "dmg_type": "Magical",
+      "key": "witch_doctor_paralyzing_cask",
+      "mc": [
+        "80",
+        "100",
+        "120",
+        "140"
+      ],
+      "name": "Paralyzing Cask"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA PER SEC:",
+          "key": "mana_per_second",
+          "value": [
+            "9",
+            "12",
+            "15",
+            "18"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "500",
+            "550",
+            "600",
+            "650"
+          ]
+        },
+        {
+          "header": "HEAL:",
+          "key": "heal",
+          "value": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL INTERVAL:",
+          "key": "heal_interval",
+          "value": "0.33"
+        },
+        {
+          "generated": true,
+          "header": "DOES HEAL ALL ALLIES:",
+          "key": "does_heal_all_allies",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DOES DAMAGE:",
+          "key": "does_damage",
+          "value": "0"
+        },
+        {
+          "header": "SELF HEAL:",
+          "key": "self_only_heal_percentage",
+          "value": "0%"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": "0",
+      "desc": "Witch Doctor focuses his magic to heal nearby allied units, costing Witch Doctor mana every second Voodoo Restoration is active.",
+      "dmg_type": "Magical",
+      "key": "witch_doctor_voodoo_restoration",
+      "mc": "25",
+      "name": "Voodoo Restoration"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "header": "LOST HEALTH BURST DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "16%",
+            "24%",
+            "32%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE THRESHOLD:",
+          "key": "bonus_damage_threshold",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "TICKS:",
+          "key": "ticks",
+          "value": "3"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "SPREAD SPEED:",
+          "key": "spread_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "26",
+        "22",
+        "18"
+      ],
+      "desc": "Curses all enemy Heroes and player-controlled units in a small area, causing them to take a set amount of damage each second, as well as bursts of damage every 4 seconds based on how much health they have lost since the curse began.",
+      "dmg_type": "Magical",
+      "key": "witch_doctor_maledict",
+      "mc": [
+        "105",
+        "110",
+        "115",
+        "120"
+      ],
+      "name": "Maledict"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2.5"
+        },
+        {
+          "header": "ATTACK SPEED REDUCTION:",
+          "key": "attack_speed_reduction",
+          "value": "45"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "50",
+      "desc": "Turns Witch Doctor into a Death Ward briefly with reduced attack speed. He is hidden during this time.",
+      "dmg_type": "",
+      "key": "witch_doctor_voodoo_switcheroo",
+      "mc": "200",
+      "name": "Voodoo Switcheroo"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DEATH GOLD LOST REDUCTION PCT TOOLTIP:",
+          "key": "death_gold_lost_reduction_pct_tooltip",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "GOLD TICK INTERVAL TOOLTIP:",
+          "key": "gold_tick_interval_tooltip",
+          "value": "3"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Witch Doctor gets a Gris-Gris, an item that cannot be dropped or placed in the backpack. When the owner dies, 100% of the gold lost from death is added to the item, and will be refunded when the item is consumed. The value of the Gris-Gris is increased by 1 every 3s. \n\n Right-click to consume and permanently remove the item.",
+      "dmg_type": "",
+      "key": "witch_doctor_gris_gris",
+      "mc": null,
+      "name": "Gris-Gris"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "header": "ATTACK RANGE:",
+          "key": "attack_range_tooltip",
+          "value": [
+            "600",
+            "625",
+            "650"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACK RANGE:",
+          "key": "bonus_attack_range",
+          "value": [
+            "0",
+            "25",
+            "50"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS ACCURACY:",
+          "key": "bonus_accuracy",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL TARGET COUNT:",
+          "key": "initial_target_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "100",
+        "90",
+        "80"
+      ],
+      "desc": "CHANNELED - Summons a deadly ward to attack enemy heroes within its attack range. Lasts a maximum of 8 seconds. Death Ward has 50% bonus accuracy.",
+      "dmg_type": "Pure",
+      "key": "witch_doctor_death_ward",
+      "mc": "200",
+      "name": "Death Ward"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Death Ward",
+    "desc": "Death Ward attacks bounce between nearby enemies.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Voodoo Switcheroo",
+    "desc": "Turns Witch Doctor into a Death Ward briefly with reduced attack speed. He is hidden during this time.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 13,
+    "agi_gain": 1.4,
+    "armor": 0,
+    "attack_max": 36,
+    "attack_min": 26,
+    "attack_range": 550,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 3.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.1
+  },
+  "name": "Witch Doctor",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "witch_doctor",
+  "talents": [
+    {
+      "left": "+? Paralyzing Cask Bounces",
+      "level": 25,
+      "right": "+? Death Ward Damage"
+    },
+    {
+      "left": "Maledict bursts deal ?% damage in a ? AoE ",
+      "level": 20,
+      "right": "+?% Target Max Health Voodoo Restoration Heal"
+    },
+    {
+      "left": "-?s Paralyzing Cask Cooldown",
+      "level": 15,
+      "right": "+?s Maledict Duration"
+    },
+    {
+      "left": "-?% Voodoo Restoration Mana Per Second",
+      "level": 10,
+      "right": "+200 Health"
+    }
+  ]
+}

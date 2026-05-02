@@ -1,0 +1,508 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "frost_arrows_movement_speed",
+          "value": [
+            "-15%",
+            "-25%",
+            "-35%",
+            "-45%"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "damage",
+          "value": [
+            "10",
+            "15",
+            "20",
+            "25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "625"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Adds a freezing effect to Drow's attacks, slowing enemy movement and dealing bonus damage. Slow lasts 1.5 seconds.",
+      "dmg_type": "Physical",
+      "key": "drow_ranger_frost_arrows",
+      "mc": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "name": "Frost Arrows"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "WAVE SPEED:",
+          "key": "wave_speed",
+          "value": "2000"
+        },
+        {
+          "header": "WIDTH:",
+          "key": "wave_width",
+          "value": "250"
+        },
+        {
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "KNOCKBACK MAX:",
+          "key": "knockback_distance_max",
+          "value": "450"
+        },
+        {
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": [
+            "0.6",
+            "0.7",
+            "0.8",
+            "0.9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION MIN:",
+          "key": "knockback_duration_min",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "WAVE LENGTH:",
+          "key": "wave_length",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVESPEED:",
+          "key": "bonus_movespeed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MISS CHANCE:",
+          "key": "miss_chance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GUST REVEALS INVIS:",
+          "key": "gust_reveals_invis",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "19",
+        "17",
+        "15",
+        "13"
+      ],
+      "desc": "Releases a wave that silences and knocks back and reveals invisible enemy units. Knockback distance is relative to how close they are to Drow.",
+      "dmg_type": "",
+      "key": "drow_ranger_wave_of_silence",
+      "mc": "70",
+      "name": "Gust"
+    },
+    {
+      "attrib": [
+        {
+          "header": "WAVE COUNT:",
+          "key": "wave_count",
+          "value": "3"
+        },
+        {
+          "header": "ARROWS PER WAVE:",
+          "key": "arrow_count_per_wave",
+          "value": "4"
+        },
+        {
+          "header": "ARROW BASE DAMAGE BONUS:",
+          "key": "arrow_damage_pct",
+          "value": [
+            "100%",
+            "120%",
+            "140%",
+            "160%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ARROW WIDTH:",
+          "key": "arrow_width",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "ARROW SPEED:",
+          "key": "arrow_speed",
+          "value": "1300"
+        },
+        {
+          "header": "ARROW RANGE MULTIPLIER:",
+          "key": "arrow_range_multiplier",
+          "value": "1.75"
+        },
+        {
+          "generated": true,
+          "header": "ARROW ANGLE:",
+          "key": "arrow_angle",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "BYPASS BLOCK:",
+          "key": "bypass_block",
+          "value": "1"
+        },
+        {
+          "header": "MOVEMENT SPEED PENALTY:",
+          "key": "multishot_movespeed",
+          "value": "35%"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "1.75"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying Frost Arrows. Lasts up to 1.75 seconds.\n\nDrow can move slowly and use items while casting Multishot.",
+      "dmg_type": "Physical",
+      "key": "drow_ranger_multishot",
+      "mc": [
+        "50",
+        "70",
+        "90",
+        "110"
+      ],
+      "name": "Multishot"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SHARD WIDTH:",
+          "key": "shard_width",
+          "value": "180"
+        },
+        {
+          "generated": true,
+          "header": "SHARD COUNT:",
+          "key": "shard_count",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "SHARD SPEED:",
+          "key": "shard_speed",
+          "value": "1200"
+        },
+        {
+          "header": "DURATION:",
+          "key": "shard_duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "SHARD ANGLE STEP:",
+          "key": "shard_angle_step",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "SHARD DISTANCE:",
+          "key": "shard_distance",
+          "value": "155"
+        },
+        {
+          "generated": true,
+          "header": "TURN RATE SLOW:",
+          "key": "turn_rate_slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "END HEIGHT:",
+          "key": "end_height",
+          "value": "128"
+        },
+        {
+          "generated": true,
+          "header": "HILLTOP OFFSET:",
+          "key": "hilltop_offset",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "RAMP RADIUS:",
+          "key": "ramp_radius",
+          "value": "150"
+        },
+        {
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "200"
+        },
+        {
+          "header": "BONUS ARROWS PER WAVE:",
+          "key": "multishot_arrow_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "Z SPEED OVERRIDE:",
+          "key": "z_speed_override",
+          "value": "800"
+        },
+        {
+          "header": "HIGH GROUND DAMAGE BONUS:",
+          "key": "damage_bonus",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "25",
+      "desc": "Drow creates a hill of ice beneath her, knocking away nearby enemies. Units on the hill gain flying vision and Drow and her ranged allies gain bonus attack range. Drow gains additional damage while on the Glacier and attacking targets below her.\n\nThe front of the hill obscures vision and cannot be moved through except by Drow. Does not interrupt Multishot when cast.",
+      "dmg_type": "Magical",
+      "key": "drow_ranger_glacier",
+      "mc": "50",
+      "name": "Glacier"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "AGILITY BONUS:",
+          "key": "trueshot_agi_bonus",
+          "value": "10%"
+        },
+        {
+          "generated": true,
+          "header": "TRUESHOT AGI BONUS ALLIES PCT:",
+          "key": "trueshot_agi_bonus_allies_pct",
+          "value": "50"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Grants Drow bonus agility based on Drow's current agility and level. Nearby ranged heroes received 50% of the bonus agility.",
+      "dmg_type": "",
+      "key": "drow_ranger_trueshot",
+      "mc": null,
+      "name": "Precision Aura"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE:",
+          "key": "chance",
+          "value": [
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "BONUS PROC DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "50",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DISABLE RANGE:",
+          "key": "disable_range",
+          "value": "325"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their base armor. This ability is disabled if there is an enemy hero within 325 range.",
+      "dmg_type": "Physical",
+      "key": "drow_ranger_marksmanship",
+      "mc": null,
+      "name": "Marksmanship"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Frost Arrows",
+    "desc": "Frost Arrows now apply a Hypothermia stack to enemies, increasing damage from Frost Arrows and reducing their Health Restoration per stack. If an enemy dies with Hypothermia stacks, they burst and deal damage per stack and slow in an area around it.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Glacier",
+    "desc": "Drow creates a hill of ice beneath her, knocking away nearby enemies. Units on the hill gain flying vision and Drow and her ranged allies gain bonus attack range. Drow gains additional damage while on the Glacier and attacking targets below her.\n\nThe front of the hill obscures vision and cannot be moved through except by Drow. Does not interrupt Multishot when cast.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 2.8,
+    "armor": 0,
+    "attack_max": 34,
+    "attack_min": 27,
+    "attack_range": 625,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 15,
+    "int_gain": 1.4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 16,
+    "str_gain": 1.9
+  },
+  "name": "Drow Ranger",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Pusher"
+  ],
+  "short_name": "drow_ranger",
+  "talents": [
+    {
+      "left": "+8% Marksmanship Chance",
+      "level": 25,
+      "right": "+1 Multishot Wave"
+    },
+    {
+      "left": "50% Gust Self Movement Speed",
+      "level": 20,
+      "right": "+25% Multishot Damage"
+    },
+    {
+      "left": "+75 Attack Range",
+      "level": 15,
+      "right": "-6s Multishot Cooldown"
+    },
+    {
+      "left": "-18% Frost Arrows Mana Cost",
+      "level": 10,
+      "right": "+1 Multishot Arrow Per Wave"
+    }
+  ]
+}

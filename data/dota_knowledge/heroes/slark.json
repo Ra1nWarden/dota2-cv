@@ -1,0 +1,445 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "PULSE DURATION:",
+          "key": "pulse_duration",
+          "value": "1"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "325"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "total_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TOTAL PULSES:",
+          "key": "total_pulses",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "PULSE INTERVAL:",
+          "key": "pulse_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "SELF DAMAGE PCT:",
+          "key": "self_damage_pct",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.001"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "desc": "After a short delay, Slark sacrifices some of his life blood, purging most negative debuffs and dealing damage to enemy units around him and to himself. Slark only takes 30% of the damage.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "Magical",
+      "key": "slark_dark_pact",
+      "mc": "65",
+      "name": "Dark Pact"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "POUNCE DAMAGE:",
+          "key": "pounce_damage",
+          "value": "0"
+        },
+        {
+          "header": "DISTANCE:",
+          "key": "pounce_distance",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "POUNCE SPEED:",
+          "key": "pounce_speed",
+          "value": "933.33"
+        },
+        {
+          "generated": true,
+          "header": "POUNCE ACCELERATION:",
+          "key": "pounce_acceleration",
+          "value": "7000"
+        },
+        {
+          "generated": true,
+          "header": "POUNCE RADIUS:",
+          "key": "pounce_radius",
+          "value": "120"
+        },
+        {
+          "header": "LEASH DURATION:",
+          "key": "leash_duration",
+          "value": [
+            "2.5",
+            "2.75",
+            "3",
+            "3.25"
+          ]
+        },
+        {
+          "header": "LEASH RADIUS:",
+          "key": "leash_radius",
+          "value": "400"
+        },
+        {
+          "header": "ESSENCE SHIFT STACKS:",
+          "key": "essence_stacks",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "20",
+        "16",
+        "12"
+      ],
+      "desc": "Slark leaps forward, leashing and applying Essence Shift stacks to the first hero he connects. That unit can only move a limited distance away from Slark's landing position.",
+      "dmg_type": "Magical",
+      "key": "slark_pounce",
+      "mc": "75",
+      "name": "Pounce"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "AGI BONUS DAMAGE FACTOR:",
+          "key": "agi_bonus_damage_factor",
+          "value": "0"
+        },
+        {
+          "header": "BASE RESTORATION STEAL:",
+          "key": "base_health_rest_steal",
+          "value": "0%"
+        },
+        {
+          "header": "RESTORATION STEAL:",
+          "key": "health_rest_steal",
+          "value": [
+            "4%",
+            "8%",
+            "12%",
+            "16%"
+          ]
+        },
+        {
+          "header": "REGEN STEAL:",
+          "key": "regen_steal",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "SPEED STEAL:",
+          "key": "ms_steal",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MELEE RANGE BUFFER:",
+          "key": "melee_range_buffer",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Attack Modifier",
+        "Autocast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "12",
+        "10",
+        "8"
+      ],
+      "desc": "Slark slices the target with his salty shiv, stealing a portion of the target's movement speed, Health Regen and Health Restoration.\n\nThese effects stack independently.",
+      "dmg_type": "Physical",
+      "key": "slark_saltwater_shiv",
+      "mc": [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "name": "Saltwater Shiv"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "75",
+      "desc": "Creates a cloud at the target location. All allies inside the radius are hidden and affected by Shadow Dance.",
+      "dmg_type": "",
+      "key": "slark_depth_shroud",
+      "mc": "75",
+      "name": "Depth Shroud"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "AGI GAIN:",
+          "key": "agi_gain",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "STAT LOSS:",
+          "key": "stat_loss",
+          "value": "1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "12.5"
+        },
+        {
+          "header": "STEAL RADIUS:",
+          "key": "steal_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "MAX STACKS PER HERO:",
+          "key": "max_stacks_per_hero",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Slark steals the life essence of enemy heroes with his attacks, draining 1 of each of their attributes and converting them to bonus 3 Agility. If Slark kills an affected enemy hero, he permanently steals 1 Agility.",
+      "dmg_type": "",
+      "key": "slark_essence_shift",
+      "mc": null,
+      "name": "Essence Shift"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "24%",
+            "36%",
+            "48%"
+          ]
+        },
+        {
+          "header": "HEALTH GAINED PER SECOND:",
+          "key": "bonus_regen",
+          "value": [
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION DELAY:",
+          "key": "activation_delay",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "NEUTRAL DISABLE:",
+          "key": "neutral_disable",
+          "value": "2"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "4.25",
+            "4.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Instant Cast",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "50",
+        "40",
+        "30"
+      ],
+      "desc": "When not visible to the enemy team, Slark passively gains bonus movement speed and health regeneration. If Slark is damaged by a neutral unit, the passive movement and health regeneration bonuses are lost for 2 seconds.\n\nWhen activated, Slark hides himself in a cloud of shadows, becoming immune to detection. Attacking, casting spells, and using items will not reveal Slark, but enemies can see the cloud itself.",
+      "dmg_type": "",
+      "key": "slark_shadow_dance",
+      "mc": "100",
+      "name": "Shadow Dance"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Pounce",
+    "desc": "Provides charges and increases range.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Depth Shroud",
+    "desc": "Creates a cloud at the target location. All allies inside the radius are hidden and affected by Shadow Dance.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 1.5,
+    "armor": 0,
+    "attack_max": 43,
+    "attack_min": 37,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 16,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 1800,
+    "str": 20,
+    "str_gain": 2.1
+  },
+  "name": "Slark",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "slark",
+  "talents": [
+    {
+      "left": "+?s Shadow Dance Duration",
+      "level": 25,
+      "right": "+?s Essence Shift Duration"
+    },
+    {
+      "left": "+? Agility gain/stolen per Essence Shift Stack",
+      "level": 20,
+      "right": "+? Shadow Dance Attack Speed"
+    },
+    {
+      "left": "+? Dark Pact Damage",
+      "level": 15,
+      "right": "+? Shadow Dance Regen"
+    },
+    {
+      "left": "-?s Dark Pact Cooldown",
+      "level": 10,
+      "right": "+?s Pounce Leash"
+    }
+  ]
+}

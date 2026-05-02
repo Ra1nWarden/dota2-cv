@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "4"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_regen",
+      "value": "4"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 975,
+  "created": false,
+  "id": 6,
+  "mc": false,
+  "name": "Helm of Iron Will",
+  "notes": "",
+  "qual": "component",
+  "short_name": "helm_of_iron_will"
+}

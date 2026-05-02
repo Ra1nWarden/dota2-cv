@@ -1,0 +1,25 @@
+{
+  "abilities": [
+    {
+      "description": "Search the map for Offerings to the dead.",
+      "title": "Dig",
+      "type": "active"
+    }
+  ],
+  "attrib": [],
+  "behavior": [
+    "Point Target",
+    "Channeled"
+  ],
+  "cd": 8,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 4301,
+  "mc": false,
+  "name": "Scrying Shovel",
+  "notes": "",
+  "qual": null,
+  "short_name": "ofrenda_shovel"
+}

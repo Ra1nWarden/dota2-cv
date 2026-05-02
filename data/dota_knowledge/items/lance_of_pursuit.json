@@ -1,0 +1,52 @@
+{
+  "abilities": [
+    {
+      "description": "Attacking from behind slows enemies by 16% (8% if Ranged) and deals 20 more damage. Slow lasts 2 second(s).",
+      "title": "Hound",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "200"
+    },
+    {
+      "key": "bonus_strength",
+      "value": "0"
+    },
+    {
+      "key": "slow_duration",
+      "value": "2"
+    },
+    {
+      "key": "backstab_damage",
+      "value": "20"
+    },
+    {
+      "key": "backstab_angle",
+      "value": "90"
+    },
+    {
+      "key": "slow_pct_melee",
+      "value": "16"
+    },
+    {
+      "key": "slow_pct_ranged",
+      "value": "8"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 946,
+  "mc": false,
+  "name": "Lance of Pursuit",
+  "notes": "",
+  "qual": null,
+  "short_name": "lance_of_pursuit"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1400,
+  "created": false,
+  "id": 612,
+  "mc": false,
+  "name": "Wind Waker Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_wind_waker"
+}

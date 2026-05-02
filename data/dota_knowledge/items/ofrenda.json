@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Place this Offering on an Altar to honor the dead with a memory from those they left behind.",
+      "title": "Honor the Dead",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "speed",
+      "value": "1000"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 3,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 4300,
+  "mc": false,
+  "name": "Beloved Memory",
+  "notes": "",
+  "qual": null,
+  "short_name": "ofrenda"
+}

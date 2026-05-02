@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "bonus_magic_resistance",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "bonus_spell_amp",
+      "value": "6"
+    },
+    {
+      "display": "- {value} Armor",
+      "key": "bonus_armor",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 357,
+  "mc": false,
+  "name": "Nether Shawl",
+  "notes": "",
+  "qual": null,
+  "short_name": "nether_shawl"
+}

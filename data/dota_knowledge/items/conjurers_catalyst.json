@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Dealing 100 spell damage to an enemy causes them to overheat and deal damage to their allies in a 300 unit radius. Hero targets deal 40 damage to their allies, other targets deal 15 damage.",
+      "title": "Spellover",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "6"
+    },
+    {
+      "key": "damage_threshold",
+      "value": "100"
+    },
+    {
+      "key": "damage_aoe",
+      "value": "300"
+    },
+    {
+      "key": "damage",
+      "value": "40"
+    },
+    {
+      "key": "damage_creep",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1864,
+  "mc": false,
+  "name": "Conjurer's Catalyst",
+  "notes": "",
+  "qual": null,
+  "short_name": "conjurers_catalyst"
+}

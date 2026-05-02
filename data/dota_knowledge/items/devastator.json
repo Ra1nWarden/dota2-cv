@@ -1,0 +1,76 @@
+{
+  "abilities": [
+    {
+      "description": "Causes your next attack to have true strike, apply a poison for 4 seconds, slowing by 25% and dealing 0.75x your intelligence as damage every second.",
+      "title": "Witch Blade",
+      "type": "passive"
+    },
+    {
+      "description": "Your attacks reduce the enemy's Magic resistance by 20% for 4 seconds.",
+      "title": "Magic Corruption",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "40"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "40"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.5"
+    },
+    {
+      "display": "+ {value} Projectile Speed",
+      "key": "projectile_speed",
+      "value": "300"
+    },
+    {
+      "key": "int_damage_multiplier",
+      "value": "0.75"
+    },
+    {
+      "key": "slow",
+      "value": "25"
+    },
+    {
+      "key": "slow_duration",
+      "value": "4"
+    },
+    {
+      "key": "active_mres_reduction",
+      "value": "20"
+    },
+    {
+      "key": "passive_cooldown",
+      "value": "4"
+    }
+  ],
+  "behavior": null,
+  "cd": 7,
+  "charges": false,
+  "components": [
+    "witch_blade",
+    "mystic_staff"
+  ],
+  "cost": 5975,
+  "created": true,
+  "id": 1806,
+  "mc": false,
+  "name": "Parasma",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "devastator"
+}

@@ -1,0 +1,446 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "MAX CHANNEL TIME:",
+          "key": "channel_time",
+          "value": "2.5"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BOLT SPEED:",
+          "key": "bolt_speed",
+          "value": "1200"
+        },
+        {
+          "header": "MIN ROOT DURATION:",
+          "key": "minimum_purge_duration",
+          "value": "0.75"
+        },
+        {
+          "header": "MAX ROOT DURATION:",
+          "key": "maximum_purge_duration",
+          "value": "2.75"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER BUFF:",
+          "key": "damage_per_buff",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HEAL PER DEBUFF:",
+          "key": "heal_per_debuff",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "18",
+        "14",
+        "10",
+        "6"
+      ],
+      "desc": "CHANNELED - Gathers Oracle's power into a bolt of scouring energy that, when released, damages, roots, and dispels enemies of buffs in an area around the target. If target is an ally it will only dispel debuffs. The root duration increases with channeling time.\n\nDISPEL TYPE: Basic Dispel",
+      "dmg_type": "Magical",
+      "key": "oracle_fortunes_end",
+      "mc": "100",
+      "name": "Fortune's End"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAGIC DAMAGE RESISTANCE PCT TOOLTIP:",
+          "key": "magic_damage_resistance_pct_tooltip",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "17",
+        "14",
+        "11",
+        "8"
+      ],
+      "desc": "Oracle enraptures a target, disarming them and granting them 100% magic damage resistance.",
+      "dmg_type": "",
+      "key": "oracle_fates_edict",
+      "mc": "70",
+      "name": "Fate's Edict"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "180",
+            "270",
+            "360"
+          ]
+        },
+        {
+          "header": "HEAL PER SECOND:",
+          "key": "heal_per_second",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "header": "TOTAL HEAL:",
+          "key": "total_heal_tooltip",
+          "value": [
+            "150",
+            "250",
+            "350",
+            "450"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE MODIFIER:",
+          "key": "damage_modifier",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "2.5",
+      "desc": "Burns away impurities, dealing heavy magic damage to the target before causing them to regenerate health over time. The amount of health regenerated over its duration exceeds the amount of initial damage. Can be cast on enemies and allies.",
+      "dmg_type": "Magical",
+      "key": "oracle_purifying_flames",
+      "mc": "75",
+      "name": "Purifying Flames"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "650"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "header": "DAMAGE/HEAL PER SECOND:",
+          "key": "damage",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "1"
+        },
+        {
+          "header": "HEAL AMPLIFICATION:",
+          "key": "heal_amp",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "40",
+      "desc": "Brings forth rain to the target area. Enemies standing in the area receive damage and have reduced Heal Amplification. Allies in the area heal and have increased incoming Heal Amplification.",
+      "dmg_type": "Magical",
+      "key": "oracle_rain_of_destiny",
+      "mc": "150",
+      "name": "Rain of Destiny"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ENABLED:",
+          "key": "enabled",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "SPELL AMPLIFICATION:",
+          "key": "spell_amplification",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "GOLD BONUS PCT:",
+          "key": "gold_bonus_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "INT BONUS PCT:",
+          "key": "int_bonus_pct",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "HEAL AMPLIFICATION:",
+          "key": "heal_amplification",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "BARRIER AMOUNT:",
+          "key": "barrier_amount",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "BARRIER RESTORE TIME:",
+          "key": "barrier_restore_time",
+          "value": "7"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "oracle_diviners_deck",
+      "mc": null,
+      "name": "Diviner's Deck"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "7",
+            "8.5",
+            "10"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "DELAYED HEAL AMPLIFICATION:",
+          "key": "heal_amp_pct",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "800",
+            "900"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "110",
+        "85",
+        "60"
+      ],
+      "desc": "Temporarily alters an ally's destiny, delaying any healing or damage taken until False Promise ends. Any healing that is delayed by False Promise is amplified. Removes most negative status effects and disables on initial cast.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "oracle_false_promise",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "False Promise"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "oracle_prognosticate",
+      "mc": null,
+      "name": "Prognosticate"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "",
+    "desc": "",
+    "has": false,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Rain of Destiny",
+    "desc": "Brings forth rain to the target area. Enemies standing in the area receive damage and have reduced Heal Amplification. Allies in the area heal and have increased incoming Heal Amplification.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.7,
+    "armor": 1,
+    "attack_max": 19,
+    "attack_min": 13,
+    "attack_range": 625,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 26,
+    "int_gain": 3.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.2
+  },
+  "name": "Oracle",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "oracle",
+  "talents": [
+    {
+      "left": "Fortune's End constantly Dispels",
+      "level": 25,
+      "right": "+?s False Promise Duration"
+    },
+    {
+      "left": "-?s False Promise Cooldown",
+      "level": 20,
+      "right": "-?s Purifying Flames Cooldown"
+    },
+    {
+      "left": "+? Fortune's End Radius",
+      "level": 15,
+      "right": "+?% Purifying Flames Enemy Damage"
+    },
+    {
+      "left": "+?s Fortune's End Duration",
+      "level": 10,
+      "right": "+? Armor False Promise"
+    }
+  ]
+}

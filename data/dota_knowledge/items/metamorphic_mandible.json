@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Enter into an insect form for 5 seconds, increasing magic resistance by 50% and movement speed by 15%. While an insect, your size is decreased and your armor is reduced by 45%.",
+      "title": "Pupate",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "5"
+    },
+    {
+      "key": "bonus_magic_resistance",
+      "value": "50"
+    },
+    {
+      "key": "bonus_movespeed",
+      "value": "15"
+    },
+    {
+      "key": "size_decrease",
+      "value": "20"
+    },
+    {
+      "key": "armor_decrease",
+      "value": "45"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1719,
+  "mc": false,
+  "name": "Metamorphic Mandible",
+  "notes": "",
+  "qual": null,
+  "short_name": "metamorphic_mandible"
+}

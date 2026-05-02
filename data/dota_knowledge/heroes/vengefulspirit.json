@@ -1,0 +1,358 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MAGIC MISSILE SPEED:",
+          "key": "magic_missile_speed",
+          "value": "1350"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "magic_missile_stun",
+          "value": [
+            "1.2",
+            "1.4",
+            "1.6",
+            "1.8"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "magic_missile_damage",
+          "value": [
+            "85",
+            "170",
+            "255",
+            "340"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE RANGE PCT:",
+          "key": "bounce_range_pct",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER LASTHIT:",
+          "key": "damage_per_lasthit",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "Fires a magic missile at an enemy unit, stunning and dealing damage.",
+      "dmg_type": "Magical",
+      "key": "vengefulspirit_magic_missile",
+      "mc": [
+        "90",
+        "95",
+        "100",
+        "105"
+      ],
+      "name": "Magic Missile"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "80",
+            "100",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WAVE SPEED:",
+          "key": "wave_speed",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "WAVE WIDTH:",
+          "key": "wave_width",
+          "value": "325"
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor_reduction",
+          "value": [
+            "-3",
+            "-4",
+            "-5",
+            "-6"
+          ]
+        },
+        {
+          "header": "ATTACK DAMAGE REDUCTION:",
+          "key": "attack_reduction",
+          "value": [
+            "10%",
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISION AOE:",
+          "key": "vision_aoe",
+          "value": "350"
+        },
+        {
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "STEAL PCT:",
+          "key": "steal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "abilityduration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Vengeful Spirit lets loose a wicked cry, weakening the total attack damage and armor of enemies, and giving vision of the path ahead.",
+      "dmg_type": "Magical",
+      "key": "vengefulspirit_wave_of_terror",
+      "mc": "40",
+      "name": "Wave of Terror"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE BONUS:",
+          "key": "bonus_base_damage",
+          "value": [
+            "10%",
+            "15%",
+            "20%",
+            "25%"
+          ]
+        },
+        {
+          "header": "SELF MULTIPLIER:",
+          "key": "self_multiplier",
+          "value": "20%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "aura_radius",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "REVIVAL TIME:",
+          "key": "revival_time",
+          "value": "0"
+        },
+        {
+          "header": "REVENGE WINDOW DURATION:",
+          "key": "restitution_time",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": "0",
+      "desc": "Vengeful Spirit's presence increases the damage of nearby friendly heroes. Vengeful Spirit herself receives 20% extra bonus.",
+      "dmg_type": "",
+      "key": "vengefulspirit_command_aura",
+      "mc": null,
+      "name": "Vengeance Aura"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "20"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Vengeful Spirit is considered both a ranged and a melee attacker to gain the respective bonuses.\n\nWhen killed by an enemy hero, Vengeful Spirit deals 20% bonus damage to her killer until their next death. Only one debuff can exist at a time.",
+      "dmg_type": "",
+      "key": "vengefulspirit_retribution",
+      "mc": null,
+      "name": "Retribution"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "0"
+        },
+        {
+          "header": "SHIELD DURATION:",
+          "key": "damage_reduction_duration",
+          "value": "10"
+        },
+        {
+          "header": "DAMAGE/SHIELD:",
+          "key": "damage",
+          "value": [
+            "150",
+            "300",
+            "450"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "850",
+            "975",
+            "1100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "46",
+        "38",
+        "30"
+      ],
+      "desc": "Instantaneously swaps positions with a target Hero, friend or enemy. Nether Swap interrupts channeling abilities on the target. Enemy Swapped units take damage. Vengeful Spirit and allied swapped units gain a barrier equal to the damage dealt.",
+      "dmg_type": "Magical",
+      "key": "vengefulspirit_nether_swap",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Nether Swap"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Vengeance Aura",
+    "desc": "Increases self multiplier. Upon death, creates a strong illusion of Vengeful Spirit that deals full damage, and can cast all of her spells.\n\nIf the illusion is alive when Vengeful Spirit respawn, she will take its place. XP earned by her illusion is given to her. Strong Illusions are not instantly killed by spells.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Magic Missile",
+    "desc": "Bounces once on an enemy, prioritizing heroes, within 75% of Magic Missile's current cast range from the first target.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 3,
+    "armor": 0,
+    "attack_max": 34,
+    "attack_min": 28,
+    "attack_range": 400,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 19,
+    "int_gain": 1.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.6
+  },
+  "name": "Vengeful Spirit",
+  "primary_attr": "agi",
+  "roles": [
+    "Support",
+    "Initiator",
+    "Disabler",
+    "Nuker",
+    "Escape"
+  ],
+  "short_name": "vengefulspirit",
+  "talents": [
+    {
+      "left": "+?% Vengeance Aura Base Damage Bonus",
+      "level": 25,
+      "right": "-?s Nether Swap Cooldown"
+    },
+    {
+      "left": "Wave Of Terror Steals ?% Of Reduced Damage And Armor",
+      "level": 20,
+      "right": "-?s Magic Missile Cooldown"
+    },
+    {
+      "left": "-? Wave of Terror Armor",
+      "level": 15,
+      "right": "+?s Magic Missile Stun Duration"
+    },
+    {
+      "left": "+? Nether Swap Enemy Damage",
+      "level": 10,
+      "right": "+? Magic Missile Cast Range"
+    }
+  ]
+}

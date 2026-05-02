@@ -1,0 +1,24 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "gold_bag_duration",
+      "value": "15"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1652,
+  "mc": false,
+  "name": "Bag of Gold",
+  "notes": "",
+  "qual": null,
+  "short_name": "furion_gold_bag"
+}

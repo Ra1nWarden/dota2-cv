@@ -1,0 +1,52 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "health_regen",
+      "value": "10"
+    },
+    {
+      "key": "mana_regen",
+      "value": "6"
+    },
+    {
+      "key": "penalty",
+      "value": "75"
+    },
+    {
+      "key": "movespeed_pct",
+      "value": "5"
+    },
+    {
+      "key": "radius",
+      "value": "200"
+    },
+    {
+      "key": "tree_destruction_radius",
+      "value": "325"
+    },
+    {
+      "key": "miss_rate",
+      "value": "30"
+    },
+    {
+      "key": "duration",
+      "value": "2.5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1167,
+  "mc": false,
+  "name": "Light Collector",
+  "notes": "",
+  "qual": null,
+  "short_name": "light_collector"
+}

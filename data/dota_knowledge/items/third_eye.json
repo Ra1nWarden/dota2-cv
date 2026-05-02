@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Grants the ability to see invisible units and wards to any allied vision within 500 range of its carrier.",
+      "title": "True Sight",
+      "type": "passive"
+    },
+    {
+      "description": "Loses a charge on death. After all charges are lost, the item disappears.",
+      "title": "Charge Loss",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "truesight_radius",
+      "value": "500"
+    },
+    {
+      "display": "+BONUS VISION {value}",
+      "key": "bonus_vision",
+      "value": "300"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": 3,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 310,
+  "mc": false,
+  "name": "Third Eye",
+  "notes": "",
+  "qual": null,
+  "short_name": "third_eye"
+}

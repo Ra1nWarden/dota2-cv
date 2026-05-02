@@ -1,0 +1,548 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "2"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.3",
+            "0.5",
+            "0.7",
+            "0.9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SHARD BONUS STUN DURATION TOOLTIP:",
+          "key": "shard_bonus_stun_duration_tooltip",
+          "value": "0.30"
+        },
+        {
+          "header": "DAMAGE PER INSTANCE:",
+          "key": "damage",
+          "value": [
+            "55",
+            "70",
+            "85",
+            "100"
+          ]
+        },
+        {
+          "header": "INSTANCES:",
+          "key": "stun_instances",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON SPAWNS PER TICK:",
+          "key": "eidolon_spawns_per_tick",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "450",
+            "500",
+            "550",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Focuses Enigma's power on a target, causing it to take damage and become repeatedly stunned for multiple instances. An instance strikes every 2 seconds.",
+      "dmg_type": "Magical",
+      "key": "enigma_malefice",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Malefice"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SPAWN COUNT:",
+          "key": "spawn_count",
+          "value": "3"
+        },
+        {
+          "header": "ATTACKS TO MULTIPLY:",
+          "key": "split_attack_count",
+          "value": "6"
+        },
+        {
+          "header": "EIDOLON HP:",
+          "key": "eidelon_max_health",
+          "value": [
+            "180",
+            "200",
+            "220",
+            "240"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LIFE EXTENSION:",
+          "key": "life_extension",
+          "value": "2"
+        },
+        {
+          "header": "EIDOLON DAMAGE:",
+          "key": "eidelon_base_damage",
+          "value": [
+            "16",
+            "27",
+            "38",
+            "49"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON DAMAGE SPREAD:",
+          "key": "eidolon_damage_spread",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON BONUS DAMAGE:",
+          "key": "eidolon_bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON BONUS ATTACK SPEED:",
+          "key": "eidolon_bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EIDELON BASE MOVESPEED:",
+          "key": "eidelon_base_movespeed",
+          "value": [
+            "280",
+            "310",
+            "340",
+            "370"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP MAX LEVEL:",
+          "key": "creep_max_level",
+          "value": "4"
+        },
+        {
+          "header": "EIDOLON MAGIC RESISTANCE:",
+          "key": "eidolon_magic_resist",
+          "value": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "header": "EIDOLON ATTACK RANGE:",
+          "key": "eidolon_attack_range",
+          "value": [
+            "425",
+            "450",
+            "475",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ALLIED DAMAGE PCT:",
+          "key": "allied_damage_pct",
+          "value": "45"
+        },
+        {
+          "generated": true,
+          "header": "SELF MODELSCALE:",
+          "key": "self_modelscale",
+          "value": "-40"
+        },
+        {
+          "generated": true,
+          "header": "SPAWN OFFSET:",
+          "key": "spawn_offset",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CURRENT HEALTH PCT:",
+          "key": "current_health_pct",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON XP BOUNTY:",
+          "key": "eidolon_xp_bounty",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON GOLD BOUNTY MIN:",
+          "key": "eidolon_gold_bounty_min",
+          "value": "17"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON GOLD BOUNTY MAX:",
+          "key": "eidolon_gold_bounty_max",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "NON SPLITTING BOUNTY REDUCTION:",
+          "key": "non_splitting_bounty_reduction",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE THRESHOLD:",
+          "key": "damage_threshold",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE RESET INTERVAL:",
+          "key": "damage_reset_interval",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "EIDOLON SPAWNS:",
+          "key": "eidolon_spawns",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "400"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "40",
+        "38",
+        "36",
+        "34"
+      ],
+      "desc": "Summons three fragments of Enigma himself at the cost of health. The eidolons health is increased by 3% of Enigma's current health. These eidolons are all under Enigma's control, and repeated successful attacks cause them to multiply. When this happens, the eidolons have their health restored.",
+      "dmg_type": "Physical",
+      "key": "enigma_demonic_conversion",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Demonic Summoning"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "5",
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "CURRENT HEALTH AS DAMAGE:",
+          "key": "damage_percent",
+          "value": [
+            "4%",
+            "6%",
+            "8%",
+            "10%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "35",
+        "30",
+        "25"
+      ],
+      "desc": "Steeps an area in dark resonance, dealing 5 + a percentage of the enemies current HP as damage.",
+      "dmg_type": "Magical",
+      "key": "enigma_midnight_pulse",
+      "mc": [
+        "65",
+        "90",
+        "115",
+        "140"
+      ],
+      "name": "Midnight Pulse"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "600"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "speed_bonus",
+          "value": "4%"
+        },
+        {
+          "generated": true,
+          "header": "VISION CONE:",
+          "key": "vision_cone",
+          "value": "0.08715"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Units in a 600 radius moving away from Enigma have a movespeed penalty.",
+      "dmg_type": "",
+      "key": "enigma_event_horizon",
+      "mc": null,
+      "name": "Event Horizon"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "420"
+        },
+        {
+          "generated": true,
+          "header": "PULL SPEED:",
+          "key": "pull_speed",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "PULL ROTATE SPEED:",
+          "key": "pull_rotate_speed",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "180",
+        "170",
+        "160"
+      ],
+      "desc": "CHANNELED - Summons a vortex that sucks in nearby enemy units. Enemies affected by Black Hole cannot move, attack, or cast spells.",
+      "dmg_type": "Pure",
+      "key": "enigma_black_hole",
+      "mc": [
+        "300",
+        "400",
+        "500"
+      ],
+      "name": "Black Hole"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Black Hole",
+    "desc": "Black Hole deals additional damage equivalent to 4% of the unit's Max Health per second and does a non-interrupting pull towards it in a 1000 AoE. Pulls at a rate of 175.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Malefice",
+    "desc": "Increases Malefice stun duration by 0.30s and creates an Eidolon next to the target every instance of Malefice stun. These Eidolons will not multiply further.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 1,
+    "armor": 1,
+    "attack_max": 25,
+    "attack_min": 19,
+    "attack_range": 500,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 19,
+    "int_gain": 3.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.5
+  },
+  "name": "Enigma",
+  "primary_attr": "all",
+  "roles": [
+    "Disabler",
+    "Initiator",
+    "Pusher"
+  ],
+  "short_name": "enigma",
+  "talents": [
+    {
+      "left": "+4 Malefice Instances",
+      "level": 25,
+      "right": "+4 Demonic Summoning Eidolons"
+    },
+    {
+      "left": "+200 Midnight Pulse Radius",
+      "level": 20,
+      "right": "+40 Eidolon Damage"
+    },
+    {
+      "left": "+250 Health",
+      "level": 15,
+      "right": "+? Event Horizon Radius"
+    },
+    {
+      "left": "+10 Eidolon Attack Speed",
+      "level": 10,
+      "right": "+50 Black Hole Damage Per Second"
+    }
+  ]
+}

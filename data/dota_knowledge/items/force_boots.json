@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Pushes the target 750 units in the direction they are facing. Dispels if cast on an ally.\n\nDispel Type: Basic Dispel",
+      "title": "Force",
+      "type": "active"
+    },
+    {
+      "description": "Completely removes the speed limit for the wearer",
+      "title": "Speed Unlock",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "115"
+    },
+    {
+      "key": "push_length",
+      "value": "750"
+    },
+    {
+      "key": "push_duration",
+      "value": "0.5"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "hp_regen",
+      "value": "30"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 8,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 291,
+  "mc": 75,
+  "name": "Force Boots",
+  "notes": "Does not trigger spell block or spell reflect.",
+  "qual": null,
+  "short_name": "force_boots"
+}

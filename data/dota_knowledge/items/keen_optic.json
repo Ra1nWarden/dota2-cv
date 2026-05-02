@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "75"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 287,
+  "mc": false,
+  "name": "Keen Optic",
+  "notes": "",
+  "qual": null,
+  "short_name": "keen_optic"
+}

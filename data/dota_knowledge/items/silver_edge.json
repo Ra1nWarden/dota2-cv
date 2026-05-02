@@ -1,0 +1,79 @@
+{
+  "abilities": [
+    {
+      "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While invisible, you move 25% faster and can move through units. \n\nAttacking to end the invisibility will deal 300 bonus physical damage, disable their passive abilities for 5 seconds, and cap their movement speed to 200.",
+      "title": "Shadow Walk",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "70"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "key": "bonus_strength",
+      "value": "0"
+    },
+    {
+      "key": "bonus_intellect",
+      "value": "0"
+    },
+    {
+      "key": "bonus_mana_regen",
+      "value": "0"
+    },
+    {
+      "key": "windwalk_duration",
+      "value": "17.0"
+    },
+    {
+      "key": "windwalk_movement_speed",
+      "value": "25"
+    },
+    {
+      "key": "windwalk_fade_time",
+      "value": "0.3"
+    },
+    {
+      "key": "windwalk_bonus_damage",
+      "value": "300"
+    },
+    {
+      "key": "backstab_duration",
+      "value": "5"
+    },
+    {
+      "key": "max_movement_speed",
+      "value": "200"
+    },
+    {
+      "key": "visibility_radius",
+      "value": "1025"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 20,
+  "charges": false,
+  "components": [
+    "invis_sword",
+    "demon_edge"
+  ],
+  "cost": 5700,
+  "created": true,
+  "id": 249,
+  "mc": 75,
+  "name": "Silver Edge",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "silver_edge"
+}

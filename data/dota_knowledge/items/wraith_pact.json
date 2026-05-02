@@ -1,0 +1,64 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "key": "bonus_mana",
+      "value": "250"
+    },
+    {
+      "key": "armor_aura",
+      "value": "3.0"
+    },
+    {
+      "key": "mana_regen_aura",
+      "value": "2.0"
+    },
+    {
+      "key": "lifesteal_aura",
+      "value": "24"
+    },
+    {
+      "key": "creep_lifesteal_reduction_pct",
+      "value": "50"
+    },
+    {
+      "key": "damage_aura",
+      "value": "18"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "pact_aura_radius",
+      "value": "900"
+    },
+    {
+      "key": "damage_penalty_aura",
+      "value": "30"
+    },
+    {
+      "key": "aura_dps",
+      "value": "45"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": 60,
+  "charges": false,
+  "components": [
+    "vladmir",
+    "point_booster"
+  ],
+  "cost": 3800,
+  "created": true,
+  "id": 908,
+  "mc": 100,
+  "name": "Wraith Pact",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "wraith_pact"
+}

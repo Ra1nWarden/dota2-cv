@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks slow the target's movement by -13% (-6% against melee targets), and reduces Health Restoration by 13%. Lasts for 3 seconds.",
+      "title": "Frost",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "slow_melee",
+      "value": "-6"
+    },
+    {
+      "key": "slow_ranged",
+      "value": "-13"
+    },
+    {
+      "key": "duration",
+      "value": "3"
+    },
+    {
+      "key": "heal_reduction",
+      "value": "13"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 1575,
+  "mc": false,
+  "name": "Orb of Frost",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "orb_of_frost"
+}

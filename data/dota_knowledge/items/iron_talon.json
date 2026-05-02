@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Targets a non-player enemy unit to remove 80% of its current HP.\n\nIf cast on a tree, instantly destroys it.",
+      "title": "Chop",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_attack_speed",
+      "value": "0"
+    },
+    {
+      "key": "quelling_range_tooltip",
+      "value": "350"
+    },
+    {
+      "key": "cast_range_ward",
+      "value": "450"
+    },
+    {
+      "key": "creep_damage_pct",
+      "value": "80"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "0"
+    },
+    {
+      "key": "alternative_cooldown",
+      "value": "4"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 15,
+  "charges": false,
+  "components": [
+    "quelling_blade",
+    "ring_of_protection"
+  ],
+  "cost": 0,
+  "created": true,
+  "id": 239,
+  "mc": false,
+  "name": "Iron Talon",
+  "notes": "Has a 4 second cooldown on Trees.",
+  "qual": "common",
+  "short_name": "iron_talon"
+}

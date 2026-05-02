@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+GPM BONUS {value}",
+      "key": "bonus_gpm",
+      "value": "75 / 100"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "200 / 250"
+    },
+    {
+      "display": "- {value} Attack Damage",
+      "key": "bonus_damage",
+      "value": "-30 / -60"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": 750,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 290,
+  "mc": false,
+  "name": "Philosopher's Stone",
+  "notes": "",
+  "qual": null,
+  "short_name": "philosophers_stone"
+}

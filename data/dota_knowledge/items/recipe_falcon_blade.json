@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 599,
+  "mc": false,
+  "name": "Falcon Blade Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_falcon_blade"
+}

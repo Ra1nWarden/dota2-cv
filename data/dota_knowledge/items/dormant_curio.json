@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Neutral Artifacts you craft while holding a Dormant Curio have their potency increased by 30%.",
+      "title": "Hidden Potential",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "item_potency",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1638,
+  "mc": false,
+  "name": "Dormant Curio",
+  "notes": "Certain stats on the next artifact will be amplified. Will not amplify cooldown, mana cost, or cast range.",
+  "qual": null,
+  "short_name": "dormant_curio"
+}

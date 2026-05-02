@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "movespeed",
+      "value": "115"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1588,
+  "mc": false,
+  "name": "Fleetfooted",
+  "notes": "Does not stack with Movement Speed bonuses from boots",
+  "qual": null,
+  "short_name": "enhancement_fleetfooted"
+}

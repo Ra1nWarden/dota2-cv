@@ -1,0 +1,55 @@
+{
+  "abilities": [
+    {
+      "description": "Force Field Aura Grants 25% Damage Reflection for 5 seconds.",
+      "title": "Mega Shield",
+      "type": "active"
+    },
+    {
+      "description": "Grants +4 armor and +8% Magic Resistance to all other allies within 1200 radius.",
+      "title": "Shield",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_aoe_radius",
+      "value": "1200"
+    },
+    {
+      "key": "bonus_aoe_armor",
+      "value": "4"
+    },
+    {
+      "key": "self_armor",
+      "value": "0"
+    },
+    {
+      "key": "self_mres",
+      "value": "0"
+    },
+    {
+      "key": "bonus_aoe_mres",
+      "value": "8"
+    },
+    {
+      "key": "active_reflection_pct",
+      "value": "25"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 35,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 829,
+  "mc": false,
+  "name": "Arcanist's Armor",
+  "notes": "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": null,
+  "short_name": "force_field"
+}

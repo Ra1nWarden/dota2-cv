@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1050,
+  "created": false,
+  "id": 173,
+  "mc": false,
+  "name": "Diffusal Blade Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_diffusal_blade"
+}

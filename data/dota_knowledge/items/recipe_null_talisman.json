@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 210,
+  "created": false,
+  "id": 76,
+  "mc": false,
+  "name": "Null Talisman Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_null_talisman"
+}

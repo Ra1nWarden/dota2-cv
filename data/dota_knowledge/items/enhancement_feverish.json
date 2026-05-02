@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Cooldown Reduction",
+      "key": "cooldown_reduction",
+      "value": "15"
+    },
+    {
+      "display": "+ {value}% Mana Cost/Mana Loss Increase",
+      "key": "cost_increase",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1587,
+  "mc": false,
+  "name": "Feverish",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_feverish"
+}

@@ -1,0 +1,49 @@
+{
+  "abilities": [
+    {
+      "description": "Each attack has a 25% chance to reduce enemy hero movement speed by 20% and attack speed by 60 for 3 seconds.",
+      "title": "Maim",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "damage",
+      "value": "45"
+    },
+    {
+      "display": "+ {value} Attack Range (Melee Only)",
+      "key": "melee_attack_range",
+      "value": "100"
+    },
+    {
+      "key": "maim_chance",
+      "value": "25"
+    },
+    {
+      "key": "maim_slow_movement",
+      "value": "20"
+    },
+    {
+      "key": "maim_slow_attack",
+      "value": "60"
+    },
+    {
+      "key": "maim_duration",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 638,
+  "mc": false,
+  "name": "Penta-Edged Sword",
+  "notes": "",
+  "qual": null,
+  "short_name": "penta_edged_sword"
+}

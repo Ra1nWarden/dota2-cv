@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 18,
+  "mc": false,
+  "name": "Band of Elvenskin",
+  "notes": "",
+  "qual": "component",
+  "short_name": "boots_of_elves"
+}

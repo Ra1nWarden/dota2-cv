@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1750,
+  "created": false,
+  "id": 606,
+  "mc": false,
+  "name": "Arcane Blink Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_arcane_blink"
+}

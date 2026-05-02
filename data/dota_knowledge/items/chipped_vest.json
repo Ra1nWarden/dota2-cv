@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Every time you are attacked, you return 30 damage to heroes and 15 damage to creeps.",
+      "title": "Chipper",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "hp_regen",
+      "value": "0"
+    },
+    {
+      "key": "damage_return_hero",
+      "value": "30"
+    },
+    {
+      "key": "damage_return_creep",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 565,
+  "mc": false,
+  "name": "Chipped Vest",
+  "notes": "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": null,
+  "short_name": "chipped_vest"
+}

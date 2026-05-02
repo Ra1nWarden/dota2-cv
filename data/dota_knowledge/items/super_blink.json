@@ -1,0 +1,25 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "blink_range",
+      "value": "1200"
+    },
+    {
+      "key": "blink_range_clamp",
+      "value": "960"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": 15,
+  "charges": false,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 1029,
+  "mc": false,
+  "name": "super_blink",
+  "notes": "",
+  "qual": null,
+  "short_name": "super_blink"
+}

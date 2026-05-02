@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 61,
+  "mc": false,
+  "name": "Vitality Booster",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "vitality_booster"
+}

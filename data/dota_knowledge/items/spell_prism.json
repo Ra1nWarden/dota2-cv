@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Reduces the cooldown time of all spells and items.",
+      "title": "Cooldown Reduction",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Cooldown Reduction",
+      "key": "bonus_cooldown",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "5"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 311,
+  "mc": false,
+  "name": "Spell Prism",
+  "notes": "",
+  "qual": null,
+  "short_name": "spell_prism"
+}

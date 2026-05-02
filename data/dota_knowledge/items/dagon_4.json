@@ -1,0 +1,55 @@
+{
+  "abilities": [
+    {
+      "description": "Emits a powerful burst of magical damage upon a targeted enemy unit. Upgradable.\n\nDamage: 400\n Mana Cost: 120",
+      "title": "Energy Burst",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "6 / 7 / 8 / 9 / 10"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "200 / 210 / 220 / 230 / 240"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "350 / 375 / 400 / 425 / 450"
+    },
+    {
+      "key": "damage",
+      "value": "400 / 500 / 600 / 700 / 800"
+    },
+    {
+      "key": "damage_delay",
+      "value": "0"
+    },
+    {
+      "key": "mana_cost_tooltip",
+      "value": "120 / 140 / 160 / 180 / 200"
+    },
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "60 / 90 / 120 / 150 / 180"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 27,
+  "charges": false,
+  "components": null,
+  "cost": 6500,
+  "created": true,
+  "id": 203,
+  "mc": 120,
+  "name": "Dagon",
+  "notes": "Instantly kills illusions.\nCast Range bonuses from Aether Lens and Dagon do not stack.",
+  "qual": "rare",
+  "short_name": "dagon_4"
+}

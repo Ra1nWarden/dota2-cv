@@ -1,0 +1,25 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "knockback_distance",
+      "value": "250"
+    },
+    {
+      "key": "knockback_duration",
+      "value": "1"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 10,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 312,
+  "mc": false,
+  "name": "horizon",
+  "notes": "",
+  "qual": null,
+  "short_name": "horizon"
+}

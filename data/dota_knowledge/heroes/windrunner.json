@@ -1,0 +1,505 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "FAIL STUN DURATION:",
+          "key": "fail_stun_duration",
+          "value": "0.6"
+        },
+        {
+          "header": "SHACKLE DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.75",
+            "2.25",
+            "2.75",
+            "3.25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SHACKLE DISTANCE:",
+          "key": "shackle_distance",
+          "value": "575"
+        },
+        {
+          "generated": true,
+          "header": "ARROW SPEED:",
+          "key": "arrow_speed",
+          "value": "1650"
+        },
+        {
+          "generated": true,
+          "header": "SHACKLE COUNT:",
+          "key": "shackle_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SHACKLE ANGLE:",
+          "key": "shackle_angle",
+          "value": "23"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Shackles the target to an enemy unit or tree in a line directly behind it. If no unit or tree is present, the stun duration is reduced to 0.6.",
+      "dmg_type": "",
+      "key": "windrunner_shackleshot",
+      "mc": [
+        "70",
+        "80",
+        "90",
+        "100"
+      ],
+      "name": "Shackleshot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "powershot_damage",
+          "value": [
+            "170",
+            "270",
+            "370",
+            "470"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "3"
+        },
+        {
+          "header": "REDUCTION PER UNIT:",
+          "key": "damage_reduction",
+          "value": "15%"
+        },
+        {
+          "generated": true,
+          "header": "ARROW WIDTH:",
+          "key": "arrow_width",
+          "value": "125"
+        },
+        {
+          "header": "RANGE:",
+          "key": "arrow_range",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "ARROW SPEED:",
+          "key": "arrow_speed",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "TREE WIDTH:",
+          "key": "tree_width",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "MIN EXECUTE THRESHOLD:",
+          "key": "min_execute_threshold",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX EXECUTE THRESHOLD:",
+          "key": "max_execute_threshold",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "12",
+        "11",
+        "10",
+        "9"
+      ],
+      "desc": "CHANNELED - Windranger charges her bow for up to 1 second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages and slows enemies' movement speed along its path. For each enemy that Powershot hits, its damage and slow is reduced.",
+      "dmg_type": "Magical",
+      "key": "windrunner_powershot",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Powershot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVE SPEED BONUS:",
+          "key": "movespeed_bonus_pct",
+          "value": "50%"
+        },
+        {
+          "header": "EVASION:",
+          "key": "evasion_pct_tooltip",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "CANNOT BE DISPELLED:",
+          "key": "cannot_be_dispelled",
+          "value": "+0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "Increases movement speed and adds evasion from all physical attacks.",
+      "dmg_type": "",
+      "key": "windrunner_windrun",
+      "mc": "50",
+      "name": "Windrun"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "header": "WIND SPEED:",
+          "key": "wind_strength",
+          "value": "240"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "Vector Targeted. Summons a strong wind that pushes all enemies in the target area towards the target direction.",
+      "dmg_type": "",
+      "key": "windrunner_gale_force",
+      "mc": "125",
+      "name": "Gale Force"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "End your Focus Fire early.",
+      "dmg_type": "",
+      "key": "windrunner_focusfire_cancel",
+      "mc": null,
+      "name": "Focus Fire Cancel"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "20"
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "350",
+            "425",
+            "500"
+          ]
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "focusfire_damage_reduction",
+          "value": "-25%"
+        },
+        {
+          "generated": true,
+          "header": "FOCUSFIRE FIRE ON THE MOVE:",
+          "key": "focusfire_fire_on_the_move",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "PROCESS PROCS:",
+          "key": "process_procs",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "IS UNFOCUSED:",
+          "key": "is_unfocused",
+          "value": "0"
+        },
+        {
+          "header": "BONUS ATTACK RANGE:",
+          "key": "bonus_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UNFOCUSED CANCEL INITIAL COOLDOWN:",
+          "key": "unfocused_cancel_initial_cooldown",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "70",
+        "50",
+        "30"
+      ],
+      "desc": "Windranger channels the wind to gain 0 additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage. Extra damage from secondary item effects is not reduced.",
+      "dmg_type": "",
+      "key": "windrunner_focusfire",
+      "mc": [
+        "75",
+        "100",
+        "125"
+      ],
+      "name": "Focus Fire"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVE SPEED BONUS PER STACK:",
+          "key": "movespeed_bonus",
+          "value": "35%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "MAX MOVESPEED:",
+          "key": "max_movespeed",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "APPLIES ON ATTACK:",
+          "key": "applies_on_attack",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "UNDISPELLABLE:",
+          "key": "undispellable",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Using an ability conjures a stacking Tailwind that gives Windranger a brief burst of movement speed. Movement speed bonus gradually starts fading halfway through the Tailwind duration.\n\nPassively increases Windranger's max movement speed.",
+      "dmg_type": "",
+      "key": "windrunner_tailwind",
+      "mc": null,
+      "name": "Tailwind"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Tailwind",
+    "desc": "Attacks grant Tailwind. Tailwind lasts longer and is undispellable.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Gale Force",
+    "desc": "Vector Targeted. Summons a strong wind that pushes all enemies in the target area towards the target direction.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 2.1,
+    "armor": 0,
+    "attack_max": 36,
+    "attack_min": 24,
+    "attack_range": 600,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 3.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.6
+  },
+  "name": "Windranger",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Support",
+    "Disabler",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "windrunner",
+  "talents": [
+    {
+      "left": "Powershot Executes Enemy Heroes Under ?% Max HP",
+      "level": 25,
+      "right": "Focus Fire Kills Advance Cooldown by ?s"
+    },
+    {
+      "left": "+?s Shackleshot Duration",
+      "level": 20,
+      "right": "-?% Focus Fire Damage Reduction"
+    },
+    {
+      "left": "+? Tailwind Max Movespeed",
+      "level": 15,
+      "right": "-?% Powershot Reduction"
+    },
+    {
+      "left": "+?s Powershot Slow Duration",
+      "level": 10,
+      "right": "+?s Windrun Duration"
+    }
+  ]
+}

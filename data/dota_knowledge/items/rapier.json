@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Toggle to gain either 25% bonus spell amplification or 250 bonus attack damage.",
+      "title": "Transmute",
+      "type": "toggle"
+    },
+    {
+      "description": "Dropped on death, and cannot be destroyed. \n\nBecomes unusable if picked up by an ally of its owner until it is returned to its owner. It is immediately usable by anybody if an enemy of the owner picks it up and is killed. A dropped Rapier cannot be picked up by a courier.",
+      "title": "Everlasting",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_spell_amp",
+      "value": "25"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "250"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage_base",
+      "value": "100"
+    }
+  ],
+  "behavior": [],
+  "cd": 6,
+  "charges": false,
+  "components": [
+    "relic",
+    "demon_edge"
+  ],
+  "cost": 5600,
+  "created": true,
+  "id": 133,
+  "mc": false,
+  "name": "Divine Rapier",
+  "notes": "If Divine Rapier is dropped and picked up by an enemy of its original owner, it cannot be dropped again except by death.",
+  "qual": "epic",
+  "short_name": "rapier"
+}

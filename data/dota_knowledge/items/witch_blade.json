@@ -1,0 +1,64 @@
+{
+  "abilities": [
+    {
+      "description": "Causes your next attack to apply a poison for 4 seconds, slowing by 25% and dealing 0.75x your intelligence as damage every second. This attack has True Strike.",
+      "title": "Witch Blade",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "40"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.5"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "5"
+    },
+    {
+      "key": "int_damage_multiplier",
+      "value": "0.75"
+    },
+    {
+      "key": "slow",
+      "value": "25"
+    },
+    {
+      "key": "slow_duration",
+      "value": "4"
+    },
+    {
+      "display": "+ {value} Projectile Speed",
+      "key": "projectile_speed",
+      "value": "300"
+    }
+  ],
+  "behavior": null,
+  "cd": 9,
+  "charges": false,
+  "components": [
+    "oblivion_staff",
+    "chainmail",
+    "orb_of_venom"
+  ],
+  "cost": 2775,
+  "created": true,
+  "id": 534,
+  "mc": false,
+  "name": "Witch Blade",
+  "notes": "",
+  "qual": "common",
+  "short_name": "witch_blade"
+}

@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "125 / 135 / 145"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1 / 1.5 / 2"
+    },
+    {
+      "display": "- {value}% Max Mana",
+      "key": "mana_reduction_pct",
+      "value": "10 / 12 / 14"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1595,
+  "mc": false,
+  "name": "Keen-eyed",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_keen_eyed"
+}

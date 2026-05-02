@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Channel for 1 second. \nCan find a Bounty Rune, a Healing Salve, an Enchanted Mango, or a Kobold. If digging in a river, always digs up a Water Rune.",
+      "title": "Dig",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "chance_bounty_rune",
+      "value": "16"
+    },
+    {
+      "key": "chance_other_item",
+      "value": "28"
+    },
+    {
+      "key": "kobold_duration",
+      "value": "60"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "Channeled"
+  ],
+  "cd": 70,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 356,
+  "mc": false,
+  "name": "Trusty Shovel",
+  "notes": "16% chance for a Bounty Rune.\n28% chance each for a Flask, an Enchanted Mango, or a kobold.\nThe same Trusty Shovel cannot find the same reward twice in a row.",
+  "qual": null,
+  "short_name": "trusty_shovel"
+}

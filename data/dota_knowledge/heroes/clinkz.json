@@ -1,0 +1,509 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "ATTACK SPEED BONUS:",
+          "key": "attack_speed_bonus",
+          "value": [
+            "120",
+            "160",
+            "200",
+            "240"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3.5"
+        },
+        {
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "STRAFE SKELETON RADIUS:",
+          "key": "strafe_skeleton_radius",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "ARCHER ATTACK SPEED PCT:",
+          "key": "archer_attack_speed_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF DURATION:",
+          "key": "debuff_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BLIND PCT:",
+          "key": "blind_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "30",
+        "25",
+        "20",
+        "15"
+      ],
+      "desc": "Clinkz gains attack speed and has bonus attack range. Any current Skeleton Archers within a 1200 radius of Clinkz also gain bonus attack range and 40% of the attack speed bonus. \n\n Casting Strafe does not break Skeleton Walk invisibility.",
+      "dmg_type": "",
+      "key": "clinkz_strafe",
+      "mc": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "name": "Strafe"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "damage_bonus",
+          "value": [
+            "20",
+            "35",
+            "50",
+            "65"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SKELETON DAMAGE PCT:",
+          "key": "skeleton_damage_pct",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "0",
+      "desc": "Imbues Clinkz's arrows with fire for extra damage.\n\nSkeleton Archers will fire Searing Arrows at targets Clinkz attacks for 50% damage.",
+      "dmg_type": "Physical",
+      "key": "clinkz_searing_arrows",
+      "mc": "10",
+      "name": "Searing Arrows"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "45"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": [
+            "1",
+            "1",
+            "2",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "40"
+        },
+        {
+          "header": "BONUS HEALTH:",
+          "key": "health_gain",
+          "value": [
+            "175",
+            "250",
+            "325",
+            "400"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SKELETONS SPAWNED:",
+          "key": "skeletons_spawned",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPAWN SKELETON ON ORIGIN:",
+          "key": "spawn_skeleton_on_origin",
+          "value": "0"
+        },
+        {
+          "header": "CREEP MAX LEVEL:",
+          "key": "creep_level",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Clinkz consumes the target enemy creep or friendly Skeleton Archer, healing and gaining max health. Does not take Clinkz out of Skeleton Walk.",
+      "dmg_type": "",
+      "key": "clinkz_death_pact",
+      "mc": "60",
+      "name": "Death Pact"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ARROWS FIRED:",
+          "key": "wave_count",
+          "value": "6"
+        },
+        {
+          "header": "RANGE:",
+          "key": "range",
+          "value": "850"
+        },
+        {
+          "header": "DAMAGE PER ARROW:",
+          "key": "damage_pct",
+          "value": "75%"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE WIDTH:",
+          "key": "projectile_width",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "ARCHERS USE BARRAGE:",
+          "key": "archers_use_barrage",
+          "value": "0"
+        },
+        {
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "17",
+      "desc": "CHANNELED - Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.",
+      "dmg_type": "Physical",
+      "key": "clinkz_burning_barrage",
+      "mc": "40",
+      "name": "Burning Barrage"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RANGE:",
+          "key": "range",
+          "value": "900"
+        },
+        {
+          "header": "COUNT:",
+          "key": "count",
+          "value": "6"
+        },
+        {
+          "header": "SPAWN INTERVAL:",
+          "key": "spawn_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": "70",
+      "desc": "Summons a row of Burning Skeleton Archers in the target location.",
+      "dmg_type": "Physical",
+      "key": "clinkz_burning_army",
+      "mc": "150",
+      "name": "Burning Army"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FADE TIME:",
+          "key": "fade_time",
+          "value": "0.6"
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "move_speed_bonus_pct",
+          "value": [
+            "25%",
+            "35%",
+            "45%"
+          ]
+        },
+        {
+          "header": "SKELETON ARCHER COUNT:",
+          "key": "skeleton_count",
+          "value": [
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SKELETON OFFSET:",
+          "key": "skeleton_offset",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "SKELETON OFFSET MIN:",
+          "key": "skeleton_offset_min",
+          "value": "150"
+        },
+        {
+          "header": "SKELETON ARCHER DURATION:",
+          "key": "skeleton_duration",
+          "value": [
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SKELETON HEALTH:",
+          "key": "skeleton_health",
+          "value": "8"
+        },
+        {
+          "header": "SKELETON ARCHER HITS TO KILL:",
+          "key": "skeleton_health_tooltip",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "SKELETON BUILDING DAMAGE REDUCTION:",
+          "key": "skeleton_building_damage_reduction",
+          "value": "75"
+        },
+        {
+          "header": "SKELETON ARCHER ATTACK RATE:",
+          "key": "attack_rate",
+          "value": "1.6"
+        },
+        {
+          "header": "SKELETON ARCHER DAMAGE:",
+          "key": "damage_percent",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "24",
+        "21",
+        "18"
+      ],
+      "desc": "Clinkz moves invisibly through units until the moment he attacks or uses items. Leaving Skeleton Walk creates Skeleton Archers.\n\nSkeleton Archers are immobile and die within multiple attacks from a hero or tower. Skeleton Archers deal a percentage of Clinkz' damage, and deal 75% less damage to buildings. Attack range is equal to Clinkz' attack range.",
+      "dmg_type": "",
+      "key": "clinkz_wind_walk",
+      "mc": [
+        "80",
+        "105",
+        "130"
+      ],
+      "name": "Skeleton Walk"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "HERO STACKS:",
+          "key": "hero_stacks",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "SKELETON STACKS:",
+          "key": "skeleton_stacks",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MAX ARMOR PIERCING PCT:",
+          "key": "max_armor_piercing_pct",
+          "value": "20"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Clinkz and his skeletons apply a stacking debuff that causes their attacks to pierce up to 20% of the target's total physical armor (does not reduce their armor). Clinkz applies 3% per attack, and skeletons apply 1%. \n\nLasts 5 seconds.",
+      "dmg_type": "",
+      "key": "clinkz_infernal_shred",
+      "mc": null,
+      "name": "Infernal Shred"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Burning Army",
+    "desc": "Summons a row of Burning Skeleton Archers in the target location.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Burning Barrage",
+    "desc": "CHANNELED - Clinkz channels and shoots multiple piercing arrows in the target direction that hit all enemy units dealing a percentage of Clinkz' attack damage and applying attack modifiers.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 25,
+    "agi_gain": 2.7,
+    "armor": 0,
+    "attack_max": 25,
+    "attack_min": 19,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 21,
+    "int_gain": 2.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2
+  },
+  "name": "Clinkz",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Escape",
+    "Pusher"
+  ],
+  "short_name": "clinkz",
+  "talents": [
+    {
+      "left": "-?s Strafe Cooldown",
+      "level": 25,
+      "right": "Searing Arrows Multishot"
+    },
+    {
+      "left": "+? Strafe Attack Speed",
+      "level": 20,
+      "right": "+? Death Pact Bonus Health"
+    },
+    {
+      "left": "+50 Attack Range",
+      "level": 15,
+      "right": "-?s Death Pact Charge Restore Time"
+    },
+    {
+      "left": "+?s Strafe Duration",
+      "level": 10,
+      "right": "-?s Skeleton Walk Cooldown"
+    }
+  ]
+}

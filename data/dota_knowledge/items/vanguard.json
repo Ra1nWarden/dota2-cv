@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Grants a 60% chance to block 50 damage from incoming attacks on melee heroes, and 25 damage on ranged.",
+      "title": "Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "4.5"
+    },
+    {
+      "key": "block_damage_melee",
+      "value": "50"
+    },
+    {
+      "key": "block_damage_ranged",
+      "value": "25"
+    },
+    {
+      "key": "block_chance",
+      "value": "60"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "vitality_booster",
+    "ring_of_health"
+  ],
+  "cost": 1700,
+  "created": true,
+  "id": 125,
+  "mc": false,
+  "name": "Vanguard",
+  "notes": "Multiple sources of damage block do not stack.",
+  "qual": "epic",
+  "short_name": "vanguard"
+}

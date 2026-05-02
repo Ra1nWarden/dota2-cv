@@ -1,0 +1,83 @@
+{
+  "abilities": [
+    {
+      "description": "Increases Bloodstone's Spell Lifesteal to 60%. Lasts 5 seconds.",
+      "title": "Bloodpact",
+      "type": "active"
+    },
+    {
+      "description": "Enemy units take 12% increased damage from spells. \n\nRadius: 1200",
+      "title": "Spell Weakness Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "650"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "450"
+    },
+    {
+      "key": "bonus_mp_regen",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_hp_regen",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "15"
+    },
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "20"
+    },
+    {
+      "key": "buff_duration",
+      "value": "5"
+    },
+    {
+      "key": "spell_lifesteal_while_active",
+      "value": "60"
+    },
+    {
+      "key": "hp_cost",
+      "value": "0"
+    },
+    {
+      "key": "aura_spell_vulnerability",
+      "value": "12"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": [
+    "veil_of_discord",
+    "soul_booster"
+  ],
+  "cost": 4700,
+  "created": true,
+  "id": 121,
+  "mc": false,
+  "name": "Bloodstone",
+  "notes": "Spell Weakness Aura does not stack with Veil of Discord's Spell Weakness.",
+  "qual": "epic",
+  "short_name": "bloodstone"
+}

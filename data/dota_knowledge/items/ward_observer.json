@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Plants an Observer Ward, an invisible watcher that gives ground vision in a 1600 radius to your team. Lasts 6 minutes.\n\nHold Control to give one Observer Ward to an allied hero.",
+      "title": "Plant",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "lifetime",
+      "value": "360"
+    },
+    {
+      "key": "vision_range_tooltip",
+      "value": "1600"
+    },
+    {
+      "key": "health",
+      "value": "200"
+    },
+    {
+      "key": "duration_minutes_tooltip",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 1,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 42,
+  "mc": false,
+  "name": "Observer Ward",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "ward_observer"
+}

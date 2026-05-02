@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Spreads pollen on all enemy units in a 700 unit radius for 9 seconds, decreasing their health restoration by 50% and dealing damage equal to 9% of their maximum health per second.",
+      "title": "Pollinate",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_regen_loss",
+      "value": "50"
+    },
+    {
+      "key": "hp_damage",
+      "value": "9"
+    },
+    {
+      "key": "debuff_radius",
+      "value": "700"
+    },
+    {
+      "key": "debuff_duration",
+      "value": "9"
+    },
+    {
+      "key": "damage_interval",
+      "value": "1"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1640,
+  "mc": false,
+  "name": "Jidi Pollen Bag",
+  "notes": "Damage is non-lethal and classified as HP Loss.",
+  "qual": null,
+  "short_name": "jidi_pollen_bag"
+}

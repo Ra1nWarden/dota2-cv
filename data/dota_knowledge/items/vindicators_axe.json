@@ -1,0 +1,41 @@
+{
+  "abilities": [
+    {
+      "description": "Provides 30 damage if equipped hero is Silenced and 20 armor if equipped hero is Stunned.",
+      "title": "Vengeance",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "30"
+    },
+    {
+      "key": "bonus_armor",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "bonus_slow_resist",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 2096,
+  "mc": false,
+  "name": "Vindicator's Axe",
+  "notes": "",
+  "qual": null,
+  "short_name": "vindicators_axe"
+}

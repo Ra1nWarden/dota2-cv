@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Provides 10 damage when the hero is above 50% Health, and 5 armor when they are below that threshold.",
+      "title": "Courage",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage",
+      "value": "10"
+    },
+    {
+      "key": "armor",
+      "value": "5"
+    },
+    {
+      "key": "health_pct",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1124,
+  "mc": false,
+  "name": "Spark of Courage",
+  "notes": "",
+  "qual": null,
+  "short_name": "spark_of_courage"
+}

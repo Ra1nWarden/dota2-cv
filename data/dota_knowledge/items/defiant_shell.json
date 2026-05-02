@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "When attacked, the hero counter-attacks a target within their attack range for 80% of their regular attack damage.",
+      "title": "Reciprocity",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "counter_damage",
+      "value": "80"
+    }
+  ],
+  "behavior": null,
+  "cd": 5,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 950,
+  "mc": false,
+  "name": "Defiant Shell",
+  "notes": "",
+  "qual": null,
+  "short_name": "defiant_shell"
+}

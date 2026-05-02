@@ -1,0 +1,544 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "150"
+        },
+        {
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1050"
+        },
+        {
+          "generated": true,
+          "header": "FIRE DELAY:",
+          "key": "fire_delay",
+          "value": "0.2"
+        },
+        {
+          "header": "BURN DAMAGE:",
+          "key": "burn_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "slow_movement_speed_pct",
+          "value": [
+            "-25%",
+            "-30%",
+            "-35%",
+            "-40%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "slow_attack_speed_pct",
+          "value": [
+            "-25",
+            "-30",
+            "-35",
+            "-40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED FIRE:",
+          "key": "speed_fire",
+          "value": "1050"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Unit Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "An icy blast followed by a wave of fire launches out in a path in front of Jakiro. The ice slows enemies, while the fire delivers damage over time.",
+      "dmg_type": "Magical",
+      "key": "jakiro_dual_breath",
+      "mc": [
+        "135",
+        "150",
+        "165",
+        "180"
+      ],
+      "name": "Dual Breath"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FORMATION DELAY:",
+          "key": "path_delay",
+          "value": "0.2"
+        },
+        {
+          "header": "MAX STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.25",
+            "1.50",
+            "1.75",
+            "2"
+          ]
+        },
+        {
+          "header": "PATH DURATION:",
+          "key": "path_duration",
+          "value": [
+            "3",
+            "3.5",
+            "4",
+            "4.5"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "path_radius",
+          "value": "150"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "50"
+        },
+        {
+          "header": "SECONDARY DAMAGE:",
+          "key": "detonate_damage",
+          "value": "0"
+        },
+        {
+          "header": "SECONDARY STUN DURATION:",
+          "key": "detonate_stun_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DETONATE PROJECTILE SPEED:",
+          "key": "detonate_projectile_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1100"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.65"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "17",
+        "14",
+        "11"
+      ],
+      "desc": "Creates a path of ice that stuns and damages enemies that touch it.",
+      "dmg_type": "Magical",
+      "key": "jakiro_ice_path",
+      "mc": "100",
+      "name": "Ice Path"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK SLOW:",
+          "key": "slow_attack_speed_pct",
+          "value": [
+            "-30",
+            "-40",
+            "-50",
+            "-60"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "300"
+        },
+        {
+          "header": "BURN DAMAGE:",
+          "key": "damage",
+          "value": [
+            "15",
+            "25",
+            "35",
+            "45"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PCT HEALTH DAMAGE:",
+          "key": "pct_health_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "header": "BUILDING DAMAGE:",
+          "key": "building_dmg_pct",
+          "value": "75%"
+        },
+        {
+          "generated": true,
+          "header": "SHARES COOLDOWN:",
+          "key": "shares_cooldown",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks. Shares a cooldown with Liquid Frost.",
+      "dmg_type": "Magical",
+      "key": "jakiro_liquid_fire",
+      "mc": "20",
+      "name": "Liquid Fire"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "damage",
+          "value": [
+            "8",
+            "16",
+            "24",
+            "32"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_instance_damage_from_other_abilities",
+          "value": [
+            "8",
+            "16",
+            "24",
+            "32"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PCT HEALTH DAMAGE:",
+          "key": "pct_health_damage",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "SHARES COOLDOWN:",
+          "key": "shares_cooldown",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Jakiro chill his enemies with ice added to his attack, slowing movement for 5 seconds and increasing damage taken from Jakiro's attacks and abilities. This effect does not apply to buildings. Shares a cooldown with Liquid Fire.",
+      "dmg_type": "Magical",
+      "key": "jakiro_liquid_ice",
+      "mc": "20",
+      "name": "Liquid Frost"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SECOND ATTACK DELAY:",
+          "key": "second_attack_delay",
+          "value": "0.2"
+        },
+        {
+          "header": "ATTACK DAMAGE REDUCTION:",
+          "key": "attack_damage_reduction",
+          "value": "51%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Jakiro's attacks launch an attack from each head, but deal less damage each.",
+      "dmg_type": "",
+      "key": "jakiro_double_trouble",
+      "mc": null,
+      "name": "Double Trouble"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "FLAME WIDTH:",
+          "key": "path_width",
+          "value": "500"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "BURN INTERVAL:",
+          "key": "burn_interval",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "PURE DAMAGE TYPE:",
+          "key": "pure_damage_type",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES MAGIC IMMUNITY:",
+          "key": "pierces_magic_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ICE EDGE PATH RADIUS:",
+          "key": "ice_edge_path_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ICE EDGE PATH OFFSET:",
+          "key": "ice_edge_path_offset",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ICE EDGE LINGER DURATION:",
+          "key": "ice_edge_linger_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ICE EDGE MOVEMENT SLOW:",
+          "key": "ice_edge_movement_slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "90",
+        "80",
+        "70"
+      ],
+      "desc": "Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.",
+      "dmg_type": "Magical",
+      "key": "jakiro_macropyre",
+      "mc": [
+        "300",
+        "400",
+        "500"
+      ],
+      "name": "Macropyre"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Macropyre",
+    "desc": "Increases Macropyre duration and causes it to deal Pure damage. Jakiro emits two walls of ice along the edges of the Macropyre that slow any enemies trying to cross them by 60%.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Liquid Frost",
+    "desc": "Jakiro's Liquid Frost has no mana cost and no longer shares a cooldown with Liquid Fire.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.2,
+    "armor": 1,
+    "attack_max": 35,
+    "attack_min": 27,
+    "attack_range": 400,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 2.5
+  },
+  "name": "Jakiro",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Pusher",
+    "Disabler"
+  ],
+  "short_name": "jakiro",
+  "talents": [
+    {
+      "left": "+?% Dual Breath Damage and Range",
+      "level": 25,
+      "right": "+?% Liquid Frost and Fire Max Health Damage"
+    },
+    {
+      "left": "+?s Ice Path Stun Duration",
+      "level": 20,
+      "right": "+? Macropyre Damage"
+    },
+    {
+      "left": "+175 Attack Range",
+      "level": 15,
+      "right": "-?s Dual Breath Cooldown"
+    },
+    {
+      "left": "+? Liquid Fire Attack Speed Slow",
+      "level": 10,
+      "right": "+? Ice Path Damage"
+    }
+  ]
+}

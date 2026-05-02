@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "125"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 593,
+  "mc": false,
+  "name": "Fluffy Hat",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "fluffy_hat"
+}

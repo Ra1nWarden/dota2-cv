@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Gain 15% base damage and 30 attack speed for 6 seconds.",
+      "title": "Bloodthirst",
+      "type": "active"
+    },
+    {
+      "description": "Enemy heroes dying within 1200 units reset the cooldown of Bloodthirst.",
+      "title": "Bloodrush",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "6"
+    },
+    {
+      "key": "base_damage",
+      "value": "15"
+    },
+    {
+      "key": "attack_speed",
+      "value": "30"
+    },
+    {
+      "key": "death_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 65,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1721,
+  "mc": false,
+  "name": "Flayer's Bota",
+  "notes": "",
+  "qual": null,
+  "short_name": "flayers_bota"
+}

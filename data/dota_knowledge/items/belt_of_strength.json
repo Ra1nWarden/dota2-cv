@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 17,
+  "mc": false,
+  "name": "Belt of Strength",
+  "notes": "",
+  "qual": "component",
+  "short_name": "belt_of_strength"
+}

@@ -1,0 +1,22 @@
+{
+  "abilities": [
+    {
+      "description": "You have died and thus get nothing.",
+      "title": "Fallen",
+      "type": "passive"
+    }
+  ],
+  "attrib": [],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1645,
+  "mc": false,
+  "name": "Disgraced Regalia",
+  "notes": "",
+  "qual": null,
+  "short_name": "divine_regalia_broken"
+}

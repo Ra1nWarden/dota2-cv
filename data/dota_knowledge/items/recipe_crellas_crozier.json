@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 300,
+  "created": false,
+  "id": 1855,
+  "mc": false,
+  "name": "Crella's Crozier Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_crellas_crozier"
+}

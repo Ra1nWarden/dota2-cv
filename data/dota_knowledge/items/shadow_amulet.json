@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Grants invisibility to you or a target allied hero for 3.5s. Movement speed during the invisibility is reduced by 35%.",
+      "title": "Fade",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "FADE TIME: {value}",
+      "key": "fade_time",
+      "value": "1.25"
+    },
+    {
+      "key": "movement_speed_reduction",
+      "value": "35"
+    },
+    {
+      "key": "fade_duration",
+      "value": "3.5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "Unit Target"
+  ],
+  "cd": 18,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 215,
+  "mc": false,
+  "name": "Shadow Amulet",
+  "notes": "Takes 1.25s of the 3.5s for the hero to fully fade into invisibility.",
+  "qual": null,
+  "short_name": "shadow_amulet"
+}

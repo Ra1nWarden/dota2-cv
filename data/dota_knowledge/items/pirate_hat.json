@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Steals 150 gold from enemy heroes that die within 2400 units. If the wearer is the killer, there is no range limit and an additional 400 gold is stolen.",
+      "title": "Plunder",
+      "type": "passive"
+    },
+    {
+      "description": "Gold loss on death reduced by 100%.",
+      "title": "Buried Treasure",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "gold_steal_base",
+      "value": "150"
+    },
+    {
+      "key": "gold_steal_kill",
+      "value": "400"
+    },
+    {
+      "key": "gold_steal_range",
+      "value": "2400"
+    },
+    {
+      "key": "gold_loss_reduction",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 372,
+  "mc": false,
+  "name": "Pirate Hat",
+  "notes": "",
+  "qual": null,
+  "short_name": "pirate_hat"
+}

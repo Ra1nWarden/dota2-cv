@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1300,
+  "created": false,
+  "id": 111,
+  "mc": false,
+  "name": "Assault Cuirass Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_assault"
+}

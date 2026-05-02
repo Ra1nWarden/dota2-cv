@@ -1,0 +1,441 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "active_radius",
+          "value": "350"
+        },
+        {
+          "header": "STACK DURATION:",
+          "key": "counter_duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "LONE DRUID COUNTERS APPLIED TOOLTIP:",
+          "key": "lone_druid_counters_applied_tooltip",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "HITS REQUIRED:",
+          "key": "hits_required",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "HITS INCREMENTED ON ACTIVE:",
+          "key": "hits_incremented_on_active",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "LONE DRUID BUFF DURATION:",
+          "key": "lone_druid_buff_duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "NOSTACK PROTECTION:",
+          "key": "nostack_protection",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ROOT HEROES ON CAST:",
+          "key": "root_heroes_on_cast",
+          "value": "0"
+        },
+        {
+          "header": "ROOT DURATION:",
+          "key": "entangle_duration",
+          "value": [
+            "1.2",
+            "1.6",
+            "2",
+            "2.4"
+          ]
+        },
+        {
+          "header": "ROOT DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "19",
+        "18",
+        "17"
+      ],
+      "desc": "Allows Lone Druid to Entangle enemies once they gain 5 stacks. Entangled enemies are rooted and take damage over time.\n\nWhen cast, applies 2 stacks to each enemy hero in the area and 5 stacks to enemy creeps. Also empowers Lone Druid for 10s, making him apply 1 stack with each attack on enemy heroes. Enemies cannot gain stacks while Entangled.\n\nLeveling this ability also levels Spirit Bear's Entangling Claws ability.",
+      "dmg_type": "Magical",
+      "key": "lone_druid_entangle",
+      "mc": "60",
+      "name": "Entangle"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVEMENT SPEED (LONE DRUID):",
+          "key": "bonus_movement_speed_druid",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED (SPIRIT BEAR):",
+          "key": "bonus_movement_speed_bear",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "SHARED LIFESTEAL:",
+          "key": "lifesteal_percent",
+          "value": [
+            "15%",
+            "30%",
+            "45%",
+            "60%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL BOTH WAYS:",
+          "key": "lifesteal_both_ways",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVE BONUS:",
+          "key": "active_bonus",
+          "value": "35"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Links Lone Druid and the Spirit Bear, increasing their movement speed as well as sharing a percentage of their lifesteal with each other.",
+      "dmg_type": "",
+      "key": "lone_druid_spirit_link",
+      "mc": "0",
+      "name": "Spirit Link"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RANGE:",
+          "key": "radius",
+          "value": "350"
+        },
+        {
+          "header": "ENEMY MOVEMENT SPEED BONUS:",
+          "key": "bonus_speed",
+          "value": "20%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "1.1",
+            "1.4",
+            "1.7",
+            "2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ONLY AFFECTS PLAYER UNITS:",
+          "key": "only_affects_player_units",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "29",
+        "26",
+        "23",
+        "20"
+      ],
+      "desc": "Lone Druid and the Spirit Bear roar fiercely causing nearby enemies to flee towards their base in terror. Their movement speed is increased by 20%.",
+      "dmg_type": "",
+      "key": "lone_druid_savage_roar",
+      "mc": "50",
+      "name": "Savage Roar"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BEAR BASE HP:",
+          "key": "bear_hp",
+          "value": "1500"
+        },
+        {
+          "header": "BEAR BASE HP REGEN:",
+          "key": "bear_regen_tooltip",
+          "value": "3"
+        },
+        {
+          "header": "BEAR BASE ATTACK TIME:",
+          "key": "bear_bat",
+          "value": "1.5"
+        },
+        {
+          "header": "BEAR BASE ARMOR:",
+          "key": "bear_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BACKLASH DAMAGE:",
+          "key": "backlash_damage",
+          "value": "20"
+        },
+        {
+          "header": "BEAR MOVESPEED:",
+          "key": "bear_movespeed",
+          "value": "310"
+        },
+        {
+          "generated": true,
+          "header": "BEAR MAGIC RESISTANCE:",
+          "key": "bear_magic_resistance",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "BONUS BEAR HP:",
+          "key": "bonus_bear_hp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS BEAR ARMOR:",
+          "key": "bonus_bear_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE GAIN PER DRUID LEVEL:",
+          "key": "damage_gain_per_druid_level",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HP GAIN PER DRUID LEVEL:",
+          "key": "hp_gain_per_druid_level",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BEAR ATTACK LEASH RANGE:",
+          "key": "bear_attack_leash_range",
+          "value": "1100"
+        },
+        {
+          "header": "BEAR STRENGTH GAIN:",
+          "key": "strength_gain_tooltip",
+          "value": "4.5"
+        },
+        {
+          "header": "BEAR AGILITY GAIN:",
+          "key": "agility_gain_tooltip",
+          "value": "4.5"
+        },
+        {
+          "header": "BEAR INTELLIGENCE GAIN:",
+          "key": "intelligence_gain_tooltip",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "120",
+      "desc": "Summons a powerful Spirit Bear companion that can equip items.\n\nIf the bear moves 1100 distance away from the Lone Druid, it cannot attack. Lone Druid suffers 20% of his max health as backlash damage if the Spirit Bear dies.\nSpirit Bear has Demolish, Return, Entangling Claws, Savage Roar, and Spirit Link abilities.",
+      "dmg_type": "",
+      "key": "lone_druid_spirit_bear",
+      "mc": "75",
+      "name": "Summon Spirit Bear"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "10",
+            "15",
+            "20"
+          ]
+        },
+        {
+          "header": "BONUS HP:",
+          "key": "bonus_hp",
+          "value": [
+            "500",
+            "1000",
+            "1500"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK DAMAGE:",
+          "key": "bonus_attack_damage",
+          "value": [
+            "50",
+            "90",
+            "130"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "header": "TRANSFORM TIME:",
+          "key": "transformation_time",
+          "value": "1.933"
+        },
+        {
+          "generated": true,
+          "header": "TRANSFORM BEAR:",
+          "key": "transform_bear",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS SLOW RESISTANCE:",
+          "key": "bonus_slow_resistance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "60",
+        "55",
+        "50"
+      ],
+      "desc": "Lone Druid morphs himself into a raging bear, losing his ranged advantage, but gaining bonus armor, bonus health, and bonus attack damage.",
+      "dmg_type": "",
+      "key": "lone_druid_true_form",
+      "mc": "80",
+      "name": "True Form"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Entangle",
+    "desc": "Entangle applies %hits_required% stacks to enemy heroes in the area and has increased radius. Enemies no longer have protection from gaining stacks while Entangled.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Savage Roar",
+    "desc": "Applies a basic dispel and grants allies in an area around the caster bonus movement and attack speed. Replicates between Lone Druid and Spirit Bear regardless of castability on the other.\n\nDISPEL TYPE: Basic Dispel",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 2.8,
+    "armor": 0,
+    "attack_max": 26,
+    "attack_min": 22,
+    "attack_range": 550,
+    "attack_rate": 1.6,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 13,
+    "int_gain": 1.4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.5
+  },
+  "name": "Lone Druid",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Durable"
+  ],
+  "short_name": "lone_druid",
+  "talents": [
+    {
+      "left": "True Form provides 70% Slow Resistance",
+      "level": 25,
+      "right": "+?s Entangle Root Duration"
+    },
+    {
+      "left": "+150 Savage Roar Radius",
+      "level": 20,
+      "right": "+55 Attack Speed"
+    },
+    {
+      "left": "-5s Savage Roar Cooldown",
+      "level": 15,
+      "right": "+12 Agility"
+    },
+    {
+      "left": "-25s Summon Spirit Bear Cooldown",
+      "level": 10,
+      "right": "+? Entangle Root Damage Per Second"
+    }
+  ]
+}

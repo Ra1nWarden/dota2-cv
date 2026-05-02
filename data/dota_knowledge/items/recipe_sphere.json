@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 600,
+  "created": false,
+  "id": 122,
+  "mc": false,
+  "name": "Linken's Sphere Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_sphere"
+}

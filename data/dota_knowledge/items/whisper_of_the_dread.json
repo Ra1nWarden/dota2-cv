@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Equipped Hero has their daytime vision reduced by 15% but their Spell damage increased by 10%.",
+      "title": "Tunnel Vision",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "vision_penalty",
+      "value": "15"
+    },
+    {
+      "key": "bonus_spell_damage",
+      "value": "10"
+    },
+    {
+      "key": "bonus_mana",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1158,
+  "mc": false,
+  "name": "Whisper of the Dread",
+  "notes": "",
+  "qual": null,
+  "short_name": "whisper_of_the_dread"
+}

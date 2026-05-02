@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movespeed_pct",
+      "value": "6 / 8 / 10"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "10 / 15 / 20"
+    },
+    {
+      "display": "- {value} Health Regeneration",
+      "key": "hp_regen_reduce",
+      "value": "1.5 / 2.25 / 3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1874,
+  "mc": false,
+  "name": "Nimble",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_nimble"
+}

@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Lethal damage is prevented and instead the wearer is healed to half health and non-ultimate ability cooldowns reset. Gets consumed on trigger.",
+      "title": "Rebirth",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "health_pct",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 293,
+  "mc": false,
+  "name": "Phoenix Ash",
+  "notes": "",
+  "qual": null,
+  "short_name": "phoenix_ash"
+}

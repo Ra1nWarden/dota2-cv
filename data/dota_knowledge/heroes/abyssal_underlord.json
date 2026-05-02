@@ -1,0 +1,452 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "425"
+        },
+        {
+          "generated": true,
+          "header": "WAVE DURATION:",
+          "key": "wave_duration",
+          "value": "7"
+        },
+        {
+          "header": "WAVE COUNT:",
+          "key": "wave_count",
+          "value": "6"
+        },
+        {
+          "header": "WAVE DAMAGE:",
+          "key": "wave_damage",
+          "value": [
+            "30",
+            "55",
+            "80",
+            "105"
+          ]
+        },
+        {
+          "header": "WAVE INTERVAL:",
+          "key": "wave_interval",
+          "value": "1"
+        },
+        {
+          "header": "MAX HP BURN DAMAGE:",
+          "key": "burn_damage",
+          "value": [
+            "1.5%",
+            "2%",
+            "2.5%",
+            "3%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BURN INTERVAL:",
+          "key": "burn_interval",
+          "value": "1"
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "burn_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "675"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "15",
+        "14",
+        "13"
+      ],
+      "desc": "Calls down waves of fire that damage enemy units in the target area, burning for additional damage over time.",
+      "dmg_type": "Magical",
+      "key": "abyssal_underlord_firestorm",
+      "mc": [
+        "110",
+        "125",
+        "140",
+        "155"
+      ],
+      "name": "Firestorm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "PIT DURATION:",
+          "key": "pit_duration",
+          "value": "12"
+        },
+        {
+          "header": "DISABLE INTERVAL:",
+          "key": "pit_interval",
+          "value": "3.6"
+        },
+        {
+          "header": "ENSNARE DAMAGE:",
+          "key": "pit_damage",
+          "value": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "header": "DISABLE DURATION:",
+          "key": "ensnare_duration",
+          "value": [
+            "1.5",
+            "1.6",
+            "1.7",
+            "1.8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED BONUS:",
+          "key": "speed_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "675"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "30",
+        "25",
+        "20",
+        "15"
+      ],
+      "desc": "A deadly pit is conjured at the target location; any unit that enters will be damaged and rooted. Each enemy unit within the pit are affected by the root only every 3.6 seconds.",
+      "dmg_type": "Magical",
+      "key": "abyssal_underlord_pit_of_malice",
+      "mc": [
+        "110",
+        "120",
+        "130",
+        "140"
+      ],
+      "name": "Pit of Malice"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction_pct",
+          "value": [
+            "8%",
+            "16%",
+            "24%",
+            "32%"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE (CREEP):",
+          "key": "bonus_damage_from_creep",
+          "value": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE (HERO):",
+          "key": "bonus_damage_from_hero",
+          "value": [
+            "30",
+            "35",
+            "40",
+            "45"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "bonus_damage_duration",
+          "value": [
+            "30",
+            "40",
+            "50",
+            "60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS SHARED BY ALLIES PCT:",
+          "key": "bonus_shared_by_allies_pct",
+          "value": "0"
+        },
+        {
+          "header": "CLEAVE DAMAGE:",
+          "key": "cleave_damage_pct",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE STARTING WIDTH:",
+          "key": "cleave_starting_width",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE ANGLE:",
+          "key": "cleave_angle",
+          "value": "0"
+        },
+        {
+          "header": "CLEAVE DISTANCE (BASE):",
+          "key": "cleave_distance_base",
+          "value": "0"
+        },
+        {
+          "header": "CLEAVE DISTANCE (PER STACK):",
+          "key": "cleave_distance_per_stack",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": [],
+      "cd": null,
+      "desc": "Nearby enemy units are weakened, losing a portion of their base damage. If an enemy dies while under this effect, Underlord gains temporary bonus damage.",
+      "dmg_type": "Physical",
+      "key": "abyssal_underlord_atrophy_aura",
+      "mc": null,
+      "name": "Atrophy Aura"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "3.7%"
+        },
+        {
+          "header": "MOVESPEED:",
+          "key": "bonus_ms",
+          "value": "9.5%"
+        },
+        {
+          "generated": true,
+          "header": "DARK PORTAL MULTIPLIER:",
+          "key": "dark_portal_multiplier",
+          "value": "2"
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "5"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "After an allied hero Teleports, they temporarily gain Damage Reduction and Movement Speed. Allies receive 2x bonuses if teleporting via Fiend's Gate.",
+      "dmg_type": "",
+      "key": "abyssal_underlord_raid_boss",
+      "mc": null,
+      "name": "Invading Force"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "MINIMUM DISTANCE:",
+          "key": "minimum_distance",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "WARP CHANNEL DURATION:",
+          "key": "warp_channel_duration",
+          "value": "3.5"
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE FROM FOUNTAIN:",
+          "key": "distance_from_fountain",
+          "value": "1425"
+        },
+        {
+          "generated": true,
+          "header": "DPS:",
+          "key": "dps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HULL RADIUS:",
+          "key": "hull_radius",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "GOLD BOUNTY:",
+          "key": "gold_bounty",
+          "value": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "XP BOUNTY:",
+          "key": "xp_bounty",
+          "value": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "110",
+        "105",
+        "100"
+      ],
+      "desc": "Opens 2 portals, one next to Underlord and one in the target location. Heroes can channel a portal for 3.5 seconds to teleport to the other side. Portals have to be at least 1500 away from each other.",
+      "dmg_type": "",
+      "key": "abyssal_underlord_dark_portal",
+      "mc": "175",
+      "name": "Fiend's Gate"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Fiend's Gate",
+    "desc": "Summons a Pit of Malice around each of the portals. Reduces cooldown.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Firestorm",
+    "desc": "Firestorm can be allied targeted. When used that way, the Firestorm follows the hero around.  The wave count is increased, and tick rate / duration time occur more quickly.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 12,
+    "agi_gain": 1.6,
+    "armor": 3,
+    "attack_max": 43,
+    "attack_min": 37,
+    "attack_range": 200,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 2.3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 3.2
+  },
+  "name": "Underlord",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Escape"
+  ],
+  "short_name": "abyssal_underlord",
+  "talents": [
+    {
+      "left": "+?s Pit of Malice Root",
+      "level": 25,
+      "right": "? DPS in ? Radius Around Fiend's Gate"
+    },
+    {
+      "left": "+?% Firestorm Burn Damage",
+      "level": 20,
+      "right": "+?% Atrophy Aura Attack Damage Reduction/Gain"
+    },
+    {
+      "left": "Pit of Malice Slows by ?%",
+      "level": 15,
+      "right": "-?s Firestorm Cooldown"
+    },
+    {
+      "left": "+?% Invading Force Movement Bonus/Damage Reduction",
+      "level": 10,
+      "right": "+?s Atrophy Aura Duration"
+    }
+  ]
+}

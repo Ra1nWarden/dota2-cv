@@ -1,0 +1,520 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "REFLECTION DURATION:",
+          "key": "illusion_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION OUTGOING DAMAGE:",
+          "key": "illusion_outgoing_damage",
+          "value": [
+            "-70",
+            "-55",
+            "-40",
+            "-25"
+          ]
+        },
+        {
+          "header": "REFLECTION DAMAGE:",
+          "key": "illusion_outgoing_tooltip",
+          "value": [
+            "30%",
+            "45%",
+            "60%",
+            "75%"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "move_slow",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "attack_slow",
+          "value": [
+            "15",
+            "20",
+            "25",
+            "30"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "range",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "IS GLOBAL:",
+          "key": "is_global",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "REQUIRES VISION:",
+          "key": "requires_vision",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "23",
+        "20",
+        "17",
+        "14"
+      ],
+      "desc": "Terrorblade brings forth an invulnerable dark reflection of all enemy heroes in a target area. Affected enemy heroes have movement and attack speeds slowed and attacked by their reflection.",
+      "dmg_type": "",
+      "key": "terrorblade_reflection",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Reflection"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ILLUSION DURATION:",
+          "key": "illusion_duration",
+          "value": "34"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION OUTGOING DAMAGE:",
+          "key": "illusion_outgoing_damage",
+          "value": [
+            "-75",
+            "-70",
+            "-65",
+            "-60"
+          ]
+        },
+        {
+          "header": "ILLUSION DAMAGE:",
+          "key": "illusion_outgoing_tooltip",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION INCOMING DAMAGE:",
+          "key": "illusion_incoming_damage",
+          "value": "150"
+        },
+        {
+          "header": "ILLUSION DAMAGE TAKEN:",
+          "key": "illusion_incoming_damage_total_tooltip",
+          "value": "250%"
+        },
+        {
+          "generated": true,
+          "header": "STRONG ILLUSION:",
+          "key": "strong_illusion",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SHOW PARTICLE EFFECT:",
+          "key": "show_particle_effect",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "APPEAR AS ILLUSION:",
+          "key": "appear_as_illusion",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.15"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "16",
+      "desc": "Creates an illusion of Terrorblade that deals damage.",
+      "dmg_type": "",
+      "key": "terrorblade_conjure_image",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Conjure Image"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "35",
+            "40",
+            "45",
+            "50"
+          ]
+        },
+        {
+          "header": "TRANSFORMATION TIME:",
+          "key": "transformation_time",
+          "value": "0.35"
+        },
+        {
+          "header": "BASE ATTACK TIME:",
+          "key": "base_attack_time",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "BONUS RANGE:",
+          "key": "bonus_range",
+          "value": [
+            "300",
+            "350",
+            "400",
+            "450"
+          ]
+        },
+        {
+          "header": "ATTACK RANGE:",
+          "key": "tooltip_attack_range",
+          "value": [
+            "450",
+            "500",
+            "550",
+            "600"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED LOSS:",
+          "key": "speed_loss",
+          "value": "0"
+        },
+        {
+          "header": "ILLUSION AURA RADIUS:",
+          "key": "metamorph_aura_tooltip",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "145",
+        "140",
+        "135",
+        "130"
+      ],
+      "desc": "Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade's illusions that are within 1200 range will also be transformed by Metamorphosis.",
+      "dmg_type": "Physical",
+      "key": "terrorblade_metamorphosis",
+      "mc": "100",
+      "name": "Metamorphosis"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "berserk_bonus_attack_speed",
+          "value": "100"
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "berserk_bonus_movement_speed",
+          "value": "60"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "header": "BONUS HEALTH REGEN:",
+          "key": "hp_regen",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "CURRENT HEALTH COST:",
+          "key": "health_cost_pct",
+          "value": "20%"
+        },
+        {
+          "generated": true,
+          "header": "REFLECTION PCT:",
+          "key": "reflection_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "45",
+      "desc": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Does not affect Reflection illusions. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal.",
+      "dmg_type": "",
+      "key": "terrorblade_demon_zeal",
+      "mc": "0",
+      "name": "Demon Zeal"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FEAR DURATION:",
+          "key": "fear_duration",
+          "value": "2"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "scepter_radius",
+          "value": "1600"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER SPEED:",
+          "key": "scepter_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER SPAWN DELAY:",
+          "key": "scepter_spawn_delay",
+          "value": "0.6"
+        },
+        {
+          "header": "METAMORPHOSIS DURATION:",
+          "key": "scepter_meta_duration",
+          "value": "15"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "90",
+      "desc": "Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact and dealing damage, and grants Terrorblade Metamorphosis for a short time.",
+      "dmg_type": "Magical",
+      "key": "terrorblade_terror_wave",
+      "mc": "75",
+      "name": "Terror Wave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MINIMUM HP SWAP:",
+          "key": "hit_point_minimum_pct",
+          "value": [
+            "35%",
+            "30%",
+            "25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IGNORE MINIMUM PCT FOR ENEMIES:",
+          "key": "ignore_minimum_pct_for_enemies",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "IGNORE MINIMUM PCT FOR ENEMIES TOOLTIP:",
+          "key": "ignore_minimum_pct_for_enemies_tooltip",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "475"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "110",
+        "75",
+        "40"
+      ],
+      "desc": "Severs the life from both Terrorblade and a target hero, exchanging a percentage of both units' current health. Some health points must remain.",
+      "dmg_type": "",
+      "key": "terrorblade_sunder",
+      "mc": [
+        "100",
+        "75",
+        "50"
+      ],
+      "name": "Sunder"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "DAMAGE BONUS:",
+          "key": "inside_radius_bonus_damage_pct",
+          "value": "60%"
+        },
+        {
+          "generated": true,
+          "header": "OUTSIDE RADIUS BONUS DAMAGE PCT:",
+          "key": "outside_radius_bonus_damage_pct",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Nearby Illusions created by Terrorblade have bonus attack damage.",
+      "dmg_type": "",
+      "key": "terrorblade_dark_unity",
+      "mc": null,
+      "name": "Dark Unity"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Terror Wave",
+    "desc": "Causes a wave to travel outwards in all directions forcing enemy heroes to become Feared upon impact and dealing damage, and grants Terrorblade Metamorphosis for a short time.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Demon Zeal",
+    "desc": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Does not affect Reflection illusions. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 4,
+    "armor": 6,
+    "attack_max": 32,
+    "attack_min": 26,
+    "attack_range": 150,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 19,
+    "int_gain": 1.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 315,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2
+  },
+  "name": "Terrorblade",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Nuker"
+  ],
+  "short_name": "terrorblade",
+  "talents": [
+    {
+      "left": "-?s Sunder Cooldown",
+      "level": 25,
+      "right": "+?s Metamorphosis Duration"
+    },
+    {
+      "left": "+10 All Attributes",
+      "level": 20,
+      "right": "+?s Conjure Image Duration"
+    },
+    {
+      "left": "-?s Metamorphosis Cooldown",
+      "level": 15,
+      "right": "-?% Sunder Minimum HP Swap"
+    },
+    {
+      "left": "+?s Reflection Duration",
+      "level": 10,
+      "right": "-?s Conjure Image Cooldown"
+    }
+  ]
+}

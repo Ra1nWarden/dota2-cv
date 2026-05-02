@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Reduce your own movement speed by 20 to provide a 160 physical damage barrier to allied player controlled units in a 800 unit radius. Lasts for 6 seconds.",
+      "title": "Shield Wall",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "slow",
+      "value": "20"
+    },
+    {
+      "key": "block_amount",
+      "value": "160"
+    },
+    {
+      "key": "block_radius",
+      "value": "800"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1717,
+  "mc": false,
+  "name": "Ash Legion Shield",
+  "notes": "",
+  "qual": null,
+  "short_name": "ash_legion_shield"
+}

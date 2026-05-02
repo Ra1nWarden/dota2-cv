@@ -1,0 +1,28 @@
+{
+  "abilities": [
+    {
+      "description": "Heals the attacker for a percentage of physical damage dealt.",
+      "title": "Lifesteal",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "lifesteal_percent",
+      "value": "18"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 26,
+  "mc": false,
+  "name": "Morbid Mask",
+  "notes": "",
+  "qual": "component",
+  "short_name": "lifesteal"
+}

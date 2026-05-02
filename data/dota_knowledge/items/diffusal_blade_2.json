@@ -1,0 +1,70 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "25 / 35"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10 / 15"
+    },
+    {
+      "key": "initial_charges",
+      "value": "8"
+    },
+    {
+      "key": "feedback_mana_burn",
+      "value": "50"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_melee",
+      "value": "16"
+    },
+    {
+      "key": "feedback_mana_burn_illusion_ranged",
+      "value": "8"
+    },
+    {
+      "key": "purge_summoned_damage",
+      "value": "99999"
+    },
+    {
+      "key": "purge_rate",
+      "value": "5"
+    },
+    {
+      "key": "purge_root_duration",
+      "value": "3"
+    },
+    {
+      "key": "purge_slow_duration",
+      "value": "4"
+    },
+    {
+      "key": "damage_per_burn",
+      "value": "0.8"
+    },
+    {
+      "key": "cast_range_tooltip",
+      "value": "600"
+    }
+  ],
+  "behavior": null,
+  "cd": 4,
+  "charges": null,
+  "components": [
+    "diffusal_blade",
+    "recipe_diffusal_blade"
+  ],
+  "cost": 3850,
+  "created": true,
+  "id": 196,
+  "mc": false,
+  "name": "Diffusal Blade",
+  "notes": "Does not stack with other manabreak abilities.",
+  "qual": "artifact",
+  "short_name": "diffusal_blade_2"
+}

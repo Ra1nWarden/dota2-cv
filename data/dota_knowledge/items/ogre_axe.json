@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1000,
+  "created": false,
+  "id": 21,
+  "mc": false,
+  "name": "Ogre Axe",
+  "notes": "",
+  "qual": "component",
+  "short_name": "ogre_axe"
+}

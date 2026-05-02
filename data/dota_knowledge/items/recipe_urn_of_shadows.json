@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 320,
+  "created": false,
+  "id": 91,
+  "mc": false,
+  "name": "Urn of Shadows Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_urn_of_shadows"
+}

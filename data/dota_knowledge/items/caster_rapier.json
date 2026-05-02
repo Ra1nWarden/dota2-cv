@@ -1,0 +1,29 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "bonus_spell_amp",
+      "value": "50"
+    },
+    {
+      "key": "cast_range_limit",
+      "value": "2000"
+    },
+    {
+      "key": "backstab_duration",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": 9,
+  "charges": false,
+  "components": null,
+  "cost": 5600,
+  "created": false,
+  "id": 1801,
+  "mc": false,
+  "name": "caster_rapier",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "caster_rapier"
+}

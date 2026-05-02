@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks deal 3 more damage to enemies for each 7% HP they are missing.",
+      "title": "Dark Mercy",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_damage",
+      "value": "3"
+    },
+    {
+      "key": "missing_hp",
+      "value": "7"
+    },
+    {
+      "key": "damage",
+      "value": "0"
+    },
+    {
+      "key": "aspd",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 828,
+  "mc": false,
+  "name": "Brigand's Blade",
+  "notes": "",
+  "qual": null,
+  "short_name": "misericorde"
+}

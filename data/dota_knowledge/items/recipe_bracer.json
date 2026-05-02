@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 210,
+  "created": false,
+  "id": 72,
+  "mc": false,
+  "name": "Bracer Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_bracer"
+}

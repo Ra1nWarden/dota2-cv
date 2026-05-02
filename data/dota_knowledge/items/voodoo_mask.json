@@ -1,0 +1,28 @@
+{
+  "abilities": [
+    {
+      "description": "Heals the wearer for a percentage of spell damage dealt to enemies.",
+      "title": "Spell Lifesteal",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Spell Lifesteal",
+      "key": "spell_lifesteal",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 650,
+  "created": false,
+  "id": 473,
+  "mc": false,
+  "name": "Voodoo Mask",
+  "notes": "Does not heal from Pure or Reflected damage.",
+  "qual": "component",
+  "short_name": "voodoo_mask"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 600,
+  "created": false,
+  "id": 113,
+  "mc": false,
+  "name": "Heart of Tarrasque Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_heart"
+}

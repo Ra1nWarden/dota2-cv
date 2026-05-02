@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 2800,
+  "created": false,
+  "id": 58,
+  "mc": false,
+  "name": "Mystic Staff",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "mystic_staff"
+}

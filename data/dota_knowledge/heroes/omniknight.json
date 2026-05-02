@@ -1,0 +1,389 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "HEAL/DAMAGE:",
+          "key": "heal",
+          "value": [
+            "90",
+            "160",
+            "230",
+            "300"
+          ]
+        },
+        {
+          "header": "DAMAGE RADIUS:",
+          "key": "radius",
+          "value": "260"
+        },
+        {
+          "generated": true,
+          "header": "RECAST DELAY:",
+          "key": "recast_delay",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "RECAST EFFECTIVENESS PCT:",
+          "key": "recast_effectiveness_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Instantly heals a friendly unit and damages all nearby enemy units.",
+      "dmg_type": "Pure",
+      "key": "omniknight_purification",
+      "mc": [
+        "90",
+        "105",
+        "120",
+        "135"
+      ],
+      "name": "Purification"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "header": "BONUS HP REGEN:",
+          "key": "base_hpregen",
+          "value": [
+            "8",
+            "12",
+            "16",
+            "20"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "header": "MAGIC RESISTANCE:",
+          "key": "magic_resist",
+          "value": "60%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "40",
+        "36",
+        "32",
+        "28"
+      ],
+      "desc": "Grants Debuff Immunity with 60% magic resistance, as well as bonus HP Regen.",
+      "dmg_type": "",
+      "key": "omniknight_martyr",
+      "mc": [
+        "90",
+        "105",
+        "120",
+        "135"
+      ],
+      "name": "Repel"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS BASE DAMAGE:",
+          "key": "base_damage",
+          "value": [
+            "30%",
+            "50%",
+            "70%",
+            "90%"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL PCT:",
+          "key": "heal_pct",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "HEAL DURATION:",
+          "key": "heal_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK COOLDOWN:",
+          "key": "attack_cooldown",
+          "value": "-1"
+        },
+        {
+          "header": "RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "75"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "duration",
+          "value": "0.2"
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_slow",
+          "value": "75%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Omniknight imbues his hammer with holy power, causing his attack to have increased range, deal pure damage based on a percentage of his base damage and slow his target for a short duration.\n\n Omniknight heals for 30% of the damage dealt over 5s.",
+      "dmg_type": "Pure",
+      "key": "omniknight_hammer_of_purity",
+      "mc": "0",
+      "name": "Hammer of Purity"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "speed_bonus",
+          "value": "11%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "325"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE PER STACK:",
+          "key": "bonus_damage_per_stack",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STACK INTERVAL:",
+          "key": "stack_interval",
+          "value": "0"
+        },
+        {
+          "header": "MAX BONUS DAMAGE:",
+          "key": "max_stacks",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Degenerates the movement capabilities of enemy units that stray too near, slowing their movement speed.",
+      "dmg_type": "",
+      "key": "omniknight_degen_aura",
+      "mc": null,
+      "name": "Degen Aura"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "IS GLOBAL:",
+          "key": "is_global",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS BUILDINGS:",
+          "key": "affects_buildings",
+          "value": "0"
+        },
+        {
+          "header": "BONUS HEALTH RESTORATION:",
+          "key": "heal_and_regen_amp",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE:",
+          "key": "model_scale",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "FLYING:",
+          "key": "flying",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "100",
+        "90",
+        "80"
+      ],
+      "desc": "Omniknight calls upon a Guardian Angel that grants immunity from physical damage to all allied units near Omniknight.",
+      "dmg_type": "",
+      "key": "omniknight_guardian_angel",
+      "mc": [
+        "125",
+        "175",
+        "225"
+      ],
+      "name": "Guardian Angel"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Guardian Angel",
+    "desc": "Guardian Angel has global radius, affects buildings, and amplifies health restoration.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Purification",
+    "desc": "After a 3s delay, the target is Purified again with 65% effectiveness.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.7,
+    "armor": 2,
+    "attack_max": 41,
+    "attack_min": 31,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 16,
+    "int_gain": 2.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 3.1
+  },
+  "name": "Omniknight",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "omniknight",
+  "talents": [
+    {
+      "left": "+160 Purification Damage/Heal",
+      "level": 25,
+      "right": "+75% Hammer of Purity Bonus Base Damage"
+    },
+    {
+      "left": "+? Degen Aura Radius",
+      "level": 20,
+      "right": "-3s Purification Cooldown"
+    },
+    {
+      "left": "-0.5s Hammer of Purity Cooldown",
+      "level": 15,
+      "right": "-20s Guardian Angel Cooldown"
+    },
+    {
+      "left": "+200 Repel Cast Range",
+      "level": 10,
+      "right": "+30 Base Damage"
+    }
+  ]
+}

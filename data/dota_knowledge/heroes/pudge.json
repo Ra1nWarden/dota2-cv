@@ -1,0 +1,363 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "150",
+            "220",
+            "290",
+            "360"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HOOK SPEED:",
+          "key": "hook_speed",
+          "value": "1600"
+        },
+        {
+          "generated": true,
+          "header": "HOOK WIDTH:",
+          "key": "hook_width",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "REVEAL DURATION:",
+          "key": "reveal_duration",
+          "value": "00"
+        },
+        {
+          "generated": true,
+          "header": "VECTOR TARGET DISTANCE:",
+          "key": "vector_target_distance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SELF STUN DURATION PERCENT:",
+          "key": "self_stun_duration_percent",
+          "value": "65"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "desc": "Launches a bloody hook toward a unit or location. The hook will snag the first unit it encounters, dragging the unit back to Pudge, killing it if it's a non-ancient creep and dealing damage if it is an enemy otherwise.",
+      "dmg_type": "Pure",
+      "key": "pudge_meat_hook",
+      "mc": "120",
+      "name": "Meat Hook"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "rot_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "ROT TICK:",
+          "key": "rot_tick",
+          "value": "0.2"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "rot_slow",
+          "value": [
+            "-14%",
+            "-20%",
+            "-26%",
+            "-32%"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "rot_damage",
+          "value": [
+            "30",
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "A toxic cloud that deals intense damage and slows movement--harming not only enemy units but Pudge himself.",
+      "dmg_type": "Magical",
+      "key": "pudge_rot",
+      "mc": null,
+      "name": "Rot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE BLOCK:",
+          "key": "damage_block",
+          "value": [
+            "8",
+            "14",
+            "20",
+            "26"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "20",
+        "19",
+        "18",
+        "17"
+      ],
+      "desc": "Pudge covers himself with a layer of flesh that blocks damage of any type taken from any source.",
+      "dmg_type": "",
+      "key": "pudge_flesh_heap",
+      "mc": [
+        "65",
+        "70",
+        "75",
+        "80"
+      ],
+      "name": "Meat Shield"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "FLESH HEAP STRENGTH BUFF AMOUNT:",
+          "key": "flesh_heap_strength_buff_amount",
+          "value": "1.6"
+        },
+        {
+          "generated": true,
+          "header": "FLESH HEAP RANGE:",
+          "key": "flesh_heap_range",
+          "value": "450"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "Passive"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Pudge's skin thickens permanently every time he kills an enemy Hero, gaining 1.6 bonus Strength for each stack.",
+      "dmg_type": "",
+      "key": "pudge_innate_graft_flesh",
+      "mc": null,
+      "name": "Flesh Heap"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "dismember_damage",
+          "value": [
+            "80",
+            "100",
+            "120"
+          ]
+        },
+        {
+          "header": "STRENGTH MULTIPLIER:",
+          "key": "strength_damage",
+          "value": [
+            "0.3",
+            "0.6",
+            "0.9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICKS:",
+          "key": "ticks",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "PULL UNITS PER SECOND:",
+          "key": "pull_units_per_second",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "PULL DISTANCE LIMIT:",
+          "key": "pull_distance_limit",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "ANIMATION RATE:",
+          "key": "animation_rate",
+          "value": "1.5"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilitychanneltime",
+          "value": "2.75"
+        },
+        {
+          "header": "STRENGTH INCREASE:",
+          "key": "gluttony_strength_bonus",
+          "value": "0"
+        },
+        {
+          "header": "STRENGTH DURATION:",
+          "key": "glutton_strength_stack_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Channeled"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "30",
+        "25",
+        "20"
+      ],
+      "desc": "CHANNELED - Pudge chows down on an enemy unit, disabling it and dealing damage over time. Damage is increased by Pudge's Strength and heals him for the total amount. Pudge pulls the unit at a rate of 75 units, up to a minimum of 125 range.",
+      "dmg_type": "Magical",
+      "key": "pudge_dismember",
+      "mc": [
+        "100",
+        "130",
+        "170"
+      ],
+      "name": "Dismember"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Rot",
+    "desc": "Increases Rot radius by 200, damage by 90, and causes it to reduce enemy Health Restoration by 20%.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Meat Hook",
+    "desc": "When Meat Hook hits an enemy, it deals bonus damage based on the distance pulled.\n\nWhen Meat Hook hits an ally, Meat Hook's cooldown is reduced by 50%.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 11,
+    "agi_gain": 1.4,
+    "armor": 0,
+    "attack_max": 51,
+    "attack_min": 45,
+    "attack_range": 175,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 2.5,
+    "int": 16,
+    "int_gain": 1.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 3
+  },
+  "name": "Pudge",
+  "primary_attr": "str",
+  "roles": [
+    "Disabler",
+    "Initiator",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "pudge",
+  "talents": [
+    {
+      "left": "?x Dismember Damage/Heal",
+      "level": 25,
+      "right": "?x Flesh Heap and Meat Shield bonuses"
+    },
+    {
+      "left": "+?s Dismember Duration",
+      "level": 20,
+      "right": "-?s Meat Hook Cooldown"
+    },
+    {
+      "left": "+8% Spell Lifesteal",
+      "level": 15,
+      "right": "+? Meat Hook Damage"
+    },
+    {
+      "left": "+5 Armor",
+      "level": 10,
+      "right": "+?% Rot Slow"
+    }
+  ]
+}

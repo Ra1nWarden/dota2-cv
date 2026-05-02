@@ -1,0 +1,69 @@
+{
+  "abilities": [
+    {
+      "description": "Ranged attacks have a 30% chance to fire additional projectiles at up to 2 nearby enemies with 150 extra range and within a 120 degree angle in front of the attacker. The additional projectiles deal 20 + 75% damage of a normal attack and do not trigger on hit effects. The primary attack deals 20 + 100% damage of a normal attack.",
+      "title": "Splitshot",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "all_stats",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "agility",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "damage",
+      "value": "20"
+    },
+    {
+      "key": "count",
+      "value": "2"
+    },
+    {
+      "key": "secondary_target_range_bonus",
+      "value": "150"
+    },
+    {
+      "key": "secondary_target_angle",
+      "value": "120"
+    },
+    {
+      "key": "proc_chance",
+      "value": "30"
+    },
+    {
+      "key": "base_proc_dmg",
+      "value": "20"
+    },
+    {
+      "key": "proc_dmg_pct",
+      "value": "75"
+    },
+    {
+      "key": "proc_dmg_pct_primary_tooltip",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "blade_of_alacrity",
+    "broadsword"
+  ],
+  "cost": 2550,
+  "created": true,
+  "id": 1076,
+  "mc": false,
+  "name": "Specialist's Array",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "specialists_array"
+}

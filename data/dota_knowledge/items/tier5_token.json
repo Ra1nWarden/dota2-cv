@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 2095,
+  "mc": false,
+  "name": "Tier 5 Token",
+  "notes": "",
+  "qual": null,
+  "short_name": "tier5_token"
+}

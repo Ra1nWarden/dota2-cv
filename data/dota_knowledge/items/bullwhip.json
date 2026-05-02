@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 25% movement speed when cast on allies, and slows by 25% when cast on enemies. Lasts 4 seconds.",
+      "title": "Whip",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health_regen",
+      "value": "0"
+    },
+    {
+      "key": "bonus_mana_regen",
+      "value": "0"
+    },
+    {
+      "key": "duration",
+      "value": "4"
+    },
+    {
+      "key": "speed",
+      "value": "25"
+    },
+    {
+      "key": "bullwhip_delay_time",
+      "value": "0.3"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 11,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 680,
+  "mc": false,
+  "name": "Bullwhip",
+  "notes": "Does not trigger spell block or spell reflect.",
+  "qual": null,
+  "short_name": "bullwhip"
+}

@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Toggle to switch the contents of the Satchel between a pound of Feathers or Rocks.\n\nFeathers: increase movement speed by 12 and distance of forced movement effects applied to the wearer by 30%.\n\nRocks: increase armor by 3 and decrease the distance of forced movement effects applied to the wearer by 30%.",
+      "title": "Transmogrify",
+      "type": "toggle"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "knockback_resistance",
+      "value": "30"
+    },
+    {
+      "key": "feather_movespeed",
+      "value": "12"
+    },
+    {
+      "key": "rocks_armor",
+      "value": "3"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 6,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1861,
+  "mc": false,
+  "name": "Stonefeather Satchel",
+  "notes": "",
+  "qual": null,
+  "short_name": "stonefeather_satchel"
+}

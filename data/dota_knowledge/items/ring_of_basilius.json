@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 1 mana regeneration to allies. \n\nRadius: 1200",
+      "title": "Basilius Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "0.25"
+    },
+    {
+      "key": "aura_mana_regen",
+      "value": "1.0"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "sobi_mask"
+  ],
+  "cost": 425,
+  "created": true,
+  "id": 88,
+  "mc": false,
+  "name": "Ring of Basilius",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "ring_of_basilius"
+}

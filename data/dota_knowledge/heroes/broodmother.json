@@ -1,0 +1,463 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BASE ATTACK DAMAGE BONUS:",
+          "key": "bonus_damage",
+          "value": [
+            "40%",
+            "50%",
+            "60%",
+            "70%"
+          ]
+        },
+        {
+          "header": "LIFESTEAL:",
+          "key": "lifesteal_pct",
+          "value": [
+            "40%",
+            "60%",
+            "80%",
+            "100%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "8",
+            "10",
+            "12",
+            "14"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BAT BONUS:",
+          "key": "bat_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SHARD DAMAGE PER TICK:",
+          "key": "shard_damage_per_tick",
+          "value": "0"
+        },
+        {
+          "header": "SPIDERLING RADIUS:",
+          "key": "aura_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "45",
+        "40",
+        "35",
+        "30"
+      ],
+      "desc": "A violent lust for vital fluids increases Broodmother's attack damage and gives her and her Spiderlings a vampiric attack.",
+      "dmg_type": "Physical",
+      "key": "broodmother_insatiable_hunger",
+      "mc": "80",
+      "name": "Insatiable Hunger"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "header": "MAX SIMULTANEOUS WEBS:",
+          "key": "count",
+          "value": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEALTH REGEN:",
+          "key": "health_regen",
+          "value": "0"
+        },
+        {
+          "header": "MOVESPEED BONUS:",
+          "key": "bonus_movespeed",
+          "value": [
+            "10%",
+            "20%",
+            "30%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "27"
+        },
+        {
+          "header": "BONUS TURN RATE:",
+          "key": "bonus_turn_rate",
+          "value": "0.2"
+        },
+        {
+          "header": "ENEMY RESTORATION REDUCTION:",
+          "key": "degen",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "BREAK MOVE CAP:",
+          "key": "break_move_cap",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "max_charges",
+          "value": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ]
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Spins a large web that grants Broodmother a passive movement speed increase and increases her Turn Rate, while in its vicinity, as well as giving free movement.\n\nSpin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears.",
+      "dmg_type": "",
+      "key": "broodmother_spin_web",
+      "mc": "40",
+      "name": "Spin Web"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MISS CHANCE:",
+          "key": "miss_chance",
+          "value": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "bonus_movespeed",
+          "value": [
+            "-15%",
+            "-20%",
+            "-25%",
+            "-30%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "ATTACK BONUS:",
+          "key": "attack_damage",
+          "value": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Broodmother's venom cripples enemy units, causing her attacks to slow and giving the affected unit a chance to miss its attacks and extra damage from attacks.",
+      "dmg_type": "",
+      "key": "broodmother_incapacitating_bite",
+      "mc": null,
+      "name": "Incapacitating Bite"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FORMATION DELAY:",
+          "key": "formation_delay",
+          "value": "2"
+        },
+        {
+          "header": "ROOT DURATION:",
+          "key": "root_duration",
+          "value": "3"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "COUNT:",
+          "key": "count",
+          "value": "5"
+        },
+        {
+          "header": "WEB LINE WIDTH:",
+          "key": "width",
+          "value": "900"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "broodmother_sticky_snare",
+      "mc": "100",
+      "name": "Spinner's Snare"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HERO HEALTH AS HEAL:",
+          "key": "kill_heal_heroes",
+          "value": "1.9%"
+        },
+        {
+          "generated": true,
+          "header": "KILL CREEPS PENALTY:",
+          "key": "kill_creeps_penalty",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "KILL HEAL AOE:",
+          "key": "kill_heal_aoe",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "KILL HEAL DURATION:",
+          "key": "kill_heal_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Whenever Broodmother kills a unit, she and all units under her control in a 600 radius receive a buff for 3s that heals them for a percentage of the victim's health every 0.5 seconds. Healing from creeps is reduced by 40%.",
+      "dmg_type": "",
+      "key": "broodmother_spiders_milk",
+      "mc": null,
+      "name": "Spider's Milk"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "20"
+        },
+        {
+          "header": "LIFETIME:",
+          "key": "spiderling_duration",
+          "value": "40"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "220",
+            "320",
+            "420"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE BONUS:",
+          "key": "damage_bonus",
+          "value": [
+            "0",
+            "3",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HP BONUS:",
+          "key": "hp_bonus",
+          "value": "0"
+        },
+        {
+          "header": "COUNT:",
+          "key": "count",
+          "value": [
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "header": "SPIDERLINGS HP:",
+          "key": "tooltip_spiderling_hp",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "4"
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_speed",
+          "value": [
+            "25%",
+            "35%",
+            "45%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "9",
+        "8",
+        "7"
+      ],
+      "desc": "Broodmother injects her young into an enemy unit, dealing damage and slowing them for 4 seconds. The spiderlings will hatch if the target is killed while under this influence.",
+      "dmg_type": "Magical",
+      "key": "broodmother_spawn_spiderlings",
+      "mc": "100",
+      "name": "Spawn Spiderlings"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Spinner's Snare",
+    "desc": "Broodmother may create up to 5 invisible web lines touching any existing web. Enemy Heroes that cross the web line will spring the trap, becoming rooted, revealed in fog, and take damage over time.  Multiple Heroes can trip on the same line until it's destroyed after being initially triggered.  Broodmother's team is alerted via the minimap when an enemy has triggered the snare.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Insatiable Hunger",
+    "desc": "While Hunger is active, the bonus damage is increased by 4% every 1s.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 3.4,
+    "armor": -1,
+    "attack_max": 33,
+    "attack_min": 27,
+    "attack_range": 175,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 18,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.9
+  },
+  "name": "Broodmother",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Escape",
+    "Nuker"
+  ],
+  "short_name": "broodmother",
+  "talents": [
+    {
+      "left": "-?s BAT during Insatiable Hunger",
+      "level": 25,
+      "right": "+?% Spin Web Move Speed and Ignore Speed Limit"
+    },
+    {
+      "left": "-?s Spin Web Charge Restore Time",
+      "level": 20,
+      "right": "+?% Incapacitating Bite Slow/Miss Chance"
+    },
+    {
+      "left": "+? Incapacitating Bite Attack Bonus",
+      "level": 15,
+      "right": "+? Spiderlings Health"
+    },
+    {
+      "left": "+? Spawn Spiderlings Damage",
+      "level": 10,
+      "right": "+?% Insatiable Hunger Lifesteal"
+    }
+  ]
+}

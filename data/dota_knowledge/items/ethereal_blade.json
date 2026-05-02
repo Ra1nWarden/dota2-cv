@@ -1,0 +1,67 @@
+{
+  "abilities": [
+    {
+      "description": "Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and -30% more vulnerable to magic damage.\n\n Enemy targets are also slowed by -80%, and take 1x the sum of all your attributes + 50 as magical damage.\nDuration: 4 seconds",
+      "title": "Ether Blast",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_agility",
+      "value": "24"
+    },
+    {
+      "key": "bonus_strength",
+      "value": "24"
+    },
+    {
+      "key": "bonus_intellect",
+      "value": "24"
+    },
+    {
+      "key": "blast_movement_slow",
+      "value": "-80"
+    },
+    {
+      "key": "duration",
+      "value": "4.0"
+    },
+    {
+      "key": "blast_stat_multiplier",
+      "value": "1.0"
+    },
+    {
+      "key": "blast_damage_base",
+      "value": "50"
+    },
+    {
+      "key": "duration_ally",
+      "value": "4.0"
+    },
+    {
+      "key": "ethereal_damage_bonus",
+      "value": "-30"
+    },
+    {
+      "key": "projectile_speed",
+      "value": "1400"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 22,
+  "charges": false,
+  "components": [
+    "ultimate_orb",
+    "ghost"
+  ],
+  "cost": 5200,
+  "created": true,
+  "id": 176,
+  "mc": 100,
+  "name": "Ethereal Blade",
+  "notes": "Shares cooldown with Ghost Scepter and its upgrades.\nEthereal units take -30% bonus magic damage.",
+  "qual": "epic",
+  "short_name": "ethereal_blade"
+}

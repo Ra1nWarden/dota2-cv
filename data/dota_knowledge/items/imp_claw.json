@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Empowers your next attack, causing it to be a critical strike dealing 130% damage.",
+      "title": "Critical Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "crit_multiplier",
+      "value": "130"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": 5,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 334,
+  "mc": false,
+  "name": "Imp Claw",
+  "notes": "",
+  "qual": null,
+  "short_name": "imp_claw"
+}

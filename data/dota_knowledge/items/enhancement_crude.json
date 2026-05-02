@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value}% Health Restoration",
+      "key": "health_restoration",
+      "value": "10 / 15 / 20"
+    },
+    {
+      "display": "- {value}% Base Attack Time",
+      "key": "bat_reduce",
+      "value": "8 / 12 / 16"
+    },
+    {
+      "display": "- {value}% Intelligence",
+      "key": "intelligence_pct",
+      "value": "-6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1589,
+  "mc": false,
+  "name": "Crude",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_crude"
+}

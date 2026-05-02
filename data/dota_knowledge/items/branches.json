@@ -1,0 +1,32 @@
+{
+  "abilities": [
+    {
+      "description": "Targets the ground to plant a happy little tree that lasts for 20 seconds.",
+      "title": "Plant Tree",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "1"
+    },
+    {
+      "key": "tree_duration",
+      "value": "20"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 55,
+  "created": false,
+  "id": 16,
+  "mc": false,
+  "name": "Iron Branch",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "branches"
+}

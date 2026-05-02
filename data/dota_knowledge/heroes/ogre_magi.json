@@ -1,0 +1,495 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "MULTICAST DELAY:",
+          "key": "multicast_delay",
+          "value": "0.6"
+        },
+        {
+          "header": "FIREBLAST DAMAGE:",
+          "key": "fireblast_damage",
+          "value": [
+            "70",
+            "130",
+            "190",
+            "250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS CAST SPEED:",
+          "key": "bonus_cast_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "525"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.45"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "10",
+        "9",
+        "8"
+      ],
+      "desc": "Blasts an enemy unit with a wave of fire, dealing damage and stunning the target.",
+      "dmg_type": "Magical",
+      "key": "ogre_magi_fireblast",
+      "mc": [
+        "70",
+        "85",
+        "100",
+        "115"
+      ],
+      "name": "Fireblast"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "header": "BURN DAMAGE:",
+          "key": "burn_damage",
+          "value": [
+            "20",
+            "30",
+            "40",
+            "50"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow_movement_speed_pct",
+          "value": "-25%"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "MULTICAST DELAY:",
+          "key": "multicast_delay",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "IGNITE MULTICAST AOE:",
+          "key": "ignite_multicast_aoe",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "800",
+            "900",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "17",
+      "desc": "Drenches the target and another random unit in volatile chemicals, causing it to burst into flames. The target is in immense pain, taking damage and moving more slowly.",
+      "dmg_type": "Magical",
+      "key": "ogre_magi_ignite",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Ignite"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MODELSCALE:",
+          "key": "modelscale",
+          "value": "25"
+        },
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_movement_speed",
+          "value": [
+            "6%",
+            "8%",
+            "10%",
+            "12%"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "35",
+            "50",
+            "65",
+            "80"
+          ]
+        },
+        {
+          "header": "SELF BONUS ATTACK SPEED:",
+          "key": "self_bonus",
+          "value": [
+            "40",
+            "60",
+            "80",
+            "100"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "MULTICAST BLOODLUST AOE:",
+          "key": "multicast_bloodlust_aoe",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.45"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Incites a frenzy in a friendly unit, increasing its movement speed and attack speed. Gives bonus attack speed if cast on Ogre himself. Can be cast on towers.",
+      "dmg_type": "",
+      "key": "ogre_magi_bloodlust",
+      "mc": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "name": "Bloodlust"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "MULTICAST DELAY:",
+          "key": "multicast_delay",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER MANA:",
+          "key": "scepter_mana",
+          "value": "35"
+        },
+        {
+          "generated": true,
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "STR MULTIPLIER:",
+          "key": "str_multiplier",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "525"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.45"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "7",
+      "desc": "Blasts an enemy unit with a wave of fire, dealing 150 + 1.5x Ogre's Strength in damage and stunning the target. Its mana cost is 35% of Ogre Magi's current mana.",
+      "dmg_type": "Magical",
+      "key": "ogre_magi_unrefined_fireblast",
+      "mc": "400",
+      "name": "Unrefined Fireblast"
+    },
+    {
+      "attrib": [
+        {
+          "header": "FIREBALL DAMAGE:",
+          "key": "damage",
+          "value": "160"
+        },
+        {
+          "generated": true,
+          "header": "ATTACKS:",
+          "key": "attacks",
+          "value": "3"
+        },
+        {
+          "header": "SHIELD DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "MULTICAST FIRESHIELD AOE:",
+          "key": "multicast_fireshield_aoe",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1400"
+        },
+        {
+          "header": "DAMAGE ABSORBED:",
+          "key": "damage_absorb_pct",
+          "value": "85%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "15",
+      "desc": "Creates a shield around the target ally, absorbing a percentage of the damage of next 3 attacks from enemy heroes. When damage is absorbed, a fireball is launched at the attacker. Can be cast on towers.",
+      "dmg_type": "Magical",
+      "key": "ogre_magi_smash",
+      "mc": "50",
+      "name": "Fire Shield"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAX MANA PER STRENGTH:",
+          "key": "mana_per_str",
+          "value": "6"
+        },
+        {
+          "header": "MANA REGENERATION PER STRENGTH:",
+          "key": "mana_regen_per_str",
+          "value": "0.02"
+        },
+        {
+          "generated": true,
+          "header": "LEVEL ONE ABILITY POINTS:",
+          "key": "level_one_ability_points",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "LEVEL TWO ABILITY POINTS:",
+          "key": "level_two_ability_points",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": [],
+      "key": "ogre_magi_dumb_luck",
+      "mc": null,
+      "name": "Dumb Luck"
+    },
+    {
+      "attrib": [
+        {
+          "header": "2X CAST CHANCE:",
+          "key": "multicast_2_times",
+          "value": "75%"
+        },
+        {
+          "header": "3X CAST CHANCE:",
+          "key": "multicast_3_times",
+          "value": [
+            "0%",
+            "30%",
+            "30%"
+          ]
+        },
+        {
+          "header": "4X CAST CHANCE:",
+          "key": "multicast_4_times",
+          "value": [
+            "0%",
+            "0%",
+            "15%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STRENGTH FOR ONE PCT:",
+          "key": "strength_for_one_pct",
+          "value": "16"
+        },
+        {
+          "generated": true,
+          "header": "ONE TOOLTIP:",
+          "key": "one_tooltip",
+          "value": "1"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Enables Ogre Magi to cast his abilities and items multiple times with each use. Each point of Strength adds to Multicast chance. Every 16 Strength adds 1%.",
+      "dmg_type": "",
+      "key": "ogre_magi_multicast",
+      "mc": null,
+      "name": "Multicast"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Unrefined Fireblast",
+    "desc": "Blasts an enemy unit with a wave of fire, dealing 150 + 1.5x Ogre's Strength in damage and stunning the target. Its mana cost is 35% of Ogre Magi's current mana.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Fire Shield",
+    "desc": "Creates a shield around the target ally, absorbing a percentage of the damage of next 3 attacks from enemy heroes. When damage is absorbed, a fireball is launched at the attacker. Can be cast on towers.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 14,
+    "agi_gain": 1.5,
+    "armor": 4,
+    "attack_max": 51,
+    "attack_min": 45,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1.5,
+    "int": 0,
+    "int_gain": 0,
+    "magic_resist": 25,
+    "mana": 120,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 4.2
+  },
+  "name": "Ogre Magi",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler",
+    "Durable",
+    "Initiator"
+  ],
+  "short_name": "ogre_magi",
+  "talents": [
+    {
+      "left": "special_bonus_unique_ogre_magi_3",
+      "level": 25,
+      "right": "+?% Multicast Chance"
+    },
+    {
+      "left": "+30 Strength",
+      "level": 20,
+      "right": "+? Fireblast Damage"
+    },
+    {
+      "left": "+80 Damage",
+      "level": 15,
+      "right": "+?/? Bloodlust / Self Attack Speed"
+    },
+    {
+      "left": "+? Ignite Burn Damage",
+      "level": 10,
+      "right": "+?/? Dumb Luck Mana/Mana Regen Per Strength"
+    }
+  ]
+}

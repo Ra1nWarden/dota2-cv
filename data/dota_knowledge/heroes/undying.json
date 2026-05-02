@@ -1,0 +1,455 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BASE DAMAGE:",
+          "key": "decay_damage",
+          "value": [
+            "20",
+            "60",
+            "100",
+            "140"
+          ]
+        },
+        {
+          "header": "STRENGTH STEAL:",
+          "key": "str_steal",
+          "value": "4"
+        },
+        {
+          "header": "STEAL DURATION:",
+          "key": "decay_duration",
+          "value": "35"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "325"
+        },
+        {
+          "generated": true,
+          "header": "STR SCALE UP:",
+          "key": "str_scale_up",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE MULTIPLIER:",
+          "key": "creep_damage_multiplier",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "SHARD BUFF DURATION:",
+          "key": "shard_buff_duration",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "21",
+            "24",
+            "27",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Undying steals strength from all enemy heroes in an area, dealing base damage as he claims the enemy's strength for himself. Deals 2x damage to creeps.",
+      "dmg_type": "Magical",
+      "key": "undying_decay",
+      "mc": "100",
+      "name": "Decay"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE/HEAL PER UNIT:",
+          "key": "damage_per_unit",
+          "value": [
+            "14",
+            "26",
+            "38",
+            "50"
+          ]
+        },
+        {
+          "header": "MAX UNITS:",
+          "key": "max_units",
+          "value": "10"
+        },
+        {
+          "header": "RIP RADIUS:",
+          "key": "radius",
+          "value": "1300"
+        },
+        {
+          "header": "TOMBSTONE HEAL:",
+          "key": "tombstone_heal",
+          "value": [
+            "4",
+            "8",
+            "12",
+            "16"
+          ]
+        },
+        {
+          "header": "STRENGTH GAIN:",
+          "key": "strength_share_percent",
+          "value": "0%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "strength_share_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STRENGTH SHARE MODEL SCALE:",
+          "key": "strength_share_model_scale",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Undying rips health away from all nearby units and uses it to heal an ally, or damage an enemy. Soul Rip can also be used to heal Tombstone.",
+      "dmg_type": "Magical",
+      "key": "undying_soul_rip",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Soul Rip"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TOMBSTONE HEALTH:",
+          "key": "tombstone_health",
+          "value": [
+            "20",
+            "24",
+            "28",
+            "32"
+          ]
+        },
+        {
+          "header": "ATTACKS TO DESTROY:",
+          "key": "hits_to_destroy_tooltip",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "header": "TOMBSTONE DURATION:",
+          "key": "duration",
+          "value": "30"
+        },
+        {
+          "header": "ZOMBIE SPAWN RADIUS:",
+          "key": "radius",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "HEALTH THRESHOLD PCT TOOLTIP:",
+          "key": "health_threshold_pct_tooltip",
+          "value": "40"
+        },
+        {
+          "header": "ZOMBIE SPAWN INTERVAL:",
+          "key": "zombie_interval",
+          "value": [
+            "4",
+            "3.6",
+            "3.2",
+            "2.8"
+          ]
+        },
+        {
+          "header": "ZOMBIE ATTACK DAMAGE:",
+          "key": "zombie_damage_tooltip",
+          "value": "34"
+        },
+        {
+          "generated": true,
+          "header": "ZOMBIE HEALTH:",
+          "key": "zombie_health",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "BUNKER UNITS:",
+          "key": "bunker_units",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "BUNKER HEAL PCT:",
+          "key": "bunker_heal_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TOMBSTONE GRAB RADIUS:",
+          "key": "tombstone_grab_radius",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "TOMBSTONE BUNKER CD:",
+          "key": "tombstone_bunker_cd",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "TOMBSTONE STUN PENALTY:",
+          "key": "tombstone_stun_penalty",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "ZOMBIE DAMAGE INTERVAL:",
+          "key": "zombie_damage_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.6"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "80",
+      "desc": "Summons a tombstone at the target point. Zombies will frequently spawn next to every enemy unit in the area around the Tombstone, and attack them. Zombies have the Deathlust ability, which causes their attacks to slow the target, and if the target reaches below a certain amount of health, increases the attack and movement speed of the zombie.",
+      "dmg_type": "Physical",
+      "key": "undying_tombstone",
+      "mc": [
+        "125",
+        "150",
+        "175",
+        "200"
+      ],
+      "name": "Tombstone"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RESPAWN DELAY:",
+          "key": "respawn_delay",
+          "value": "2"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "480",
+      "desc": "",
+      "dmg_type": "",
+      "key": "undying_ceaseless_dirge",
+      "mc": null,
+      "name": "Ceaseless Dirge"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SLOW ON ATTACK:",
+          "key": "slow",
+          "value": [
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "DAMAGE AMPLIFICATION:",
+          "key": "damage_amp",
+          "value": [
+            "25%",
+            "30%",
+            "35%"
+          ]
+        },
+        {
+          "header": "DAMAGE AMP DURATION:",
+          "key": "slow_duration",
+          "value": "3"
+        },
+        {
+          "header": "STRENGTH MULTIPLIER:",
+          "key": "str_percentage",
+          "value": [
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "40"
+        },
+        {
+          "header": "BONUS MOVESPEED:",
+          "key": "movement_bonus",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "SPAWN ZOMBIE ON ATTACK:",
+          "key": "spawn_zombie_on_attack",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ZOMBIE DURATION:",
+          "key": "zombie_duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "ZOMBIE SPAWN PADDING:",
+          "key": "zombie_spawn_padding",
+          "value": "36"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "140",
+      "desc": "Undying transforms into a horrifying flesh golem. While in this state, he gains a percentage increase to strength, bonus movement speed, and causes attacks to slow, apply damage amplification, and spawn Tombstone zombies.",
+      "dmg_type": "Magical",
+      "key": "undying_flesh_golem",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "Flesh Golem"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Decay",
+    "desc": "Increases strength steal.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Tombstone",
+    "desc": "Tombstone can be cast on an allied hero to bunker inside of the tombstone. Heroes that enter the Tombstone cannot leave for 2 seconds nor can they re-enter after leaving. If the tombstone is destroyed with a hero inside, that hero gets stunned for 2 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 13,
+    "agi_gain": 1.2,
+    "armor": 0,
+    "attack_max": 41,
+    "attack_min": 33,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": -0.25,
+    "int": 27,
+    "int_gain": 2.8,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.4
+  },
+  "name": "Undying",
+  "primary_attr": "str",
+  "roles": [
+    "Support",
+    "Durable",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "undying",
+  "talents": [
+    {
+      "left": "+?% Flesh Golem Strength Bonus",
+      "level": 25,
+      "right": "Tombstone On Death"
+    },
+    {
+      "left": "-?s Decay Cooldown",
+      "level": 20,
+      "right": "+? Tombstone Attacks to Destroy"
+    },
+    {
+      "left": "+? Soul Rip Damage/Heal",
+      "level": 15,
+      "right": "+? Zombie Damage"
+    },
+    {
+      "left": "+? Decay Damage",
+      "level": 10,
+      "right": "-?s Tombstone Cooldown"
+    }
+  ]
+}

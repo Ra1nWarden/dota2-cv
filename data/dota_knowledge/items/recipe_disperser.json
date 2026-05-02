@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 800,
+  "created": false,
+  "id": 1096,
+  "mc": false,
+  "name": "Disperser Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_disperser"
+}

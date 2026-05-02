@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "When the wearer's health falls below 20%, they will receive a strong dispel and be healed for 1500 health.Dispel Type: Strong Dispel",
+      "title": "Rejuvenate",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "heal",
+      "value": "1500"
+    },
+    {
+      "key": "health_threshold",
+      "value": "20"
+    }
+  ],
+  "behavior": null,
+  "cd": 75,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 365,
+  "mc": false,
+  "name": "Magic Lamp",
+  "notes": "",
+  "qual": null,
+  "short_name": "panic_button"
+}

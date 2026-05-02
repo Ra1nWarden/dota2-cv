@@ -1,0 +1,494 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "70",
+            "120",
+            "170",
+            "220"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED CHANGE:",
+          "key": "bonus_movespeed",
+          "value": [
+            "10%",
+            "14%",
+            "18%",
+            "22%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAGGER PATH DURATION:",
+          "key": "dagger_path_duration",
+          "value": "12"
+        },
+        {
+          "header": "DURATION:",
+          "key": "hero_path_duration",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "BUFF PERSISTENCE:",
+          "key": "buff_persistence",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER RADIUS:",
+          "key": "dagger_radius",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "PATH RADIUS:",
+          "key": "path_radius",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER GRACE PERIOD:",
+          "key": "dagger_grace_period",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "APPLIES DESOLATE:",
+          "key": "applies_desolate",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Unit Target"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "22",
+        "20",
+        "18",
+        "16"
+      ],
+      "desc": "Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre moves faster and phases through otherwise impassable terrain.",
+      "dmg_type": "Magical",
+      "key": "spectre_spectral_dagger",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Spectral Dagger"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "825",
+            "950",
+            "1075",
+            "1200"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.5",
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE INCOMING:",
+          "key": "illusion_damage_incoming",
+          "value": [
+            "100",
+            "85",
+            "70",
+            "55"
+          ]
+        },
+        {
+          "header": "ILLUSION DAMAGE TAKEN:",
+          "key": "tooltip_illusion_total_damage_incoming",
+          "value": [
+            "200%",
+            "185%",
+            "170%",
+            "155%"
+          ]
+        },
+        {
+          "header": "ILLUSION DAMAGE:",
+          "key": "illusion_outgoing_damage",
+          "value": [
+            "35%",
+            "40%",
+            "45%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MOVE SPEED:",
+          "key": "move_speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVE SPEED ILLUSION PCT:",
+          "key": "bonus_move_speed_illusion_pct",
+          "value": "35"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "Sends an uncontrollable illusion at a target that follows and attacks the target.\n\nThe Reality sub-ability may be used to teleport to the illusion, destroying it.",
+      "dmg_type": "",
+      "key": "spectre_shadow_step",
+      "mc": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "name": "Shadow Step"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE REFLECTED:",
+          "key": "damage_reflection_pct",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "header": "MIN RADIUS:",
+          "key": "min_radius",
+          "value": "350"
+        },
+        {
+          "header": "MAX RADIUS:",
+          "key": "max_radius",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION COOLDOWN:",
+          "key": "activation_cooldown",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION MANACOST:",
+          "key": "activation_manacost",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION BONUS PCT:",
+          "key": "activation_bonus_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION DURATION:",
+          "key": "activation_duration",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Spectre disperses part of the damage dealt to her, reflecting it to all nearby enemies. The effect lessens with distance.",
+      "dmg_type": "",
+      "key": "spectre_dispersion",
+      "mc": null,
+      "name": "Dispersion"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST DAGGER ON TARGET:",
+          "key": "cast_dagger_on_target",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAY TARGET SHADOW STEP:",
+          "key": "may_target_shadow_step",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "TRAVEL TIME:",
+          "key": "travel_time",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MIN SPEED:",
+          "key": "min_speed",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": "1.5",
+      "desc": "Spectre assumes the target Shadow Step or Haunt illusion, destroying it.",
+      "dmg_type": "",
+      "key": "spectre_reality",
+      "mc": "25",
+      "name": "Reality"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "bonus_damage",
+          "value": "23"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "350"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Spectre and her illusions deal bonus Pure damage if attacking an enemy that does not have any allied units within a 350 radius around them.",
+      "dmg_type": "Pure",
+      "key": "spectre_desolate",
+      "mc": null,
+      "name": "Desolate"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SCEPTER COOLDOWN REDUCTION TOOLTIP:",
+          "key": "scepter_cooldown_reduction_tooltip",
+          "value": "20"
+        },
+        {
+          "header": "HAUNT DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE OUTGOING:",
+          "key": "illusion_damage_outgoing",
+          "value": [
+            "-70",
+            "-50",
+            "-30"
+          ]
+        },
+        {
+          "header": "HAUNT DAMAGE:",
+          "key": "tooltip_outgoing",
+          "value": [
+            "30%",
+            "50%",
+            "70%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ILLUSION DAMAGE INCOMING:",
+          "key": "illusion_damage_incoming",
+          "value": "100"
+        },
+        {
+          "header": "HAUNT DAMAGE TAKEN:",
+          "key": "tooltip_illusion_total_damage_incoming",
+          "value": "200%"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK DELAY:",
+          "key": "attack_delay",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DESTROY IF TARGET IS DEAD:",
+          "key": "destroy_if_target_is_dead",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "FEAR DURATION:",
+          "key": "fear_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FEAR AOE:",
+          "key": "fear_aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FEAR MOVESPEED SLOW:",
+          "key": "fear_movespeed_slow",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "160",
+        "150",
+        "140"
+      ],
+      "desc": "Creates a spectral nemesis to haunt all enemy Heroes.\n\nHaunt illusions are uncontrollable, take extra damage, and deal less damage than Spectre herself. They ignore terrain.\n\nThe Reality sub-ability may be used to teleport to the illusion, destroying it.",
+      "dmg_type": "",
+      "key": "spectre_haunt",
+      "mc": [
+        "125",
+        "150",
+        "175"
+      ],
+      "name": "Haunt"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Haunt",
+    "desc": "The first time Spectre uses Reality on a Haunt illusion, enemies in a =400 area around the target are Feared away from Spectre for =1.5s and have their movement speed slowed by 50%.\n\nReduces cooldown by 20s.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Dispersion",
+    "desc": "Dispersion can be activated to increase the amount absorbed and reflected by Dispersion by 50% of its base values for 5s. Cooldown 25. Manacost 50.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 26,
+    "agi_gain": 2.4,
+    "armor": 0,
+    "attack_max": 27,
+    "attack_min": 23,
+    "attack_range": 150,
+    "attack_rate": 1.8,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1.5,
+    "int": 16,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.4
+  },
+  "name": "Spectre",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Escape"
+  ],
+  "short_name": "spectre",
+  "talents": [
+    {
+      "left": "+?% All Spectre Illusion Damage",
+      "level": 25,
+      "right": "+?% Dispersion"
+    },
+    {
+      "left": "+325 Health",
+      "level": 20,
+      "right": "+?% Spectral Dagger Slow/Bonus"
+    },
+    {
+      "left": "+?s Shadow Step Duration",
+      "level": 15,
+      "right": "+? Spectral Dagger Damage"
+    },
+    {
+      "left": "-?s Spectral Dagger Cooldown",
+      "level": 10,
+      "right": "+? Desolate Damage"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "abilities": [
+    {
+      "description": "Target an allied unit to increase their incoming Heal Amplification by 10% for 4s and instantly restore 17 health and 15 mana per charge stored. \n\nAutomatically gains a charge every 10 seconds and whenever a visible enemy within 1200 range uses an ability.",
+      "title": "Energy Charge",
+      "type": "active"
+    },
+    {
+      "description": "Amplifies heals you provide by 15%.",
+      "title": "Holy Blessing",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "bonus_mana",
+      "value": "0"
+    },
+    {
+      "key": "heal_increase_passive",
+      "value": "15"
+    },
+    {
+      "key": "max_charges",
+      "value": "25"
+    },
+    {
+      "key": "charge_radius",
+      "value": "1200"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "7"
+    },
+    {
+      "key": "health_restore_per_charge",
+      "value": "17"
+    },
+    {
+      "key": "mana_restore_per_charge",
+      "value": "15"
+    },
+    {
+      "key": "incoming_heal_increase_active",
+      "value": "10"
+    },
+    {
+      "key": "active_buff_duration",
+      "value": "4.0"
+    },
+    {
+      "key": "charge_gain_timer",
+      "value": "10"
+    },
+    {
+      "display": "COOLDOWN: {value}",
+      "key": "use_cooldown",
+      "value": "13"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": [
+    "magic_wand",
+    "crown"
+  ],
+  "cost": 2250,
+  "created": true,
+  "id": 269,
+  "mc": false,
+  "name": "Holy Locket",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "holy_locket"
+}

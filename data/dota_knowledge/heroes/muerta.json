@@ -1,0 +1,472 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ABILITYCASTRANGE:",
+          "key": "AbilityCastRange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "175",
+            "250",
+            "325"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "RICOCHET RADIUS START:",
+          "key": "ricochet_radius_start",
+          "value": "115"
+        },
+        {
+          "generated": true,
+          "header": "RICOCHET RADIUS END:",
+          "key": "ricochet_radius_end",
+          "value": "115"
+        },
+        {
+          "generated": true,
+          "header": "RICOCHET DISTANCE MULTIPLIER:",
+          "key": "ricochet_distance_multiplier",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "RICOCHET FEAR DURATION:",
+          "key": "ricochet_fear_duration",
+          "value": [
+            "0.8",
+            "0.95",
+            "1.1",
+            "1.25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IMPACT SLOW PERCENT:",
+          "key": "impact_slow_percent",
+          "value": "-100"
+        },
+        {
+          "generated": true,
+          "header": "IMPACT SLOW DURATION:",
+          "key": "impact_slow_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "GUNSLINGER BUFFED CHANCE DURATION:",
+          "key": "gunslinger_buffed_chance_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GUNSLINGER BUFFED CHANCE MULTIPLIER:",
+          "key": "gunslinger_buffed_chance_multiplier",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "muerta_dead_shot",
+      "mc": [
+        "100",
+        "120",
+        "140",
+        "160"
+      ],
+      "name": "Dead Shot"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "45",
+            "90",
+            "135",
+            "180"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HIT RADIUS:",
+          "key": "hit_radius",
+          "value": "120"
+        },
+        {
+          "generated": true,
+          "header": "DEAD ZONE DISTANCE:",
+          "key": "dead_zone_distance",
+          "value": "340"
+        },
+        {
+          "generated": true,
+          "header": "NUM REVENANTS:",
+          "key": "num_revenants",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "SPEED INITIAL:",
+          "key": "speed_initial",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "SPEED MAX:",
+          "key": "speed_max",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ACCELERATION:",
+          "key": "acceleration",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "ROTATION INITIAL:",
+          "key": "rotation_initial",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DEBUG DRAW:",
+          "key": "debug_draw",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AURA MOVESPEED SLOW:",
+          "key": "aura_movespeed_slow",
+          "value": "-20"
+        },
+        {
+          "generated": true,
+          "header": "SILENCE DURATION:",
+          "key": "silence_duration",
+          "value": [
+            "1.5",
+            "2",
+            "2.5",
+            "3"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ROTATION DIRECTION:",
+          "key": "rotation_direction",
+          "value": "-1"
+        },
+        {
+          "generated": true,
+          "header": "KILL CHECK RADIUS:",
+          "key": "kill_check_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KILL RADIUS EXPANSION:",
+          "key": "kill_radius_expansion",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "KILL RADIUS EXPANSION SPEED:",
+          "key": "kill_radius_expansion_speed",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "muerta_the_calling",
+      "mc": [
+        "135",
+        "150",
+        "165",
+        "180"
+      ],
+      "name": "The Calling"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DOUBLE SHOT CHANCE:",
+          "key": "double_shot_chance",
+          "value": [
+            "18",
+            "27",
+            "36",
+            "45"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TARGET SEARCH BONUS RANGE:",
+          "key": "target_search_bonus_range",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DEAD SHOT COOLDOWN REDUCTION ON PROC:",
+          "key": "dead_shot_cooldown_reduction_on_proc",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "muerta_gunslinger",
+      "mc": null,
+      "name": "Gunslinger"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2500"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "SLOW PCT:",
+          "key": "slow_pct",
+          "value": "-30"
+        },
+        {
+          "generated": true,
+          "header": "BONUS SPELL DAMAGE PCT:",
+          "key": "bonus_spell_damage_pct",
+          "value": "-20"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "12",
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "muerta_spectral_slug",
+      "mc": "75",
+      "name": "Spectral Slug"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "TRANSFORM DURATION:",
+          "key": "transform_duration",
+          "value": "0.35"
+        },
+        {
+          "generated": true,
+          "header": "BASE DAMAGE PERCENT:",
+          "key": "base_damage_percent",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "MODELSCALE:",
+          "key": "modelscale",
+          "value": "30"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "75",
+        "60",
+        "45"
+      ],
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "muerta_pierce_the_veil",
+      "mc": [
+        "150",
+        "250",
+        "350"
+      ],
+      "name": "Pierce the Veil"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "STACK COLLECTION RANGE:",
+          "key": "stack_collection_range",
+          "value": "925"
+        },
+        {
+          "generated": true,
+          "header": "SPELL AMP PER STACK:",
+          "key": "spell_amp_per_stack",
+          "value": "1"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "muerta_supernatural",
+      "mc": null,
+      "name": "Supernatural"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Dead Shot",
+    "desc": "Dead Shot damage is increased. Dead Shot expands after it ricochets and pierces through enemy heroes as it fears them.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Spectral Slug",
+    "desc": "Muerta shoots a spectral bullet at an enemy, dealing damage, knocking them back, and turning them ethereal for 3.0s - rendering them immune to physical damage and unable to attack. The target is slowed and -20% more vulnerable to magic damage. Enemies will not be knocked out of Muerta's attack range.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 21,
+    "agi_gain": 2.7,
+    "armor": 0,
+    "attack_max": 32,
+    "attack_min": 24,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 3.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 295,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2
+  },
+  "name": "Muerta",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "muerta",
+  "talents": [
+    {
+      "left": "special_bonus_unique_muerta_gunslinger_double_shot_chance",
+      "level": 25,
+      "right": "special_bonus_unique_muerta_dead_shot_charges"
+    },
+    {
+      "left": "special_bonus_unique_muerta_pierce_the_veil_duration",
+      "level": 20,
+      "right": "The Calling summons ? additional revenants"
+    },
+    {
+      "left": "+?% Max HP Regen while inside The Calling",
+      "level": 15,
+      "right": "+15 Intelligence"
+    },
+    {
+      "left": "+? Dead Shot Cast Range",
+      "level": 10,
+      "right": "+20 Attack Speed"
+    }
+  ]
+}

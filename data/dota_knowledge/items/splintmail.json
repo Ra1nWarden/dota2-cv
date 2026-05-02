@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 950,
+  "created": false,
+  "id": 1847,
+  "mc": false,
+  "name": "Splintmail",
+  "notes": "",
+  "qual": "component",
+  "short_name": "splintmail"
+}

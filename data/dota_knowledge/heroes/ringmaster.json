@@ -1,0 +1,710 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS START:",
+          "key": "start_width",
+          "value": "450"
+        },
+        {
+          "header": "RADIUS END:",
+          "key": "end_width",
+          "value": "200"
+        },
+        {
+          "header": "MIN DAMAGE:",
+          "key": "damage_min",
+          "value": [
+            "50",
+            "75",
+            "100",
+            "125"
+          ]
+        },
+        {
+          "header": "MAX DAMAGE:",
+          "key": "damage_max",
+          "value": [
+            "180",
+            "280",
+            "380",
+            "480"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CRACK DURATION:",
+          "key": "crack_duration",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "MAX MULTIPLIER:",
+          "key": "max_multiplier",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "WHIP CHANNEL REDUCTION:",
+          "key": "whip_channel_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "WHIP COOLDOWN REDUCTION:",
+          "key": "whip_cooldown_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESIST:",
+          "key": "magic_resist",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HAS DEBUFF IMMUNITY:",
+          "key": "has_debuff_immunity",
+          "value": "0"
+        },
+        {
+          "header": "MIN FEAR DURATION:",
+          "key": "fear_duration_min",
+          "value": [
+            "0.1",
+            "0.2",
+            "0.3",
+            "0.4"
+          ]
+        },
+        {
+          "header": "MAX FEAR DURATION:",
+          "key": "fear_duration_max",
+          "value": [
+            "0.6",
+            "0.8",
+            "1",
+            "1.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "CHANNELED - Ringmaster twirls his whip for up to 1 second then cracks it. Whipped enemies are damaged and flee in fear from Ringmaster. Channel time exponentially increases damage and extends the fear duration, but reduces the radius.",
+      "dmg_type": "Magical",
+      "key": "ringmaster_tame_the_beasts",
+      "mc": [
+        "90",
+        "105",
+        "120",
+        "135"
+      ],
+      "name": "Tame the Beasts"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "leash_radius",
+          "value": "500"
+        },
+        {
+          "header": "DURATION:",
+          "key": "invis_duration",
+          "value": [
+            "2",
+            "2.4",
+            "2.8",
+            "3.2"
+          ]
+        },
+        {
+          "header": "BONUS MOVEMENT SPEED:",
+          "key": "move_speed",
+          "value": [
+            "0%",
+            "8%",
+            "16%",
+            "24%"
+          ]
+        },
+        {
+          "header": "BONUS MAGIC RESISTANCE:",
+          "key": "magic_resist",
+          "value": [
+            "50%",
+            "60%",
+            "70%",
+            "80%"
+          ]
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "slow_resist",
+          "value": "100%"
+        },
+        {
+          "generated": true,
+          "header": "TRANSFORM TIME:",
+          "key": "transform_time",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "MODEL SCALE TIME:",
+          "key": "model_scale_time",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "HEAL ALLY:",
+          "key": "heal_ally",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "LEAP DISTANCE:",
+          "key": "leap_distance",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "LEAP SPEED:",
+          "key": "leap_speed",
+          "value": "1300"
+        },
+        {
+          "generated": true,
+          "header": "LEAP ACCELERATION:",
+          "key": "leap_acceleration",
+          "value": "20000"
+        },
+        {
+          "generated": true,
+          "header": "UNICYCLE DURATION:",
+          "key": "unicycle_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GRANT DEBUFF IMMUNITY:",
+          "key": "grant_debuff_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "38",
+        "32",
+        "26",
+        "20"
+      ],
+      "desc": "Ringmaster packs himself or an allied hero into a mobile, extradimensional box. Boxed units gain phased movement, slow resistance, bonus magic resistance, and bonus movement speed. They are also untargetable, muted, silenced, and disarmed. The box will pop open after the effect expires or it moves out of the initial area.",
+      "dmg_type": "",
+      "key": "ringmaster_the_box",
+      "mc": "120",
+      "name": "Escape Act"
+    },
+    {
+      "attrib": [
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "damage_impact",
+          "value": [
+            "20",
+            "35",
+            "50",
+            "65"
+          ]
+        },
+        {
+          "header": "MAX HEALTH DAMAGE PER SECOND (HEROES):",
+          "key": "bleed_health_pct",
+          "value": [
+            "3%",
+            "4%",
+            "5%",
+            "6%"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND (CREEPS):",
+          "key": "bleed_creep_dps",
+          "value": [
+            "85",
+            "90",
+            "95",
+            "100"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "bleed_duration",
+          "value": "4"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_percent",
+          "value": "100%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "0.5",
+            "0.6",
+            "0.7",
+            "0.8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAGGER SPEED:",
+          "key": "dagger_speed",
+          "value": "1350"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER WIDTH:",
+          "key": "dagger_width",
+          "value": "130"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER VISION:",
+          "key": "dagger_vision",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DAGGER PASS THROUGH:",
+          "key": "dagger_pass_through",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "2400"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "charge_restore_time",
+          "value": "17"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": "1",
+      "desc": "Ringmaster throws one of his daggers to a precise point of his choosing. If he strikes an enemy, the dagger deals impact damage, briefly slows the unit hit, and causes them to bleed. The bleeding deals a percentage of the victim's maximum health in damage every second to heroes and flat damage per second to creeps.",
+      "dmg_type": "Magical",
+      "key": "ringmaster_impalement",
+      "mc": "50",
+      "name": "Impalement Arts"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Gather souvenirs from kills and assists.",
+      "dmg_type": "",
+      "key": "ringmaster_empty_souvenir",
+      "mc": null,
+      "name": "Souvenir Slot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "header": "ILLUSION MAX HEALTH LOSS:",
+          "key": "illusion_percent_damage",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "PULSE INTERVAL:",
+          "key": "pulse_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "header": "MISS CHANCE:",
+          "key": "miss_chance",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL SPEED:",
+          "key": "initial_speed",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "SWEEP SPEED:",
+          "key": "sweep_speed",
+          "value": "0.785"
+        },
+        {
+          "generated": true,
+          "header": "SWEEP RADIUS:",
+          "key": "sweep_radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "LINGER DURATION:",
+          "key": "linger_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "SPOTLIGHT COUNT:",
+          "key": "spotlight_count",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "START OFFSET:",
+          "key": "start_offset",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1500"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "30",
+      "desc": "Ringmaster shines 3 spotlights that sweep over an area. Enemies in the light have a chance to miss their attacks and are revealed if invisible. Illusions hit by the beam fade away, losing a percentage of their maximum health each second. These effects linger for 0.3 seconds after leaving the light.",
+      "dmg_type": "Magical",
+      "key": "ringmaster_spotlight",
+      "mc": "50",
+      "name": "Spotlight"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MINIMUM RANGE:",
+          "key": "min_range",
+          "value": "700"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "mesmerize_radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1400"
+        },
+        {
+          "generated": true,
+          "header": "TRAP DURATION:",
+          "key": "trap_duration",
+          "value": "4"
+        },
+        {
+          "header": "TIMER DURATION:",
+          "key": "wheel_stun",
+          "value": [
+            "2.5",
+            "2.75",
+            "3"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FACE DURATION:",
+          "key": "face_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "AURA TICK INTERVAL:",
+          "key": "aura_tick_interval",
+          "value": "0.5"
+        },
+        {
+          "header": "AURA DAMAGE PER SECOND:",
+          "key": "aura_damage",
+          "value": [
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AURA SLOW:",
+          "key": "aura_slow",
+          "value": "-50"
+        },
+        {
+          "header": "EXPLOSION DAMAGE:",
+          "key": "explosion_damage",
+          "value": [
+            "300",
+            "450",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "VISION CONE:",
+          "key": "vision_cone",
+          "value": "0.08715"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK RADIUS:",
+          "key": "knockback_radius",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.35"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "90",
+        "80",
+        "70"
+      ],
+      "desc": "Ringmaster rolls the Wheel of Wonder to the targeted location, knocking aside enemies along the way. After it reaches its target, enemies in range of the wheel take damage over time and are slowed by -50%.\n\nEnemy heroes who face the wheel for more than 0.5 seconds are mesmerized and drawn towards it. The first enemy to be mesmerized triggers a timer for the wheel to explode. If the timer is not triggered, it will automatically explode after 4 seconds.",
+      "dmg_type": "Magical",
+      "key": "ringmaster_wheel",
+      "mc": [
+        "150",
+        "225",
+        "300"
+      ],
+      "name": "Wheel of Wonder"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Instant Cast",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "0.5",
+      "desc": "*CRACK*",
+      "dmg_type": "Magical",
+      "key": "ringmaster_tame_the_beasts_crack",
+      "mc": "0",
+      "name": "Crack"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Escape Act",
+    "desc": "Escape Act has 2 charges. When the box pops open, Impalement Art daggers are thrown in all directions, and all enemies around it take damage.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Spotlight",
+    "desc": "Ringmaster shines 3 spotlights that sweep over an area. Enemies in the light have a chance to miss their attacks and are revealed if invisible. Illusions hit by the beam fade away, losing a percentage of their maximum health each second. These effects linger for 0.3 seconds after leaving the light.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 11,
+    "agi_gain": 1.6,
+    "armor": 1,
+    "attack_max": 33,
+    "attack_min": 23,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.1
+  },
+  "name": "Ring Master",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Escape",
+    "Disabler"
+  ],
+  "short_name": "ringmaster",
+  "talents": [
+    {
+      "left": "+100 Wheel Radius and Range",
+      "level": 25,
+      "right": "Escape Act Grants Strong Dispel and Flying"
+    },
+    {
+      "left": "+1s Impalement Arts Bleed and Slow Duration",
+      "level": 20,
+      "right": "+75/+300 Tame the Beasts Min/Max Damage"
+    },
+    {
+      "left": "Impalement Arts Penetrates One Target",
+      "level": 15,
+      "right": "Debuff Immunity While Channeling Tame the Beasts"
+    },
+    {
+      "left": "special_bonus_unique_ringmaster_dagger_charge",
+      "level": 10,
+      "right": "+75 Tame the Beasts Radius"
+    }
+  ]
+}

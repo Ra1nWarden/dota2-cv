@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 2 armor to allied player units.\n\nRadius: 1200",
+      "title": "Buckler Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "armor",
+      "value": "1"
+    },
+    {
+      "key": "bonus_aoe_armor",
+      "value": "2"
+    },
+    {
+      "key": "bonus_aoe_radius",
+      "value": "1200"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ring_of_protection"
+  ],
+  "cost": 425,
+  "created": true,
+  "id": 86,
+  "mc": false,
+  "name": "Buckler",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "buckler"
+}

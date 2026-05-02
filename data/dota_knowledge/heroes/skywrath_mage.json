@@ -1,0 +1,375 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "875"
+        },
+        {
+          "generated": true,
+          "header": "BOLT SPEED:",
+          "key": "bolt_speed",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "BOLT VISION:",
+          "key": "bolt_vision",
+          "value": "325"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "bolt_damage",
+          "value": [
+            "60",
+            "90",
+            "120",
+            "150"
+          ]
+        },
+        {
+          "header": "INT DAMAGE MULTIPLIER:",
+          "key": "int_multiplier",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA BOLT SEARCH RADIUS:",
+          "key": "extra_bolt_search_radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "TOTAL BOLT COUNT:",
+          "key": "total_bolt_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "desc": "Skywrath Mage launches a slow-moving bolt of arcane magic, dealing damage to an enemy unit based on Skywrath Mage's intelligence.",
+      "dmg_type": "Magical",
+      "key": "skywrath_mage_arcane_bolt",
+      "mc": "70",
+      "name": "Arcane Bolt"
+    },
+    {
+      "attrib": [
+        {
+          "header": "SHOT RANGE:",
+          "key": "launch_radius",
+          "value": "1600"
+        },
+        {
+          "header": "DAMAGE RADIUS:",
+          "key": "slow_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "800"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "120",
+            "180",
+            "240",
+            "300"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "4"
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_speed_pct",
+          "value": "40%"
+        },
+        {
+          "generated": true,
+          "header": "SHOT VISION:",
+          "key": "shot_vision",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "14",
+        "13",
+        "12"
+      ],
+      "desc": "Skywrath Mage sets off a long range shot that hits the closest hero within a long range. Upon impact, it deals damage and slows in an area of effect.",
+      "dmg_type": "Magical",
+      "key": "skywrath_mage_concussive_shot",
+      "mc": [
+        "80",
+        "85",
+        "90",
+        "95"
+      ],
+      "name": "Concussive Shot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "INCREASED MAGIC DAMAGE:",
+          "key": "resist_debuff",
+          "value": [
+            "-20%",
+            "-25%",
+            "-30%",
+            "-35%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "seal_duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "750",
+            "800",
+            "850"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "14",
+      "desc": "Skywrath Mage seals the targeted unit with an ancient rune, silencing it and causing it to take additional damage from spells.",
+      "dmg_type": "",
+      "key": "skywrath_mage_ancient_seal",
+      "mc": [
+        "80",
+        "90",
+        "100",
+        "110"
+      ],
+      "name": "Ancient Seal"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "STACK DURATION:",
+          "key": "stack_duration",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "BONUS INTELLIGENCE:",
+          "key": "bonus_intelligence",
+          "value": "0"
+        },
+        {
+          "header": "BARRIER:",
+          "key": "damage_barrier",
+          "value": "13.5"
+        },
+        {
+          "header": "DURATION:",
+          "key": "barrier_duration",
+          "value": "12"
+        }
+      ],
+      "behavior": [
+        "Hidden",
+        "Passive"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Every time Skywrath Mage deals magical damage to an enemy hero with his abilities, he gains a small magic damage barrier. Each buff stacks independently.",
+      "dmg_type": "",
+      "key": "skywrath_mage_shield_of_the_scion",
+      "mc": null,
+      "name": "Shield of the Scion"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "170"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "800",
+            "1200",
+            "1600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE INTERVAL:",
+          "key": "damage_interval",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "60",
+        "40",
+        "20"
+      ],
+      "desc": "Skywrath Mage uses his ultimate magical ability to conjure a precise and violent mystical field that lays waste to his adversaries. Deals massive damage distributed evenly among any Heroes in the area over 2 seconds.",
+      "dmg_type": "Magical",
+      "key": "skywrath_mage_mystic_flare",
+      "mc": [
+        "300",
+        "550",
+        "800"
+      ],
+      "name": "Mystic Flare"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Mystic Flare",
+    "desc": "When Skywrath Mage casts Mystic Flare, another Mystic Flare will be created on the position of a different random target enemy within 500 range of the original target. Heroes will take priority.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Arcane Bolt",
+    "desc": "When Skywrath Mage casts Arcane Bolt, 3 bolts are created, one aimed at the original target, and two others aimed at random enemies within %extra_bolt_search_radius% range of the original target. Heroes will take priority.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 13,
+    "agi_gain": 0.8,
+    "armor": -2,
+    "attack_max": 26,
+    "attack_min": 16,
+    "attack_range": 625,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 4.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.25,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2
+  },
+  "name": "Skywrath Mage",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "skywrath_mage",
+  "talents": [
+    {
+      "left": "+?x Arcane Bolt Int Multiplier",
+      "level": 25,
+      "right": "+? Mystic Flare Damage"
+    },
+    {
+      "left": "Global Concussive Shot",
+      "level": 20,
+      "right": "+?% Ancient Seal Increased Magic Damage"
+    },
+    {
+      "left": "-?s Ancient Seal Cooldown",
+      "level": 15,
+      "right": "+?% Concussive Shot Slow"
+    },
+    {
+      "left": "+1.5 Mana Regen",
+      "level": 10,
+      "right": "+? Arcane Bolt Cast Range"
+    }
+  ]
+}

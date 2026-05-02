@@ -1,0 +1,30 @@
+{
+  "abilities": [
+    {
+      "description": "Temporarily grants an allied target the Aghanim's Scepter buff for 3 minutes.",
+      "title": "Consume",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration_minutes",
+      "value": "3"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 307,
+  "mc": false,
+  "name": "Tome of Aghanim",
+  "notes": "",
+  "qual": null,
+  "short_name": "tome_of_aghanim"
+}

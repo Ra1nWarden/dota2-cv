@@ -1,0 +1,19 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 295,
+  "mc": false,
+  "name": "greater_mango",
+  "notes": "",
+  "qual": null,
+  "short_name": "greater_mango"
+}

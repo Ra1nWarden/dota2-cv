@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "Increases the bonuses of the item's Neutral Enchantment by 15%. Every time this item is crafted again the bonus is increased by 40%.",
+      "title": "Enchant",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "enchantment_bonus_base",
+      "value": "15"
+    },
+    {
+      "key": "enchantment_bonus_growth",
+      "value": "40"
+    },
+    {
+      "display": "CURRENT BONUS: {value}%",
+      "key": "current_bonus",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1862,
+  "mc": false,
+  "name": "Enchanter's Bauble",
+  "notes": "",
+  "qual": null,
+  "short_name": "enchanters_bauble"
+}

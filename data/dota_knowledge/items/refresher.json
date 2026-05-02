@@ -1,0 +1,53 @@
+{
+  "abilities": [
+    {
+      "description": "Resets the cooldowns of all your abilities. Shares a cooldown with Refresher Shard. This item's cooldown only progresses in your hero's main inventory.",
+      "title": "Reset Cooldowns",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "14"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "7.0"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "0"
+    },
+    {
+      "key": "max_level",
+      "value": "1"
+    },
+    {
+      "key": "cooldown_duration",
+      "value": "180"
+    },
+    {
+      "key": "refresh_items",
+      "value": "0"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 180,
+  "charges": false,
+  "components": [
+    "ring_of_tarrasque",
+    "tiara_of_selemene"
+  ],
+  "cost": 5000,
+  "created": true,
+  "id": 110,
+  "mc": 325,
+  "name": "Refresher Orb",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "refresher"
+}

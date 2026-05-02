@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Area of Effect",
+      "key": "aoe_bonus",
+      "value": "40"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 800,
+  "created": false,
+  "id": 1872,
+  "mc": false,
+  "name": "Chasm Stone",
+  "notes": "AoE bonuses from multiple Chasm Stones or its upgrades do not stack.",
+  "qual": "component",
+  "short_name": "chasm_stone"
+}

@@ -1,0 +1,470 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "BREAK DISTANCE:",
+          "key": "break_distance",
+          "value": [
+            "725",
+            "750",
+            "775",
+            "800"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "1.8",
+            "2.2",
+            "2.6",
+            "3"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AREA OF EFFECT:",
+          "key": "area_of_effect",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "800",
+            "900",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "13",
+        "11",
+        "9"
+      ],
+      "desc": "Places a curse on an enemy, dealing damage over time. If the enemy unit doesn't move outside of the given range from the initial location, it will be stunned and frozen in place after 4 seconds.",
+      "dmg_type": "Magical",
+      "key": "ancient_apparition_cold_feet",
+      "mc": [
+        "110",
+        "115",
+        "120",
+        "125"
+      ],
+      "name": "Cold Feet"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "DRAG SPEED:",
+          "key": "drag_speed",
+          "value": [
+            "40",
+            "50",
+            "60",
+            "70"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_speed_pct",
+          "value": "-8"
+        },
+        {
+          "header": "INCREASED MAGIC DAMAGE:",
+          "key": "spell_resist_pct",
+          "value": [
+            "-16",
+            "-19",
+            "-22",
+            "-25"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISION AOE:",
+          "key": "vision_aoe",
+          "value": [
+            "200",
+            "220",
+            "240",
+            "260"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "vortex_duration",
+          "value": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "10",
+        "8",
+        "6",
+        "4"
+      ],
+      "desc": "Creates a vortex of icy energy that slows, deals damage, and increases magic damage done to enemies in its range.",
+      "dmg_type": "Magical",
+      "key": "ancient_apparition_ice_vortex",
+      "mc": [
+        "40",
+        "55",
+        "70",
+        "85"
+      ],
+      "name": "Ice Vortex"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "30",
+            "60",
+            "90",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "100"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "0.7",
+            "0.8",
+            "0.9",
+            "1"
+          ]
+        },
+        {
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": [
+            "60",
+            "90",
+            "120",
+            "150"
+          ]
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Autocast",
+        "Attack Modifier"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "12",
+        "9",
+        "6",
+        "3"
+      ],
+      "desc": "Enhances Ancient Apparition's attack with increased range and a burst of magical damage and slow.",
+      "dmg_type": "Magical",
+      "key": "ancient_apparition_chilling_touch",
+      "mc": "35",
+      "name": "Chilling Touch"
+    },
+    {
+      "attrib": [
+        {
+          "header": "STRENGTH REDUCTION:",
+          "key": "str_reduction",
+          "value": ".1"
+        },
+        {
+          "generated": true,
+          "header": "TOOLTIP SCEPTER BONUS:",
+          "key": "tooltip_scepter_bonus",
+          "value": "0.3"
+        },
+        {
+          "header": "DURATION:",
+          "key": "str_reduction_duration",
+          "value": "4"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow_pct",
+          "value": "2"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "When Ancient Apparition deals Magic damage to an enemy with his abilities, it is slowed for a short duration. If the target is a Hero, its Strength is also reduced. Multiple instances of this effect stack and have independent durations.",
+      "dmg_type": "Magical",
+      "key": "ancient_apparition_bone_chill",
+      "mc": null,
+      "name": "Bone Chill"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS MIN:",
+          "key": "radius_min",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS GROW:",
+          "key": "radius_grow",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS MAX:",
+          "key": "radius_max",
+          "value": "1000"
+        },
+        {
+          "header": "PATH RADIUS:",
+          "key": "path_radius",
+          "value": "275"
+        },
+        {
+          "header": "FROSTBITTEN DURATION:",
+          "key": "frostbite_duration",
+          "value": [
+            "10",
+            "11",
+            "12"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1500"
+        },
+        {
+          "header": "SHATTER HEALTH THRESHOLD:",
+          "key": "kill_pct",
+          "value": [
+            "12",
+            "13",
+            "14"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "COLD FEET STUN DURATION PCT:",
+          "key": "cold_feet_stun_duration_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TARGET SIGHT RADIUS:",
+          "key": "target_sight_radius",
+          "value": "500"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": [
+            "12",
+            "24",
+            "36"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.01"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "60",
+        "50",
+        "40"
+      ],
+      "desc": "Launches a tracer toward any location on the battlefield, which must be triggered again to mark the area to be blasted by a damaging explosion of hail. The further the tracer travels, the larger the explosion will be. Enemies caught in the explosion, or who touch the icy ball of hail as it travels, are Frostbitten, taking damage over time and prevented from regenerating or healing. If a Frostbitten unit's health drops below a certain percentage, they will instantly shatter.",
+      "dmg_type": "Magical",
+      "key": "ancient_apparition_ice_blast",
+      "mc": "175",
+      "name": "Ice Blast"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "Hidden",
+        "No Target"
+      ],
+      "bkbpierce": "",
+      "cd": "1",
+      "desc": "Releases the ice blast to explode at the tracer's current location. Can be cast while silenced.",
+      "dmg_type": "",
+      "key": "ancient_apparition_ice_blast_release",
+      "mc": null,
+      "name": "Release"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Bone Chill",
+    "desc": "Increases Base Strength Reduction.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Ice Blast",
+    "desc": "Freezes enemies hit with the current level of Cold Feet for 50% of the duration.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 20,
+    "agi_gain": 2,
+    "armor": -1,
+    "attack_max": 31,
+    "attack_min": 21,
+    "attack_range": 675,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 3.1,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 1.9
+  },
+  "name": "Ancient Apparition",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "ancient_apparition",
+  "talents": [
+    {
+      "left": "450 AoE Cold Feet",
+      "level": 25,
+      "right": "+4% Ice Blast Kill Threshold"
+    },
+    {
+      "left": "+4s Ice Blast Frostbitten Duration",
+      "level": 20,
+      "right": "+80 Chilling Touch Damage"
+    },
+    {
+      "left": "-2s Ice Vortex Cooldown",
+      "level": 15,
+      "right": "+? Cold Feet Break Distance"
+    },
+    {
+      "left": "+300 Chilling Touch Attack Range",
+      "level": 10,
+      "right": "+? Cold Feet Damage Per Second"
+    }
+  ]
+}

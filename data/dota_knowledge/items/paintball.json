@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "Throws a Mark towards an enemy within 900 range applying a debuff that deals 40 damage every second and provides vision of the unit for 7 seconds.",
+      "title": "Shadow Brand",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "movespeed",
+      "value": "20"
+    },
+    {
+      "key": "dps",
+      "value": "40"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 20,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 835,
+  "mc": 25,
+  "name": "Fae Grenade",
+  "notes": "Does not trigger spell block or spell reflect.",
+  "qual": null,
+  "short_name": "paintball"
+}

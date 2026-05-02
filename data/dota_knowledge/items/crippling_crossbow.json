@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Hits an enemy for 25 damage, then slows them by 50% and reduces Health Restoration by 40% for 4 seconds. The slow gradually fades over the duration of the spell.",
+      "title": "Hobble",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "slow_pct",
+      "value": "50"
+    },
+    {
+      "key": "heal_reduce",
+      "value": "40"
+    },
+    {
+      "key": "duration",
+      "value": "4"
+    },
+    {
+      "key": "damage",
+      "value": "25"
+    },
+    {
+      "key": "projectile_speed",
+      "value": "1400"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1601,
+  "mc": 50,
+  "name": "Crippling Crossbow",
+  "notes": "",
+  "qual": null,
+  "short_name": "crippling_crossbow"
+}

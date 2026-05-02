@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1,
+  "created": false,
+  "id": 275,
+  "mc": false,
+  "name": "Trident Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_trident"
+}

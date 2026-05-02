@@ -1,0 +1,26 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "bonus_xpm",
+      "value": "1000"
+    },
+    {
+      "display": "+ {value}% Max Mana",
+      "key": "max_mana_pct",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1591,
+  "mc": false,
+  "name": "Wise",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_wise"
+}

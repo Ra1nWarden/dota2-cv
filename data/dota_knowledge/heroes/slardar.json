@@ -1,0 +1,356 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "bonus_speed",
+          "value": [
+            "10%",
+            "18%",
+            "26%",
+            "34%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "SPEED BURST MAX DURATION:",
+          "key": "speed_burst_max_duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "SLOW RESISTANCE TOOLTIP:",
+          "key": "slow_resistance_tooltip",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "29",
+        "25",
+        "21",
+        "17"
+      ],
+      "desc": "Slardar slithers ahead, moving significantly faster and passing through units. Slardar has 100% slow resistance for the first 2.5s. The slow resistance gradually fades over the remaining sprint duration.",
+      "dmg_type": "",
+      "key": "slardar_sprint",
+      "mc": "25",
+      "name": "Guardian Sprint"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "crush_radius",
+          "value": "325"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "crush_extra_slow",
+          "value": [
+            "-20%",
+            "-25%",
+            "-30%",
+            "-35%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "crush_attack_slow_tooltip",
+          "value": [
+            "-20",
+            "-25",
+            "-30",
+            "-35"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "crush_extra_slow_duration",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0.8"
+        },
+        {
+          "header": "PUDDLE DURATION:",
+          "key": "puddle_duration",
+          "value": "7"
+        },
+        {
+          "header": "PUDDLE RADIUS:",
+          "key": "puddle_radius",
+          "value": "325"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "crush_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "7",
+      "desc": "Slams the ground, leaving a puddle of water, and stunning and damaging nearby enemy units. After the stun, the affected units are slowed.",
+      "dmg_type": "Physical",
+      "key": "slardar_slithereen_crush",
+      "mc": "100",
+      "name": "Slithereen Crush"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "35",
+            "90",
+            "145",
+            "200"
+          ]
+        },
+        {
+          "header": "BASH DURATION:",
+          "key": "duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK COUNT:",
+          "key": "attack_count",
+          "value": "3"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "After 3 attacks, your next attack will bash the target.",
+      "dmg_type": "Physical",
+      "key": "slardar_bash",
+      "mc": null,
+      "name": "Bash of the Deep"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS MOVE SPEED:",
+          "key": "river_speed",
+          "value": "18%"
+        },
+        {
+          "header": "HP REGEN:",
+          "key": "puddle_regen",
+          "value": "1.75"
+        },
+        {
+          "header": "BONUS ARMOR:",
+          "key": "puddle_armor",
+          "value": "1.8"
+        },
+        {
+          "header": "BONUS ATTACK DAMAGE:",
+          "key": "river_damage_pct",
+          "value": "11.4%"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER PUDDLE RADIUS TOOLTIP:",
+          "key": "scepter_puddle_radius_tooltip",
+          "value": "75"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER PUDDLE DURATION INCREASE TOOLTIP:",
+          "key": "scepter_puddle_duration_increase_tooltip",
+          "value": "5"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Slardar gains bonus movement speed, health regeneration, attack damage, and armor while in a puddle, trail, or river.",
+      "dmg_type": "",
+      "key": "slardar_seaborn_sentinel",
+      "mc": null,
+      "name": "Seaborn Sentinel"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor_reduction",
+          "value": [
+            "-10",
+            "-15",
+            "-20"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "18"
+        },
+        {
+          "generated": true,
+          "header": "UNDISPELLABLE:",
+          "key": "undispellable",
+          "value": "0"
+        },
+        {
+          "header": "TRAIL RADIUS:",
+          "key": "puddle_radius",
+          "value": "100"
+        },
+        {
+          "header": "TRAIL DURATION:",
+          "key": "puddle_duration",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "HAS SELF BUFF:",
+          "key": "has_self_buff",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR PCT:",
+          "key": "armor_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": "5",
+      "desc": "Reduces enemy armor to amplify physical damage and provides True Sight and vision of the targeted unit, revealing invisibility. The enemy unit leaves a trail of water behind it.",
+      "dmg_type": "",
+      "key": "slardar_amplify_damage",
+      "mc": "25",
+      "name": "Corrosive Haze"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Seaborn Sentinel",
+    "desc": "Provides additional HP Regen, Armor and Status Resistance while in a puddle, trail, or river. Increases puddle/trail radius by 75% and puddle/trail duration by 5s.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Slithereen Crush",
+    "desc": "Slithereen Crush now applies Corrosive Haze for a short time to units affected.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 2.1,
+    "armor": 2,
+    "attack_max": 38,
+    "attack_min": 30,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 15,
+    "int_gain": 1.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 3.4
+  },
+  "name": "Slardar",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Initiator",
+    "Disabler",
+    "Escape"
+  ],
+  "short_name": "slardar",
+  "talents": [
+    {
+      "left": "-?s Slithereen Crush Cooldown",
+      "level": 25,
+      "right": "Corrosive Haze Undispellable"
+    },
+    {
+      "left": "+? Slithereen Crush Damage",
+      "level": 20,
+      "right": "+?% Seaborn Sentinel Bonus Attack Damage"
+    },
+    {
+      "left": "+250 Health",
+      "level": 15,
+      "right": "-? Corrosive Haze Armor"
+    },
+    {
+      "left": "+?s Guardian Sprint Duration",
+      "level": 10,
+      "right": "+? Bash of the Deep Damage"
+    }
+  ]
+}

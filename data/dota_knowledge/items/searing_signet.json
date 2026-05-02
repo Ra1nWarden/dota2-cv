@@ -1,0 +1,47 @@
+{
+  "abilities": [
+    {
+      "description": "Instances of magic damage from spells over 60 ignites enemies, causing them to take 80 magic damage over 6 seconds. Burn damage against non-hero targets is decreased by 50%.",
+      "title": "Burn Through",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage_threshold",
+      "value": "60"
+    },
+    {
+      "key": "burn_damage",
+      "value": "80"
+    },
+    {
+      "key": "burn_duration",
+      "value": "6"
+    },
+    {
+      "key": "burn_tickrate",
+      "value": ".25"
+    },
+    {
+      "key": "creep_penalty",
+      "value": "50"
+    },
+    {
+      "key": "max_range",
+      "value": "2000"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1604,
+  "mc": false,
+  "name": "Searing Signet",
+  "notes": "Will not ignite enemies that are more than 2000 range away.",
+  "qual": null,
+  "short_name": "searing_signet"
+}

@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Instantly restores 400 health and mana.",
+      "title": "Eat Lotus",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "replenish_amount",
+      "value": "400"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 5,
+  "charges": 1,
+  "components": [
+    "famango",
+    "famango",
+    "famango"
+  ],
+  "cost": 0,
+  "created": true,
+  "id": 4205,
+  "mc": false,
+  "name": "Great Healing Lotus",
+  "notes": "Hold Control to use on a nearby allied hero.",
+  "qual": "consumable",
+  "short_name": "great_famango"
+}

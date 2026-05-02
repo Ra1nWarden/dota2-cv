@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Attacks reduce the target's armor and movement speed. Slow amount varies based on whether the wearer is melee or ranged.",
+      "title": "Impeding Corruption",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "ARMOR REDUCTION: {value}",
+      "key": "armor_reduction",
+      "value": "2"
+    },
+    {
+      "display": "SLOW (MELEE): {value}%",
+      "key": "slow_melee",
+      "value": "8"
+    },
+    {
+      "display": "SLOW (RANGE): {value}%",
+      "key": "slow_range",
+      "value": "4"
+    },
+    {
+      "display": "DURATION: {value}",
+      "key": "duration",
+      "value": "3"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 378,
+  "mc": false,
+  "name": "Orb of Destruction",
+  "notes": "",
+  "qual": null,
+  "short_name": "orb_of_destruction"
+}

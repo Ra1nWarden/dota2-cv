@@ -1,0 +1,70 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 20% lifesteal, 18% bonus damage, 1 mana regeneration, and 2 armor to nearby allies.\n\nRadius: 1200",
+      "title": "Vladmir's Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "armor",
+      "value": "1"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "mana_regen",
+      "value": "0.75"
+    },
+    {
+      "key": "armor_aura",
+      "value": "2.0"
+    },
+    {
+      "key": "mana_regen_aura",
+      "value": "1"
+    },
+    {
+      "key": "lifesteal_aura",
+      "value": "20"
+    },
+    {
+      "key": "damage_aura",
+      "value": "18"
+    },
+    {
+      "key": "lifesteal_self",
+      "value": "0"
+    },
+    {
+      "key": "damage_self",
+      "value": "0"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "lifesteal_creeps_tooltip",
+      "value": "12"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "buckler",
+    "ring_of_basilius",
+    "lifesteal",
+    "blades_of_attack"
+  ],
+  "cost": 2200,
+  "created": true,
+  "id": 81,
+  "mc": false,
+  "name": "Vladmir's Offering",
+  "notes": "Lifesteal on attacks against creeps is reduced to 12%.",
+  "qual": "rare",
+  "short_name": "vladmir"
+}

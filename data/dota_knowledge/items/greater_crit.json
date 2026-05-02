@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Grants each attack a 30% chance to deal 225% damage.",
+      "title": "Critical Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "88"
+    },
+    {
+      "key": "crit_chance",
+      "value": "30"
+    },
+    {
+      "key": "crit_multiplier",
+      "value": "225"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "lesser_crit",
+    "demon_edge"
+  ],
+  "cost": 5100,
+  "created": true,
+  "id": 141,
+  "mc": false,
+  "name": "Daedalus",
+  "notes": "Critical Strike does not work against buildings.",
+  "qual": "epic",
+  "short_name": "greater_crit"
+}

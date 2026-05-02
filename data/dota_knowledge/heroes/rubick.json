@@ -1,0 +1,500 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "LIFT DURATION:",
+          "key": "lift_duration",
+          "value": [
+            "0.95",
+            "1.2",
+            "1.45",
+            "1.7"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": [
+            "0.9",
+            "1.1",
+            "1.3",
+            "1.5"
+          ]
+        },
+        {
+          "header": "IMPACT RADIUS:",
+          "key": "radius",
+          "value": [
+            "300",
+            "325",
+            "350",
+            "375"
+          ]
+        },
+        {
+          "header": "MAX THROW DISTANCE:",
+          "key": "max_land_distance",
+          "value": "375"
+        },
+        {
+          "generated": true,
+          "header": "FALL DURATION:",
+          "key": "fall_duration",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "550",
+            "575",
+            "600",
+            "625"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "19",
+        "16",
+        "13"
+      ],
+      "desc": "Rubick uses his telekinetic powers to lift the enemy into the air briefly and then hurls them back at the ground. The unit lands on the ground with such force that it stuns nearby enemies.",
+      "dmg_type": "",
+      "key": "rubick_telekinesis",
+      "mc": "110",
+      "name": "Telekinesis"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "100",
+            "175",
+            "250",
+            "325"
+          ]
+        },
+        {
+          "header": "JUMP REDUCTION:",
+          "key": "jump_damage_reduction_pct",
+          "value": "6%"
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": [
+            "6%",
+            "12%",
+            "18%",
+            "24%"
+          ]
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "440"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DELAY:",
+          "key": "jump_delay",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "STEALS DAMAGE:",
+          "key": "steals_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "16",
+        "14",
+        "12",
+        "10"
+      ],
+      "desc": "Rubick creates a powerful stream of arcane energy that travels between enemy units, dealing damage and reducing their attack and spell damage. Each jump deals less damage.",
+      "dmg_type": "Magical",
+      "key": "rubick_fade_bolt",
+      "mc": [
+        "110",
+        "125",
+        "140",
+        "155"
+      ],
+      "name": "Fade Bolt"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CAST RANGE:",
+          "key": "cast_range",
+          "value": [
+            "60",
+            "120",
+            "180",
+            "240"
+          ]
+        },
+        {
+          "header": "SPELL AMP:",
+          "key": "spell_amp",
+          "value": [
+            "11%",
+            "16%",
+            "21%",
+            "26%"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Rubick's mastery of the arcane allows him to have a larger cast range and bonus spell amplification.",
+      "dmg_type": "",
+      "key": "rubick_arcane_supremacy",
+      "mc": null,
+      "name": "Arcane Supremacy"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Spells acquired with Spell Steal will replace this slot.",
+      "dmg_type": "",
+      "key": "rubick_empty1",
+      "mc": null,
+      "name": "Stolen Spell"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Spells acquired with Spell Steal will replace this slot.",
+      "dmg_type": "",
+      "key": "rubick_empty2",
+      "mc": null,
+      "name": "Stolen Spell"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1500"
+        },
+        {
+          "header": "STOLEN DEBUFF AMP:",
+          "key": "stolen_debuff_amp",
+          "value": "0%"
+        },
+        {
+          "header": "STOLEN MANA COST REDUCTION:",
+          "key": "stolen_mana_reduction",
+          "value": "0%"
+        },
+        {
+          "header": "STOLEN SPELL COOLDOWN REDUCTION:",
+          "key": "stolen_spell_cooldown_percent",
+          "value": [
+            "10%",
+            "20%",
+            "30%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "180",
+            "240",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY STEAL FACTOR:",
+          "key": "curiosity_steal_factor",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "16",
+        "10",
+        "4"
+      ],
+      "desc": "Rubick studies the trace magical essence of one enemy hero, learning the secrets of the last spell the hero cast. Rubick can use this spell as his own for several minutes or until he dies.",
+      "dmg_type": "",
+      "key": "rubick_spell_steal",
+      "mc": "25",
+      "name": "Spell Steal"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "300",
+            "325",
+            "350",
+            "375"
+          ]
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden",
+        "Instant Cast",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Chooses the location the target will land when Telekinesis finishes.",
+      "dmg_type": "",
+      "key": "rubick_telekinesis_land",
+      "mc": null,
+      "name": "Telekinesis Land"
+    },
+    {
+      "attrib": [],
+      "behavior": "Hidden",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "rubick_hidden1",
+      "mc": null,
+      "name": "rubick_hidden1"
+    },
+    {
+      "attrib": [],
+      "behavior": "Hidden",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "rubick_hidden2",
+      "mc": null,
+      "name": "rubick_hidden2"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CURIOSITY PER SPELL CAST:",
+          "key": "curiosity_per_spell_cast",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY DURATION:",
+          "key": "curiosity_duration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY PER LEVEL:",
+          "key": "curiosity_per_level",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY ATTACK DAMAGE:",
+          "key": "curiosity_attack_damage",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY MODIFIER AMP:",
+          "key": "curiosity_modifier_amp",
+          "value": "0.3"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY AOE BONUS:",
+          "key": "curiosity_aoe_bonus",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY PER KILL:",
+          "key": "curiosity_per_kill",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "GRACE PERIOD:",
+          "key": "grace_period",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CURIOSITY FACTOR:",
+          "key": "curiosity_factor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RADIUS:",
+          "key": "charge_radius",
+          "value": "1200"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Rubick gains 1 stack of Curiosity per level that grants him 1 base damage, 0.3% Buff/Debuff Duration, and 2 AOE Bonus. \n\nIf Rubick sees an enemy Hero cast an ability within 1200 distance of him, he gains 2 Curiosity for 20 seconds. If an enemy Hero dies while Rubick has Curiosity from them and he damaged them in the last 3 seconds, he gains 1 Curiosity permanently.",
+      "dmg_type": "",
+      "key": "rubick_curiosity",
+      "mc": null,
+      "name": "Curiosity"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "300",
+            "325",
+            "350",
+            "375"
+          ]
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden",
+        "AOE",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Chooses the location you will land when Telekinesis finishes.",
+      "dmg_type": "",
+      "key": "rubick_telekinesis_land_self",
+      "mc": null,
+      "name": "Telekinesis Land"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Spell Steal",
+    "desc": "Increases the number of spells that can be stolen to 2. Increases cast range, and upgrades spells to their Scepter version.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Telekinesis",
+    "desc": "Allows you to target yourself or allies with Telekinesis. Throw distance is increased to 600 and throw delay is reduced to 0.5 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 23,
+    "agi_gain": 2.5,
+    "armor": 1,
+    "attack_max": 31,
+    "attack_min": 25,
+    "attack_range": 550,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 24,
+    "int_gain": 3.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2
+  },
+  "name": "Rubick",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "rubick",
+  "talents": [
+    {
+      "left": "?x Curiosity Bonuses",
+      "level": 25,
+      "right": "+?% Spell Amp For Stolen Spells"
+    },
+    {
+      "left": "+?% Fade Bolt Damage Reduction",
+      "level": 20,
+      "right": "Telekinesis Landing Deals ? Damage"
+    },
+    {
+      "left": "-?% Stolen Spells Mana Cost",
+      "level": 15,
+      "right": "-?s Fade Bolt Cooldown"
+    },
+    {
+      "left": "-?s Telekinesis Cooldown",
+      "level": 10,
+      "right": "+200 Health"
+    }
+  ]
+}

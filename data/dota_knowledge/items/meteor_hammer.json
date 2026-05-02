@@ -1,0 +1,103 @@
+{
+  "abilities": [
+    {
+      "description": "CHANNELED - After a successful channel, summons a meteor that strikes a 400 AoE, stunning enemies for 0.75 seconds and dealing impact damage. Continues to deal damage over time to enemies units and buildings for 6 seconds. Non-building units are also slowed for 20% for the duration of the burn. \n\nBuilding Impact Damage: 90 \nBuilding Over Time Damage: 50 \n\nNon-Building Impact Damage: 130 \nNon-Building Over Time Damage: 50 \n\nChannel Duration: 2 seconds.\nLanding Time: 0.5 seconds.",
+      "title": "Meteor Hammer",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "24"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "10"
+    },
+    {
+      "display": "+ {value}% Mana Regen Amplification",
+      "key": "mana_regen_multiplier",
+      "value": "35"
+    },
+    {
+      "key": "burn_dps_buildings",
+      "value": "50"
+    },
+    {
+      "key": "burn_dps_units",
+      "value": "50"
+    },
+    {
+      "key": "burn_slow",
+      "value": "20"
+    },
+    {
+      "key": "burn_duration",
+      "value": "6"
+    },
+    {
+      "key": "stun_duration",
+      "value": "0.75"
+    },
+    {
+      "key": "burn_interval",
+      "value": "1.0"
+    },
+    {
+      "key": "land_time",
+      "value": ".5"
+    },
+    {
+      "key": "impact_radius",
+      "value": "400"
+    },
+    {
+      "key": "max_duration",
+      "value": "2"
+    },
+    {
+      "key": "impact_damage_buildings",
+      "value": "90"
+    },
+    {
+      "key": "impact_damage_units",
+      "value": "130"
+    },
+    {
+      "key": "enemy_particles_visible",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE",
+    "Channeled"
+  ],
+  "cd": 24,
+  "charges": false,
+  "components": [
+    "kaya",
+    "crown"
+  ],
+  "cost": 2850,
+  "created": true,
+  "id": 223,
+  "mc": 75,
+  "name": "Meteor Hammer",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "meteor_hammer"
+}

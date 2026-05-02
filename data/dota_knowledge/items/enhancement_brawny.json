@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "health_bonus",
+      "value": "110 / 150 / 190 / 230"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "health_regen",
+      "value": "0 / 3 / 6 / 9"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "slow_resist",
+      "value": "0 / 0 / 0 / 25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1585,
+  "mc": false,
+  "name": "Brawny",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_brawny"
+}

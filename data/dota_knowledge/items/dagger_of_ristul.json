@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Consume health to temporarily gain 25 damage for 8 seconds.",
+      "title": "Imbrue",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "aspd",
+      "value": "0"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "key": "duration",
+      "value": "8"
+    },
+    {
+      "key": "health_sacrifice",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1077,
+  "mc": false,
+  "name": "Dagger of Ristul",
+  "notes": "",
+  "qual": null,
+  "short_name": "dagger_of_ristul"
+}

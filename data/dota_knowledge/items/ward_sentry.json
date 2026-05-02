@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a 1050 radius.\nLasts 7 minutes.\n\nDoes not grant ground vision.\nHold Control to give one Sentry Ward to an allied hero.",
+      "title": "Plant",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "lifetime",
+      "value": "420"
+    },
+    {
+      "key": "vision_range",
+      "value": "0"
+    },
+    {
+      "key": "true_sight_range",
+      "value": "1050"
+    },
+    {
+      "key": "health",
+      "value": "200"
+    },
+    {
+      "key": "duration_minutes_tooltip",
+      "value": "7"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 1,
+  "charges": 1,
+  "components": null,
+  "cost": 50,
+  "created": false,
+  "id": 43,
+  "mc": false,
+  "name": "Sentry Ward",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "ward_sentry"
+}

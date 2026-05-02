@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 650,
+  "created": false,
+  "id": 161,
+  "mc": false,
+  "name": "Sange Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_sange"
+}

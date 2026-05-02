@@ -1,0 +1,59 @@
+{
+  "abilities": [
+    {
+      "description": "Silences the target unit for 5 seconds. At the end of the silence, 30% of the damage received while silenced is inflicted as bonus magical damage.",
+      "title": "Soul Burn",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "35"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2.5"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "0.0"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "12"
+    },
+    {
+      "key": "silence_damage_percent",
+      "value": "30"
+    },
+    {
+      "key": "silence_duration",
+      "value": "5"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 18,
+  "charges": false,
+  "components": [
+    "oblivion_staff",
+    "claymore"
+  ],
+  "cost": 3275,
+  "created": true,
+  "id": 98,
+  "mc": 125,
+  "name": "Orchid Malevolence",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "orchid"
+}

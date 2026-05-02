@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "The next attack silences the hit enemy for 1.5 seconds.",
+      "title": "Silence Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "magic_damage",
+      "value": "0"
+    },
+    {
+      "key": "attack_speed",
+      "value": "0"
+    },
+    {
+      "key": "duration",
+      "value": "1.5"
+    }
+  ],
+  "behavior": null,
+  "cd": 16,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 309,
+  "mc": false,
+  "name": "Mind Breaker",
+  "notes": "",
+  "qual": null,
+  "short_name": "mind_breaker"
+}

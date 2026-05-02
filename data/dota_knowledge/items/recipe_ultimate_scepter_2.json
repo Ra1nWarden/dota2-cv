@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1600,
+  "created": false,
+  "id": 270,
+  "mc": false,
+  "name": "Aghanim's Blessing Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_ultimate_scepter_2"
+}

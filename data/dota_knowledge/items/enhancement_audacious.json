@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "attack_speed",
+      "value": "100"
+    },
+    {
+      "display": "+ {value} Magic Attack Damage",
+      "key": "magic_damage",
+      "value": "80"
+    },
+    {
+      "display": "+ {value}% Incoming Damage",
+      "key": "incoming_damage",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1581,
+  "mc": false,
+  "name": "Audacious",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_audacious"
+}

@@ -1,0 +1,34 @@
+{
+  "abilities": [
+    {
+      "description": "Grants you 750 experience plus 150 per tome consumed by your team after the first two.",
+      "title": "Enlighten",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "xp_bonus",
+      "value": "750"
+    },
+    {
+      "key": "xp_per_use",
+      "value": "150"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 75,
+  "created": false,
+  "id": 257,
+  "mc": false,
+  "name": "Tome of Knowledge",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "tome_of_knowledge"
+}

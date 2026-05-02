@@ -1,0 +1,35 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "16"
+    },
+    {
+      "display": "+ {value}% Slow Resistance",
+      "key": "slow_resistance",
+      "value": "25"
+    },
+    {
+      "display": "+ {value}% Health Restoration",
+      "key": "hp_regen_amp",
+      "value": "16"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ogre_axe",
+    "belt_of_strength"
+  ],
+  "cost": 2100,
+  "created": true,
+  "id": 162,
+  "mc": false,
+  "name": "Sange",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "sange"
+}

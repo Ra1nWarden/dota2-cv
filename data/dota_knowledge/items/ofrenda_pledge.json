@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Signal to the spirits of the other realm your commitment to honoring them. If everyone in the battle makes an Undying Promise before the fight begins, the dead might be willing to listen.",
+      "title": "Undying Promise",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "radius",
+      "value": "600"
+    },
+    {
+      "key": "speed",
+      "value": "1200"
+    },
+    {
+      "key": "linger_duration",
+      "value": "5.0"
+    }
+  ],
+  "behavior": "Point Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 4302,
+  "mc": false,
+  "name": "Forebearer's Fortune",
+  "notes": "",
+  "qual": null,
+  "short_name": "ofrenda_pledge"
+}

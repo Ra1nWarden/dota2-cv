@@ -1,0 +1,542 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "END DISTANCE:",
+          "key": "end_distance",
+          "value": [
+            "600",
+            "700",
+            "800",
+            "900"
+          ]
+        },
+        {
+          "header": "TARGETS:",
+          "key": "targets",
+          "value": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage",
+          "value": [
+            "16",
+            "28",
+            "40",
+            "52"
+          ]
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": [
+            "-13%",
+            "-16%",
+            "-19%",
+            "-22%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1300"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.5",
+            "5",
+            "6.5",
+            "8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "header": "BONUS SLOW PER HIT:",
+          "key": "bonus_slow",
+          "value": [
+            "-2%",
+            "-2.5%",
+            "-3%",
+            "-3.5%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE BONUS:",
+          "key": "attack_range_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPLIT RADIUS:",
+          "key": "split_radius",
+          "value": "0"
+        },
+        {
+          "header": "SPLIT DAMAGE:",
+          "key": "split_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACKS TO SPLIT:",
+          "key": "attacks_to_split",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "500",
+            "600",
+            "700",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "Releases a cone of poison that strikes multiple enemy units. Deals damage over time and slows the targets. Anytime the targets get attacked by Dazzle, the debuff duration is refreshed and slow is increased.",
+      "dmg_type": "Physical",
+      "key": "dazzle_poison_touch",
+      "mc": [
+        "125",
+        "130",
+        "135",
+        "140"
+      ],
+      "name": "Poison Touch"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "4.5",
+            "5",
+            "5.5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FX HALO HEIGHT:",
+          "key": "fx_halo_height",
+          "value": [
+            "190",
+            "240",
+            "300",
+            "350"
+          ]
+        },
+        {
+          "header": "HEAL AMPLIFICATION PER 10% MISSING:",
+          "key": "heal_amplify",
+          "value": [
+            "3%",
+            "5%",
+            "7%",
+            "9%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "30",
+        "26",
+        "22",
+        "18"
+      ],
+      "desc": "An ally blessed with Shallow Grave, no matter how close to death, cannot die while under its protection. Healing on that ally is also amplified for the duration based on the hero's HP.",
+      "dmg_type": "",
+      "key": "dazzle_shallow_grave",
+      "mc": [
+        "90",
+        "100",
+        "110",
+        "120"
+      ],
+      "name": "Shallow Grave"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "header": "HEAL ARC RADIUS:",
+          "key": "bounce_radius",
+          "value": "475"
+        },
+        {
+          "header": "DAMAGE RADIUS:",
+          "key": "damage_radius",
+          "value": "185"
+        },
+        {
+          "generated": true,
+          "header": "MAX TARGETS:",
+          "key": "max_targets",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "MAX HEAL TARGETS:",
+          "key": "tooltip_max_targets_inc_dazzle",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "85",
+            "105",
+            "125",
+            "145"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER HEAL PCT:",
+          "key": "scepter_heal_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER CD INCREASE:",
+          "key": "scepter_cd_increase",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "10",
+        "9",
+        "8",
+        "7"
+      ],
+      "desc": "Sends out a bolt of power that arcs between allies, healing them while damaging any enemy units standing nearby. Dazzle is always healed by Shadow Wave.",
+      "dmg_type": "Physical",
+      "key": "dazzle_shadow_wave",
+      "mc": "90",
+      "name": "Shadow Wave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ARMOR CHANGE PER STACK:",
+          "key": "armor_change",
+          "value": "1"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6.9"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS ALLIES:",
+          "key": "affects_allies",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS ENEMIES:",
+          "key": "affects_enemies",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "HEAL AMPLIFICATION PCT:",
+          "key": "heal_amplification_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ULTIMATE ALWAYS APPLIES:",
+          "key": "ultimate_always_applies",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ALLY MULTIPLIER:",
+          "key": "ally_multiplier",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ENEMY MULTIPLIER:",
+          "key": "enemy_multiplier",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Dazzle's abilities apply Weave to both allies and enemies they affect, increasing allied armor and reducing enemy armor. Multiple instances of this effect stack.",
+      "dmg_type": "",
+      "key": "dazzle_innate_weave",
+      "mc": null,
+      "name": "Weave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MIN DURATION:",
+          "key": "min_duration",
+          "value": "5"
+        },
+        {
+          "header": "MAX DURATION:",
+          "key": "max_duration",
+          "value": "12"
+        },
+        {
+          "generated": true,
+          "header": "INITIAL TRAVEL SPEED:",
+          "key": "initial_travel_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "SOUL RETURN TIME:",
+          "key": "soul_return_time",
+          "value": "0.75"
+        },
+        {
+          "generated": true,
+          "header": "SOUL RETURN MIN SPEED:",
+          "key": "soul_return_min_speed",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "LEASH START:",
+          "key": "leash_start",
+          "value": "1600"
+        },
+        {
+          "generated": true,
+          "header": "BASE LEASH PULL:",
+          "key": "base_leash_pull",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "LEASH INCREASE:",
+          "key": "leash_increase",
+          "value": "1.5"
+        },
+        {
+          "header": "HEX DURATION:",
+          "key": "poison_touch_hex",
+          "value": [
+            "1.4",
+            "1.6",
+            "1.8"
+          ]
+        },
+        {
+          "header": "SHALLOW GRAVE HEAL:",
+          "key": "shallow_grave_heal",
+          "value": [
+            "225",
+            "300",
+            "375"
+          ]
+        },
+        {
+          "header": "SHADOW WAVE COOLDOWN REDUCTION:",
+          "key": "shadow_wave_cdr",
+          "value": [
+            "30%",
+            "40%",
+            "50%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "70",
+        "60",
+        "50"
+      ],
+      "desc": "Dazzle departs his body, traveling through the Nothl Realm as an invulnerable spirit that can cast spells, attack, and use items, leaving his body behind in the world with a visible tether. While active, Dazzle's basic abilities are empowered: Poison Touch hexes enemies, Shallow Grave heals upon expiration, and Shadow Wave has a shorter cooldown. The effect can be ended early, and Dazzle returns to the body at the end.",
+      "dmg_type": "",
+      "key": "dazzle_nothl_projection",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Nothl Projection"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Ends Dazzle's sojourn in the Nothl Realm and returns his spirit to his body.",
+      "dmg_type": "",
+      "key": "dazzle_nothl_projection_end",
+      "mc": null,
+      "name": "End Projection"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shadow Wave",
+    "desc": "Shadow Wave can now target and bounce between enemies in addition to allies. When bouncing to an enemy, they will take damage and heal nearby allies equal to 100% of the normal healing and damage values. Dazzle will also perform an attack against any enemy that Shadow Wave bounces to.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Weave",
+    "desc": "Applying Weave to an ally heals them for 60 per stack of Weave.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 20,
+    "agi_gain": 1.7,
+    "armor": 0,
+    "attack_max": 25,
+    "attack_min": 19,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.3,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2.3
+  },
+  "name": "Dazzle",
+  "primary_attr": "all",
+  "roles": [
+    "Support",
+    "Nuker",
+    "Disabler"
+  ],
+  "short_name": "dazzle",
+  "talents": [
+    {
+      "left": "+40% Poison Touch Slow",
+      "level": 25,
+      "right": "+1 Weave Armor Reduction/Increase"
+    },
+    {
+      "left": "-3s Shallow Grave Cooldown",
+      "level": 20,
+      "right": "+75 Poison Touch DPS"
+    },
+    {
+      "left": "+45 Shadow Wave Heal / Damage",
+      "level": 15,
+      "right": "special_bonus_unique_dazzle_nothl_projection_duration"
+    },
+    {
+      "left": "+200 Poison Touch Attack Range",
+      "level": 10,
+      "right": "+1.75 Mana Regen"
+    }
+  ]
+}

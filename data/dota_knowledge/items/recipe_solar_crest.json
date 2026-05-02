@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 500,
+  "created": false,
+  "id": 227,
+  "mc": false,
+  "name": "Solar Crest Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_solar_crest"
+}

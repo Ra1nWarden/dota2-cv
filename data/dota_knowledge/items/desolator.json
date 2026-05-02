@@ -1,0 +1,57 @@
+{
+  "abilities": [
+    {
+      "description": "Your attacks reduce the target's armor by -6 for 7 seconds.",
+      "title": "Corruption",
+      "type": "passive"
+    },
+    {
+      "description": "Desolator gains +2 damage every time an enemy hero dies while affected by Corruption, to a maximum of 30.",
+      "title": "Soul Stealer",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "55"
+    },
+    {
+      "key": "corruption_armor",
+      "value": "-6"
+    },
+    {
+      "key": "corruption_duration",
+      "value": "7.0"
+    },
+    {
+      "key": "bonus_damage_per_kill",
+      "value": "2"
+    },
+    {
+      "key": "bonus_damage_per_assist",
+      "value": "1"
+    },
+    {
+      "key": "max_damage",
+      "value": "30"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "mithril_hammer",
+    "mithril_hammer",
+    "blight_stone"
+  ],
+  "cost": 3500,
+  "created": true,
+  "id": 168,
+  "mc": false,
+  "name": "Desolator",
+  "notes": "Armor reduction works on buildings.",
+  "qual": "artifact",
+  "short_name": "desolator"
+}

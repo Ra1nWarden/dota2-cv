@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Grants each attack a 30% chance to deal 160% damage.",
+      "title": "Critical Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "32"
+    },
+    {
+      "key": "crit_chance",
+      "value": "30"
+    },
+    {
+      "key": "crit_multiplier",
+      "value": "160"
+    },
+    {
+      "key": "tooltip_crit_damage",
+      "value": "60"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "claymore",
+    "blades_of_attack"
+  ],
+  "cost": 2000,
+  "created": true,
+  "id": 149,
+  "mc": false,
+  "name": "Crystalys",
+  "notes": "Critical Strike does not work against buildings.",
+  "qual": "epic",
+  "short_name": "lesser_crit"
+}

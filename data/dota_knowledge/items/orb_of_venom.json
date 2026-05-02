@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Poisons the target, dealing 10 magical damage per second. Lasts for 3 seconds.",
+      "title": "Poison Attack",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage",
+      "value": "10"
+    },
+    {
+      "key": "tick_interval",
+      "value": "1.0"
+    },
+    {
+      "key": "poison_duration",
+      "value": "3.0"
+    }
+  ],
+  "behavior": null,
+  "cd": 9,
+  "charges": false,
+  "components": null,
+  "cost": 350,
+  "created": false,
+  "id": 181,
+  "mc": false,
+  "name": "Orb of Venom",
+  "notes": "Does not stack with its upgrades.",
+  "qual": "component",
+  "short_name": "orb_of_venom"
+}

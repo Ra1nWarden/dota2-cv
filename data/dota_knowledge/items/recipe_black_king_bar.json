@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1450,
+  "created": false,
+  "id": 115,
+  "mc": false,
+  "name": "Black King Bar Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_black_king_bar"
+}

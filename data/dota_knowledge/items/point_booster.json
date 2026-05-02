@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "175"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "175"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1200,
+  "created": false,
+  "id": 60,
+  "mc": false,
+  "name": "Point Booster",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "point_booster"
+}

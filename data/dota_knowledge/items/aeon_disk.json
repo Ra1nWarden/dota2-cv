@@ -1,0 +1,61 @@
+{
+  "abilities": [
+    {
+      "description": "When you take damage and your health falls below 70%, a strong dispel is applied and you gain a 2.5 second buff that provides +75% Status Resistance and causes all damage you deal and are dealt to be reduced to zero. Only triggers on player based damage. Cooldown increases every time it triggers.Dispel Type: Strong Dispel",
+      "title": "Combo Breaker",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "250"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "300"
+    },
+    {
+      "key": "health_threshold_pct",
+      "value": "70"
+    },
+    {
+      "key": "status_resistance",
+      "value": "75"
+    },
+    {
+      "key": "buff_duration",
+      "value": "2.5"
+    },
+    {
+      "key": "max_level",
+      "value": "4"
+    },
+    {
+      "display": "COOLDOWN: {value}",
+      "key": "cooldown_duration",
+      "value": "105.0 / 125.0 / 145.0 / 165.0"
+    },
+    {
+      "key": "initial_cooldown",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": 105,
+  "charges": false,
+  "components": [
+    "vitality_booster",
+    "energy_booster"
+  ],
+  "cost": 3000,
+  "created": true,
+  "id": 256,
+  "mc": false,
+  "name": "Aeon Disk",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "aeon_disk"
+}

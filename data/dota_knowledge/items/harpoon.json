@@ -1,0 +1,96 @@
+{
+  "abilities": [
+    {
+      "description": "When targeting an enemy, fire a harpoon at them, that pulls you and the target closer together, up to 35% of the distance between you and your target. If the caster is melee, the hero and target are always pulled to within melee distance of each other. Targeting a tree always pulls you all the way to that tree.",
+      "title": "Draw Forth",
+      "type": "active"
+    },
+    {
+      "description": "Causes melee attacks to attack twice in quick succession. The double attacks apply a 100% movement slow for 1 seconds on the first strike. Echo Strike cooldown: 5s",
+      "title": "Echo Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2.0"
+    },
+    {
+      "key": "passive_cooldown",
+      "value": "5"
+    },
+    {
+      "key": "movement_slow",
+      "value": "100"
+    },
+    {
+      "key": "slow_duration",
+      "value": "1.0"
+    },
+    {
+      "key": "pull_duration",
+      "value": "0.3"
+    },
+    {
+      "key": "pull_distance_pct",
+      "value": "35"
+    },
+    {
+      "key": "min_distance",
+      "value": "100"
+    },
+    {
+      "key": "max_distance",
+      "value": "1000"
+    },
+    {
+      "key": "cast_range_enemy",
+      "value": "700"
+    },
+    {
+      "key": "push_length",
+      "value": "600"
+    },
+    {
+      "key": "projectile_speed",
+      "value": "2000"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 19,
+  "charges": false,
+  "components": [
+    "echo_sabre",
+    "diadem"
+  ],
+  "cost": 4700,
+  "created": true,
+  "id": 939,
+  "mc": 50,
+  "name": "Harpoon",
+  "notes": "",
+  "qual": null,
+  "short_name": "harpoon"
+}

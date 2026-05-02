@@ -1,0 +1,387 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "STUN DELAY:",
+          "key": "delay",
+          "value": "0.35"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "150",
+            "170",
+            "190",
+            "210"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "duration",
+          "value": "1.7"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "1.6"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.7"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "11",
+      "desc": "Splits the earth under enemies. Deals damage and stuns for a short duration.",
+      "dmg_type": "Magical",
+      "key": "leshrac_split_earth",
+      "mc": [
+        "80",
+        "100",
+        "120",
+        "140"
+      ],
+      "name": "Split Earth"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EXPLOSIONS:",
+          "key": "num_explosions",
+          "value": "40"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "TOWER BONUS:",
+          "key": "tower_bonus",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS BUILDINGS:",
+          "key": "affects_buildings",
+          "value": "1"
+        },
+        {
+          "header": "DAMAGE PER EXPLOSION:",
+          "key": "damage",
+          "value": [
+            "10",
+            "18",
+            "26",
+            "34"
+          ]
+        },
+        {
+          "header": "TARGETS PER EXPLOSION:",
+          "key": "targets",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.5"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "22",
+        "21",
+        "20",
+        "19"
+      ],
+      "desc": "Saturates the area around Leshrac with magical explosions that deal pure damage to enemy units and buildings. The fewer units available to attack, the more damage those units will take.",
+      "dmg_type": "Pure",
+      "key": "leshrac_diabolic_edict",
+      "mc": [
+        "90",
+        "120",
+        "150",
+        "180"
+      ],
+      "name": "Diabolic Edict"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "140",
+            "190",
+            "240"
+          ]
+        },
+        {
+          "header": "LIGHTNING STRIKES:",
+          "key": "jump_count",
+          "value": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ]
+        },
+        {
+          "header": "LIGHTNING JUMP RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DELAY:",
+          "key": "jump_delay",
+          "value": "0.25"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed_slow",
+          "value": "75%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "0.45",
+            "0.7",
+            "0.95",
+            "1.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BOUNCE TWICE:",
+          "key": "bounce_twice",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PULSE NOVA LIGHTNING INTERVAL:",
+          "key": "pulse_nova_lightning_interval",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "4",
+      "desc": "Summons a lightning storm that blasts the target enemy unit, then strikes any nearby enemy units. Struck enemies have their move speed slowed.",
+      "dmg_type": "Magical",
+      "key": "leshrac_lightning_storm",
+      "mc": [
+        "80",
+        "100",
+        "120",
+        "140"
+      ],
+      "name": "Lightning Storm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "INCREASED MAGIC DAMAGE:",
+          "key": "magic_amp",
+          "value": "30%"
+        },
+        {
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "30%"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "25",
+      "desc": "Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac's speed rather than reducing it. Does not cause Leshrac to take amplified damage.",
+      "dmg_type": "",
+      "key": "leshrac_greater_lightning_storm",
+      "mc": "75",
+      "name": "Nihilism"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "AOE PER INT:",
+          "key": "aoe_per_int",
+          "value": "0.7"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "leshrac_defilement",
+      "mc": null,
+      "name": "Defilement"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA/SEC:",
+          "key": "mana_cost_per_second",
+          "value": [
+            "25",
+            "45",
+            "65"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "135",
+            "180"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE RESISTANCE:",
+          "key": "damage_resistance",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "1",
+      "desc": "Creates waves of damaging energy around Leshrac, one per second, to damage nearby enemy units. Drains Leshrac's mana with each pulse.",
+      "dmg_type": "Magical",
+      "key": "leshrac_pulse_nova",
+      "mc": [
+        "50",
+        "60",
+        "70"
+      ],
+      "name": "Pulse Nova"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Nihilism",
+    "desc": "Causes Leshrac and all nearby enemies to turn ethereal, preventing them from attacking, slowing them, and making them take more magic damage. Increases Leshrac's speed rather than reducing it. Does not cause Leshrac to take amplified damage.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Split Earth",
+    "desc": "Causes Split Earth to repeat in the same location 2 additional times, with a 5 second delay between each one. Each time the radius increases by 45. Split Earth echo location is visible to both teams.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 2.5,
+    "armor": 1,
+    "attack_max": 31,
+    "attack_min": 27,
+    "attack_range": 575,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 22,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.8
+  },
+  "name": "Leshrac",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Support",
+    "Nuker",
+    "Pusher",
+    "Disabler"
+  ],
+  "short_name": "leshrac",
+  "talents": [
+    {
+      "left": "+? Diabolic Edict Explosions",
+      "level": 25,
+      "right": "Pulse Nova triggers Lightning Storm"
+    },
+    {
+      "left": "Diabolic Edict Hits An Additional Target",
+      "level": 20,
+      "right": "+? Pulse Nova Damage"
+    },
+    {
+      "left": "+? Lightning Storm Damage",
+      "level": 15,
+      "right": "+?% Damage Reduction during Pulse Nova"
+    },
+    {
+      "left": "+1.5 Mana Regen",
+      "level": 10,
+      "right": "+4 Armor"
+    }
+  ]
+}

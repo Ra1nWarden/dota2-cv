@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 248,
+  "mc": false,
+  "name": "Silver Edge Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_silver_edge"
+}

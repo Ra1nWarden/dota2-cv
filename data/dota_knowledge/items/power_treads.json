@@ -1,0 +1,54 @@
+{
+  "abilities": [
+    {
+      "description": "Switches between +10 Strength, +10 Agility, or +10 Intelligence.",
+      "title": "Switch Attribute",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Move Speed (Ranged Heroes)",
+      "key": "bonus_movement_speed_ranged",
+      "value": "45"
+    },
+    {
+      "display": "+ {value} Move Speed (Melee Heroes)",
+      "key": "bonus_movement_speed_melee",
+      "value": "55"
+    },
+    {
+      "display": "+ {value} Selected Attribute",
+      "key": "bonus_stat",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "25"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": [
+    "boots",
+    "gloves",
+    "belt_of_strength"
+  ],
+  "cost": 1400,
+  "created": true,
+  "id": 63,
+  "mc": false,
+  "name": "Power Treads",
+  "notes": "Power Treads can be built using a Belt of Strength, Band of Elvenskin, or a Robe of the Magi.",
+  "qual": "common",
+  "short_name": "power_treads"
+}

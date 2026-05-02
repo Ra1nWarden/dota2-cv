@@ -1,0 +1,64 @@
+{
+  "abilities": [
+    {
+      "description": "For 5.5 seconds, return all incoming damage, increasing the percentage by 85%.",
+      "title": "Damage Return",
+      "type": "active"
+    },
+    {
+      "description": "Everytime you are attacked, you return 10 damage plus 15% of the attack damage dealt to you.",
+      "title": "Damage Return",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "7"
+    },
+    {
+      "key": "bonus_intellect",
+      "value": "0"
+    },
+    {
+      "key": "duration",
+      "value": "5.5"
+    },
+    {
+      "key": "passive_reflection_constant",
+      "value": "10"
+    },
+    {
+      "key": "passive_reflection_pct",
+      "value": "15"
+    },
+    {
+      "key": "active_reflection_pct",
+      "value": "85"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 25,
+  "charges": false,
+  "components": [
+    "broadsword",
+    "splintmail"
+  ],
+  "cost": 2400,
+  "created": true,
+  "id": 127,
+  "mc": 25,
+  "name": "Blade Mail",
+  "notes": "Damage Return is calculated before any kind of reduction.\nReturned damage type is the same as it was received.\nDamage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": "epic",
+  "short_name": "blade_mail"
+}

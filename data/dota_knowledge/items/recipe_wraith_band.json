@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 210,
+  "created": false,
+  "id": 74,
+  "mc": false,
+  "name": "Wraith Band Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_wraith_band"
+}

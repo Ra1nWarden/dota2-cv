@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_hp_regen",
+      "value": "8"
+    },
+    {
+      "display": "+ {value}% Heal Amplification",
+      "key": "heal_amp",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1649,
+  "mc": false,
+  "name": "Restorative",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_restorative"
+}

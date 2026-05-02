@@ -1,0 +1,53 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 30 attack speed and 5 armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by -5.\n\nRadius: 1200",
+      "title": "Assault Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "10"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "aura_attack_speed",
+      "value": "30"
+    },
+    {
+      "key": "aura_positive_armor",
+      "value": "5"
+    },
+    {
+      "key": "aura_negative_armor",
+      "value": "-5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "buckler",
+    "hyperstone",
+    "platemail"
+  ],
+  "cost": 5125,
+  "created": true,
+  "id": 112,
+  "mc": false,
+  "name": "Assault Cuirass",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "assault"
+}

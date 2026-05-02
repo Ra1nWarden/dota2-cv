@@ -1,0 +1,63 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 1 mana regeneration and 2 armor to nearby allies.\n\nRadius: 1200",
+      "title": "Aquila Aura",
+      "type": "passive"
+    },
+    {
+      "description": "Deactivate to stop affecting non-hero units.",
+      "title": "Aura",
+      "type": "toggle"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "3"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "3"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "9"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "3"
+    },
+    {
+      "key": "aura_radius",
+      "value": "1200"
+    },
+    {
+      "key": "aura_mana_regen",
+      "value": "1"
+    },
+    {
+      "key": "aura_bonus_armor",
+      "value": "2"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 212,
+  "mc": false,
+  "name": "Ring of Aquila",
+  "notes": "Multiple instances of Aquila Aura do not stack.",
+  "qual": null,
+  "short_name": "ring_of_aquila"
+}

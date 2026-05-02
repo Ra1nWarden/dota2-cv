@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Targets a building, restoring 40% of it's health over 30 seconds. Also grants +10 armor during this period.",
+      "title": "Building Repair",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "30"
+    },
+    {
+      "key": "heal_percent",
+      "value": "40"
+    },
+    {
+      "key": "armor_bonus",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "hp_regen",
+      "value": "25"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 60,
+  "charges": 3,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 308,
+  "mc": false,
+  "name": "Repair Kit",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "repair_kit"
+}

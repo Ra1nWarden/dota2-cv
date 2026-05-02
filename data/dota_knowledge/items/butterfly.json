@@ -1,0 +1,41 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "35"
+    },
+    {
+      "display": "+ {value}% Evasion",
+      "key": "bonus_evasion",
+      "value": "35"
+    },
+    {
+      "display": "+ {value}% Base Attack Speed Percentage",
+      "key": "bonus_attack_speed_pct",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "eagle",
+    "claymore",
+    "talisman_of_evasion"
+  ],
+  "cost": 5450,
+  "created": true,
+  "id": 139,
+  "mc": false,
+  "name": "Butterfly",
+  "notes": "Stacks diminishingly with other sources of Evasion.",
+  "qual": "epic",
+  "short_name": "butterfly"
+}

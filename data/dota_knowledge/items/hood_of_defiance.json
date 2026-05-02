@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Creates a spell shield that absorbs up to 350 magical damage. Lasts 12 seconds.",
+      "title": "Barrier",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_spell_resist",
+      "value": "18"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "8.5"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "tooltip_resist",
+      "value": "18"
+    },
+    {
+      "key": "barrier_block",
+      "value": "350"
+    },
+    {
+      "key": "barrier_duration",
+      "value": "12.0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 131,
+  "mc": 50,
+  "name": "Hood of Defiance",
+  "notes": "Stacks multiplicatively with other sources of magic resistance.",
+  "qual": "epic",
+  "short_name": "hood_of_defiance"
+}

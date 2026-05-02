@@ -1,0 +1,32 @@
+{
+  "abilities": [
+    {
+      "description": "Hero's Max Health is set to 1800 and can't be altered by other effects or attributes.",
+      "title": "Unwavering",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "max_health",
+      "value": "1800"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "magic_resist",
+      "value": "95"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1161,
+  "mc": false,
+  "name": "Unwavering Condition",
+  "notes": "",
+  "qual": null,
+  "short_name": "unwavering_condition"
+}

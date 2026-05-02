@@ -1,0 +1,62 @@
+{
+  "abilities": [
+    {
+      "description": "Increases Lifesteal percentage to 175% for 6 seconds. \n\nDispel Type: Basic Dispel",
+      "title": "Unholy Rage",
+      "type": "active"
+    },
+    {
+      "description": "Heals the attacker for a percentage of physical damage dealt.",
+      "title": "Lifesteal",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "25"
+    },
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "lifesteal_percent",
+      "value": "30"
+    },
+    {
+      "key": "unholy_lifesteal_percent",
+      "value": "145"
+    },
+    {
+      "key": "unholy_lifesteal_total_tooltip",
+      "value": "175"
+    },
+    {
+      "key": "unholy_duration",
+      "value": "6.0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": [
+    "reaver",
+    "claymore",
+    "lifesteal"
+  ],
+  "cost": 5050,
+  "created": true,
+  "id": 156,
+  "mc": false,
+  "name": "Satanic",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "satanic"
+}

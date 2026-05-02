@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Every 12s, blocks up to 300 magic damage from damage instances over 75 damage.",
+      "title": "Magical Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "move_speed",
+      "value": "0"
+    },
+    {
+      "key": "mana",
+      "value": "0"
+    },
+    {
+      "key": "magic_block",
+      "value": "300"
+    },
+    {
+      "key": "min_damage",
+      "value": "75"
+    }
+  ],
+  "behavior": null,
+  "cd": 12,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 2190,
+  "mc": false,
+  "name": "Dandelion Amulet",
+  "notes": "",
+  "qual": null,
+  "short_name": "dandelion_amulet"
+}

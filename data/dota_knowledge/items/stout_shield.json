@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "Grants a 50% chance to block 20 damage from incoming attacks on melee heroes, and 8 damage on ranged.",
+      "title": "Damage Block",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "damage_block_melee",
+      "value": "20"
+    },
+    {
+      "key": "damage_block_ranged",
+      "value": "8"
+    },
+    {
+      "key": "block_chance",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 100,
+  "created": false,
+  "id": 182,
+  "mc": false,
+  "name": "Stout Shield",
+  "notes": "Multiple sources of damage block do not stack.",
+  "qual": "component",
+  "short_name": "stout_shield"
+}

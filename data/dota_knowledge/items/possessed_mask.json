@@ -1,0 +1,32 @@
+{
+  "abilities": [
+    {
+      "description": "Heals the attacker for 5 HP on each attack.",
+      "title": "Lifesteal",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Primary Attribute",
+      "key": "primary_attribute",
+      "value": "0"
+    },
+    {
+      "key": "lifesteal",
+      "value": "5"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 577,
+  "mc": false,
+  "name": "Possessed Mask",
+  "notes": "Grants 1/3rd of the value to each attribute for Universal Heroes.",
+  "qual": null,
+  "short_name": "possessed_mask"
+}

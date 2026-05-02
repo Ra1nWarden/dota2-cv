@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 150,
+  "created": false,
+  "id": 35,
+  "mc": false,
+  "name": "Magic Wand Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_magic_wand"
+}

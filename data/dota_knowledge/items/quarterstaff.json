@@ -1,0 +1,27 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_speed",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 875,
+  "created": false,
+  "id": 10,
+  "mc": false,
+  "name": "Quarterstaff",
+  "notes": "",
+  "qual": "component",
+  "short_name": "quarterstaff"
+}

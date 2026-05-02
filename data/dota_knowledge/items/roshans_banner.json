@@ -1,0 +1,64 @@
+{
+  "abilities": [
+    {
+      "description": "Creates a banner at the target location. Lane creeps in the area of effect become damage immune while the Banner is up. Lasts 120 seconds.\n\n Can be destroyed. Melee hero attacks deal 2x damage to the banner.",
+      "title": "Place Banner",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "120"
+    },
+    {
+      "display": "EFFECT RADIUS: {value}",
+      "key": "radius",
+      "value": "600 / 900 / 1200"
+    },
+    {
+      "key": "health",
+      "value": "24 / 32 / 40"
+    },
+    {
+      "display": "HITS TO KILL: {value}",
+      "key": "health_tooltip",
+      "value": "6 / 8 / 10"
+    },
+    {
+      "key": "hp_bonus",
+      "value": "75"
+    },
+    {
+      "key": "damage_bonus",
+      "value": "50"
+    },
+    {
+      "key": "model_scale",
+      "value": "25"
+    },
+    {
+      "key": "buff_linger_duration",
+      "value": "0.1"
+    },
+    {
+      "key": "max_level",
+      "value": "3"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 1,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1804,
+  "mc": false,
+  "name": "Roshan's Banner",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "roshans_banner"
+}

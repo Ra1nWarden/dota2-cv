@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1350,
+  "created": false,
+  "id": 118,
+  "mc": false,
+  "name": "Shiva's Guard Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_shivas_guard"
+}

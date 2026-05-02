@@ -1,0 +1,40 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "madstone_primary",
+      "value": "2 / 3 / 4"
+    },
+    {
+      "key": "madstone_secondary",
+      "value": "1 / 2 / 3"
+    },
+    {
+      "key": "turbo_madstone_primary",
+      "value": "3 / 4 / 6"
+    },
+    {
+      "key": "turbo_madstone_secondary",
+      "value": "2 / 3 / 4"
+    },
+    {
+      "key": "die_time",
+      "value": "20"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1609,
+  "mc": false,
+  "name": "Madstone Bundle",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "madstone_bundle"
+}

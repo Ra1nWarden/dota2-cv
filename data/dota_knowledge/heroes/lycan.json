@@ -1,0 +1,432 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "WOLF INDEX:",
+          "key": "wolf_index",
+          "value": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "wolf_duration",
+          "value": "50"
+        },
+        {
+          "header": "BASE ATTACK TIME:",
+          "key": "wolf_bat",
+          "value": [
+            "1.2",
+            "1.1",
+            "1",
+            "0.9",
+            "0.9",
+            "0.9"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "wolf_damage",
+          "value": [
+            "22",
+            "28",
+            "34",
+            "40",
+            "46",
+            "52"
+          ]
+        },
+        {
+          "header": "HP:",
+          "key": "wolf_hp",
+          "value": [
+            "325",
+            "375",
+            "425",
+            "475",
+            "525",
+            "575"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BONUS HEALTH:",
+          "key": "bonus_health",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BASH CHANCE:",
+          "key": "bash_chance",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "BASH DURATION:",
+          "key": "bash_duration",
+          "value": "1"
+        },
+        {
+          "header": "WOLF COUNT:",
+          "key": "wolf_count",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "BONUS LEVELS:",
+          "key": "bonus_levels",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": "30",
+      "desc": "Summons 2 wolves to aid Lycan in battle. At level 3, wolves gain Permanent Invisibility, and at level 4 wolves gain Cripple that gives 20% chance to cripple the target, causing 8 damage per second and lose 60 attack speed for 4 seconds.",
+      "dmg_type": "",
+      "key": "lycan_summon_wolves",
+      "mc": [
+        "115",
+        "120",
+        "125",
+        "130"
+      ],
+      "name": "Summon Wolves"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "howl_duration",
+          "value": "8"
+        },
+        {
+          "header": "ATTACK DAMAGE REDUCTION:",
+          "key": "attack_damage_reduction",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TOTAL ATTACK DAMAGE REDUCTION:",
+          "key": "total_attack_damage_reduction",
+          "value": "0"
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "FEAR DURATION:",
+          "key": "fear_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "22",
+        "20",
+        "18",
+        "16"
+      ],
+      "desc": "Strikes fear into enemies, reducing armor and attack damage of all enemies within 2000 range of Lycan and his wolves. At night, Howl's armor and attack damage reductions are global.",
+      "dmg_type": "",
+      "key": "lycan_howl",
+      "mc": "40",
+      "name": "Howl"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "10%",
+            "20%",
+            "30%",
+            "40%"
+          ]
+        },
+        {
+          "header": "BONUS HP REGEN:",
+          "key": "bonus_hp_regen",
+          "value": [
+            "1",
+            "3",
+            "5",
+            "7"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MAX LEVEL:",
+          "key": "max_level",
+          "value": "4"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Increases the HP regeneration and damage of Lycan and all units under his control.",
+      "dmg_type": "",
+      "key": "lycan_feral_impulse",
+      "mc": null,
+      "name": "Feral Impulse"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "LIFESTEAL PERCENT:",
+          "key": "lifesteal_percent",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL RANGE:",
+          "key": "lifesteal_range",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE:",
+          "key": "attack_range",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "110",
+        "100",
+        "90"
+      ],
+      "desc": "Lycan bites an allied hero or creep-hero, granting them Shapeshift properties. Lycan and the bitten target gain 40% Lifesteal and share the healing effect of Lifesteal with each other as long as they are within 1200 range of each other.",
+      "dmg_type": "",
+      "key": "lycan_wolf_bite",
+      "mc": "150",
+      "name": "Wolf Bite"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EXTRA DAMAGE:",
+          "key": "damage_amp",
+          "value": "18%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Lycan and units he controls deal extra damage to neutral creeps.",
+      "dmg_type": "",
+      "key": "lycan_apex_predator",
+      "mc": null,
+      "name": "Apex Predator"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "25"
+        },
+        {
+          "header": "SHAPESHIFT MOVE SPEED:",
+          "key": "speed",
+          "value": "550"
+        },
+        {
+          "header": "BONUS NIGHT VISION:",
+          "key": "bonus_night_vision",
+          "value": "1000"
+        },
+        {
+          "header": "TRANSFORM TIME:",
+          "key": "transformation_time",
+          "value": "1.1"
+        },
+        {
+          "header": "CRITICAL CHANCE:",
+          "key": "crit_chance",
+          "value": "40%"
+        },
+        {
+          "header": "CRITICAL DAMAGE:",
+          "key": "crit_multiplier",
+          "value": [
+            "160%",
+            "200%",
+            "240%"
+          ]
+        },
+        {
+          "header": "HEALTH BONUS:",
+          "key": "health_bonus",
+          "value": [
+            "225",
+            "325",
+            "425"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "IS WOLFPACK:",
+          "key": "is_wolfpack",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "KILL DURATION EXTENSION:",
+          "key": "kill_duration_extension",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "110",
+        "100",
+        "90"
+      ],
+      "desc": "Lycan assumes his lupine form, granting him critical strikes and added vision at night. During Shapeshift, Lycan moves at increased speed and cannot be slowed. Movement and critical strike bonuses are also applied to all units under Lycan's control.",
+      "dmg_type": "",
+      "key": "lycan_shapeshift",
+      "mc": "100",
+      "name": "Shapeshift"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Wolf Bite",
+    "desc": "Lycan bites an allied hero or creep-hero, granting them Shapeshift properties. Lycan and the bitten target gain 40% Lifesteal and share the healing effect of Lifesteal with each other as long as they are within 1200 range of each other.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Summon Wolves",
+    "desc": "Increases the number of wolves summoned. Grants all summoned wolves the ability Hightail, an active ability that gives them phased movement, evasion, movespeed, and attack speed.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 1.7,
+    "armor": 0,
+    "attack_max": 29,
+    "attack_min": 24,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 28,
+    "str_gain": 3.4
+  },
+  "name": "Lycan",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Pusher",
+    "Durable",
+    "Escape"
+  ],
+  "short_name": "lycan",
+  "talents": [
+    {
+      "left": "-?% Summon Wolves BAT",
+      "level": 25,
+      "right": "Howl Reduces Total Attack Damage"
+    },
+    {
+      "left": "+?s Shapeshift Duration",
+      "level": 20,
+      "right": "+?% Feral Impulse Damage"
+    },
+    {
+      "left": "+? Summon Wolves Health",
+      "level": 15,
+      "right": "-?s Shapeshift Cooldown"
+    },
+    {
+      "left": "+? Howl Armor Reduction",
+      "level": 10,
+      "right": "+? Wolves Damage"
+    }
+  ]
+}

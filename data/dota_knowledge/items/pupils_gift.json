@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+SECONDARY STATS {value}",
+      "key": "secondary_stats",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 306,
+  "mc": false,
+  "name": "Pupil's Gift",
+  "notes": "Grants two-thirds value to each attribute for Universal Heroes",
+  "qual": null,
+  "short_name": "pupils_gift"
+}

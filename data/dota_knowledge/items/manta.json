@@ -1,0 +1,91 @@
+{
+  "abilities": [
+    {
+      "description": "Creates 2 images of your hero that last 18 seconds. \n\nMelee images deal 33% damage, while Ranged images deal 28%. Illusions take 300% damage. \n\nDispel Type: Basic Dispel",
+      "title": "Mirror Image",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "26"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "15"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "10"
+    },
+    {
+      "key": "images_count",
+      "value": "2"
+    },
+    {
+      "key": "illusion_duration",
+      "value": "18"
+    },
+    {
+      "key": "images_do_damage_percent_melee",
+      "value": "-67"
+    },
+    {
+      "key": "tooltip_damage_outgoing_melee",
+      "value": "33"
+    },
+    {
+      "key": "images_take_damage_percent",
+      "value": "200"
+    },
+    {
+      "key": "tooltip_damage_incoming_total_pct",
+      "value": "300"
+    },
+    {
+      "key": "images_do_damage_percent_ranged",
+      "value": "-72"
+    },
+    {
+      "key": "tooltip_damage_outgoing_ranged",
+      "value": "28"
+    },
+    {
+      "key": "invuln_duration",
+      "value": "0.1"
+    },
+    {
+      "key": "vision_radius",
+      "value": "1000"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 34,
+  "charges": false,
+  "components": [
+    "yasha",
+    "diadem"
+  ],
+  "cost": 4650,
+  "created": true,
+  "id": 147,
+  "mc": 125,
+  "name": "Manta Style",
+  "notes": "Has a 0.1 second cast time during which you are invulnerable.\nMany effects are removed upon using Manta.\nYasha based movement speed bonuses from multiple items do not stack.",
+  "qual": "epic",
+  "short_name": "manta"
+}

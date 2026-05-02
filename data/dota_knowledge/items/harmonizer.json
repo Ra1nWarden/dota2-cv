@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Gain 5% spell manacost reduction for every spell off cooldown and 6% spell amplification for every spell on cooldown.",
+      "title": "Balance",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "manacost_reduction",
+      "value": "5"
+    },
+    {
+      "key": "spell_amp",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1863,
+  "mc": false,
+  "name": "Harmonizer",
+  "notes": "Only considers abilities that are visible and have a cooldown",
+  "qual": null,
+  "short_name": "harmonizer"
+}

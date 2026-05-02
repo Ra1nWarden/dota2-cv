@@ -1,0 +1,405 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "3000"
+        },
+        {
+          "header": "RANGE:",
+          "key": "range",
+          "value": [
+            "650",
+            "700",
+            "750",
+            "800"
+          ]
+        },
+        {
+          "header": "BACKTRACK DURATION:",
+          "key": "backtrack_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "BACKTRACK TIME WALK DURATION:",
+          "key": "backtrack_time_walk_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DODGE CHANCE PCT:",
+          "key": "dodge_chance_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "21",
+        "16",
+        "11",
+        "6"
+      ],
+      "desc": "Rushes to a target location while backtracking any damage taken the last 2 seconds.",
+      "dmg_type": "",
+      "key": "faceless_void_time_walk",
+      "mc": "40",
+      "name": "Time Walk"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "775"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW PER STACK:",
+          "key": "slow",
+          "value": [
+            "4%",
+            "5%",
+            "6%",
+            "7%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW PER STACK:",
+          "key": "attack_slow_tooltip_only",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "COOLDOWN PROGRESSION SLOW:",
+          "key": "cooldown_percentage",
+          "value": [
+            "30%",
+            "40%",
+            "50%",
+            "60%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BASE DAMAGE:",
+          "key": "base_damage",
+          "value": "0"
+        },
+        {
+          "header": "BONUS DPS PER STACK:",
+          "key": "damage_per_stack",
+          "value": [
+            "4",
+            "6",
+            "8",
+            "10"
+          ]
+        },
+        {
+          "header": "SELF MOVESPEED PER STACK:",
+          "key": "self_movespeed_tooltip",
+          "value": "0%"
+        },
+        {
+          "header": "SELF ATTACK SPEED PER STACK:",
+          "key": "self_attackspeed_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "28",
+        "24",
+        "20",
+        "16"
+      ],
+      "desc": "Faceless Void envelops nearby enemies with time dilating fields to slow cooldown progression of their abilities. Each enveloped enemy gains one Time Dilation stack when applied, and one stack per ability they have on cooldown. Each stack deals damage per second and slows movement and attack speed. The duration is paused while affected by Chronosphere.",
+      "dmg_type": "Magical",
+      "key": "faceless_void_time_dilation",
+      "mc": "90",
+      "name": "Time Dilation"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "DURATION CREEP:",
+          "key": "duration_creep",
+          "value": "0.5"
+        },
+        {
+          "header": "CHANCE:",
+          "key": "chance_pct",
+          "value": [
+            "12%",
+            "16%",
+            "20%",
+            "24%"
+          ]
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": [
+            "18",
+            "22",
+            "26",
+            "30"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DELAY:",
+          "key": "delay",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Adds the chance for an attack to lock an enemy unit in time while attacking it a second time.",
+      "dmg_type": "Magical",
+      "key": "faceless_void_time_lock",
+      "mc": null,
+      "name": "Time Lock"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BUFF DURATION:",
+          "key": "buff_duration",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "3000"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Hidden"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "0.5",
+      "desc": "Available for 1.5 seconds after landing Time Walk. If used in this period, you will reverse your time walk back to your previous cast location. Does not affect health or proc scepter hits.",
+      "dmg_type": "",
+      "key": "faceless_void_time_walk_reverse",
+      "mc": "0",
+      "name": "Reverse Time Walk"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "ATTACK PROJECTILE SLOW:",
+          "key": "attack_projectile_slow",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DISTANCE MAX:",
+          "key": "slow_distance_max",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "FRIENDLY HERO DISTANCE:",
+          "key": "friendly_hero_distance",
+          "value": "1200"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Enemy Attack Projectiles targetting Faceless Void or allied heroes within a 1200 radius of him get slowed by 40%, when they get within 500 distance of their target.",
+      "dmg_type": "",
+      "key": "faceless_void_distortion_field",
+      "mc": null,
+      "name": "Distortion Field"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3.75",
+            "4.25",
+            "4.75"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "475"
+        },
+        {
+          "generated": true,
+          "header": "BONUS ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.35"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "155",
+        "145",
+        "135"
+      ],
+      "desc": "Creates a blister in spacetime, trapping all units caught in its sphere of influence and causes you to move very quickly inside it. Only Faceless Void and any units he controls are unaffected. Invisible enemies in the sphere will be revealed.",
+      "dmg_type": "",
+      "key": "faceless_void_chronosphere",
+      "mc": [
+        "125",
+        "200",
+        "275"
+      ],
+      "name": "Chronosphere"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Reverse Time Walk",
+    "desc": "Available for 1.5 seconds after landing Time Walk. If used in this period, you will reverse your time walk back to your previous cast location. Does not affect health or proc scepter hits.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Time Dilation",
+    "desc": "Increases slow per stack. Provides Faceless Void with stacks that increase his attack and movement speed. Amount of stacks is equal to the total amount of Time Dilation stacks applied to enemies at the moment of the cast and linearly fades out over the duration.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 3.3,
+    "armor": 0,
+    "attack_max": 40,
+    "attack_min": 34,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 15,
+    "int_gain": 1.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.6
+  },
+  "name": "Faceless Void",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Initiator",
+    "Disabler",
+    "Escape",
+    "Durable"
+  ],
+  "short_name": "faceless_void",
+  "talents": [
+    {
+      "left": "+20% Backtrack Chance",
+      "level": 25,
+      "right": "+? Chronosphere AoE"
+    },
+    {
+      "left": "+? Attack Speed during Chronosphere",
+      "level": 20,
+      "right": "-?s Time Walk Cooldown"
+    },
+    {
+      "left": "+? Time Lock Damage",
+      "level": 15,
+      "right": "+? Time Walk Range"
+    },
+    {
+      "left": "+? Time Dilation DPS Per Cooldown",
+      "level": 10,
+      "right": "+?s Time Walk Backtrack Duration"
+    }
+  ]
+}

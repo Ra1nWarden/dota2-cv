@@ -1,0 +1,22 @@
+{
+  "abilities": [
+    {
+      "description": "Upgrades the ultimate, and some abilities, of all heroes.",
+      "title": "Ability Upgrade",
+      "type": "passive"
+    }
+  ],
+  "attrib": [],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 5800,
+  "created": false,
+  "id": 727,
+  "mc": false,
+  "name": "Aghanim's Blessing - Roshan",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "ultimate_scepter_roshan"
+}

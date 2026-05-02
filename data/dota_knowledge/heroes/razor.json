@@ -1,0 +1,414 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE MIN:",
+          "key": "damage_min",
+          "value": [
+            "35",
+            "40",
+            "45",
+            "50"
+          ]
+        },
+        {
+          "header": "DAMAGE MAX:",
+          "key": "damage_max",
+          "value": [
+            "80",
+            "115",
+            "150",
+            "185"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "TOTAL ABILITY TIME:",
+          "key": "total_ability_time",
+          "value": "2.2"
+        },
+        {
+          "header": "SLOW MIN:",
+          "key": "slow_min",
+          "value": "5%"
+        },
+        {
+          "header": "SLOW MAX:",
+          "key": "slow_max",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "SECOND RING DELAY:",
+          "key": "second_ring_delay",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SECOND RING REDUCTION:",
+          "key": "second_ring_reduction",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "12",
+        "11",
+        "10"
+      ],
+      "desc": "Releases a wave of energetic plasma that grows in power as it expands, but also zaps on contraction, slowing and dealing damage to enemy units caught in its path. Damage and slow increases with distance from Razor. The Plasma Field hits each unit twice, once each direction.",
+      "dmg_type": "Magical",
+      "key": "razor_plasma_field",
+      "mc": "125",
+      "name": "Plasma Field"
+    },
+    {
+      "attrib": [
+        {
+          "header": "LINK DURATION:",
+          "key": "drain_length",
+          "value": "10"
+        },
+        {
+          "header": "BUFF DURATION:",
+          "key": "drain_duration",
+          "value": [
+            "12",
+            "14",
+            "16",
+            "18"
+          ]
+        },
+        {
+          "header": "DAMAGE DRAIN RATE:",
+          "key": "drain_rate",
+          "value": [
+            "6",
+            "12",
+            "18",
+            "24"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DRAIN RANGE BUFFER:",
+          "key": "drain_range_buffer",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3.34"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK SPEED FACTOR:",
+          "key": "attack_speed_factor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MOVE SPEED FACTOR:",
+          "key": "move_speed_factor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PULL SPEED:",
+          "key": "pull_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MIN PULL RANGE:",
+          "key": "min_pull_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "44",
+        "36",
+        "28",
+        "20"
+      ],
+      "desc": "Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor. Allows Razor to attack while moving with the link active.",
+      "dmg_type": "",
+      "key": "razor_static_link",
+      "mc": "65",
+      "name": "Static Link"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANCE TO STRIKE:",
+          "key": "strike_pct_chance",
+          "value": "20%"
+        },
+        {
+          "header": "TARGETS HIT:",
+          "key": "strike_target_count",
+          "value": "3"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "strike_damage",
+          "value": [
+            "50",
+            "90",
+            "130",
+            "170"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "strike_move_slow_pct",
+          "value": [
+            "25%",
+            "30%",
+            "35%",
+            "40%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "strike_slow_duration",
+          "value": "1"
+        },
+        {
+          "header": "STRIKE SEARCH AREA:",
+          "key": "strike_search_radius",
+          "value": "700"
+        },
+        {
+          "header": "STRIKE COOLDOWN:",
+          "key": "strike_internal_cd",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "STRIKE CD REDUCTION DURING STORM:",
+          "key": "strike_cd_reduction_during_storm",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HIT TARGETS INSIDE EYE OF THE STORM:",
+          "key": "hit_targets_inside_eye_of_the_storm",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "EYE OF THE STORM CHANCE MULTIPLIER:",
+          "key": "eye_of_the_storm_chance_multiplier",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "There's a chance when attacked, and always when targeted with a spell, to release a forked lightning that strikes the target and other nearby enemies, prioritizing the unit type of the attacker, dealing damage and slowing movement speed.",
+      "dmg_type": "Magical",
+      "key": "razor_storm_surge",
+      "mc": null,
+      "name": "Storm Surge"
+    },
+    {
+      "attrib": [],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "razor_unstable_current",
+      "mc": null,
+      "name": "Unstable Current"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "500"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "30"
+        },
+        {
+          "header": "STRIKE INTERVAL:",
+          "key": "strike_interval",
+          "value": [
+            "0.7",
+            "0.6",
+            "0.5"
+          ]
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "armor_reduction",
+          "value": "1"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "60",
+            "75",
+            "90"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "80",
+        "70",
+        "60"
+      ],
+      "desc": "A powerful lightning storm strikes out at the enemy unit with the lowest health, dealing damage and reducing armor.",
+      "dmg_type": "Physical",
+      "key": "razor_eye_of_the_storm",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Eye of the Storm"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Eye of the Storm",
+    "desc": "Causes Eye of the Storm to strike two different units instead of one and can damage structures. When striking buildings, it will only target towers, barracks, and the Ancient.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Storm Surge",
+    "desc": "While Eye of the Storm is active, strike chance is =2x as high, strike cooldown is reduced by =2.0s, and Lightning strikes all enemies within Eye of the Storm's radius. Does not apply to the same enemy twice from a single instance.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 24,
+    "agi_gain": 2.8,
+    "armor": 0,
+    "attack_max": 25,
+    "attack_min": 23,
+    "attack_range": 475,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 21,
+    "int_gain": 2.2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 22,
+    "str_gain": 2.8
+  },
+  "name": "Razor",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Nuker",
+    "Pusher"
+  ],
+  "short_name": "razor",
+  "talents": [
+    {
+      "left": "Creates A Second Plasma Field Delayed By ?s",
+      "level": 25,
+      "right": "Static Link Steals Attack Speed"
+    },
+    {
+      "left": "+?% Storm Surge Slow and Damage",
+      "level": 20,
+      "right": "-?s Eye of the Storm Strike Interval"
+    },
+    {
+      "left": "+? Static Link Damage Steal",
+      "level": 15,
+      "right": "+12 Strength"
+    },
+    {
+      "left": "+?s Plasma Field Slow Duration",
+      "level": 10,
+      "right": "+4 Armor"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "7 / 10 / 13 / 16"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "armor",
+      "value": "0 / 4 / 6 / 8"
+    },
+    {
+      "display": "+ {value}% Knockback Resistance",
+      "key": "knockback_resist",
+      "value": "0 / 0 / 0 / 40"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1586,
+  "mc": false,
+  "name": "Tough",
+  "notes": "",
+  "qual": null,
+  "short_name": "enhancement_tough"
+}

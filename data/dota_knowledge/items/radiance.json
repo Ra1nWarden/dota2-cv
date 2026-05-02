@@ -1,0 +1,60 @@
+{
+  "abilities": [
+    {
+      "description": "When active, scorches enemies for 60 magical damage per second. Illusions deal 35 magical damage per second.\n\nRadius: 650",
+      "title": "Burn",
+      "type": "toggle"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "55"
+    },
+    {
+      "key": "aura_damage",
+      "value": "60"
+    },
+    {
+      "key": "aura_damage_illusions",
+      "value": "35"
+    },
+    {
+      "key": "upgrade_day_vision",
+      "value": "250"
+    },
+    {
+      "display": "+ {value}% Evasion",
+      "key": "evasion",
+      "value": "25"
+    },
+    {
+      "key": "blind_pct",
+      "value": "0"
+    },
+    {
+      "key": "aura_radius",
+      "value": "650"
+    },
+    {
+      "key": "illusion_multiplier_pct",
+      "value": "100"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": [
+    "relic",
+    "talisman_of_evasion"
+  ],
+  "cost": 4700,
+  "created": true,
+  "id": 137,
+  "mc": false,
+  "name": "Radiance",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "radiance"
+}

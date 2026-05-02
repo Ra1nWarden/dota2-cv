@@ -1,0 +1,66 @@
+{
+  "abilities": [
+    {
+      "description": "Gives 20% increased movement speed on melee heroes, and 10% on ranged heroes, and lets you move through units and turn more quickly for 3 seconds.",
+      "title": "Phase",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "50"
+    },
+    {
+      "display": "+ {value} Damage (MELEE)",
+      "key": "bonus_damage_melee",
+      "value": "18"
+    },
+    {
+      "display": "+ {value} Damage (RANGED)",
+      "key": "bonus_damage_range",
+      "value": "12"
+    },
+    {
+      "key": "phase_movement_speed",
+      "value": "20"
+    },
+    {
+      "key": "phase_movement_speed_range",
+      "value": "10"
+    },
+    {
+      "key": "phase_duration",
+      "value": "3.0"
+    },
+    {
+      "key": "bonus_attack_speed",
+      "value": "0"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "4"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 8,
+  "charges": false,
+  "components": [
+    "boots",
+    "chainmail",
+    "blades_of_attack"
+  ],
+  "cost": 1450,
+  "created": true,
+  "id": 50,
+  "mc": false,
+  "name": "Phase Boots",
+  "notes": "",
+  "qual": "common",
+  "short_name": "phase_boots"
+}

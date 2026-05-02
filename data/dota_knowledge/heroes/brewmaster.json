@@ -1,0 +1,590 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "15%",
+            "30%",
+            "45%",
+            "60%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "attack_speed_slow",
+          "value": [
+            "15",
+            "30",
+            "45",
+            "60"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "18",
+        "16",
+        "14",
+        "12"
+      ],
+      "desc": "Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy units.",
+      "dmg_type": "Magical",
+      "key": "brewmaster_thunder_clap",
+      "mc": "100",
+      "name": "Thunder Clap"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "header": "IGNITE TOTAL DAMAGE:",
+          "key": "total_ignite_damage",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "24%",
+            "28%",
+            "32%",
+            "36%"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA DURATION:",
+          "key": "extra_duration",
+          "value": "3"
+        },
+        {
+          "header": "BARREL SPEED:",
+          "key": "projectile_speed",
+          "value": "950"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE WIDTH:",
+          "key": "projectile_width",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "BARREL WIDTH:",
+          "key": "barrel_width",
+          "value": "75"
+        },
+        {
+          "header": "BARREL IMPACT DAMAGE:",
+          "key": "barrel_impact_damage",
+          "value": [
+            "40",
+            "70",
+            "100",
+            "130"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "950"
+        },
+        {
+          "generated": true,
+          "header": "MIN MOVEMENT:",
+          "key": "min_movement",
+          "value": "-15"
+        },
+        {
+          "generated": true,
+          "header": "MAX MOVEMENT:",
+          "key": "max_movement",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "19",
+        "17",
+        "15",
+        "13"
+      ],
+      "desc": "Rolls a barrel of ale at enemies that damages enemies along its path and spills out at the target location.\n\nAny enemy in the path or the spill area is drenched in cinder brew, becoming slowed. If the enemy receives Magic or Pure damage, they will be ignited, extending the duration by 3s and causing them to take damage over time.",
+      "dmg_type": "Magical",
+      "key": "brewmaster_cinder_brew",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Cinder Brew"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MAGIC RESIST:",
+          "key": "magic_resist",
+          "value": [
+            "8%",
+            "12%",
+            "16%",
+            "20%"
+          ]
+        },
+        {
+          "header": "ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ]
+        },
+        {
+          "header": "EVASION:",
+          "key": "dodge_chance",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "header": "MOVE SPEED:",
+          "key": "bonus_move_speed",
+          "value": [
+            "4%",
+            "6%",
+            "8%",
+            "10%"
+          ]
+        },
+        {
+          "header": "CRIT CHANCE:",
+          "key": "crit_chance",
+          "value": "20%"
+        },
+        {
+          "header": "CRIT DAMAGE:",
+          "key": "crit_multiplier",
+          "value": [
+            "120%",
+            "140%",
+            "160%",
+            "180%"
+          ]
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "attack_speed",
+          "value": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BREWED UP DURATION:",
+          "key": "brewed_up_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "BREWED UP DURATION EXTEND:",
+          "key": "brewed_up_duration_extend",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "BREWED UP BONUS:",
+          "key": "brewed_up_bonus",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "HANGOVER TIME:",
+          "key": "hangover_time",
+          "value": "9"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "Brewmaster can switch stances based on the elements he controls.\n\nWhenever Brewmaster casts an ability, he becomes Brewed Up, increasing his stance power by 150% for 5s. If he casts another ability while Brewed Up, the duration is extended by 2s. After Brewed Up expires, he is hungover and cannot Brew Up again for 9s.\n\nEarth Brawler gains bonus Magic Resistance and Armor.\n\nStorm Brawler gains bonus Evasion and Movement Speed.\n\nFire Brawler gains bonus Attack Speed and chance to critical strike.",
+      "dmg_type": "",
+      "key": "brewmaster_drunken_brawler",
+      "mc": "0",
+      "name": "Drunken Brawler"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MIN HEALTH THRESHOLD:",
+          "key": "min_health_threshold",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "MAX HEALTH THRESHOLD:",
+          "key": "max_health_threshold",
+          "value": "20"
+        },
+        {
+          "header": "MAX STATUS RESIST:",
+          "key": "status_resist",
+          "value": "10%"
+        },
+        {
+          "header": "MAX SPEED SLOW:",
+          "key": "min_speed",
+          "value": "10%"
+        },
+        {
+          "header": "MAX SPEED INCREASE:",
+          "key": "max_speed",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "SPEED TOGGLE TIME:",
+          "key": "speed_toggle_time",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DRINK DURATION:",
+          "key": "drink_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MAX HP REGEN:",
+          "key": "max_hp_regen",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": "0",
+      "desc": "When Brewmaster drops below 50% Health he gains a Status Resistance buff and his movement speed alternates every 1s between being faster and being slower. The effect becomes stronger at lower health, scaling from 0 up to max values at 20% Health.",
+      "dmg_type": [],
+      "key": "brewmaster_liquid_courage",
+      "mc": "0",
+      "name": "Liquid Courage"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "16",
+            "20",
+            "24",
+            "24"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SPLIT DURATION:",
+          "key": "split_duration",
+          "value": "0.6"
+        },
+        {
+          "header": "EARTH BREWLING HP:",
+          "key": "tooltip_earth_brewling_hp",
+          "value": [
+            "1400",
+            "2300",
+            "3200",
+            "4100"
+          ]
+        },
+        {
+          "header": "EARTH BREWLING DAMAGE:",
+          "key": "tooltip_earth_brewling_damage",
+          "value": [
+            "35",
+            "70",
+            "105",
+            "140"
+          ]
+        },
+        {
+          "header": "STORM BREWLING HP:",
+          "key": "tooltip_storm_brewling_hp",
+          "value": [
+            "1000",
+            "1500",
+            "2000",
+            "2500"
+          ]
+        },
+        {
+          "header": "STORM BREWLING DAMAGE:",
+          "key": "tooltip_storm_brewling_damage",
+          "value": [
+            "30",
+            "50",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "header": "FIRE BREWLING HP:",
+          "key": "tooltip_fire_brewling_hp",
+          "value": [
+            "1300",
+            "1450",
+            "1600",
+            "1750"
+          ]
+        },
+        {
+          "header": "FIRE BREWLING DAMAGE:",
+          "key": "tooltip_fire_brewling_damage",
+          "value": [
+            "70",
+            "120",
+            "170",
+            "220"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CURRENT HP AGI:",
+          "key": "current_hp_agi",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CURRENT DMG AGI:",
+          "key": "current_dmg_agi",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS BREWLING HP:",
+          "key": "bonus_brewling_hp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "PRIMAL SPLIT CANCEL:",
+          "key": "primal_split_cancel",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HP PER ATTRIBUTE:",
+          "key": "hp_per_attribute",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DMG PER ATTRIBUTE:",
+          "key": "dmg_per_attribute",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTRIBUTE SHARE PCT:",
+          "key": "attribute_share_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GIVE BRAWLER PASSIVE:",
+          "key": "give_brawler_passive",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER BONUS LEVELS:",
+          "key": "scepter_bonus_levels",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.55"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "140",
+        "130",
+        "120"
+      ],
+      "desc": "Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival, each with their own abilities. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. Each Warrior gains its respective Drunken Brawler stance.",
+      "dmg_type": "",
+      "key": "brewmaster_primal_split",
+      "mc": [
+        "150",
+        "200",
+        "250",
+        "250"
+      ],
+      "name": "Primal Split"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Primal Split",
+    "desc": "Primal Split gains 1 max and current level, improving the Brewlings and their abilities.\n\nAllows Primal Split to be cancelled early, and causes the Brewlings to be Brewed Up when Primal Split begins.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Liquid Courage",
+    "desc": "Toss a strong drink to a teammate or drink it yourself, activating the maximum power effect of Liquid Courage and granting 2.5% Max HP Regen per second.\n\nLasts 5 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 19,
+    "agi_gain": 2,
+    "armor": 1,
+    "attack_max": 33,
+    "attack_min": 26,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 17,
+    "int_gain": 1.9,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.2
+  },
+  "name": "Brewmaster",
+  "primary_attr": "all",
+  "roles": [
+    "Carry",
+    "Initiator",
+    "Durable",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "brewmaster",
+  "talents": [
+    {
+      "left": "?x Drunken Brawler Stance Bonuses",
+      "level": 25,
+      "right": "Cinder Brew applies Fear when ignited"
+    },
+    {
+      "left": "-?s Primal Split Cooldown",
+      "level": 20,
+      "right": "+110 Attack Speed"
+    },
+    {
+      "left": "+?% Cinder Brew Damage/Duration",
+      "level": 15,
+      "right": "+? Brewlings Health"
+    },
+    {
+      "left": "+? Brewlings Base Damage",
+      "level": 10,
+      "right": "+?/?s Drunken Brawler Brew Up / Extend Duration"
+    }
+  ]
+}

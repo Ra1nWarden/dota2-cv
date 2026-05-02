@@ -1,0 +1,26 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Primary Attribute",
+      "key": "primary_stat",
+      "value": "40"
+    },
+    {
+      "key": "primary_stat_universal",
+      "value": "24"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 366,
+  "mc": false,
+  "name": "Apex",
+  "notes": "Grants +24 to each attribute for Universal Heroes.",
+  "qual": null,
+  "short_name": "apex"
+}

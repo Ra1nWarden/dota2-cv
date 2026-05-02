@@ -1,0 +1,455 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "FLIGHT DURATION:",
+          "key": "duration",
+          "value": [
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK RANGE:",
+          "key": "attack_range_bonus",
+          "value": [
+            "250",
+            "275",
+            "300",
+            "325"
+          ]
+        },
+        {
+          "header": "HEALTH BURN:",
+          "key": "percent_damage",
+          "value": [
+            "4%",
+            "6%",
+            "8%",
+            "10%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.5"
+        },
+        {
+          "header": "BURN DURATION:",
+          "key": "damage_duration",
+          "value": "3"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "move_slow",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED BONUS:",
+          "key": "projectile_speed_bonus",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "TREE DESTRUCTION RADIUS:",
+          "key": "tree_destruction_radius",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK POINT:",
+          "key": "attack_point",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "MAX ATTACKS:",
+          "key": "max_attacks",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "26",
+        "24",
+        "22",
+        "20"
+      ],
+      "desc": "Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a magical freeze that strips them of 4% of their current health each second.",
+      "dmg_type": "Magical",
+      "key": "winter_wyvern_arctic_burn",
+      "mc": "100",
+      "name": "Arctic Burn"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1200"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE MAX TIME:",
+          "key": "projectile_max_time",
+          "value": "1"
+        },
+        {
+          "header": "SHATTER RADIUS:",
+          "key": "split_radius",
+          "value": "500"
+        },
+        {
+          "generated": true,
+          "header": "BONUS MOVESPEED:",
+          "key": "bonus_movespeed",
+          "value": [
+            "-28",
+            "-32",
+            "-36",
+            "-40"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed_slow_tooltip",
+          "value": [
+            "28%",
+            "32%",
+            "36%",
+            "40%"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "SECONDARY PROJECTILE SPEED:",
+          "key": "secondary_projectile_speed",
+          "value": "1000"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "80",
+            "160",
+            "240",
+            "320"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1150"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "6",
+      "desc": "Launches a ball of brittle ice toward a unit. The ice shatters on impact, leaving the primary target completely unaffected, while hurling damaging splinters into nearby enemies in a 500 base radius. Enemies struck by these splinters are slowed by 28%.",
+      "dmg_type": "Magical",
+      "key": "winter_wyvern_splinter_blast",
+      "mc": [
+        "105",
+        "115",
+        "125",
+        "135"
+      ],
+      "name": "Splinter Blast"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "header": "BASE HEAL PER SECOND:",
+          "key": "heal_additive",
+          "value": [
+            "40",
+            "45",
+            "50",
+            "55"
+          ]
+        },
+        {
+          "header": "MAX HP HEAL PER SECOND:",
+          "key": "heal_percentage",
+          "value": [
+            "2.25%",
+            "3%",
+            "3.75%",
+            "4.5%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SHARD SPLINTER RANGE:",
+          "key": "shard_splinter_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "850",
+            "900",
+            "950",
+            "1000"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "desc": "Encases an ally in an icy cocoon, freezing them solid while healing a base amount as well as a percentage of their maximum health each second. The cocoon blocks all physical damage.",
+      "dmg_type": "",
+      "key": "winter_wyvern_cold_embrace",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Cold Embrace"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "TOOLTIP SECONDS:",
+          "key": "tooltip_seconds",
+          "value": "420"
+        },
+        {
+          "generated": true,
+          "header": "TOOLTIP INT PCT:",
+          "key": "tooltip_int_pct",
+          "value": "25"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "winter_wyvern_eldwurms_edda",
+      "mc": null,
+      "name": "Eldwurm's Edda"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "525"
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "100%"
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "bonus_attack_speed",
+          "value": [
+            "50",
+            "65",
+            "80"
+          ]
+        },
+        {
+          "header": "MINIMUM DURATION:",
+          "key": "duration",
+          "value": "2"
+        },
+        {
+          "header": "MAXIMUM DURATION:",
+          "key": "max_duration",
+          "value": "6"
+        },
+        {
+          "header": "BONUS DURATION PER HERO:",
+          "key": "bonus_duration_per_hero",
+          "value": "1.5"
+        },
+        {
+          "header": "BONUS DURATION PER CREEP:",
+          "key": "bonus_duration_per_creep",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "TRANSFER ON DEATH:",
+          "key": "transfer_on_death",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "TRANSFER DURATION PCT:",
+          "key": "transfer_duration_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "100",
+        "90",
+        "80"
+      ],
+      "desc": "Winter Wyvern dispells then freezes an enemy in place while striking those nearby with a maddening curse which causes them to attack their frozen ally with increased attack speed. The frozen ally and those cursed to attack their ally are immune to all damage from their enemies with the exception of damage from Winter Wyvern or her controlled units.",
+      "dmg_type": "",
+      "key": "winter_wyvern_winters_curse",
+      "mc": [
+        "150",
+        "200",
+        "250"
+      ],
+      "name": "Winter's Curse"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Arctic Burn",
+    "desc": "Causes Arctic Burn to be a toggle ability, draining mana every second when active. Increases Winter Wyvern's movement speed.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Cold Embrace",
+    "desc": "Reduces cooldown by 4.0 seconds. Allied units gain bonus attack damage when emerging from the icy cocoon.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.7,
+    "armor": 1,
+    "attack_max": 23,
+    "attack_min": 16,
+    "attack_range": 450,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 26,
+    "int_gain": 3.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 285,
+    "night_vision": 1200,
+    "str": 22,
+    "str_gain": 2.5
+  },
+  "name": "Winter Wyvern",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "winter_wyvern",
+  "talents": [
+    {
+      "left": "+60 Winter's Curse Attack Speed ",
+      "level": 25,
+      "right": "Splinter Blast 1s Stun"
+    },
+    {
+      "left": "+15% Arctic Burn Slow",
+      "level": 20,
+      "right": "+100 Splinter Blast Damage"
+    },
+    {
+      "left": "+3s Arctic Burn Debuff Duration",
+      "level": 15,
+      "right": "+175 Splinter Blast Shatter Radius"
+    },
+    {
+      "left": "+20 HP/s Cold Embrace Heal",
+      "level": 10,
+      "right": "+35 Damage"
+    }
+  ]
+}

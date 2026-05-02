@@ -1,0 +1,463 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": "35"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "slow_movement_speed",
+          "value": [
+            "-12%",
+            "-18%",
+            "-24%",
+            "-30%"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "400",
+            "425",
+            "450",
+            "475"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "shrapnel_damage",
+          "value": [
+            "30",
+            "45",
+            "60",
+            "75"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DELAY:",
+          "key": "damage_delay",
+          "value": "1.2"
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "1800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Consumes a charge to launch a ball of shrapnel that showers the target area in explosive pellets. Enemies are subject to damage and slowed movement. Reveals the targeted area. Shrapnel charges restore every 35 seconds.",
+      "dmg_type": "Magical",
+      "key": "sniper_shrapnel",
+      "mc": "75",
+      "name": "Shrapnel"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "20",
+            "50",
+            "80",
+            "110"
+          ]
+        },
+        {
+          "header": "CHANCE:",
+          "key": "proc_chance",
+          "value": "40%"
+        },
+        {
+          "header": "MAX KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "-100"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": [
+            "0.2",
+            "0.3",
+            "0.4",
+            "0.5"
+          ]
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Sniper increases his accuracy, giving him a chance to deal 20 extra damage and knock back his enemies. Knockback distance increases based on how close the enemy is to Sniper. Headshots briefly slow enemy movement and attack speed by -100%.",
+      "dmg_type": "Physical",
+      "key": "sniper_headshot",
+      "mc": null,
+      "name": "Headshot"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "SLOW:",
+          "key": "slow",
+          "value": "65"
+        },
+        {
+          "header": "HEADSHOT CHANCE:",
+          "key": "headshot_chance",
+          "value": "100%"
+        },
+        {
+          "header": "ACTIVE BONUS ATTACK RANGE:",
+          "key": "active_attack_range_bonus",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PASSIVE ATTACK RANGE BONUS:",
+          "key": "passive_attack_range_bonus",
+          "value": [
+            "160",
+            "240",
+            "320",
+            "400"
+          ]
+        },
+        {
+          "header": "BONUS VISION:",
+          "key": "bonus_vision",
+          "value": [
+            "500",
+            "750",
+            "1000",
+            "1250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VIEW RESTRICT:",
+          "key": "view_restrict",
+          "value": "140"
+        },
+        {
+          "generated": true,
+          "header": "DOES ROOT:",
+          "key": "does_root",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "REQUIRE TARGET:",
+          "key": "require_target",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "NO REVEAL:",
+          "key": "no_reveal",
+          "value": "0"
+        },
+        {
+          "header": "ATTACK SPEED:",
+          "key": "attack_speed",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "20",
+        "18",
+        "16",
+        "14"
+      ],
+      "desc": "Passively increases Sniper's attack range by 160.\n\nOn cast, Sniper gains increased vision, Headshot chance, and attack range. Slows you by 65% for the duration and restricts your vision to a frontal cone.",
+      "dmg_type": "",
+      "key": "sniper_take_aim",
+      "mc": "50",
+      "name": "Take Aim"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "375"
+        },
+        {
+          "header": "MOVE SLOW:",
+          "key": "slow",
+          "value": "50%"
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK HEIGHT:",
+          "key": "knockback_height",
+          "value": "100"
+        },
+        {
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "475"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "0.4"
+        },
+        {
+          "generated": true,
+          "header": "SELF PUSH:",
+          "key": "self_push",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "Launches a grenade at the target area, dealing damage to enemies and knocking them and Sniper back. Enemies affected are disarmed and have their movement slowed after the knockback.",
+      "dmg_type": "Magical",
+      "key": "sniper_concussive_grenade",
+      "mc": "50",
+      "name": "Concussive Grenade"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage_for_range",
+          "value": "1.50%"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE DISTANCE:",
+          "key": "bonus_damage_distance",
+          "value": "100"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Sniper\u2019s attacks deal bonus damage for every 100 units of distance Sniper is from the target.",
+      "dmg_type": "",
+      "key": "sniper_keen_scope",
+      "mc": null,
+      "name": "Keen Scope"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "300",
+            "400",
+            "500"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2500"
+        },
+        {
+          "generated": true,
+          "header": "COOLDOWN REDUCTION ON KILL:",
+          "key": "cooldown_reduction_on_kill",
+          "value": [
+            "0",
+            "5",
+            "10"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ATTACK FACTOR:",
+          "key": "attack_factor",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK FACTOR TOOLTIP:",
+          "key": "attack_factor_tooltip",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "3000"
+        },
+        {
+          "header": "AIM DURATION:",
+          "key": "abilitycastpoint",
+          "value": "2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "20",
+        "15",
+        "10"
+      ],
+      "desc": "Sniper locks onto a target enemy unit and, after a short aiming duration, fires a devastating shot that deals Sniper's attack damage plus bonus damage at long range and mini-stuns the target. Whenever Sniper kills an enemy hero, Assassinate is refreshed.",
+      "dmg_type": "Magical",
+      "key": "sniper_assassinate",
+      "mc": "175",
+      "name": "Assassinate"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Assassinate",
+    "desc": "Causes Assassinate to fire quicker and stun the enemy target.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Concussive Grenade",
+    "desc": "Launches a grenade at the target area, dealing damage to enemies and knocking them and Sniper back. Enemies affected are disarmed and have their movement slowed after the knockback.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 27,
+    "agi_gain": 3.2,
+    "armor": 0,
+    "attack_max": 19,
+    "attack_min": 13,
+    "attack_range": 550,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 15,
+    "int_gain": 2.6,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 1400,
+    "str": 19,
+    "str_gain": 2
+  },
+  "name": "Sniper",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Nuker"
+  ],
+  "short_name": "sniper",
+  "talents": [
+    {
+      "left": "-?s Shrapnel Charge Restore Time",
+      "level": 25,
+      "right": "+? Max Headshot Knockback Distance"
+    },
+    {
+      "left": "+?s Take Aim Duration",
+      "level": 20,
+      "right": "+?% Shrapnel Damage"
+    },
+    {
+      "left": "+? Attack Speed During Take Aim",
+      "level": 15,
+      "right": "+? Assassinate Damage"
+    },
+    {
+      "left": "+? Take Aim Passive Attack Range",
+      "level": 10,
+      "right": "+? Headshot Damage"
+    }
+  ]
+}

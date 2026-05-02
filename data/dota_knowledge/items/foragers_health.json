@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 1% max health regeneration to the target for 10 seconds.\n\nIf the unit is attacked by an enemy hero or Roshan, the effect is lost.",
+      "title": "Munch",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "buff_duration",
+      "value": "10"
+    },
+    {
+      "key": "health_regen_pct",
+      "value": "1"
+    },
+    {
+      "key": "break_on_hero_damage",
+      "value": "1"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "2"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1869,
+  "mc": false,
+  "name": "Vital Toadstool",
+  "notes": "Hold Control to use on a nearby allied hero.",
+  "qual": null,
+  "short_name": "foragers_health"
+}

@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "0.7"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 175,
+  "created": false,
+  "id": 28,
+  "mc": false,
+  "name": "Sage's Mask",
+  "notes": "",
+  "qual": "component",
+  "short_name": "sobi_mask"
+}

@@ -1,0 +1,339 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "BOLT SPEED:",
+          "key": "bolt_speed",
+          "value": "1000"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "bolt_stun_duration",
+          "value": [
+            "1",
+            "1.2",
+            "1.4",
+            "1.6"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "bolt_aoe",
+          "value": [
+            "250",
+            "270",
+            "290",
+            "310"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER BONUS DAMAGE:",
+          "key": "scepter_bonus_damage",
+          "value": "180"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE PCT:",
+          "key": "bonus_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "21",
+        "18",
+        "15",
+        "12"
+      ],
+      "desc": "Sven unleashes his magical gauntlet that deals damage and stuns enemy units in a small area around the target.",
+      "dmg_type": "Magical",
+      "key": "sven_storm_bolt",
+      "mc": [
+        "110",
+        "115",
+        "120",
+        "125"
+      ],
+      "name": "Storm Hammer"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CLEAVE STARTING WIDTH:",
+          "key": "cleave_starting_width",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CLEAVE ENDING WIDTH:",
+          "key": "cleave_ending_width",
+          "value": [
+            "270",
+            "300",
+            "330",
+            "360"
+          ]
+        },
+        {
+          "header": "CLEAVE DISTANCE:",
+          "key": "cleave_distance",
+          "value": [
+            "400",
+            "500",
+            "600",
+            "700"
+          ]
+        },
+        {
+          "header": "CLEAVE DAMAGE:",
+          "key": "great_cleave_damage",
+          "value": [
+            "60%",
+            "70%",
+            "80%",
+            "90%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STRENGTH BONUS:",
+          "key": "strength_bonus",
+          "value": "00"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Sven strikes with great force, cleaving all nearby enemy units with his attack.",
+      "dmg_type": "",
+      "key": "sven_great_cleave",
+      "mc": null,
+      "name": "Great Cleave"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS SPEED:",
+          "key": "movespeed",
+          "value": [
+            "6%",
+            "9%",
+            "12%",
+            "15%"
+          ]
+        },
+        {
+          "header": "BONUS ARMOR:",
+          "key": "bonus_armor",
+          "value": [
+            "5",
+            "8",
+            "11",
+            "14"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "700"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "8"
+        },
+        {
+          "generated": true,
+          "header": "UNDISPELLABLE:",
+          "key": "undispellable",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "36",
+        "32",
+        "28",
+        "24"
+      ],
+      "desc": "Sven's Warcry heartens his allied heroes for battle, increasing their armor and movement speed. Lasts 8 seconds.",
+      "dmg_type": "",
+      "key": "sven_warcry",
+      "mc": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "name": "Warcry"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "gods_strength_damage",
+          "value": [
+            "110%",
+            "150%",
+            "190%"
+          ]
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "bonus_slow_resistance",
+          "value": "30%"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "110",
+        "105",
+        "100"
+      ],
+      "desc": "Sven channels his rogue strength, granting bonus damage and slow resistance for 30 seconds.",
+      "dmg_type": "",
+      "key": "sven_gods_strength",
+      "mc": [
+        "100",
+        "125",
+        "150"
+      ],
+      "name": "God's Strength"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER STRENGTH:",
+          "key": "bonus_damage_per_str",
+          "value": "0.08"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Sven gains additional attack damage from Strength.",
+      "dmg_type": "",
+      "key": "sven_wrath_of_god",
+      "mc": null,
+      "name": "Wrath of God"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Storm Hammer",
+    "desc": "Increases cast range and applies a basic dispel on the target. Affects invulnerable units. If alt-cast, it deals an additional 180 damage and Sven travels with the Storm Hammer.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Warcry",
+    "desc": "Increases radius and bonus movement speed. Warcry is now undispellable and provides a %base_barrier_amount% physical damage barrier.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 2.2,
+    "armor": 0,
+    "attack_max": 39,
+    "attack_min": 37,
+    "attack_range": 150,
+    "attack_rate": 1.9,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.75,
+    "int": 16,
+    "int_gain": 1.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 325,
+    "night_vision": 800,
+    "str": 24,
+    "str_gain": 3.5
+  },
+  "name": "Sven",
+  "primary_attr": "str",
+  "roles": [
+    "Carry",
+    "Disabler",
+    "Initiator",
+    "Durable",
+    "Nuker"
+  ],
+  "short_name": "sven",
+  "talents": [
+    {
+      "left": "+?% God's Strength Damage",
+      "level": 25,
+      "right": "+?s Storm Hammer Stun Duration"
+    },
+    {
+      "left": "-?% Storm Hammer Cooldown and Mana Cost",
+      "level": 20,
+      "right": "+? Warcry Armor"
+    },
+    {
+      "left": "-?s God's Strength Cooldown",
+      "level": 15,
+      "right": "+?% Great Cleave Damage"
+    },
+    {
+      "left": "+?s Warcry Duration",
+      "level": 10,
+      "right": "+?% God's Strength Slow Resistance"
+    }
+  ]
+}

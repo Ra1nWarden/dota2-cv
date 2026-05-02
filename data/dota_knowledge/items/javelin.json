@@ -1,0 +1,31 @@
+{
+  "abilities": [
+    {
+      "description": "Grants each attack a 25% chance to pierce through evasion and deal 60 bonus magical damage.",
+      "title": "Pierce",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_chance",
+      "value": "25"
+    },
+    {
+      "key": "bonus_chance_damage",
+      "value": "60"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 900,
+  "created": false,
+  "id": 7,
+  "mc": false,
+  "name": "Javelin",
+  "notes": "",
+  "qual": "component",
+  "short_name": "javelin"
+}

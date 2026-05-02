@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Casts Smoke of Deceit on yourself only that lasts for up to 15 seconds.",
+      "title": "Solitary Disguise",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_agility",
+      "value": "0"
+    },
+    {
+      "key": "passive_movement_bonus",
+      "value": "0"
+    },
+    {
+      "key": "visibility_radius",
+      "value": "1025"
+    },
+    {
+      "key": "duration",
+      "value": "15.0"
+    },
+    {
+      "key": "bonus_movement_speed",
+      "value": "15"
+    },
+    {
+      "key": "secondary_application_radius",
+      "value": "0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 362,
+  "mc": 100,
+  "name": "Ninja Gear",
+  "notes": "",
+  "qual": null,
+  "short_name": "ninja_gear"
+}

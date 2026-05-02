@@ -1,0 +1,46 @@
+{
+  "abilities": [
+    {
+      "description": "For 12 seconds, creates an area that reveals and slows invisible heroes by -20% in a 1050 radius where the caster was standing. Invisible units revealed by dust take 25 damage.\n\n The debuff effect on enemies lingers for 8s after leaving the area of effect.",
+      "title": "Reveal",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "12"
+    },
+    {
+      "key": "radius",
+      "value": "1050"
+    },
+    {
+      "key": "movespeed",
+      "value": "-20"
+    },
+    {
+      "key": "damage",
+      "value": "25"
+    },
+    {
+      "key": "linger_duration",
+      "value": "8"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": 1,
+  "components": null,
+  "cost": 80,
+  "created": false,
+  "id": 40,
+  "mc": false,
+  "name": "Dust of Appearance",
+  "notes": "Places a debuff on enemy units in the area that reveals them when they are invisible.",
+  "qual": "consumable",
+  "short_name": "dust"
+}

@@ -1,0 +1,652 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "BLIND MISS RATE:",
+          "key": "miss_rate",
+          "value": "100%"
+        },
+        {
+          "header": "BLIND DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "3.5",
+            "4",
+            "4.5"
+          ]
+        },
+        {
+          "header": "LASER DAMAGE:",
+          "key": "laser_damage",
+          "value": [
+            "75",
+            "150",
+            "225",
+            "300"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius_explosion",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SPLASH PCT:",
+          "key": "splash_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "SCEPTER REDUCTION PIERCES DEBUFF IMMUNITY:",
+          "key": "scepter_reduction_pierces_debuff_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "19",
+        "18",
+        "17",
+        "16"
+      ],
+      "desc": "Fires an intense energy beam, damaging and blinding the target. Blinded targets miss all physical attacks.",
+      "dmg_type": "Pure",
+      "key": "tinker_laser",
+      "mc": [
+        "95",
+        "105",
+        "115",
+        "125"
+      ],
+      "name": "Laser"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "COLLISION RADIUS:",
+          "key": "collision_radius",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "SPLASH RADIUS:",
+          "key": "splash_radius",
+          "value": "150"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "MACHINES PER SEC:",
+          "key": "machines_per_sec",
+          "value": "24"
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE:",
+          "key": "distance",
+          "value": "1800"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "13",
+            "22",
+            "31",
+            "40"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.53"
+        }
+      ],
+      "behavior": [
+        "AOE",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "35",
+        "33",
+        "31",
+        "29"
+      ],
+      "desc": "Enlists an army of robotic minions to destroy enemy units in an area around Tinker.",
+      "dmg_type": "Magical",
+      "key": "tinker_march_of_the_machines",
+      "mc": [
+        "100",
+        "120",
+        "140",
+        "160"
+      ],
+      "name": "March of the Machines"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DROP AOE RADIUS:",
+          "key": "drop_aoe_radius",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "TURRET PLACEMENT RADIUS:",
+          "key": "turret_placement_radius",
+          "value": "70"
+        },
+        {
+          "header": "CAST DELAY:",
+          "key": "drop_delay",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "DROP KNOCKBACK DURATION:",
+          "key": "drop_knockback_duration",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "DROP KNOCKBACK DURATION TINKER:",
+          "key": "drop_knockback_duration_tinker",
+          "value": "0.3"
+        },
+        {
+          "header": "ENEMY KNOCKBACK:",
+          "key": "drop_knockback_distance",
+          "value": "100"
+        },
+        {
+          "header": "TINKER KNOCKBACK:",
+          "key": "drop_knockback_distance_tinker",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "DROP COUNT:",
+          "key": "drop_count",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DROP INTERVAL:",
+          "key": "drop_interval",
+          "value": "0.22"
+        },
+        {
+          "generated": true,
+          "header": "DROP SPREAD PCT:",
+          "key": "drop_spread_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "TURRETS PER DROP:",
+          "key": "turrets_per_drop",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "EXTRA TURRETS PER DROP:",
+          "key": "extra_turrets_per_drop",
+          "value": "0"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "drop_damage",
+          "value": [
+            "40",
+            "80",
+            "120",
+            "160"
+          ]
+        },
+        {
+          "header": "MISSILE DAMAGE:",
+          "key": "missile_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MISSILE SPEED:",
+          "key": "missile_speed",
+          "value": "1200"
+        },
+        {
+          "header": "TURRET HP:",
+          "key": "turret_hp",
+          "value": [
+            "40",
+            "80",
+            "120",
+            "160"
+          ]
+        },
+        {
+          "header": "TURRET RANGE:",
+          "key": "missile_target_range",
+          "value": [
+            "650",
+            "700",
+            "750",
+            "800"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MISSILE RANGE:",
+          "key": "missile_range",
+          "value": [
+            "750",
+            "800",
+            "850",
+            "900"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MISSILE WIDTH:",
+          "key": "missile_width",
+          "value": "70"
+        },
+        {
+          "header": "TURRET DURATION:",
+          "key": "turret_duration",
+          "value": "4.5"
+        },
+        {
+          "header": "ATTACK INTERVAL:",
+          "key": "missile_spawn_interval",
+          "value": "1.5"
+        },
+        {
+          "generated": true,
+          "header": "MISSILE ATTACK RATE TOOLTIP:",
+          "key": "missile_attack_rate_tooltip",
+          "value": "20"
+        },
+        {
+          "header": "MISSILE SPLASH RADIUS:",
+          "key": "radius_explosion",
+          "value": "200"
+        },
+        {
+          "header": "MISSILE SPLASH DAMAGE:",
+          "key": "splash_pct",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVATION TIME:",
+          "key": "activation_time",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "22",
+        "20",
+        "18"
+      ],
+      "desc": "",
+      "dmg_type": "Magical",
+      "key": "tinker_deploy_turrets",
+      "mc": [
+        "100",
+        "120",
+        "140",
+        "160"
+      ],
+      "name": "Deploy Turrets"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "MAX DISTANCE:",
+          "key": "max_distance",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "WARP DISTANCE FACTOR:",
+          "key": "warp_distance_factor",
+          "value": "0.6"
+        },
+        {
+          "generated": true,
+          "header": "WARP DISTANCE PCT TOOLTIP:",
+          "key": "warp_distance_pct_tooltip",
+          "value": "60"
+        },
+        {
+          "header": "CAST/ATTACK RANGE REDUCTION:",
+          "key": "range_reduction",
+          "value": "40%"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF DURATION:",
+          "key": "debuff_duration",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "15",
+      "desc": "Throws a flare towards an enemy, dealing damage, teleporting them away, rooting them and reducing their Cast and Attack Range for 2 seconds.\n\nThe target is teleported further the closer they are to Tinker.",
+      "dmg_type": "Magical",
+      "key": "tinker_warp_grenade",
+      "mc": "80",
+      "name": "Warp Flare"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MINIMUN DISTANCE:",
+          "key": "minimun_distance",
+          "value": "70"
+        },
+        {
+          "generated": true,
+          "header": "MAXIMUM DISTANCE:",
+          "key": "maximum_distance",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "3"
+        },
+        {
+          "header": "CHANNEL TIME:",
+          "key": "channel_time_tooltip",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL STARTING COOLDOWN:",
+          "key": "additional_starting_cooldown",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CREEP TELEPORT LEVEL:",
+          "key": "creep_teleport_level",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "HERO TELEPORT LEVEL:",
+          "key": "hero_teleport_level",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "OUTPOST CHANNEL TIME:",
+          "key": "outpost_channel_time",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "JUNGLE OUTPOST CHANNEL TIME:",
+          "key": "jungle_outpost_channel_time",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Channeled"
+      ],
+      "bkbpierce": "",
+      "cd": "50",
+      "desc": "CHANNELED - Teleport to a target friendly structure. Level 2 allows teleporting to friendly units and Level 3 to friendly heroes.",
+      "dmg_type": "",
+      "key": "tinker_keen_teleport",
+      "mc": "75",
+      "name": "Keen Conveyance"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TIME TO REARM:",
+          "key": "abilitychanneltime",
+          "value": [
+            "2.75",
+            "2",
+            "1.25"
+          ]
+        },
+        {
+          "header": "BONUS MAGIC RESISTANCE:",
+          "key": "magic_resistance",
+          "value": "0%"
+        },
+        {
+          "generated": true,
+          "header": "ARMOR DURATION:",
+          "key": "armor_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AFFECTS ITEMS:",
+          "key": "affects_items",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Channeled"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "5.5",
+        "5",
+        "4.5"
+      ],
+      "desc": "CHANNELED - Resets the cooldown on Tinker's abilities.",
+      "dmg_type": "",
+      "key": "tinker_rearm",
+      "mc": [
+        "100",
+        "150",
+        "200"
+      ],
+      "name": "Rearm"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "INT PER ONE CDR:",
+          "key": "int_per_one_cdr",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "ONE PERCENT TOOLTIP:",
+          "key": "one_percent_tooltip",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MAX CDR:",
+          "key": "max_cdr",
+          "value": "60"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Tinker gains 1% item cooldown reduction per 3 Intelligence, up to a maximum of 60%.",
+      "dmg_type": "",
+      "key": "tinker_eureka",
+      "mc": null,
+      "name": "Eureka!"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Deploy Turrets",
+    "desc": "Turrets activate faster, and fire missiles %missile_attack_rate_tooltip% faster.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Warp Flare",
+    "desc": "Throws a flare towards an enemy, dealing damage, teleporting them away, rooting them and reducing their Cast and Attack Range for 2 seconds.\n\nThe target is teleported further the closer they are to Tinker.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 17,
+    "agi_gain": 1.4,
+    "armor": 2,
+    "attack_max": 28,
+    "attack_min": 22,
+    "attack_range": 500,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 30,
+    "int_gain": 3.3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 19,
+    "str_gain": 2.3
+  },
+  "name": "Tinker",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Pusher"
+  ],
+  "short_name": "tinker",
+  "talents": [
+    {
+      "left": "? AoE Laser",
+      "level": 25,
+      "right": "-?s Time to Rearm"
+    },
+    {
+      "left": "+? Deploy Turrets Missile Damage",
+      "level": 20,
+      "right": "-?s Keen Conveyance Channel Time"
+    },
+    {
+      "left": "+? Deploy Turrets Tinker Knockback",
+      "level": 15,
+      "right": "+? Laser Damage"
+    },
+    {
+      "left": "+?s March of the Machines Duration",
+      "level": 10,
+      "right": "+10% Manacost/Manaloss Reduction"
+    }
+  ]
+}

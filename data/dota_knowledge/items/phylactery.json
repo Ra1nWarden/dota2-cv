@@ -1,0 +1,65 @@
+{
+  "abilities": [
+    {
+      "description": "The next Unit Target spell you cast on an enemy deals a separate 150 bonus damage to the target and slows them by 30% for 3s.",
+      "title": "Empower Spell",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "5.5"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2.25"
+    },
+    {
+      "key": "slow",
+      "value": "30"
+    },
+    {
+      "key": "bonus_spell_damage",
+      "value": "150"
+    },
+    {
+      "key": "slow_duration",
+      "value": "3"
+    },
+    {
+      "key": "kill_bonus_window",
+      "value": "0"
+    },
+    {
+      "key": "bonus_per_kill",
+      "value": "0"
+    },
+    {
+      "key": "max_kill_bonus",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": 9,
+  "charges": false,
+  "components": [
+    "pers",
+    "diadem"
+  ],
+  "cost": 2600,
+  "created": true,
+  "id": 1107,
+  "mc": false,
+  "name": "Phylactery",
+  "notes": "",
+  "qual": "common",
+  "short_name": "phylactery"
+}

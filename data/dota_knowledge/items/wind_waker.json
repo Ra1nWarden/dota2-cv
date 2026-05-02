@@ -1,0 +1,53 @@
+{
+  "abilities": [
+    {
+      "description": "Sweeps a target unit up into a cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself, enemy units or allied units. When cast on yourself, you can move the tornado at a speed of 300.\n\nEnemy units take 50 magical damage upon landing.\nDispel Type: Basic Dispel",
+      "title": "Cyclone",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "bonus_movement_speed",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "3.0"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "35"
+    },
+    {
+      "key": "cyclone_duration",
+      "value": "2.5"
+    },
+    {
+      "key": "tooltip_drop_damage",
+      "value": "50"
+    },
+    {
+      "key": "tornado_speed",
+      "value": "300"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 19,
+  "charges": false,
+  "components": [
+    "cyclone",
+    "mystic_staff"
+  ],
+  "cost": 6800,
+  "created": true,
+  "id": 610,
+  "mc": 175,
+  "name": "Wind Waker",
+  "notes": "Cyclone can dispel some buffs and debuffs.\nWhen cast on yourself, the cyclone can be moved anywhere at a speed of 360.\nCyclone duration is unaffected by status resistance.",
+  "qual": "rare",
+  "short_name": "wind_waker"
+}

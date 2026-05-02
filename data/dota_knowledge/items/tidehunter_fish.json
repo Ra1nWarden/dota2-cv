@@ -1,0 +1,24 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "key": "fish_duration",
+      "value": "30"
+    }
+  ],
+  "behavior": [
+    "No Target",
+    "Instant Cast"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1875,
+  "mc": false,
+  "name": "Leviathan's Fish",
+  "notes": "",
+  "qual": null,
+  "short_name": "tidehunter_fish"
+}

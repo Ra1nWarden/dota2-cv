@@ -1,0 +1,494 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "arc_damage",
+          "value": [
+            "105",
+            "130",
+            "155",
+            "180"
+          ]
+        },
+        {
+          "header": "JUMP RADIUS:",
+          "key": "radius",
+          "value": "450"
+        },
+        {
+          "header": "JUMPS:",
+          "key": "jump_count",
+          "value": [
+            "5",
+            "7",
+            "9",
+            "11"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HAS UNLIMITED JUMPS:",
+          "key": "has_unlimited_jumps",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "JUMP DELAY:",
+          "key": "jump_delay",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "800"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "1.6",
+      "desc": "Hurls a bolt of lightning that leaps through nearby enemy units that deal damage.",
+      "dmg_type": "Magical",
+      "key": "zuus_arc_lightning",
+      "mc": [
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "name": "Arc Lightning"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "140",
+            "220",
+            "300",
+            "380"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TRUE SIGHT RADIUS:",
+          "key": "true_sight_radius",
+          "value": "600"
+        },
+        {
+          "header": "SIGHT RADIUS:",
+          "key": "sight_radius_day",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "SIGHT RADIUS NIGHT:",
+          "key": "sight_radius_night",
+          "value": "600"
+        },
+        {
+          "header": "SIGHT DURATION:",
+          "key": "sight_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "SPREAD AOE:",
+          "key": "spread_aoe",
+          "value": "325"
+        },
+        {
+          "header": "MINISTUN DURATION:",
+          "key": "ministun_duration",
+          "value": "0.35"
+        },
+        {
+          "generated": true,
+          "header": "CREEP DAMAGE BONUS PCT:",
+          "key": "creep_damage_bonus_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "700",
+            "750",
+            "800",
+            "850"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Point Target"
+      ],
+      "bkbpierce": "No",
+      "cd": "6",
+      "desc": "Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 600 radius. Can be cast on the ground, affecting the closest enemy hero in 325 range.",
+      "dmg_type": "Magical",
+      "key": "zuus_lightning_bolt",
+      "mc": [
+        "120",
+        "125",
+        "130",
+        "135"
+      ],
+      "name": "Lightning Bolt"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "25",
+            "50",
+            "75",
+            "100"
+          ]
+        },
+        {
+          "header": "LEAP DISTANCE:",
+          "key": "hop_distance",
+          "value": [
+            "375",
+            "450",
+            "525",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HOP DURATION:",
+          "key": "hop_duration",
+          "value": "0.5"
+        },
+        {
+          "generated": true,
+          "header": "HOP HEIGHT:",
+          "key": "hop_height",
+          "value": "250"
+        },
+        {
+          "header": "SHOCK RANGE:",
+          "key": "range",
+          "value": [
+            "700",
+            "800",
+            "900",
+            "1000"
+          ]
+        },
+        {
+          "header": "VISION RADIUS:",
+          "key": "vision_radius",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "3"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "1.4"
+        },
+        {
+          "header": "MOVE SPEED SLOW:",
+          "key": "move_slow",
+          "value": "80"
+        },
+        {
+          "header": "ATTACK SPEED SLOW:",
+          "key": "aspd_slow",
+          "value": "100"
+        },
+        {
+          "header": "TARGETS:",
+          "key": "targets",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "26",
+            "22",
+            "18",
+            "14"
+          ]
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "26",
+        "22",
+        "18",
+        "14"
+      ],
+      "desc": "Zeus performs a Heavenly Jump, leaping forward and shocking the closest visible nearby enemy (prioritizing heroes), dealing damage as well as reducing their movement and attack speed. Zeus gets 900 unobstructed vision around him for 3 seconds.",
+      "dmg_type": "Magical",
+      "key": "zuus_heavenly_jump",
+      "mc": [
+        "50",
+        "60",
+        "70",
+        "80"
+      ],
+      "name": "Heavenly Jump"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "cloud_duration",
+          "value": "30"
+        },
+        {
+          "header": "LIGHTNING BOLT BASE COOLDOWN:",
+          "key": "cloud_bolt_interval",
+          "value": "2.5"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "cloud_radius",
+          "value": "450"
+        },
+        {
+          "header": "HITS TO DESTROY:",
+          "key": "hits_to_kill_tooltip",
+          "value": "8"
+        },
+        {
+          "header": "CREEP HITS TO DESTROY:",
+          "key": "creep_hits_to_kill_tooltip",
+          "value": "16"
+        },
+        {
+          "generated": true,
+          "header": "CLOUD BOUNTY TOOLTIP:",
+          "key": "cloud_bounty_tooltip",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "45",
+      "desc": "Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.",
+      "dmg_type": "Magical",
+      "key": "zuus_cloud",
+      "mc": "275",
+      "name": "Nimbus"
+    },
+    {
+      "attrib": [
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "attack_speed_bonus",
+          "value": "30"
+        },
+        {
+          "header": "ARC LIGHTNING DAMAGE:",
+          "key": "arc_lightning_damage_pct",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "ARC LIGHTNING DAMAGE ILLUSION PCT:",
+          "key": "arc_lightning_damage_illusion_pct",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Attack Modifier",
+      "bkbpierce": "No",
+      "cd": "0",
+      "desc": "Zeus gains bonus attack speed and his attacks create Arc Lightnings that deal a percentage of its damage. Can be toggled off to stop this effect.",
+      "dmg_type": "Magical",
+      "key": "zuus_lightning_hands",
+      "mc": "0",
+      "name": "Lightning Hands"
+    },
+    {
+      "attrib": [
+        {
+          "header": "TRUE SIGHT RADIUS:",
+          "key": "sight_radius_day",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "SIGHT RADIUS NIGHT:",
+          "key": "sight_radius_night",
+          "value": "600"
+        },
+        {
+          "header": "DURATION:",
+          "key": "sight_duration",
+          "value": "3"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "300",
+            "475",
+            "650"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": "130",
+      "desc": "Strikes all enemy heroes with a bolt of lightning, dealing damage no matter where they may be. Provides True Sight around each hero before they are struck.",
+      "dmg_type": "Magical",
+      "key": "zuus_thundergods_wrath",
+      "mc": [
+        "250",
+        "375",
+        "500"
+      ],
+      "name": "Thundergod's Wrath"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage_health_pct",
+          "value": "3.45"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to a percentage of their current health.",
+      "dmg_type": "Magical",
+      "key": "zuus_static_field",
+      "mc": null,
+      "name": "Static Field"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Nimbus",
+    "desc": "Creates a storm cloud anywhere on the map that automatically casts Lightning Bolt on nearby enemies.",
+    "has": true,
+    "new_skill": true
+  },
+  "aghs_shard": {
+    "ability": "Lightning Hands",
+    "desc": "Zeus gains bonus attack speed and his attacks create Arc Lightnings that deal a percentage of its damage. Can be toggled off to stop this effect.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 11,
+    "agi_gain": 1.2,
+    "armor": 1,
+    "attack_max": 40,
+    "attack_min": 30,
+    "attack_range": 380,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 3.3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 305,
+    "night_vision": 800,
+    "str": 21,
+    "str_gain": 2.1
+  },
+  "name": "Zeus",
+  "primary_attr": "int",
+  "roles": [
+    "Nuker",
+    "Carry"
+  ],
+  "short_name": "zuus",
+  "talents": [
+    {
+      "left": "? AoE Lightning Bolt",
+      "level": 25,
+      "right": "? Heavenly Jump Charges"
+    },
+    {
+      "left": "+? Arc Lightning Damage",
+      "level": 20,
+      "right": "+?s Lightning Bolt Ministun"
+    },
+    {
+      "left": "+? Thundergod's Wrath Damage",
+      "level": 15,
+      "right": "-?% Arc Lightning Mana Cost / Cooldown"
+    },
+    {
+      "left": "+? Heavenly Jump Target",
+      "level": 10,
+      "right": "+200 Health"
+    }
+  ]
+}

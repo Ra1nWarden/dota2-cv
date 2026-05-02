@@ -1,0 +1,42 @@
+{
+  "abilities": [
+    {
+      "description": "Spend 8% of your current life total to create a full health illusion that lasts for 20 seconds. The illusion has 50% outgoing damage and takes 200% of incoming damage.",
+      "title": "Refract",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "outgoing_damage",
+      "value": "50"
+    },
+    {
+      "key": "incoming_damage",
+      "value": "200"
+    },
+    {
+      "key": "duration",
+      "value": "20"
+    },
+    {
+      "key": "health_cost",
+      "value": "8"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 30,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1718,
+  "mc": false,
+  "name": "Riftshadow Prism",
+  "notes": "",
+  "qual": null,
+  "short_name": "riftshadow_prism"
+}

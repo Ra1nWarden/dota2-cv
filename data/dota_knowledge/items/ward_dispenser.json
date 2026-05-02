@@ -1,0 +1,77 @@
+{
+  "abilities": [
+    {
+      "description": "Plant the currently active ward. Double-Click to switch the currently active ward.",
+      "title": "Plant",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "bonus_health",
+      "value": "75"
+    },
+    {
+      "key": "observer_cost",
+      "value": "75"
+    },
+    {
+      "key": "sentry_cost",
+      "value": "100"
+    },
+    {
+      "key": "lifetime_observer",
+      "value": "360"
+    },
+    {
+      "key": "lifetime_sentry",
+      "value": "420"
+    },
+    {
+      "display": "OBSERVER VISION RANGE: {value}",
+      "key": "observer_vision_range_tooltip",
+      "value": "1600"
+    },
+    {
+      "display": "OBSERVER DURATION (MINUTES): {value}",
+      "key": "observer_duration_minutes_tooltip",
+      "value": "6"
+    },
+    {
+      "display": "SENTRY DURATION (MINUTES): {value}",
+      "key": "sentry_duration_minutes_tooltip",
+      "value": "8"
+    },
+    {
+      "display": "SENTRY TRUE SIGHT RANGE: {value}",
+      "key": "true_sight_range",
+      "value": "1050"
+    },
+    {
+      "key": "cast_range_observer",
+      "value": "500"
+    },
+    {
+      "key": "cast_range_sentry",
+      "value": "500"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": false,
+  "charges": false,
+  "components": [
+    "ward_sentry",
+    "ward_observer"
+  ],
+  "cost": 50,
+  "created": true,
+  "id": 218,
+  "mc": false,
+  "name": "Observer and Sentry Wards",
+  "notes": "Hold Control to give one ward to an allied hero.",
+  "qual": "consumable;laning",
+  "short_name": "ward_dispenser"
+}

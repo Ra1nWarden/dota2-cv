@@ -1,0 +1,36 @@
+{
+  "abilities": [
+    {
+      "description": "Grants 50 extra bonus damage as long as the unit is within 2000 range of an ancient.",
+      "title": "Ancient Power",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "extra_bonus_damage",
+      "value": "50"
+    },
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "50"
+    },
+    {
+      "key": "radius",
+      "value": "2000"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1156,
+  "mc": false,
+  "name": "Ancient Guardian",
+  "notes": "",
+  "qual": null,
+  "short_name": "ancient_guardian"
+}

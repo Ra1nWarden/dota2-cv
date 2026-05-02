@@ -1,0 +1,63 @@
+{
+  "abilities": [
+    {
+      "description": "The next Unit Target spell you cast on an enemy deals a separate 250 additional damage, disables their passives, and slows their movement speed by 30% for 4s.",
+      "title": "Empower Spell",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "450"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "450"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "8"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "7"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "3"
+    },
+    {
+      "key": "slow",
+      "value": "30"
+    },
+    {
+      "key": "slow_duration",
+      "value": "4"
+    },
+    {
+      "key": "bonus_spell_damage",
+      "value": "250"
+    }
+  ],
+  "behavior": null,
+  "cd": 9,
+  "charges": false,
+  "components": [
+    "phylactery",
+    "soul_booster"
+  ],
+  "cost": 5600,
+  "created": true,
+  "id": 1808,
+  "mc": false,
+  "name": "Khanda",
+  "notes": "The slow debuff is dispellable.\nThe break debuff is not dispellable.",
+  "qual": "common",
+  "short_name": "angels_demise"
+}

@@ -1,0 +1,38 @@
+{
+  "abilities": [
+    {
+      "description": "Increases the health regeneration of a target ally by 8 for 14 seconds. While standing in water, the blessed unit also moves 10% faster.",
+      "title": "Ribbit",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "regen_boost",
+      "value": "8"
+    },
+    {
+      "key": "water_movespeed",
+      "value": "10"
+    },
+    {
+      "key": "duration",
+      "value": "14"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 45,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1606,
+  "mc": false,
+  "name": "Pollywog Charm",
+  "notes": "",
+  "qual": null,
+  "short_name": "polliwog_charm"
+}

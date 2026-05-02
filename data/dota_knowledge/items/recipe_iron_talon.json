@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": null,
+  "cd": false,
+  "charges": null,
+  "components": null,
+  "cost": 125,
+  "created": false,
+  "id": 238,
+  "mc": false,
+  "name": "Iron Talon Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_iron_talon"
+}

@@ -1,0 +1,47 @@
+{
+  "abilities": [
+    {
+      "description": "When the cooldown is ready, nearby trees that can be foraged will appear. By standing next to a tree for 1s, you can forage the tree and find flora, fungi or a bag of gold containing 30 gold.",
+      "title": "Forage",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "gold_amount",
+      "value": "30"
+    },
+    {
+      "key": "radius",
+      "value": "1200"
+    },
+    {
+      "key": "tree_radius",
+      "value": "250"
+    },
+    {
+      "key": "tree_creation_interval",
+      "value": "5.0"
+    },
+    {
+      "key": "max_trees",
+      "value": "3"
+    },
+    {
+      "key": "old_destroy_radius",
+      "value": "2500"
+    }
+  ],
+  "behavior": null,
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1868,
+  "mc": false,
+  "name": "Forager's Kit",
+  "notes": "",
+  "qual": null,
+  "short_name": "foragers_kit"
+}

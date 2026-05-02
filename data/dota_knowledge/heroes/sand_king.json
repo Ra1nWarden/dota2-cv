@@ -1,0 +1,444 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "BURROW WIDTH:",
+          "key": "burrow_width",
+          "value": "150"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "burrow_duration",
+          "value": [
+            "1.2",
+            "1.4",
+            "1.6",
+            "1.8"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "BURROW SPEED:",
+          "key": "burrow_speed",
+          "value": "2000"
+        },
+        {
+          "generated": true,
+          "header": "BURROW ANIM TIME:",
+          "key": "burrow_anim_time",
+          "value": "0.52"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "550",
+            "625",
+            "700",
+            "775"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "Sand King burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces. Adds Caustic Finale poison to heroes hit\n\n Can be put on alt-cast to immediately cast in the desired direction, without walking towards the targeted location.",
+      "dmg_type": "Magical",
+      "key": "sandking_burrowstrike",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Burrowstrike"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DAMAGE TICK RATE:",
+          "key": "damage_tick_rate",
+          "value": "0.2"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": [
+            "16",
+            "20",
+            "24",
+            "28"
+          ]
+        },
+        {
+          "header": "RADIUS:",
+          "key": "sand_storm_radius",
+          "value": [
+            "475",
+            "550",
+            "625",
+            "700"
+          ]
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "sand_storm_damage",
+          "value": [
+            "30",
+            "50",
+            "70",
+            "90"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FADE DELAY:",
+          "key": "fade_delay",
+          "value": "0.7"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "40",
+        "34",
+        "28",
+        "22"
+      ],
+      "desc": "Sand King creates a fearsome sandstorm that damages enemy units and grants Sand King Invisibility while he is in it. The effect ends when Sand King leaves the area.",
+      "dmg_type": "Magical",
+      "key": "sandking_sand_storm",
+      "mc": "85",
+      "name": "Sand Storm"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": [
+            "230",
+            "250",
+            "270",
+            "290"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "INNER RADIUS:",
+          "key": "inner_radius",
+          "value": "125"
+        },
+        {
+          "generated": true,
+          "header": "INNER RADIUS BONUS DAMAGE PCT:",
+          "key": "inner_radius_bonus_damage_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "INNER RADIUS PROCS CAUSTIC:",
+          "key": "inner_radius_procs_caustic",
+          "value": "0"
+        },
+        {
+          "header": "BONUS DAMAGE:",
+          "key": "attack_damage",
+          "value": [
+            "50",
+            "75",
+            "100",
+            "125"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "debuff_duration",
+          "value": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "header": "MOVEMENT SPEED SLOW:",
+          "key": "strike_slow",
+          "value": [
+            "10%",
+            "12%",
+            "14%",
+            "16%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAUSTIC DAMAGE PCT:",
+          "key": "caustic_damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "Sand King strikes an area, performing an attack on all enemies in the area of effect, dealing extra damage to each. Enemies within an innermost radius of 125 take 40% extra damage. Applies Caustic Finale and a slow to all enemies hit.",
+      "dmg_type": "Physical",
+      "key": "sandking_scorpion_strike",
+      "mc": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "name": "Stinger"
+    },
+    {
+      "attrib": [
+        {
+          "header": "EXPLODE RADIUS:",
+          "key": "caustic_finale_radius",
+          "value": "400"
+        },
+        {
+          "header": "BASE DAMAGE:",
+          "key": "caustic_finale_damage_flat",
+          "value": "17"
+        },
+        {
+          "header": "MAX HEALTH DAMAGE:",
+          "key": "caustic_finale_damage_pct",
+          "value": "2.5%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "caustic_finale_duration",
+          "value": "4.5"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "Sand King's attacks inject a venom that causes enemy units to violently explode when they die that does a flat amount of damage and an additional amount based on the dying units max health.",
+      "dmg_type": "Magical",
+      "key": "sandking_caustic_finale",
+      "mc": null,
+      "name": "Caustic Finale"
+    },
+    {
+      "attrib": [
+        {
+          "header": "PULSES:",
+          "key": "epicenter_pulses",
+          "value": [
+            "12",
+            "16",
+            "20"
+          ]
+        },
+        {
+          "header": "DAMAGE PER PULSE:",
+          "key": "epicenter_damage",
+          "value": [
+            "60",
+            "70",
+            "80"
+          ]
+        },
+        {
+          "header": "BASE RADIUS:",
+          "key": "epicenter_radius_base",
+          "value": "500"
+        },
+        {
+          "header": "INCREMENTAL RADIUS:",
+          "key": "epicenter_radius_increment",
+          "value": "13"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "epicenter_slow",
+          "value": [
+            "-30%",
+            "-40%",
+            "-50%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "epicenter_slow_as",
+          "value": [
+            "-50",
+            "-55",
+            "-60"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROC PASSIVELY:",
+          "key": "proc_passively",
+          "value": "0"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "shard_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "SHARD INTERVAL:",
+          "key": "shard_interval",
+          "value": "3"
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "linger_duration",
+          "value": "3"
+        },
+        {
+          "header": "EPICENTER DURATION:",
+          "key": "abilityduration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "2"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "120",
+        "110",
+        "100"
+      ],
+      "desc": "After a cast point of 2 seconds, Sand King sends a disturbance into the earth, causing it to shudder violently. All enemies caught within range will take damage and become slowed. Each subsequent pulse increases the radius of damage dealt.",
+      "dmg_type": "Magical",
+      "key": "sandking_epicenter",
+      "mc": [
+        "150",
+        "225",
+        "300"
+      ],
+      "name": "Epicenter"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Epicenter",
+    "desc": "When the pulses start, 3 Stinger attack areas are created every =0.5s at random locations, each measuring 35% of the Epicenter's current radius, that apply =50% of Stinger damage to enemies hit. Shard pulses cause 1 attack(s).",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Epicenter",
+    "desc": "Increases Epicenter damage per pulse. Every 3.0s causes a small single Epicenter Pulse around Sand King.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 19,
+    "agi_gain": 2,
+    "armor": 1,
+    "attack_max": 29,
+    "attack_min": 19,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 17,
+    "int_gain": 2,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 23,
+    "str_gain": 2.3
+  },
+  "name": "Sand King",
+  "primary_attr": "all",
+  "roles": [
+    "Initiator",
+    "Disabler",
+    "Support",
+    "Nuker",
+    "Escape"
+  ],
+  "short_name": "sand_king",
+  "talents": [
+    {
+      "left": "+? Stinger Damage",
+      "level": 25,
+      "right": "?% Sand Storm Slow and Blind"
+    },
+    {
+      "left": "-?s Burrowstrike Cooldown",
+      "level": 20,
+      "right": "+? Epicenter Pulses"
+    },
+    {
+      "left": "+? Sand Storm Damage Per Second",
+      "level": 15,
+      "right": "+? Burrowstrike Cast Range"
+    },
+    {
+      "left": "+?% Stinger Slow",
+      "level": 10,
+      "right": "+? Caustic Finale Radius"
+    }
+  ]
+}

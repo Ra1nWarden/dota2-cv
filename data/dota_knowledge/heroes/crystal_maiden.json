@@ -1,0 +1,491 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "425"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed_slow",
+          "value": [
+            "-20%",
+            "-30%",
+            "-40%",
+            "-50%"
+          ]
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "attackspeed_slow",
+          "value": [
+            "-30",
+            "-45",
+            "-60",
+            "-75"
+          ]
+        },
+        {
+          "header": "SLOW DURATION:",
+          "key": "duration",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "VISION DURATION:",
+          "key": "vision_duration",
+          "value": "6"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "nova_damage",
+          "value": [
+            "110",
+            "160",
+            "210",
+            "260"
+          ]
+        },
+        {
+          "header": "PHYSICAL BARRIER AMOUNT:",
+          "key": "physical_barrier_amount",
+          "value": "0"
+        },
+        {
+          "header": "SELF PHYSICAL BARRIER AMOUNT:",
+          "key": "physical_barrier_self_amount",
+          "value": "0"
+        },
+        {
+          "header": "BARRIER DURATION:",
+          "key": "physical_barrier_duration",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "11",
+        "10",
+        "9",
+        "8"
+      ],
+      "desc": "A burst of damaging frost slows enemy movement in the targeted area.",
+      "dmg_type": "Magical",
+      "key": "crystal_maiden_crystal_nova",
+      "mc": [
+        "115",
+        "135",
+        "155",
+        "175"
+      ],
+      "name": "Crystal Nova"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        },
+        {
+          "header": "DAMAGE PER SECOND:",
+          "key": "damage_per_second",
+          "value": "100"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "1.5",
+            "2",
+            "2.5",
+            "3"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CREEP MULTIPLIER:",
+          "key": "creep_multiplier",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.25"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "9",
+        "8",
+        "7",
+        "6"
+      ],
+      "desc": "Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Deals 4x damage to non-ancient creeps.",
+      "dmg_type": "Magical",
+      "key": "crystal_maiden_frostbite",
+      "mc": [
+        "125",
+        "135",
+        "145",
+        "155"
+      ],
+      "name": "Frostbite"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA REGEN:",
+          "key": "base_mana_regen",
+          "value": [
+            "0.4",
+            "0.6",
+            "0.8",
+            "1"
+          ]
+        },
+        {
+          "header": "CLOSE MANA REGEN:",
+          "key": "proximity_mana_regen_tooltip",
+          "value": [
+            "1.2",
+            "1.8",
+            "2.4",
+            "3"
+          ]
+        },
+        {
+          "header": "MANA REGEN AMPLIFICATION:",
+          "key": "mana_regen_amp",
+          "value": [
+            "20%",
+            "40%",
+            "60%",
+            "80%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROXIMITY BONUS FACTOR:",
+          "key": "proximity_bonus_factor",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "PROXIMITY BONUS RADIUS:",
+          "key": "proximity_bonus_radius",
+          "value": "1200"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Gives mana regeneration to all friendly units on the map. Allies within a 1200 radius of Crystal Maiden receive more mana regeneration.\n\nCrystal Maiden passively gains mana regen amplification.",
+      "dmg_type": "",
+      "key": "crystal_maiden_brilliance_aura",
+      "mc": null,
+      "name": "Arcane Aura"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DISTANCE:",
+          "key": "hop_distance",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "HOP DURATION:",
+          "key": "hop_duration",
+          "value": "0.3"
+        },
+        {
+          "header": "CLONE DURATION:",
+          "key": "clone_duration",
+          "value": "5"
+        },
+        {
+          "generated": true,
+          "header": "FROSTBITE RADIUS:",
+          "key": "frostbite_radius",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "ANIM DELAY:",
+          "key": "anim_delay",
+          "value": "0.02"
+        },
+        {
+          "header": "CLONE HEALTH:",
+          "key": "clone_health",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "-1"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": "10",
+      "desc": "Slides in a direction, creating a crystal clone of herself in her place and disjointing incoming projectiles. If the clone takes enough damage or times out, it shatters, Frostbiting enemies in a 450 AoE around its place. The Clone can also be destroyed by Crystal Maiden's own spells.",
+      "dmg_type": "",
+      "key": "crystal_maiden_crystal_clone",
+      "mc": "150",
+      "name": "Crystal Clone"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MANA SPENT TO BARRIER:",
+          "key": "mana_multiplier",
+          "value": "30%"
+        },
+        {
+          "header": "BARRIER DURATION:",
+          "key": "barrier_duration",
+          "value": "8"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": null,
+      "desc": "A portion of the mana Crystal Maiden spends on her abilities is converted into a physical barrier.",
+      "dmg_type": "",
+      "key": "crystal_maiden_glacial_guard",
+      "mc": null,
+      "name": "Glacial Guard"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "10"
+        },
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "810"
+        },
+        {
+          "generated": true,
+          "header": "EXPLOSION RADIUS:",
+          "key": "explosion_radius",
+          "value": "320"
+        },
+        {
+          "generated": true,
+          "header": "EXPLOSION INTERVAL:",
+          "key": "explosion_interval",
+          "value": "0.1"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movespeed_slow",
+          "value": "-40%"
+        },
+        {
+          "header": "ATTACK SLOW:",
+          "key": "attack_slow",
+          "value": [
+            "-80",
+            "-120",
+            "-160"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "SLOW DURATION:",
+          "key": "slow_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "EXPLOSION MIN DIST:",
+          "key": "explosion_min_dist",
+          "value": "195"
+        },
+        {
+          "generated": true,
+          "header": "EXPLOSION MAX DIST:",
+          "key": "explosion_max_dist",
+          "value": "785"
+        },
+        {
+          "header": "EXPLOSION DAMAGE:",
+          "key": "damage",
+          "value": [
+            "110",
+            "180",
+            "250"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "FROSTBITE DELAY:",
+          "key": "frostbite_delay",
+          "value": "-1"
+        },
+        {
+          "header": "CAST RANGE BONUS:",
+          "key": "self_cast_range_bonus",
+          "value": "0"
+        },
+        {
+          "header": "AOE BONUS:",
+          "key": "aoe_bonus",
+          "value": "0%"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "100",
+        "95",
+        "90"
+      ],
+      "desc": "CHANNELED - Surrounds Crystal Maiden with 100 random icy explosions that slow enemies and deal massive damage. Lasts 10 seconds.",
+      "dmg_type": "Magical",
+      "key": "crystal_maiden_freezing_field",
+      "mc": [
+        "200",
+        "400",
+        "600"
+      ],
+      "name": "Freezing Field"
+    },
+    {
+      "attrib": [],
+      "behavior": [
+        "No Target",
+        "Hidden",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "1",
+      "desc": "Immediately stops the Freezing Field",
+      "dmg_type": "",
+      "key": "crystal_maiden_freezing_field_stop",
+      "mc": null,
+      "name": "Stop Freezing Field"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Freezing Field",
+    "desc": "Allows you to move, cast and attack during Freezing Field. Can still be interrupted by enemies. You move 75% slower during this. Increases total number of explosions by 20%. Applies Frostbite to any unit that has been standing in the Freezing Field for over 2s.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Crystal Clone",
+    "desc": "Slides in a direction, creating a crystal clone of herself in her place and disjointing incoming projectiles. If the clone takes enough damage or times out, it shatters, Frostbiting enemies in a 450 AoE around its place. The Clone can also be destroyed by Crystal Maiden's own spells.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.8,
+    "armor": 0,
+    "attack_max": 34,
+    "attack_min": 28,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 20,
+    "int_gain": 3.3,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 17,
+    "str_gain": 2.2
+  },
+  "name": "Crystal Maiden",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker"
+  ],
+  "short_name": "crystal_maiden",
+  "talents": [
+    {
+      "left": "+?s Frostbite Duration",
+      "level": 25,
+      "right": "+? Crystal Nova Damage"
+    },
+    {
+      "left": "+?% Glacial Guard Mana Spent To Barrier",
+      "level": 20,
+      "right": "+? Freezing Field Damage"
+    },
+    {
+      "left": "+? Frostbite Cast Range",
+      "level": 15,
+      "right": "-?s Crystal Nova Cooldown"
+    },
+    {
+      "left": "+200 Health",
+      "level": 10,
+      "right": "+12 Intelligence"
+    }
+  ]
+}

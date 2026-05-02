@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 126,
+  "mc": false,
+  "name": "Blade Mail Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_blade_mail"
+}

@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Try me!",
+      "title": "Scrumptious",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "shield",
+      "value": "500"
+    },
+    {
+      "key": "regen",
+      "value": "100"
+    },
+    {
+      "key": "idle",
+      "value": "5"
+    },
+    {
+      "key": "duration",
+      "value": "5"
+    },
+    {
+      "key": "health_restore",
+      "value": "3000"
+    },
+    {
+      "key": "mana_restore",
+      "value": "2000"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": 1,
+  "components": null,
+  "cost": 2,
+  "created": false,
+  "id": 1154,
+  "mc": false,
+  "name": "Block of Cheese",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "royale_with_cheese"
+}

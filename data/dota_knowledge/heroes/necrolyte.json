@@ -1,0 +1,387 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "area_of_effect",
+          "value": "500"
+        },
+        {
+          "header": "HEAL:",
+          "key": "heal",
+          "value": [
+            "70",
+            "90",
+            "110",
+            "130"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": [],
+      "cd": [
+        "8",
+        "7",
+        "6",
+        "5"
+      ],
+      "desc": "Necrophos releases a wave of death around him, dealing damage to enemy units and healing allied units.",
+      "dmg_type": "Magical",
+      "key": "necrolyte_death_pulse",
+      "mc": [
+        "115",
+        "130",
+        "145",
+        "160"
+      ],
+      "name": "Death Pulse"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "3",
+            "3.5",
+            "4",
+            "4.5"
+          ]
+        },
+        {
+          "header": "RESTORATION AMPLIFICATION:",
+          "key": "heal_bonus",
+          "value": [
+            "55%",
+            "65%",
+            "75%",
+            "85%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "ENEMIES NEGATIVE HEAL BONUS AS PCT OF SELF:",
+          "key": "enemies_negative_heal_bonus_as_pct_of_self",
+          "value": "0"
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_speed",
+          "value": [
+            "16%",
+            "19%",
+            "22%",
+            "25%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MOVEMENT TRANSFER:",
+          "key": "movement_transfer",
+          "value": "0"
+        },
+        {
+          "header": "SLOW RADIUS:",
+          "key": "slow_aoe",
+          "value": "700"
+        },
+        {
+          "header": "INCREASED MAGIC DAMAGE:",
+          "key": "bonus_damage",
+          "value": "-20%"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "28",
+        "24",
+        "20",
+        "16"
+      ],
+      "desc": "Necrophos slips into the realm that separates the living from the dead. Unable to attack or be attacked, he emits an aura that slows enemies around him. He takes additional magic damage in this form, but his restorative powers are amplified.",
+      "dmg_type": "",
+      "key": "necrolyte_ghost_shroud",
+      "mc": "75",
+      "name": "Ghost Shroud"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "aura_radius",
+          "value": "700"
+        },
+        {
+          "header": "HEALTH DECAY:",
+          "key": "aura_damage",
+          "value": [
+            "0.8%",
+            "1.3%",
+            "1.8%",
+            "2.3%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HEAL REDUCTION PCT:",
+          "key": "heal_reduction_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HEAL REGEN TO DAMAGE:",
+          "key": "heal_regen_to_damage",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Necrophos stills the hearts of his opponents, causing nearby enemy units to lose a percentage of their max health over time.",
+      "dmg_type": "Magical",
+      "key": "necrolyte_heartstopper_aura",
+      "mc": null,
+      "name": "Heartstopper Aura"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "PROJECTILE MULTIPLIER:",
+          "key": "projectile_multiplier",
+          "value": "175"
+        },
+        {
+          "generated": true,
+          "header": "ETHEREAL DURATION:",
+          "key": "ethereal_duration",
+          "value": "2.5"
+        },
+        {
+          "generated": true,
+          "header": "MAGIC RESISTANCE REDUCTION:",
+          "key": "magic_resistance_reduction",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "750"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.2"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Hidden"
+      ],
+      "bkbpierce": "No",
+      "cd": "19",
+      "desc": "Necrophos turns into a large Death Pulse towards the target unit's position. Once it arrives to the location, the Death Pulse spreads towards nearby enemies and allies.",
+      "dmg_type": "Magical",
+      "key": "necrolyte_death_seeker",
+      "mc": "125",
+      "name": "Death Seeker"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HP/MANA REGEN:",
+          "key": "regen",
+          "value": "3.7"
+        },
+        {
+          "header": "AOE BONUS PER KILL:",
+          "key": "bonus_aoe",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS SPELL AMP:",
+          "key": "bonus_spell_amp",
+          "value": "0"
+        },
+        {
+          "header": "HERO KILL MULTIPLIER:",
+          "key": "hero_multiplier",
+          "value": "6"
+        },
+        {
+          "header": "DURATION:",
+          "key": "regen_duration",
+          "value": "8"
+        }
+      ],
+      "behavior": [
+        "Passive",
+        "Hidden"
+      ],
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Necrophos gains stacking regen for 8 seconds for each unit he kills. Hero kills multiply the effect.",
+      "dmg_type": "",
+      "key": "necrolyte_sadist",
+      "mc": null,
+      "name": "Sadist"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE PER MISSING HP:",
+          "key": "damage_per_health",
+          "value": [
+            "0.7",
+            "0.8",
+            "0.9"
+          ]
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "1.5"
+        },
+        {
+          "header": "HP REGEN:",
+          "key": "hp_per_kill",
+          "value": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "header": "MANA REGEN:",
+          "key": "mana_per_kill",
+          "value": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.45"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "100",
+      "desc": "Stuns the target enemy hero, then deals damage based on how much life it is missing. If Necrophos kills an enemy this way, he'll permanently gain Health and Mana Regen. Any kill under this effect is credited to Necrophos.",
+      "dmg_type": "Magical",
+      "key": "necrolyte_reapers_scythe",
+      "mc": [
+        "250",
+        "375",
+        "500"
+      ],
+      "name": "Reaper's Scythe"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Heartstopper Aura",
+    "desc": "Heartstopper Aura's Health Decay is increased by 50% of Necrophos's current health regeneration.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Death Seeker",
+    "desc": "Necrophos turns into a large Death Pulse towards the target unit's position. Once it arrives to the location, the Death Pulse spreads towards nearby enemies and allies.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 12,
+    "agi_gain": 1.3,
+    "armor": 2,
+    "attack_max": 30,
+    "attack_min": 26,
+    "attack_range": 500,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 23,
+    "int_gain": 2.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 280,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.3
+  },
+  "name": "Necrophos",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Durable",
+    "Disabler"
+  ],
+  "short_name": "necrolyte",
+  "talents": [
+    {
+      "left": "+? Reaper's Scythe Damage Per Missing HP",
+      "level": 25,
+      "right": "-?s Death Pulse Cooldown"
+    },
+    {
+      "left": "+75 Spell Area of Effect",
+      "level": 20,
+      "right": "+?% Heartstopper Regen Reduction"
+    },
+    {
+      "left": "+?% Ghost Shroud Movement Slow",
+      "level": 15,
+      "right": "+? Death Pulse Heal"
+    },
+    {
+      "left": "-?s Ghost Shroud Cooldown",
+      "level": 10,
+      "right": "+?s Sadist Stack Duration"
+    }
+  ]
+}

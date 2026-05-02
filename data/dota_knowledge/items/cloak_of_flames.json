@@ -1,0 +1,43 @@
+{
+  "abilities": [
+    {
+      "description": "Burns enemy units in a 375 unit radius for 40 damage per second. Illusions deal 25 damage per second.",
+      "title": "Immolate",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "armor",
+      "value": "0"
+    },
+    {
+      "key": "magic_resistance",
+      "value": "0"
+    },
+    {
+      "key": "damage",
+      "value": "40"
+    },
+    {
+      "key": "radius",
+      "value": "375"
+    },
+    {
+      "key": "damage_illusions",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 574,
+  "mc": false,
+  "name": "Cloak of Flames",
+  "notes": "",
+  "qual": null,
+  "short_name": "cloak_of_flames"
+}

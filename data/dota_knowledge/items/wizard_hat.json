@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "125"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 250,
+  "created": false,
+  "id": 1849,
+  "mc": false,
+  "name": "Wizard Hat",
+  "notes": "",
+  "qual": null,
+  "short_name": "wizard_hat"
+}

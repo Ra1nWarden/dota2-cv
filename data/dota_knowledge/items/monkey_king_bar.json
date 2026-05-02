@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Grants each attack a 80% chance to pierce through evasion and deal 70 bonus magical damage.",
+      "title": "Pierce",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "50"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "50"
+    },
+    {
+      "key": "bonus_chance",
+      "value": "80"
+    },
+    {
+      "key": "bonus_chance_damage",
+      "value": "70"
+    },
+    {
+      "display": "+ {value} Attack Range (Melee Only)",
+      "key": "melee_attack_range",
+      "value": "50"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "demon_edge",
+    "blitz_knuckles",
+    "javelin"
+  ],
+  "cost": 5000,
+  "created": true,
+  "id": 135,
+  "mc": false,
+  "name": "Monkey King Bar",
+  "notes": "",
+  "qual": "epic",
+  "short_name": "monkey_king_bar"
+}

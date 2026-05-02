@@ -1,0 +1,51 @@
+{
+  "abilities": [
+    {
+      "description": "Grants you a bonus 5% movement speed and 20 attack speed anytime one of your abilities are on cooldown.",
+      "title": "Quicksilver",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "base_movement",
+      "value": "4"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "base_attack",
+      "value": "18"
+    },
+    {
+      "key": "bonus_movement",
+      "value": "5"
+    },
+    {
+      "key": "bonus_attack",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Attack Animation Speed",
+      "key": "anim_increase",
+      "value": "40"
+    },
+    {
+      "display": "+ {value}% Attack Projectile Speed",
+      "key": "projectile_increase",
+      "value": "40"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 686,
+  "mc": false,
+  "name": "Quicksilver Amulet",
+  "notes": "",
+  "qual": null,
+  "short_name": "quicksilver_amulet"
+}

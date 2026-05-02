@@ -1,0 +1,71 @@
+{
+  "abilities": [
+    {
+      "description": "When active, Unholy Strength grants +35 damage, +25 strength and +4 armor, but drains 45 health per second.\n\n You cannot die from the health drain when Unholy Strength is activated, nor from the strength loss when Unholy Strength is deactivated.",
+      "title": "Unholy Strength",
+      "type": "toggle"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "25"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_health_regen",
+      "value": "5"
+    },
+    {
+      "key": "unholy_bonus_damage",
+      "value": "35"
+    },
+    {
+      "key": "unholy_bonus_strength",
+      "value": "25"
+    },
+    {
+      "key": "unholy_bonus_armor",
+      "value": "4"
+    },
+    {
+      "key": "unholy_bonus_slow_resistance",
+      "value": "0"
+    },
+    {
+      "key": "unholy_health_drain_per_second",
+      "value": "45"
+    },
+    {
+      "key": "toggle_cooldown",
+      "value": "0.036"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": false,
+  "charges": false,
+  "components": [
+    "helm_of_iron_will",
+    "gloves",
+    "blades_of_attack"
+  ],
+  "cost": 2500,
+  "created": true,
+  "id": 151,
+  "mc": false,
+  "name": "Armlet of Mordiggian",
+  "notes": "The strength change will affect both maximum and current HP, but you cannot die from the change.\nThe strength change occurs over 0.6 seconds.\nActivating or deactivating Unholy Strength does not interrupt channeling.",
+  "qual": "epic",
+  "short_name": "armlet"
+}

@@ -1,0 +1,520 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "START RADIUS:",
+          "key": "start_radius",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "END RADIUS:",
+          "key": "end_radius",
+          "value": "300"
+        },
+        {
+          "generated": true,
+          "header": "END DISTANCE:",
+          "key": "end_distance",
+          "value": "600"
+        },
+        {
+          "header": "TARGETS:",
+          "key": "targets",
+          "value": [
+            "3",
+            "5",
+            "7",
+            "9"
+          ]
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "125",
+            "190",
+            "255",
+            "320"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "12",
+        "10",
+        "8"
+      ],
+      "desc": "Creates a cone of ethereal energy that strikes multiple enemy units.",
+      "dmg_type": "Magical",
+      "key": "shadow_shaman_ether_shock",
+      "mc": [
+        "90",
+        "105",
+        "120",
+        "135"
+      ],
+      "name": "Ether Shock"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MOVESPEED:",
+          "key": "movespeed",
+          "value": "100"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2",
+            "2.3",
+            "2.6",
+            "2.9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE AMP:",
+          "key": "damage_amp",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "20",
+        "16",
+        "12"
+      ],
+      "desc": "Transforms an enemy unit into a harmless creature, disabling their attacks and abilities.",
+      "dmg_type": "",
+      "key": "shadow_shaman_voodoo",
+      "mc": [
+        "130",
+        "150",
+        "170",
+        "190"
+      ],
+      "name": "Hex"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.1"
+        },
+        {
+          "header": "TOTAL DAMAGE/HEAL:",
+          "key": "total_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "header": "MAX DURATION:",
+          "key": "channel_time",
+          "value": [
+            "2.4",
+            "3",
+            "3.6",
+            "4.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WARD LINGER DURATION:",
+          "key": "ward_linger_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS TARGETS:",
+          "key": "bonus_targets",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS TARGETS SEARCH RANGE:",
+          "key": "bonus_targets_search_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "BONUS TARGET CHANNEL TIME PCT:",
+          "key": "bonus_target_channel_time_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "HEAL PERCENTAGE:",
+          "key": "heal_percentage",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": [
+            "2.4",
+            "3",
+            "3.6",
+            "4.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "CHANNELED - Magically binds an enemy unit so that it cannot move or attack, absorbing their life energy over time.",
+      "dmg_type": "Magical",
+      "key": "shadow_shaman_shackles",
+      "mc": [
+        "125",
+        "140",
+        "155",
+        "170"
+      ],
+      "name": "Shackles"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "hex_duration",
+          "value": "3"
+        },
+        {
+          "header": "MOVESPEED BONUS:",
+          "key": "movespeed_bonus_pct",
+          "value": "5%"
+        },
+        {
+          "header": "TOTAL CHICKENS:",
+          "key": "total_chickens",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION DURATION:",
+          "key": "damage_reduction_duration",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REDUCTION PCT:",
+          "key": "damage_reduction_pct",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "LEVELS PER CHICKEN:",
+          "key": "levels_per_chicken",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "INVULN DURATION:",
+          "key": "invuln_duration",
+          "value": "0.1"
+        },
+        {
+          "generated": true,
+          "header": "ALLY CHICKEN IMAGES TAKE DAMAGE PERCENT:",
+          "key": "ally_chicken_images_take_damage_percent",
+          "value": "200"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": "120",
+      "desc": "When taking lethal damage, Shadow Shaman receives a strong dispel and survives as a 1 HP chicken with increased movement speed. Incoming damage is reduced to zero for a short duration and additional chickens are created to confuse the enemy. Cooldown resets when Shadow Shaman respawns.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "shadow_shaman_fowl_play",
+      "mc": null,
+      "name": "Fowl Play"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "WARD DURATION:",
+          "key": "ward_duration",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "1000"
+        },
+        {
+          "header": "IMPACT RADIUS:",
+          "key": "impact_radius",
+          "value": "225"
+        },
+        {
+          "header": "IMPACT DAMAGE:",
+          "key": "impact_damage",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "MEGAWARD MULTIPLIER TOOLTIP:",
+          "key": "megaward_multiplier_tooltip",
+          "value": "4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": "50",
+      "desc": "Throw a snake jar at the target location, damaging all enemies in the AoE and creating a Massive Serpent Ward that has 4x the base Serpent Ward damage and health there that lasts 15s.",
+      "dmg_type": "",
+      "key": "shadow_shaman_urnaconda",
+      "mc": "115",
+      "name": "Urnaconda"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "WARD COUNT:",
+          "key": "ward_count",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "BONUS DAMAGE:",
+          "key": "bonus_damage",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "45"
+        },
+        {
+          "generated": true,
+          "header": "SPAWN RADIUS:",
+          "key": "spawn_radius",
+          "value": "150"
+        },
+        {
+          "header": "HITS TO DESTROY:",
+          "key": "hits_to_destroy_tooltip",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "WARD HEALTH:",
+          "key": "ward_health",
+          "value": "4"
+        },
+        {
+          "header": "WARD DAMAGE:",
+          "key": "ward_damage_tooltip",
+          "value": [
+            "50",
+            "85",
+            "120"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MEGA WARD MULTIPLIER DAMAGE:",
+          "key": "mega_ward_multiplier_damage",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MEGA WARD MULTIPLIER HEALTH:",
+          "key": "mega_ward_multiplier_health",
+          "value": "0"
+        },
+        {
+          "header": "MEGA WARD HEALTH:",
+          "key": "mega_ward_health_tooltip",
+          "value": "0"
+        },
+        {
+          "header": "MEGA WARD DAMAGE:",
+          "key": "mega_ward_damage_tooltip",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "MEGA WARD MODEL SCALE MULTIPLIER:",
+          "key": "mega_ward_model_scale_multiplier",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "550"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "AOE"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "110",
+        "105",
+        "100"
+      ],
+      "desc": "Summons 10 Serpent Wards to attack enemy units and structures. The Wards are immune to magic. Creeps deal half damage to the Serpent Ward.",
+      "dmg_type": "Physical",
+      "key": "shadow_shaman_mass_serpent_ward",
+      "mc": [
+        "200",
+        "350",
+        "550"
+      ],
+      "name": "Mass Serpent Ward"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shackles",
+    "desc": "Increase cast range. Every 0.9 seconds, shackled units emit a radial Ether Shock hitting all other units within 600 of the target for 100% of Ether Shock's normal damage. Shackles can now also be cast on allies and Mass Serpent Wards that stay within 2000 units of Shadow Shaman. Allied units are not disabled by Shackle.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Mass Serpent Ward",
+    "desc": "Allows to create a Mega Ward using the Urnaconda ability.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 16,
+    "agi_gain": 1.6,
+    "armor": 2,
+    "attack_max": 47,
+    "attack_min": 40,
+    "attack_range": 400,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 23,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 285,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.3
+  },
+  "name": "Shadow Shaman",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Pusher",
+    "Disabler",
+    "Nuker",
+    "Initiator"
+  ],
+  "short_name": "shadow_shaman",
+  "talents": [
+    {
+      "left": "+? Ether Shock Damage",
+      "level": 25,
+      "right": "+? Ward Attack Targets"
+    },
+    {
+      "left": "+?s Shackles Duration",
+      "level": 20,
+      "right": "+?% Serpent Wards Max HP"
+    },
+    {
+      "left": "+? Serpent Wards Attack Range",
+      "level": 15,
+      "right": "Hex Breaks"
+    },
+    {
+      "left": "+? Shackles Total Damage",
+      "level": 10,
+      "right": "+1.75 Mana Regen"
+    }
+  ]
+}

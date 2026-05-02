@@ -1,0 +1,53 @@
+{
+  "abilities": [
+    {
+      "description": "When cast on an ally, grants them a physical damage barrier that absorbs 250 damage. Duration: 7s.",
+      "title": "Protect",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "3"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "175"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "175"
+    },
+    {
+      "key": "duration",
+      "value": "7"
+    },
+    {
+      "key": "absorb_amount",
+      "value": "250"
+    }
+  ],
+  "behavior": [
+    "Unit Target",
+    "Instant Cast"
+  ],
+  "cd": 16,
+  "charges": false,
+  "components": [
+    "wizard_hat",
+    "fluffy_hat",
+    "ring_of_protection"
+  ],
+  "cost": 1350,
+  "created": true,
+  "id": 1128,
+  "mc": 60,
+  "name": "Pavise",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "pavise"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 850,
+  "created": false,
+  "id": 78,
+  "mc": false,
+  "name": "Mekansm Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_mekansm"
+}

@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "9"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 450,
+  "created": false,
+  "id": 2,
+  "mc": false,
+  "name": "Blades of Attack",
+  "notes": "",
+  "qual": "component",
+  "short_name": "blades_of_attack"
+}

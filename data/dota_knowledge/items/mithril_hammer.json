@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "24"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 1600,
+  "created": false,
+  "id": 8,
+  "mc": false,
+  "name": "Mithril Hammer",
+  "notes": "",
+  "qual": "component",
+  "short_name": "mithril_hammer"
+}

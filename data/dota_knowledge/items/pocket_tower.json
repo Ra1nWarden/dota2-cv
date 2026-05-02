@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": "Point Target",
+  "cd": 15,
+  "charges": false,
+  "components": null,
+  "cost": null,
+  "created": false,
+  "id": 1030,
+  "mc": false,
+  "name": "Pocket Tower",
+  "notes": "",
+  "qual": null,
+  "short_name": "pocket_tower"
+}

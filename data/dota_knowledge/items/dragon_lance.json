@@ -1,0 +1,39 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Attack Range (Ranged Only)",
+      "key": "base_attack_range",
+      "value": "130"
+    },
+    {
+      "key": "base_attack_range_melee",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "blade_of_alacrity",
+    "belt_of_strength"
+  ],
+  "cost": 1900,
+  "created": true,
+  "id": 236,
+  "mc": false,
+  "name": "Dragon Lance",
+  "notes": "Attack Range bonuses from Dragon Lance and its upgrades do not stack.",
+  "qual": "artifact",
+  "short_name": "dragon_lance"
+}

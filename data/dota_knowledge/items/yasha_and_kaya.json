@@ -1,0 +1,59 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Mana Regen Amplification",
+      "key": "mana_regen_multiplier",
+      "value": "40"
+    },
+    {
+      "key": "movement_speed_percent_bonus_melee",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movement_speed_percent_bonus",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Spell Amplification",
+      "key": "spell_amp",
+      "value": "12"
+    },
+    {
+      "display": "+ {value}% Cast Speed Bonus",
+      "key": "cast_speed_pct",
+      "value": "25"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "yasha",
+    "kaya"
+  ],
+  "cost": 4200,
+  "created": true,
+  "id": 277,
+  "mc": false,
+  "name": "Yasha and Kaya",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "yasha_and_kaya"
+}

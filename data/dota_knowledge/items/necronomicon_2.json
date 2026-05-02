@@ -1,0 +1,87 @@
+{
+  "abilities": [
+    {
+      "description": "Summons a Warrior and an Archer to fight for you for 60 seconds.\n\nWarrior: Burns mana every hit, and deals magical damage to whoever kills it. Gains True Sight at level 3.\nHealth: 800\nDamage: 25\nMana Break Damage: 30\nLast Will Damage: 600\n\nArcher: Has a passive movement and attack speed aura. Gains Purge at Level 3.\nHealth: 800\nDamage: 37\nAura Move Speed: 5\nAura Radius: 1200",
+      "title": "Demonic Summoning",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "6 / 12 / 18"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2 / 3 / 4"
+    },
+    {
+      "key": "summon_duration",
+      "value": "60"
+    },
+    {
+      "key": "warrior_health_tooltip",
+      "value": "800 / 1200 / 1600"
+    },
+    {
+      "key": "warrior_damage_tooltip",
+      "value": "25 / 45 / 65"
+    },
+    {
+      "key": "warrior_mana_feedback",
+      "value": "30 / 40 / 50"
+    },
+    {
+      "key": "warrior_mana_break_tooltip",
+      "value": "30 / 40 / 50"
+    },
+    {
+      "key": "explosion",
+      "value": "600 / 700 / 800"
+    },
+    {
+      "key": "warrior_truesight",
+      "value": "400 / 800 / 1200"
+    },
+    {
+      "key": "archer_health_tooltip",
+      "value": "800 / 1200 / 1600"
+    },
+    {
+      "key": "archer_damage_tooltip",
+      "value": "37 / 57 / 75"
+    },
+    {
+      "key": "archer_mana_burn",
+      "value": "125 / 175 / 225"
+    },
+    {
+      "key": "archer_aura_radius_tooltip",
+      "value": "1200"
+    },
+    {
+      "key": "archer_move_speed",
+      "value": "5 / 7 / 9"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 80,
+  "charges": false,
+  "components": [
+    "necronomicon",
+    "recipe_necronomicon"
+  ],
+  "cost": 3300,
+  "created": true,
+  "id": 193,
+  "mc": 150,
+  "name": "Necronomicon",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "necronomicon_2"
+}

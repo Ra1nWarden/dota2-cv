@@ -1,0 +1,56 @@
+{
+  "abilities": [
+    {
+      "description": "Grants melee heroes a 25% chance on hit to stun the target for 1.2 seconds and deal 100 bonus physical damage. Bash chance for ranged heroes is 10%.",
+      "title": "Bash",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "30"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "10"
+    },
+    {
+      "key": "bash_chance_melee",
+      "value": "25"
+    },
+    {
+      "key": "bash_chance_ranged",
+      "value": "10"
+    },
+    {
+      "key": "bash_duration",
+      "value": "1.2"
+    },
+    {
+      "key": "bash_cooldown",
+      "value": "2.3"
+    },
+    {
+      "key": "bonus_chance_damage",
+      "value": "100"
+    }
+  ],
+  "behavior": null,
+  "cd": 2,
+  "charges": false,
+  "components": [
+    "mithril_hammer",
+    "belt_of_strength"
+  ],
+  "cost": 2875,
+  "created": true,
+  "id": 143,
+  "mc": false,
+  "name": "Skull Basher",
+  "notes": "Does not stack with other sources of Bash.\nThe following heroes cannot trigger Bash on this item: Spirit Breaker, Faceless Void, Slardar, and Kez while in Sai mode.\nDoes not grant Bash to Clones and Tempest Doubles.",
+  "qual": "epic",
+  "short_name": "basher"
+}

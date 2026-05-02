@@ -1,0 +1,48 @@
+{
+  "abilities": [
+    {
+      "description": "Redirect 25% of all magic damage dealt to your allied heroes within 900 radius towards you for 10 seconds.",
+      "title": "Martyrdom",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "duration",
+      "value": "10"
+    },
+    {
+      "display": "+ {value}% Magic Resistance",
+      "key": "magic_resist",
+      "value": "25"
+    },
+    {
+      "key": "damage_redirection",
+      "value": "25"
+    },
+    {
+      "key": "aura_radius",
+      "value": "900"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "hp_regen",
+      "value": "7"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 40,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 2192,
+  "mc": false,
+  "name": "Martyr's Plate",
+  "notes": "Damage done by this item is considered reflected damage. Reflected damage does not provide any lifesteal and cannot be reflected.",
+  "qual": null,
+  "short_name": "martyrs_plate"
+}

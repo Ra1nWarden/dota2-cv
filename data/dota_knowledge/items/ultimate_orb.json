@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 2800,
+  "created": false,
+  "id": 24,
+  "mc": false,
+  "name": "Ultimate Orb",
+  "notes": "",
+  "qual": "secret_shop",
+  "short_name": "ultimate_orb"
+}

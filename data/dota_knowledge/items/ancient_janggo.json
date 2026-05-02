@@ -1,0 +1,73 @@
+{
+  "abilities": [
+    {
+      "description": "Gives +35 attack speed and +13% movement speed to nearby allies for 6 seconds.\n\nRadius: 1200",
+      "title": "Endurance",
+      "type": "active"
+    },
+    {
+      "description": "Grants 15 movement speed and 2.5 health regeneration to allies. \n\nRadius: 1200",
+      "title": "Swiftness Aura",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "aura_movement_speed",
+      "value": "15"
+    },
+    {
+      "key": "aura_health_regen",
+      "value": "2.5"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_str",
+      "value": "8"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_int",
+      "value": "0"
+    },
+    {
+      "key": "bonus_attack_speed_pct",
+      "value": "35"
+    },
+    {
+      "key": "bonus_movement_speed_pct",
+      "value": "13"
+    },
+    {
+      "key": "duration",
+      "value": "6"
+    },
+    {
+      "key": "radius",
+      "value": "1200"
+    },
+    {
+      "key": "charges_tooltip",
+      "value": "8"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 45,
+  "charges": false,
+  "components": [
+    "headdress",
+    "belt_of_strength",
+    "wind_lace"
+  ],
+  "cost": 1625,
+  "created": true,
+  "id": 185,
+  "mc": false,
+  "name": "Drum of Endurance",
+  "notes": "",
+  "qual": "rare",
+  "short_name": "ancient_janggo"
+}

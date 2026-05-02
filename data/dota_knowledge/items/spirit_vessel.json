@@ -1,0 +1,82 @@
+{
+  "abilities": [
+    {
+      "description": "When used against enemies, it reduces health by 4% of current health per second, and reduces Health Restoration by 70%. Deals 25 damage per second. \n\nWhen used on allies, it provides 40 health regeneration per second. \n\nLasts 8 seconds.\n\nGains charges every time an enemy hero dies within 1500 units or the user dies.",
+      "title": "Soul Release",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.75"
+    },
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_all_stats",
+      "value": "10"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "2"
+    },
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_health",
+      "value": "0"
+    },
+    {
+      "key": "soul_radius",
+      "value": "1500"
+    },
+    {
+      "key": "soul_initial_charge",
+      "value": "2"
+    },
+    {
+      "key": "soul_additional_charges",
+      "value": "1"
+    },
+    {
+      "key": "soul_heal_amount",
+      "value": "40"
+    },
+    {
+      "key": "soul_damage_amount",
+      "value": "25"
+    },
+    {
+      "key": "duration",
+      "value": "8.0"
+    },
+    {
+      "key": "restoration_reduction_enemy",
+      "value": "70"
+    },
+    {
+      "key": "enemy_hp_drain",
+      "value": "4"
+    },
+    {
+      "key": "enemy_slow_pct",
+      "value": "0"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 10,
+  "charges": false,
+  "components": [
+    "urn_of_shadows",
+    "diadem"
+  ],
+  "cost": 2725,
+  "created": true,
+  "id": 267,
+  "mc": false,
+  "name": "Spirit Vessel",
+  "notes": "Empty vessels gain 2 charges.\nOnly the closest Spirit Vessel to the dying hero will gain a charge.\nIf the allied unit is attacked by an enemy hero or Roshan, the effect is lost.\nDoes not trigger spell block or spell reflect.",
+  "qual": "rare",
+  "short_name": "spirit_vessel"
+}

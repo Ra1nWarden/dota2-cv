@@ -1,0 +1,62 @@
+{
+  "abilities": [
+    {
+      "description": "Roots all enemies in a 350 radius for 2 seconds.",
+      "title": "Eternal Chains",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Health",
+      "key": "bonus_hp",
+      "value": "450"
+    },
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "200"
+    },
+    {
+      "display": "+ {value} Intelligence",
+      "key": "bonus_intellect",
+      "value": "12"
+    },
+    {
+      "display": "+ {value} Area of Effect",
+      "key": "bonus_aoe",
+      "value": "75"
+    },
+    {
+      "key": "radius",
+      "value": "275"
+    },
+    {
+      "key": "radius_tooltip",
+      "value": "350"
+    },
+    {
+      "key": "duration",
+      "value": "2.0"
+    }
+  ],
+  "behavior": [
+    "Point Target",
+    "AOE"
+  ],
+  "cd": 18,
+  "charges": false,
+  "components": [
+    "rod_of_atos",
+    "point_booster",
+    "chasm_stone"
+  ],
+  "cost": 4650,
+  "created": true,
+  "id": 1466,
+  "mc": 150,
+  "name": "Gleipnir",
+  "notes": "AoE bonuses from multiple Chasm Stones or its upgrades do not stack.",
+  "qual": "artifact",
+  "short_name": "gungir"
+}

@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 625,
+  "created": false,
+  "id": 150,
+  "mc": false,
+  "name": "Armlet of Mordiggian Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_armlet"
+}

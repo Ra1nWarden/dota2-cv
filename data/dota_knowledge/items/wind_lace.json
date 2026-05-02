@@ -1,0 +1,22 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Movement Speed",
+      "key": "movement_speed",
+      "value": "15"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 225,
+  "created": false,
+  "id": 244,
+  "mc": false,
+  "name": "Wind Lace",
+  "notes": "",
+  "qual": "component",
+  "short_name": "wind_lace"
+}

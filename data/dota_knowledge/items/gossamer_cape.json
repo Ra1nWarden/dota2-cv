@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Automatically dodge an attack from an enemy hero.",
+      "title": "Sixth Sense",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "movement_speed",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": 6,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 2193,
+  "mc": false,
+  "name": "Gossamer Cape",
+  "notes": "",
+  "qual": null,
+  "short_name": "gossamer_cape"
+}

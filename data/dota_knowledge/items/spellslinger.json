@@ -1,0 +1,35 @@
+{
+  "abilities": [
+    {
+      "description": "20% of the mana used to cast abilities is recovered over 10 seconds.",
+      "title": "Salvo",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "mana_pct",
+      "value": "20"
+    },
+    {
+      "key": "duration",
+      "value": "10"
+    },
+    {
+      "key": "restore_tickrate",
+      "value": "2"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1859,
+  "mc": false,
+  "name": "Spellslinger",
+  "notes": "",
+  "qual": null,
+  "short_name": "spellslinger"
+}

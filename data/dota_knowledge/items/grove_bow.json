@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Reduces magic resistance of the attacked enemy by 20%.",
+      "title": "Magic Amp",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "attack_range_bonus",
+      "value": "0"
+    },
+    {
+      "key": "attack_speed_bonus",
+      "value": "0"
+    },
+    {
+      "key": "magic_resistance_reduction",
+      "value": "20"
+    },
+    {
+      "key": "debuff_duration",
+      "value": "6"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 288,
+  "mc": false,
+  "name": "Grove Bow",
+  "notes": "",
+  "qual": null,
+  "short_name": "grove_bow"
+}

@@ -1,0 +1,461 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "gush_damage",
+          "value": [
+            "100",
+            "160",
+            "220",
+            "280"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "2500"
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_speed",
+          "value": "-40%"
+        },
+        {
+          "header": "ARMOR REDUCTION:",
+          "key": "negative_armor",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "header": "DEBUFF DURATION:",
+          "key": "abilityduration",
+          "value": "4.5"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "12",
+      "desc": "Summons a gush of water to damage an enemy unit, reducing their movement speed and armor.",
+      "dmg_type": "Magical",
+      "key": "tidehunter_gush",
+      "mc": "100",
+      "name": "Gush"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE BLOCK:",
+          "key": "damage_reduction",
+          "value": [
+            "15",
+            "35",
+            "55",
+            "75"
+          ]
+        },
+        {
+          "header": "DAMAGE BLOCK PER KILL:",
+          "key": "bonus_reduction_per_kill",
+          "value": "0"
+        },
+        {
+          "header": "CREEP PENALTY:",
+          "key": "creep_reduction_penalty_pct",
+          "value": "50%"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVE PCT EFFECTIVENESS:",
+          "key": "active_pct_effectiveness",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVE MOVE SPEED PENALTY PCT:",
+          "key": "active_move_speed_penalty_pct",
+          "value": "40"
+        },
+        {
+          "generated": true,
+          "header": "ACTIVE DURATION:",
+          "key": "active_duration",
+          "value": "4"
+        },
+        {
+          "header": "DAMAGE CLEANSE THRESHOLD:",
+          "key": "damage_cleanse",
+          "value": [
+            "600",
+            "550",
+            "500",
+            "450"
+          ]
+        },
+        {
+          "header": "DAMAGE RESET INTERVAL:",
+          "key": "damage_reset_interval",
+          "value": "7"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "",
+      "cd": "30",
+      "desc": "Thickens Tidehunter's hide to passively block a portion of any incoming physical attack damage. Reduced block amount versus creeps. The hide also removes negative status effects if the damage taken crosses a threshold.\n\nCan be activated to double the block amount at the cost of 40% movement speed. Lasts 4s.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "tidehunter_kraken_shell",
+      "mc": "45",
+      "name": "Kraken Shell"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACK BONUS DAMAGE:",
+          "key": "attack_damage",
+          "value": [
+            "50",
+            "100",
+            "150",
+            "200"
+          ]
+        },
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": [
+            "-25%",
+            "-30%",
+            "-35%",
+            "-40%"
+          ]
+        },
+        {
+          "header": "DURATION:",
+          "key": "reduction_duration",
+          "value": "6"
+        },
+        {
+          "generated": true,
+          "header": "TARGETS BUILDINGS:",
+          "key": "targets_buildings",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ADDITIONAL RANGE:",
+          "key": "additional_range",
+          "value": "225"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.4"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "7",
+        "6",
+        "5",
+        "4"
+      ],
+      "desc": "Tidehunter swings his mighty anchor to attack and deal bonus damage to nearby enemies and reduce their attack damage. The radius of Anchor Smash is Tidehunter's attack range plus 225 units.",
+      "dmg_type": "Physical",
+      "key": "tidehunter_anchor_smash",
+      "mc": [
+        "40",
+        "45",
+        "50",
+        "55"
+      ],
+      "name": "Anchor Smash"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACKS TO DESTROY:",
+          "key": "attacks_to_destroy",
+          "value": "4"
+        },
+        {
+          "header": "ANCHOR DRAG SPEED:",
+          "key": "max_movement_speed",
+          "value": "100"
+        },
+        {
+          "header": "CHAIN LENGTH:",
+          "key": "chain_length",
+          "value": "350"
+        },
+        {
+          "header": "ANCHOR DURATION:",
+          "key": "duration",
+          "value": "10"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "1000"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": "35",
+      "desc": "Tidehunter attaches a heavy anchor to an enemy hero. The hero is leashed while attached to the anchor. Attempting to move more than 350 units away from the anchor forces the hero to 100 move speed, dragging the anchor behind them. The anchor can be destroyed with 4 hero attacks.",
+      "dmg_type": "Magical",
+      "key": "tidehunter_dead_in_the_water",
+      "mc": "110",
+      "name": "Dead in the Water"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "1250"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "725"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2",
+            "2.2",
+            "2.4"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "150",
+        "145",
+        "140"
+      ],
+      "desc": "Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units.",
+      "dmg_type": "Magical",
+      "key": "tidehunter_ravage",
+      "mc": [
+        "125",
+        "225",
+        "325"
+      ],
+      "name": "Ravage"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MODEL SCALE:",
+          "key": "model_scale",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ATTACK RANGE:",
+          "key": "attack_range",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ANCHOR SMASH RADIUS:",
+          "key": "anchor_smash_radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FISH DURATION:",
+          "key": "fish_duration",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "FISH STRENGTH GAIN:",
+          "key": "fish_strength_gain",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "FISH ATTACK RANGE:",
+          "key": "fish_attack_range",
+          "value": "2"
+        },
+        {
+          "generated": true,
+          "header": "FISH DAMAGE BLOCK:",
+          "key": "fish_damage_block",
+          "value": "1"
+        },
+        {
+          "generated": true,
+          "header": "FISH HEALTH BONUS:",
+          "key": "fish_health_bonus",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "FISH MODEL SCALE:",
+          "key": "fish_model_scale",
+          "value": "1.1"
+        },
+        {
+          "generated": true,
+          "header": "MAX FISH SPAWN DISTANCE:",
+          "key": "max_fish_spawn_distance",
+          "value": "400"
+        },
+        {
+          "generated": true,
+          "header": "HEALTH BAR OFFSET BASE:",
+          "key": "health_bar_offset_base",
+          "value": "160"
+        },
+        {
+          "generated": true,
+          "header": "HEALTH BAR OFFSET PER LEVEL:",
+          "key": "health_bar_offset_per_level",
+          "value": "5"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "",
+      "dmg_type": "",
+      "key": "tidehunter_krill_eater",
+      "mc": null,
+      "name": "Leviathan's Catch"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Gush",
+    "desc": "Gush becomes a ground targeted wave ability that affects enemy units in a line.  Decreases cooldown.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Dead in the Water",
+    "desc": "Tidehunter attaches a heavy anchor to an enemy hero. The hero is leashed while attached to the anchor. Attempting to move more than 350 units away from the anchor forces the hero to 100 move speed, dragging the anchor behind them. The anchor can be destroyed with 4 hero attacks.",
+    "has": true,
+    "new_skill": true
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.5,
+    "armor": 0,
+    "attack_max": 31,
+    "attack_min": 25,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 20,
+    "int_gain": 1.7,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0.5,
+    "move_speed": 300,
+    "night_vision": 800,
+    "str": 26,
+    "str_gain": 3.7
+  },
+  "name": "Tidehunter",
+  "primary_attr": "str",
+  "roles": [
+    "Initiator",
+    "Durable",
+    "Disabler",
+    "Nuker",
+    "Carry"
+  ],
+  "short_name": "tidehunter",
+  "talents": [
+    {
+      "left": "+?s Ravage Stun Duration",
+      "level": 25,
+      "right": "Anchor Smash affects buildings"
+    },
+    {
+      "left": "Kraken Shell Cleanse triggers Anchor Smash",
+      "level": 20,
+      "right": "-? Gush Armor"
+    },
+    {
+      "left": "+? Gush Damage",
+      "level": 15,
+      "right": "-?s Ravage Cooldown"
+    },
+    {
+      "left": "+?% Anchor Smash Damage Reduction",
+      "level": 10,
+      "right": "+?% Gush Slow"
+    }
+  ]
+}

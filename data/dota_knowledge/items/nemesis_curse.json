@@ -1,0 +1,44 @@
+{
+  "abilities": [
+    {
+      "description": "Hero takes 6% more damage from all sources.",
+      "title": "Glass Cannon",
+      "type": "passive"
+    },
+    {
+      "description": "When attacking a hero, apply a debuff increasing the damage received by that hero by 12% for 5 seconds. Only one target can be affected by Glassify at the same time.",
+      "title": "Glassify",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "debuff_self",
+      "value": "6"
+    },
+    {
+      "key": "debuff_enemy",
+      "value": "12"
+    },
+    {
+      "key": "debuff_enemy_duration",
+      "value": "5"
+    },
+    {
+      "key": "bonus_damage",
+      "value": "0"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1159,
+  "mc": false,
+  "name": "Nemesis Curse",
+  "notes": "",
+  "qual": null,
+  "short_name": "nemesis_curse"
+}

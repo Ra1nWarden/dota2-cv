@@ -1,0 +1,89 @@
+{
+  "abilities": [
+    {
+      "description": "Takes control of one neutral, non-ancient target unit and sets its movement speed to 370 and max health to a minimum of 1000. Also provides the unit with +25 base attack damage, +12 health regen, +4 mana regen and +4 armor. \n\nDominated units with a max health of greater than 1000 retain their original max health. Grants the caster 50% of the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to 100 gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for 3 seconds after the dominated creep takes damage from an enemy hero or Roshan.",
+      "title": "Dominate",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} All Attributes",
+      "key": "bonus_stats",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Armor",
+      "key": "bonus_armor",
+      "value": "6"
+    },
+    {
+      "display": "+ {value} Health Regeneration",
+      "key": "bonus_regen",
+      "value": "6"
+    },
+    {
+      "key": "health_min",
+      "value": "1000"
+    },
+    {
+      "key": "speed_base",
+      "value": "370"
+    },
+    {
+      "key": "bounty_gold",
+      "value": "100"
+    },
+    {
+      "key": "creep_bonus_damage",
+      "value": "25"
+    },
+    {
+      "key": "creep_bonus_hp_regen",
+      "value": "12"
+    },
+    {
+      "key": "creep_bonus_mp_regen",
+      "value": "4"
+    },
+    {
+      "key": "creep_bonus_armor",
+      "value": "4"
+    },
+    {
+      "key": "model_scale",
+      "value": "0"
+    },
+    {
+      "key": "count_limit",
+      "value": "1"
+    },
+    {
+      "key": "creep_ability_level_increase",
+      "value": "0"
+    },
+    {
+      "key": "creep_damage_taken_cooldown",
+      "value": "3"
+    },
+    {
+      "key": "bounty_pct",
+      "value": "50"
+    }
+  ],
+  "behavior": "Unit Target",
+  "cd": 45,
+  "charges": false,
+  "components": [
+    "helm_of_iron_will",
+    "crown"
+  ],
+  "cost": 2550,
+  "created": true,
+  "id": 164,
+  "mc": 50,
+  "name": "Helm of the Dominator",
+  "notes": "Cannot dominate more than one unit at a time. If a new unit is dominated, the old one will die.\nCan also Dominate enemy lane creeps and summoned units.\nSelling Helm of the Dominator will cause dominated units to die.",
+  "qual": "artifact",
+  "short_name": "helm_of_the_dominator"
+}

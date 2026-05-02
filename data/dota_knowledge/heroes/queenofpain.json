@@ -1,0 +1,389 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "INITIAL DAMAGE:",
+          "key": "strike_damage",
+          "value": [
+            "50",
+            "80",
+            "110",
+            "140"
+          ]
+        },
+        {
+          "header": "DAMAGE PER TICK:",
+          "key": "duration_damage",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "80"
+          ]
+        },
+        {
+          "header": "MOVEMENT SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "-25%",
+            "-35%",
+            "-45%",
+            "-55%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE INTERVAL:",
+          "key": "damage_interval",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "DURATION HEAL:",
+          "key": "duration_heal",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "GENERATE SCREAM:",
+          "key": "generate_scream",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "AOE RADIUS:",
+          "key": "aoe_radius",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "16"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "450",
+            "500",
+            "550",
+            "600"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "13",
+        "10",
+        "7",
+        "4"
+      ],
+      "desc": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for 16 seconds. An instance of damage is dealt every 3 seconds.",
+      "dmg_type": "Magical",
+      "key": "queenofpain_shadow_strike",
+      "mc": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "name": "Shadow Strike"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "MIN BLINK RANGE:",
+          "key": "min_blink_range",
+          "value": "200"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "1075",
+            "1150",
+            "1225",
+            "1300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.33"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "",
+      "cd": [
+        "12",
+        "10",
+        "8",
+        "6"
+      ],
+      "desc": "Short distance teleportation that allows Queen of Pain to move in and out of combat.",
+      "dmg_type": "",
+      "key": "queenofpain_blink",
+      "mc": "65",
+      "name": "Blink"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "area_of_effect",
+          "value": "600"
+        },
+        {
+          "generated": true,
+          "header": "PROJECTILE SPEED:",
+          "key": "projectile_speed",
+          "value": "900"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "90",
+            "175",
+            "260",
+            "345"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE REFLECTED TO SELF:",
+          "key": "damage_reflected_to_self",
+          "value": "25"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "No",
+      "cd": [
+        "7.5",
+        "7",
+        "6.5",
+        "6"
+      ],
+      "desc": "The Queen of Pain lets loose a piercing scream around her, damaging nearby enemies.\n\n25% of the damage dealt to heroes is reflected back to her.",
+      "dmg_type": "Magical",
+      "key": "queenofpain_scream_of_pain",
+      "mc": "120",
+      "name": "Scream Of Pain"
+    },
+    {
+      "attrib": [
+        {
+          "header": "MINIMUM LIFESTEAL:",
+          "key": "spell_lifesteal",
+          "value": "2%"
+        },
+        {
+          "generated": true,
+          "header": "CLOSE RADIUS:",
+          "key": "close_radius",
+          "value": "150"
+        },
+        {
+          "generated": true,
+          "header": "MAX RADIUS:",
+          "key": "max_radius",
+          "value": "800"
+        },
+        {
+          "header": "MAXIMUM LIFESTEAL:",
+          "key": "spell_lifesteal_close",
+          "value": "14%"
+        },
+        {
+          "generated": true,
+          "header": "LIFESTEAL REFLECTED:",
+          "key": "lifesteal_reflected",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "All sources of Spell Lifesteal also apply to Pure Damage. Queen of Pain gains Spell Lifesteal that increases with proximity to her enemies. Lifesteal is at its maximum when the enemy is 150 units or closer to her and at its minimum when the enemy is 800 units or further from her.",
+      "dmg_type": "",
+      "key": "queenofpain_succubus",
+      "mc": null,
+      "name": "Succubus"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "STARTING AOE:",
+          "key": "starting_aoe",
+          "value": "100"
+        },
+        {
+          "generated": true,
+          "header": "DISTANCE:",
+          "key": "distance",
+          "value": "900"
+        },
+        {
+          "header": "WAVE MAX RADIUS:",
+          "key": "final_aoe",
+          "value": "450"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "900"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "325",
+            "475",
+            "625"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "TICK RATE:",
+          "key": "tick_rate",
+          "value": "0.1"
+        },
+        {
+          "header": "KNOCKBACK DISTANCE:",
+          "key": "knockback_distance",
+          "value": "350"
+        },
+        {
+          "generated": true,
+          "header": "KNOCKBACK DURATION:",
+          "key": "knockback_duration",
+          "value": "1.4"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "700"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.452"
+        }
+      ],
+      "behavior": "Point Target",
+      "bkbpierce": "Yes",
+      "cd": [
+        "110",
+        "95",
+        "80"
+      ],
+      "desc": "Creates a gigantic wave of sound in front of Queen of Pain, dealing heavy damage to all enemy units in its wake and pushing them back.",
+      "dmg_type": "Pure",
+      "key": "queenofpain_sonic_wave",
+      "mc": [
+        "250",
+        "400",
+        "550"
+      ],
+      "name": "Sonic Wave"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Shadow Strike",
+    "desc": "Causes Shadow Strike to become a 375 AoE Spell. When Shadow Strike ends or is re-applied to an enemy Hero, the target emits a Scream of Pain, hitting any nearby enemies.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Blink",
+    "desc": "Releases a sonic boom when Queen of Pain blinks, at both her starting and ending locations. Deals 125 damage in a 300 AoE and silences the target for 1.75 seconds.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 22,
+    "agi_gain": 2.5,
+    "armor": 0,
+    "attack_max": 32,
+    "attack_min": 26,
+    "attack_range": 550,
+    "attack_rate": 1.5,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.25,
+    "int": 25,
+    "int_gain": 3.4,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 20,
+    "str_gain": 2.4
+  },
+  "name": "Queen of Pain",
+  "primary_attr": "int",
+  "roles": [
+    "Carry",
+    "Nuker",
+    "Escape"
+  ],
+  "short_name": "queenofpain",
+  "talents": [
+    {
+      "left": "-?s Blink Cooldown",
+      "level": 25,
+      "right": "+? Sonic Wave Damage"
+    },
+    {
+      "left": "+? Scream of Pain Damage",
+      "level": 20,
+      "right": "-?s Sonic Wave Cooldown"
+    },
+    {
+      "left": "-?s Shadow Strike Damage Interval",
+      "level": 15,
+      "right": "+30 Damage"
+    },
+    {
+      "left": "+? Attack Speed against Shadow Striked units",
+      "level": 10,
+      "right": "+7 Strength"
+    }
+  ]
+}

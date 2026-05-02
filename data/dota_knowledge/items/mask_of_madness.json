@@ -1,0 +1,68 @@
+{
+  "abilities": [
+    {
+      "description": "Gives 100 attack speed, 8% / 12% movement speed (ranged/melee), and 30% slow resistance, but reduces your armor by 7 and silences you. Lasts 6 seconds.",
+      "title": "Berserk",
+      "type": "active"
+    },
+    {
+      "description": "Heals the attacker for a percentage of physical damage dealt.",
+      "title": "Lifesteal",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "20"
+    },
+    {
+      "display": "+ {value}% Lifesteal",
+      "key": "lifesteal_percent",
+      "value": "24"
+    },
+    {
+      "key": "berserk_bonus_attack_speed",
+      "value": "100"
+    },
+    {
+      "key": "berserk_bonus_movement_speed_melee",
+      "value": "12"
+    },
+    {
+      "key": "berserk_bonus_movement_speed",
+      "value": "8"
+    },
+    {
+      "key": "berserk_armor_reduction",
+      "value": "7"
+    },
+    {
+      "key": "berserk_slow_resist",
+      "value": "30"
+    },
+    {
+      "key": "berserk_duration",
+      "value": "6.0"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 16,
+  "charges": false,
+  "components": [
+    "broadsword",
+    "lifesteal"
+  ],
+  "cost": 1900,
+  "created": true,
+  "id": 172,
+  "mc": 25,
+  "name": "Mask of Madness",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "mask_of_madness"
+}

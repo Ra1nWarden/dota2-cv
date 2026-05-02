@@ -1,0 +1,27 @@
+{
+  "abilities": [
+    {
+      "description": "Hero kills and assists empower the Black Grimoire, granting it charges. Right-click to consume and grant 200 experience per charge. Starts on cooldown. \nThis item cannot be dropped.",
+      "title": "Profane Knowledge",
+      "type": "use"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "xp_per_charge",
+      "value": "200"
+    }
+  ],
+  "behavior": null,
+  "cd": 420,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1440,
+  "mc": false,
+  "name": "Black Grimoire\\n(Warlock)",
+  "notes": "",
+  "qual": null,
+  "short_name": "black_grimoire"
+}

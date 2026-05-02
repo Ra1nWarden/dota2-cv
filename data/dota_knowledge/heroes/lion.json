@@ -1,0 +1,451 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "650"
+        },
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "105",
+            "170",
+            "235",
+            "300"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "WIDTH:",
+          "key": "width",
+          "value": "140"
+        },
+        {
+          "header": "STUN DURATION:",
+          "key": "duration",
+          "value": [
+            "1.3",
+            "1.6",
+            "1.9",
+            "2.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "LENGTH BUFFER:",
+          "key": "length_buffer",
+          "value": "275"
+        },
+        {
+          "generated": true,
+          "header": "SPEED:",
+          "key": "speed",
+          "value": "2800"
+        },
+        {
+          "generated": true,
+          "header": "PIERCES IMMUNITY:",
+          "key": "pierces_immunity",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CONE SHAPED:",
+          "key": "cone_shaped",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Point Target",
+        "Unit Target"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "14",
+        "13",
+        "12",
+        "11"
+      ],
+      "desc": "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, then are stunned and take damage when they fall.",
+      "dmg_type": "Magical",
+      "key": "lion_impale",
+      "mc": [
+        "90",
+        "110",
+        "130",
+        "150"
+      ],
+      "name": "Earth Spike"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "2",
+            "2.4",
+            "2.8",
+            "3.2"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED:",
+          "key": "movespeed",
+          "value": "120"
+        },
+        {
+          "generated": true,
+          "header": "RADIUS:",
+          "key": "radius",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": [
+            "575",
+            "600",
+            "625",
+            "650"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0"
+        }
+      ],
+      "behavior": "Unit Target",
+      "bkbpierce": "No",
+      "cd": [
+        "24",
+        "20",
+        "16",
+        "12"
+      ],
+      "desc": "Transforms an enemy unit into a harmless beast, with all special abilities disabled.",
+      "dmg_type": "",
+      "key": "lion_voodoo",
+      "mc": [
+        "110",
+        "140",
+        "170",
+        "200"
+      ],
+      "name": "Hex"
+    },
+    {
+      "attrib": [
+        {
+          "header": "CHANNEL TIME:",
+          "key": "duration",
+          "value": "5"
+        },
+        {
+          "header": "MANA PER SECOND:",
+          "key": "mana_per_second",
+          "value": [
+            "20",
+            "40",
+            "60",
+            "120"
+          ]
+        },
+        {
+          "header": "BREAK DISTANCE:",
+          "key": "break_distance",
+          "value": "1100"
+        },
+        {
+          "generated": true,
+          "header": "TICK INTERVAL:",
+          "key": "tick_interval",
+          "value": "0.1"
+        },
+        {
+          "header": "MOVEMENT SLOW/BONUS:",
+          "key": "movespeed",
+          "value": [
+            "15%",
+            "20%",
+            "25%",
+            "30%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "MOVESPEED BONUS WHEN EMPTY PCT:",
+          "key": "movespeed_bonus_when_empty_pct",
+          "value": "15"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE PCT:",
+          "key": "damage_pct",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "ALLY PCT:",
+          "key": "ally_pct",
+          "value": "50"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "850"
+        },
+        {
+          "generated": true,
+          "header": "CHANNEL TIME:",
+          "key": "abilitychanneltime",
+          "value": "5.1"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "Channeled"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "12",
+        "9",
+        "6"
+      ],
+      "desc": "CHANNELED - Channels magical energy, taking mana and slowing enemies over time. If the enemy has no mana remaining, the slow is increased by 15%. \n\n Can target allies to give them mana and movement speed at a 50% rate.",
+      "dmg_type": "",
+      "key": "lion_mana_drain",
+      "mc": "0",
+      "name": "Mana Drain"
+    },
+    {
+      "attrib": [
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "duration",
+          "value": "90"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE WINDOW:",
+          "key": "damage_window",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "SPELL AMP:",
+          "key": "spell_amp",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "DEBUFF AMP:",
+          "key": "debuff_amp",
+          "value": "20"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Lion gains 20% debuff duration after killing or assisting in a Hero kill while that Hero is dead.\n\nLion gains 20% spell amplification for 90s after respawning or resurrecting or until he gets a kill or assist.",
+      "dmg_type": "",
+      "key": "lion_to_hell_and_back",
+      "mc": null,
+      "name": "To Hell and Back"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE:",
+          "key": "damage",
+          "value": [
+            "600",
+            "725",
+            "850"
+          ]
+        },
+        {
+          "header": "DAMAGE PER KILL:",
+          "key": "damage_per_kill",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "GRACE PERIOD:",
+          "key": "grace_period",
+          "value": "3"
+        },
+        {
+          "generated": true,
+          "header": "DAMAGE DELAY:",
+          "key": "damage_delay",
+          "value": "0.25"
+        },
+        {
+          "header": "MELEE DURATION:",
+          "key": "punch_duration",
+          "value": "20"
+        },
+        {
+          "header": "MELEE BONUS MOVE SPEED:",
+          "key": "punch_bonus_movespeed",
+          "value": "30"
+        },
+        {
+          "generated": true,
+          "header": "PUNCH ATTACK RANGE:",
+          "key": "punch_attack_range",
+          "value": "250"
+        },
+        {
+          "header": "MELEE BONUS DAMAGE:",
+          "key": "punch_bonus_damage_base",
+          "value": [
+            "20",
+            "30",
+            "40"
+          ]
+        },
+        {
+          "header": "CLEAVE DAMAGE:",
+          "key": "cleave_damage",
+          "value": "25%"
+        },
+        {
+          "header": "CLEAVE STARTING WIDTH:",
+          "key": "cleave_starting_width",
+          "value": "150"
+        },
+        {
+          "header": "CLEAVE ENDING WIDTH:",
+          "key": "cleave_ending_width",
+          "value": "350"
+        },
+        {
+          "header": "CLEAVE DISTANCE:",
+          "key": "cleave_distance",
+          "value": "650"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "900"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": [
+        "Unit Target",
+        "AOE"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "110",
+        "70",
+        "30"
+      ],
+      "desc": "Rips at an enemy unit, trying to turn it inside-out, dealing massive damage to the target.\n\nAfter using Finger of Death, Lion's hand becomes empowered, allowing him to use a cleaving melee attack with 250 range with bonus movement speed.\n\nFinger of Death gains permanent bonus damage for it and the fist for each enemy Hero it or the fist kills. \n\nThe melee attack may be disabled by setting the ability to Alt Cast.",
+      "dmg_type": "Magical",
+      "key": "lion_finger_of_death",
+      "mc": [
+        "200",
+        "400",
+        "600"
+      ],
+      "name": "Finger of Death"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Finger of Death",
+    "desc": "Finger of Death gains area of effect damage on the initial cast, and increases duration and cleave damage on its subsequent melee attacks.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Mana Drain",
+    "desc": "Causes Mana Drain to affect up to 2 additional enemies and increases break distance. Lion becomes Debuff Immune with 60% magic resistance while channeling.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Ranged",
+  "base_stats": {
+    "agi": 15,
+    "agi_gain": 1.7,
+    "armor": 0,
+    "attack_max": 35,
+    "attack_min": 29,
+    "attack_range": 600,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 0.5,
+    "int": 19,
+    "int_gain": 3.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 290,
+    "night_vision": 800,
+    "str": 18,
+    "str_gain": 2.4
+  },
+  "name": "Lion",
+  "primary_attr": "int",
+  "roles": [
+    "Support",
+    "Disabler",
+    "Nuker",
+    "Initiator"
+  ],
+  "short_name": "lion",
+  "talents": [
+    {
+      "left": "+? AoE Hex",
+      "level": 25,
+      "right": "+? Earth Spike cast range/travel distance"
+    },
+    {
+      "left": "+? Finger of Death Damage Per Kill",
+      "level": 20,
+      "right": "Earth Spike affects a 30 degree cone"
+    },
+    {
+      "left": "-?s Hex Cooldown",
+      "level": 15,
+      "right": "+?% To Hell And Back Debuff/Spell Amp"
+    },
+    {
+      "left": "+?% Mana Drain Slow",
+      "level": 10,
+      "right": "+20 Movement Speed"
+    }
+  ]
+}

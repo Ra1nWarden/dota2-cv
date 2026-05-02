@@ -1,0 +1,16 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": false,
+  "cd": false,
+  "charges": false,
+  "components": null,
+  "cost": 200,
+  "created": false,
+  "id": 228,
+  "mc": false,
+  "name": "Octarine Core Recipe",
+  "notes": "",
+  "qual": null,
+  "short_name": "recipe_octarine_core"
+}

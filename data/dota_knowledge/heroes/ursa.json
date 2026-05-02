@@ -1,0 +1,335 @@
+{
+  "abilities": [
+    {
+      "attrib": [
+        {
+          "header": "RADIUS:",
+          "key": "shock_radius",
+          "value": "385"
+        },
+        {
+          "header": "SLOW:",
+          "key": "movement_slow",
+          "value": [
+            "-22%",
+            "-28%",
+            "-34%",
+            "-40%"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "HOP DISTANCE:",
+          "key": "hop_distance",
+          "value": "250"
+        },
+        {
+          "generated": true,
+          "header": "HOP DURATION:",
+          "key": "hop_duration",
+          "value": "0.25"
+        },
+        {
+          "generated": true,
+          "header": "HOP HEIGHT:",
+          "key": "hop_height",
+          "value": "83"
+        },
+        {
+          "generated": true,
+          "header": "MAX CHARGES:",
+          "key": "abilitycharges",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CHARGE RESTORE TIME:",
+          "key": "abilitychargerestoretime",
+          "value": [
+            "15",
+            "13",
+            "11",
+            "9"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "4"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "No",
+      "cd": [
+        "15",
+        "13",
+        "11",
+        "9"
+      ],
+      "desc": "Ursa leaps forward 250 units and slams the earth, causing a powerful shock to damage and slow all enemy units in a nearby area for 4 seconds.",
+      "dmg_type": "Magical",
+      "key": "ursa_earthshock",
+      "mc": "95",
+      "name": "Earthshock"
+    },
+    {
+      "attrib": [
+        {
+          "header": "ATTACKS:",
+          "key": "max_attacks",
+          "value": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "header": "BONUS ATTACK SPEED:",
+          "key": "attack_speed_bonus_pct",
+          "value": "400"
+        },
+        {
+          "header": "SLOW RESISTANCE:",
+          "key": "slow_resist",
+          "value": "25%"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        },
+        {
+          "header": "DURATION:",
+          "key": "abilityduration",
+          "value": "20"
+        },
+        {
+          "generated": true,
+          "header": "CAST TIME:",
+          "key": "abilitycastpoint",
+          "value": "0.3"
+        }
+      ],
+      "behavior": "No Target",
+      "bkbpierce": "",
+      "cd": [
+        "12",
+        "11",
+        "10",
+        "9"
+      ],
+      "desc": "Using his skill in combat, Ursa gains increased attack speed and slow resistance for a number of subsequent attacks.",
+      "dmg_type": "",
+      "key": "ursa_overpower",
+      "mc": [
+        "45",
+        "50",
+        "55",
+        "60"
+      ],
+      "name": "Overpower"
+    },
+    {
+      "attrib": [
+        {
+          "header": "RESET TIME:",
+          "key": "bonus_reset_time",
+          "value": [
+            "8",
+            "12",
+            "16",
+            "20"
+          ]
+        },
+        {
+          "header": "RESET TIME (ROSHAN):",
+          "key": "bonus_reset_time_roshan",
+          "value": "8"
+        },
+        {
+          "header": "DAMAGE PER ATTACK:",
+          "key": "damage_per_stack",
+          "value": [
+            "12",
+            "20",
+            "28",
+            "36"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "STUN STACK COUNT:",
+          "key": "stun_stack_count",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "STUN DURATION:",
+          "key": "stun_duration",
+          "value": "0"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "Yes",
+      "cd": null,
+      "desc": "Ursa's claws dig deeper wounds in the enemy, causing consecutive attacks to the same enemy to deal more damage. If the same target is not attacked after 8 seconds, the bonus damage is lost.",
+      "dmg_type": "Physical",
+      "key": "ursa_fury_swipes",
+      "mc": null,
+      "name": "Fury Swipes"
+    },
+    {
+      "attrib": [
+        {
+          "header": "HEALTH AS DAMAGE:",
+          "key": "health_as_damage_pct",
+          "value": "1.25%"
+        }
+      ],
+      "behavior": "Passive",
+      "bkbpierce": "",
+      "cd": null,
+      "desc": "Ursa gains bonus damage equal to a percentage of his Current HP.",
+      "dmg_type": "",
+      "key": "ursa_maul",
+      "mc": null,
+      "name": "Maul"
+    },
+    {
+      "attrib": [
+        {
+          "header": "DAMAGE REDUCTION:",
+          "key": "damage_reduction",
+          "value": "80%"
+        },
+        {
+          "header": "STATUS RESISTANCE:",
+          "key": "status_resistance",
+          "value": "50%"
+        },
+        {
+          "header": "DURATION:",
+          "key": "duration",
+          "value": [
+            "4",
+            "4.5",
+            "5"
+          ]
+        },
+        {
+          "generated": true,
+          "header": "AOE RADIUS:",
+          "key": "aoe_radius",
+          "value": "0"
+        },
+        {
+          "header": "DAMAGE ABSORBED TO DAMAGE:",
+          "key": "damage_increase",
+          "value": "0%"
+        },
+        {
+          "header": "DAMAGE INCREASE LINGER DURATION:",
+          "key": "damage_increase_duration",
+          "value": "0"
+        },
+        {
+          "generated": true,
+          "header": "CAST RANGE:",
+          "key": "abilitycastrange",
+          "value": "0"
+        }
+      ],
+      "behavior": [
+        "No Target",
+        "Instant Cast"
+      ],
+      "bkbpierce": "Yes",
+      "cd": [
+        "60",
+        "45",
+        "30"
+      ],
+      "desc": "Ursa goes into a frenzy, providing damage reduction and status resistance. Removes any existing debuffs.\n\nDISPEL TYPE: Strong Dispel",
+      "dmg_type": "",
+      "key": "ursa_enrage",
+      "mc": "0",
+      "name": "Enrage"
+    }
+  ],
+  "aghs_scepter": {
+    "ability": "Enrage",
+    "desc": "Reduces cooldown and allows Ursa to use Enrage while disabled.",
+    "has": true,
+    "new_skill": false
+  },
+  "aghs_shard": {
+    "ability": "Earthshock",
+    "desc": "Earthshock applies 3 Fury Swipes to enemies hit.",
+    "has": true,
+    "new_skill": false
+  },
+  "attack_type": "Melee",
+  "base_stats": {
+    "agi": 18,
+    "agi_gain": 2.8,
+    "armor": 1,
+    "attack_max": 28,
+    "attack_min": 24,
+    "attack_range": 150,
+    "attack_rate": 1.7,
+    "day_vision": 1800,
+    "hp": 120,
+    "hp_regen": 1,
+    "int": 16,
+    "int_gain": 1.5,
+    "magic_resist": 25,
+    "mana": 75,
+    "mana_regen": 0,
+    "move_speed": 310,
+    "night_vision": 800,
+    "str": 25,
+    "str_gain": 2.4
+  },
+  "name": "Ursa",
+  "primary_attr": "agi",
+  "roles": [
+    "Carry",
+    "Durable",
+    "Disabler"
+  ],
+  "short_name": "ursa",
+  "talents": [
+    {
+      "left": "Earthshock has ? Charges",
+      "level": 25,
+      "right": "+? Overpower Attacks"
+    },
+    {
+      "left": "+? Earthshock Radius",
+      "level": 20,
+      "right": "+? Fury Swipes Damage"
+    },
+    {
+      "left": "+?% Maul Health As Damage",
+      "level": 15,
+      "right": "+?% Enrage Status Resistance"
+    },
+    {
+      "left": "+?s Fury Swipes Reset Time",
+      "level": 10,
+      "right": "+1.75 Mana Regen"
+    }
+  ]
+}

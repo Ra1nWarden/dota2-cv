@@ -1,0 +1,68 @@
+{
+  "abilities": [
+    {
+      "description": "Pulls enemies in a 400 range around you, slowing them by 50% for 3 seconds and dealing 175 + 1.5x your str as magical damage.",
+      "title": "Havoc",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "14"
+    },
+    {
+      "key": "range",
+      "value": "400"
+    },
+    {
+      "key": "slow",
+      "value": "50"
+    },
+    {
+      "key": "slow_duration",
+      "value": "3"
+    },
+    {
+      "key": "angle",
+      "value": "360"
+    },
+    {
+      "key": "knockback_duration",
+      "value": "0.2"
+    },
+    {
+      "key": "pull_distance",
+      "value": "100"
+    },
+    {
+      "key": "nuke_base_dmg",
+      "value": "175"
+    },
+    {
+      "key": "nuke_str_dmg",
+      "value": "1.5"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 10,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 364,
+  "mc": false,
+  "name": "Havoc Hammer",
+  "notes": "",
+  "qual": null,
+  "short_name": "havoc_hammer"
+}

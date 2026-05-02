@@ -1,0 +1,39 @@
+{
+  "abilities": [
+    {
+      "description": "Propels your hero forward 300 units. Tumbler's Toy gets disabled for 3 seconds if its owner receives damage from a player source.",
+      "title": "Vault",
+      "type": "active"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "leap_distance",
+      "value": "300"
+    },
+    {
+      "key": "leap_speed",
+      "value": "1300.0"
+    },
+    {
+      "key": "leap_acceleration",
+      "value": "20000.0"
+    },
+    {
+      "key": "bonus_mana",
+      "value": "0"
+    }
+  ],
+  "behavior": "No Target",
+  "cd": 15,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 840,
+  "mc": false,
+  "name": "Tumbler's Toy",
+  "notes": "",
+  "qual": null,
+  "short_name": "pogo_stick"
+}

@@ -1,0 +1,19 @@
+{
+  "abilities": [],
+  "attrib": [],
+  "behavior": [
+    "No Target",
+    "Channeled"
+  ],
+  "cd": false,
+  "charges": 1,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1028,
+  "mc": false,
+  "name": "Tombstone",
+  "notes": "",
+  "qual": "consumable",
+  "short_name": "mutation_tombstone"
+}

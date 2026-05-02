@@ -1,0 +1,35 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Mana",
+      "key": "bonus_mana",
+      "value": "300"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "2.5"
+    },
+    {
+      "display": "+ {value} Cast Range",
+      "key": "cast_range_bonus",
+      "value": "225"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "energy_booster",
+    "void_stone"
+  ],
+  "cost": 2275,
+  "created": true,
+  "id": 232,
+  "mc": false,
+  "name": "Aether Lens",
+  "notes": "Cast Range bonuses from Aether Lens and Dagon do not stack.",
+  "qual": "rare",
+  "short_name": "aether_lens"
+}

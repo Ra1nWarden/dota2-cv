@@ -1,0 +1,47 @@
+{
+  "abilities": [
+    {
+      "description": "Restores 70 + 3% of the caster's maximum mana over 6 seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nHold Control to use on an allied hero.",
+      "title": "Bottoms Up",
+      "type": "active"
+    },
+    {
+      "description": "Cooldown Speed of Mana Draught is increased by 30% while in water.",
+      "title": "Fill Up",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "key": "mana_restore",
+      "value": "70"
+    },
+    {
+      "key": "mana_restore_pct",
+      "value": "3"
+    },
+    {
+      "key": "heal_duration",
+      "value": "6"
+    },
+    {
+      "key": "water_acceleration",
+      "value": "30"
+    }
+  ],
+  "behavior": [
+    "Instant Cast",
+    "No Target"
+  ],
+  "cd": 60,
+  "charges": false,
+  "components": null,
+  "cost": 0,
+  "created": false,
+  "id": 1599,
+  "mc": false,
+  "name": "Mana Draught",
+  "notes": "",
+  "qual": null,
+  "short_name": "mana_draught"
+}

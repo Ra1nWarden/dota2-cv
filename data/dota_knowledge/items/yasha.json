@@ -1,0 +1,35 @@
+{
+  "abilities": [],
+  "attrib": [
+    {
+      "display": "+ {value} Agility",
+      "key": "bonus_agility",
+      "value": "16"
+    },
+    {
+      "display": "+ {value} Attack Speed",
+      "key": "bonus_attack_speed",
+      "value": "15"
+    },
+    {
+      "display": "+ {value}% Movement Speed",
+      "key": "movement_speed_percent_bonus",
+      "value": "10"
+    }
+  ],
+  "behavior": null,
+  "cd": false,
+  "charges": false,
+  "components": [
+    "blade_of_alacrity",
+    "boots_of_elves"
+  ],
+  "cost": 2100,
+  "created": true,
+  "id": 170,
+  "mc": false,
+  "name": "Yasha",
+  "notes": "Yasha-based movement speed bonuses from multiple items do not stack.",
+  "qual": "artifact",
+  "short_name": "yasha"
+}

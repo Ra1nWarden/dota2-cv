@@ -1,0 +1,50 @@
+{
+  "abilities": [
+    {
+      "description": "Causes melee attacks to attack twice in quick succession. The double attacks apply a 100% movement slow for 0.8 seconds on the first strike.",
+      "title": "Echo Strike",
+      "type": "passive"
+    }
+  ],
+  "attrib": [
+    {
+      "display": "+ {value} Damage",
+      "key": "bonus_damage",
+      "value": "20"
+    },
+    {
+      "display": "+ {value} Strength",
+      "key": "bonus_strength",
+      "value": "15"
+    },
+    {
+      "display": "+ {value} Mana Regeneration",
+      "key": "bonus_mana_regen",
+      "value": "1.75"
+    },
+    {
+      "key": "movement_slow",
+      "value": "100"
+    },
+    {
+      "key": "slow_duration",
+      "value": "0.8"
+    }
+  ],
+  "behavior": null,
+  "cd": 5,
+  "charges": false,
+  "components": [
+    "ogre_axe",
+    "broadsword",
+    "void_stone"
+  ],
+  "cost": 2700,
+  "created": true,
+  "id": 252,
+  "mc": false,
+  "name": "Echo Sabre",
+  "notes": "",
+  "qual": "artifact",
+  "short_name": "echo_sabre"
+}
